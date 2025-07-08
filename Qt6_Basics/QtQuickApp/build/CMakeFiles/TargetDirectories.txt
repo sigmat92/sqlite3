@@ -1,0 +1,8 @@
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/QtQuickApp.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/edit_cache.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/rebuild_cache.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/list_install_components.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/install.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/install/local.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/install/strip.dir
+/home/prakash/Qt6/QtQuickApp/build/CMakeFiles/QtQuickApp_autogen.dir
