@@ -1,3 +1,0 @@
-/home/prakash/Qt6/test/build/CMakeFiles/test_app.dir
-/home/prakash/Qt6/test/build/CMakeFiles/edit_cache.dir
-/home/prakash/Qt6/test/build/CMakeFiles/rebuild_cache.dir

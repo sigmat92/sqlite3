@@ -1,4 +1,0 @@
-/home/prakash/Qt6/QtWidgetsApp/build/CMakeFiles/QtWidgetsApp.dir
-/home/prakash/Qt6/QtWidgetsApp/build/CMakeFiles/edit_cache.dir
-/home/prakash/Qt6/QtWidgetsApp/build/CMakeFiles/rebuild_cache.dir
-/home/prakash/Qt6/QtWidgetsApp/build/CMakeFiles/QtWidgetsApp_autogen.dir
