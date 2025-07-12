@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	 <class>MainWindow</class>
+	  <widget class="QMainWindow" name="MainWindow">
+		    <property name="geometry">
+			       <rect><x>0</x><y>0</y><width>800</width><height>600</height></rect>
+			         </property>
+				   <widget class="QWidget" name="centralwidget">
+					      <layout class="QVBoxLayout" name="verticalLayout">
+						          <item>
+								       <widget class="QComboBox" name="comboWaveType">
+									             <item><property name="text"><string>Sine</string></property></item>
+										           <item><property name="text"><string>Square</string></property></item>
+											         <item><property name="text"><string>Triangle</string></property></item>
+												       <item><property name="text"><string>Pulse</string></property></item>
+												            </widget>
+													        </item>
+														    <item>
+															         <widget class="WaveformWidget" name="waveWidget"/>
+																     </item>
+																         <item>
+																		      <layout class="QHBoxLayout">
+																			            <item>
+																					           <widget class="QPushButton" name="btnStart">
+																							           <property name="text"><string>Start</string></property>
+																								          </widget>
+																									        </item>
+																										      <item>
+																											             <widget class="QPushButton" name="btnStop">
+																													             <property name="text"><string>Stop</string></property>
+																														            </widget>
+																															          </item>
+																																       </layout>
+																																           </item>
+																																	      </layout>
+																																	        </widget>
+																																		 </widget>
+																																		  <customwidgets>
+																																			    <customwidget>
+																																				       <class>WaveformWidget</class>
+																																				          <extends>QWidget</extends>
+																																					     <header>waveformwidget.h</header>
+																																					       </customwidget>
+																																					        </customwidgets>
+																																						 <resources/>
+																																						  <connections/>
+																																					  </ui>
+
