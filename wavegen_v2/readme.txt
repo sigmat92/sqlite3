@@ -122,9 +122,7 @@ updateWave() shifts waveform over time (for animation).
 
 paintEvent() draws waveform using QPainter.
 
-cpp
-Copy
-Edit
+
 void WaveformWidget::paintEvent(QPaintEvent *) {
     QPainter p(this);
     ...
