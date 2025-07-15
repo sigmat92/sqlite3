@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amol/sqlite3/wavegen
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/wavegen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amol/sqlite3/wavegen/build
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/wavegen/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/WaveformGenerator.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/WaveformGenerator.dir/flags.make
 CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o: CMakeFiles/WaveformGenerator.dir/flags.make
 CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o: WaveformGenerator_autogen/mocs_compilation.cpp
 CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o: CMakeFiles/WaveformGenerator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o -MF CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o -c /home/amol/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o -MF CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o -c /home/prakash/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp
 
 CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amol/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp > CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp > CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amol/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp -o CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp -o CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/WaveformGenerator.dir/main.cpp.o: CMakeFiles/WaveformGenerator.dir/flags.make
 CMakeFiles/WaveformGenerator.dir/main.cpp.o: ../main.cpp
 CMakeFiles/WaveformGenerator.dir/main.cpp.o: CMakeFiles/WaveformGenerator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WaveformGenerator.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/main.cpp.o -MF CMakeFiles/WaveformGenerator.dir/main.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/main.cpp.o -c /home/amol/sqlite3/wavegen/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/WaveformGenerator.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/main.cpp.o -MF CMakeFiles/WaveformGenerator.dir/main.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/main.cpp.o -c /home/prakash/sqlite3/wavegen/main.cpp
 
 CMakeFiles/WaveformGenerator.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveformGenerator.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amol/sqlite3/wavegen/main.cpp > CMakeFiles/WaveformGenerator.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/wavegen/main.cpp > CMakeFiles/WaveformGenerator.dir/main.cpp.i
 
 CMakeFiles/WaveformGenerator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveformGenerator.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amol/sqlite3/wavegen/main.cpp -o CMakeFiles/WaveformGenerator.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/wavegen/main.cpp -o CMakeFiles/WaveformGenerator.dir/main.cpp.s
 
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: CMakeFiles/WaveformGenerator.dir/flags.make
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: ../mainwindow.cpp
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: CMakeFiles/WaveformGenerator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o -MF CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o -c /home/amol/sqlite3/wavegen/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o -MF CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o -c /home/prakash/sqlite3/wavegen/mainwindow.cpp
 
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amol/sqlite3/wavegen/mainwindow.cpp > CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/wavegen/mainwindow.cpp > CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.i
 
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amol/sqlite3/wavegen/mainwindow.cpp -o CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/wavegen/mainwindow.cpp -o CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.s
 
 CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o: CMakeFiles/WaveformGenerator.dir/flags.make
 CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o: ../waveformwidget.cpp
 CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o: CMakeFiles/WaveformGenerator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o -MF CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o -c /home/amol/sqlite3/wavegen/waveformwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o -MF CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d -o CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o -c /home/prakash/sqlite3/wavegen/waveformwidget.cpp
 
 CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/amol/sqlite3/wavegen/waveformwidget.cpp > CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/wavegen/waveformwidget.cpp > CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.i
 
 CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/amol/sqlite3/wavegen/waveformwidget.cpp -o CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/wavegen/waveformwidget.cpp -o CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.s
 
 # Object files for target WaveformGenerator
 WaveformGenerator_OBJECTS = \
@@ -140,13 +140,13 @@ WaveformGenerator: CMakeFiles/WaveformGenerator.dir/main.cpp.o
 WaveformGenerator: CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o
 WaveformGenerator: CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o
 WaveformGenerator: CMakeFiles/WaveformGenerator.dir/build.make
-WaveformGenerator: /home/amol/Qt/6.5.3/gcc_64/lib/libQt6Widgets.so.6.5.3
-WaveformGenerator: /home/amol/Qt/6.5.3/gcc_64/lib/libQt6Gui.so.6.5.3
-WaveformGenerator: /home/amol/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
+WaveformGenerator: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Widgets.so.6.5.3
+WaveformGenerator: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Gui.so.6.5.3
+WaveformGenerator: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 WaveformGenerator: /usr/lib/x86_64-linux-gnu/libGLX.so
 WaveformGenerator: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 WaveformGenerator: CMakeFiles/WaveformGenerator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable WaveformGenerator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable WaveformGenerator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WaveformGenerator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/WaveformGenerator.dir/clean:
 .PHONY : CMakeFiles/WaveformGenerator.dir/clean
 
 CMakeFiles/WaveformGenerator.dir/depend:
-	cd /home/amol/sqlite3/wavegen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amol/sqlite3/wavegen /home/amol/sqlite3/wavegen /home/amol/sqlite3/wavegen/build /home/amol/sqlite3/wavegen/build /home/amol/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/wavegen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/wavegen /home/prakash/sqlite3/wavegen /home/prakash/sqlite3/wavegen/build /home/prakash/sqlite3/wavegen/build /home/prakash/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/WaveformGenerator.dir/depend
 

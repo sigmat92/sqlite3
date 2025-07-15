@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+1921300c0dadcd973cf88b7037df0060 CMakeFiles/QtQuickApp_autogen

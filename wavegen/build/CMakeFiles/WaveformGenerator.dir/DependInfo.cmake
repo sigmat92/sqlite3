@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amol/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o.d"
-  "/home/amol/sqlite3/wavegen/main.cpp" "CMakeFiles/WaveformGenerator.dir/main.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/main.cpp.o.d"
-  "/home/amol/sqlite3/wavegen/mainwindow.cpp" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o.d"
-  "/home/amol/sqlite3/wavegen/waveformwidget.cpp" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d"
+  "/home/prakash/sqlite3/wavegen/build/WaveformGenerator_autogen/mocs_compilation.cpp" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o.d"
+  "/home/prakash/sqlite3/wavegen/main.cpp" "CMakeFiles/WaveformGenerator.dir/main.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/main.cpp.o.d"
+  "/home/prakash/sqlite3/wavegen/mainwindow.cpp" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o.d"
+  "/home/prakash/sqlite3/wavegen/waveformwidget.cpp" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d"
   )
 
 # Targets to which this target links.

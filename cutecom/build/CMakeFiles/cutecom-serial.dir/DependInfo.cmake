@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/amol/sqlite3/cutecom/ConfigManager.cpp" "CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o.d"
-  "/home/amol/sqlite3/cutecom/MainWindow.cpp" "CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o.d"
-  "/home/amol/sqlite3/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp" "CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o.d"
-  "/home/amol/sqlite3/cutecom/main.cpp" "CMakeFiles/cutecom-serial.dir/main.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/main.cpp.o.d"
+  "/home/prakash/sqlite3/cutecom/ConfigManager.cpp" "CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o.d"
+  "/home/prakash/sqlite3/cutecom/MainWindow.cpp" "CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o.d"
+  "/home/prakash/sqlite3/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp" "CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o.d"
+  "/home/prakash/sqlite3/cutecom/main.cpp" "CMakeFiles/cutecom-serial.dir/main.cpp.o" "gcc" "CMakeFiles/cutecom-serial.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

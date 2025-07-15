@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/amol/sqlite3/wavegen
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/wavegen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/amol/sqlite3/wavegen/build
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/wavegen/build
 
 # Utility rule file for WaveformGenerator_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/WaveformGenerator_autogen.dir/compiler_depend.make
 include CMakeFiles/WaveformGenerator_autogen.dir/progress.make
 
 CMakeFiles/WaveformGenerator_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/amol/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target WaveformGenerator"
-	/usr/bin/cmake -E cmake_autogen /home/amol/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/sqlite3/wavegen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target WaveformGenerator"
+	/usr/bin/cmake -E cmake_autogen /home/prakash/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator_autogen.dir/AutogenInfo.json ""
 
 WaveformGenerator_autogen: CMakeFiles/WaveformGenerator_autogen
 WaveformGenerator_autogen: CMakeFiles/WaveformGenerator_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/WaveformGenerator_autogen.dir/clean:
 .PHONY : CMakeFiles/WaveformGenerator_autogen.dir/clean
 
 CMakeFiles/WaveformGenerator_autogen.dir/depend:
-	cd /home/amol/sqlite3/wavegen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/amol/sqlite3/wavegen /home/amol/sqlite3/wavegen /home/amol/sqlite3/wavegen/build /home/amol/sqlite3/wavegen/build /home/amol/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/wavegen/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/wavegen /home/prakash/sqlite3/wavegen /home/prakash/sqlite3/wavegen/build /home/prakash/sqlite3/wavegen/build /home/prakash/sqlite3/wavegen/build/CMakeFiles/WaveformGenerator_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/WaveformGenerator_autogen.dir/depend
 

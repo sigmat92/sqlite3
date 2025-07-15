@@ -1,0 +1,4 @@
+/home/prakash/sqlite3/wavegen_v2/build/CMakeFiles/WaveformGenerator.dir
+/home/prakash/sqlite3/wavegen_v2/build/CMakeFiles/edit_cache.dir
+/home/prakash/sqlite3/wavegen_v2/build/CMakeFiles/rebuild_cache.dir
+/home/prakash/sqlite3/wavegen_v2/build/CMakeFiles/WaveformGenerator_autogen.dir

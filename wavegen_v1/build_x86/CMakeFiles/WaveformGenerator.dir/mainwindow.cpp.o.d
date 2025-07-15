@@ -1,11 +1,11 @@
 CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
- /home/amol/sqlite3/wavegen_v1/mainwindow.cpp /usr/include/stdc-predef.h \
- /home/amol/sqlite3/wavegen_v1/mainwindow.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
+ /home/prakash/sqlite3/wavegen_v1/mainwindow.cpp \
+ /usr/include/stdc-predef.h /home/prakash/sqlite3/wavegen_v1/mainwindow.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -31,23 +31,23 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qconfig.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtcore-config.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtconfigmacros.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qsystemdetection.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qprocessordetection.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcompilerdetection.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qconfig.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcore-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtconfigmacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsystemdetection.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocessordetection.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompilerdetection.h \
  /usr/include/c++/11/version \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qassert.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtclasshelpermacros.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtversion.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qassert.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtclasshelpermacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtversion.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h \
  /usr/include/c++/11/variant \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -75,27 +75,27 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/bits/predefined_ops.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/uses_allocator.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qsysinfo.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcompare_impl.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qatomic.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbasicatomic.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsysinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasicatomic.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qconstructormacros.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qforeach.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qttypetraits.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qfunctionpointer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qminmax.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qnumeric.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qconstructormacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qforeach.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qttypetraits.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfunctionpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qminmax.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnumeric.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -148,22 +148,22 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qoverload.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qswap.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qoverload.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qswap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h \
@@ -209,9 +209,9 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
@@ -224,16 +224,16 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/cstdlib /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qpair.h /usr/include/string.h \
- /usr/include/strings.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
  /usr/include/c++/11/cstring /usr/include/c++/11/iterator \
  /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
@@ -267,58 +267,58 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
  /usr/include/c++/11/stdlib.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringtokenizer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringtokenizer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -327,79 +327,79 @@ CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/amol/sqlite3/wavegen_v1/build_x86/WaveformGenerator_autogen/include/ui_mainwindow.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qinputmethod.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/amol/sqlite3/wavegen_v1/waveformwidget.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/amol/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/amol/sqlite3/wavegen_v1/waveformwidget.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/sqlite3/wavegen_v1/build_x86/WaveformGenerator_autogen/include/ui_mainwindow.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qinputmethod.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/sqlite3/wavegen_v1/waveformwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/sqlite3/wavegen_v1/waveformwidget.h

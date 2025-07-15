@@ -1,0 +1,4 @@
+/home/prakash/sqlite3/Qt6_Basics/QtWidgetsApp/build/CMakeFiles/QtWidgetsApp.dir
+/home/prakash/sqlite3/Qt6_Basics/QtWidgetsApp/build/CMakeFiles/edit_cache.dir
+/home/prakash/sqlite3/Qt6_Basics/QtWidgetsApp/build/CMakeFiles/rebuild_cache.dir
+/home/prakash/sqlite3/Qt6_Basics/QtWidgetsApp/build/CMakeFiles/QtWidgetsApp_autogen.dir

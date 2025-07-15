@@ -1,6 +1,6 @@
 #!/bin/bash
 
-QT_PATH="/home/amol/Qt/6.5.3/gcc_64"
+QT_PATH="/home/prakash/Qt/6.5.3/gcc_64"
 BUILD_DIR="build"
 
 rm -rf $BUILD_DIR

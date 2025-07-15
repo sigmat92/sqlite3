@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/amol/sqlite3/wavegen_v1/build_x86/WaveformGenerator_autogen/include -I/home/amol/sqlite3/wavegen_v1 -isystem /home/amol/Qt/6.5.3/gcc_64/include/QtCore -isystem /home/amol/Qt/6.5.3/gcc_64/include -isystem /home/amol/Qt/6.5.3/gcc_64/mkspecs/linux-g++ -isystem /home/amol/Qt/6.5.3/gcc_64/include/QtWidgets -isystem /home/amol/Qt/6.5.3/gcc_64/include/QtGui
+CXX_INCLUDES = -I/home/prakash/sqlite3/wavegen_v1/build_x86/WaveformGenerator_autogen/include -I/home/prakash/sqlite3/wavegen_v1 -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtCore -isystem /home/prakash/Qt/6.5.3/gcc_64/include -isystem /home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++ -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtGui
 
 CXX_FLAGS = -fPIC
 

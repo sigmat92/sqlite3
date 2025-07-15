@@ -1,4 +1,4 @@
-/home/amol/sqlite3/cutecom/build/CMakeFiles/cutecom-serial.dir
-/home/amol/sqlite3/cutecom/build/CMakeFiles/edit_cache.dir
-/home/amol/sqlite3/cutecom/build/CMakeFiles/rebuild_cache.dir
-/home/amol/sqlite3/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir
+/home/prakash/sqlite3/cutecom/build/CMakeFiles/cutecom-serial.dir
+/home/prakash/sqlite3/cutecom/build/CMakeFiles/edit_cache.dir
+/home/prakash/sqlite3/cutecom/build/CMakeFiles/rebuild_cache.dir
+/home/prakash/sqlite3/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir
