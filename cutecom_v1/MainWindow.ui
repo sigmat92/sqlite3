@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle"><string>CuteCom Serial Clone</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item><layout class="QHBoxLayout">
+      <item><widget class="QComboBox" name="portComboBox"/></item>
+      <item><widget class="QComboBox" name="baudRateBox"/></item>
+      <item><widget class="QCheckBox" name="autoSendCheck"><property name="text"><string>Auto Send</string></property></widget></item>
+      <item><widget class="QSpinBox" name="intervalSpin"/></item>
+    </layout></item>
+    <item><layout class="QHBoxLayout">
+      <item><widget class="QPushButton" name="connectButton"><property name="text"><string>Connect</string></property></widget></item>
+      <item><widget class="QPushButton" name="loadConfigButton"><property name="text"><string>Load Config</string></property></widget></item>
+      <item><widget class="QPushButton" name="saveConfigButton"><property name="text"><string>Save Config</string></property></widget></item>
+      <item><widget class="QPushButton" name="viewLogButton"><property name="text"><string>View Logs</string></property></widget></item>
+    </layout></item>
+    <item><widget class="QTextEdit" name="terminalText"/></item>
+    <item><layout class="QHBoxLayout">
+      <item><widget class="QLineEdit" name="sendEdit"/></item>
+      <item><widget class="QPushButton" name="sendButton"><property name="text"><string>Send</string></property></widget></item>
+    </layout></item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

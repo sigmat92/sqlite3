@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+db5b5a8102216d19dff4b3cf7da60aa2 CMakeFiles/cutecom-serial_autogen
