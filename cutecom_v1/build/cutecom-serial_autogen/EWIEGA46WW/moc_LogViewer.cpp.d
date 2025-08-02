@@ -1,5 +1,5 @@
-/home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/moc_LogViewer.cpp: /home/prakash/cutecom/LogViewer.h \
-  /home/prakash/cutecom/build/cutecom-serial_autogen/moc_predefs.h \
+/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/moc_LogViewer.cpp: /home/prakash/sqlite3/cutecom_v1/LogViewer.h \
+  /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \

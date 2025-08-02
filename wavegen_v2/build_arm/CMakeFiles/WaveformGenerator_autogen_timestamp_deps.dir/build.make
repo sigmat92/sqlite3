@@ -66,8 +66,8 @@ include CMakeFiles/WaveformGenerator_autogen_timestamp_deps.dir/compiler_depend.
 # Include the progress variables for this target.
 include CMakeFiles/WaveformGenerator_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Widgets.so.6.7.0
 CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
+CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Widgets.so.6.7.0
 CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
 CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Core.so.6.7.0
 CMakeFiles/WaveformGenerator_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Sql.so.6.7.0

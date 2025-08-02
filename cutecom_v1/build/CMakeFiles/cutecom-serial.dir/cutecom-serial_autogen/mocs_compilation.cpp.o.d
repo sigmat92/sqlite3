@@ -1,8 +1,8 @@
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: \
- /home/prakash/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/moc_ConfigManager.cpp \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/../../../ConfigManager.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/moc_ConfigManager.cpp \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/../../../ConfigManager.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
@@ -303,8 +303,8 @@ CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmochelpers.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/moc_LogViewer.cpp \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/../../../LogViewer.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/moc_LogViewer.cpp \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/../../../LogViewer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QDialog \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -364,15 +364,15 @@ CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/moc_Logger.cpp \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/../../../Logger.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/moc_Logger.cpp \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/../../../Logger.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/QSqlDatabase \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qsqldatabase.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsqlglobal.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsql-config.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsqlexports.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/moc_MainWindow.cpp \
- /home/prakash/cutecom/build/cutecom-serial_autogen/EWIEGA46WW/../../../MainWindow.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/moc_MainWindow.cpp \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/EWIEGA46WW/../../../MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \

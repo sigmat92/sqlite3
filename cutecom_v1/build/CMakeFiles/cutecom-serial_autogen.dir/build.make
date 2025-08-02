@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/cutecom
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/cutecom_v1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/cutecom/build
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/cutecom_v1/build
 
 # Utility rule file for cutecom-serial_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/cutecom-serial_autogen.dir/compiler_depend.make
 include CMakeFiles/cutecom-serial_autogen.dir/progress.make
 
 CMakeFiles/cutecom-serial_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target cutecom-serial"
-	/usr/bin/cmake -E cmake_autogen /home/prakash/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target cutecom-serial"
+	/usr/bin/cmake -E cmake_autogen /home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/cutecom-serial_autogen.dir/AutogenInfo.json ""
 
 cutecom-serial_autogen: CMakeFiles/cutecom-serial_autogen
 cutecom-serial_autogen: CMakeFiles/cutecom-serial_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/cutecom-serial_autogen.dir/clean:
 .PHONY : CMakeFiles/cutecom-serial_autogen.dir/clean
 
 CMakeFiles/cutecom-serial_autogen.dir/depend:
-	cd /home/prakash/cutecom/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/cutecom /home/prakash/cutecom /home/prakash/cutecom/build /home/prakash/cutecom/build /home/prakash/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/cutecom_v1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/cutecom_v1 /home/prakash/sqlite3/cutecom_v1 /home/prakash/sqlite3/cutecom_v1/build /home/prakash/sqlite3/cutecom_v1/build /home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/cutecom-serial_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cutecom-serial_autogen.dir/depend
 

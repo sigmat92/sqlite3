@@ -1,0 +1,1 @@
+/home/prakash/imx93_rotary_encoder_driver/rotary_encoder.o

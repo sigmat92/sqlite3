@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "WaveformGenerator_autogen/timestamp" "custom" "WaveformGenerator_autogen/deps"
   "/home/prakash/sqlite3/wavegen_v2/build/WaveformGenerator_autogen/mocs_compilation.cpp" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/WaveformGenerator_autogen/mocs_compilation.cpp.o.d"
   "/home/prakash/sqlite3/wavegen_v2/main.cpp" "CMakeFiles/WaveformGenerator.dir/main.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/main.cpp.o.d"
   "/home/prakash/sqlite3/wavegen_v2/mainwindow.cpp" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/mainwindow.cpp.o.d"
@@ -15,8 +16,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/wavegen_v2/waveformwidget.cpp" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o" "gcc" "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

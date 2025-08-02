@@ -1,0 +1,1 @@
+savedcmd_/home/prakash/imx93_rotary_encoder_driver/rotary_encoder.mod := printf '%s\n'   rotary_encoder.o | awk '!x[$$0]++ { print("/home/prakash/imx93_rotary_encoder_driver/"$$0) }' > /home/prakash/imx93_rotary_encoder_driver/rotary_encoder.mod

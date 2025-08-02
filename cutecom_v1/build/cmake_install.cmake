@@ -1,4 +1,4 @@
-# Install script for directory: /home/prakash/cutecom
+# Install script for directory: /home/prakash/sqlite3/cutecom_v1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/prakash/cutecom/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/prakash/sqlite3/cutecom_v1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

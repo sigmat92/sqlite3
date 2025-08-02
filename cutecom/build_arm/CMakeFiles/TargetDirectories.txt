@@ -1,0 +1,5 @@
+/home/prakash/sqlite3/cutecom/build_arm/CMakeFiles/cutecom-serial.dir
+/home/prakash/sqlite3/cutecom/build_arm/CMakeFiles/edit_cache.dir
+/home/prakash/sqlite3/cutecom/build_arm/CMakeFiles/rebuild_cache.dir
+/home/prakash/sqlite3/cutecom/build_arm/CMakeFiles/cutecom-serial_autogen_timestamp_deps.dir
+/home/prakash/sqlite3/cutecom/build_arm/CMakeFiles/cutecom-serial_autogen.dir

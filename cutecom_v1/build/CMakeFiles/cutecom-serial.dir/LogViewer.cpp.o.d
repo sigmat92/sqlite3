@@ -1,6 +1,6 @@
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o: \
- /home/prakash/cutecom/LogViewer.cpp /usr/include/stdc-predef.h \
- /home/prakash/cutecom/LogViewer.h \
+ /home/prakash/sqlite3/cutecom_v1/LogViewer.cpp \
+ /usr/include/stdc-predef.h /home/prakash/sqlite3/cutecom_v1/LogViewer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QDialog \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -355,7 +355,7 @@ CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/include/ui_LogViewer.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/include/ui_LogViewer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \

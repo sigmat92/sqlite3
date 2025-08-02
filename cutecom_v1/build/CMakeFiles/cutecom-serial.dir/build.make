@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/cutecom
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/cutecom_v1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/cutecom/build
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/cutecom_v1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cutecom-serial.dir/depend.make
@@ -72,86 +72,86 @@ include CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: cutecom-serial_autogen/mocs_compilation.cpp
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o -MF CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o -c /home/prakash/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o -MF CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.o -c /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/mocs_compilation.cpp
 
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp > CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/mocs_compilation.cpp > CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp -o CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/mocs_compilation.cpp -o CMakeFiles/cutecom-serial.dir/cutecom-serial_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/cutecom-serial.dir/main.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/main.cpp.o: ../main.cpp
 CMakeFiles/cutecom-serial.dir/main.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cutecom-serial.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/main.cpp.o -MF CMakeFiles/cutecom-serial.dir/main.cpp.o.d -o CMakeFiles/cutecom-serial.dir/main.cpp.o -c /home/prakash/cutecom/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cutecom-serial.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/main.cpp.o -MF CMakeFiles/cutecom-serial.dir/main.cpp.o.d -o CMakeFiles/cutecom-serial.dir/main.cpp.o -c /home/prakash/sqlite3/cutecom_v1/main.cpp
 
 CMakeFiles/cutecom-serial.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/main.cpp > CMakeFiles/cutecom-serial.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/main.cpp > CMakeFiles/cutecom-serial.dir/main.cpp.i
 
 CMakeFiles/cutecom-serial.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/main.cpp -o CMakeFiles/cutecom-serial.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/main.cpp -o CMakeFiles/cutecom-serial.dir/main.cpp.s
 
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: ../MainWindow.cpp
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o -MF CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o.d -o CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o -c /home/prakash/cutecom/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o -MF CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o.d -o CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o -c /home/prakash/sqlite3/cutecom_v1/MainWindow.cpp
 
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/MainWindow.cpp > CMakeFiles/cutecom-serial.dir/MainWindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/MainWindow.cpp > CMakeFiles/cutecom-serial.dir/MainWindow.cpp.i
 
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/MainWindow.cpp -o CMakeFiles/cutecom-serial.dir/MainWindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/MainWindow.cpp -o CMakeFiles/cutecom-serial.dir/MainWindow.cpp.s
 
 CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o: ../ConfigManager.cpp
 CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o -MF CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o.d -o CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o -c /home/prakash/cutecom/ConfigManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o -MF CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o.d -o CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.o -c /home/prakash/sqlite3/cutecom_v1/ConfigManager.cpp
 
 CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/ConfigManager.cpp > CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/ConfigManager.cpp > CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.i
 
 CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/ConfigManager.cpp -o CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/ConfigManager.cpp -o CMakeFiles/cutecom-serial.dir/ConfigManager.cpp.s
 
 CMakeFiles/cutecom-serial.dir/Logger.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/Logger.cpp.o: ../Logger.cpp
 CMakeFiles/cutecom-serial.dir/Logger.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cutecom-serial.dir/Logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/Logger.cpp.o -MF CMakeFiles/cutecom-serial.dir/Logger.cpp.o.d -o CMakeFiles/cutecom-serial.dir/Logger.cpp.o -c /home/prakash/cutecom/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cutecom-serial.dir/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/Logger.cpp.o -MF CMakeFiles/cutecom-serial.dir/Logger.cpp.o.d -o CMakeFiles/cutecom-serial.dir/Logger.cpp.o -c /home/prakash/sqlite3/cutecom_v1/Logger.cpp
 
 CMakeFiles/cutecom-serial.dir/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/Logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/Logger.cpp > CMakeFiles/cutecom-serial.dir/Logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/Logger.cpp > CMakeFiles/cutecom-serial.dir/Logger.cpp.i
 
 CMakeFiles/cutecom-serial.dir/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/Logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/Logger.cpp -o CMakeFiles/cutecom-serial.dir/Logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/Logger.cpp -o CMakeFiles/cutecom-serial.dir/Logger.cpp.s
 
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o: CMakeFiles/cutecom-serial.dir/flags.make
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o: ../LogViewer.cpp
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o: CMakeFiles/cutecom-serial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o -MF CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o.d -o CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o -c /home/prakash/cutecom/LogViewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o -MF CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o.d -o CMakeFiles/cutecom-serial.dir/LogViewer.cpp.o -c /home/prakash/sqlite3/cutecom_v1/LogViewer.cpp
 
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cutecom-serial.dir/LogViewer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/cutecom/LogViewer.cpp > CMakeFiles/cutecom-serial.dir/LogViewer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/cutecom_v1/LogViewer.cpp > CMakeFiles/cutecom-serial.dir/LogViewer.cpp.i
 
 CMakeFiles/cutecom-serial.dir/LogViewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cutecom-serial.dir/LogViewer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/cutecom/LogViewer.cpp -o CMakeFiles/cutecom-serial.dir/LogViewer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/cutecom_v1/LogViewer.cpp -o CMakeFiles/cutecom-serial.dir/LogViewer.cpp.s
 
 # Object files for target cutecom-serial
 cutecom__serial_OBJECTS = \
@@ -180,7 +180,7 @@ cutecom-serial: /usr/lib/x86_64-linux-gnu/libGLX.so
 cutecom-serial: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 cutecom-serial: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 cutecom-serial: CMakeFiles/cutecom-serial.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/cutecom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cutecom-serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cutecom-serial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cutecom-serial.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,6 +192,6 @@ CMakeFiles/cutecom-serial.dir/clean:
 .PHONY : CMakeFiles/cutecom-serial.dir/clean
 
 CMakeFiles/cutecom-serial.dir/depend:
-	cd /home/prakash/cutecom/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/cutecom /home/prakash/cutecom /home/prakash/cutecom/build /home/prakash/cutecom/build /home/prakash/cutecom/build/CMakeFiles/cutecom-serial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/cutecom_v1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/cutecom_v1 /home/prakash/sqlite3/cutecom_v1 /home/prakash/sqlite3/cutecom_v1/build /home/prakash/sqlite3/cutecom_v1/build /home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/cutecom-serial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cutecom-serial.dir/depend
 

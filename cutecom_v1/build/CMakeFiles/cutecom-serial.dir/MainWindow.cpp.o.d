@@ -1,6 +1,6 @@
 CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: \
- /home/prakash/cutecom/MainWindow.cpp /usr/include/stdc-predef.h \
- /home/prakash/cutecom/MainWindow.h \
+ /home/prakash/sqlite3/cutecom_v1/MainWindow.cpp \
+ /usr/include/stdc-predef.h /home/prakash/sqlite3/cutecom_v1/MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -361,7 +361,7 @@ CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSerialPort/qserialportglobal.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSerialPort/qtserialportexports.h \
- /home/prakash/cutecom/build/cutecom-serial_autogen/include/ui_MainWindow.h \
+ /home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/include/ui_MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
@@ -419,18 +419,18 @@ CMakeFiles/cutecom-serial.dir/MainWindow.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/cutecom/ConfigManager.h \
+ /home/prakash/sqlite3/cutecom_v1/ConfigManager.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/cutecom/Logger.h \
+ /home/prakash/sqlite3/cutecom_v1/Logger.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/QSqlDatabase \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qsqldatabase.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsqlglobal.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsql-config.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSql/qtsqlexports.h \
- /home/prakash/cutecom/LogViewer.h \
+ /home/prakash/sqlite3/cutecom_v1/LogViewer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QDialog \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtSerialPort/QSerialPortInfo \

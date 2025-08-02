@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/prakash/cutecom/build/cutecom-serial_autogen/include -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtCore -isystem /home/prakash/Qt/6.5.3/gcc_64/include -isystem /home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++ -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtGui -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtSerialPort -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtSql
+CXX_INCLUDES = -I/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/include -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtCore -isystem /home/prakash/Qt/6.5.3/gcc_64/include -isystem /home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++ -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtGui -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtSerialPort -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtSql
 
 CXX_FLAGS = -fPIC
 

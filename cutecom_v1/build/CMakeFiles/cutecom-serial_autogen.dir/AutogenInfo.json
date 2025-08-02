@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/home/prakash/cutecom/build/cutecom-serial_autogen",
-	"CMAKE_BINARY_DIR" : "/home/prakash/cutecom/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/cutecom/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/cutecom",
+	"BUILD_DIR" : "/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen",
+	"CMAKE_BINARY_DIR" : "/home/prakash/sqlite3/cutecom_v1/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/sqlite3/cutecom_v1/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/sqlite3/cutecom_v1",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/prakash/cutecom/CMakeLists.txt",
+		"/home/prakash/sqlite3/cutecom_v1/CMakeLists.txt",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in",
-		"/home/prakash/cutecom/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/3.22.1/CMakeSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeUnixFindMake.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake",
@@ -57,7 +57,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/cutecom/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
@@ -82,7 +82,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/cutecom/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -405,39 +405,39 @@
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/prakash/cutecom",
+	"CMAKE_SOURCE_DIR" : "/home/prakash/sqlite3/cutecom_v1",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/prakash/cutecom/ConfigManager.h",
+			"/home/prakash/sqlite3/cutecom_v1/ConfigManager.h",
 			"MU",
 			"EWIEGA46WW/moc_ConfigManager.cpp",
 			null
 		],
 		[
-			"/home/prakash/cutecom/LogViewer.h",
+			"/home/prakash/sqlite3/cutecom_v1/LogViewer.h",
 			"MU",
 			"EWIEGA46WW/moc_LogViewer.cpp",
 			null
 		],
 		[
-			"/home/prakash/cutecom/Logger.h",
+			"/home/prakash/sqlite3/cutecom_v1/Logger.h",
 			"MU",
 			"EWIEGA46WW/moc_Logger.cpp",
 			null
 		],
 		[
-			"/home/prakash/cutecom/MainWindow.h",
+			"/home/prakash/sqlite3/cutecom_v1/MainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/prakash/cutecom/build/cutecom-serial_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/prakash/cutecom/build/cutecom-serial_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -489,24 +489,24 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/prakash/cutecom/build/cutecom-serial_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/prakash/sqlite3/cutecom_v1/build/cutecom-serial_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/prakash/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/cutecom-serial_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/prakash/Qt/6.5.3/gcc_64/./libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/home/prakash/Qt/6.5.3/gcc_64/./libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "/home/prakash/cutecom/build/CMakeFiles/cutecom-serial_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/prakash/sqlite3/cutecom_v1/build/CMakeFiles/cutecom-serial_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/prakash/cutecom/ConfigManager.cpp", "MU", null ],
-		[ "/home/prakash/cutecom/LogViewer.cpp", "MU", null ],
-		[ "/home/prakash/cutecom/Logger.cpp", "MU", null ],
-		[ "/home/prakash/cutecom/MainWindow.cpp", "MU", null ],
-		[ "/home/prakash/cutecom/main.cpp", "MU", null ]
+		[ "/home/prakash/sqlite3/cutecom_v1/ConfigManager.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/cutecom_v1/LogViewer.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/cutecom_v1/Logger.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/cutecom_v1/MainWindow.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/cutecom_v1/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

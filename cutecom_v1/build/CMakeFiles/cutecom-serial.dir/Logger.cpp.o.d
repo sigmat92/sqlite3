@@ -1,6 +1,6 @@
 CMakeFiles/cutecom-serial.dir/Logger.cpp.o: \
- /home/prakash/cutecom/Logger.cpp /usr/include/stdc-predef.h \
- /home/prakash/cutecom/Logger.h \
+ /home/prakash/sqlite3/cutecom_v1/Logger.cpp /usr/include/stdc-predef.h \
+ /home/prakash/sqlite3/cutecom_v1/Logger.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \

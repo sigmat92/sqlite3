@@ -1,0 +1,1 @@
+savedcmd_/home/prakash/imx93_rotary_encoder_driver/rotary_encoder.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/prakash/imx93_rotary_encoder_driver/rotary_encoder.ko /home/prakash/imx93_rotary_encoder_driver/rotary_encoder.o /home/prakash/imx93_rotary_encoder_driver/rotary_encoder.mod.o

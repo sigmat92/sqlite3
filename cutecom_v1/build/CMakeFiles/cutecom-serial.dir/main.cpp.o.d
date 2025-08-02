@@ -1,5 +1,6 @@
-CMakeFiles/cutecom-serial.dir/main.cpp.o: /home/prakash/cutecom/main.cpp \
- /usr/include/stdc-predef.h /home/prakash/cutecom/MainWindow.h \
+CMakeFiles/cutecom-serial.dir/main.cpp.o: \
+ /home/prakash/sqlite3/cutecom_v1/main.cpp /usr/include/stdc-predef.h \
+ /home/prakash/sqlite3/cutecom_v1/MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
