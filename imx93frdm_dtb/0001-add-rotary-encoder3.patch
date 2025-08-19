@@ -1,0 +1,85 @@
+From 027061e318bb7d04d898b2238fa28d82f87093a9 Mon Sep 17 00:00:00 2001
+From: pdhrutaraj <pdhrutaraj@gmail.com>
+Date: Mon, 18 Aug 2025 15:35:46 +0530
+Subject: [PATCH] add-rotary-encoder3
+
+---
+ .../boot/dts/freescale/imx93-11x11-frdm.dts   | 47 ++++++++++++++++++-
+ 1 file changed, 46 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dts b/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dts
+index 2d09681c8e0c..01bbafb004fa 100644
+--- a/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dts
++++ b/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dts
+@@ -7,7 +7,7 @@
+ 
+ #include <dt-bindings/usb/pd.h>
+ #include "imx93.dtsi"
+-
++#include "imx93-pinfunc.h"
+ &ele_fw2 {
+ 	memory-region = <&ele_reserved>;
+ };
+@@ -19,7 +19,35 @@ / {
+ 	chosen {
+ 		stdout-path = &lpuart1;
+ 	};
++/*added*/
++rotary@0 {
++        compatible = "rotary-encoder";
++        pinctrl-names = "default";
++        pinctrl-0 = <&rotary_encoder_pins>;
++        gpios = <&gpio2 18 GPIO_ACTIVE_LOW>,   /* OUTA: P11-12 */
++                <&gpio2 22 GPIO_ACTIVE_LOW>;   /* OUTB: P11-15 */
++        linux,axis = <0>;
++        rotary-encoder,relative-axis;
++        rotary-encoder,rollover;
++        rotary-encoder,steps-per-period = <4>;
++        debounce-interval = <2>;
++        wakeup-source;
++    };
++
++    rotary_sw: rotary-sw {
++        compatible = "gpio-keys";
++        pinctrl-names = "default";
++        pinctrl-0 = <&rotary_sw_pins>;
++        status = "okay";
+ 
++        button {
++            label = "Rotary Switch";
++            gpios = <&gpio2 17 GPIO_ACTIVE_LOW>;  /* SW: P11-11 */
++            linux,code = <28>; /* KEY_ENTER */
++            debounce-interval = <10>;
++        };
++    };
++/*added*/
+ 	reserved-memory {
+ 		#address-cells = <2>;
+ 		#size-cells = <2>;
+@@ -680,6 +708,23 @@ &tpm4 {
+ };
+ 
+ &iomuxc {
++/*added*/
++
++    rotary_encoder_pins: rotary-encoder-pins {
++        fsl,pins = <
++            MX93_PAD_GPIO_IO18__GPIO2_IO18  0x31  /* OUTA (P11-12) */
++            MX93_PAD_GPIO_IO22__GPIO2_IO22  0x31  /* OUTB (P11-15) */
++              
++        >;
++    };
++
++    rotary_sw_pins: rotary-sw-pins {
++        fsl,pins = <
++		MX93_PAD_GPIO_IO17__GPIO2_IO17  0x31  /* SW (P11-11) */ 
++        >;
++    };
++
++/*added*/
+ 	pinctrl_eqos: eqosgrp {
+ 		fsl,pins = <
+ 			MX93_PAD_ENET1_MDC__ENET_QOS_MDC			0x57e
+-- 
+2.34.1
+
