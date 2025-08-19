@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+86fd9233d3a168385fbc08ecee978e5e CMakeFiles/rotary_qt_autogen
+86fd9233d3a168385fbc08ecee978e5e CMakeFiles/rotary_qt_autogen_timestamp_deps
+db8705fbff406a979fc4998b9e3802e0 rotary_qt_autogen/timestamp
