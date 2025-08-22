@@ -117,74 +117,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rotary_qt
+# Target rules for targets named RotaryTestApp
 
 # Build rule for target.
-rotary_qt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotary_qt
-.PHONY : rotary_qt
+RotaryTestApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RotaryTestApp
+.PHONY : RotaryTestApp
 
 # fast build rule for target.
-rotary_qt/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/build
-.PHONY : rotary_qt/fast
+RotaryTestApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/build
+.PHONY : RotaryTestApp/fast
 
 #=============================================================================
-# Target rules for targets named rotary_qt_autogen_timestamp_deps
+# Target rules for targets named RotaryTestApp_autogen_timestamp_deps
 
 # Build rule for target.
-rotary_qt_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotary_qt_autogen_timestamp_deps
-.PHONY : rotary_qt_autogen_timestamp_deps
+RotaryTestApp_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RotaryTestApp_autogen_timestamp_deps
+.PHONY : RotaryTestApp_autogen_timestamp_deps
 
 # fast build rule for target.
-rotary_qt_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/build.make CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/build
-.PHONY : rotary_qt_autogen_timestamp_deps/fast
+RotaryTestApp_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp_autogen_timestamp_deps.dir/build.make CMakeFiles/RotaryTestApp_autogen_timestamp_deps.dir/build
+.PHONY : RotaryTestApp_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named rotary_qt_autogen
+# Target rules for targets named RotaryTestApp_autogen
 
 # Build rule for target.
-rotary_qt_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotary_qt_autogen
-.PHONY : rotary_qt_autogen
+RotaryTestApp_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RotaryTestApp_autogen
+.PHONY : RotaryTestApp_autogen
 
 # fast build rule for target.
-rotary_qt_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt_autogen.dir/build.make CMakeFiles/rotary_qt_autogen.dir/build
-.PHONY : rotary_qt_autogen/fast
+RotaryTestApp_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp_autogen.dir/build.make CMakeFiles/RotaryTestApp_autogen.dir/build
+.PHONY : RotaryTestApp_autogen/fast
 
-MainWindow.o: MainWindow.cpp.o
-.PHONY : MainWindow.o
+RotaryTestApp_autogen/mocs_compilation.o: RotaryTestApp_autogen/mocs_compilation.cpp.o
+.PHONY : RotaryTestApp_autogen/mocs_compilation.o
 
 # target to build an object file
-MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/MainWindow.cpp.o
-.PHONY : MainWindow.cpp.o
+RotaryTestApp_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/RotaryTestApp_autogen/mocs_compilation.cpp.o
+.PHONY : RotaryTestApp_autogen/mocs_compilation.cpp.o
 
-MainWindow.i: MainWindow.cpp.i
-.PHONY : MainWindow.i
+RotaryTestApp_autogen/mocs_compilation.i: RotaryTestApp_autogen/mocs_compilation.cpp.i
+.PHONY : RotaryTestApp_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/MainWindow.cpp.i
-.PHONY : MainWindow.cpp.i
+RotaryTestApp_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/RotaryTestApp_autogen/mocs_compilation.cpp.i
+.PHONY : RotaryTestApp_autogen/mocs_compilation.cpp.i
 
-MainWindow.s: MainWindow.cpp.s
-.PHONY : MainWindow.s
+RotaryTestApp_autogen/mocs_compilation.s: RotaryTestApp_autogen/mocs_compilation.cpp.s
+.PHONY : RotaryTestApp_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/MainWindow.cpp.s
-.PHONY : MainWindow.cpp.s
+RotaryTestApp_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/RotaryTestApp_autogen/mocs_compilation.cpp.s
+.PHONY : RotaryTestApp_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -192,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -200,32 +200,56 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-rotary_qt_autogen/mocs_compilation.o: rotary_qt_autogen/mocs_compilation.cpp.o
-.PHONY : rotary_qt_autogen/mocs_compilation.o
+mainwindow.o: mainwindow.cpp.o
+.PHONY : mainwindow.o
 
 # target to build an object file
-rotary_qt_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o
-.PHONY : rotary_qt_autogen/mocs_compilation.cpp.o
+mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
 
-rotary_qt_autogen/mocs_compilation.i: rotary_qt_autogen/mocs_compilation.cpp.i
-.PHONY : rotary_qt_autogen/mocs_compilation.i
+mainwindow.i: mainwindow.cpp.i
+.PHONY : mainwindow.i
 
 # target to preprocess a source file
-rotary_qt_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.i
-.PHONY : rotary_qt_autogen/mocs_compilation.cpp.i
+mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
 
-rotary_qt_autogen/mocs_compilation.s: rotary_qt_autogen/mocs_compilation.cpp.s
-.PHONY : rotary_qt_autogen/mocs_compilation.s
+mainwindow.s: mainwindow.cpp.s
+.PHONY : mainwindow.s
 
 # target to generate assembly for a file
-rotary_qt_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rotary_qt.dir/build.make CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.s
-.PHONY : rotary_qt_autogen/mocs_compilation.cpp.s
+mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+rotaryhandler.o: rotaryhandler.cpp.o
+.PHONY : rotaryhandler.o
+
+# target to build an object file
+rotaryhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/rotaryhandler.cpp.o
+.PHONY : rotaryhandler.cpp.o
+
+rotaryhandler.i: rotaryhandler.cpp.i
+.PHONY : rotaryhandler.i
+
+# target to preprocess a source file
+rotaryhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/rotaryhandler.cpp.i
+.PHONY : rotaryhandler.cpp.i
+
+rotaryhandler.s: rotaryhandler.cpp.s
+.PHONY : rotaryhandler.s
+
+# target to generate assembly for a file
+rotaryhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RotaryTestApp.dir/build.make CMakeFiles/RotaryTestApp.dir/rotaryhandler.cpp.s
+.PHONY : rotaryhandler.cpp.s
 
 # Help Target
 help:
@@ -235,18 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rotary_qt_autogen"
-	@echo "... rotary_qt_autogen_timestamp_deps"
-	@echo "... rotary_qt"
-	@echo "... MainWindow.o"
-	@echo "... MainWindow.i"
-	@echo "... MainWindow.s"
+	@echo "... RotaryTestApp_autogen"
+	@echo "... RotaryTestApp_autogen_timestamp_deps"
+	@echo "... RotaryTestApp"
+	@echo "... RotaryTestApp_autogen/mocs_compilation.o"
+	@echo "... RotaryTestApp_autogen/mocs_compilation.i"
+	@echo "... RotaryTestApp_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... rotary_qt_autogen/mocs_compilation.o"
-	@echo "... rotary_qt_autogen/mocs_compilation.i"
-	@echo "... rotary_qt_autogen/mocs_compilation.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... rotaryhandler.o"
+	@echo "... rotaryhandler.i"
+	@echo "... rotaryhandler.s"
 .PHONY : help
 
 

@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-64f5b014ad4afbd13882cf5b88bb388b CMakeFiles/rotary_qt_autogen

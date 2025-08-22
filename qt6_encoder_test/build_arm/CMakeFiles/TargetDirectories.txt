@@ -1,5 +1,5 @@
-/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt.dir
+/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/RotaryTestApp.dir
 /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/edit_cache.dir
 /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rebuild_cache.dir
-/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen_timestamp_deps.dir
-/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir
+/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/RotaryTestApp_autogen_timestamp_deps.dir
+/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/RotaryTestApp_autogen.dir

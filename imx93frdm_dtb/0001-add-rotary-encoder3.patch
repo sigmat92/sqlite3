@@ -29,12 +29,12 @@ index 2d09681c8e0c..01bbafb004fa 100644
 +        compatible = "rotary-encoder";
 +        pinctrl-names = "default";
 +        pinctrl-0 = <&rotary_encoder_pins>;
-+        gpios = <&gpio2 18 GPIO_ACTIVE_LOW>,   /* OUTA: P11-12 */
-+                <&gpio2 22 GPIO_ACTIVE_LOW>;   /* OUTB: P11-15 */
++        gpios = <&gpio2 22 GPIO_ACTIVE_LOW>,   /* OUTA: P11-15 */
++                <&gpio2 18 GPIO_ACTIVE_LOW>;   /* OUTB: P11-12 */
 +        linux,axis = <0>;
 +        rotary-encoder,relative-axis;
 +        rotary-encoder,rollover;
-+        rotary-encoder,steps-per-period = <4>;
++        rotary-encoder,steps-per-period = <2>;
 +        debounce-interval = <2>;
 +        wakeup-source;
 +    };

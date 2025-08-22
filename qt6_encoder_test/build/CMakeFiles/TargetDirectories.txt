@@ -1,4 +1,0 @@
-/home/prakash/qt6_encoder_test/build/CMakeFiles/rotary_qt.dir
-/home/prakash/qt6_encoder_test/build/CMakeFiles/edit_cache.dir
-/home/prakash/qt6_encoder_test/build/CMakeFiles/rebuild_cache.dir
-/home/prakash/qt6_encoder_test/build/CMakeFiles/rotary_qt_autogen.dir
