@@ -1,7 +1,7 @@
 CMakeFiles/rotary_qt.dir/MainWindow.cpp.o: \
- /home/prakash/qt6_encoder_test/MainWindow.cpp \
+ /home/prakash/sqlite3/qt6_encoder_test/MainWindow.cpp \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
- /home/prakash/qt6_encoder_test/MainWindow.h \
+ /home/prakash/sqlite3/qt6_encoder_test/MainWindow.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \

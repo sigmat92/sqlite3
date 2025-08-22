@@ -1,5 +1,5 @@
-/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp: /home/prakash/qt6_encoder_test/MainWindow.h \
-  /home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/moc_predefs.h \
+/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp: /home/prakash/sqlite3/qt6_encoder_test/MainWindow.h \
+  /home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/moc_predefs.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QThread \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20memory.h \

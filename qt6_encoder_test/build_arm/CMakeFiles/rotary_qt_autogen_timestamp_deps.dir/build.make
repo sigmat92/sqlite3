@@ -53,10 +53,10 @@ RM = /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/qt6_encoder_test
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/qt6_encoder_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/qt6_encoder_test/build_arm
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/qt6_encoder_test/build_arm
 
 # Utility rule file for rotary_qt_autogen_timestamp_deps.
 
@@ -66,8 +66,8 @@ include CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/rotary_qt_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 CMakeFiles/rotary_qt_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Widgets.so.6.7.0
+CMakeFiles/rotary_qt_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 CMakeFiles/rotary_qt_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
 
 rotary_qt_autogen_timestamp_deps: CMakeFiles/rotary_qt_autogen_timestamp_deps
@@ -83,6 +83,6 @@ CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/depend:
-	cd /home/prakash/qt6_encoder_test/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/qt6_encoder_test /home/prakash/qt6_encoder_test /home/prakash/qt6_encoder_test/build_arm /home/prakash/qt6_encoder_test/build_arm /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/prakash/sqlite3/qt6_encoder_test/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/qt6_encoder_test /home/prakash/sqlite3/qt6_encoder_test /home/prakash/sqlite3/qt6_encoder_test/build_arm /home/prakash/sqlite3/qt6_encoder_test/build_arm /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/rotary_qt_autogen_timestamp_deps.dir/depend
 

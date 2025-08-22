@@ -53,10 +53,10 @@ RM = /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/qt6_encoder_test
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/qt6_encoder_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/qt6_encoder_test/build_arm
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/qt6_encoder_test/build_arm
 
 # Utility rule file for rotary_qt_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/rotary_qt_autogen: rotary_qt_autogen/timestamp
 rotary_qt_autogen/timestamp: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
 rotary_qt_autogen/timestamp: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 rotary_qt_autogen/timestamp: CMakeFiles/rotary_qt_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/prakash/qt6_encoder_test/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target rotary_qt"
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_autogen /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/AutogenInfo.json ""
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E touch /home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target rotary_qt"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_autogen /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/AutogenInfo.json ""
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E touch /home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/timestamp
 
 rotary_qt_autogen: CMakeFiles/rotary_qt_autogen
 rotary_qt_autogen: rotary_qt_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/rotary_qt_autogen.dir/clean:
 .PHONY : CMakeFiles/rotary_qt_autogen.dir/clean
 
 CMakeFiles/rotary_qt_autogen.dir/depend:
-	cd /home/prakash/qt6_encoder_test/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/qt6_encoder_test /home/prakash/qt6_encoder_test /home/prakash/qt6_encoder_test/build_arm /home/prakash/qt6_encoder_test/build_arm /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/prakash/sqlite3/qt6_encoder_test/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/qt6_encoder_test /home/prakash/sqlite3/qt6_encoder_test /home/prakash/sqlite3/qt6_encoder_test/build_arm /home/prakash/sqlite3/qt6_encoder_test/build_arm /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/rotary_qt_autogen.dir/depend
 

@@ -1,8 +1,8 @@
 CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o: \
- /home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp \
+ /home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
- /home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp \
- /home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/../../../MainWindow.h \
+ /home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp \
+ /home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/EWIEGA46WW/../../../MainWindow.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \

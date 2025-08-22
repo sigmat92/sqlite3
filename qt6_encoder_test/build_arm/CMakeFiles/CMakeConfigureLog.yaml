@@ -29,7 +29,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -40,8 +40,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ"
-      binary: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ"
+      source: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5"
+      binary: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -51,13 +51,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ'
+        Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5'
         
-        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b52f7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b52f7.dir/build.make CMakeFiles/cmTC_b52f7.dir/build
-        gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ'
-        Building CXX object CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -c /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce3d8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce3d8.dir/build.make CMakeFiles/cmTC_ce3d8.dir/build
+        gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5'
+        Building CXX object CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -c /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
         Target: aarch64-poky-linux
@@ -65,9 +65,9 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.3.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b52f7.dir/'
-         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b52f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
-         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o
+        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ce3d8.dir/'
+         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce3d8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |
+         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o
         GNU assembler version 2.42.0 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.42.0.20240716
         GNU C++17 (GCC) version 13.3.0 (aarch64-poky-linux)
         	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
@@ -87,10 +87,10 @@ events:
         Compiler executable checksum: cc0ee1c094a16eb85c0e08436ee881ec
         COMPILER_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
         LIBRARY_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/
-        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b52f7
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b52f7.dir/link.txt --verbose=1
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b52f7 
+        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_ce3d8
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3d8.dir/link.txt --verbose=1
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3d8 
         Using built-in specs.
         COLLECT_GCC=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
         COLLECT_LTO_WRAPPER=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper
@@ -101,10 +101,10 @@ events:
         gcc version 13.3.0 (GCC) 
         COMPILER_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
         LIBRARY_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/
-        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_b52f7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b52f7.'
-         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/collect2 -plugin /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3a95if.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_b52f7 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtendS.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crtn.o
-        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_b52f7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b52f7.'
-        gmake[1]: Leaving directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ'
+        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_ce3d8' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ce3d8.'
+         /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/collect2 -plugin /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciQLdHv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_ce3d8 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtendS.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_ce3d8' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ce3d8.'
+        gmake[1]: Leaving directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5'
         
       exitCode: 0
   -
@@ -144,13 +144,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ']
+        ignore line: [Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b52f7/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b52f7.dir/build.make CMakeFiles/cmTC_b52f7.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-zIg0fZ']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -c /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce3d8/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ce3d8.dir/build.make CMakeFiles/cmTC_ce3d8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8Mwkx5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types     -v -o CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -c /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
         ignore line: [Target: aarch64-poky-linux]
@@ -158,9 +158,9 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.3.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b52f7.dir/']
-        ignore line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b52f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
-        ignore line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ce3d8.dir/']
+        ignore line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/cc1plus -quiet -v -isysroot /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ce3d8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=armv8-a+crc+crypto -mbranch-protection=standard -mlittle-endian -mabi=lp64 -g -O2 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fstack-protector-strong -feliminate-unused-debug-types -o - |]
+        ignore line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/as -v --gdwarf-5 -EL -march=armv8-a+crc+crypto -mabi=lp64 -o CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o]
         ignore line: [GNU assembler version 2.42.0 (aarch64-poky-linux) using BFD version (GNU Binutils) 2.42.0.20240716]
         ignore line: [GNU C++17 (GCC) version 13.3.0 (aarch64-poky-linux)]
         ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
@@ -180,10 +180,10 @@ events:
         ignore line: [Compiler executable checksum: cc0ee1c094a16eb85c0e08436ee881ec]
         ignore line: [COMPILER_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
         ignore line: [LIBRARY_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b52f7]
-        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b52f7.dir/link.txt --verbose=1]
-        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now -v CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b52f7 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_ce3d8]
+        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3d8.dir/link.txt --verbose=1]
+        ignore line: [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl -O1 -Wl --hash-style=gnu -Wl --as-needed  -Wl -z relro -z now -v CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3d8 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper]
@@ -194,13 +194,13 @@ events:
         ignore line: [gcc version 13.3.0 (GCC) ]
         ignore line: [COMPILER_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
         ignore line: [LIBRARY_PATH=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0/:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_b52f7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b52f7.']
-        link line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/collect2 -plugin /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3a95if.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_b52f7 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtendS.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=armv8-a+crc+crypto' '-mbranch-protection=standard' '-fstack-protector-strong' '-O2' '-D' '_FORTIFY_SOURCE=2' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '--sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-o' 'cmTC_ce3d8' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_ce3d8.']
+        link line: [ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/collect2 -plugin /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/liblto_plugin.so -plugin-opt=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cciQLdHv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_ce3d8 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/aarch64-poky-linux/13.3.0 -L/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed -z relro -z now CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtendS.o /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crtn.o]
           arg [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc3a95if.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cciQLdHv.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -217,7 +217,7 @@ events:
           arg [-maarch64linux] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b52f7] ==> ignore
+          arg [cmTC_ce3d8] ==> ignore
           arg [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o] ==> obj [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/Scrt1.o]
           arg [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o] ==> obj [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/crti.o]
           arg [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o] ==> obj [/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/lib/aarch64-poky-linux/13.3.0/crtbeginS.o]
@@ -231,7 +231,7 @@ events:
           arg [--as-needed] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-znow] ==> ignore
-          arg [CMakeFiles/cmTC_b52f7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_ce3d8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -267,8 +267,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS"
-      binary: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS"
+      source: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9"
+      binary: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -279,17 +279,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS'
+        Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9'
         
-        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4bcb7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_4bcb7.dir/build.make CMakeFiles/cmTC_4bcb7.dir/build
-        gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS'
-        Building CXX object CMakeFiles/cmTC_4bcb7.dir/src.cxx.o
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_4bcb7.dir/src.cxx.o -c /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS/src.cxx
-        Linking CXX executable cmTC_4bcb7
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bcb7.dir/link.txt --verbose=1
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_4bcb7.dir/src.cxx.o -o cmTC_4bcb7 
-        gmake[1]: Leaving directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-QV6SxS'
+        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_794ac/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_794ac.dir/build.make CMakeFiles/cmTC_794ac.dir/build
+        gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9'
+        Building CXX object CMakeFiles/cmTC_794ac.dir/src.cxx.o
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_794ac.dir/src.cxx.o -c /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9/src.cxx
+        Linking CXX executable cmTC_794ac
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_794ac.dir/link.txt --verbose=1
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_794ac.dir/src.cxx.o -o cmTC_794ac 
+        gmake[1]: Leaving directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-mx0ph9'
         
       exitCode: 0
   -
@@ -311,8 +311,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD"
-      binary: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD"
+      source: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu"
+      binary: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -323,17 +323,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD'
+        Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu'
         
-        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fad5e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_fad5e.dir/build.make CMakeFiles/cmTC_fad5e.dir/build
-        gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD'
-        Building CXX object CMakeFiles/cmTC_fad5e.dir/src.cxx.o
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_STDATOMIC  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_fad5e.dir/src.cxx.o -c /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD/src.cxx
-        Linking CXX executable cmTC_fad5e
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fad5e.dir/link.txt --verbose=1
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_fad5e.dir/src.cxx.o -o cmTC_fad5e 
-        gmake[1]: Leaving directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-Z9eRiD'
+        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8515b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8515b.dir/build.make CMakeFiles/cmTC_8515b.dir/build
+        gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu'
+        Building CXX object CMakeFiles/cmTC_8515b.dir/src.cxx.o
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_STDATOMIC  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_8515b.dir/src.cxx.o -c /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu/src.cxx
+        Linking CXX executable cmTC_8515b
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8515b.dir/link.txt --verbose=1
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_8515b.dir/src.cxx.o -o cmTC_8515b 
+        gmake[1]: Leaving directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-omfPHu'
         
       exitCode: 0
   -
@@ -356,8 +356,8 @@ events:
     checks:
       - "Performing Test HAVE_EGL"
     directories:
-      source: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH"
-      binary: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH"
+      source: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz"
+      binary: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -368,17 +368,17 @@ events:
       variable: "HAVE_EGL"
       cached: true
       stdout: |
-        Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH'
+        Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz'
         
-        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8bd2e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8bd2e.dir/build.make CMakeFiles/cmTC_8bd2e.dir/build
-        gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH'
-        Building CXX object CMakeFiles/cmTC_8bd2e.dir/src.cxx.o
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_EGL  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_8bd2e.dir/src.cxx.o -c /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH/src.cxx
-        Linking CXX executable cmTC_8bd2e
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bd2e.dir/link.txt --verbose=1
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_8bd2e.dir/src.cxx.o -o cmTC_8bd2e  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libEGL.so 
-        gmake[1]: Leaving directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-TqRODH'
+        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_02a32/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_02a32.dir/build.make CMakeFiles/cmTC_02a32.dir/build
+        gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz'
+        Building CXX object CMakeFiles/cmTC_02a32.dir/src.cxx.o
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_EGL  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_02a32.dir/src.cxx.o -c /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz/src.cxx
+        Linking CXX executable cmTC_02a32
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02a32.dir/link.txt --verbose=1
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_02a32.dir/src.cxx.o -o cmTC_02a32  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libEGL.so 
+        gmake[1]: Leaving directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-I4DThz'
         
       exitCode: 0
   -
@@ -400,8 +400,8 @@ events:
     checks:
       - "Performing Test HAVE_GLESv2"
     directories:
-      source: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW"
-      binary: "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW"
+      source: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC"
+      binary: "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O2 -pipe -g -feliminate-unused-debug-types "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -412,17 +412,17 @@ events:
       variable: "HAVE_GLESv2"
       cached: true
       stdout: |
-        Change Dir: '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW'
+        Change Dir: '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC'
         
-        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5706d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_5706d.dir/build.make CMakeFiles/cmTC_5706d.dir/build
-        gmake[1]: Entering directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW'
-        Building CXX object CMakeFiles/cmTC_5706d.dir/src.cxx.o
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_GLESv2  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_5706d.dir/src.cxx.o -c /home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW/src.cxx
-        Linking CXX executable cmTC_5706d
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5706d.dir/link.txt --verbose=1
-        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_5706d.dir/src.cxx.o -o cmTC_5706d  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libGLESv2.so /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libEGL.so 
-        gmake[1]: Leaving directory '/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-8D82aW'
+        Run Build Command(s): /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04d85/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04d85.dir/build.make CMakeFiles/cmTC_04d85.dir/build
+        gmake[1]: Entering directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC'
+        Building CXX object CMakeFiles/cmTC_04d85.dir/src.cxx.o
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux -DHAVE_GLESv2  -O2 -pipe -g -feliminate-unused-debug-types   -std=gnu++17 -o CMakeFiles/cmTC_04d85.dir/src.cxx.o -c /home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC/src.cxx
+        Linking CXX executable cmTC_04d85
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04d85.dir/link.txt --verbose=1
+        /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -Wl,-z,relro,-z,now  CMakeFiles/cmTC_04d85.dir/src.cxx.o -o cmTC_04d85  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libGLESv2.so /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libEGL.so 
+        gmake[1]: Leaving directory '/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/CMakeScratch/TryCompile-pV5ujC'
         
       exitCode: 0
 ...

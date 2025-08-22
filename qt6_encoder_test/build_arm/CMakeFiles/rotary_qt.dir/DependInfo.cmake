@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "rotary_qt_autogen/timestamp" "custom" "rotary_qt_autogen/deps"
-  "/home/prakash/qt6_encoder_test/MainWindow.cpp" "CMakeFiles/rotary_qt.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/MainWindow.cpp.o.d"
-  "/home/prakash/qt6_encoder_test/main.cpp" "CMakeFiles/rotary_qt.dir/main.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/main.cpp.o.d"
-  "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp" "CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o.d"
+  "/home/prakash/sqlite3/qt6_encoder_test/MainWindow.cpp" "CMakeFiles/rotary_qt.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/MainWindow.cpp.o.d"
+  "/home/prakash/sqlite3/qt6_encoder_test/main.cpp" "CMakeFiles/rotary_qt.dir/main.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/main.cpp.o.d"
+  "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp" "CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/rotary_qt.dir/rotary_qt_autogen/mocs_compilation.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -38,10 +38,15 @@ MainWindow::MainWindow(QWidget *parent)
     layout->addWidget(buttonLabel);
     setCentralWidget(widget);
 
-    worker = new InputWorker("/dev/input/event8", this); // rotary device
+    //worker = new InputWorker("/dev/input/event8", this); // rotary device
+    /*Instead of relying on /dev/input/eventX, use persistent names: ls -l /dev/input/by-path/ You’ll see stable symlinks like:
+	platform-rotary@0-event -> ../event8
+	platform-rotary-sw-event -> ../event3*/
+    worker = new InputWorker("/dev/input/by-path/platform-rotary@0-event", this);
     connect(worker, &InputWorker::rotaryTurned, this, &MainWindow::onRotaryTurned);
 
-    InputWorker *btnWorker = new InputWorker("/dev/input/event3", this); // switch device
+    //InputWorker *btnWorker = new InputWorker("/dev/input/event3", this); // switch device
+    InputWorker *btnWorker = new InputWorker("/dev/input/by-path/platform-rotary-sw-event", this);
     connect(btnWorker, &InputWorker::buttonPressed, this, &MainWindow::onButtonPressed);
 
     worker->start();

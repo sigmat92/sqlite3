@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen",
-	"CMAKE_BINARY_DIR" : "/home/prakash/qt6_encoder_test/build_arm",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/qt6_encoder_test/build_arm",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/qt6_encoder_test",
+	"BUILD_DIR" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen",
+	"CMAKE_BINARY_DIR" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/sqlite3/qt6_encoder_test",
 	"CMAKE_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/prakash/qt6_encoder_test/CMakeLists.txt",
+		"/home/prakash/sqlite3/qt6_encoder_test/CMakeLists.txt",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in",
-		"/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeSystem.cmake",
+		"/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake",
@@ -67,7 +67,7 @@
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
@@ -92,7 +92,7 @@
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6Config.cmake",
@@ -386,21 +386,21 @@
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/prakash/qt6_encoder_test",
-	"DEP_FILE" : "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/home/prakash/sqlite3/qt6_encoder_test",
+	"DEP_FILE" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "rotary_qt_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/prakash/qt6_encoder_test/MainWindow.h",
+			"/home/prakash/sqlite3/qt6_encoder_test/MainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -452,21 +452,21 @@
 		"-c",
 		"/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/prakash/qt6_encoder_test/build_arm/rotary_qt_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/rotary_qt_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 7,
-	"SETTINGS_FILE" : "/home/prakash/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/prakash/sqlite3/qt6_encoder_test/build_arm/CMakeFiles/rotary_qt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/prakash/qt6_encoder_test/MainWindow.cpp", "MU", null ],
-		[ "/home/prakash/qt6_encoder_test/main.cpp", "MU", null ]
+		[ "/home/prakash/sqlite3/qt6_encoder_test/MainWindow.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/qt6_encoder_test/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

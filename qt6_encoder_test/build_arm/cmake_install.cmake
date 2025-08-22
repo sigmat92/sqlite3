@@ -1,4 +1,4 @@
-# Install script for directory: /home/prakash/qt6_encoder_test
+# Install script for directory: /home/prakash/sqlite3/qt6_encoder_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/prakash/qt6_encoder_test/build_arm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/prakash/sqlite3/qt6_encoder_test/build_arm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
