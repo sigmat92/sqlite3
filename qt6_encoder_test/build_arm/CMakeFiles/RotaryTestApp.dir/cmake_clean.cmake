@@ -12,8 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/RotaryTestApp.dir/rotaryhandler.cpp.o.d"
   "RotaryTestApp"
   "RotaryTestApp.pdb"
-  "RotaryTestApp_autogen/mocs_compilation.cpp"
-  "RotaryTestApp_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

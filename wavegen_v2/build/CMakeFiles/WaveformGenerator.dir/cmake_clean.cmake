@@ -14,8 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/WaveformGenerator.dir/waveformwidget.cpp.o.d"
   "WaveformGenerator"
   "WaveformGenerator.pdb"
-  "WaveformGenerator_autogen/mocs_compilation.cpp"
-  "WaveformGenerator_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,1 @@
-savedcmd_/home/prakash/imx93_rotary_encoder_driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/prakash/imx93_rotary_encoder_driver/Module.symvers -T /home/prakash/imx93_rotary_encoder_driver/modules.order -i Module.symvers -e 
+cmd_/home/forlinx/sqlite3/imx93_rotary_encoder_driver/Module.symvers :=  sed 's/ko$$/o/'  /home/forlinx/sqlite3/imx93_rotary_encoder_driver/modules.order | scripts/mod/modpost -m     -o /home/forlinx/sqlite3/imx93_rotary_encoder_driver/Module.symvers -n -e -i Module.symvers -T - 

@@ -1,1 +1,0 @@
-set(__QT_DEPLOY_TARGET_RotaryTestApp_FILE /home/prakash/sqlite3/qt6_encoder_test/build_arm/RotaryTestApp)

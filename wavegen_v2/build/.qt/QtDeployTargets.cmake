@@ -1,1 +1,0 @@
-set(__QT_DEPLOY_TARGET_WaveformGenerator_FILE /home/prakash/sqlite3/wavegen_v2/build/WaveformGenerator)

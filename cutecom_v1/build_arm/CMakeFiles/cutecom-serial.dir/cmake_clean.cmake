@@ -16,8 +16,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/cutecom-serial.dir/main.cpp.o.d"
   "cutecom-serial"
   "cutecom-serial.pdb"
-  "cutecom-serial_autogen/mocs_compilation.cpp"
-  "cutecom-serial_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

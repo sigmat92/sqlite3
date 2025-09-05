@@ -1,1 +1,1 @@
-savedcmd_/home/prakash/imx93_rotary_encoder_driver/modules.order := {   echo /home/prakash/imx93_rotary_encoder_driver/rotary_encoder.o; :; } > /home/prakash/imx93_rotary_encoder_driver/modules.order
+cmd_/home/forlinx/sqlite3/imx93_rotary_encoder_driver/modules.order := {   echo /home/forlinx/sqlite3/imx93_rotary_encoder_driver/rotary_encoder.ko; :; } > /home/forlinx/sqlite3/imx93_rotary_encoder_driver/modules.order

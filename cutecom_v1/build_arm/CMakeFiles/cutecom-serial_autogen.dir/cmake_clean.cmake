@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "cutecom-serial_autogen/include/ui_LogViewer.h"
   "cutecom-serial_autogen/include/ui_MainWindow.h"
   "cutecom-serial_autogen/mocs_compilation.cpp"
-  "cutecom-serial_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

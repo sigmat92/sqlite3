@@ -1,0 +1,3 @@
+/home/forlinx/sqlite3/Qt6_Basics/test/build_arm/CMakeFiles/test_app.dir
+/home/forlinx/sqlite3/Qt6_Basics/test/build_arm/CMakeFiles/edit_cache.dir
+/home/forlinx/sqlite3/Qt6_Basics/test/build_arm/CMakeFiles/rebuild_cache.dir
