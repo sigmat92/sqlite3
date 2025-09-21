@@ -41,7 +41,7 @@ CMAKE_CXX_COMPILER_ARG1:STRING=  -march=armv8-a+crc+crypto -mbranch-protection=s
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc-ranlib
 
-CMAKE_CXX_FLAGS:STRING=
+CMAKE_CXX_FLAGS:STRING=' -O2 -pipe -g -feliminate-unused-debug-types '
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -69,7 +69,7 @@ CMAKE_C_COMPILER_ARG1:STRING=  -march=armv8-a+crc+crypto -mbranch-protection=sta
 // for the GCC compiler
 CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc-ranlib
 
-CMAKE_C_FLAGS:STRING=
+CMAKE_C_FLAGS:STRING=' -O2 -pipe -g -feliminate-unused-debug-types '
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g

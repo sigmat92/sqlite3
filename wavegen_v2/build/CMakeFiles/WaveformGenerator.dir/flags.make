@@ -6,5 +6,5 @@ CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS
 
 CXX_INCLUDES = -I/home/forlinx/sqlite3/wavegen_v2/build/WaveformGenerator_autogen/include -I/home/forlinx/sqlite3/wavegen_v2 -isystem /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore -isystem /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/mkspecs/linux-g++ -isystem /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets -isystem /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui -isystem /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtSql
 
-CXX_FLAGS =  -O2 -pipe -g -feliminate-unused-debug-types  -std=gnu++17
+CXX_FLAGS = -std=gnu++17
 

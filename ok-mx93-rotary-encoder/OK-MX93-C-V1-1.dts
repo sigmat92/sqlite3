@@ -13,7 +13,7 @@
 };
 
 / {
-	model = "NXP i.MX93 11X11 EVK board";
+	model = "Forlinx OK-MX93-C board";
 	compatible = "fsl,imx93-11x11-evk", "fsl,imx93";
 
 	chosen {
@@ -48,10 +48,7 @@ rotary@0 {
         };
     };
 /*added*/
-/*	memory@80000000 {
-		device_type = "memory";
-		reg = <0x00000000 0x80000000 0x00000000 0x40000000>;
-	};*/
+
 	forlinx_control {
 		//forlinx control display panel
 		//"rgb1024x600" : rgb interface output 1024*600 image
@@ -73,16 +70,16 @@ rotary@0 {
 		linux,cma {
 			compatible = "shared-dma-pool";
 			reusable;
-			alloc-ranges = <0 0x80000000 0 0x40000000>;
+			alloc-ranges = <0 0x80000000 0 0x25000000>;
 			size = <0 0x10000000>;
 			linux,cma-default;
 		};
 
-/*		ethosu_mem: ethosu_region@C0000000 {
+		ethosu_mem: ethosu_region@a5000000 {
 			compatible = "shared-dma-pool";
 			reusable;
-			reg = <0x0 0xC0000000 0x0 0x10000000>;
-		};*/
+			reg = <0x0 0xa5000000 0x0 0x10000000>;
+		};
 
 		vdev0vring0: vdev0vring0@a4000000 {
 			reg = <0 0xa4000000 0 0x8000>;
@@ -122,6 +119,40 @@ rotary@0 {
 		};
 	};
 
+	leds {
+		compatible = "gpio-leds";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_gpio_led>;
+
+		led-0 {
+			label = "heartbeat";
+			linux,default-trigger = "heartbeat";
+			gpios = <&gpio4 29 GPIO_ACTIVE_HIGH>;
+			default-state = "off";
+		};
+
+		led-1 {
+			label = "led1";
+			linux,default-trigger = "timer";
+			/*gpios = <&gpio3 26 GPIO_ACTIVE_HIGH>;*/
+			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
+			default-state = "on";
+		};
+	};
+
+	keys {
+		compatible = "gpio-keys";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_gpio_key>;
+		
+		key1 {
+			label = "key1";
+			linux,code = <103>;
+			debounce-interval = <20>;
+			gpios = <&gpio3 27 GPIO_ACTIVE_LOW>;
+		};
+	};
+
 	cm33: imx93-cm33 {
 		compatible = "fsl,imx93-cm33";
 		mbox-names = "tx", "rx", "rxdb";
@@ -133,20 +164,11 @@ rotary@0 {
 		fsl,startup-delay-ms = <500>;
 	};
 
-/*	ethosu {
+	ethosu {
 		compatible = "arm,ethosu";
 		fsl,cm33-proc = <&cm33>;
 		memory-region = <&ethosu_mem>;
 		power-domains = <&mlmix>;
-	};*/
-
-	reg_can2_stby: regulator-can2-stby {
-		compatible = "regulator-fixed";
-		regulator-name = "can2-stby";
-		regulator-min-microvolt = <3300000>;
-		regulator-max-microvolt = <3300000>;
-		gpio = <&adp5585gpio 5 GPIO_ACTIVE_LOW>;
-		enable-active-low;
 	};
 
 	reg_usdhc2_vmmc: regulator-usdhc2 {
@@ -161,15 +183,6 @@ rotary@0 {
 		enable-active-high;
 	};
 
-	reg_vdd_12v: regulator-vdd-12v {
-		compatible = "regulator-fixed";
-		regulator-name = "reg_vdd_12v";
-		regulator-min-microvolt = <12000000>;
-		regulator-max-microvolt = <12000000>;
-		gpio = <&pcal6524 14 GPIO_ACTIVE_HIGH>;
-		enable-active-high;
-	};
-
 	reg_vref_1v8: regulator-adc-vref {
 		compatible = "regulator-fixed";
 		regulator-name = "vref_1v8";
@@ -177,75 +190,55 @@ rotary@0 {
 		regulator-max-microvolt = <1800000>;
 	};
 
-	reg_audio_pwr: regulator-audio-pwr {
+	wifi_en: wifi-en {
 		compatible = "regulator-fixed";
-		regulator-name = "audio-pwr";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_wifi_en>;
+		regulator-name = "WIFI_EN_3V3";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
-		gpio = <&adp5585gpio 1 GPIO_ACTIVE_HIGH>;
+		gpio = <&gpio1 10 GPIO_ACTIVE_HIGH>;
 		enable-active-high;
-		regulator-always-on;
 	};
 
-	reg_dvdd_sel: regulator-dvdd_sel {
+	board_gpio: board-gpio {
 		compatible = "regulator-fixed";
-		regulator-name = "DVDD_SEL";
-		gpio = <&adp5585gpio_isp 0 GPIO_ACTIVE_HIGH>;
-		enable-active-high;
-		startup-delay-us = <2000>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_gpio>;
+		regulator-name = "BOARD_GPIO_CONFIG";
+		status = "disabled";
+	};
+	sound-nau88c22 {
+		status = "okay";
+		compatible = "fsl,imx-audio-nau88c22";
+		model = "nau88c22-audio";
+		audio-cpu = <&sai1>;
+		audio-codec = <&nau88c22_codec>;
+		audio-routing =
+			"Headphone Jack", "RHP",
+			"Headphone Jack", "LHP",
+			"Ext Spk", "LSPK",
+			"Ext Spk", "RSPK",
+			"RMICP", "AMIC",
+			"RMICN", "AMIC",
+			"RMICP", "AMIC",
+			"RMICN", "AMIC",
+			"LMICP", "AMIC",
+			"LMICN", "AMIC",
+			"LMICP", "AMIC",
+			"LMICN", "AMIC";
 	};
 
-	reg_dvdd_1v2: regulator-dvdd {
-		compatible = "regulator-fixed";
-		regulator-name = "DVDD_1V2";
-		gpio = <&adp5585gpio_isp 6 GPIO_ACTIVE_HIGH>;
-		regulator-min-microvolt = <1200000>;
-		regulator-max-microvolt = <1200000>;
-		enable-active-high;
-		vin-supply = <&reg_dvdd_sel>;
+	clk_audio: clock-audio {
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <24000000>;
+		clock-output-names = "clk_audio";
 	};
-
-	reg_vdd_3v3: regulator-vdd {
-		compatible = "regulator-fixed";
-		regulator-name = "VDD_3V3";
-		gpio = <&adp5585gpio_isp 5 GPIO_ACTIVE_HIGH>;
-		regulator-min-microvolt = <3300000>;
-		regulator-max-microvolt = <3300000>;
-		startup-delay-us = <4000>;
-		enable-active-high;
-	};
-
-	reg_vddio_1v8: regulator-vddo {
-		compatible = "regulator-fixed";
-		regulator-name = "VDDIO_1V8";
-		gpio = <&adp5585gpio_isp 9 GPIO_ACTIVE_HIGH>;
-		regulator-min-microvolt = <1800000>;
-		regulator-max-microvolt = <1800000>;
-		startup-delay-us = <4000>;
-		enable-active-high;
-		vin-supply = <&reg_vdd_3v3>;
-	};
-
-	reg_vaa_sel: regulator-vaa_sel {
-		compatible = "regulator-fixed";
-		regulator-name = "VAA_SEL";
-		gpio = <&adp5585gpio_isp 1 GPIO_ACTIVE_HIGH>;
-		enable-active-high;
-	};
-
-	reg_avdd_2v8: regulator-avdd {
-		compatible = "regulator-fixed";
-		regulator-name = "AVDD_2V8";
-		gpio = <&adp5585gpio_isp 7 GPIO_ACTIVE_HIGH>;
-		regulator-min-microvolt = <2800000>;
-		regulator-max-microvolt = <2800000>;
-		enable-active-high;
-		vin-supply = <&reg_vaa_sel>;
-	};
-
 
 	display_backlight: display_backlight {
 		compatible = "pwm-backlight";
+		/*pwms = <&flexio2_pwm 0 50000 0>;*/
 		pwms = <&flexio1_pwm 0 50000 0>;
 		status = "okay";
 
@@ -300,6 +293,72 @@ rotary@0 {
 	
 &adc1 {
 	vref-supply = <&reg_vref_1v8>;
+	status = "okay";
+};
+
+
+
+
+
+&eqos {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_eqos>, <&pinctrl_eth_reset>;
+	phy-reset-gpios = <&gpio3 20 GPIO_ACTIVE_LOW>;
+	phy-reset-duration = <200>;
+	phy-mode = "rgmii-id";
+	phy-handle = <&ethphy1>;
+	status = "okay";
+
+	mdio {
+		compatible = "snps,dwmac-mdio";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		clock-frequency = <5000000>;
+
+		ethphy1: ethernet-phy@1 {
+			compatible = "ethernet-phy-ieee802.3-c22";
+			reg = <1>;
+			eee-broken-1000t;
+			rtl821x,aldps-disable;
+			rtl821x,clkout-disable;
+		};
+	};
+};
+
+&fec {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_fec>;
+	phy-mode = "rgmii-id";
+	phy-handle = <&ethphy2>;
+	fsl,magic-packet;
+	status = "okay";
+
+	mdio {
+		#address-cells = <1>;
+		#size-cells = <0>;
+		clock-frequency = <5000000>;
+
+		ethphy2: ethernet-phy@1 {
+			compatible = "ethernet-phy-ieee802.3-c22";
+			reg = <1>;
+			eee-broken-1000t;
+			rtl821x,aldps-disable;
+			rtl821x,clkout-disable;
+		};
+	};
+};
+
+&flexcan1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_flexcan1>;
+/*	xceiver-supply = <&reg_can2_stby>;*/
+	status = "okay";
+};
+
+&flexcan2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_flexcan2>;
+/*	xceiver-supply = <&reg_can2_stby>;*/
 	status = "okay";
 };
 
@@ -402,7 +461,6 @@ rotary@0 {
 		ports {
 			#size-cells = <1>;
 			#address-cells = <1>;
-
 			port@0 {
 				panel_dpi1: endpoint {
 					remote-endpoint = <&display_out>;
@@ -410,7 +468,7 @@ rotary@0 {
 			};
 		};
 	};
-
+/*original 
 	lvds0_panel {
 		//compatible = "forlinx,panel", "panel-lvds";
 		compatible = "boe,ev121wxm-n10-1850";
@@ -433,6 +491,51 @@ rotary@0 {
 			vsync-len       = <20>;
 			clock-frequency = <72000000>;
 		};
+*/
+//updates for innolux,g150xge-l04 
+	lvds0_panel {
+		//compatible = "forlinx,panel", "panel-lvds";
+		//compatible = "boe,ev121wxm-n10-1850";
+		compatible = "innolux,g150xge-l04", "panel-lvds";
+		backlight = <&display_backlight>;
+		panel-type = "lvds";
+
+		//width-mm = <218>;
+		//height-mm = <138>;
+		width-mm = <304>;
+    		height-mm = <228>;
+
+		//data-mapping = "vesa-24";
+		data-mapping = "jeida-24";
+		status = "okay";
+
+		panel-timing {
+			//hback-porch     = <10>;
+			hback-porch = <160>;
+			//hfront-porch    = <140>;
+			hfront-porch = <24>;
+			//hactive         = <1280>;
+			hactive = <1024>;
+			//hsync-len       = <10>;
+			hsync-len = <136>;
+			//vback-porch     = <1>;
+			vback-porch = <29>;
+			//vfront-porch    = <2>;
+			//hfront-porch = <24>;
+			vfront-porch = <3>;
+			//vactive         = <800>;
+			vactive = <768>;
+			//vsync-len       = <20>;
+			vsync-len = <6>;
+			//clock-frequency = <72000000>;
+			clock-frequency = <65000000>;
+			//extra
+			hsync-active = <0>;
+        		vsync-active = <0>;
+        		de-active = <1>;
+        		pixelclk-active = <0>;
+
+		};
 
 		ports {
 			#address-cells = <1>;
@@ -448,8 +551,34 @@ rotary@0 {
 	};
 };
 
+&lcdif_to_dpi {
+	remote-endpoint = <&display_in>;
+};
+
+
+&ldb {
+/*	status = "okay";*/
+
+	lvds-channel@0 {
+		/*fsl,data-mapping = "spwg";
+		/fsl,data-width = <24>;*/
+		status = "okay";
+		port@1 {
+			reg = <1>;
+
+			lvds_out: endpoint {
+				remote-endpoint = <&panel_lvds_in>;
+			};
+		};
+	};
+};
+
+&ldb_phy {
+	status = "okay";
+};
+
 &dsi {
-//	status = "okay";
+/*	status = "okay";*/
 
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -476,7 +605,7 @@ rotary@0 {
 		panel-height-mm = <121>;
 		backlight = <&display_backlight>;
 		status = "okay";
-		display-timings { //kernel
+		display-timings {
 			panel7_1024x600_kernel: timings {
 				hback-porch     = <160>;
 				hfront-porch    = <160>;
@@ -503,80 +632,6 @@ rotary@0 {
 					remote-endpoint = <&dsi_to_mipi_panel>;
 				};
 			};
-		};
-	};
-};
-
-&ldb_phy {
-	status = "okay";
-};
-
-&ldb {
-//	status = "okay";
-
-	lvds-channel@0 {
-		//fsl,data-mapping = "spwg";
-		//fsl,data-width = <24>;
-		status = "okay";
-		port@1 {
-			reg = <1>;
-
-			lvds_out: endpoint {
-				remote-endpoint = <&panel_lvds_in>;
-			};
-		};
-	};
-};
-
-&lcdif_to_dpi {
-	remote-endpoint = <&display_in>;
-};
-
-&flexcan2 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_flexcan2>;
-	xceiver-supply = <&reg_can2_stby>;
-	status = "okay";
-};
-
-&eqos {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_eqos>;
-	phy-mode = "rgmii-id";
-	phy-handle = <&ethphy1>;
-	status = "okay";
-
-	mdio {
-		compatible = "snps,dwmac-mdio";
-		#address-cells = <1>;
-		#size-cells = <0>;
-		clock-frequency = <5000000>;
-
-		ethphy1: ethernet-phy@1 {
-			compatible = "ethernet-phy-ieee802.3-c22";
-			reg = <1>;
-			eee-broken-1000t;
-		};
-	};
-};
-
-&fec {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_fec>;
-	phy-mode = "rgmii-id";
-	phy-handle = <&ethphy2>;
-	fsl,magic-packet;
-	status = "okay";
-
-	mdio {
-		#address-cells = <1>;
-		#size-cells = <0>;
-		clock-frequency = <5000000>;
-
-		ethphy2: ethernet-phy@2 {
-			compatible = "ethernet-phy-ieee802.3-c22";
-			reg = <2>;
-			eee-broken-1000t;
 		};
 	};
 };
@@ -627,41 +682,14 @@ rotary@0 {
                 touchscreen-size-y = <600>;
                 status = "okay";
         };
-	codec: wm8962@1a {
-		compatible = "wlf,wm8962";
-		reg = <0x1a>;
-		clocks = <&clk IMX93_CLK_SAI3_GATE>;
-		DCVDD-supply = <&reg_audio_pwr>;
-		DBVDD-supply = <&reg_audio_pwr>;
-		AVDD-supply = <&reg_audio_pwr>;
-		CPVDD-supply = <&reg_audio_pwr>;
-		MICVDD-supply = <&reg_audio_pwr>;
-		PLLVDD-supply = <&reg_audio_pwr>;
-		SPKVDD1-supply = <&reg_audio_pwr>;
-		SPKVDD2-supply = <&reg_audio_pwr>;
-		gpio-cfg = <
-			0x0000 /* 0:Default */
-			0x0000 /* 1:Default */
-			0x0000 /* 2:FN_DMICCLK */
-			0x0000 /* 3:Default */
-			0x0000 /* 4:FN_DMICCDAT */
-			0x0000 /* 5:Default */
-		>;
-	};
-
-/*	adv7535: hdmi@3d {
-		compatible = "adi,adv7535";
-		reg = <0x3d>;
-		adi,addr-cec = <0x3b>;
-		adi,dsi-lanes = <4>;
+	nau88c22_codec: nau8822@1a {
 		status = "okay";
-
-		port {
-			adv7535_to_dsi: endpoint {
-				remote-endpoint = <&dsi_to_adv7535>;
-			};
-		};
-	};*/
+		#sound-dai-cells = <0>;
+		compatible = "nuvoton,nau8822";
+		reg = <0x1a>;
+		clocks = <&clk_audio>;
+		clock-names = "mclk";
+	};
 
 	lsm6dsm@6a {
 		compatible = "st,lsm6dso";
@@ -735,6 +763,22 @@ rotary@0 {
 				regulator-always-on;
 			};
 
+			ldo2: LDO2 {
+				regulator-name = "LDO2";
+				regulator-min-microvolt = <800000>;
+				regulator-max-microvolt = <1150000>;
+				regulator-boot-on;
+				regulator-always-on;
+			};
+
+			ldo3: LDO3 {
+				regulator-name = "LDO3";
+				regulator-min-microvolt = <800000>;
+				regulator-max-microvolt = <3300000>;
+				regulator-boot-on;
+				regulator-always-on;
+			};
+
 			ldo4: LDO4 {
 				regulator-name = "LDO4";
 				regulator-min-microvolt = <800000>;
@@ -802,6 +846,34 @@ rotary@0 {
                 reg = <0x32>;
                 status = "okay";
         };
+	ov5645_0: ov5645_mipi@3c {
+		compatible = "ovti,ov5645";
+		reg = <0x3c>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_csi0_gpio>;
+		clocks = <&clk IMX93_CLK_CCM_CKO3>;
+		clock-names = "xclk";
+		assigned-clocks = <&clk IMX93_CLK_CCM_CKO3>;
+		assigned-clock-parents = <&clk IMX93_CLK_24M>;
+		assigned-clock-rates = <24000000>;
+		csi_id = <0>;
+		enable-gpios = <&gpio3 24 GPIO_ACTIVE_HIGH>;
+		reset-gpios = <&gpio3 25 GPIO_ACTIVE_LOW>;
+		clock-frequency = <24000000>;
+		mclk = <24000000>;
+		mclk_source = <0>;
+		mipi_csi;
+		status = "okay";
+
+		port {
+			ov5645_mipi_1_ep: endpoint {
+				remote-endpoint = <&mipi_csi_ep>;
+				data-lanes = <1 2>;
+				clock-lanes = <0>;
+				link-frequencies = /bits/ 64 <336000000>;
+			};
+		};
+	};
 	touch_gt928: touch_gt928@14 {
 		compatible = "goodix,gt928";
 		reg = <0x14>;
@@ -815,101 +887,6 @@ rotary@0 {
 		touchscreen-size-y = <800>;
 		touchscreen-swapped-x-y;
 	};
-/*	pcf2131: rtc@53 {
-			compatible = "nxp,pcf2131";
-			reg = <0x53>;
-			interrupt-parent = <&pcal6524>;
-			interrupts = <1 IRQ_TYPE_EDGE_FALLING>;
-			status = "okay";
-	};
-
-	ptn5110: tcpc@50 {
-		compatible = "nxp,ptn5110";
-		reg = <0x50>;
-		interrupt-parent = <&gpio3>;
-		interrupts = <27 IRQ_TYPE_LEVEL_LOW>;
-		status = "okay";
-
-		port {
-			typec1_dr_sw: endpoint {
-				remote-endpoint = <&usb1_drd_sw>;
-			};
-		};
-
-		typec1_con: connector {
-			compatible = "usb-c-connector";
-			label = "USB-C";
-			power-role = "dual";
-			data-role = "dual";
-			try-power-role = "sink";
-			source-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)>;
-			sink-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)
-				     PDO_VAR(5000, 20000, 3000)>;
-			op-sink-microwatt = <15000000>;
-			self-powered;
-		};
-	};
-
-	ptn5110_2: tcpc@51 {
-		compatible = "nxp,ptn5110";
-		reg = <0x51>;
-		interrupt-parent = <&gpio3>;
-		interrupts = <27 IRQ_TYPE_LEVEL_LOW>;
-		status = "okay";
-
-		port {
-			typec2_dr_sw: endpoint {
-				remote-endpoint = <&usb2_drd_sw>;
-			};
-		};
-
-		typec2_con: connector {
-			compatible = "usb-c-connector";
-			label = "USB-C";
-			power-role = "dual";
-			data-role = "dual";
-			try-power-role = "sink";
-			source-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)>;
-			sink-pdos = <PDO_FIXED(5000, 3000, PDO_FIXED_USB_COMM)
-				     PDO_VAR(5000, 20000, 3000)>;
-			op-sink-microwatt = <15000000>;
-			self-powered;
-		};
-	};
-
-	adp5585_isp: mfd-isp@34 {
-		compatible = "adi,adp5585";
-		reg = <0x34>;
-		status = "okay";
-
-		adp5585gpio_isp: gpio-isp@34 {
-			compatible = "adp5585-gpio";
-			gpio-controller;
-			#gpio-cells = <2>;
-		};
-
-		adp5585pwm_isp: pwm-isp@34 {
-			compatible = "adp5585-pwm";
-			#pwm-cells = <3>;
-		};
-	};
-
-	ap1302: ap1302_mipi@3c {
-		compatible = "onsemi,ap1302";
-		reg = <0x3c>;
-		reset-gpios   = <&adp5585gpio 0 GPIO_ACTIVE_LOW>;
-		isp_en-gpios  = <&adp5585gpio_isp 2 GPIO_ACTIVE_HIGH>;
-		DVDD-supply   = <&reg_dvdd_1v2>;
-		VDDIO-supply  = <&reg_vddio_1v8>;
-		AVDD-supply   = <&reg_avdd_2v8>;
-		status = "okay";
-
-		port {
-			ar1302_mipi_ep: endpoint {
-				remote-endpoint = <&mipi_csi_ep>;
-			};
-		};
-	};*/
 };
 
 &lpuart1 { /* console */
@@ -933,20 +910,20 @@ rotary@0 {
 
 &usbotg1 {
 	dr_mode = "otg";
-	hnp-disable;
-	srp-disable;
+/*	hnp-disable;
+	srp-disable;*/
 	adp-disable;
-	usb-role-switch;
+/*	usb-role-switch;*/
 	disable-over-current;
 	samsung,picophy-pre-emp-curr-control = <3>;
 	samsung,picophy-dc-vol-level-adjust = <7>;
 	status = "okay";
-
+/*
 	port {
 		usb1_drd_sw: endpoint {
 			remote-endpoint = <&typec1_dr_sw>;
 		};
-	};
+	};*/
 };
 
 &usbotg2 {
@@ -973,6 +950,9 @@ rotary@0 {
 	pinctrl-1 = <&pinctrl_usdhc1>;
 	pinctrl-2 = <&pinctrl_usdhc1>;
 	bus-width = <8>;
+	mmc-ddr-1_8v;
+	mmc-hs200-1_8v;
+	mmc-hs400-1_8v;
 	non-removable;
 	status = "okay";
 };
@@ -992,10 +972,18 @@ rotary@0 {
 
 &flexio1_pwm {
 	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_flexiopwm>;
+	pinctrl-0 = <&pinctrl_flexio1pwm>;
 	status = "okay";
 	pwmpin = /bits/ 8 <26>;
 };
+
+&flexio2_pwm {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_flexio2pwm>;
+	status = "disabled";
+	pwmpin = /bits/ 8 <28>;
+};
+
 &iomuxc {
 /*added*/
 
@@ -1046,6 +1034,53 @@ rotary@0 {
 			MX93_PAD_GPIO_IO27__MEDIAMIX_DISP_DATA23		0X31e
 		>;
 	};
+
+	pinctrl_gpio: gpio0grp {
+		fsl,pins = <
+			MX93_PAD_GPIO_IO00__GPIO2_IO00		0x31e
+			MX93_PAD_GPIO_IO01__GPIO2_IO01		0x31e
+			MX93_PAD_GPIO_IO02__GPIO2_IO02		0x31e
+			MX93_PAD_GPIO_IO03__GPIO2_IO03		0x31e
+			MX93_PAD_GPIO_IO04__GPIO2_IO04		0x31e
+			MX93_PAD_GPIO_IO05__GPIO2_IO05		0x31e
+			MX93_PAD_GPIO_IO06__GPIO2_IO06		0x31e
+			MX93_PAD_GPIO_IO07__GPIO2_IO07		0x31e
+			MX93_PAD_GPIO_IO08__GPIO2_IO08		0x31e
+			MX93_PAD_GPIO_IO09__GPIO2_IO09		0x31e
+			MX93_PAD_GPIO_IO10__GPIO2_IO10		0x31e
+			MX93_PAD_GPIO_IO11__GPIO2_IO11		0x31e
+			MX93_PAD_GPIO_IO12__GPIO2_IO12		0x31e
+			MX93_PAD_GPIO_IO13__GPIO2_IO13		0x31e
+			MX93_PAD_GPIO_IO14__GPIO2_IO14		0x31e
+			MX93_PAD_GPIO_IO15__GPIO2_IO15		0x31e
+			MX93_PAD_GPIO_IO16__GPIO2_IO16		0x31e
+			MX93_PAD_GPIO_IO17__GPIO2_IO17		0x31e
+			MX93_PAD_GPIO_IO18__GPIO2_IO18		0x31e
+			MX93_PAD_GPIO_IO19__GPIO2_IO19		0x31e
+			MX93_PAD_GPIO_IO20__GPIO2_IO20		0x31e
+			MX93_PAD_GPIO_IO21__GPIO2_IO21		0x31e
+			MX93_PAD_GPIO_IO22__GPIO2_IO22		0x31e
+			MX93_PAD_GPIO_IO23__GPIO2_IO23		0x31e
+			MX93_PAD_GPIO_IO24__GPIO2_IO24		0x31e
+			MX93_PAD_GPIO_IO25__GPIO2_IO25		0x31e
+			MX93_PAD_GPIO_IO26__GPIO2_IO26		0X31e
+			MX93_PAD_GPIO_IO27__GPIO2_IO27		0X31e
+		>;
+	};
+
+	pinctrl_eth_reset: ethresetgrp {
+		fsl,pins = <
+			MX93_PAD_SD3_CLK__GPIO3_IO20		0x31e
+		>;
+	};
+
+	pinctrl_flexcan1: flexcan1grp {
+		fsl,pins = <
+			MX93_PAD_PDM_CLK__CAN1_TX			0x139e
+			MX93_PAD_PDM_BIT_STREAM0__CAN1_RX		0x139e
+		>;
+	};
+
 	pinctrl_flexcan2: flexcan2grp {
 		fsl,pins = <
 			MX93_PAD_DAP_TDI__CAN2_TX			0x139e
@@ -1053,11 +1088,18 @@ rotary@0 {
 		>;
 	};
 
-	pinctrl_flexiopwm: flexiopwmgrp {
+	pinctrl_flexio1pwm: flexio1pwmgrp {
 		fsl,pins = <
 			MX93_PAD_CCM_CLKO1__FLEXIO1_FLEXIO26		0x39e
 		>;
 	};
+
+	pinctrl_flexio2pwm: flexio2pwmgrp {
+		fsl,pins = <
+			MX93_PAD_CCM_CLKO3__FLEXIO2_FLEXIO28		0x39e
+		>;
+	};
+
 	pinctrl_lpi2c1: lpi2c1grp {
 		fsl,pins = <
 			MX93_PAD_I2C1_SCL__LPI2C1_SCL			0x40000b9e
@@ -1169,7 +1211,7 @@ rotary@0 {
 
 	pinctrl_usdhc2: usdhc2grp {
 		fsl,pins = <
-			MX93_PAD_SD2_CLK__USDHC2_CLK		0x15fe
+			MX93_PAD_SD2_CLK__USDHC2_CLK		0x17fe
 			MX93_PAD_SD2_CMD__USDHC2_CMD		0x13fe
 			MX93_PAD_SD2_DATA0__USDHC2_DATA0	0x13fe
 			MX93_PAD_SD2_DATA1__USDHC2_DATA1	0x13fe
@@ -1205,6 +1247,20 @@ rotary@0 {
 		>;
 	};
 
+	pinctrl_gpio_led: gpioledgrp {
+		fsl,pins = <
+			MX93_PAD_CCM_CLKO4__GPIO4_IO29		0x31e
+			/*MX93_PAD_CCM_CLKO1__GPIO3_IO26		0x31e*/
+			MX93_PAD_CCM_CLKO3__GPIO4_IO28		0x31e
+		>;
+	};
+
+	pinctrl_gpio_key: gpiokeygrp {
+		fsl,pins = <
+			MX93_PAD_CCM_CLKO2__GPIO3_IO27		0x31e
+		>;
+	};
+
 	pinctrl_sai3: sai3grp {
 		fsl,pins = <
 			MX93_PAD_GPIO_IO26__SAI3_TX_SYNC		0x31e
@@ -1229,6 +1285,17 @@ rotary@0 {
 			MX93_PAD_GPIO_IO23__SPDIF_OUT		0x31e
 		>;
 	};
+	pinctrl_csi0_gpio: csigpiogpr {
+		fsl,pins = <
+			MX93_PAD_SD3_DATA3__GPIO3_IO25		0x31e //rst
+			MX93_PAD_SD3_DATA2__GPIO3_IO24		0x31e //pwdn
+		>;
+	};
+	pinctrl_wifi_en: wifi_engrp {
+		fsl,pins = <
+			MX93_PAD_PDM_BIT_STREAM1__GPIO1_IO10	0x31e
+		>;
+	};
 };
 
 &epxp {
@@ -1246,7 +1313,6 @@ rotary@0 {
 		status = "okay";
 	};
 };
-/*
 &mipi_csi {
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -1255,11 +1321,12 @@ rotary@0 {
 	port@0 {
 		reg = <0>;
 		mipi_csi_ep: endpoint {
-			remote-endpoint = <&ar1302_mipi_ep>;
+			remote-endpoint = <&ov5645_mipi_1_ep>;
 			data-lanes = <2>;
 			cfg-clk-range = <28>;
 			hs-clk-range = <0x2b>;
 			bus-type = <4>;
 		};
 	};
-};*/
+};
+
