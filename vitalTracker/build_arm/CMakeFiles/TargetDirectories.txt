@@ -1,0 +1,4 @@
+/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker.dir
+/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/edit_cache.dir
+/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/rebuild_cache.dir
+/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir
