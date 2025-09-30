@@ -1,22 +1,28 @@
 cmake_minimum_required(VERSION 3.16)
-project(vitalTracker)
+project(VitalTracker)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Gui)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(vitalTracker
-    main.cpp
-    mainwindow.cpp
-    waveformview.cpp
-    vitalmodel.cpp
-    vitalcontroller.cpp
+include_directories(
+    ${CMAKE_SOURCE_DIR}/model
+    ${CMAKE_SOURCE_DIR}/view
+    ${CMAKE_SOURCE_DIR}/controller
 )
 
-target_include_directories(vitalTracker PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+set(SOURCES
+    main.cpp
+    model/VitalModel.cpp
+    view/MainWindow.cpp
+    view/WaveformWidget.cpp
+    controller/VitalController.cpp
+)
 
-target_link_libraries(vitalTracker Qt6::Core Qt6::Widgets Qt6::Gui)
+qt_add_executable(VitalTracker ${SOURCES})
+
+target_link_libraries(VitalTracker PRIVATE Qt6::Widgets)
 
