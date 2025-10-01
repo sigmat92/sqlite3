@@ -1,5 +1,5 @@
 CMakeFiles/VitalTracker.dir/main.cpp.o: \
- /home/forlinx/sqlite3/vitalTracker/main.cpp \
+ /home/prakash/vitalTracker/main.cpp \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QApplication \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qapplication.h \
@@ -432,10 +432,10 @@ CMakeFiles/VitalTracker.dir/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qlocale.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qguiapplication_platform.h \
- /home/forlinx/sqlite3/vitalTracker/model/VitalModel.h \
+ /home/prakash/vitalTracker/model/VitalModel.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
- /home/forlinx/sqlite3/vitalTracker/view/MainWindow.h \
+ /home/prakash/vitalTracker/view/MainWindow.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qaction.h \
@@ -465,7 +465,7 @@ CMakeFiles/VitalTracker.dir/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/vitalTracker/view/WaveformWidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
- /home/forlinx/sqlite3/vitalTracker/controller/VitalController.h
+ /home/prakash/vitalTracker/controller/VitalController.h

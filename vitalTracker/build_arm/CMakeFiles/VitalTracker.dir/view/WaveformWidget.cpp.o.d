@@ -1,7 +1,7 @@
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: \
- /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.cpp \
+ /home/prakash/vitalTracker/view/WaveformWidget.cpp \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
- /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/vitalTracker/view/WaveformWidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \
@@ -435,6 +435,9 @@ CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/QPainter \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpainter.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextoption.h \

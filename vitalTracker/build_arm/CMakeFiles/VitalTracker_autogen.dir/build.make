@@ -53,10 +53,10 @@ RM = /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/forlinx/sqlite3/vitalTracker
+CMAKE_SOURCE_DIR = /home/prakash/vitalTracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/forlinx/sqlite3/vitalTracker/build_arm
+CMAKE_BINARY_DIR = /home/prakash/vitalTracker/build_arm
 
 # Utility rule file for VitalTracker_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/VitalTracker_autogen.dir/compiler_depend.make
 include CMakeFiles/VitalTracker_autogen.dir/progress.make
 
 CMakeFiles/VitalTracker_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target VitalTracker"
-	/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_autogen /home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/vitalTracker/build_arm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target VitalTracker"
+	/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_autogen /home/prakash/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/AutogenInfo.json ""
 
 VitalTracker_autogen: CMakeFiles/VitalTracker_autogen
 VitalTracker_autogen: CMakeFiles/VitalTracker_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/VitalTracker_autogen.dir/clean:
 .PHONY : CMakeFiles/VitalTracker_autogen.dir/clean
 
 CMakeFiles/VitalTracker_autogen.dir/depend:
-	cd /home/forlinx/sqlite3/vitalTracker/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/forlinx/sqlite3/vitalTracker /home/forlinx/sqlite3/vitalTracker /home/forlinx/sqlite3/vitalTracker/build_arm /home/forlinx/sqlite3/vitalTracker/build_arm /home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/vitalTracker/build_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/vitalTracker /home/prakash/vitalTracker /home/prakash/vitalTracker/build_arm /home/prakash/vitalTracker/build_arm /home/prakash/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VitalTracker_autogen.dir/depend
 

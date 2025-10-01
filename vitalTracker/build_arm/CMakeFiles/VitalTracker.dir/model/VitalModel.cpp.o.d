@@ -1,7 +1,7 @@
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o: \
- /home/forlinx/sqlite3/vitalTracker/model/VitalModel.cpp \
+ /home/prakash/vitalTracker/model/VitalModel.cpp \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
- /home/forlinx/sqlite3/vitalTracker/model/VitalModel.h \
+ /home/prakash/vitalTracker/model/VitalModel.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobjectdefs.h \

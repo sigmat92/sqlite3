@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen",
-	"CMAKE_BINARY_DIR" : "/home/forlinx/sqlite3/vitalTracker/build_arm",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/forlinx/sqlite3/vitalTracker/build_arm",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/forlinx/sqlite3/vitalTracker",
+	"BUILD_DIR" : "/home/prakash/vitalTracker/build_arm/VitalTracker_autogen",
+	"CMAKE_BINARY_DIR" : "/home/prakash/vitalTracker/build_arm",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/vitalTracker/build_arm",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/vitalTracker",
 	"CMAKE_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/forlinx/sqlite3/vitalTracker/CMakeLists.txt",
+		"/home/prakash/vitalTracker/CMakeLists.txt",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeSystem.cmake.in",
-		"/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeSystem.cmake",
+		"/home/prakash/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeUnixFindMake.cmake",
@@ -65,7 +65,7 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in",
-		"/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
+		"/home/prakash/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake",
@@ -114,7 +114,7 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
+		"/home/prakash/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake",
@@ -139,7 +139,7 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in",
-		"/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
+		"/home/prakash/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake",
@@ -158,7 +158,7 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
+		"/home/prakash/vitalTracker/build_arm/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/Qt6Config.cmake",
@@ -445,39 +445,39 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/forlinx/sqlite3/vitalTracker",
+	"CMAKE_SOURCE_DIR" : "/home/prakash/vitalTracker",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/forlinx/sqlite3/vitalTracker/controller/VitalController.h",
+			"/home/prakash/vitalTracker/controller/VitalController.h",
 			"MU",
 			"NPUKSKGWT2/moc_VitalController.cpp",
 			null
 		],
 		[
-			"/home/forlinx/sqlite3/vitalTracker/model/VitalModel.h",
+			"/home/prakash/vitalTracker/model/VitalModel.h",
 			"MU",
 			"NLOY5YBGEN/moc_VitalModel.cpp",
 			null
 		],
 		[
-			"/home/forlinx/sqlite3/vitalTracker/view/MainWindow.h",
+			"/home/prakash/vitalTracker/view/MainWindow.h",
 			"MU",
 			"OTUN7GXZT4/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h",
+			"/home/prakash/vitalTracker/view/WaveformWidget.h",
 			"MU",
 			"OTUN7GXZT4/moc_WaveformWidget.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/prakash/vitalTracker/build_arm/VitalTracker_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/prakash/vitalTracker/build_arm/VitalTracker_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -488,9 +488,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/forlinx/sqlite3/vitalTracker/model",
-		"/home/forlinx/sqlite3/vitalTracker/view",
-		"/home/forlinx/sqlite3/vitalTracker/controller",
+		"/home/prakash/vitalTracker/model",
+		"/home/prakash/vitalTracker/view",
+		"/home/prakash/vitalTracker/controller",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/mkspecs/linux-g++",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets",
@@ -529,32 +529,28 @@
 		"-c",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/prakash/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/prakash/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "/home/forlinx/sqlite3/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/prakash/vitalTracker/build_arm/CMakeFiles/VitalTracker_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/forlinx/sqlite3/vitalTracker/controller/VitalController.cpp",
+			"/home/prakash/vitalTracker/controller/VitalController.cpp",
 			"MU",
 			null
 		],
-		[ "/home/forlinx/sqlite3/vitalTracker/main.cpp", "MU", null ],
-		[ "/home/forlinx/sqlite3/vitalTracker/model/VitalModel.cpp", "MU", null ],
-		[ "/home/forlinx/sqlite3/vitalTracker/view/MainWindow.cpp", "MU", null ],
-		[
-			"/home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.cpp",
-			"MU",
-			null
-		]
+		[ "/home/prakash/vitalTracker/main.cpp", "MU", null ],
+		[ "/home/prakash/vitalTracker/model/VitalModel.cpp", "MU", null ],
+		[ "/home/prakash/vitalTracker/view/MainWindow.cpp", "MU", null ],
+		[ "/home/prakash/vitalTracker/view/WaveformWidget.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -1,8 +1,8 @@
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/mocs_compilation.cpp \
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/mocs_compilation.cpp \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/../../../controller/VitalController.h \
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp \
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/../../../controller/VitalController.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobjectdefs.h \
@@ -376,8 +376,8 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/chrono.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/ratio \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/ctime \
- /home/forlinx/sqlite3/vitalTracker/model/VitalModel.h \
- /home/forlinx/sqlite3/vitalTracker/view/MainWindow.h \
+ /home/prakash/vitalTracker/model/VitalModel.h \
+ /home/prakash/vitalTracker/view/MainWindow.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \
@@ -456,7 +456,7 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/vitalTracker/view/WaveformWidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextcursor.h \
@@ -464,6 +464,6 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpen.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextoption.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtmochelpers.h \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_MainWindow.cpp \
- /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp \
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_MainWindow.cpp \
+ /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp

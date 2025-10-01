@@ -1,0 +1,142 @@
+#include "WaveformWidget.h"
+#include <QPainter>
+#include <QPainterPath>
+#include <QResizeEvent>
+#include <cmath>
+
+WaveformWidget::WaveformWidget(WaveformType t, QWidget* parent)
+    : QWidget(parent),
+      type(t),
+      maxPoints(0),
+      phase(0.0),
+      phaseStep(2.5)   // tweak this for animation speed
+{
+    setMinimumHeight(100);
+    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+    setAutoFillBackground(true);
+    QPalette pal = palette();
+    pal.setColor(QPalette::Window, Qt::black);
+    setPalette(pal);
+
+    // animation timer (approx 30 FPS)
+    animTimer = new QTimer(this);
+    connect(animTimer, &QTimer::timeout, this, [this]() {
+        phase += phaseStep;
+        // keep phase bounded to avoid overflow
+        if (phase > 1e6) phase = 0.0;
+        // only repaint if we're drawing procedural waves (or we want continuous motion)
+        update();
+    });
+    animTimer->start(33);
+}
+
+void WaveformWidget::clearValues() {
+    values.clear();
+    update();
+}
+
+void WaveformWidget::addValue(double val) {
+    if (maxPoints == 0) maxPoints = qMax(1, width());
+    values.append(val);
+    // trim overflow in bulk
+    int overflow = values.size() - maxPoints;
+    if (overflow > 0) values.remove(0, overflow);
+    update();
+}
+
+void WaveformWidget::resizeEvent(QResizeEvent* event) {
+    Q_UNUSED(event);
+    maxPoints = qMax(1, width());
+    if (values.size() > maxPoints) {
+        values = values.mid(values.size() - maxPoints);
+    }
+    QWidget::resizeEvent(event);
+}
+
+void WaveformWidget::paintEvent(QPaintEvent*) {
+    QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    painter.fillRect(rect(), Qt::black);
+
+    QColor color;
+    switch (type) {
+        case ECG:  color = Qt::cyan; break;
+        case RESP: color = Qt::green; break;
+        case SPO2: color = Qt::yellow; break;
+        case BP:   color = Qt::lightGray; break;
+    }
+    painter.setPen(QPen(color, 2));
+
+    const int w = width();
+    const int h = height();
+    if (w <= 0 || h <= 0) return;
+
+    QPainterPath path;
+
+    // If we have buffered values (real data), draw them (most common case).
+    if (!values.isEmpty()) {
+        // Map values (assumed normalized 0..1) to vertical pixels.
+        // We'll draw left-to-right across width; if there are fewer samples than width,
+        // we stretch them; if there are exactly width samples, one-to-one.
+        int n = values.size();
+        double xScale = (n > 1) ? double(w - 1) / double(n - 1) : 1.0;
+        for (int i = 0; i < n; ++i) {
+            double val = qBound(0.0, values[i], 1.0);
+            int x = int(i * xScale);
+            // vertical mapping: put zero at bottom, one at top
+            int y = h - int(val * h);
+            if (i == 0) path.moveTo(x, y);
+            else path.lineTo(x, y);
+        }
+        painter.drawPath(path);
+        return;
+    }
+
+    // Otherwise draw procedural waveforms (sine/triangle/pulse) for demo/visuals.
+    // Use 'phase' to shift waves horizontally over time.
+    const double amp = 0.6 * (h / 2.0); // amplitude
+    const double mid = h / 2.0;
+
+    if (type == ECG || type == SPO2) {
+        // sine-like wave: ECG lower frequency; SPO2 slightly faster
+        double freq = (type == ECG) ? 0.02 : 0.05; // tweak frequency
+        for (int x = 0; x < w; ++x) {
+            double angle = (x + phase) * freq;
+            double s = std::sin(angle);
+            double y = mid - (amp * s);
+            if (x == 0) path.moveTo(x, y);
+            else path.lineTo(x, y);
+        }
+    } else if (type == RESP) {
+        // triangular wave
+        double period = 200.0;                      // pixels per cycle
+        for (int x = 0; x < w; ++x) {
+            double pos = std::fmod(x + phase, period) / period; // 0..1
+            double tri;
+            if (pos < 0.5) tri = pos * 2.0; else tri = 2.0 - pos * 2.0; // 0..1..0
+            double y = mid - (amp * (tri * 2.0 - 1.0)); // center around mid
+            if (x == 0) path.moveTo(x, y);
+            else path.lineTo(x, y);
+        }
+    } else { // BP -> pulse-like square-ish beat
+        double period = 300.0;
+        double duty = 0.12; // short spike portion
+        for (int x = 0; x < w; ++x) {
+            double pos = std::fmod(x + phase, period) / period;
+            double y;
+            if (pos < duty) {
+                // fast upward spike then a short decay
+                double spike = 1.0 - (pos / duty); // 1..0
+                y = mid - (amp * (0.8 + 0.2 * spike)); // spike above baseline
+            } else {
+                // baseline low line
+                y = mid + (amp * 0.35);
+            }
+            if (x == 0) path.moveTo(x, y);
+            else path.lineTo(x, y);
+        }
+    }
+
+    painter.drawPath(path);
+}
+

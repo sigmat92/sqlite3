@@ -1,5 +1,6 @@
-/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp: /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h \
-  /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h \
+/home/prakash/vitalTracker/build_arm/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp: /home/prakash/vitalTracker/view/WaveformWidget.h \
+  /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h \
+  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/q20memory.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/q20type_traits.h \
@@ -12,6 +13,7 @@
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qatomic.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qatomic_cxx11.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasicatomic.h \
+  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbindingstorage.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearrayalgorithms.h \
@@ -93,6 +95,7 @@
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtdeprecationmarkers.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtenvironmentvariables.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtextstream.h \
+  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtmetamacros.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtnoop.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtpreprocessorsupport.h \

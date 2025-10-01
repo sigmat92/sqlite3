@@ -357,6 +357,9 @@ CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QPainter \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \

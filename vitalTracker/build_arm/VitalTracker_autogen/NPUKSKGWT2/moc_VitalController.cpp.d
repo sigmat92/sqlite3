@@ -1,8 +1,8 @@
-/home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp: /home/forlinx/sqlite3/vitalTracker/controller/VitalController.h \
-  /home/forlinx/sqlite3/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h \
-  /home/forlinx/sqlite3/vitalTracker/model/VitalModel.h \
-  /home/forlinx/sqlite3/vitalTracker/view/MainWindow.h \
-  /home/forlinx/sqlite3/vitalTracker/view/WaveformWidget.h \
+/home/prakash/vitalTracker/build_arm/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp: /home/prakash/vitalTracker/controller/VitalController.h \
+  /home/prakash/vitalTracker/build_arm/VitalTracker_autogen/moc_predefs.h \
+  /home/prakash/vitalTracker/model/VitalModel.h \
+  /home/prakash/vitalTracker/view/MainWindow.h \
+  /home/prakash/vitalTracker/view/WaveformWidget.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
