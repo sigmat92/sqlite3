@@ -1,9 +1,0 @@
-external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/aztec/AZWriter.cpp.o: \
- /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/aztec/AZWriter.cpp \
- /usr/include/stdc-predef.h \
- /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/aztec/AZWriter.h \
- /usr/include/c++/11/string \
- /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/aztec/AZEncoder.h \
- /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/TextEncoder.h \
- /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/Utf.h \
- /usr/include/c++/11/string_view /usr/include/c++/11/utility

@@ -1,0 +1,22 @@
+external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/MultiFormatWriter.cpp.o: \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/MultiFormatWriter.cpp \
+ /usr/include/stdc-predef.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/aztec/AZWriter.h \
+ /usr/include/c++/11/string \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMSymbolShape.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCodabarWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode128Writer.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode39Writer.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Writer.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODEAN13Writer.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODEAN8Writer.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODITFWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODUPCAWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODUPCEWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFWriter.h \
+ /usr/include/c++/11/memory \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRErrorCorrectionLevel.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRWriter.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Utf.h \
+ /usr/include/c++/11/string_view /usr/include/c++/11/stdexcept

@@ -49,38 +49,3 @@ void MainWindow::paintEvent(QPaintEvent*)
 
 
 
-/*
-#include "mainwindow.h"
-
-MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent)
-{
-    m_label = new QLabel(this);
-    m_label->setAlignment(Qt::AlignCenter);
-    setCentralWidget(m_label);
-    resize(800, 600);
-}
-
-void MainWindow::updateFrame(const QImage& img)
-{
-    m_label->setPixmap(QPixmap::fromImage(img));
-}
-
-
-#include "mainwindow.h"
-#include <QVBoxLayout>
-
-MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent)
-{
-    m_label = new QLabel("Camera", this);
-    m_label->setMinimumSize(640, 480);
-
-    setCentralWidget(m_label);
-}
-
-void MainWindow::updateFrame(const QImage& img)
-{
-    m_label->setPixmap(QPixmap::fromImage(img));
-}
-*/

@@ -15,11 +15,6 @@ SQLiteRecorder::~SQLiteRecorder()
 
 void SQLiteRecorder::open(const char* path)
 {
-    //if (sqlite3_open(path, &m_db) != SQLITE_OK) {
-    //    qWarning() << "SQLite open failed";
-    //    m_db = nullptr;
-    //    return;
-    //}
 
      int rc = sqlite3_open(path, &m_db);
     if (rc != SQLITE_OK) {
