@@ -1,5 +1,5 @@
-/home/prakash/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp: /home/prakash/vitalTracker/controller/VitalController.h \
-  /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h \
+/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp: /home/prakash/sqlite3/vitalTracker/controller/VitalController.h \
+  /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
@@ -157,9 +157,9 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
-  /home/prakash/vitalTracker/model/VitalModel.h \
-  /home/prakash/vitalTracker/view/MainWindow.h \
-  /home/prakash/vitalTracker/view/WaveformWidget.h \
+  /home/prakash/sqlite3/vitalTracker/model/VitalModel.h \
+  /home/prakash/sqlite3/vitalTracker/view/MainWindow.h \
+  /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

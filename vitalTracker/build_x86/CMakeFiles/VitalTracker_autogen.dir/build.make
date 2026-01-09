@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/vitalTracker
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/vitalTracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/vitalTracker/build_x86
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/vitalTracker/build_x86
 
 # Utility rule file for VitalTracker_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/VitalTracker_autogen.dir/compiler_depend.make
 include CMakeFiles/VitalTracker_autogen.dir/progress.make
 
 CMakeFiles/VitalTracker_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target VitalTracker"
-	/usr/bin/cmake -E cmake_autogen /home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target VitalTracker"
+	/usr/bin/cmake -E cmake_autogen /home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/AutogenInfo.json ""
 
 VitalTracker_autogen: CMakeFiles/VitalTracker_autogen
 VitalTracker_autogen: CMakeFiles/VitalTracker_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/VitalTracker_autogen.dir/clean:
 .PHONY : CMakeFiles/VitalTracker_autogen.dir/clean
 
 CMakeFiles/VitalTracker_autogen.dir/depend:
-	cd /home/prakash/vitalTracker/build_x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/vitalTracker /home/prakash/vitalTracker /home/prakash/vitalTracker/build_x86 /home/prakash/vitalTracker/build_x86 /home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/vitalTracker/build_x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/vitalTracker /home/prakash/sqlite3/vitalTracker /home/prakash/sqlite3/vitalTracker/build_x86 /home/prakash/sqlite3/vitalTracker/build_x86 /home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VitalTracker_autogen.dir/depend
 

@@ -1,4 +1,4 @@
-/home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker.dir
-/home/prakash/vitalTracker/build_x86/CMakeFiles/edit_cache.dir
-/home/prakash/vitalTracker/build_x86/CMakeFiles/rebuild_cache.dir
-/home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir
+/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker.dir
+/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/edit_cache.dir
+/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/rebuild_cache.dir
+/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir

@@ -1,6 +1,7 @@
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o: \
- /home/prakash/vitalTracker/model/VitalModel.cpp \
- /usr/include/stdc-predef.h /home/prakash/vitalTracker/model/VitalModel.h \
+ /home/prakash/sqlite3/vitalTracker/model/VitalModel.cpp \
+ /usr/include/stdc-predef.h \
+ /home/prakash/sqlite3/vitalTracker/model/VitalModel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \

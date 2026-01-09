@@ -1,7 +1,7 @@
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: \
- /home/prakash/vitalTracker/view/WaveformWidget.cpp \
+ /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.cpp \
  /usr/include/stdc-predef.h \
- /home/prakash/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \

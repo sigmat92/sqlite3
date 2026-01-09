@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/home/prakash/vitalTracker/build_x86/VitalTracker_autogen",
-	"CMAKE_BINARY_DIR" : "/home/prakash/vitalTracker/build_x86",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/vitalTracker/build_x86",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/vitalTracker",
+	"BUILD_DIR" : "/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen",
+	"CMAKE_BINARY_DIR" : "/home/prakash/sqlite3/vitalTracker/build_x86",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/prakash/sqlite3/vitalTracker/build_x86",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/prakash/sqlite3/vitalTracker",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/prakash/vitalTracker/CMakeLists.txt",
+		"/home/prakash/sqlite3/vitalTracker/CMakeLists.txt",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in",
-		"/home/prakash/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeUnixFindMake.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake",
@@ -58,7 +58,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in",
-		"/home/prakash/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
+		"/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake",
@@ -104,7 +104,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
@@ -129,7 +129,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in",
-		"/home/prakash/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
+		"/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake",
@@ -148,7 +148,7 @@
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake",
 		"/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in",
-		"/home/prakash/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -449,39 +449,39 @@
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/prakash/vitalTracker",
+	"CMAKE_SOURCE_DIR" : "/home/prakash/sqlite3/vitalTracker",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/prakash/vitalTracker/controller/VitalController.h",
+			"/home/prakash/sqlite3/vitalTracker/controller/VitalController.h",
 			"MU",
 			"NPUKSKGWT2/moc_VitalController.cpp",
 			null
 		],
 		[
-			"/home/prakash/vitalTracker/model/VitalModel.h",
+			"/home/prakash/sqlite3/vitalTracker/model/VitalModel.h",
 			"MU",
 			"NLOY5YBGEN/moc_VitalModel.cpp",
 			null
 		],
 		[
-			"/home/prakash/vitalTracker/view/MainWindow.h",
+			"/home/prakash/sqlite3/vitalTracker/view/MainWindow.h",
 			"MU",
 			"OTUN7GXZT4/moc_MainWindow.cpp",
 			null
 		],
 		[
-			"/home/prakash/vitalTracker/view/WaveformWidget.h",
+			"/home/prakash/sqlite3/vitalTracker/view/WaveformWidget.h",
 			"MU",
 			"OTUN7GXZT4/moc_WaveformWidget.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/prakash/vitalTracker/build_x86/VitalTracker_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/prakash/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -492,9 +492,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/prakash/vitalTracker/model",
-		"/home/prakash/vitalTracker/view",
-		"/home/prakash/vitalTracker/controller",
+		"/home/prakash/sqlite3/vitalTracker/model",
+		"/home/prakash/sqlite3/vitalTracker/view",
+		"/home/prakash/sqlite3/vitalTracker/controller",
 		"/home/prakash/Qt/6.5.3/gcc_64/include/QtCore",
 		"/home/prakash/Qt/6.5.3/gcc_64/include",
 		"/home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++",
@@ -526,28 +526,32 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/prakash/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/home/prakash/Qt/6.5.3/gcc_64/./libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/home/prakash/Qt/6.5.3/gcc_64/./libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "/home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/prakash/vitalTracker/controller/VitalController.cpp",
+			"/home/prakash/sqlite3/vitalTracker/controller/VitalController.cpp",
 			"MU",
 			null
 		],
-		[ "/home/prakash/vitalTracker/main.cpp", "MU", null ],
-		[ "/home/prakash/vitalTracker/model/VitalModel.cpp", "MU", null ],
-		[ "/home/prakash/vitalTracker/view/MainWindow.cpp", "MU", null ],
-		[ "/home/prakash/vitalTracker/view/WaveformWidget.cpp", "MU", null ]
+		[ "/home/prakash/sqlite3/vitalTracker/main.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/vitalTracker/model/VitalModel.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/vitalTracker/view/MainWindow.cpp", "MU", null ],
+		[
+			"/home/prakash/sqlite3/vitalTracker/view/WaveformWidget.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

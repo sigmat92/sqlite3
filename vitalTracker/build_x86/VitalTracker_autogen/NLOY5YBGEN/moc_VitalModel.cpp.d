@@ -1,5 +1,5 @@
-/home/prakash/vitalTracker/build_x86/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp: /home/prakash/vitalTracker/model/VitalModel.h \
-  /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h \
+/home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp: /home/prakash/sqlite3/vitalTracker/model/VitalModel.h \
+  /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \

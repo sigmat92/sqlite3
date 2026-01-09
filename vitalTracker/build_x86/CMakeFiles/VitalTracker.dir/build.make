@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prakash/vitalTracker
+CMAKE_SOURCE_DIR = /home/prakash/sqlite3/vitalTracker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prakash/vitalTracker/build_x86
+CMAKE_BINARY_DIR = /home/prakash/sqlite3/vitalTracker/build_x86
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VitalTracker.dir/depend.make
@@ -72,86 +72,86 @@ include CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: VitalTracker_autogen/mocs_compilation.cpp
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o -MF CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o -c /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o -MF CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o -c /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp
 
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp > CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp > CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp -o CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp -o CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/VitalTracker.dir/main.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/main.cpp.o: ../main.cpp
 CMakeFiles/VitalTracker.dir/main.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VitalTracker.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/main.cpp.o -MF CMakeFiles/VitalTracker.dir/main.cpp.o.d -o CMakeFiles/VitalTracker.dir/main.cpp.o -c /home/prakash/vitalTracker/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VitalTracker.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/main.cpp.o -MF CMakeFiles/VitalTracker.dir/main.cpp.o.d -o CMakeFiles/VitalTracker.dir/main.cpp.o -c /home/prakash/sqlite3/vitalTracker/main.cpp
 
 CMakeFiles/VitalTracker.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/main.cpp > CMakeFiles/VitalTracker.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/main.cpp > CMakeFiles/VitalTracker.dir/main.cpp.i
 
 CMakeFiles/VitalTracker.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/main.cpp -o CMakeFiles/VitalTracker.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/main.cpp -o CMakeFiles/VitalTracker.dir/main.cpp.s
 
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o: ../model/VitalModel.cpp
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o -MF CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o.d -o CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o -c /home/prakash/vitalTracker/model/VitalModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o -MF CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o.d -o CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.o -c /home/prakash/sqlite3/vitalTracker/model/VitalModel.cpp
 
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/model/VitalModel.cpp > CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/model/VitalModel.cpp > CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.i
 
 CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/model/VitalModel.cpp -o CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/model/VitalModel.cpp -o CMakeFiles/VitalTracker.dir/model/VitalModel.cpp.s
 
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o: ../view/MainWindow.cpp
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o -MF CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o.d -o CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o -c /home/prakash/vitalTracker/view/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o -MF CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o.d -o CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o -c /home/prakash/sqlite3/vitalTracker/view/MainWindow.cpp
 
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/view/MainWindow.cpp > CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/view/MainWindow.cpp > CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.i
 
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/view/MainWindow.cpp -o CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/view/MainWindow.cpp -o CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.s
 
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: ../view/WaveformWidget.cpp
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o -MF CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o.d -o CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o -c /home/prakash/vitalTracker/view/WaveformWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o -MF CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o.d -o CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.o -c /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.cpp
 
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/view/WaveformWidget.cpp > CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.cpp > CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.i
 
 CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/view/WaveformWidget.cpp -o CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.cpp -o CMakeFiles/VitalTracker.dir/view/WaveformWidget.cpp.s
 
 CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o: CMakeFiles/VitalTracker.dir/flags.make
 CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o: ../controller/VitalController.cpp
 CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o: CMakeFiles/VitalTracker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o -MF CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o.d -o CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o -c /home/prakash/vitalTracker/controller/VitalController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o -MF CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o.d -o CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.o -c /home/prakash/sqlite3/vitalTracker/controller/VitalController.cpp
 
 CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/vitalTracker/controller/VitalController.cpp > CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/vitalTracker/controller/VitalController.cpp > CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.i
 
 CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/vitalTracker/controller/VitalController.cpp -o CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/vitalTracker/controller/VitalController.cpp -o CMakeFiles/VitalTracker.dir/controller/VitalController.cpp.s
 
 # Object files for target VitalTracker
 VitalTracker_OBJECTS = \
@@ -178,7 +178,7 @@ VitalTracker: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 VitalTracker: /usr/lib/x86_64-linux-gnu/libGLX.so
 VitalTracker: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 VitalTracker: CMakeFiles/VitalTracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable VitalTracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable VitalTracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VitalTracker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -190,6 +190,6 @@ CMakeFiles/VitalTracker.dir/clean:
 .PHONY : CMakeFiles/VitalTracker.dir/clean
 
 CMakeFiles/VitalTracker.dir/depend:
-	cd /home/prakash/vitalTracker/build_x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/vitalTracker /home/prakash/vitalTracker /home/prakash/vitalTracker/build_x86 /home/prakash/vitalTracker/build_x86 /home/prakash/vitalTracker/build_x86/CMakeFiles/VitalTracker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prakash/sqlite3/vitalTracker/build_x86 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prakash/sqlite3/vitalTracker /home/prakash/sqlite3/vitalTracker /home/prakash/sqlite3/vitalTracker/build_x86 /home/prakash/sqlite3/vitalTracker/build_x86 /home/prakash/sqlite3/vitalTracker/build_x86/CMakeFiles/VitalTracker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VitalTracker.dir/depend
 

@@ -1,8 +1,8 @@
 CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp \
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/../../../controller/VitalController.h \
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/moc_VitalController.cpp \
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/NPUKSKGWT2/../../../controller/VitalController.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
@@ -299,8 +299,9 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime /home/prakash/vitalTracker/model/VitalModel.h \
- /home/prakash/vitalTracker/view/MainWindow.h \
+ /usr/include/c++/11/ctime \
+ /home/prakash/sqlite3/vitalTracker/model/VitalModel.h \
+ /home/prakash/sqlite3/vitalTracker/view/MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -377,7 +378,7 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
@@ -385,6 +386,6 @@ CMakeFiles/VitalTracker.dir/VitalTracker_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmochelpers.h \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/OTUN7GXZT4/moc_MainWindow.cpp \
- /home/prakash/vitalTracker/build_x86/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/NLOY5YBGEN/moc_VitalModel.cpp \
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/OTUN7GXZT4/moc_MainWindow.cpp \
+ /home/prakash/sqlite3/vitalTracker/build_x86/VitalTracker_autogen/OTUN7GXZT4/moc_WaveformWidget.cpp

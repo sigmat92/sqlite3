@@ -1,6 +1,7 @@
 CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o: \
- /home/prakash/vitalTracker/view/MainWindow.cpp \
- /usr/include/stdc-predef.h /home/prakash/vitalTracker/view/MainWindow.h \
+ /home/prakash/sqlite3/vitalTracker/view/MainWindow.cpp \
+ /usr/include/stdc-predef.h \
+ /home/prakash/sqlite3/vitalTracker/view/MainWindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -372,7 +373,7 @@ CMakeFiles/VitalTracker.dir/view/MainWindow.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/vitalTracker/view/WaveformWidget.h \
+ /home/prakash/sqlite3/vitalTracker/view/WaveformWidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QFont \

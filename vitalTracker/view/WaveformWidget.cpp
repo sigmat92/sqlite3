@@ -7,7 +7,8 @@
 WaveformWidget::WaveformWidget(WaveformType t, QWidget *parent)
     : QWidget(parent), 
       type(t),
-      maxPoints(0),
+      //maxPoints(0),
+      maxPoints(10),
       phase(0.0),
       phaseStep(2.5)   // tweak this for animation speed
 {
@@ -48,7 +49,7 @@ void WaveformWidget::addValue(double val) {
     if (values.size() > maxPoints) values.remove(0, values.size() - maxPoints);
     update();
 }
-
+/*
 void WaveformWidget::paintEvent(QPaintEvent *) {
     QPainter painter(this);
     painter.fillRect(rect(), Qt::black);
@@ -107,9 +108,9 @@ void WaveformWidget::paintEvent(QPaintEvent *) {
     phase += 2;
     if (phase > w) phase = 0;
 }
+*/
 
 
-/*
 void WaveformWidget::paintEvent(QPaintEvent *) {
     QPainter painter(this);
     painter.fillRect(rect(), Qt::black);
@@ -136,4 +137,4 @@ void WaveformWidget::paintEvent(QPaintEvent *) {
     }
     painter.drawPath(path);
 }
-*/
+

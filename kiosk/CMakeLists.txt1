@@ -1,0 +1,125 @@
+cmake_minimum_required(VERSION 3.16)
+
+# ------------------------------------------------------------
+# Project
+# ------------------------------------------------------------
+project(kiosk
+    VERSION 1.0.0
+    LANGUAGES CXX
+)
+
+# ------------------------------------------------------------
+# Cross-compilation sanity
+# ------------------------------------------------------------
+
+message(STATUS "Building kiosk")
+message(STATUS "CMAKE_SYSTEM_NAME     = ${CMAKE_SYSTEM_NAME}")
+message(STATUS "CMAKE_SYSTEM_PROCESSOR= ${CMAKE_SYSTEM_PROCESSOR}")
+message(STATUS "CMAKE_CXX_COMPILER    = ${CMAKE_CXX_COMPILER}")
+
+# ------------------------------------------------------------
+# C++ standard (safe for Qt6 + Yocto)
+# ------------------------------------------------------------
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# ------------------------------------------------------------
+# Build type default (Yocto SDK often omits it)
+# ------------------------------------------------------------
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "" FORCE)
+endif()
+
+# ------------------------------------------------------------
+# Compiler flags (i.MX93 Cortex-A55)
+# ------------------------------------------------------------
+add_compile_options(
+    -Wall
+    -Wextra
+    -Wno-psabi
+    -O2
+#    -mcpu=cortex-a55
+)
+
+# ------------------------------------------------------------
+# Qt 6 (Widgets only – no QtMultimedia)
+# ------------------------------------------------------------
+find_package(Qt6 REQUIRED COMPONENTS
+    Widgets
+)
+
+qt_standard_project_setup()
+
+# ------------------------------------------------------------
+# ZXing (vendored)
+# ------------------------------------------------------------
+# ============================================================
+# ZXing — build ONLY core library (NO examples, NO OpenCV)
+# ============================================================
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_AUTOMOC ON)
+# Force static ZXing
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# Disable ZXing extras
+set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
+set(ZXING_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+
+add_subdirectory(external/zxing-cpp)
+
+
+qt_standard_project_setup()
+
+qt_add_executable(kiosk-mini
+    main.cpp
+
+    model/barcodemodel.cpp
+
+    controller/barcodegenerator.cpp
+    controller/barcodescanner
+
+    view/mainwindow.cpp
+
+
+#    camera/v4l2camera.cpp
+#    platform/rotaryencoder.cpp
+)
+
+
+# ------------------------------------------------------------
+# Include paths
+# ------------------------------------------------------------
+target_include_directories(kiosk
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+# ------------------------------------------------------------
+# Link libraries
+# ------------------------------------------------------------
+target_link_libraries(kiosk
+    PRIVATE
+        Qt6::Widgets
+        ZXing::ZXing
+)
+
+# ------------------------------------------------------------
+# RPATH handling (important for Yocto runtime)
+# ------------------------------------------------------------
+set_target_properties(kiosk PROPERTIES
+    BUILD_RPATH "$ORIGIN"
+    INSTALL_RPATH "$ORIGIN"
+)
+
+# ------------------------------------------------------------
+# Install rules (Yocto-friendly)
+# ------------------------------------------------------------
+install(TARGETS kiosk
+    RUNTIME DESTINATION bin
+)
+
+

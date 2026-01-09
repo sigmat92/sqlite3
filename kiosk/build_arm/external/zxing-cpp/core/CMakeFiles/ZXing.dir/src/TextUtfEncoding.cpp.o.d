@@ -1,0 +1,6 @@
+external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/TextUtfEncoding.cpp.o: \
+ /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/TextUtfEncoding.cpp \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
+ /home/prakash/kiosk-mini/kiosk/external/zxing-cpp/core/src/Utf.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/string \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/string_view

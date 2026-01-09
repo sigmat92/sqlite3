@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
     ecgWidget = new WaveformWidget(WaveformWidget::ECG, this);
     ecgLabel  = new QLabel("ECG : 0.00");
     ecgLabel->setFont(QFont("Arial", 32, QFont::Bold));
-    ecgLabel->setStyleSheet("QLabel { color: green; border: 2px solid cyan; padding: 5px; }");
+    ecgLabel->setStyleSheet("QLabel { color: green; border: 0px solid cyan; padding: 5px; }");
 
     QHBoxLayout *ecgLayout = new QHBoxLayout();
     ecgLayout->addWidget(ecgWidget);
@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
     respWidget = new WaveformWidget(WaveformWidget::RESP, this);
     respLabel  = new QLabel("RESP : 0.00");
     respLabel->setFont(QFont("Arial", 32, QFont::Bold));
-    respLabel->setStyleSheet("QLabel { color: cyan; border: 2px solid cyan; padding: 5px; }");
+    respLabel->setStyleSheet("QLabel { color: cyan; border: 0px solid cyan; padding: 5px; }");
 
     QHBoxLayout *respLayout = new QHBoxLayout();
     respLayout->addWidget(respWidget);
@@ -58,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
     spo2Widget = new WaveformWidget(WaveformWidget::SPO2, this);
     spo2Label  = new QLabel("SPO2 : 0%");
     spo2Label->setFont(QFont("Arial", 32, QFont::Bold));
-    spo2Label->setStyleSheet("QLabel { color: gray; border: 2px solid cyan; padding: 5px; }");
+    spo2Label->setStyleSheet("QLabel { color: gray; border: 0px solid cyan; padding: 5px; }");
 
     QHBoxLayout *spo2Layout = new QHBoxLayout();
     spo2Layout->addWidget(spo2Widget);
@@ -69,7 +69,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
     bpWidget = new WaveformWidget(WaveformWidget::BP, this);
     bpLabel  = new QLabel("BP : 0/0");
     bpLabel->setFont(QFont("Arial", 32, QFont::Bold));
-    bpLabel->setStyleSheet("QLabel { color: yellow; border: 2px solid cyan; padding: 5px; }");
+    bpLabel->setStyleSheet("QLabel { color: yellow; border: 0px solid cyan; padding: 5px; }");
 
     QHBoxLayout *bpLayout = new QHBoxLayout();
     bpLayout->addWidget(bpWidget);
