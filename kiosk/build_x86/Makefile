@@ -285,6 +285,102 @@ src/controller/cameracontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.s
 .PHONY : src/controller/cameracontroller.cpp.s
 
+src/controller/homecontroller.o: src/controller/homecontroller.cpp.o
+.PHONY : src/controller/homecontroller.o
+
+# target to build an object file
+src/controller/homecontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o
+.PHONY : src/controller/homecontroller.cpp.o
+
+src/controller/homecontroller.i: src/controller/homecontroller.cpp.i
+.PHONY : src/controller/homecontroller.i
+
+# target to preprocess a source file
+src/controller/homecontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.i
+.PHONY : src/controller/homecontroller.cpp.i
+
+src/controller/homecontroller.s: src/controller/homecontroller.cpp.s
+.PHONY : src/controller/homecontroller.s
+
+# target to generate assembly for a file
+src/controller/homecontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.s
+.PHONY : src/controller/homecontroller.cpp.s
+
+src/controller/printcontroller.o: src/controller/printcontroller.cpp.o
+.PHONY : src/controller/printcontroller.o
+
+# target to build an object file
+src/controller/printcontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o
+.PHONY : src/controller/printcontroller.cpp.o
+
+src/controller/printcontroller.i: src/controller/printcontroller.cpp.i
+.PHONY : src/controller/printcontroller.i
+
+# target to preprocess a source file
+src/controller/printcontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.i
+.PHONY : src/controller/printcontroller.cpp.i
+
+src/controller/printcontroller.s: src/controller/printcontroller.cpp.s
+.PHONY : src/controller/printcontroller.s
+
+# target to generate assembly for a file
+src/controller/printcontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s
+.PHONY : src/controller/printcontroller.cpp.s
+
+src/controller/protocolcontroller.o: src/controller/protocolcontroller.cpp.o
+.PHONY : src/controller/protocolcontroller.o
+
+# target to build an object file
+src/controller/protocolcontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o
+.PHONY : src/controller/protocolcontroller.cpp.o
+
+src/controller/protocolcontroller.i: src/controller/protocolcontroller.cpp.i
+.PHONY : src/controller/protocolcontroller.i
+
+# target to preprocess a source file
+src/controller/protocolcontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.i
+.PHONY : src/controller/protocolcontroller.cpp.i
+
+src/controller/protocolcontroller.s: src/controller/protocolcontroller.cpp.s
+.PHONY : src/controller/protocolcontroller.s
+
+# target to generate assembly for a file
+src/controller/protocolcontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.s
+.PHONY : src/controller/protocolcontroller.cpp.s
+
+src/controller/protocolparser.o: src/controller/protocolparser.cpp.o
+.PHONY : src/controller/protocolparser.o
+
+# target to build an object file
+src/controller/protocolparser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o
+.PHONY : src/controller/protocolparser.cpp.o
+
+src/controller/protocolparser.i: src/controller/protocolparser.cpp.i
+.PHONY : src/controller/protocolparser.i
+
+# target to preprocess a source file
+src/controller/protocolparser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.i
+.PHONY : src/controller/protocolparser.cpp.i
+
+src/controller/protocolparser.s: src/controller/protocolparser.cpp.s
+.PHONY : src/controller/protocolparser.s
+
+# target to generate assembly for a file
+src/controller/protocolparser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.s
+.PHONY : src/controller/protocolparser.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -333,6 +429,102 @@ src/model/barcodemodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/barcodemodel.cpp.s
 .PHONY : src/model/barcodemodel.cpp.s
 
+src/model/qrgenerator.o: src/model/qrgenerator.cpp.o
+.PHONY : src/model/qrgenerator.o
+
+# target to build an object file
+src/model/qrgenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/qrgenerator.cpp.o
+.PHONY : src/model/qrgenerator.cpp.o
+
+src/model/qrgenerator.i: src/model/qrgenerator.cpp.i
+.PHONY : src/model/qrgenerator.i
+
+# target to preprocess a source file
+src/model/qrgenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/qrgenerator.cpp.i
+.PHONY : src/model/qrgenerator.cpp.i
+
+src/model/qrgenerator.s: src/model/qrgenerator.cpp.s
+.PHONY : src/model/qrgenerator.s
+
+# target to generate assembly for a file
+src/model/qrgenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/qrgenerator.cpp.s
+.PHONY : src/model/qrgenerator.cpp.s
+
+src/model/vitalsmodel.o: src/model/vitalsmodel.cpp.o
+.PHONY : src/model/vitalsmodel.o
+
+# target to build an object file
+src/model/vitalsmodel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o
+.PHONY : src/model/vitalsmodel.cpp.o
+
+src/model/vitalsmodel.i: src/model/vitalsmodel.cpp.i
+.PHONY : src/model/vitalsmodel.i
+
+# target to preprocess a source file
+src/model/vitalsmodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.i
+.PHONY : src/model/vitalsmodel.cpp.i
+
+src/model/vitalsmodel.s: src/model/vitalsmodel.cpp.s
+.PHONY : src/model/vitalsmodel.s
+
+# target to generate assembly for a file
+src/model/vitalsmodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.s
+.PHONY : src/model/vitalsmodel.cpp.s
+
+src/platform/input/rotaryhandler.o: src/platform/input/rotaryhandler.cpp.o
+.PHONY : src/platform/input/rotaryhandler.o
+
+# target to build an object file
+src/platform/input/rotaryhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o
+.PHONY : src/platform/input/rotaryhandler.cpp.o
+
+src/platform/input/rotaryhandler.i: src/platform/input/rotaryhandler.cpp.i
+.PHONY : src/platform/input/rotaryhandler.i
+
+# target to preprocess a source file
+src/platform/input/rotaryhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.i
+.PHONY : src/platform/input/rotaryhandler.cpp.i
+
+src/platform/input/rotaryhandler.s: src/platform/input/rotaryhandler.cpp.s
+.PHONY : src/platform/input/rotaryhandler.s
+
+# target to generate assembly for a file
+src/platform/input/rotaryhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.s
+.PHONY : src/platform/input/rotaryhandler.cpp.s
+
+src/platform/uart/uartdevice.o: src/platform/uart/uartdevice.cpp.o
+.PHONY : src/platform/uart/uartdevice.o
+
+# target to build an object file
+src/platform/uart/uartdevice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o
+.PHONY : src/platform/uart/uartdevice.cpp.o
+
+src/platform/uart/uartdevice.i: src/platform/uart/uartdevice.cpp.i
+.PHONY : src/platform/uart/uartdevice.i
+
+# target to preprocess a source file
+src/platform/uart/uartdevice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.i
+.PHONY : src/platform/uart/uartdevice.cpp.i
+
+src/platform/uart/uartdevice.s: src/platform/uart/uartdevice.cpp.s
+.PHONY : src/platform/uart/uartdevice.s
+
+# target to generate assembly for a file
+src/platform/uart/uartdevice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.s
+.PHONY : src/platform/uart/uartdevice.cpp.s
+
 src/platform/v4l2/v4l2camera.o: src/platform/v4l2/v4l2camera.cpp.o
 .PHONY : src/platform/v4l2/v4l2camera.o
 
@@ -357,6 +549,78 @@ src/platform/v4l2/v4l2camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.s
 .PHONY : src/platform/v4l2/v4l2camera.cpp.s
 
+src/service/inputservice.o: src/service/inputservice.cpp.o
+.PHONY : src/service/inputservice.o
+
+# target to build an object file
+src/service/inputservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/inputservice.cpp.o
+.PHONY : src/service/inputservice.cpp.o
+
+src/service/inputservice.i: src/service/inputservice.cpp.i
+.PHONY : src/service/inputservice.i
+
+# target to preprocess a source file
+src/service/inputservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/inputservice.cpp.i
+.PHONY : src/service/inputservice.cpp.i
+
+src/service/inputservice.s: src/service/inputservice.cpp.s
+.PHONY : src/service/inputservice.s
+
+# target to generate assembly for a file
+src/service/inputservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/inputservice.cpp.s
+.PHONY : src/service/inputservice.cpp.s
+
+src/service/sessionservice.o: src/service/sessionservice.cpp.o
+.PHONY : src/service/sessionservice.o
+
+# target to build an object file
+src/service/sessionservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o
+.PHONY : src/service/sessionservice.cpp.o
+
+src/service/sessionservice.i: src/service/sessionservice.cpp.i
+.PHONY : src/service/sessionservice.i
+
+# target to preprocess a source file
+src/service/sessionservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.i
+.PHONY : src/service/sessionservice.cpp.i
+
+src/service/sessionservice.s: src/service/sessionservice.cpp.s
+.PHONY : src/service/sessionservice.s
+
+# target to generate assembly for a file
+src/service/sessionservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.s
+.PHONY : src/service/sessionservice.cpp.s
+
+src/storage/patientrepository.o: src/storage/patientrepository.cpp.o
+.PHONY : src/storage/patientrepository.o
+
+# target to build an object file
+src/storage/patientrepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o
+.PHONY : src/storage/patientrepository.cpp.o
+
+src/storage/patientrepository.i: src/storage/patientrepository.cpp.i
+.PHONY : src/storage/patientrepository.i
+
+# target to preprocess a source file
+src/storage/patientrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.i
+.PHONY : src/storage/patientrepository.cpp.i
+
+src/storage/patientrepository.s: src/storage/patientrepository.cpp.s
+.PHONY : src/storage/patientrepository.s
+
+# target to generate assembly for a file
+src/storage/patientrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.s
+.PHONY : src/storage/patientrepository.cpp.s
+
 src/storage/sqliterecorder.o: src/storage/sqliterecorder.cpp.o
 .PHONY : src/storage/sqliterecorder.o
 
@@ -380,6 +644,30 @@ src/storage/sqliterecorder.s: src/storage/sqliterecorder.cpp.s
 src/storage/sqliterecorder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.s
 .PHONY : src/storage/sqliterecorder.cpp.s
+
+src/view/homeview.o: src/view/homeview.cpp.o
+.PHONY : src/view/homeview.o
+
+# target to build an object file
+src/view/homeview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/homeview.cpp.o
+.PHONY : src/view/homeview.cpp.o
+
+src/view/homeview.i: src/view/homeview.cpp.i
+.PHONY : src/view/homeview.i
+
+# target to preprocess a source file
+src/view/homeview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/homeview.cpp.i
+.PHONY : src/view/homeview.cpp.i
+
+src/view/homeview.s: src/view/homeview.cpp.s
+.PHONY : src/view/homeview.s
+
+# target to generate assembly for a file
+src/view/homeview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/homeview.cpp.s
+.PHONY : src/view/homeview.cpp.s
 
 src/view/mainwindow.o: src/view/mainwindow.cpp.o
 .PHONY : src/view/mainwindow.o
@@ -430,18 +718,54 @@ help:
 	@echo "... src/controller/cameracontroller.o"
 	@echo "... src/controller/cameracontroller.i"
 	@echo "... src/controller/cameracontroller.s"
+	@echo "... src/controller/homecontroller.o"
+	@echo "... src/controller/homecontroller.i"
+	@echo "... src/controller/homecontroller.s"
+	@echo "... src/controller/printcontroller.o"
+	@echo "... src/controller/printcontroller.i"
+	@echo "... src/controller/printcontroller.s"
+	@echo "... src/controller/protocolcontroller.o"
+	@echo "... src/controller/protocolcontroller.i"
+	@echo "... src/controller/protocolcontroller.s"
+	@echo "... src/controller/protocolparser.o"
+	@echo "... src/controller/protocolparser.i"
+	@echo "... src/controller/protocolparser.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/model/barcodemodel.o"
 	@echo "... src/model/barcodemodel.i"
 	@echo "... src/model/barcodemodel.s"
+	@echo "... src/model/qrgenerator.o"
+	@echo "... src/model/qrgenerator.i"
+	@echo "... src/model/qrgenerator.s"
+	@echo "... src/model/vitalsmodel.o"
+	@echo "... src/model/vitalsmodel.i"
+	@echo "... src/model/vitalsmodel.s"
+	@echo "... src/platform/input/rotaryhandler.o"
+	@echo "... src/platform/input/rotaryhandler.i"
+	@echo "... src/platform/input/rotaryhandler.s"
+	@echo "... src/platform/uart/uartdevice.o"
+	@echo "... src/platform/uart/uartdevice.i"
+	@echo "... src/platform/uart/uartdevice.s"
 	@echo "... src/platform/v4l2/v4l2camera.o"
 	@echo "... src/platform/v4l2/v4l2camera.i"
 	@echo "... src/platform/v4l2/v4l2camera.s"
+	@echo "... src/service/inputservice.o"
+	@echo "... src/service/inputservice.i"
+	@echo "... src/service/inputservice.s"
+	@echo "... src/service/sessionservice.o"
+	@echo "... src/service/sessionservice.i"
+	@echo "... src/service/sessionservice.s"
+	@echo "... src/storage/patientrepository.o"
+	@echo "... src/storage/patientrepository.i"
+	@echo "... src/storage/patientrepository.s"
 	@echo "... src/storage/sqliterecorder.o"
 	@echo "... src/storage/sqliterecorder.i"
 	@echo "... src/storage/sqliterecorder.s"
+	@echo "... src/view/homeview.o"
+	@echo "... src/view/homeview.i"
+	@echo "... src/view/homeview.s"
 	@echo "... src/view/mainwindow.o"
 	@echo "... src/view/mainwindow.i"
 	@echo "... src/view/mainwindow.s"

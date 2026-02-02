@@ -8,12 +8,17 @@ project(kiosk
 # --------------------------------------------------
 # Build settings
 # --------------------------------------------------
-set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# Explicitly disable OpenGL
+set(QT_FEATURE_opengl OFF)
+set(QT_FEATURE_opengles2 OFF)
 
 # Reduce binary size (important for embedded)
 if(NOT CMAKE_BUILD_TYPE)
@@ -24,6 +29,9 @@ endif()
 # Qt
 # --------------------------------------------------
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+# Explicitly disable OpenGL
+#set(QT_FEATURE_opengl OFF)
+#set(QT_FEATURE_opengles2 OFF)
 
 # --------------------------------------------------
 # SQLite3 (from Yocto sysroot)
@@ -46,6 +54,7 @@ set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
 set(ZXING_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(external/zxing-cpp)
+add_compile_definitions(ZX_USE_UTF8)
 
 # --------------------------------------------------
 # Source files
@@ -56,24 +65,53 @@ set(SRC
     # Models
     src/model/barcodemodel.h
     src/model/barcodemodel.cpp
+    src/model/qrgenerator.h
+    src/model/qrgenerator.cpp
+    src/model/vitalsmodel.h
+    src/model/vitalsmodel.cpp
+    src/model/patient.h
 
     # Controllers
     src/controller/cameracontroller.h
     src/controller/cameracontroller.cpp
     src/controller/barcodescanner.h
     src/controller/barcodescanner.cpp
+    src/controller/printcontroller.h
+    src/controller/printcontroller.cpp
+    src/controller/protocolparser.h
+    src/controller/protocolparser.cpp
+    src/controller/protocolcontroller.h
+    src/controller/protocolcontroller.cpp
+    src/controller/homecontroller.h
+    src/controller/homecontroller.cpp
+    src/controller/inputcontroller.h
+    #src/controller/inputcontroller.cpp
+
+    #service
+    src/service/sessionservice.h
+    src/service/sessionservice.cpp
+    src/service/inputservice.h
+    src/service/inputservice.cpp
 
     # Platform
     src/platform/v4l2/v4l2camera.h
     src/platform/v4l2/v4l2camera.cpp
+    src/platform/uart/uartdevice.h
+    src/platform/uart/uartdevice.cpp
+    src/platform/input/rotaryhandler.h
+    src/platform/input/rotaryhandler.cpp
 
     # Storage
     src/storage/sqliterecorder.h
     src/storage/sqliterecorder.cpp
-
+    src/storage/patientrepository.h
+    src/storage/patientrepository.cpp
     # Views
     src/view/mainwindow.h
     src/view/mainwindow.cpp
+    src/view/homeview.h
+    src/view/homeview.cpp
+    
 )
 
 # --------------------------------------------------
@@ -98,6 +136,7 @@ target_link_libraries(kiosk
         Qt6::Widgets
         ZXing::ZXing
         SQLite::SQLite3
+	#Qt6::SerialPort
 )
 
 # --------------------------------------------------

@@ -2,7 +2,6 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GTIN.cpp \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GTIN.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Barcode.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BarcodeFormat.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Flags.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BitHacks.h \
@@ -34,14 +33,6 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/wchar.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdint-intn.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdint-uintn.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/cstring \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/string.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/12.3.0/include/stddef.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/locale_t.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/__locale_t.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/strings.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/strings_fortified.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/string_fortified.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/vector \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stl_algobase.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/functexcept.h \
@@ -83,6 +74,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/range_access.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/vector.tcc \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/cstddef \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/12.3.0/include/stddef.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/iterator \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/iosfwd \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stringfwd.h \
@@ -98,6 +90,8 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/__mbstate_t.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/__FILE.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/FILE.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/locale_t.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/__locale_t.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/wchar2-decl.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/wchar2.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stream_iterator.h \
@@ -172,6 +166,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/sigset_t.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/select2.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/alloca.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdlib-bsearch.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdlib-float.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdlib.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/std_abs.h \
@@ -183,6 +178,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/types/cookie_io_functions_t.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdio_lim.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdio2-decl.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdio.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/stdio2.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/cerrno \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/errno.h \
@@ -204,10 +200,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/typeinfo \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/nested_exception.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/streambuf.tcc \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ByteArray.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Range.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXAlgorithms.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/algorithm \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stl_algo.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/algorithmfwd.h \
@@ -216,33 +209,20 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/uniform_int_dist.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/pstl/glue_algorithm_defs.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/pstl/execution_defs.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/charconv \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bit \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/cstring \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/string.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/strings.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/strings_fortified.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/string_fortified.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/numeric \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stl_numeric.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bit \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/pstl/glue_numeric_defs.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/utility \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stl_relops.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Result.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ByteArray.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Content.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReaderOptions.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ImageView.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/memory \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/stl_raw_storage_iter.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/align.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/uses_allocator.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/unique_ptr.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/tuple \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/shared_ptr.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/shared_ptr_base.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/allocated_ptr.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/ext/aligned_buffer.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/ext/concurrence.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/shared_ptr_atomic.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/atomic_base.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/atomic_lockfree_defines.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/backward/auto_ptr.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/pstl/glue_memory_defs.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeStatus.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Quadrilateral.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Point.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/cmath \
@@ -274,6 +254,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GTIN.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/array \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/compare \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/StructuredAppend.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextUtfEncoding.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/iomanip \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/locale \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/locale_facets.h \

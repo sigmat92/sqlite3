@@ -47,3 +47,33 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/cmake_install.cmake")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake"
+         "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets-release.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/zxing.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES
+    "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/ZXingConfig.cmake"
+    "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/ZXingConfigVersion.cmake"
+    )
+endif()
+

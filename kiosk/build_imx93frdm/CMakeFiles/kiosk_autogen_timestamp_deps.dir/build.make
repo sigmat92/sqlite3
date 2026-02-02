@@ -66,10 +66,10 @@ include CMakeFiles/kiosk_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/kiosk_autogen_timestamp_deps.dir/progress.make
 
+CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libsqlite3.so
+CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
 CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Widgets.so.6.7.0
-CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
-CMakeFiles/kiosk_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libsqlite3.so
 CMakeFiles/kiosk_autogen_timestamp_deps: external/zxing-cpp/core/libZXing.a
 
 kiosk_autogen_timestamp_deps: CMakeFiles/kiosk_autogen_timestamp_deps

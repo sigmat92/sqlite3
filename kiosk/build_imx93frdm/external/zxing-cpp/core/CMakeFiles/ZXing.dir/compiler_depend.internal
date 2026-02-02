@@ -3,10 +3,7 @@
 
 /home/prakash/sqlite3/kiosk/build_imx93frdm/external/zxing-cpp/core/ZXing_autogen/timestamp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/CMakeLists.txt
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/Version.h.in
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/ZXingConfig.cmake.in
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Barcode.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Barcode.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/ZXVersion.h.in
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BarcodeFormat.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BarcodeFormat.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BinaryBitmap.cpp
@@ -25,18 +22,24 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ByteMatrix.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSetECI.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ConcentricFinder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ConcentricFinder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Content.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Content.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CustomData.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeHints.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeHints.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeStatus.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeStatus.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecoderResult.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DetectorResult.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ECI.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ECI.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Flags.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GS1.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GS1.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GTIN.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GTIN.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Generator.h
@@ -48,13 +51,9 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GlobalHistogramBinarizer.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GridSampler.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GridSampler.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/HRI.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/HRI.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/HybridBinarizer.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/HybridBinarizer.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ImageView.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/JSON.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/JSON.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/LogMatrix.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Matrix.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/MultiFormatReader.cpp
@@ -66,21 +65,19 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/PerspectiveTransform.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Point.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Quadrilateral.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Range.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReadBarcode.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReadBarcode.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Reader.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReaderOptions.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReedSolomonDecoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReedSolomonDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReedSolomonEncoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReedSolomonEncoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/RegressionLine.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Result.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Result.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ResultPoint.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ResultPoint.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Scope.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/StructuredAppend.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextDecoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextEncoder.cpp
@@ -89,18 +86,14 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextUtfEncoding.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ThresholdBinarizer.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TritMatrix.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Utf.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Utf.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/WhiteRectDetector.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/WhiteRectDetector.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/WriteBarcode.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/WriteBarcode.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXAlgorithms.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXBigInteger.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXBigInteger.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXConfig.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXNullable.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXTestSupport.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXVersion.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXingCpp.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXingCpp.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/aztec/AZDecoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/aztec/AZDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/aztec/AZDetector.cpp
@@ -139,8 +132,6 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMVersion.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMWriter.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMWriter.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/libzueci/zueci.c
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/libzueci/zueci.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/maxicode/MCBitMatrixParser.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/maxicode/MCBitMatrixParser.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/maxicode/MCDecoder.cpp
@@ -161,21 +152,16 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode39Reader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode39Writer.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode39Writer.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Patterns.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Reader.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Reader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Writer.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode93Writer.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDXFilmEdgeReader.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDXFilmEdgeReader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarCommon.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarCommon.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarExpandedBitDecoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarExpandedBitDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarExpandedReader.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarExpandedReader.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarLimitedReader.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarLimitedReader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarReader.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODDataBarReader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODEAN13Writer.cpp
@@ -190,6 +176,7 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODMultiUPCEANReader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODReader.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODReader.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODRowReader.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODRowReader.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODUPCAWriter.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODUPCAWriter.h
@@ -208,9 +195,9 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFCodewordDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFCompaction.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFCustomData.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDecoder.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDecoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDecodedBitStreamParser.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDecoderResultExtra.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDetectionResult.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDetectionResult.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFDetectionResultColumn.cpp
@@ -231,9 +218,6 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFScanningDecoder.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFWriter.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/PDFWriter.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/ZXBigInteger.cpp
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/ZXBigInteger.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/pdf417/ZXNullable.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRBitMatrixParser.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRBitMatrixParser.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRCodecMode.cpp
@@ -263,10 +247,27 @@
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRVersion.h
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRWriter.cpp
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/qrcode/QRWriter.h
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/zxing.pc.in
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5MapTable.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5MapTable.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5TextDecoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5TextDecoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5TextEncoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/Big5TextEncoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/GBTextDecoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/GBTextDecoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/GBTextEncoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/GBTextEncoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/JPTextDecoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/JPTextDecoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/JPTextEncoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/JPTextEncoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRHangulMapping.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRHangulMapping.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRTextDecoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRTextDecoder.h
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRTextEncoder.cpp
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/textcodec/KRTextEncoder.h
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/cmake
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake
@@ -275,5 +276,4 @@
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/FindThreads.cmake
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake
 

@@ -1,16 +1,43 @@
 #include <QApplication>
-
 #include "view/mainwindow.h"
 #include "controller/cameracontroller.h"
 #include "controller/barcodescanner.h"
 #include "model/barcodemodel.h"
 #include "storage/sqliterecorder.h"
 
+#include "view/homeview.h"
+#include "controller/homecontroller.h"
+#include "service/sessionservice.h"
+#include "storage/patientrepository.h"
+#include "storage/sqliterecorder.h"
+
 int main(int argc, char *argv[])
 {
+	
+    qputenv("QT_QPA_PLATFORM", "wayland");   // or "eglfs" if no compositor
+    qputenv("QT_OPENGL", "software");        // 🔥 critical
+    qputenv("QT_QUICK_BACKEND", "software"); // safety
     QApplication app(argc, argv);
 
-    MainWindow win;
+    SQLiteRecorder db("patients.db");
+    PatientRepository repo(&db);
+    SessionService session;
+    //auto* encoder = new EncoderService("/dev/input/event2");
+    //encoder->start();
+
+
+    HomeView view;
+    HomeController controller(&view, &session, &repo);
+    view.show();
+    //view.showFullScreen();
+
+    return app.exec();
+}
+    //QApplication app(argc, argv);
+
+    //MainWindow win;
+
+    /* Working Camera QR Scanner Code - Uncomment to enable
     BarcodeModel model;
     SQLiteRecorder db("barcodes.db");
 
@@ -38,7 +65,8 @@ int main(int argc, char *argv[])
 
     camera.stop();
     camera.wait();
-
-    return ret;
-}
+    */
+    //win.show();
+    //return app.exec();
+//}
 

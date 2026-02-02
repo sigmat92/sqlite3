@@ -2,4 +2,41 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODCode128Patterns.cpp.o: \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode128Patterns.cpp \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/oned/ODCode128Patterns.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/array
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/array \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/compare \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/initializer_list \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/aarch64-poky-linux/bits/c++config.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/aarch64-poky-linux/bits/os_defines.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features-time64.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/wordsize.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/timesize.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/timesize-64.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sys/cdefs.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/long-double.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/long-double-64.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-64.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-lp64.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/aarch64-poky-linux/bits/cpu_defines.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/pstl/pstl_config.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/type_traits \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/functexcept.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/exception_defines.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_algobase.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/cpp_type_traits.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/ext/type_traits.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/ext/numeric_traits.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_pair.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/move.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/utility.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_iterator_base_types.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_iterator_base_funcs.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/concept_check.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/debug/assertions.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_iterator.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/ptr_traits.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/debug/debug.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/predefined_ops.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bit \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/range_access.h

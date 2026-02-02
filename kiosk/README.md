@@ -1,14 +1,42 @@
-✅ Qt 6 Widgets
-✅ MVC
-✅ V4L2 only (no QtMultimedia)
-✅ NO libjpeg
-✅ NO YUYV
-✅ GRAY8 only (best for ZXing)
-✅ SQLite3 storage
-✅ USB camera
-✅ i.MX93 / Yocto friendly
+
+
+Build & install ZXing-cpp
+cd ~
+git clone https://github.com/zxing-cpp/zxing-cpp.git
+cd zxing-cpp
+mkdir build
+cd build
+cmake -DBUILD_SHARED_LIBS=ON ..
+make -j$(nproc)
+sudo make install
+sudo ldconfig
+
+This installs:
+
+/usr/local/include/ZXing/
+    BarcodeWriter.h
+    ReadBarcode.h
+    ImageView.h
+/usr/local/lib/libZXing.so
+/usr/local/lib/cmake/ZXing/ZXingConfig.cmake
+
+
 
 STEP 0 — What we are building (mental model)
+
+┌──────────────────────────────┐
+│          UI / Views          │  Qt Widgets (.ui / QWidget)
+├──────────────────────────────┤
+│        Controllers           │  Glue: UI ↔ Services
+├──────────────────────────────┤
+│        Application Services  │  State, workflows, sessions
+├──────────────────────────────┤
+│        Domain / Model        │  Patient, Vitals, Records
+├──────────────────────────────┤
+│        Infrastructure        │  Hardware, DB, OS
+└──────────────────────────────┘
+
+
 USB Camera (GRAY8)
    │
    ▼

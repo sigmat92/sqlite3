@@ -48,28 +48,26 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ZXing" TYPE FILE FILES
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Barcode.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BarcodeFormat.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BitHacks.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ByteArray.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Content.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSetECI.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Flags.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/GTIN.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextUtfEncoding.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXAlgorithms.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXConfig.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Content.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeHints.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeStatus.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ImageView.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Point.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Quadrilateral.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Range.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReadBarcode.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ReaderOptions.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/StructuredAppend.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextUtfEncoding.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXingCpp.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXAlgorithms.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXVersion.h"
-    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/DecodeHints.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Result.h"
+    "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/StructuredAppend.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BitMatrix.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/BitMatrixIO.h"
     "/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Matrix.h"
@@ -78,36 +76,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/Version.h")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake")
-    file(DIFFERENT EXPORT_FILE_CHANGED FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake"
-         "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets.cmake")
-    if(EXPORT_FILE_CHANGED)
-      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets-*.cmake")
-      if(OLD_CONFIG_FILES)
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing/ZXingTargets.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
-        file(REMOVE ${OLD_CONFIG_FILES})
-      endif()
-    endif()
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/CMakeFiles/Export/lib/cmake/ZXing/ZXingTargets-release.cmake")
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/zxing.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ZXing" TYPE FILE FILES
-    "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/ZXingConfig.cmake"
-    "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/ZXingConfigVersion.cmake"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ZXing" TYPE FILE FILES "/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core/ZXVersion.h")
 endif()
 

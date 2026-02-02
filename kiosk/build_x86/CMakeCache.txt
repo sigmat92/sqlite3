@@ -14,12 +14,31 @@
 # EXTERNAL cache entries
 ########################
 
+//Build the black box reader/writer tests
+BUILD_BLACKBOX_TESTS:BOOL=OFF
+
+//Fetch from github or use locally installed (AUTO/GITHUB/LOCAL)
+BUILD_DEPENDENCIES:STRING=AUTO
+
+//Build the example barcode reader/writer applications
 BUILD_EXAMPLES:BOOL=OFF
+
+//Build the python module
+BUILD_PYTHON_MODULE:BOOL=OFF
+
+//Build with reader support (decoders)
+BUILD_READERS:BOOL=ON
 
 //Build and link as shared library
 BUILD_SHARED_LIBS:BOOL=OFF
 
 BUILD_TESTING:BOOL=OFF
+
+//Build the unit tests (don't enable for production builds)
+BUILD_UNIT_TESTS:BOOL=OFF
+
+//Build with writer support (encoders)
+BUILD_WRITERS:BOOL=ON
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -370,66 +389,20 @@ XKB_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 XKB_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libxkbcommon.so
 
-//Build the black box reader/writer tests
-ZXING_BLACKBOX_TESTS:BOOL=OFF
-
 ZXING_BUILD_EXAMPLES:BOOL=OFF
 
 ZXING_BUILD_TESTS:BOOL=OFF
 
-//Build the C-API
-ZXING_C_API:BOOL=OFF
-
-//Fetch from github or use locally installed (AUTO/GITHUB/LOCAL)
-ZXING_DEPENDENCIES:STRING=AUTO
-
-//Enable support for 1D barcodes
-ZXING_ENABLE_1D:BOOL=ON
-
-//Enable support for AZTEC barcodes
-ZXING_ENABLE_AZTEC:BOOL=ON
-
-//Enable support for DATAMATRIX barcodes
-ZXING_ENABLE_DATAMATRIX:BOOL=ON
-
-//Enable support for MAXICODE barcodes
-ZXING_ENABLE_MAXICODE:BOOL=ON
-
-//Enable support for PDF417 barcodes
-ZXING_ENABLE_PDF417:BOOL=ON
-
-//Enable support for QRCODE barcodes
-ZXING_ENABLE_QRCODE:BOOL=ON
-
-//Build the example barcode reader/writer applications
-ZXING_EXAMPLES:BOOL=ON
-
-//Build with experimental API
-ZXING_EXPERIMENTAL_API:BOOL=OFF
-
-//Build the python module
-ZXING_PYTHON_MODULE:BOOL=OFF
-
-//Build with reader support (decoders)
-ZXING_READERS:BOOL=ON
-
-//Build the unit tests (don't enable for production builds)
-ZXING_UNIT_TESTS:BOOL=OFF
-
-//Use the bundled libzint for barcode creation/writing
 ZXING_USE_BUNDLED_ZINT:BOOL=OFF
 
-//Build with old and/or new writer (encoder) backend (OFF/ON/OLD/NEW/BOTH)
-ZXING_WRITERS:STRING=ON
-
 //Value Computed by CMake
-ZXing_BINARY_DIR:STATIC=/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp/core
+ZXing_BINARY_DIR:STATIC=/home/prakash/sqlite3/kiosk/build_x86/external/zxing-cpp
 
 //Value Computed by CMake
 ZXing_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-ZXing_SOURCE_DIR:STATIC=/home/prakash/sqlite3/kiosk/external/zxing-cpp/core
+ZXing_SOURCE_DIR:STATIC=/home/prakash/sqlite3/kiosk/external/zxing-cpp
 
 //Value Computed by CMake
 kiosk_BINARY_DIR:STATIC=/home/prakash/sqlite3/kiosk/build_x86
@@ -448,6 +421,8 @@ pkgcfg_lib_PKG_XKB_xkbcommon:FILEPATH=/usr/lib/x86_64-linux-gnu/libxkbcommon.so
 # INTERNAL cache entries
 ########################
 
+//STRINGS property for variable: BUILD_DEPENDENCIES
+BUILD_DEPENDENCIES-STRINGS:INTERNAL=AUTO;GITHUB;LOCAL
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -627,8 +602,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Test COMPILER_KNOWS_Os
-COMPILER_KNOWS_Os:INTERNAL=1
+//Test COMPILER_NEEDS_FLOAT_STORE
+COMPILER_NEEDS_FLOAT_STORE:INTERNAL=1
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //Details about finding SQLite3
@@ -641,8 +616,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_WrapAtomic:INTERNAL=[1][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_WrapOpenGL:INTERNAL=[ON][v()]
 //Details about finding XKB
 FIND_PACKAGE_MESSAGE_DETAILS_XKB:INTERNAL=[/usr/lib/x86_64-linux-gnu/libxkbcommon.so][/usr/include][v1.4.0(0.5.0)]
-//Test HAS_FILE_PREFIX_ARG
-HAS_FILE_PREFIX_ARG:INTERNAL=1
 //Test HAVE_STDATOMIC
 HAVE_STDATOMIC:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
@@ -1440,10 +1413,6 @@ Vulkan_GLSLC_EXECUTABLE-ADVANCED:INTERNAL=1
 Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_LIBRARY
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
-//STRINGS property for variable: ZXING_DEPENDENCIES
-ZXING_DEPENDENCIES-STRINGS:INTERNAL=AUTO;GITHUB;LOCAL
-//STRINGS property for variable: ZXING_WRITERS
-ZXING_WRITERS-STRINGS:INTERNAL=OFF;ON;OLD;NEW;BOTH
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 __pkg_config_arguments_PKG_XKB:INTERNAL=QUIET;xkbcommon

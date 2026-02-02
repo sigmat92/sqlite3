@@ -36,8 +36,10 @@ namespace {
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
-    "updateFrame",
+    "onGenerateQR",
     "",
+    "onPrintQR",
+    "updateFrame",
     "img",
     "updateBarcode",
     "text",
@@ -54,7 +56,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,12 +64,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x0a,    1 /* Public */,
-       4,    2,   29,    2, 0x0a,    3 /* Public */,
+       1,    0,   38,    2, 0x0a,    1 /* Public */,
+       3,    0,   39,    2, 0x0a,    2 /* Public */,
+       4,    1,   40,    2, 0x0a,    3 /* Public */,
+       6,    2,   43,    2, 0x0a,    5 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QImage,    3,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString,    5,    6,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QImage,    5,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,    7,    8,
 
        0        // eod
 };
@@ -81,6 +87,10 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
+        // method 'onGenerateQR'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onPrintQR'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'updateFrame'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QImage &, std::false_type>,
@@ -98,8 +108,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->updateFrame((*reinterpret_cast< std::add_pointer_t<QImage>>(_a[1]))); break;
-        case 1: _t->updateBarcode((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 0: _t->onGenerateQR(); break;
+        case 1: _t->onPrintQR(); break;
+        case 2: _t->updateFrame((*reinterpret_cast< std::add_pointer_t<QImage>>(_a[1]))); break;
+        case 3: _t->updateBarcode((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
@@ -124,13 +136,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }

@@ -213,45 +213,6 @@ ZXing_autogen/mocs_compilation.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/ZXing_autogen/mocs_compilation.cpp.s
 .PHONY : ZXing_autogen/mocs_compilation.cpp.s
 
-# target to build an object file
-cmake_pch.hxx.gch:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/cmake_pch.hxx.gch
-.PHONY : cmake_pch.hxx.gch
-
-# target to preprocess a source file
-cmake_pch.hxx.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/cmake_pch.hxx.i
-.PHONY : cmake_pch.hxx.i
-
-# target to generate assembly for a file
-cmake_pch.hxx.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/cmake_pch.hxx.s
-.PHONY : cmake_pch.hxx.s
-
-src/Barcode.o: src/Barcode.cpp.o
-.PHONY : src/Barcode.o
-
-# target to build an object file
-src/Barcode.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Barcode.cpp.o
-.PHONY : src/Barcode.cpp.o
-
-src/Barcode.i: src/Barcode.cpp.i
-.PHONY : src/Barcode.i
-
-# target to preprocess a source file
-src/Barcode.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Barcode.cpp.i
-.PHONY : src/Barcode.cpp.i
-
-src/Barcode.s: src/Barcode.cpp.s
-.PHONY : src/Barcode.s
-
-# target to generate assembly for a file
-src/Barcode.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Barcode.cpp.s
-.PHONY : src/Barcode.cpp.s
-
 src/BarcodeFormat.o: src/BarcodeFormat.cpp.o
 .PHONY : src/BarcodeFormat.o
 
@@ -468,6 +429,54 @@ src/Content.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Content.cpp.s
 .PHONY : src/Content.cpp.s
 
+src/DecodeHints.o: src/DecodeHints.cpp.o
+.PHONY : src/DecodeHints.o
+
+# target to build an object file
+src/DecodeHints.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeHints.cpp.o
+.PHONY : src/DecodeHints.cpp.o
+
+src/DecodeHints.i: src/DecodeHints.cpp.i
+.PHONY : src/DecodeHints.i
+
+# target to preprocess a source file
+src/DecodeHints.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeHints.cpp.i
+.PHONY : src/DecodeHints.cpp.i
+
+src/DecodeHints.s: src/DecodeHints.cpp.s
+.PHONY : src/DecodeHints.s
+
+# target to generate assembly for a file
+src/DecodeHints.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeHints.cpp.s
+.PHONY : src/DecodeHints.cpp.s
+
+src/DecodeStatus.o: src/DecodeStatus.cpp.o
+.PHONY : src/DecodeStatus.o
+
+# target to build an object file
+src/DecodeStatus.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeStatus.cpp.o
+.PHONY : src/DecodeStatus.cpp.o
+
+src/DecodeStatus.i: src/DecodeStatus.cpp.i
+.PHONY : src/DecodeStatus.i
+
+# target to preprocess a source file
+src/DecodeStatus.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeStatus.cpp.i
+.PHONY : src/DecodeStatus.cpp.i
+
+src/DecodeStatus.s: src/DecodeStatus.cpp.s
+.PHONY : src/DecodeStatus.s
+
+# target to generate assembly for a file
+src/DecodeStatus.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/DecodeStatus.cpp.s
+.PHONY : src/DecodeStatus.cpp.s
+
 src/ECI.o: src/ECI.cpp.o
 .PHONY : src/ECI.o
 
@@ -492,29 +501,29 @@ src/ECI.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ECI.cpp.s
 .PHONY : src/ECI.cpp.s
 
-src/Error.o: src/Error.cpp.o
-.PHONY : src/Error.o
+src/GS1.o: src/GS1.cpp.o
+.PHONY : src/GS1.o
 
 # target to build an object file
-src/Error.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Error.cpp.o
-.PHONY : src/Error.cpp.o
+src/GS1.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GS1.cpp.o
+.PHONY : src/GS1.cpp.o
 
-src/Error.i: src/Error.cpp.i
-.PHONY : src/Error.i
+src/GS1.i: src/GS1.cpp.i
+.PHONY : src/GS1.i
 
 # target to preprocess a source file
-src/Error.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Error.cpp.i
-.PHONY : src/Error.cpp.i
+src/GS1.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GS1.cpp.i
+.PHONY : src/GS1.cpp.i
 
-src/Error.s: src/Error.cpp.s
-.PHONY : src/Error.s
+src/GS1.s: src/GS1.cpp.s
+.PHONY : src/GS1.s
 
 # target to generate assembly for a file
-src/Error.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Error.cpp.s
-.PHONY : src/Error.cpp.s
+src/GS1.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GS1.cpp.s
+.PHONY : src/GS1.cpp.s
 
 src/GTIN.o: src/GTIN.cpp.o
 .PHONY : src/GTIN.o
@@ -636,30 +645,6 @@ src/GridSampler.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/GridSampler.cpp.s
 .PHONY : src/GridSampler.cpp.s
 
-src/HRI.o: src/HRI.cpp.o
-.PHONY : src/HRI.o
-
-# target to build an object file
-src/HRI.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/HRI.cpp.o
-.PHONY : src/HRI.cpp.o
-
-src/HRI.i: src/HRI.cpp.i
-.PHONY : src/HRI.i
-
-# target to preprocess a source file
-src/HRI.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/HRI.cpp.i
-.PHONY : src/HRI.cpp.i
-
-src/HRI.s: src/HRI.cpp.s
-.PHONY : src/HRI.s
-
-# target to generate assembly for a file
-src/HRI.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/HRI.cpp.s
-.PHONY : src/HRI.cpp.s
-
 src/HybridBinarizer.o: src/HybridBinarizer.cpp.o
 .PHONY : src/HybridBinarizer.o
 
@@ -683,30 +668,6 @@ src/HybridBinarizer.s: src/HybridBinarizer.cpp.s
 src/HybridBinarizer.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/HybridBinarizer.cpp.s
 .PHONY : src/HybridBinarizer.cpp.s
-
-src/JSON.o: src/JSON.cpp.o
-.PHONY : src/JSON.o
-
-# target to build an object file
-src/JSON.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/JSON.cpp.o
-.PHONY : src/JSON.cpp.o
-
-src/JSON.i: src/JSON.cpp.i
-.PHONY : src/JSON.i
-
-# target to preprocess a source file
-src/JSON.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/JSON.cpp.i
-.PHONY : src/JSON.cpp.i
-
-src/JSON.s: src/JSON.cpp.s
-.PHONY : src/JSON.s
-
-# target to generate assembly for a file
-src/JSON.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/JSON.cpp.s
-.PHONY : src/JSON.cpp.s
 
 src/MultiFormatReader.o: src/MultiFormatReader.cpp.o
 .PHONY : src/MultiFormatReader.o
@@ -852,6 +813,30 @@ src/ReedSolomonEncoder.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ReedSolomonEncoder.cpp.s
 .PHONY : src/ReedSolomonEncoder.cpp.s
 
+src/Result.o: src/Result.cpp.o
+.PHONY : src/Result.o
+
+# target to build an object file
+src/Result.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Result.cpp.o
+.PHONY : src/Result.cpp.o
+
+src/Result.i: src/Result.cpp.i
+.PHONY : src/Result.i
+
+# target to preprocess a source file
+src/Result.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Result.cpp.i
+.PHONY : src/Result.cpp.i
+
+src/Result.s: src/Result.cpp.s
+.PHONY : src/Result.s
+
+# target to generate assembly for a file
+src/Result.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Result.cpp.s
+.PHONY : src/Result.cpp.s
+
 src/ResultPoint.o: src/ResultPoint.cpp.o
 .PHONY : src/ResultPoint.o
 
@@ -948,30 +933,6 @@ src/TextUtfEncoding.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/TextUtfEncoding.cpp.s
 .PHONY : src/TextUtfEncoding.cpp.s
 
-src/Utf.o: src/Utf.cpp.o
-.PHONY : src/Utf.o
-
-# target to build an object file
-src/Utf.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Utf.cpp.o
-.PHONY : src/Utf.cpp.o
-
-src/Utf.i: src/Utf.cpp.i
-.PHONY : src/Utf.i
-
-# target to preprocess a source file
-src/Utf.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Utf.cpp.i
-.PHONY : src/Utf.cpp.i
-
-src/Utf.s: src/Utf.cpp.s
-.PHONY : src/Utf.s
-
-# target to generate assembly for a file
-src/Utf.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/Utf.cpp.s
-.PHONY : src/Utf.cpp.s
-
 src/WhiteRectDetector.o: src/WhiteRectDetector.cpp.o
 .PHONY : src/WhiteRectDetector.o
 
@@ -996,53 +957,29 @@ src/WhiteRectDetector.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/WhiteRectDetector.cpp.s
 .PHONY : src/WhiteRectDetector.cpp.s
 
-src/WriteBarcode.o: src/WriteBarcode.cpp.o
-.PHONY : src/WriteBarcode.o
+src/ZXBigInteger.o: src/ZXBigInteger.cpp.o
+.PHONY : src/ZXBigInteger.o
 
 # target to build an object file
-src/WriteBarcode.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/WriteBarcode.cpp.o
-.PHONY : src/WriteBarcode.cpp.o
+src/ZXBigInteger.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXBigInteger.cpp.o
+.PHONY : src/ZXBigInteger.cpp.o
 
-src/WriteBarcode.i: src/WriteBarcode.cpp.i
-.PHONY : src/WriteBarcode.i
-
-# target to preprocess a source file
-src/WriteBarcode.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/WriteBarcode.cpp.i
-.PHONY : src/WriteBarcode.cpp.i
-
-src/WriteBarcode.s: src/WriteBarcode.cpp.s
-.PHONY : src/WriteBarcode.s
-
-# target to generate assembly for a file
-src/WriteBarcode.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/WriteBarcode.cpp.s
-.PHONY : src/WriteBarcode.cpp.s
-
-src/ZXingCpp.o: src/ZXingCpp.cpp.o
-.PHONY : src/ZXingCpp.o
-
-# target to build an object file
-src/ZXingCpp.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXingCpp.cpp.o
-.PHONY : src/ZXingCpp.cpp.o
-
-src/ZXingCpp.i: src/ZXingCpp.cpp.i
-.PHONY : src/ZXingCpp.i
+src/ZXBigInteger.i: src/ZXBigInteger.cpp.i
+.PHONY : src/ZXBigInteger.i
 
 # target to preprocess a source file
-src/ZXingCpp.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXingCpp.cpp.i
-.PHONY : src/ZXingCpp.cpp.i
+src/ZXBigInteger.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXBigInteger.cpp.i
+.PHONY : src/ZXBigInteger.cpp.i
 
-src/ZXingCpp.s: src/ZXingCpp.cpp.s
-.PHONY : src/ZXingCpp.s
+src/ZXBigInteger.s: src/ZXBigInteger.cpp.s
+.PHONY : src/ZXBigInteger.s
 
 # target to generate assembly for a file
-src/ZXingCpp.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXingCpp.cpp.s
-.PHONY : src/ZXingCpp.cpp.s
+src/ZXBigInteger.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/ZXBigInteger.cpp.s
+.PHONY : src/ZXBigInteger.cpp.s
 
 src/aztec/AZDecoder.o: src/aztec/AZDecoder.cpp.o
 .PHONY : src/aztec/AZDecoder.o
@@ -1452,30 +1389,6 @@ src/datamatrix/DMWriter.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMWriter.cpp.s
 .PHONY : src/datamatrix/DMWriter.cpp.s
 
-src/libzueci/zueci.o: src/libzueci/zueci.c.o
-.PHONY : src/libzueci/zueci.o
-
-# target to build an object file
-src/libzueci/zueci.c.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/libzueci/zueci.c.o
-.PHONY : src/libzueci/zueci.c.o
-
-src/libzueci/zueci.i: src/libzueci/zueci.c.i
-.PHONY : src/libzueci/zueci.i
-
-# target to preprocess a source file
-src/libzueci/zueci.c.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/libzueci/zueci.c.i
-.PHONY : src/libzueci/zueci.c.i
-
-src/libzueci/zueci.s: src/libzueci/zueci.c.s
-.PHONY : src/libzueci/zueci.s
-
-# target to generate assembly for a file
-src/libzueci/zueci.c.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/libzueci/zueci.c.s
-.PHONY : src/libzueci/zueci.c.s
-
 src/maxicode/MCBitMatrixParser.o: src/maxicode/MCBitMatrixParser.cpp.o
 .PHONY : src/maxicode/MCBitMatrixParser.o
 
@@ -1764,30 +1677,6 @@ src/oned/ODCode93Writer.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODCode93Writer.cpp.s
 .PHONY : src/oned/ODCode93Writer.cpp.s
 
-src/oned/ODDXFilmEdgeReader.o: src/oned/ODDXFilmEdgeReader.cpp.o
-.PHONY : src/oned/ODDXFilmEdgeReader.o
-
-# target to build an object file
-src/oned/ODDXFilmEdgeReader.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDXFilmEdgeReader.cpp.o
-.PHONY : src/oned/ODDXFilmEdgeReader.cpp.o
-
-src/oned/ODDXFilmEdgeReader.i: src/oned/ODDXFilmEdgeReader.cpp.i
-.PHONY : src/oned/ODDXFilmEdgeReader.i
-
-# target to preprocess a source file
-src/oned/ODDXFilmEdgeReader.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDXFilmEdgeReader.cpp.i
-.PHONY : src/oned/ODDXFilmEdgeReader.cpp.i
-
-src/oned/ODDXFilmEdgeReader.s: src/oned/ODDXFilmEdgeReader.cpp.s
-.PHONY : src/oned/ODDXFilmEdgeReader.s
-
-# target to generate assembly for a file
-src/oned/ODDXFilmEdgeReader.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDXFilmEdgeReader.cpp.s
-.PHONY : src/oned/ODDXFilmEdgeReader.cpp.s
-
 src/oned/ODDataBarCommon.o: src/oned/ODDataBarCommon.cpp.o
 .PHONY : src/oned/ODDataBarCommon.o
 
@@ -1859,30 +1748,6 @@ src/oned/ODDataBarExpandedReader.s: src/oned/ODDataBarExpandedReader.cpp.s
 src/oned/ODDataBarExpandedReader.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDataBarExpandedReader.cpp.s
 .PHONY : src/oned/ODDataBarExpandedReader.cpp.s
-
-src/oned/ODDataBarLimitedReader.o: src/oned/ODDataBarLimitedReader.cpp.o
-.PHONY : src/oned/ODDataBarLimitedReader.o
-
-# target to build an object file
-src/oned/ODDataBarLimitedReader.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDataBarLimitedReader.cpp.o
-.PHONY : src/oned/ODDataBarLimitedReader.cpp.o
-
-src/oned/ODDataBarLimitedReader.i: src/oned/ODDataBarLimitedReader.cpp.i
-.PHONY : src/oned/ODDataBarLimitedReader.i
-
-# target to preprocess a source file
-src/oned/ODDataBarLimitedReader.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDataBarLimitedReader.cpp.i
-.PHONY : src/oned/ODDataBarLimitedReader.cpp.i
-
-src/oned/ODDataBarLimitedReader.s: src/oned/ODDataBarLimitedReader.cpp.s
-.PHONY : src/oned/ODDataBarLimitedReader.s
-
-# target to generate assembly for a file
-src/oned/ODDataBarLimitedReader.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODDataBarLimitedReader.cpp.s
-.PHONY : src/oned/ODDataBarLimitedReader.cpp.s
 
 src/oned/ODDataBarReader.o: src/oned/ODDataBarReader.cpp.o
 .PHONY : src/oned/ODDataBarReader.o
@@ -2052,6 +1917,30 @@ src/oned/ODReader.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODReader.cpp.s
 .PHONY : src/oned/ODReader.cpp.s
 
+src/oned/ODRowReader.o: src/oned/ODRowReader.cpp.o
+.PHONY : src/oned/ODRowReader.o
+
+# target to build an object file
+src/oned/ODRowReader.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODRowReader.cpp.o
+.PHONY : src/oned/ODRowReader.cpp.o
+
+src/oned/ODRowReader.i: src/oned/ODRowReader.cpp.i
+.PHONY : src/oned/ODRowReader.i
+
+# target to preprocess a source file
+src/oned/ODRowReader.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODRowReader.cpp.i
+.PHONY : src/oned/ODRowReader.cpp.i
+
+src/oned/ODRowReader.s: src/oned/ODRowReader.cpp.s
+.PHONY : src/oned/ODRowReader.s
+
+# target to generate assembly for a file
+src/oned/ODRowReader.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/oned/ODRowReader.cpp.s
+.PHONY : src/oned/ODRowReader.cpp.s
+
 src/oned/ODUPCAWriter.o: src/oned/ODUPCAWriter.cpp.o
 .PHONY : src/oned/ODUPCAWriter.o
 
@@ -2220,29 +2109,29 @@ src/pdf417/PDFCodewordDecoder.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFCodewordDecoder.cpp.s
 .PHONY : src/pdf417/PDFCodewordDecoder.cpp.s
 
-src/pdf417/PDFDecoder.o: src/pdf417/PDFDecoder.cpp.o
-.PHONY : src/pdf417/PDFDecoder.o
+src/pdf417/PDFDecodedBitStreamParser.o: src/pdf417/PDFDecodedBitStreamParser.cpp.o
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.o
 
 # target to build an object file
-src/pdf417/PDFDecoder.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecoder.cpp.o
-.PHONY : src/pdf417/PDFDecoder.cpp.o
+src/pdf417/PDFDecodedBitStreamParser.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecodedBitStreamParser.cpp.o
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.cpp.o
 
-src/pdf417/PDFDecoder.i: src/pdf417/PDFDecoder.cpp.i
-.PHONY : src/pdf417/PDFDecoder.i
+src/pdf417/PDFDecodedBitStreamParser.i: src/pdf417/PDFDecodedBitStreamParser.cpp.i
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.i
 
 # target to preprocess a source file
-src/pdf417/PDFDecoder.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecoder.cpp.i
-.PHONY : src/pdf417/PDFDecoder.cpp.i
+src/pdf417/PDFDecodedBitStreamParser.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecodedBitStreamParser.cpp.i
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.cpp.i
 
-src/pdf417/PDFDecoder.s: src/pdf417/PDFDecoder.cpp.s
-.PHONY : src/pdf417/PDFDecoder.s
+src/pdf417/PDFDecodedBitStreamParser.s: src/pdf417/PDFDecodedBitStreamParser.cpp.s
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.s
 
 # target to generate assembly for a file
-src/pdf417/PDFDecoder.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecoder.cpp.s
-.PHONY : src/pdf417/PDFDecoder.cpp.s
+src/pdf417/PDFDecodedBitStreamParser.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFDecodedBitStreamParser.cpp.s
+.PHONY : src/pdf417/PDFDecodedBitStreamParser.cpp.s
 
 src/pdf417/PDFDetectionResult.o: src/pdf417/PDFDetectionResult.cpp.o
 .PHONY : src/pdf417/PDFDetectionResult.o
@@ -2483,30 +2372,6 @@ src/pdf417/PDFWriter.s: src/pdf417/PDFWriter.cpp.s
 src/pdf417/PDFWriter.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/PDFWriter.cpp.s
 .PHONY : src/pdf417/PDFWriter.cpp.s
-
-src/pdf417/ZXBigInteger.o: src/pdf417/ZXBigInteger.cpp.o
-.PHONY : src/pdf417/ZXBigInteger.o
-
-# target to build an object file
-src/pdf417/ZXBigInteger.cpp.o:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/ZXBigInteger.cpp.o
-.PHONY : src/pdf417/ZXBigInteger.cpp.o
-
-src/pdf417/ZXBigInteger.i: src/pdf417/ZXBigInteger.cpp.i
-.PHONY : src/pdf417/ZXBigInteger.i
-
-# target to preprocess a source file
-src/pdf417/ZXBigInteger.cpp.i:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/ZXBigInteger.cpp.i
-.PHONY : src/pdf417/ZXBigInteger.cpp.i
-
-src/pdf417/ZXBigInteger.s: src/pdf417/ZXBigInteger.cpp.s
-.PHONY : src/pdf417/ZXBigInteger.s
-
-# target to generate assembly for a file
-src/pdf417/ZXBigInteger.cpp.s:
-	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/pdf417/ZXBigInteger.cpp.s
-.PHONY : src/pdf417/ZXBigInteger.cpp.s
 
 src/qrcode/QRBitMatrixParser.o: src/qrcode/QRBitMatrixParser.cpp.o
 .PHONY : src/qrcode/QRBitMatrixParser.o
@@ -2820,6 +2685,246 @@ src/qrcode/QRWriter.cpp.s:
 	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/qrcode/QRWriter.cpp.s
 .PHONY : src/qrcode/QRWriter.cpp.s
 
+src/textcodec/Big5MapTable.o: src/textcodec/Big5MapTable.cpp.o
+.PHONY : src/textcodec/Big5MapTable.o
+
+# target to build an object file
+src/textcodec/Big5MapTable.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5MapTable.cpp.o
+.PHONY : src/textcodec/Big5MapTable.cpp.o
+
+src/textcodec/Big5MapTable.i: src/textcodec/Big5MapTable.cpp.i
+.PHONY : src/textcodec/Big5MapTable.i
+
+# target to preprocess a source file
+src/textcodec/Big5MapTable.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5MapTable.cpp.i
+.PHONY : src/textcodec/Big5MapTable.cpp.i
+
+src/textcodec/Big5MapTable.s: src/textcodec/Big5MapTable.cpp.s
+.PHONY : src/textcodec/Big5MapTable.s
+
+# target to generate assembly for a file
+src/textcodec/Big5MapTable.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5MapTable.cpp.s
+.PHONY : src/textcodec/Big5MapTable.cpp.s
+
+src/textcodec/Big5TextDecoder.o: src/textcodec/Big5TextDecoder.cpp.o
+.PHONY : src/textcodec/Big5TextDecoder.o
+
+# target to build an object file
+src/textcodec/Big5TextDecoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextDecoder.cpp.o
+.PHONY : src/textcodec/Big5TextDecoder.cpp.o
+
+src/textcodec/Big5TextDecoder.i: src/textcodec/Big5TextDecoder.cpp.i
+.PHONY : src/textcodec/Big5TextDecoder.i
+
+# target to preprocess a source file
+src/textcodec/Big5TextDecoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextDecoder.cpp.i
+.PHONY : src/textcodec/Big5TextDecoder.cpp.i
+
+src/textcodec/Big5TextDecoder.s: src/textcodec/Big5TextDecoder.cpp.s
+.PHONY : src/textcodec/Big5TextDecoder.s
+
+# target to generate assembly for a file
+src/textcodec/Big5TextDecoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextDecoder.cpp.s
+.PHONY : src/textcodec/Big5TextDecoder.cpp.s
+
+src/textcodec/Big5TextEncoder.o: src/textcodec/Big5TextEncoder.cpp.o
+.PHONY : src/textcodec/Big5TextEncoder.o
+
+# target to build an object file
+src/textcodec/Big5TextEncoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextEncoder.cpp.o
+.PHONY : src/textcodec/Big5TextEncoder.cpp.o
+
+src/textcodec/Big5TextEncoder.i: src/textcodec/Big5TextEncoder.cpp.i
+.PHONY : src/textcodec/Big5TextEncoder.i
+
+# target to preprocess a source file
+src/textcodec/Big5TextEncoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextEncoder.cpp.i
+.PHONY : src/textcodec/Big5TextEncoder.cpp.i
+
+src/textcodec/Big5TextEncoder.s: src/textcodec/Big5TextEncoder.cpp.s
+.PHONY : src/textcodec/Big5TextEncoder.s
+
+# target to generate assembly for a file
+src/textcodec/Big5TextEncoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/Big5TextEncoder.cpp.s
+.PHONY : src/textcodec/Big5TextEncoder.cpp.s
+
+src/textcodec/GBTextDecoder.o: src/textcodec/GBTextDecoder.cpp.o
+.PHONY : src/textcodec/GBTextDecoder.o
+
+# target to build an object file
+src/textcodec/GBTextDecoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextDecoder.cpp.o
+.PHONY : src/textcodec/GBTextDecoder.cpp.o
+
+src/textcodec/GBTextDecoder.i: src/textcodec/GBTextDecoder.cpp.i
+.PHONY : src/textcodec/GBTextDecoder.i
+
+# target to preprocess a source file
+src/textcodec/GBTextDecoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextDecoder.cpp.i
+.PHONY : src/textcodec/GBTextDecoder.cpp.i
+
+src/textcodec/GBTextDecoder.s: src/textcodec/GBTextDecoder.cpp.s
+.PHONY : src/textcodec/GBTextDecoder.s
+
+# target to generate assembly for a file
+src/textcodec/GBTextDecoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextDecoder.cpp.s
+.PHONY : src/textcodec/GBTextDecoder.cpp.s
+
+src/textcodec/GBTextEncoder.o: src/textcodec/GBTextEncoder.cpp.o
+.PHONY : src/textcodec/GBTextEncoder.o
+
+# target to build an object file
+src/textcodec/GBTextEncoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextEncoder.cpp.o
+.PHONY : src/textcodec/GBTextEncoder.cpp.o
+
+src/textcodec/GBTextEncoder.i: src/textcodec/GBTextEncoder.cpp.i
+.PHONY : src/textcodec/GBTextEncoder.i
+
+# target to preprocess a source file
+src/textcodec/GBTextEncoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextEncoder.cpp.i
+.PHONY : src/textcodec/GBTextEncoder.cpp.i
+
+src/textcodec/GBTextEncoder.s: src/textcodec/GBTextEncoder.cpp.s
+.PHONY : src/textcodec/GBTextEncoder.s
+
+# target to generate assembly for a file
+src/textcodec/GBTextEncoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/GBTextEncoder.cpp.s
+.PHONY : src/textcodec/GBTextEncoder.cpp.s
+
+src/textcodec/JPTextDecoder.o: src/textcodec/JPTextDecoder.cpp.o
+.PHONY : src/textcodec/JPTextDecoder.o
+
+# target to build an object file
+src/textcodec/JPTextDecoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextDecoder.cpp.o
+.PHONY : src/textcodec/JPTextDecoder.cpp.o
+
+src/textcodec/JPTextDecoder.i: src/textcodec/JPTextDecoder.cpp.i
+.PHONY : src/textcodec/JPTextDecoder.i
+
+# target to preprocess a source file
+src/textcodec/JPTextDecoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextDecoder.cpp.i
+.PHONY : src/textcodec/JPTextDecoder.cpp.i
+
+src/textcodec/JPTextDecoder.s: src/textcodec/JPTextDecoder.cpp.s
+.PHONY : src/textcodec/JPTextDecoder.s
+
+# target to generate assembly for a file
+src/textcodec/JPTextDecoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextDecoder.cpp.s
+.PHONY : src/textcodec/JPTextDecoder.cpp.s
+
+src/textcodec/JPTextEncoder.o: src/textcodec/JPTextEncoder.cpp.o
+.PHONY : src/textcodec/JPTextEncoder.o
+
+# target to build an object file
+src/textcodec/JPTextEncoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextEncoder.cpp.o
+.PHONY : src/textcodec/JPTextEncoder.cpp.o
+
+src/textcodec/JPTextEncoder.i: src/textcodec/JPTextEncoder.cpp.i
+.PHONY : src/textcodec/JPTextEncoder.i
+
+# target to preprocess a source file
+src/textcodec/JPTextEncoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextEncoder.cpp.i
+.PHONY : src/textcodec/JPTextEncoder.cpp.i
+
+src/textcodec/JPTextEncoder.s: src/textcodec/JPTextEncoder.cpp.s
+.PHONY : src/textcodec/JPTextEncoder.s
+
+# target to generate assembly for a file
+src/textcodec/JPTextEncoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/JPTextEncoder.cpp.s
+.PHONY : src/textcodec/JPTextEncoder.cpp.s
+
+src/textcodec/KRHangulMapping.o: src/textcodec/KRHangulMapping.cpp.o
+.PHONY : src/textcodec/KRHangulMapping.o
+
+# target to build an object file
+src/textcodec/KRHangulMapping.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRHangulMapping.cpp.o
+.PHONY : src/textcodec/KRHangulMapping.cpp.o
+
+src/textcodec/KRHangulMapping.i: src/textcodec/KRHangulMapping.cpp.i
+.PHONY : src/textcodec/KRHangulMapping.i
+
+# target to preprocess a source file
+src/textcodec/KRHangulMapping.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRHangulMapping.cpp.i
+.PHONY : src/textcodec/KRHangulMapping.cpp.i
+
+src/textcodec/KRHangulMapping.s: src/textcodec/KRHangulMapping.cpp.s
+.PHONY : src/textcodec/KRHangulMapping.s
+
+# target to generate assembly for a file
+src/textcodec/KRHangulMapping.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRHangulMapping.cpp.s
+.PHONY : src/textcodec/KRHangulMapping.cpp.s
+
+src/textcodec/KRTextDecoder.o: src/textcodec/KRTextDecoder.cpp.o
+.PHONY : src/textcodec/KRTextDecoder.o
+
+# target to build an object file
+src/textcodec/KRTextDecoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextDecoder.cpp.o
+.PHONY : src/textcodec/KRTextDecoder.cpp.o
+
+src/textcodec/KRTextDecoder.i: src/textcodec/KRTextDecoder.cpp.i
+.PHONY : src/textcodec/KRTextDecoder.i
+
+# target to preprocess a source file
+src/textcodec/KRTextDecoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextDecoder.cpp.i
+.PHONY : src/textcodec/KRTextDecoder.cpp.i
+
+src/textcodec/KRTextDecoder.s: src/textcodec/KRTextDecoder.cpp.s
+.PHONY : src/textcodec/KRTextDecoder.s
+
+# target to generate assembly for a file
+src/textcodec/KRTextDecoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextDecoder.cpp.s
+.PHONY : src/textcodec/KRTextDecoder.cpp.s
+
+src/textcodec/KRTextEncoder.o: src/textcodec/KRTextEncoder.cpp.o
+.PHONY : src/textcodec/KRTextEncoder.o
+
+# target to build an object file
+src/textcodec/KRTextEncoder.cpp.o:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextEncoder.cpp.o
+.PHONY : src/textcodec/KRTextEncoder.cpp.o
+
+src/textcodec/KRTextEncoder.i: src/textcodec/KRTextEncoder.cpp.i
+.PHONY : src/textcodec/KRTextEncoder.i
+
+# target to preprocess a source file
+src/textcodec/KRTextEncoder.cpp.i:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextEncoder.cpp.i
+.PHONY : src/textcodec/KRTextEncoder.cpp.i
+
+src/textcodec/KRTextEncoder.s: src/textcodec/KRTextEncoder.cpp.s
+.PHONY : src/textcodec/KRTextEncoder.s
+
+# target to generate assembly for a file
+src/textcodec/KRTextEncoder.cpp.s:
+	cd /home/prakash/sqlite3/kiosk/build_okmx && $(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/textcodec/KRTextEncoder.cpp.s
+.PHONY : src/textcodec/KRTextEncoder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2837,12 +2942,6 @@ help:
 	@echo "... ZXing_autogen/mocs_compilation.o"
 	@echo "... ZXing_autogen/mocs_compilation.i"
 	@echo "... ZXing_autogen/mocs_compilation.s"
-	@echo "... cmake_pch.hxx.gch"
-	@echo "... cmake_pch.hxx.i"
-	@echo "... cmake_pch.hxx.s"
-	@echo "... src/Barcode.o"
-	@echo "... src/Barcode.i"
-	@echo "... src/Barcode.s"
 	@echo "... src/BarcodeFormat.o"
 	@echo "... src/BarcodeFormat.i"
 	@echo "... src/BarcodeFormat.s"
@@ -2870,12 +2969,18 @@ help:
 	@echo "... src/Content.o"
 	@echo "... src/Content.i"
 	@echo "... src/Content.s"
+	@echo "... src/DecodeHints.o"
+	@echo "... src/DecodeHints.i"
+	@echo "... src/DecodeHints.s"
+	@echo "... src/DecodeStatus.o"
+	@echo "... src/DecodeStatus.i"
+	@echo "... src/DecodeStatus.s"
 	@echo "... src/ECI.o"
 	@echo "... src/ECI.i"
 	@echo "... src/ECI.s"
-	@echo "... src/Error.o"
-	@echo "... src/Error.i"
-	@echo "... src/Error.s"
+	@echo "... src/GS1.o"
+	@echo "... src/GS1.i"
+	@echo "... src/GS1.s"
 	@echo "... src/GTIN.o"
 	@echo "... src/GTIN.i"
 	@echo "... src/GTIN.s"
@@ -2891,15 +2996,9 @@ help:
 	@echo "... src/GridSampler.o"
 	@echo "... src/GridSampler.i"
 	@echo "... src/GridSampler.s"
-	@echo "... src/HRI.o"
-	@echo "... src/HRI.i"
-	@echo "... src/HRI.s"
 	@echo "... src/HybridBinarizer.o"
 	@echo "... src/HybridBinarizer.i"
 	@echo "... src/HybridBinarizer.s"
-	@echo "... src/JSON.o"
-	@echo "... src/JSON.i"
-	@echo "... src/JSON.s"
 	@echo "... src/MultiFormatReader.o"
 	@echo "... src/MultiFormatReader.i"
 	@echo "... src/MultiFormatReader.s"
@@ -2918,6 +3017,9 @@ help:
 	@echo "... src/ReedSolomonEncoder.o"
 	@echo "... src/ReedSolomonEncoder.i"
 	@echo "... src/ReedSolomonEncoder.s"
+	@echo "... src/Result.o"
+	@echo "... src/Result.i"
+	@echo "... src/Result.s"
 	@echo "... src/ResultPoint.o"
 	@echo "... src/ResultPoint.i"
 	@echo "... src/ResultPoint.s"
@@ -2930,18 +3032,12 @@ help:
 	@echo "... src/TextUtfEncoding.o"
 	@echo "... src/TextUtfEncoding.i"
 	@echo "... src/TextUtfEncoding.s"
-	@echo "... src/Utf.o"
-	@echo "... src/Utf.i"
-	@echo "... src/Utf.s"
 	@echo "... src/WhiteRectDetector.o"
 	@echo "... src/WhiteRectDetector.i"
 	@echo "... src/WhiteRectDetector.s"
-	@echo "... src/WriteBarcode.o"
-	@echo "... src/WriteBarcode.i"
-	@echo "... src/WriteBarcode.s"
-	@echo "... src/ZXingCpp.o"
-	@echo "... src/ZXingCpp.i"
-	@echo "... src/ZXingCpp.s"
+	@echo "... src/ZXBigInteger.o"
+	@echo "... src/ZXBigInteger.i"
+	@echo "... src/ZXBigInteger.s"
 	@echo "... src/aztec/AZDecoder.o"
 	@echo "... src/aztec/AZDecoder.i"
 	@echo "... src/aztec/AZDecoder.s"
@@ -2993,9 +3089,6 @@ help:
 	@echo "... src/datamatrix/DMWriter.o"
 	@echo "... src/datamatrix/DMWriter.i"
 	@echo "... src/datamatrix/DMWriter.s"
-	@echo "... src/libzueci/zueci.o"
-	@echo "... src/libzueci/zueci.i"
-	@echo "... src/libzueci/zueci.s"
 	@echo "... src/maxicode/MCBitMatrixParser.o"
 	@echo "... src/maxicode/MCBitMatrixParser.i"
 	@echo "... src/maxicode/MCBitMatrixParser.s"
@@ -3032,9 +3125,6 @@ help:
 	@echo "... src/oned/ODCode93Writer.o"
 	@echo "... src/oned/ODCode93Writer.i"
 	@echo "... src/oned/ODCode93Writer.s"
-	@echo "... src/oned/ODDXFilmEdgeReader.o"
-	@echo "... src/oned/ODDXFilmEdgeReader.i"
-	@echo "... src/oned/ODDXFilmEdgeReader.s"
 	@echo "... src/oned/ODDataBarCommon.o"
 	@echo "... src/oned/ODDataBarCommon.i"
 	@echo "... src/oned/ODDataBarCommon.s"
@@ -3044,9 +3134,6 @@ help:
 	@echo "... src/oned/ODDataBarExpandedReader.o"
 	@echo "... src/oned/ODDataBarExpandedReader.i"
 	@echo "... src/oned/ODDataBarExpandedReader.s"
-	@echo "... src/oned/ODDataBarLimitedReader.o"
-	@echo "... src/oned/ODDataBarLimitedReader.i"
-	@echo "... src/oned/ODDataBarLimitedReader.s"
 	@echo "... src/oned/ODDataBarReader.o"
 	@echo "... src/oned/ODDataBarReader.i"
 	@echo "... src/oned/ODDataBarReader.s"
@@ -3068,6 +3155,9 @@ help:
 	@echo "... src/oned/ODReader.o"
 	@echo "... src/oned/ODReader.i"
 	@echo "... src/oned/ODReader.s"
+	@echo "... src/oned/ODRowReader.o"
+	@echo "... src/oned/ODRowReader.i"
+	@echo "... src/oned/ODRowReader.s"
 	@echo "... src/oned/ODUPCAWriter.o"
 	@echo "... src/oned/ODUPCAWriter.i"
 	@echo "... src/oned/ODUPCAWriter.s"
@@ -3089,9 +3179,9 @@ help:
 	@echo "... src/pdf417/PDFCodewordDecoder.o"
 	@echo "... src/pdf417/PDFCodewordDecoder.i"
 	@echo "... src/pdf417/PDFCodewordDecoder.s"
-	@echo "... src/pdf417/PDFDecoder.o"
-	@echo "... src/pdf417/PDFDecoder.i"
-	@echo "... src/pdf417/PDFDecoder.s"
+	@echo "... src/pdf417/PDFDecodedBitStreamParser.o"
+	@echo "... src/pdf417/PDFDecodedBitStreamParser.i"
+	@echo "... src/pdf417/PDFDecodedBitStreamParser.s"
 	@echo "... src/pdf417/PDFDetectionResult.o"
 	@echo "... src/pdf417/PDFDetectionResult.i"
 	@echo "... src/pdf417/PDFDetectionResult.s"
@@ -3122,9 +3212,6 @@ help:
 	@echo "... src/pdf417/PDFWriter.o"
 	@echo "... src/pdf417/PDFWriter.i"
 	@echo "... src/pdf417/PDFWriter.s"
-	@echo "... src/pdf417/ZXBigInteger.o"
-	@echo "... src/pdf417/ZXBigInteger.i"
-	@echo "... src/pdf417/ZXBigInteger.s"
 	@echo "... src/qrcode/QRBitMatrixParser.o"
 	@echo "... src/qrcode/QRBitMatrixParser.i"
 	@echo "... src/qrcode/QRBitMatrixParser.s"
@@ -3164,6 +3251,36 @@ help:
 	@echo "... src/qrcode/QRWriter.o"
 	@echo "... src/qrcode/QRWriter.i"
 	@echo "... src/qrcode/QRWriter.s"
+	@echo "... src/textcodec/Big5MapTable.o"
+	@echo "... src/textcodec/Big5MapTable.i"
+	@echo "... src/textcodec/Big5MapTable.s"
+	@echo "... src/textcodec/Big5TextDecoder.o"
+	@echo "... src/textcodec/Big5TextDecoder.i"
+	@echo "... src/textcodec/Big5TextDecoder.s"
+	@echo "... src/textcodec/Big5TextEncoder.o"
+	@echo "... src/textcodec/Big5TextEncoder.i"
+	@echo "... src/textcodec/Big5TextEncoder.s"
+	@echo "... src/textcodec/GBTextDecoder.o"
+	@echo "... src/textcodec/GBTextDecoder.i"
+	@echo "... src/textcodec/GBTextDecoder.s"
+	@echo "... src/textcodec/GBTextEncoder.o"
+	@echo "... src/textcodec/GBTextEncoder.i"
+	@echo "... src/textcodec/GBTextEncoder.s"
+	@echo "... src/textcodec/JPTextDecoder.o"
+	@echo "... src/textcodec/JPTextDecoder.i"
+	@echo "... src/textcodec/JPTextDecoder.s"
+	@echo "... src/textcodec/JPTextEncoder.o"
+	@echo "... src/textcodec/JPTextEncoder.i"
+	@echo "... src/textcodec/JPTextEncoder.s"
+	@echo "... src/textcodec/KRHangulMapping.o"
+	@echo "... src/textcodec/KRHangulMapping.i"
+	@echo "... src/textcodec/KRHangulMapping.s"
+	@echo "... src/textcodec/KRTextDecoder.o"
+	@echo "... src/textcodec/KRTextDecoder.i"
+	@echo "... src/textcodec/KRTextDecoder.s"
+	@echo "... src/textcodec/KRTextEncoder.o"
+	@echo "... src/textcodec/KRTextEncoder.i"
+	@echo "... src/textcodec/KRTextEncoder.s"
 .PHONY : help
 
 

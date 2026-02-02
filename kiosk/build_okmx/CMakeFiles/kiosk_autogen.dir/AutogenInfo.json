@@ -466,9 +466,69 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/homecontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_homecontroller.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/inputcontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_inputcontroller.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/printcontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_printcontroller.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_protocolcontroller.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/protocolparser.h",
+			"MU",
+			"KECQXMYYOW/moc_protocolparser.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h",
 			"MU",
 			"VNQA4LF4BW/moc_barcodemodel.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/model/patient.h",
+			"MU",
+			"VNQA4LF4BW/moc_patient.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/model/qrgenerator.h",
+			"MU",
+			"VNQA4LF4BW/moc_qrgenerator.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h",
+			"MU",
+			"VNQA4LF4BW/moc_vitalsmodel.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h",
+			"MU",
+			"YTXNRGJSQJ/moc_rotaryhandler.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h",
+			"MU",
+			"I6UGBHFDKN/moc_uartdevice.cpp",
 			null
 		],
 		[
@@ -478,9 +538,33 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/inputservice.h",
+			"MU",
+			"RIEQWACMR2/moc_inputservice.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/service/sessionservice.h",
+			"MU",
+			"RIEQWACMR2/moc_sessionservice.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/patientrepository.h",
+			"MU",
+			"F2ESZRYZMC/moc_patientrepository.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h",
 			"MU",
 			"F2ESZRYZMC/moc_sqliterecorder.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/homeview.h",
+			"MU",
+			"3JYSCEOBDA/moc_homeview.cpp",
 			null
 		],
 		[
@@ -493,7 +577,14 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB",
+		"ZX_USE_UTF8"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -506,7 +597,6 @@
 		"/home/prakash/sqlite3/kiosk/src",
 		"/home/prakash/sqlite3/kiosk/external/zxing-cpp/core",
 		"/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src",
-		"/home/prakash/sqlite3/kiosk/build_okmx/external/zxing-cpp/core",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/mkspecs/linux-g++",
@@ -568,10 +658,57 @@
 			"MU",
 			null
 		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/protocolparser.cpp",
+			"MU",
+			null
+		],
 		[ "/home/prakash/sqlite3/kiosk/src/main.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/barcodemodel.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp", "MU", null ],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/service/inputservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp",
 			"MU",
 			null
 		],
@@ -580,6 +717,7 @@
 			"MU",
 			null
 		],
+		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

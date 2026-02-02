@@ -2,7 +2,6 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMHighLevelEncoder.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -118,6 +117,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/select2.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
@@ -126,6 +126,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/cerrno \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
@@ -134,9 +135,15 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ByteArray.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Range.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/CharacterSet.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMEncoderContext.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h \
+ /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMSymbolShape.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/ZXAlgorithms.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/Error.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -156,15 +163,9 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/charconv \
- /usr/include/c++/11/bit \
- /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/bits/erase_if.h \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
@@ -172,16 +173,15 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/src/datamatrix/DMHighLevelEncoder.c
  /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
  /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/system_error /usr/include/c++/11/stdexcept \
- /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/numeric \
- /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMEncoderContext.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMSymbolInfo.h \
- /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/datamatrix/DMSymbolShape.h \
  /home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src/TextEncoder.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \

@@ -1,6 +1,11 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_mainwindow.cpp: /home/prakash/sqlite3/kiosk/src/view/mainwindow.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QThread \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -12,6 +17,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic_cxx11.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasicatomic.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
@@ -29,7 +35,9 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
@@ -73,6 +81,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
@@ -94,6 +103,8 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h \
@@ -142,6 +153,14 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+  /home/prakash/sqlite3/kiosk/src/controller/barcodescanner.h \
+  /home/prakash/sqlite3/kiosk/src/controller/cameracontroller.h \
+  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+  /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
+  /home/prakash/sqlite3/kiosk/src/model/barcodemodel.h \
+  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
+  /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -158,6 +177,7 @@
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_futex.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/bits/basic_string.tcc \
@@ -200,6 +220,8 @@
   /usr/include/c++/11/bits/specfun.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
@@ -226,6 +248,7 @@
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/uses_allocator.h \
@@ -235,6 +258,7 @@
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
+  /usr/include/c++/11/condition_variable \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
@@ -254,6 +278,7 @@
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/ext/type_traits.h \
   /usr/include/c++/11/functional \
+  /usr/include/c++/11/future \
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/iterator \
@@ -261,6 +286,7 @@
   /usr/include/c++/11/list \
   /usr/include/c++/11/map \
   /usr/include/c++/11/memory \
+  /usr/include/c++/11/mutex \
   /usr/include/c++/11/new \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/optional \
@@ -304,6 +330,7 @@
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/sqlite3.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
