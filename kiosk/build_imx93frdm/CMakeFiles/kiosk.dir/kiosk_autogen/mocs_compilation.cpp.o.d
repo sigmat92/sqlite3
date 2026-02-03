@@ -576,20 +576,11 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpicture.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevice.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextdocument.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextcursor.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextformat.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpen.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextoption.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_mainwindow.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/../../../src/view/mainwindow.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h

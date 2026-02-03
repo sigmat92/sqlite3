@@ -719,6 +719,30 @@ src/view/mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.s
 .PHONY : src/view/mainwindow.cpp.s
 
+src/view/metriccard.o: src/view/metriccard.cpp.o
+.PHONY : src/view/metriccard.o
+
+# target to build an object file
+src/view/metriccard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o
+.PHONY : src/view/metriccard.cpp.o
+
+src/view/metriccard.i: src/view/metriccard.cpp.i
+.PHONY : src/view/metriccard.i
+
+# target to preprocess a source file
+src/view/metriccard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/metriccard.cpp.i
+.PHONY : src/view/metriccard.cpp.i
+
+src/view/metriccard.s: src/view/metriccard.cpp.s
+.PHONY : src/view/metriccard.s
+
+# target to generate assembly for a file
+src/view/metriccard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/metriccard.cpp.s
+.PHONY : src/view/metriccard.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -797,6 +821,9 @@ help:
 	@echo "... src/view/mainwindow.o"
 	@echo "... src/view/mainwindow.i"
 	@echo "... src/view/mainwindow.s"
+	@echo "... src/view/metriccard.o"
+	@echo "... src/view/metriccard.i"
+	@echo "... src/view/metriccard.s"
 .PHONY : help
 
 

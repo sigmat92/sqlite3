@@ -18,8 +18,15 @@ public:
 
     void reset();
 
-    const Patient& currentPatient() const;
-    QString currentPatientId() const;
+    //const Patient& currentPatient() const;
+    //QString currentPatientId() const;
+
+public slots:
+    void startSpo2();
+    void startNibp();
+    void startHeight();
+    void startWeight();
+    void startTemperature();
 
 signals:
     void patientLoaded();

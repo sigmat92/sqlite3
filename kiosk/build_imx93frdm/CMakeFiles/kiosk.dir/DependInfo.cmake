@@ -29,6 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp" "CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp" "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

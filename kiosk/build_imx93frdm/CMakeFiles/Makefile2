@@ -115,11 +115,11 @@ external/zxing-cpp/core/clean: external/zxing-cpp/core/CMakeFiles/ZXing_autogen.
 
 # All Build rule for target.
 CMakeFiles/kiosk.dir/all: external/zxing-cpp/core/CMakeFiles/ZXing.dir/all
-CMakeFiles/kiosk.dir/all: CMakeFiles/kiosk_autogen_timestamp_deps.dir/all
 CMakeFiles/kiosk.dir/all: CMakeFiles/kiosk_autogen.dir/all
+CMakeFiles/kiosk.dir/all: CMakeFiles/kiosk_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target kiosk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target kiosk"
 .PHONY : CMakeFiles/kiosk.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,7 +150,7 @@ CMakeFiles/kiosk_autogen_timestamp_deps.dir/all: external/zxing-cpp/core/CMakeFi
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kiosk_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 83
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kiosk_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 0
 .PHONY : CMakeFiles/kiosk_autogen_timestamp_deps.dir/rule
@@ -176,7 +176,7 @@ CMakeFiles/kiosk_autogen.dir/all: CMakeFiles/kiosk_autogen_timestamp_deps.dir/al
 
 # Build rule for subdir invocation for target.
 CMakeFiles/kiosk_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 84
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 83
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/kiosk_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 0
 .PHONY : CMakeFiles/kiosk_autogen.dir/rule
@@ -203,7 +203,7 @@ external/zxing-cpp/core/CMakeFiles/ZXing.dir/all: external/zxing-cpp/core/CMakeF
 
 # Build rule for subdir invocation for target.
 external/zxing-cpp/core/CMakeFiles/ZXing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 83
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/zxing-cpp/core/CMakeFiles/ZXing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 0
 .PHONY : external/zxing-cpp/core/CMakeFiles/ZXing.dir/rule
@@ -250,12 +250,12 @@ external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps.dir/clean:
 external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/all: external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/build.make external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=83 "Built target ZXing_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num= "Built target ZXing_autogen"
 .PHONY : external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles 0
 .PHONY : external/zxing-cpp/core/CMakeFiles/ZXing_autogen.dir/rule

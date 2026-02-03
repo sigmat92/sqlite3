@@ -569,13 +569,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpicture.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevice.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextdocument.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h \
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \

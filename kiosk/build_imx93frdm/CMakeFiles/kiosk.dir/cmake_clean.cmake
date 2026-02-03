@@ -42,6 +42,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o"
   "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o.d"
+  "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o"
+  "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
   "kiosk"
   "kiosk.pdb"
   "kiosk_autogen/mocs_compilation.cpp"

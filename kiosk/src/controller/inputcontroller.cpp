@@ -26,6 +26,20 @@ InputController::InputController(InputService* service, QObject* parent)
             QCoreApplication::sendEvent(static_cast<QObject*>(w), &ev);
         }
     });
+void HomeController::onVitalsUpdated(int spo2, int pulse)
+{
+    // Update UI
+    m_view->setSpO2(spo2, pulse);
+
+    // Optional: persist to DB
+    if (m_repo) {
+        m_repo->saveVitals(
+            m_session->currentPatientId(),
+            spo2,
+            pulse
+        );
+    }
+}
 
     // Press → Enter (activate)
     connect(service, &InputService::activate, this, [] {

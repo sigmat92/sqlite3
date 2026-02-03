@@ -12,12 +12,16 @@ void VitalsModel::setSpo2(int v) {
 }
 
 void VitalsModel::setTemperature(float t) {
+    if (qFuzzyCompare(m_temp, t))
+        return;
     m_temp = t;
-    emit updated();
+    //emit updated();
+    emit temperatureChanged(t);
 }
 
 void VitalsModel::setPulseRate(int bpm) {
     m_pulse = bpm;
     emit updated();
 }
+
 

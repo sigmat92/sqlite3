@@ -39,35 +39,31 @@ namespace {
 struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelpers::stringData(
     "HomeController",
-    "onVitalsUpdated",
+    "onTemperatureChanged",
     "",
-    "spo2",
-    "pulse"
+    "temp"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {
-    uint offsetsAndSizes[10];
+    uint offsetsAndSizes[8];
     char stringdata0[15];
-    char stringdata1[16];
+    char stringdata1[21];
     char stringdata2[1];
     char stringdata3[5];
-    char stringdata4[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeControllerENDCLASS_t qt_meta_stringdata_CLASSHomeControllerENDCLASS = {
     {
         QT_MOC_LITERAL(0, 14),  // "HomeController"
-        QT_MOC_LITERAL(15, 15),  // "onVitalsUpdated"
-        QT_MOC_LITERAL(31, 0),  // ""
-        QT_MOC_LITERAL(32, 4),  // "spo2"
-        QT_MOC_LITERAL(37, 5)   // "pulse"
+        QT_MOC_LITERAL(15, 20),  // "onTemperatureChanged"
+        QT_MOC_LITERAL(36, 0),  // ""
+        QT_MOC_LITERAL(37, 4)   // "temp"
     },
     "HomeController",
-    "onVitalsUpdated",
+    "onTemperatureChanged",
     "",
-    "spo2",
-    "pulse"
+    "temp"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -87,10 +83,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   20,    2, 0x0a,    1 /* Public */,
+       1,    1,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    3,    4,
+    QMetaType::Void, QMetaType::Float,    3,
 
        0        // eod
 };
@@ -104,10 +100,9 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSHomeControllerENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<HomeController, std::true_type>,
-        // method 'onVitalsUpdated'
+        // method 'onTemperatureChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<float, std::false_type>
     >,
     nullptr
 } };
@@ -118,7 +113,7 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<HomeController *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<float>>(_a[1]))); break;
         default: ;
         }
     }

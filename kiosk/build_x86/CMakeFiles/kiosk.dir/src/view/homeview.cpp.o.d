@@ -397,6 +397,7 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \

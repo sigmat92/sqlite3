@@ -400,16 +400,9 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h

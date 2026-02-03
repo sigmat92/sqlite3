@@ -449,13 +449,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \

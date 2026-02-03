@@ -20,6 +20,7 @@ public:
         QObject *parent = nullptr
     );
     void requestTemperature();
+    void temperature(float temp);  
     void start();
     void stop();
 

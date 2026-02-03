@@ -10,25 +10,40 @@
 #include "service/sessionservice.h"
 #include "storage/patientrepository.h"
 #include "storage/sqliterecorder.h"
+#include "controller/protocolcontroller.h"
+//#include "uart/uartdevice.h"
+#include "controller/protocolparser.h"
+#include "model/vitalsmodel.h"
 
 int main(int argc, char *argv[])
 {
 	
     qputenv("QT_QPA_PLATFORM", "wayland");   // or "eglfs" if no compositor
-    qputenv("QT_OPENGL", "software");        // 🔥 critical
+    qputenv("QT_OPENGL", "software");        // 
     qputenv("QT_QUICK_BACKEND", "software"); // safety
     QApplication app(argc, argv);
 
-    SQLiteRecorder db("patients.db");
-    PatientRepository repo(&db);
-    SessionService session;
+    //QLiteRecorder db("patients.db");
+    //PatientRepository repo(&db);
+    //SessionService session;
     //auto* encoder = new EncoderService("/dev/input/event2");
     //encoder->start();
 
+//
+    auto* uart    = new UartDevice;
+    auto* parser  = new ProtocolParser;
+    auto* vitals  = new VitalsModel;
+    auto* session = new SessionService;
+    auto* view    = new HomeView;
+    auto* repo    = new PatientRepository;
 
-    HomeView view;
-    HomeController controller(&view, &session, &repo);
-    view.show();
+    auto* protoCtrl = new ProtocolController(uart, parser, vitals, &app);
+    auto* homeCtrl  = new HomeController(view, session, repo, vitals, &app);
+
+//
+    //HomeView view;
+    //HomeController controller(&view, &session, &repo, vitals);
+    view->show();
     //view.showFullScreen();
 
     return app.exec();

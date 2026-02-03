@@ -111,7 +111,8 @@ set(SRC
     src/view/mainwindow.cpp
     src/view/homeview.h
     src/view/homeview.cpp
-    
+    src/view/metriccard.h
+    src/view/metriccard.cpp
 )
 
 # --------------------------------------------------

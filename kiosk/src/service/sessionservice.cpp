@@ -1,23 +1,33 @@
 #include "sessionservice.h"
+#include <QDebug>
 
 SessionService::SessionService(QObject* parent)
     : QObject(parent)
 {
 }
 
-void SessionService::reset()
+void SessionService::startSpo2()
 {
-    m_patient = Patient{};
-    m_patientId.clear();
+    qDebug() << "SessionService: Starting SpO2 measurement";
+    // TODO: trigger SpO2 device
 }
 
-const Patient& SessionService::currentPatient() const
+void SessionService::startNibp()
 {
-    return m_patient;
+    qDebug() << "SessionService: Starting NIBP measurement";
 }
 
-QString SessionService::currentPatientId() const
+void SessionService::startHeight()
 {
-    return m_patientId;
+    qDebug() << "SessionService: Starting Height measurement";
 }
 
+void SessionService::startWeight()
+{
+    qDebug() << "SessionService: Starting Weight measurement";
+}
+
+void SessionService::startTemperature()
+{
+    qDebug() << "SessionService: Starting Temperature measurement";
+}

@@ -15,3 +15,4 @@
 #include "F2ESZRYZMC/moc_sqliterecorder.cpp"
 #include "3JYSCEOBDA/moc_homeview.cpp"
 #include "3JYSCEOBDA/moc_mainwindow.cpp"
+#include "3JYSCEOBDA/moc_metriccard.cpp"

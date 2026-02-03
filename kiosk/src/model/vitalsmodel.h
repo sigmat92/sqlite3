@@ -9,6 +9,7 @@ public:
     int spo2() const {return m_spo2;}
     float temperature() const {return m_temp;}
 signals:
+    void temperatureChanged(float t);
     void updated();
 
 public slots:

@@ -456,20 +456,11 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_mainwindow.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/mainwindow.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h

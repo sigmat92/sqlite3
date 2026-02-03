@@ -39,7 +39,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
@@ -104,7 +103,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
@@ -123,23 +121,18 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \

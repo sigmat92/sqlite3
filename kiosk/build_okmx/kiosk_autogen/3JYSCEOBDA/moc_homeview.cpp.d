@@ -39,7 +39,6 @@
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qglobalstatic.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhashfunctions.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevice.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevicebase.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qiterable.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qiterator.h \
@@ -103,7 +102,6 @@
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtversionchecks.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtypeinfo.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtypes.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qutf8stringview.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h \
@@ -122,23 +120,18 @@
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qkeysequence.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpaintdevice.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpalette.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpicture.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpixelformat.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpixmap.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpolygon.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qregion.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qrgb.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qrgba64.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextdocument.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtgui-config.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtguiexports.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtguiglobal.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtransform.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qwindowdefs.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h \
-  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgets-config.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsexports.h \

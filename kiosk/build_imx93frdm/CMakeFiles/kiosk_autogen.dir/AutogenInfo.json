@@ -585,6 +585,12 @@
 			"MU",
 			"3JYSCEOBDA/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/metriccard.h",
+			"MU",
+			"3JYSCEOBDA/moc_metriccard.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -734,7 +740,8 @@
 			null
 		],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
-		[ "/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp", "MU", null ]
+		[ "/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

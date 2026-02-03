@@ -512,6 +512,7 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h \

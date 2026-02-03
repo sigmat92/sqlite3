@@ -1,5 +1,5 @@
 #include "homeview.h"
-//#include <QtWidgets>
+#include "metriccard.h"
 #include <QWidget>
 #include <QLabel>
 #include <QPushButton>
@@ -12,10 +12,17 @@
 #include <QDateTime>
 #include <QProcess>
 
+
+
+void HomeView::onVitalsUpdated(int spo2, int pulse)
+{
+    setSpO2(spo2, pulse);
+}
+
 /* =====================================================
  * Helper functions to cretate metric cards
  * ===================================================== */
-
+/*
  static QWidget* metricCard(const QString& title, QLabel*& valueLabel)
 {
     QWidget* card = new QWidget;
@@ -43,7 +50,7 @@
 
     return card;
 }
-
+*/
 /*
  static QWidget* metricCard(const QString& title)
 {
@@ -288,6 +295,44 @@ this->setStyleSheet(R"(
     /* ========= Health Metrics.Vision Test ============ */
 
     // ---- Health Metrics Panel ----
+
+    QWidget* metricsPanel = new QWidget(this);
+    metricsPanel->setObjectName("panel");
+
+    auto* mLayout = new QGridLayout(metricsPanel);
+    mLayout->setContentsMargins(16, 12, 16, 12);
+    mLayout->setSpacing(12);
+
+    auto* spo2Card = new MetricCard("SpO2 / Pulse");
+    auto* nibpCard = new MetricCard("NIBP");
+    auto* heightCard = new MetricCard("Height");
+    auto* weightCard = new MetricCard("Weight");
+    auto* temperatureCard = new MetricCard("Temperature");
+
+    connect(spo2Card, &MetricCard::startRequested,
+            this, &HomeView::startSpo2Requested);
+
+    connect(nibpCard, &MetricCard::startRequested,
+            this, &HomeView::startNibpRequested);
+
+    connect(heightCard, &MetricCard::startRequested,
+            this, &HomeView::startHeightRequested);
+
+    connect(weightCard, &MetricCard::startRequested,
+            this, &HomeView::startWeightRequested);
+
+    connect(temperatureCard, &MetricCard::startRequested,
+            this, &HomeView::startTemperatureRequested);
+
+    mLayout->addWidget(spo2Card, 0, 0);
+    mLayout->addWidget(nibpCard, 0, 1);
+    mLayout->addWidget(heightCard,1, 0);
+    mLayout->addWidget(weightCard,1, 1);
+    
+    mLayout->addWidget(temperatureCard,1, 2);
+    
+    mLayout->addWidget(visionTestCard("Vision Test"),0, 2);
+    /*
     QWidget* metricsPanel = new QWidget(this);
     metricsPanel->setObjectName("panel");
 
@@ -301,6 +346,7 @@ this->setStyleSheet(R"(
     mLayout->addWidget(metricCard("Weight", weightValue),     1, 1);
     mLayout->addWidget(metricCard("Temperature", tempValue),  1, 2);
     mLayout->addWidget(visionTestCard("Vision Test"),        0, 2);
+    */
 /*
     mLayout->addWidget(metricCard("SpO2 / Pulse"), 0, 0);
     mLayout->addWidget(metricCard("NIBP"),         0, 1);

@@ -45,6 +45,8 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
   /home/prakash/sqlite3/kiosk/src/view/homeview.h \
   /home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp \
   /home/prakash/sqlite3/kiosk/src/view/mainwindow.h \
+  /home/prakash/sqlite3/kiosk/src/view/metriccard.cpp \
+  /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
@@ -98,7 +100,6 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qglobalstatic.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhashfunctions.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevice.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevicebase.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiterable.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiterator.h \
@@ -169,7 +170,6 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtversionchecks.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtypeinfo.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtypes.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qutf8stringview.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h \
@@ -190,24 +190,19 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qkeysequence.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpaintdevice.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpalette.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpicture.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpixelformat.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpixmap.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpolygon.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qregion.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qrgb.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qrgba64.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextdocument.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtgui-config.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtguiexports.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtguiglobal.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtransform.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qwindowdefs.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h \
-  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h \
@@ -905,6 +900,8 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake
 
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:
@@ -1139,6 +1136,12 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake:
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets.cmake:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets-release.cmake:
@@ -1313,11 +1316,13 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/libintl.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-64.h:
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/setjmp-64.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features-time64.h:
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/basic_string.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/locale_facets.tcc:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/select-decl.h:
 
@@ -1373,10 +1378,6 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/floatn-64.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-lp64.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/cwchar:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake:
@@ -1413,14 +1414,6 @@ kiosk_autogen/timestamp: /home/prakash/sqlite3/kiosk/CMakeLists.txt \
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake.d/OEQt6Toolchain.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qlabel.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
-
-CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/13.3.0/include/stddef.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/pthreadtypes-arch.h:
@@ -1448,8 +1441,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qconstructormacros.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qframe.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
 
@@ -1487,6 +1478,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgets-config.h:
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qfontmetrics.h:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qfont.h:
@@ -1523,23 +1516,21 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/concept_check.h:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtypes.h:
+
+/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qregion.h:
 
 /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpolygon.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/refwrap.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/errno.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpolygon.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtversion.h:
 
@@ -1600,12 +1591,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/long-double.h:
 
 kiosk_autogen/moc_predefs.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/uses_allocator.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcontiguouscache.h:
 
@@ -1675,6 +1660,8 @@ kiosk_autogen/moc_predefs.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/cxxabi_init_exception.h:
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/select2.h:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtpreprocessorsupport.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer:
@@ -1743,8 +1730,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpicture.h:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qarraydataops.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qalgorithms.h:
@@ -1779,14 +1764,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qprocessordetection.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qline.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/tuple:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/ostream_insert.h:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qscopeguard.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata_impl.h:
@@ -1797,9 +1774,21 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20type_traits.h:
 
+/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/compare:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
+
+CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qelapsedtimer.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_uninitialized.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/types.h:
 
 /home/prakash/sqlite3/kiosk/src/controller/barcodescanner.cpp:
 
@@ -1873,8 +1862,6 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QLabel:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h:
 
 /home/prakash/sqlite3/kiosk/src/model/qrgenerator.h:
@@ -1883,21 +1870,31 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qnumeric.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qsharedpointer.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stream_iterator.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qarraydatapointer.h:
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qline.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/semaphore:
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/tuple:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/ostream_insert.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/cpu-set.h:
 
 /home/prakash/sqlite3/kiosk/src/view/homeview.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/semaphore.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/exception_ptr.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qarraydatapointer.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/semaphore:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/unistd.h:
 
@@ -1925,9 +1922,9 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_list.h:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_multimap.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_list.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/types/__fpos_t.h:
 
@@ -1964,6 +1961,10 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/tr1/poly_laguerre.tcc:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qaction.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-64.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtaggedpointer.h:
 
@@ -2035,27 +2036,11 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qglobalstatic.h:
 
-/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/types.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_uninitialized.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/compare:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhashfunctions.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/debug/debug.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiodevice.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qiterable.h:
 
@@ -2084,10 +2069,6 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmetacontainer.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qkeysequence.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/sstream.tcc:
 
 /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.cpp:
 
@@ -2139,10 +2120,6 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qrect.h:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qfontmetrics.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextdocument.h:
-
 /home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake:
@@ -2152,20 +2129,6 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/stl_relops.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/select2.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/exception_ptr.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/semaphore.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/locale_facets.tcc:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/bits/setjmp-64.h:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/basic_string.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:
 
@@ -2431,6 +2394,10 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/codecvt.h:
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/concept_check.h:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/cxxabi_forced.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/erase_if.h:
@@ -2539,6 +2506,10 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/shared_ptr_atomic.h:
 
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/cwchar:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs-lp64.h:
+
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/specfun.h:
@@ -2633,10 +2604,6 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/format:
 
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/locale:
-
-/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/functional:
-
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/initializer_list:
@@ -2654,6 +2621,10 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/limits:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/list:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/functional:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/locale:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcontainertools_impl.h:
 
@@ -2674,6 +2645,10 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/cctype:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/string:
+
+/home/prakash/sqlite3/kiosk/src/view/metriccard.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features-time64.h:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
 
@@ -2708,3 +2683,13 @@ CMakeFiles/3.28.3/CMakeCCompiler.cmake:
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/utility:
 
 /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/vector:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/uses_allocator.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/features.h:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/bits/sstream.tcc:
+
+/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/gnu/stubs.h:

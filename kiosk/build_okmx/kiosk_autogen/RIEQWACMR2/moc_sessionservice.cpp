@@ -43,17 +43,27 @@ static constexpr auto qt_meta_stringdata_CLASSSessionServiceENDCLASS = QtMocHelp
     "",
     "vitalsUpdated",
     "spo2",
-    "pulse"
+    "pulse",
+    "startSpo2",
+    "startNibp",
+    "startHeight",
+    "startWeight",
+    "startTemperature"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSSessionServiceENDCLASS_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[22];
     char stringdata0[15];
     char stringdata1[14];
     char stringdata2[1];
     char stringdata3[14];
     char stringdata4[5];
     char stringdata5[6];
+    char stringdata6[10];
+    char stringdata7[10];
+    char stringdata8[12];
+    char stringdata9[12];
+    char stringdata10[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSSessionServiceENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -64,14 +74,24 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSSessionServiceENDCLASS_t qt_met
         QT_MOC_LITERAL(29, 0),  // ""
         QT_MOC_LITERAL(30, 13),  // "vitalsUpdated"
         QT_MOC_LITERAL(44, 4),  // "spo2"
-        QT_MOC_LITERAL(49, 5)   // "pulse"
+        QT_MOC_LITERAL(49, 5),  // "pulse"
+        QT_MOC_LITERAL(55, 9),  // "startSpo2"
+        QT_MOC_LITERAL(65, 9),  // "startNibp"
+        QT_MOC_LITERAL(75, 11),  // "startHeight"
+        QT_MOC_LITERAL(87, 11),  // "startWeight"
+        QT_MOC_LITERAL(99, 16)   // "startTemperature"
     },
     "SessionService",
     "patientLoaded",
     "",
     "vitalsUpdated",
     "spo2",
-    "pulse"
+    "pulse",
+    "startSpo2",
+    "startNibp",
+    "startHeight",
+    "startWeight",
+    "startTemperature"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -83,7 +103,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSessionServiceENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,12 +111,26 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSessionServiceENDCLASS[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x06,    1 /* Public */,
-       3,    2,   27,    2, 0x06,    2 /* Public */,
+       1,    0,   56,    2, 0x06,    1 /* Public */,
+       3,    2,   57,    2, 0x06,    2 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       6,    0,   62,    2, 0x0a,    5 /* Public */,
+       7,    0,   63,    2, 0x0a,    6 /* Public */,
+       8,    0,   64,    2, 0x0a,    7 /* Public */,
+       9,    0,   65,    2, 0x0a,    8 /* Public */,
+      10,    0,   66,    2, 0x0a,    9 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    4,    5,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -115,7 +149,17 @@ Q_CONSTINIT const QMetaObject SessionService::staticMetaObject = { {
         // method 'vitalsUpdated'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'startSpo2'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startNibp'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startHeight'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startWeight'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startTemperature'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -128,6 +172,11 @@ void SessionService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->patientLoaded(); break;
         case 1: _t->vitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 2: _t->startSpo2(); break;
+        case 3: _t->startNibp(); break;
+        case 4: _t->startHeight(); break;
+        case 5: _t->startWeight(); break;
+        case 6: _t->startTemperature(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -168,13 +217,13 @@ int SessionService::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 7;
     }
     return _id;
 }

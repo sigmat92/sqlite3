@@ -1,8 +1,31 @@
+
 #include "homecontroller.h"
 #include "view/homeview.h"
 #include "service/sessionservice.h"
 #include "storage/patientrepository.h"
+#include "model/vitalsmodel.h"
 
+//
+HomeController::HomeController(HomeView* view,
+                               SessionService* session,
+                               PatientRepository* repo,
+                               VitalsModel* vitals,
+                               QObject* parent)
+    : QObject(parent)
+    , m_view(view)
+    , m_session(session)
+    , m_repo(repo)
+    , m_vitals(vitals)
+{
+    connect(m_vitals, &VitalsModel::temperatureChanged,
+            this, &HomeController::onTemperatureChanged);
+}
+
+void HomeController::onTemperatureChanged(float temp)
+{
+    m_view->setTemperature(temp);
+}
+/*
 HomeController::HomeController(HomeView* view,
                                SessionService* session,
                                PatientRepository* repo,
@@ -12,53 +35,45 @@ HomeController::HomeController(HomeView* view,
     , m_session(session)
     , m_repo(repo)
 {
-    /* UI → Controller */
-    //connect(m_view, &HomeView::startNewTest,
-    //        this, &HomeController::onStartNewTest);
+    connect(m_view, &HomeView::startSpo2Requested,
+            m_session, &SessionService::startSpo2);
 
-    /* Session → Controller */
-    //connect(m_session, &SessionService::patientLoaded,
-    //        this, &HomeController::onPatientLoaded);
+    connect(m_view, &HomeView::startNibpRequested,
+            m_session, &SessionService::startNibp);
 
-    connect(m_session, &SessionService::vitalsUpdated,
-            this, &HomeController::onVitalsUpdated);
+    connect(m_view, &HomeView::startHeightRequested,
+            m_session, &SessionService::startHeight);
+
+    connect(m_view, &HomeView::startWeightRequested,
+            m_session, &SessionService::startWeight);
+
+    connect(m_view, &HomeView::startTemperatureRequested,
+            m_session, &SessionService::startTemperature);
+            
+    connect(vitalsModel, &VitalsModel::temperatureChanged,
+        this, &HomeController::onTemperatureChanged);
 }
 
-/* -------- Slots -------- */
-/*
-void HomeController::onStartNewTest()
+void HomeController::onTemperatureChanged(float temp)
 {
-    // Reset current workflow
-    m_session->reset();
-
-    // Clear UI
-    m_view->clearPatient();
-    m_view->setSpO2(0, 0);
-    m_view->setNIBP("---");
-
-    // Optional: navigate to test screen later
+    m_view->setTemperature(temp);
 }
 */
 /*
-void HomeController::onPatientLoaded()
-{
-    const auto& patient = m_session->currentPatient();
-
-    m_view->setPatientName(patient.name);
-    m_view->setMobile(patient.mobile);
-    m_view->setAge(patient.age);
-    m_view->setGender(patient.gender);
-}
-*/
 void HomeController::onVitalsUpdated(int spo2, int pulse)
 {
-    m_view->setSpO2(spo2, pulse);
+    // Forward to view
+    if (m_view) {
+        m_view->setSpO2(spo2, pulse);
+    }
 
-    // Persist snapshot (optional, debounced)
-    m_repo->saveVitals(
-        m_session->currentPatientId(),
-        spo2,
-        pulse
-    );
+    // Optional: persist
+    if (m_repo && m_session) {
+        m_repo->saveVitals(
+            m_session->currentPatientId(),
+            spo2,
+            pulse
+        );
+    }
 }
-
+*/

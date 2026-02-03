@@ -36,10 +36,9 @@ namespace {
 struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelpers::stringData(
     "HomeController",
-    "onVitalsUpdated",
+    "onTemperatureChanged",
     "",
-    "spo2",
-    "pulse"
+    "temp"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -60,10 +59,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   20,    2, 0x0a,    1 /* Public */,
+       1,    1,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,    3,    4,
+    QMetaType::Void, QMetaType::Float,    3,
 
        0        // eod
 };
@@ -77,10 +76,9 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSHomeControllerENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<HomeController, std::true_type>,
-        // method 'onVitalsUpdated'
+        // method 'onTemperatureChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<float, std::false_type>
     >,
     nullptr
 } };
@@ -91,7 +89,7 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<HomeController *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<float>>(_a[1]))); break;
         default: ;
         }
     }

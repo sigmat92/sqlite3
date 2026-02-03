@@ -44,6 +44,17 @@ void ProtocolParser::feed(const QByteArray& data) {
     			break;
 			}
 
+
+            case 0xFA: { // Temperature
+                    //int dec = m_payload[0];
+                    //int frac = m_payload[1];
+		            int dec = static_cast<quint8>(m_payload[0]);
+                    int frac = static_cast<quint8>(m_payload[1]);
+                    float temp = dec + (frac / 10.0f);
+                    emit temperature(temp);
+                    break;
+                }
+
                 /*
                 case 0xF2: // Pulse
                     //emit pulseUpdated(m_payload[0]);

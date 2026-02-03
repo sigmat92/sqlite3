@@ -36,6 +36,41 @@ STEP 0 — What we are building (mental model)
 │        Infrastructure        │  Hardware, DB, OS
 └──────────────────────────────┘
 
+1.
+
+UartDevice        (bytes)
+   ↓
+UartParser        (protocol)
+   ↓
+SessionService    (workflow/state)
+   ↓
+HomeController    (routing)
+   ↓
+HomeView          (display)
+
+2.
+
+[ UI Start Button ]
+        ↓
+HomeView::startTemperatureRequested()
+        ↓
+HomeController
+        ↓
+ProtocolController::requestTemperature()
+        ↓
+UartDevice::send()
+        ↓
+ProtocolParser::temperature
+        ↓
+VitalsModel::setTemperature()
+        ↓
+VitalsModel::temperatureChanged()
+        ↓
+HomeController::onTemperatureChanged()
+        ↓
+HomeView::setTemperature()
+
+3.
 
 USB Camera (GRAY8)
    │
@@ -59,6 +94,7 @@ CameraController (thread)
 ZXing loves grayscale — this is the fastest and cleanest path.
 
 STEP 1 — Project skeleton (from scratch)
+
 kiosk-mini/
 ├── CMakeLists.txt
 ├── src/
@@ -71,3 +107,5 @@ kiosk-mini/
 │   └── storage/
 └── third_party/
     └── zxing-cpp/
+    
+    
