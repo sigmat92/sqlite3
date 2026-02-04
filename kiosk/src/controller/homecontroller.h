@@ -6,6 +6,7 @@ class HomeView;
 class SessionService;
 class PatientRepository;
 class VitalsModel;
+class ProtocolController; 
 
 class HomeController : public QObject
 {
@@ -15,9 +16,12 @@ public:
                             SessionService* session,
                             PatientRepository* repo,
                             VitalsModel* vitalsModel,
+                            ProtocolController* protocol,
                             QObject* parent = nullptr);
+//public slots:
+//    void onTemperatureChanged(double temp);
 public slots:
-    void onTemperatureChanged(float temp);
+    void onTemperatureChanged(double value, char unit);
 
     //void onStartNewTest();
     //void onVitalsUpdated(int spo2, int pulse);
@@ -28,6 +32,7 @@ private:
     SessionService* m_session;
     PatientRepository* m_repo;
     VitalsModel* m_vitals;
+    ProtocolController* m_protocolController;
 };
 
 

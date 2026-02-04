@@ -1,8 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_protocolcontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -62,7 +60,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
@@ -96,9 +93,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
-  /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
-  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
-  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

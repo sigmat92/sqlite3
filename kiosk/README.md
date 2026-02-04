@@ -1,5 +1,23 @@
 
 
+| Layer            | Status               |
+| ---------------- | -------------------- |
+| UART             | ✅ stable             |
+| Protocol parsing | ✅ correct            |
+| Binary decoding  | ✅ exact Python match |
+| Model            | ✅ correct            |
+| Controller       | ✅ correct            |
+| UI update        | ✅ correct            |
+| User interaction | 🔥 **now fixed**     |
+
+User clicks Start
+→ Button disables
+→ ProtocolController runs
+→ First valid value arrives
+→ UI updates value
+→ Button re-enables
+
+
 Build & install ZXing-cpp
 cd ~
 git clone https://github.com/zxing-cpp/zxing-cpp.git

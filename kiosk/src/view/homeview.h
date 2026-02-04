@@ -5,6 +5,7 @@
 class QLabel;
 class QLineEdit;
 class QRadioButton;
+class MetricCard;
 
 class HomeView : public QWidget
 {
@@ -26,13 +27,16 @@ public:
     void setHeight(int);
     void setWeight(double);
     void setTemperature(double);
+    
+    void setTemperatureText(const QString& text);
+    void setTemperatureBusy(bool busy);  
 
 signals:
     void startSpo2Requested();
     void startNibpRequested();
     void startHeightRequested();
     void startWeightRequested();
-    void startTemperatureRequested();
+    void startTemperatureRequested(); //
 public slots:
     void onVitalsUpdated(int spo2, int pulse);
     
@@ -50,9 +54,17 @@ private:
     QRadioButton* femaleBtn{nullptr};
 
     /* ---------- Metric values ---------- */
+    /*
     QLabel* spo2Value{nullptr};
     QLabel* nibpValue{nullptr};
     QLabel* heightValue{nullptr};
     QLabel* weightValue{nullptr};
     QLabel* tempValue{nullptr};
+    */
+    MetricCard* temperatureCard{nullptr};
+    MetricCard* spo2Card{nullptr};
+    MetricCard* nibpCard{nullptr};
+    MetricCard* heightCard{nullptr};
+    MetricCard* weightCard{nullptr};
 };
+

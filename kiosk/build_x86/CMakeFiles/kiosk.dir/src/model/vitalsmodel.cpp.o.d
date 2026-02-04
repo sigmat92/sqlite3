@@ -348,4 +348,20 @@ CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime
+ /usr/include/c++/11/ctime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QtMath \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h

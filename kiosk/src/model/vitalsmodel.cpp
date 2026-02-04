@@ -1,27 +1,30 @@
 #include "vitalsmodel.h"
+#include <QtMath>
+#include <QDebug>
 
-
-VitalsModel::VitalsModel(QObject *parent)
+VitalsModel::VitalsModel(QObject* parent)
     : QObject(parent)
 {
 }
+void VitalsModel::setTemperature(double value, char unit)
+{
+    m_temperature = value;
+    m_tempUnit = unit;
 
-void VitalsModel::setSpo2(int v) {
-    m_spo2 = v;
-    emit updated();
+    qDebug() << "VitalsModel: temperatureChanged =" << value << unit;
+    emit temperatureChanged(value, unit);
 }
 
-void VitalsModel::setTemperature(float t) {
-    if (qFuzzyCompare(m_temp, t))
+/*
+void VitalsModel::setTemperature(double t)
+{
+    if (qFuzzyCompare(m_temperature, t))
         return;
-    m_temp = t;
-    //emit updated();
+
+    m_temperature = t;
+    qDebug() << "VitalsModel instance:" << this;
+
+    qDebug() << "VitalsModel: temperatureChanged =" << t;
     emit temperatureChanged(t);
 }
-
-void VitalsModel::setPulseRate(int bpm) {
-    m_pulse = bpm;
-    emit updated();
-}
-
-
+*/

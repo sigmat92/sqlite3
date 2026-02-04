@@ -41,15 +41,17 @@ static constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelp
     "HomeController",
     "onTemperatureChanged",
     "",
-    "temp"
+    "value",
+    "unit"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {
-    uint offsetsAndSizes[8];
+    uint offsetsAndSizes[10];
     char stringdata0[15];
     char stringdata1[21];
     char stringdata2[1];
-    char stringdata3[5];
+    char stringdata3[6];
+    char stringdata4[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -58,12 +60,14 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeControllerENDCLASS_t qt_met
         QT_MOC_LITERAL(0, 14),  // "HomeController"
         QT_MOC_LITERAL(15, 20),  // "onTemperatureChanged"
         QT_MOC_LITERAL(36, 0),  // ""
-        QT_MOC_LITERAL(37, 4)   // "temp"
+        QT_MOC_LITERAL(37, 5),  // "value"
+        QT_MOC_LITERAL(43, 4)   // "unit"
     },
     "HomeController",
     "onTemperatureChanged",
     "",
-    "temp"
+    "value",
+    "unit"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -83,10 +87,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   20,    2, 0x0a,    1 /* Public */,
+       1,    2,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Float,    3,
+    QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
 
        0        // eod
 };
@@ -102,7 +106,8 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<HomeController, std::true_type>,
         // method 'onTemperatureChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<float, std::false_type>
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        QtPrivate::TypeAndForceComplete<char, std::false_type>
     >,
     nullptr
 } };
@@ -113,7 +118,7 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<HomeController *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<float>>(_a[1]))); break;
+        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
         default: ;
         }
     }

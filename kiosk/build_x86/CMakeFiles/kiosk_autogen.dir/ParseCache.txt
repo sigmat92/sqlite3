@@ -691,9 +691,7 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h
  mdp:/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h
@@ -753,7 +751,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h
@@ -787,9 +784,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
- mdp:/home/prakash/sqlite3/kiosk/src/controller/protocolparser.h
- mdp:/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h
- mdp:/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h

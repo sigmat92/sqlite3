@@ -14,6 +14,7 @@
 //#include "uart/uartdevice.h"
 #include "controller/protocolparser.h"
 #include "model/vitalsmodel.h"
+#include <QObject>
 
 int main(int argc, char *argv[])
 {
@@ -21,31 +22,42 @@ int main(int argc, char *argv[])
     qputenv("QT_QPA_PLATFORM", "wayland");   // or "eglfs" if no compositor
     qputenv("QT_OPENGL", "software");        // 
     qputenv("QT_QUICK_BACKEND", "software"); // safety
+    
     QApplication app(argc, argv);
 
-    //QLiteRecorder db("patients.db");
-    //PatientRepository repo(&db);
-    //SessionService session;
-    //auto* encoder = new EncoderService("/dev/input/event2");
-    //encoder->start();
+    //UartDevice* uart = new UartDevice(&app);
+    /* ---------- UI ---------- */
+    HomeView* view = new HomeView;
+    //view->show();
 
-//
-    auto* uart    = new UartDevice;
-    auto* parser  = new ProtocolParser;
-    auto* vitals  = new VitalsModel;
-    auto* session = new SessionService;
-    auto* view    = new HomeView;
-    auto* repo    = new PatientRepository;
+    /* ---------- Models ---------- */
+    VitalsModel* vitals = new VitalsModel(&app);
 
-    auto* protoCtrl = new ProtocolController(uart, parser, vitals, &app);
-    auto* homeCtrl  = new HomeController(view, session, repo, vitals, &app);
+    /* ---------- Services ---------- */
+    SessionService* session = new SessionService(&app);
+    PatientRepository* repo = new PatientRepository(&app);
 
-//
-    //HomeView view;
-    //HomeController controller(&view, &session, &repo, vitals);
+    /* ---------- UART / Protocol ---------- */
+    UartDevice* uart = new UartDevice(&app);
+    uart->open("/dev/ttyACM0", 9600);
+
+    ProtocolParser* parser = new ProtocolParser(&app);
+
+    ProtocolController* protocolCtrl =
+        new ProtocolController(uart, parser, vitals, &app);
+
+    /* ---------- Controllers ---------- */
+    new HomeController(
+        view,
+        session,
+        repo,
+        vitals,
+        protocolCtrl,
+        &app
+    );
+
     view->show();
     //view.showFullScreen();
-
     return app.exec();
 }
     //QApplication app(argc, argv);

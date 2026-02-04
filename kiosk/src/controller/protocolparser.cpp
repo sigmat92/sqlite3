@@ -1,105 +1,53 @@
 #include "protocolparser.h"
+#include <QDebug>
 
 ProtocolParser::ProtocolParser(QObject* parent)
-    : QObject(parent), m_state(WAIT_CTRL) {}
+    : QObject(parent)
+{
+}
 
-void ProtocolParser::feed(const QByteArray& data) {
-    for (quint8 byte : data) {
-        switch (m_state) {
+void ProtocolParser::feed(const QByteArray& data)
+{
+    buffer.append(data);
+    parseFrames();
+}
 
-        case WAIT_CTRL:
-            m_ctrl = byte;
-            m_state = WAIT_LEN;
-            break;
+void ProtocolParser::parseFrames()
+{
+    while (true) {
+        int start = buffer.indexOf(char(0xFB));
+        if (start < 0) return;
 
-        case WAIT_LEN:
-            m_len = byte;
-            m_payload.clear();
-            m_state = WAIT_DATA;
-            break;
+        int end = buffer.indexOf(char(0xFB), start + 1);
+        if (end < 0) return;
 
-        case WAIT_DATA:
-            m_payload.append(byte);
-            if (m_payload.size() == m_len) {
-                // -------- DISPATCH ----------
-                switch (m_ctrl) {
-			case 0xF5: { // NIBP
-    			int sys = (static_cast<quint8>(m_payload[1]) << 8) |
-               		static_cast<quint8>(m_payload[2]);
-    			int dia = static_cast<quint8>(m_payload[3]);
-    			int mean = (m_len == 6) ? static_cast<quint8>(m_payload[4]) : 0;
-    			emit nibp(sys, dia, mean);
-    			break;
-			}
+        QByteArray frame = buffer.mid(start, end - start + 1);
+        buffer.remove(0, end + 1);
 
-			case 0xF8: { // Weight
-    			float w = static_cast<quint8>(m_payload[0]) +
-              		static_cast<quint8>(m_payload[1]) / 10.0f;
-    			emit weight(w);
-   			break;
-			}
+        qDebug() << "Parser frame:" << frame.toHex(' ');
 
-			case 0xF7: { // Height
-    			emit height(static_cast<quint8>(m_payload[0]));
-    			break;
-			}
+        // ---- Ignore IDLE frames ----
+        if (frame.size() == 5 && frame[3] == char(0x00)) {
+            continue;
+        }
 
+        // ---- Decode TEMPERATURE (exact Python mapping) ----
+        //if (frame.size() >= 10 && quint8(frame[4]) == 0x06) {
+        if (frame.size() >= 10 && quint8(frame[3]) == 0x06) {
+            int tempInt  = quint8(frame[6]);
+            int tempFrac = quint8(frame[7]);
+            char unit    = char(frame[8]);
 
-            case 0xFA: { // Temperature
-                    //int dec = m_payload[0];
-                    //int frac = m_payload[1];
-		            int dec = static_cast<quint8>(m_payload[0]);
-                    int frac = static_cast<quint8>(m_payload[1]);
-                    float temp = dec + (frac / 10.0f);
-                    emit temperature(temp);
-                    break;
-                }
+            double tempValue = tempInt + (tempFrac / 10.0);
+	    qDebug() << "Decoded temperature:" << tempValue << unit;
+            //emit temperature(tempValue, unit);
+            //return; //  stop after first valid measurement
+            emit temperature(tempValue, unit);
+            buffer.clear();          // flush old stream data
+            break;                   // exit loop, not function
 
-                /*
-                case 0xF2: // Pulse
-                    //emit pulseUpdated(m_payload[0]);
-		    emit pulseRate(static_cast<quint8>(m_payload[0]));
-                    break;
-
-                case 0xF4: // SPO2
-                    //emit spo2Updated(m_payload[0]);
-		    emit spo2(static_cast<quint8>(m_payload[0]));
-                    break;
-
-                case 0xFA: { // Temperature
-                    //int dec = m_payload[0];
-                    //int frac = m_payload[1];
-		    int dec = static_cast<quint8>(m_payload[0]);
-                    int frac = static_cast<quint8>(m_payload[1]);
-                    float temp = dec + (frac / 10.0f);
-                    emit temperatureUpdated(temp);
-                    break;
-                }
-
-                case 0xF5: { // NIBP
-                    int sys = (m_payload[1] << 8) | m_payload[2];
-                    int dia = m_payload[3];
-                    int mean = (m_len == 6) ? m_payload[4] : 0;
-                    emit nibpUpdated(sys, dia, mean);
-                    break;
-                }
-
-                case 0xF8: { // Weight
-                    float w = m_payload[0] + (m_payload[1] / 10.0f);
-                    emit weightUpdated(w);
-                    break;
-                }
-
-                case 0xF7:
-                    emit heightUpdated(m_payload[0]);
-                    break;
-                }
-                */
-	}
-                m_state = WAIT_CTRL;
-            }
-            break;
         }
     }
 }
 
+  

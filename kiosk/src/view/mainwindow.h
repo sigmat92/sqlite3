@@ -35,7 +35,7 @@ protected:
     void paintEvent(QPaintEvent*) override;
 
 private:
-    void onTemperature(float value);
+    void onTemperature(double value);
     void onSpo2(int value);
     void resetUI();
 

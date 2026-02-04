@@ -2,7 +2,8 @@
 #include <QObject>
 #include <QSocketNotifier>
 
-class UartDevice : public QObject {
+class UartDevice : public QObject
+{
     Q_OBJECT
 public:
     explicit UartDevice(QObject* parent = nullptr);
@@ -17,7 +18,7 @@ private slots:
     void onReadyRead();
 
 private:
-    int m_fd = -1;
-    QSocketNotifier* m_notifier = nullptr;
+    int m_fd{-1};
+    QSocketNotifier* m_notifier{nullptr};
 };
 

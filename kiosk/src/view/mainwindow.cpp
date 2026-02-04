@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget* parent)
       vitals(new VitalsModel(this)),
       protocol(new ProtocolController(uart, parser, vitals, this))
 {
-    uart->open("/dev/ttyACM0",9600);
+    //uart->open("/dev/ttyACM0",9600);
 /*
     connect(vitals, &VitalsModel::temperatureChanged,
             this, &MainWindow::onTemperature);
@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget* parent)
     connect(vitals, &VitalsModel::spo2Changed,
             this, &MainWindow::onSpo2);
 */
-    protocol->start();
+    //protocol->start();
    //temp read control button 
 //connect(tempBtn, &QPushButton::clicked,
 //        this, &MainWindow::onReadTemperature);
@@ -242,7 +242,7 @@ void MainWindow::onReadTemperature()
 }
 */
 
-void MainWindow::onTemperature(float value)
+void MainWindow::onTemperature(double value)
 {
     if (!tempLabel)
         return;

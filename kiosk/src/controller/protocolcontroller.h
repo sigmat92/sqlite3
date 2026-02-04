@@ -1,9 +1,6 @@
 #pragma once
 #include <QObject>
 #include <QTimer>
-#include "platform/uart/uartdevice.h"
-#include "controller/protocolparser.h"
-#include "model/vitalsmodel.h"
 
 class UartDevice;
 class ProtocolParser;
@@ -13,25 +10,25 @@ class ProtocolController : public QObject
 {
     Q_OBJECT
 public:
-	explicit ProtocolController(
-        UartDevice *uart,
-        ProtocolParser *parser,
-        VitalsModel *vitals,
-        QObject *parent = nullptr
-    );
-    void requestTemperature();
-    void temperature(float temp);  
-    void start();
-    void stop();
+    explicit ProtocolController(UartDevice* uart,
+                                ProtocolParser* parser,
+                                VitalsModel* vitals,
+                                QObject* parent = nullptr);
 
-private slots:
-    void poll();
+public slots:
+    void requestTemperature();
+    void setIdle();   // 
 
 private:
-    UartDevice *uart;
-    ProtocolParser *parser;
-    VitalsModel *vitals;
+    enum class MeasureState {
+        Idle,
+        Waiting
+    };
 
-    QTimer timer;
+    MeasureState state{MeasureState::Idle};
+
+    UartDevice* uart;
+    ProtocolParser* parser;
+    VitalsModel* vitals;
 };
 

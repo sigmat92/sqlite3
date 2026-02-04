@@ -11,14 +11,6 @@
 #include <QTimer>
 #include <QDateTime>
 #include <QProcess>
-
-
-
-void HomeView::onVitalsUpdated(int spo2, int pulse)
-{
-    setSpO2(spo2, pulse);
-}
-
 /* =====================================================
  * Helper functions to cretate metric cards
  * ===================================================== */
@@ -302,13 +294,20 @@ this->setStyleSheet(R"(
     auto* mLayout = new QGridLayout(metricsPanel);
     mLayout->setContentsMargins(16, 12, 16, 12);
     mLayout->setSpacing(12);
-
+/*
     auto* spo2Card = new MetricCard("SpO2 / Pulse");
     auto* nibpCard = new MetricCard("NIBP");
     auto* heightCard = new MetricCard("Height");
     auto* weightCard = new MetricCard("Weight");
     auto* temperatureCard = new MetricCard("Temperature");
-
+*/
+    // Create cards (store as members)
+	spo2Card        = new MetricCard("SpO2 / Pulse");
+	nibpCard        = new MetricCard("NIBP");
+	heightCard      = new MetricCard("Height");
+	weightCard      = new MetricCard("Weight");
+	temperatureCard = new MetricCard("Temperature");
+/**
     connect(spo2Card, &MetricCard::startRequested,
             this, &HomeView::startSpo2Requested);
 
@@ -320,9 +319,15 @@ this->setStyleSheet(R"(
 
     connect(weightCard, &MetricCard::startRequested,
             this, &HomeView::startWeightRequested);
-
+*/
+	// Temperature start
     connect(temperatureCard, &MetricCard::startRequested,
             this, &HomeView::startTemperatureRequested);
+    // Debug (optional – remove later)
+    connect(this, &HomeView::startTemperatureRequested, this, []{
+    qDebug() << "HomeView: Temperature start requested";
+    });
+
 
     mLayout->addWidget(spo2Card, 0, 0);
     mLayout->addWidget(nibpCard, 0, 1);
@@ -426,6 +431,7 @@ this->setStyleSheet(R"(
     root->addWidget(footerBar);
 }
 //shuold come from domain
+/*
 void HomeView::setSpO2(int spo2, int pulse)
 {
     if (!spo2Value) return;
@@ -455,4 +461,23 @@ void HomeView::setTemperature(double f)
     if (!tempValue) return;
     tempValue->setText(QString::number(f, 'f', 1));
 }
+*/
 //
+void HomeView::setTemperatureBusy(bool busy)
+{
+    if (temperatureCard)
+        temperatureCard->setBusy(busy);
+}
+
+void HomeView::setTemperatureText(const QString& text)
+{
+    if (temperatureCard)
+        temperatureCard->setValue(text);
+}
+
+//
+void HomeView::onVitalsUpdated(int spo2, int pulse)
+{
+    if (spo2Card)
+        spo2Card->setValue(QString("%1 / %2").arg(spo2).arg(pulse));
+}

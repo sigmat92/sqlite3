@@ -1,64 +1,137 @@
 #include "protocolcontroller.h"
+#include "platform/uart/uartdevice.h"
+#include "controller/protocolparser.h"
+#include "model/vitalsmodel.h"
+#include <QDebug>
+#include <QTimer>
 
-ProtocolController::ProtocolController(
-            UartDevice *uart,
-    		ProtocolParser *parser,
-    		VitalsModel *vitals,
-    		QObject *parent)
-    		: QObject(parent),
-      		uart(uart),
-      		parser(parser),
-      		vitals(vitals)
+
+enum class MeasureState { Idle, Waiting };
+MeasureState state{MeasureState::Idle};
+/*
+enum class MeasureState {
+    Idle,
+    WaitingForTemperature
+};
+
+MeasureState state = MeasureState::Idle;
+*/
+
+ProtocolController::ProtocolController(UartDevice* uart,
+                                       ProtocolParser* parser,
+                                       VitalsModel* vitals,
+                                       QObject* parent)
+    : QObject(parent),
+      uart(uart),
+      parser(parser),
+      vitals(vitals)
 {
     QObject::connect(uart, &UartDevice::bytesReceived,
                      parser, &ProtocolParser::feed);
 
-    QObject::connect(parser, &ProtocolParser::spo2,
-                     vitals, &VitalsModel::setSpo2);
-
-    QObject::connect(parser, &ProtocolParser::pulseRate,
-                     vitals, &VitalsModel::setPulseRate);
-
     QObject::connect(parser, &ProtocolParser::temperature,
                      vitals, &VitalsModel::setTemperature);
-
-    timer.setInterval(1000);
-    QObject::connect(&timer, &QTimer::timeout,
-                     this, &ProtocolController::poll);
-
 }
 
-void ProtocolController::start()
+void ProtocolController::requestTemperature()
 {
-    timer.start();
+    if (state != MeasureState::Idle)
+        return;
+
+    state = MeasureState::Waiting;
+
+    QByteArray idle;
+    idle.append(char(0x96));
+    idle.append(char(0xAA));
+    idle.append(char(0xFB));
+    idle.append(char(0x49));
+    idle.append(char(0x73));
+    uart->send(idle);
+
+    QTimer::singleShot(50, this, [this]() {
+        QByteArray cmd;
+        cmd.append(char(0x96));
+        cmd.append(char(0xAA));
+        cmd.append(char(0x54));
+        uart->send(cmd);
+    });
 }
 
-void ProtocolController::poll()
+void ProtocolController::setIdle()
 {
-    QByteArray spo2Cmd;
-    spo2Cmd.append(char(0x96));
-    spo2Cmd.append(char(0xAA));
-    spo2Cmd.append(char(0xF4));
-    uart->send(spo2Cmd);
-
-    QByteArray tempCmd;
-    tempCmd.append(char(0x96));
-    tempCmd.append(char(0xAA));
-    tempCmd.append(char(0x54));   // TEMP request
-    uart->send(tempCmd);
+	qDebug() << "ProtocolController: back to IDLE";
+    state = MeasureState::Idle;
 }
 
+/*
 void ProtocolController::requestTemperature()
 {
     if (!uart)
         return;
 
-    // TEMPERATURE REQUEST: [0x96, 0xAA, 0x54]
-    QByteArray cmd;
-    cmd.append(char(0x96));
-    cmd.append(char(0xAA));
-    cmd.append(char(0x54));
+    qDebug() << "ProtocolController: Sending IDLE";
 
-    uart->send(cmd);
+    QByteArray idle;
+    idle.append(char(0x96));
+    idle.append(char(0xAA));
+    idle.append(char(0xFB));
+    idle.append(char(0x49));
+    idle.append(char(0x73));
+    uart->send(idle);
+
+    QTimer::singleShot(50, this, [this]() {
+        qDebug() << "ProtocolController: Sending TEMP command";
+
+        QByteArray cmd;
+        cmd.append(char(0x96));
+        cmd.append(char(0xAA));
+        cmd.append(char(0x54));
+        uart->send(cmd);
+    });
 }
+*/
+/*
+void ProtocolController::requestTemperature()
+{
+    if (state != MeasureState::Idle)
+        return;
 
+    state = MeasureState::WaitingForTemperature;
+
+    qDebug() << "ProtocolController: Sending IDLE";
+
+    QByteArray idle{ char(0x96), char(0xAA), char(0xFB), char(0x49), char(0x73) };
+    uart->send(idle);
+
+    QTimer::singleShot(50, this, [this]() {
+        qDebug() << "ProtocolController: Sending TEMP command";
+        QByteArray cmd{ char(0x96), char(0xAA), char(0x54) };
+        uart->send(cmd);
+    });
+}
+*/
+
+/*
+void ProtocolController::requestTemperature()
+{
+    qDebug() << "ProtocolController: Sending IDLE";
+
+    QByteArray idle;
+    idle.append(char(0x96));
+    idle.append(char(0xAA));
+    idle.append(char(0xFB));
+    idle.append(char(0x49));
+    idle.append(char(0x73));
+    uart->send(idle);
+
+    QTimer::singleShot(50, this, [this]() {
+        qDebug() << "ProtocolController: Sending TEMP command";
+
+        QByteArray cmd;
+        cmd.append(char(0x96));
+        cmd.append(char(0xAA));
+        cmd.append(char(0x54));
+        uart->send(cmd);
+    });
+}
+*/

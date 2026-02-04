@@ -2,45 +2,96 @@
 #include <termios.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <QDebug>
 
 UartDevice::UartDevice(QObject* parent) : QObject(parent) {}
 
-bool UartDevice::open(const QString& dev, int baud) {
-    m_fd = ::open(dev.toLocal8Bit(), O_RDWR | O_NOCTTY | O_NONBLOCK);
-    if (m_fd < 0) return false;
+bool UartDevice::open(const QString& dev, int baud)
+{
+    m_fd = ::open(dev.toLocal8Bit().constData(),
+                  O_RDWR | O_NOCTTY);   // 🔥 NO O_NONBLOCK
+    if (m_fd < 0) {
+        qWarning() << "UART open failed";
+        return false;
+    }
 
-    termios tio{};
-    tcgetattr(m_fd, &tio);
+    struct termios tio;
+    if (tcgetattr(m_fd, &tio) != 0) {
+        qWarning() << "tcgetattr failed";
+        return false;
+    }
 
-    cfsetispeed(&tio, B9600);
-    cfsetospeed(&tio, B9600);
+    // 🔥 RAW mode (pySerial equivalent)
+    cfmakeraw(&tio);
 
-    tio.c_cflag = CS8 | CLOCAL | CREAD;
-    tio.c_iflag = IGNPAR;
-    tio.c_oflag = 0;
-    tio.c_lflag = 0;
+    speed_t speed = B9600;
+    switch (baud) {
+    case 9600:   speed = B9600; break;
+    case 19200:  speed = B19200; break;
+    case 38400:  speed = B38400; break;
+    case 57600:  speed = B57600; break;
+    case 115200: speed = B115200; break;
+    }
+
+    cfsetispeed(&tio, speed);
+    cfsetospeed(&tio, speed);
+
+    // 8N1
+    tio.c_cflag &= ~PARENB;
+    tio.c_cflag &= ~CSTOPB;
+    tio.c_cflag &= ~CSIZE;
+    tio.c_cflag |= CS8;
+    tio.c_cflag |= (CLOCAL | CREAD);
+
+    // IMPORTANT for USB-CDC
+    tio.c_cc[VMIN]  = 1;
+    tio.c_cc[VTIME] = 0;
 
     tcflush(m_fd, TCIFLUSH);
     tcsetattr(m_fd, TCSANOW, &tio);
 
-    m_notifier = new QSocketNotifier(m_fd, QSocketNotifier::Read, this);
+    // 🔥 notifier AFTER termios
+    m_notifier = new QSocketNotifier(m_fd,
+                                     QSocketNotifier::Read,
+                                     this);
     connect(m_notifier, &QSocketNotifier::activated,
             this, &UartDevice::onReadyRead);
 
+    qDebug() << "UART opened:" << dev << "baud" << baud;
     return true;
 }
+/*
+void UartDevice::writeBytes(const QByteArray& data)
+{
+    if (m_fd >= 0) {
+        ::write(m_fd, data.constData(), data.size());
+    }
+}
+*/
+void UartDevice::writeBytes(const QByteArray& data)
+{
+    if (m_fd < 0)
+        return;
 
-void UartDevice::writeBytes(const QByteArray& data) {
-    //if (m_fd >= 0) ::write(m_fd, data.constData(), data.size());
-    ssize_t ret = ::write(m_fd, data.constData(), data.size());
-    Q_UNUSED(ret);
-
+    ssize_t written = ::write(m_fd, data.constData(), data.size());
+    if (written < 0) {
+        qWarning() << "UART write failed";
+    } else if (written != data.size()) {
+        qWarning() << "UART partial write:" << written << "/" << data.size();
+    }
 }
 
-void UartDevice::onReadyRead() {
+
+void UartDevice::onReadyRead()
+{
+    qDebug() << "UART notifier activated";
+
     char buf[256];
     int n = ::read(m_fd, buf, sizeof(buf));
-    if (n > 0)
-        emit bytesReceived(QByteArray(buf, n));
+    if (n > 0) {
+        QByteArray data(buf, n);
+        qDebug() << "UART RX HEX:" << data.toHex(' ');
+        emit bytesReceived(data);
+    }
 }
 
