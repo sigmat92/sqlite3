@@ -811,12 +811,7 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h
  mdp:/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/moc_predefs.h
- mdp:/home/prakash/sqlite3/kiosk/src/controller/protocolparser.h
- mdp:/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h
- mdp:/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h
- mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject
- mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/q20type_traits.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qalgorithms.h
@@ -876,7 +871,6 @@
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qrefcount.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qscopedpointer.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qscopeguard.h
- mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstringalgorithms.h
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstringfwd.h

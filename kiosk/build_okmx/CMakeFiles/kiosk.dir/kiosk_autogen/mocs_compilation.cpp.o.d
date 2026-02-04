@@ -488,20 +488,20 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolparser.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/moc_barcodemodel.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/../../../src/model/barcodemodel.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/I6UGBHFDKN/moc_uartdevice.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/I6UGBHFDKN/../../../src/platform/uart/uartdevice.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/moc_inputservice.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/../../../src/service/inputservice.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/moc_sessionservice.cpp \

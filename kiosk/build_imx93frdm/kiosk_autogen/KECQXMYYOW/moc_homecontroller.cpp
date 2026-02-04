@@ -38,7 +38,8 @@ constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelpers::st
     "HomeController",
     "onTemperatureChanged",
     "",
-    "temp"
+    "value",
+    "unit"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -59,10 +60,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   20,    2, 0x0a,    1 /* Public */,
+       1,    2,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Float,    3,
+    QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
 
        0        // eod
 };
@@ -78,7 +79,8 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<HomeController, std::true_type>,
         // method 'onTemperatureChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<float, std::false_type>
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        QtPrivate::TypeAndForceComplete<char, std::false_type>
     >,
     nullptr
 } };
@@ -89,7 +91,7 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<HomeController *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<float>>(_a[1]))); break;
+        case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
         default: ;
         }
     }
