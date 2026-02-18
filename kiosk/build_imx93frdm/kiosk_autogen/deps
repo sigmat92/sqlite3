@@ -17,6 +17,8 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
 	/home/prakash/sqlite3/kiosk/src/controller/protocolparser.cpp \
 	/home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
+	/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp \
+	/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
 	/home/prakash/sqlite3/kiosk/src/main.cpp \
 	/home/prakash/sqlite3/kiosk/src/model/barcodemodel.cpp \
 	/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h \
@@ -48,12 +50,15 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/view/homeview.h \
 	/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp \
 	/home/prakash/sqlite3/kiosk/src/view/metriccard.h \
+	/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp \
+	/home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSet \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QStringList \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QThread \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h \

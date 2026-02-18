@@ -434,4 +434,12 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QProcess \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/prakash/sqlite3/kiosk/src/view/visiontestview.h

@@ -401,6 +401,10 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolparser.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_visiontestcontroller.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/visiontestcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_barcodemodel.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/barcodemodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_printserviceclient.cpp \
@@ -467,4 +471,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_visiontestview.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/visiontestview.h

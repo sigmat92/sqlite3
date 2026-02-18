@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o"
   "CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o.d"
+  "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o"
+  "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/main.cpp.o"
   "CMakeFiles/kiosk.dir/src/main.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/model/barcodemodel.cpp.o"
@@ -46,6 +48,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o"
   "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
+  "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o"
+  "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o.d"
   "kiosk"
   "kiosk.pdb"
 )

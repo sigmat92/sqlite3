@@ -6,6 +6,7 @@
 #include "KECQXMYYOW/moc_printcontroller.cpp"
 #include "KECQXMYYOW/moc_protocolcontroller.cpp"
 #include "KECQXMYYOW/moc_protocolparser.cpp"
+#include "KECQXMYYOW/moc_visiontestcontroller.cpp"
 #include "VNQA4LF4BW/moc_barcodemodel.cpp"
 #include "VNQA4LF4BW/moc_printserviceclient.cpp"
 #include "VNQA4LF4BW/moc_vitalsmodel.cpp"
@@ -18,3 +19,4 @@
 #include "F2ESZRYZMC/moc_sqliterecorder.cpp"
 #include "3JYSCEOBDA/moc_homeview.cpp"
 #include "3JYSCEOBDA/moc_metriccard.cpp"
+#include "3JYSCEOBDA/moc_visiontestview.cpp"

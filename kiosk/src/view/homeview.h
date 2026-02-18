@@ -42,6 +42,7 @@ signals:
     void startNewTestRequested();
     void startSettingsRequested();
     void startPrintingRequested();
+    void visionTestRequested();
 
 public slots:
     void onVitalsUpdated(int spo2, int pulse);

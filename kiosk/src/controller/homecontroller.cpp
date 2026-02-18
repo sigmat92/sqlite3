@@ -5,6 +5,8 @@
 #include "storage/patientrepository.h"
 #include "model/vitalsmodel.h"
 #include "controller/protocolcontroller.h"
+#include "view/visiontestview.h"
+#include "controller/visiontestcontroller.h"
 #include <QDebug>
 HomeController::HomeController(HomeView* view,
                                SessionService* session,
@@ -42,6 +44,12 @@ HomeController::HomeController(HomeView* view,
         this, [](int spo2, int pulse){
             qDebug() << "HomeController SLOT HIT:" << spo2 << pulse;
         });
+    
+    //connect(view, &HomeView::visionTestRequested, this, [this]() {
+    //auto* v = new VisionTestView;
+    //new VisionTestController(v, v);
+    //v->showFullScreen();   // kiosk mode
+//});
 
 /*
     connect(m_view, &HomeView::startTemperatureRequested,

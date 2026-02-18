@@ -381,6 +381,30 @@ src/controller/protocolparser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.s
 .PHONY : src/controller/protocolparser.cpp.s
 
+src/controller/visiontestcontroller.o: src/controller/visiontestcontroller.cpp.o
+.PHONY : src/controller/visiontestcontroller.o
+
+# target to build an object file
+src/controller/visiontestcontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o
+.PHONY : src/controller/visiontestcontroller.cpp.o
+
+src/controller/visiontestcontroller.i: src/controller/visiontestcontroller.cpp.i
+.PHONY : src/controller/visiontestcontroller.i
+
+# target to preprocess a source file
+src/controller/visiontestcontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.i
+.PHONY : src/controller/visiontestcontroller.cpp.i
+
+src/controller/visiontestcontroller.s: src/controller/visiontestcontroller.cpp.s
+.PHONY : src/controller/visiontestcontroller.s
+
+# target to generate assembly for a file
+src/controller/visiontestcontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.s
+.PHONY : src/controller/visiontestcontroller.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -741,6 +765,30 @@ src/view/metriccard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/metriccard.cpp.s
 .PHONY : src/view/metriccard.cpp.s
 
+src/view/visiontestview.o: src/view/visiontestview.cpp.o
+.PHONY : src/view/visiontestview.o
+
+# target to build an object file
+src/view/visiontestview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o
+.PHONY : src/view/visiontestview.cpp.o
+
+src/view/visiontestview.i: src/view/visiontestview.cpp.i
+.PHONY : src/view/visiontestview.i
+
+# target to preprocess a source file
+src/view/visiontestview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.i
+.PHONY : src/view/visiontestview.cpp.i
+
+src/view/visiontestview.s: src/view/visiontestview.cpp.s
+.PHONY : src/view/visiontestview.s
+
+# target to generate assembly for a file
+src/view/visiontestview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.s
+.PHONY : src/view/visiontestview.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -778,6 +826,9 @@ help:
 	@echo "... src/controller/protocolparser.o"
 	@echo "... src/controller/protocolparser.i"
 	@echo "... src/controller/protocolparser.s"
+	@echo "... src/controller/visiontestcontroller.o"
+	@echo "... src/controller/visiontestcontroller.i"
+	@echo "... src/controller/visiontestcontroller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -823,6 +874,9 @@ help:
 	@echo "... src/view/metriccard.o"
 	@echo "... src/view/metriccard.i"
 	@echo "... src/view/metriccard.s"
+	@echo "... src/view/visiontestview.o"
+	@echo "... src/view/visiontestview.i"
+	@echo "... src/view/visiontestview.s"
 .PHONY : help
 
 

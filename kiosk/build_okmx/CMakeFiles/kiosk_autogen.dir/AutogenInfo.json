@@ -526,6 +526,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_visiontestcontroller.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h",
 			"MU",
 			"VNQA4LF4BW/moc_barcodemodel.cpp",
@@ -619,6 +625,12 @@
 			"/home/prakash/sqlite3/kiosk/src/view/metriccard.h",
 			"MU",
 			"3JYSCEOBDA/moc_metriccard.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/visiontestview.h",
+			"MU",
+			"3JYSCEOBDA/moc_visiontestview.cpp",
 			null
 		]
 	],
@@ -728,6 +740,11 @@
 			"MU",
 			null
 		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp",
+			"MU",
+			null
+		],
 		[ "/home/prakash/sqlite3/kiosk/src/main.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/barcodemodel.cpp", "MU", null ],
 		[
@@ -778,7 +795,8 @@
 			null
 		],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
-		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ]
+		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

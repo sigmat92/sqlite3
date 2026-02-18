@@ -20,12 +20,26 @@ ProtocolController::ProtocolController(UartDevice* uart,
                      parser, &ProtocolParser::feed);
 
     // Parser → RAW temperature only (others not implemented yet)
+    //QObject::connect(parser, &ProtocolParser::temperature,
+    //                 this, [this](double value, char unit) {
+    //    qDebug() << "ProtocolController RAW temperature:" << value << unit;
+    //    emit temperatureRaw(value, unit);
+    //    setIdle();
+    //});
+
     QObject::connect(parser, &ProtocolParser::temperature,
-                     this, [this](double value, char unit) {
-        qDebug() << "ProtocolController RAW temperature:" << value << unit;
-        emit temperatureRaw(value, unit);
-        setIdle();
+                 this, [this](double value, char unit) {
+
+    // Ignore invalid initial frames
+    if (value <= 1.0)   // filters 0C and junk
+        return;
+
+    qDebug() << "ProtocolController RAW temperature:" << value << unit;
+
+    emit temperatureRaw(value, unit);
+    setIdle();
     });
+
 }
 
 void ProtocolController::requestTemperature()

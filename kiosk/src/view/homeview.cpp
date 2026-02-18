@@ -11,6 +11,9 @@
 #include <QTimer>
 #include <QDateTime>
 #include <QProcess>
+#include <QDebug>
+#include "controller/visiontestcontroller.h"
+#include "view/visiontestview.h"
 
 HomeView::HomeView(QWidget* parent) : QWidget(parent)
 {
@@ -200,8 +203,17 @@ this->setStyleSheet(R"(
     connect(this, &HomeView::startVisionTestRequested, this, [=]{
     qDebug() << "HomeView: Vision Test start requested";
     status->setText("Test Status: Vision Test starting...");
+    auto* v = new VisionTestView;
+    new VisionTestController(v, v);
+    //v->showFullScreen();   // kiosk mode
+    v->show();
     });
-
+    
+    //connect(view, &HomeView::visionTestRequested, this, [this]() {
+    //auto* v = new VisionTestView;
+    //new VisionTestController(v, v);
+    //v->showFullScreen();   // kiosk mode
+//});
     // Spo2 start
     connect(spo2Card, &MetricCard::startRequested,
             this, &HomeView::startSpo2Requested);

@@ -409,5 +409,9 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

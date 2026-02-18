@@ -86,6 +86,8 @@ set(SRC
     src/controller/inputcontroller.h
     src/controller/printcontroller.h
     src/controller/printcontroller.cpp
+    src/controller/visiontestcontroller.h
+    src/controller/visiontestcontroller.cpp
     #src/controller/inputcontroller.cpp
 
     #service
@@ -119,6 +121,8 @@ set(SRC
     src/view/homeview.cpp
     src/view/metriccard.h
     src/view/metriccard.cpp
+    src/view/visiontestview.h
+    src/view/visiontestview.cpp
 )
 
 # --------------------------------------------------
