@@ -1,0 +1,75 @@
+[Polityka prywatności] 
+Ostatnia aktualizacja: 1 maja 2023
+Zhuhai Pantum Electronics Co., Ltd. i jej globalne oddziały („Pantum”, „my”, „nas”, „nasze”) uznają znaczenie Twojej prywatności i są zobowiązani do jej ochrony. Informujemy, w jaki sposób Oprogramowanie gromadzi i przetwarza Twoje dane osobowe i informacje za pośrednictwem niniejszej Polityki prywatności („Polityka”).należy pamiętać, że niniejsza Polityka ma zastosowanie do wszystkich informacji i danych przekazywanych lub gromadzonych i przetwarzanych przez PANTUM (w tym danych osobowych, „dane osobowe” oznaczają wszelkie rodzaje informacji, w formie elektronicznej lub w inny sposób rejestrowany, związany ze zidentyfikowaną lub możliwą do zidentyfikowania osobą fizyczną).
+Przed rozpoczęciem korzystania z naszych produktów i usług należy dokładnie przeczytać i zrozumieć niniejszą Politykę, w szczególności terminy oznaczone pogrubioną czcionką, aby upewnić się, że dokładnie rozumiesz i zgadzasz się z niniejszą Polityką przed użyciem.
+
+Niniejsza Polityka ma na celu przede wszystkim pokazanie:
+I. W jaki sposób „PANTUM” gromadzi i wykorzystuje Twoje dane osobowe
+II. W jaki sposób „PANTUM” gromadzi i ujawnia dane osobowe
+III. W jaki sposób „PANTUM” chroni dane osobowe
+IV. W jaki sposób „PANTUM” przetwarza dane osobowe dzieci
+V. W jaki sposób „PANTUM” chroni Twoje prawo dostępu do informacji
+VI. W jaki sposób „PANTUM” koryguje dane osobowe
+VII. W jaki sposób „PANTUM” usuwa zebrane dane osobowe
+VIII. W jaki sposób „PANTUM” chroni Twoje prawo do wycofania zgody
+IX. W jaki sposób „PANTUM” przetwarza dane osobowe ponad granicami państw
+X. Jak skontaktować się z nami
+XI. Zmiany w niniejszej polityce
+ 
+I. W jaki sposób „PANTUM” gromadzi i wykorzystuje Twoje dane osobowe
+To oprogramowanie będzie zbierać wymagane informacje i dane, jak opisano poniżej:
+1. Będziemy zbierać informacje o drukarce (numer seryjny drukarki,adres IP i status drukarki);
+2. Będziemy zbierać informacje o zadaniach drukowania (liczba kopii, rozmiar papieru, nośnik drukowania);
+3. Będziemy zbierać informacje o zadaniu skanowania (źródło skanowania, kolor, rozdzielczość, rozmiar, zeskanowane dane obrazu); 
+Zbieramy powyższe informacje, aby pomóc systemowi operacyjnemu dokończyć instalację sterownika drukarki. Podstawowa funkcja drukowania może zostać zakończona dopiero po pomyślnym zainstalowaniu sterownika. W przypadku odmowy korzystania z powyższych informacji nie będzie można korzystać z podstawowych funkcji tego produktu. Bez Twojej zgody nie będziemy wykorzystywać Twoich informacji i danych osobowych do celów innych niż wymienione w niniejszym dokumencie. Ważne jest, aby pamiętać, że powyższe zastosowania obejmują podstawowe sposoby, w jakie wykorzystujemy Twoje informacje. Będziemy prosić o Twoją zgodę, gdy będziemy chcieli wykorzystać informacje do celów innych niż opisane w niniejszej polityce lub gdy chcemy wykorzystać informacje zebrane w konkretnym celu. Jeśli funkcje się zmienią, wówczas pierwotna zgoda nie będzie już ważna, uzyskamy nową zgodę.
+
+II. W jaki sposób „PANTUM” gromadzi i ujawnia dane osobowe
+1. Miejsce przechowywania
+Niniejsze oprogramowanie to tylko sterownik sprzętu dla skanera; jest to narzędzie do podłączenia systemu operacyjnego komputera do sprzętu skanera, Oprogramowanie wykorzystuje powyższe informacje tylko do identyfikacji oprogramowania sterownika, aby go płynnie zainstalować, nie przechowuje żadnych danych osobowych.
+2. Ujawnianie informacji
+1) W oparciu o zaspokojenie potrzeby świadczenia wymaganych usług, zgadzasz się, że możemy przekazywać Twoje dane podmiotom stowarzyszonym, dealerom lub dystrybutorom, autoryzowanym dostawcom usług Pantum i stronom trzecim związanym z transakcjami firmowymi (Twoje informacje zostaną prawdopodobnie ujawnione stronom trzecim w ramach połączenia lub przeniesienia działalności).
+2) Możemy ujawnić Twoje dane osobowe w następujących okolicznościach:
+● Aby spełnić wymogi prawa lub odpowiedzieć na obowiązkowy proces prawny (taki jak nakaz rewizji lub inny nakaz sądowy)
+● Aby chronić prawa i bezpieczeństwo firmy Pantum (w tym jej podmiotów stowarzyszonych, partnerów biznesowych i klientów). Niniejsza klauzula może być nieważna w niektórych krajach (regionach) lub jurysdykcjach oraz może nie mieć zastosowania do Ciebie.
+
+III. W jaki sposób „PANTUM” chroni dane osobowe
+Aby chronić Twoje dane osobowe przed nieautoryzowanym dostępem, niewłaściwym wykorzystaniem, ujawnieniem lub zmianą, Zhuhai Pantum Electronics Co., Ltd. stosuje rozsądne i odpowiednie procedury szyfrowania w celu zapewnienia bezpieczeństwa informacji zbieranych i przetwarzanych przez „PANTUM”. Należy jednak pamiętać, że żadna strona internetowa, transmisja internetowa, system komputerowy lub połączenie bezprzewodowe nie są całkowicie bezpieczne, pomimo wszystkich uzasadnionych kroków, które podjęliśmy w celu ochrony Twoich danych.
+
+IV. W jaki sposób „PANTUM” przetwarza dane osobowe dzieci
+1. „PANTUM” nie gromadzi świadomie informacji od dzieci poniżej 13 roku życia (lub równoważnego wieku minimalnego określonego w odpowiedniej jurysdykcji), przy czym „PANTUM” nie kieruje się do dzieci w wieku poniżej 13 lat (lub równoważnego wieku minimalnego okreslonego w odpowiedniej jurysdykcji);
+2. Jeśli jesteś dzieckiem w wieku poniżej 13 lat, nie przesyłaj żadnych danych osobowych za pośrednictwem tego produktu;
+3. Jeśli „PANTUM” otrzyma dane osobowe przekazane przez dziecko w wieku poniżej 13 lat za pośrednictwem tego produktu, usuniemy takie informacje zgodnie z obowiązującym prawem.
+ 
+V. W jaki sposób „PANTUM” chroni Twoje prawo dostępu do informacji
+O ile prawo nie stanowi inaczej, jako indywidualny użytkownik „PANTUM”, masz prawo dostępu do swoich danych osobowych. Możesz uzyskać dostęp do swoich danych osobowych za pomocą następującej metody:
+1. Możesz wysłać nam prośbę o sprawdzenie swoich danych osobowych, wysyłając nam wiadomość e-mail (privacy@pantum.com), a my zweryfikujemy Twoją tożsamość (w celu zapewnienia bezpieczeństwa Twojego konta lub informacji) i odpowiemy na żądanie tak szybko, jak to możliwe w rozsądnym terminie, w zależności od trudności informacji, o które chcesz zapytać i praktyk branżowych w zakresie zapytań informacyjnych.
+2. Zasadniczo nie musisz płacić za żądanie przejrzenia swoich danych osobowych, ale w przypadku powtarzających się żądań, które przekraczają trzy razy w ciągu trzech miesięcy, będziemy pobierać określone opłaty w zależności od przypadku.
+ 
+VI. W jaki sposób „PANTUM” koryguje dane osobowe
+Gdy stwierdzisz, że w zebranych od Ciebie danych osobowych wystąpił błąd, masz prawo zażądać od nas korekty. Możesz poprosić o taką korektę, wysyłając do nas wiadomość e-mail (privacy@pantum.com). Odpowiemy na Twoje żądanie sprostowania w ciągu 5 dni.
+ 
+VII. W jaki sposób „PANTUM” usuwa zebrane dane osobowe
+1. Odinstalować to oprogramowanie bezpośrednio z komputera; 
+2. Możesz poprosić nas o usunięcie swoich danych osobowych, wysyłając do nas wiadomość e-mail (privacy@pantum.com):
+• Jeśli uważasz, że przetwarzamy Twoje dane osobowe z naruszeniem odpowiednich przepisów ustawowych i wykonawczych;
+• Jeśli uważasz, że przetwarzamy Twoje dane bez Twojej zgody;
+• Jeśli przetwarzamy Twoje dane osobowe z naruszeniem naszej umowy z Tobą;
+• Jeśli anulujesz swoje konto lub odmówisz korzystania z naszego produktu;
+Po otrzymaniu wiadomości e-mail z prośbą o usunięcie Twoich danych osobowych zobowiązujemy się do podjęcia odpowiednich działań na Twoją prośbę w ciągu 15 dni roboczych.
+3. Możemy okresowo sprawdzać przechowywane przez nas dane i jednostronnie usuwać wszystko, co nie jest już konieczne do świadczenia usług według naszego uznania.
+
+VIII. W jaki sposób „PANTUM” chroni Twoje prawo do wycofania zgody
+W pełni chronimy Twoje prawo do wycofania zgody na gromadzenie i wykorzystywanie danych osobowych. Kiedy zdecydujesz się wycofać swoją zgodę, przestaniemy przetwarzać dane osobowe odpowiadające upoważnieniu, ale nie będziemy wtedy w stanie świadczyć Ci usług funkcjonalnych odpowiadających upoważnieniu. Skontaktuj się z PANTUM za pośrednictwem privacy@pantum.com, aby zażądać, by PANTUM zrobiło to za Ciebie.
+
+IX. W jaki sposób „PANTUM” przetwarza dane osobowe ponad granicami państw
+Obecnie nie będziemy wykorzystywać, przechowywać, udostępniać i ujawniać Twoich danych osobowych w ramach działalności transgranicznej ani przekazywać Twoich danych osobowych za granicę. Jeśli będziemy musieli przekazywać Twoje dane osobowe za granicę z powodu jakichkolwiek późniejszych zmian w naszych treściach usługowych, zrobimy to dopiero po uzyskaniu Twojej zgody i spełnieniu innych warunków określonych w przepisach ustawowych, administracyjnych lub krajowej administracji ds. cyberprzestrzeni.
+
+X. Jak skontaktować się z nami
+Jeśli masz jakiekolwiek pytania lub uwagi dotyczące niniejszej Polityki, możesz skontaktować się z nami w następujący sposób:
+Email: privacy@pantum.com
+Adres korespondencyjny: Zhuhai Pantum Electronics Co., Ltd.
+Nr.3883 Zhuhai Avenue, Dzielnica Xiangzhou, Zhuhai City, prowincja Guangdong, Chiny
+
+XI. Zmiany w niniejszej polityce
+Możemy zmienić niniejszą Politykę w dowolnym momencie i będziemy na bieżąco informować Cię o wszelkich zmianach w niniejszej Polityce. Nie ograniczymy Twoich praw wynikających z niniejszej Polityki poufności bez Twojej zgody. W przypadku jakichkolwiek istotnych zmian będziemy publikować wyraźne powiadomienie.
+Każda zmieniona wersja niniejszej Polityki będzie obowiązywać dopiero od dnia jej opublikowania.

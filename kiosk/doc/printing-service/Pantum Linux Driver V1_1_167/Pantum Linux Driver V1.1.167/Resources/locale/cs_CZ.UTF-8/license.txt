@@ -1,0 +1,78 @@
+[Licenční smlouva s koncovým uživatelem]
+Poslední Aktualizace: 1. května, 2023
+
+Před instalací nebo používáním Softwaru si prosím pozorně přečtěte tuto Licenční smlouvu s koncovým uživatelem (tato „EULA“) a její dodatek, Zásady ochrany osobních údajů.
+
+Zhuhai Pantum Electronics Co., Ltd., („POSKYTOVATEL LICENCE “) JE OCHOTNÁ POSKYTOVAT LICENCI NA SOFTWARE OSOBĚ NEBO SUBJEKTU PŘIJÍMÁNÍ SOFTWARU („VY“) VÝHRADNĚ POD PODMÍNKOU, ŽE PŘIJÍMÁTE VŠECHNY PODMÍNKY OBSAŽENÉ V TÉTO LICENČNÍ SMLOUVĚ S KONCOVÝM UŽIVATELEM („EULA“) A JEJÍ PŘÍLOZE, ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ („Zásady ochrany osobních údajů“). NEŽ KLIKNETE NA TLAČÍTKO „Souhlasím s LICENČNÍ SMLOUVOU KONCOVÉHO UŽIVATELE a ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ“ (dále jen TLAČÍTKO „Souhlasím“) NA KONCI TOHOTO DOKUMENTU NEBO PŘED INSTALACÍ, KOPÍROVÁNÍM, STAŽENÍM NEBO JAKÝKOLI ZPŮSOB POUŽÍVÁNÍ TENTO SOFTWARE, PROSÍM, POZORNĚ SI PŘEČTĚTE PODMÍNKY TÉTO EULA A PŘÍLOHA TÉTO EULA, ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ. V PŘÍPADĚ, KDE NEKLIKNETE NA TLAČÍTKO „Souhlasím“, NEBUDE VÁM UMOŽNĚNO KLIKNOUT NA TLAČÍTKO „DALŠÍ“ PRO DOKONČENÍ INSTALACE SOFTWARU A SOFTWARE NEMŮŽETE ŽÁDNÝM ZPŮSOBEM INSTALOVAT, KOPÍROVAT, STAHOVAT ANI POUŽÍVAT A VY MUSÍTE OKAMŽITĚ ODSTRANIT SOFTWARE ZE VAŠEHO SYSTÉMU. KLIKNUTÍM NA TLAČÍTKO „Souhlasím“ NEBO INSTALACÍ, KOPÍROVÁNÍM, STAŽENÍM NEBO JINÝM ZPŮSOBEM POUŽÍVÁNÍM TOHOTO SOFTWARU DÁVÁTE SOUHLAS S TÍM, ŽE JSTE VÁZÁNI, ZARUČUJETE, ŽE DODRŽUJETE A STÁTE SE STRANAMI TÉTO SMLUVNÍ SLUŽBY ANNVAY, PRINCIPY A EULA .
+POKUD NESOUHLASÍTE S TÍM, ŽE BUDETE VÁZÁNI TOUTO SMLOUVOU EULA A ZÁSADAMI OCHRANY OSOBNÍCH ÚDAJŮ, MŮŽETE VRÁTIT NEPOUŽITÝ „Produkt Poskytovatele licence“ A TENTO SOFTWARE DO ČTRNÁCTI (14) DNŮ PO DATU NÁKUPU, ABYSTE ZÍSKALI NÁHRADU V SOULADU SE ZÁSADAMI VRÁCENÍ PENĚZ V MÍSTĚ NÁKUPU. 
+DŮLEŽITÉ UPOZORNĚNÍ: ODDÍL 13 JE ZÁVAZNÉ USTANOVENÍ TÝKAJÍCÍ SE APLIKACE PRÁVA A ROZHODČÍHO ŘÍZENÍ A SPECIFIKUJE VAŠE ZŘEKNUTÍ SE PRÁVA ÚČASTNIT SE HROMADNÝCH ŽALOB NEBO HROMADNÝCH ARBITRÁŽÍ PRO SPORY V JAKÉKOLI JURISDIKCI.
+
+1. Software
+„Software“ znamená počítačové programy obsažené v balíčku poskytnutém Poskytovatelem licence spolu se všemi kódy, technikami, softwarovými nástroji, formáty, návrhy, koncepty, metodami a nápady spojenými s takovými počítačovými programy a veškerou dokumentací s nimi související. 
+
+2. Vlastnictví 
+Jste si vědomi a souhlasíte s tím, že software je cenným obchodním tajemstvím Poskytovatele licence a jeho Poskytovatelů licence třetích stran a že Poskytovatel licence nebo jeho Poskytovatelé licence třetí strany vlastní výhradně veškerá zahraniční a domácí autorská práva a další práva duševního vlastnictví k softwaru a všechny jeho kopie. S výjimkou případů, kdy je to výslovně uvedeno ve vaší licenci na základě této smlouvy EULA, jsou všechna práva k softwaru a všechna práva duševního vlastnictví jím vytvořená vyhrazena Poskytovateli licence a jeho Poskytovatelům licence třetích stran. Není na vás převeden žádný nárok na Software ani jeho vlastnictví. Budete reprodukovat a přídat autorská práva a další vlastnická oznámení na všechy kopiích, včetně, ale nikoli jen, částečných, fyzických nebo elektronických kopií softwaru. V případě, že provedete nebo navrhnete jakékoli změny nebo úpravy Softwaru, berete na vědomí, že nemáte žádné právo, nárok ani zájem na takové změny nebo úpravy, a dále souhlasíte s tím, že takové změny nebo úpravy budou výhradně vlastnictvím společnosti. Poskytovatel licence nebo jeho poskytovatelé licence třetí strany.
+
+3. Licence
+Poté, co přijmete tuto smlouvu EULA, během trvání této smlouvy EULA vám poskytovatel licence udělí a vy souhlasíte s tím, že přijmete omezenou, nevýhradní, nepřenosnou, osobní licenci k provádění následujících činností, za předpokladu, že budete dodržovat podmínky tato EULA:
+(a) Nainstalujte a používejte software výhradně s produktem vytvořeným poskytovatelem licence, který je dodáván se softwarem nebo pro který je software určen, jak je uvedeno v jakékoli související dokumentaci k softwaru nebo k produktu poskytovatele licence („Produkt Poskytovatele Licence“);
+
+(b) Nainstalujte a používejte Software na jednom nebo více počítačích podle svých potřeb pro běžné a zamýšlené použití Produktu Poskytovatele Licence;
+
+(c) Používejte Software produktu Poskytovatele Licence pouze pro své běžné podnikání nebo pro své osobní účely;
+
+(d) Vytvářejte přiměřený počet kopií Softwaru pouze na podporu normálního a zamýšleného použití Softwaru za předpokladu, že takové kopie mají všechna označení vlastnických práv, která jsou dodávána se Softwarem, a takové kopie mají být použity pouze jako záloha nebo instalace.
+
+(e) Převeďte vlastnictví kopií Softwaru na jinou stranu tím, že jí předáte kopii této smlouvy EULA a veškerou další dokumentaci spolu s alespoň jednou úplnou nezměněnou kopií Softwaru za předpokladu, že:
+(i) Kkdyž tak učiníte, převedete na takovou stranu všechny své kopie Softwaru nebo je zničit;
+(ii) Takový převod vlastnictví ukončuje vaši licenční smlouvu s poskytovatelem licence ;
+(iii) Takový převod převádí produkt poskytovatele licence, na který je používání softwaru omezeno ; 
+(iv) Tato druhá strana přijímá a souhlasí s tím, že bude vázána podmínkami této smlouvy EULA při používání softwaru;
+(v) Uhradíte poskytovateli licence v plné výši veškeré nároky, ztráty nebo škody vyplývající z jakéhokoli nedodržení této smlouvy EULA ze strany takové druhé strany, včetně, bez omezení, s ohledem na jakoukoli kontrolu vývozu.
+
+4. Omezení
+(a) Bez předchozího písemného souhlasu poskytovatele licence nesmíte a nedovolíte ostatním:
+(i) používat, kopírovat, upravovat, slučovat nebo přenášet kopie Softwaru (nebo jakékoli jeho části), pokud není výslovně povoleno v této smlouvě EULA;
+(ii) zpětně analyzovat, zpětně sestavovat nebo zpětně kompilovat nebo se pokoušet znovu vytvořit Software nebo zjistit zdrojový kód Softwaru, s výjimkou případů, kdy to příslušné zákony výslovně povolují bez možnosti dohodnutého zřeknutí se práv;
+(iii) podlicencovat, pronajímat, půjčovat, pronajímat, nabízet, prodávat nebo distribuovat software nebo jakoukoli jeho kopii;
+(iv) vytvářet deriváty Softwaru, upravovat nebo deaktivovat jakékoli licenční nebo kontrolní funkce Softwaru, odstraňovat, rozpojovat, oddělovat nebo jinak oddělovat jakékoli součásti tvořící Software;
+(v) používat Software pro hostování, sdílení času nebo v prostředí kanceláře orientované na služby;
+(vi) odstranit ze Softwaru veškerá upozornění nebo štítky o vlastnictví.
+(b) Pokud by došlo k porušení exportních omezení ze strany vlády vaší země, nebudete vyvozit ani znovu vyvozit Software (ani žádnou jeho část) v jakékoli formě.
+
+(c) Jste povinni dodržovat všechna další omezení a omezení týkající se Softwaru, která mohou být uvedena v související dokumentaci..
+
+5. Aktualizace Licencí
+Pokud Poskytovatel licence poskytuje Software jako aktualizaci, upgrade, novou verzi nebo doplněk (souhrnně „Aktualizace“), máte licenci k používání této Aktualizace pouze v případě, že již máte platnou licenci pro daný Software, kterou poskytovatel licence identifikuje jako způsobilý. pro Aktualizaci. Pokud Aktualizace nahrazuje nebo nahrazuje původní Software, nebudete již moci takový Software používat. S výjimkou případů, kdy poskytovatel licence uvádí jiné podmínky, se tato smlouva EULA vztahuje na každou aktualizaci. V případě konfliktu mají takové jiné podmínky přednost před touto smlouvou EULA.
+
+6. Software třetích stran
+S ohledem na jakýkoli software (nebo jeho části) poskytovaný na základě licence od třetí strany („Software třetí strany“) jste také povinni dodržovat všechny dodatečné licenční podmínky uložené takovým poskytovatelem licence třetí strany („licenční podmínky třetí strany“). Licenční podmínky třetích stran budou obvykle v souboru dodaném se softwarem. Poskytovatel licence vás však bude o těchto podmínkách informovat, pokud o to požádáte. Licenční podmínky třetích stran mají přednost před touto smlouvou EULA s ohledem na takový software třetích stran v případě jakéhokoli konfliktu.
+
+7. Souhlas s Používáním Dat
+Berete na vědomí a souhlasíte s tím, že poskytovatel licence (a jeho přidružené společnosti) mohou shromažďovat a používat vámi poskytnuté informace týkající se (i) softwaru nebo produktů poskytovatele licence, (ii) služeb podpory pro software nebo produkty poskytovatele licence a (iii) vašeho používání softwaru nebo produkty poskytovatele licence, což mimo jiné zahrnuje: Tento software shromažďuje následující informace:
+1. Informace o tiskárně (sériové číslo tiskárny, adresa IP a stav tiskárny);
+2. Informace o tiskové úloze (počet kopií, velikost papíru, tiskové médium);
+3. Informace o úloze skenování (zdroj skenování, barva, rozlišení, velikost, data skenovaného obrazu); Poskytovatel licence a jeho přidružené společnosti od vás budou shromažďovat pouze informace nezbytné k poskytování služeb nebo mohou shromažďovat pouze část, nikoli všechny výše uvedené informace o některých operačních systémech na základě různých funkcí produktů v těchto systémech. Veškeré osobní údaje a informace o jednotlivcích shromážděné tímto způsobem budou zpracovávány v souladu se Zásadami ochrany osobních údajů poskytovatele licence. Zásady ochrany osobních údajů jsou přílohou EULA a mají stejný právní účinek jako EULA. S výjimkou výhradního účelu poskytování služeb pro vás poskytovatel licence nebude používat údaje způsobem, který by vás osobně identifikoval.
+
+8. ZŘEKNUTÍ ZÁRUKY
+Detaily o záruce a omezení pro hardware, který obsahuje tento Software jsou popsány v Prohlášení o Omezené Záruce, které bylo dodáno s tím hardwarem. S VÝJIMKOU VÝŠE UVEDENÝCH VÝSLOVNÝCH ZÁRUK, KTERÉ SE VZTAHUJÍ POUZE NA HARDWARE A MÉDIA, SOFTWARE NEMÁ ZARUKU A JE DODÁN „TAK, JAK JE“, BEZ JAKÉKOLI ZÁRUKY, REPRESENTACE NEBO GARANCE JAKÉHOKOLI DRUHU, AŤ UŽ VÝSLOVNĚ NEBO PŘEDPOKLÁDANÉ, ZÁKONNÉ NEBO JINAK, VČETNĚ OBCHODNÍCH ZÁRUK NEBO ZÁRUK VHODNOSTI PRO KONKRÉTNÍ ÚČEL, VLASTNICTVÍ, NEPORUŠENÍ PRÁV A JAKÉKOLI ZÁRUKY, KTERÉ MOHOU VYPLÝVAT Z CHOVÁNÍ, OBCHODNÍHO VYUŽITÍ NEBO OBCHODNÍ PRAXE. POSKYTOVATEL LICENCE NEREPREZENTUJE, NEZARUČUJE ANI NEGARANTUJE, ŽE PROVOZ SOFTWARU BUDE HLADKÝ NEBO BEZPROBLÉMU ČI V SOULADU S PROSTŘEDÍM PRO ZPRACOVÁNÍ DAT, KTERÉ POUŽÍVÁTE, ANI ŽE VADY BY MOHLY BÝT OPRAVENY. Příslušná jurisdikce nemusí umožnit vyloučení jakékoli předpokládané záruky, takže výše uvedená Statement se na vás nemusí vztahovat. Je možné , že máte další zákonná práva s příslušnou jurisdikcí. 
+
+9. OMEZENÍ OPRAVNÝCH PROSTŘEDKŮ
+Kumulativní odpovědnost poskytovatele licence za všechny ztráty a škody vyplývající nebo vzniklé v souvislosti s touto smlouvou EULA, včetně, bez omezení, těch, které vyplývají ze smlouvy, deliktu (včetně akcí založených na nedbalosti, přísné odpovědnosti a úmyslném a/nebo úmyslném jednání), záruky, odškodnění nebo jiné teorie odpovědnosti a zda za nedodání nebo provedení nebo související s designem, výkonem, použitím, vadou nebo selháním softwaru a vaším jediným a výhradním prostředkem nápravy, bude omezena na vyšší částku, kterou jste zaplatili za Software, nebo částku 5,00 USD. POSKYTOVATEL LICENCE NEBO JEHO POSKYTOVATELÉ LICENCÍ TŘETÍCH STRAN NEBO JEJICH PŘÍSLUŠNÉ PŘIDRUŽENÉ SPOLEČNOSTI, DODAVATELÉ, DISTRIBUTOŘI NEBO PRODEJCI V ŽÁDNÉM PŘÍPADĚ NENESOU ODPOVĚDNOST ZA UŠLÝ ZISK, ZTRACENÁ DATA, PŘERUŠENÍ PODNIKÁNÍ NEBO JAKÉKOLI NEPŘÍMÉ, NÁSLEDNÉ, NÁHODNÉ, KOLATERÁLNÍ, PŘÍKLADNÉ, REPRESIVNÍ, SPOLÉHÁNÍ SE NEBO ZVLÁŠTNÍ ŠKODY SOUVISEJÍCÍ S POUŽÍVÁNÍM NEBO NESCHOPNOSTÍ POUŽÍVAT SOFTWARE, A TO ANI V PŘÍPADĚ, ŽE JSOU TAKOVÉ ŠKODY PŘEDVÍDATELNÉ NEBO POSKYTOVATEL LICENCE NEBO JEHO POSKYTOVATELÉ LICENCÍ NEBO AUTORIZOVANÍ PRODEJCI BYLI UPOZORNĚNI NA MOŽNOST TAKOVÝCH ŠKOD NEBO NA JAKÝKOLI VÁŠ NÁROK NA ZÁKLADĚ NÁROKU TŘETÍ STRANY, A BEZ OHLEDU NA TO, ZDA JE NÁROK ZALOŽEN NA SMLOUVĚ, DELIKTU (VČETNĚ NEDBALOSTI, PŘÍSNÉ ODPOVĚDNOSTI A ÚMYSLNÉHO A/NEBO ÚMYSLNÉHO JEDNÁNÍ), ZÁRUCE, ODŠKODNĚNÍ NEBO JINÉ TEORII ODPOVĚDNOSTI. SOUHLASÍTE S TÍM, ŽE (A) OMEZENÍ ODPOVĚDNOSTI UVEDENÁ V TÉTO SMLOUVĚ EULA PŘEDSTAVUJÍ CENNOU A NEZBYTNOU POBÍDKU PRO POSKYTOVATELE LICENCE, ABY VÁM UDĚLIL LICENCI NA SOFTWARE, A (B) TAKOVÁ OMEZENÍ NEZPŮSOBÍ, ŽE TATO SMLOUVA EULA SELŽE V JEJÍM ZÁKLADNÍM ÚČELU Z DŮVODU NEDOSTATKU NÁPRAVY NEBO JINAK. Příslušná jurisdikce nemusí umožňovat žádná omezení odpovědnosti, takže výše uvedená vyloučení odpovědnosti se na vás nemusí vztahovat. V dané jurisdikci můžete mít další zákonná práva. 
+
+10. Mapa Omezených Práv
+Berete na vědomí, že software je komerční počítačový software vyvinutý na soukromé náklady. Vaše práva na jejich použití, duplikování nebo zveřejnění jsou omezena touto smlouvou EULA. Pokud je koncovým uživatelem vládní agentura USA, bude používání, duplikování a zveřejňování omezeno, jak je uvedeno v tomto dokumentu, v maximálním rozsahu povoleném dodatkem k Nařízení Defense Federal Acquisition Regulation nebo federálním nařízením o akvizici, je-li to relevantní.
+
+11. Ukončení
+Svou licenční smlouvu můžete kdykoli ukončit jednoduše zničením softwaru a všech jeho kopií nebo jinak popsaným v této smlouvě EULA. Pokud nebudete striktně dodržovat podmínky této smlouvy EULA, okamžitě a automaticky bez předchozího upozornění získáte licenci k používání softwaru. Po ukončení této licenční smlouvy musíte ukončit veškeré používání softwaru a okamžitě zničit všechny kopie softwaru. Poskytovatel Licence si vyhrazuje právo kdykoli změnit ceny, funkce, specifikace, možnosti, funkce, licenční podmínky, data vydání, obecnou dostupnost nebo jiné vlastnosti softwaru.
+
+12. Různý
+Tuto smlouvu EULA lze změnit pouze písemně podepsanou vámi a pověřeným úředníkem Poskytovatele licence. Pokud by některá ustanovení této smlouvy EULA byla z jakéhokoli důvodu soudem příslušné jurisdikce považována za nezákonnou nebo nevymahatelnou, zbývající podmínky této smlouvy EULA zůstanou v plné platnosti a účinnosti a trestná lhůta bude omezena nebo upravena v rozsahu nezbytném k tomu, aby byla vymahatelná. 
+
+13. ROZHODNÉ PRÁVO A JURISDIKCE 
+13.1 Smlouva EULA se řídí a vykládá v souladu se zákony Čínské lidové republiky bez použití zásad kolizního práva. 
+13.2 Jakýkoli spor vyplývající z smlouvy EULA nebo v souvislosti s ní bude předložen k rozhodčímu řízení soudu pro mezinárodní arbitráž v Šen-čenu (SCIA). Toto rozhodčí řízení bude vedeno v Shenzhenu podle jeho stávajících rozhodčích pravidel. Počet rozhodců je jeden a jazykem rozhodčího řízení je angličtina.
+13.3 ZŘEKNUTÍ SE HROMADNÝCH ŽALOB A TŘÍDNÍCH ARBITRÁŽÍ. VY A POSKYTOVATEL LICENCE SOUHLASÍTE S TÍM, ŽE KAŽDÁ STRANA MŮŽE PODAT SPORY PROTI DRUHÉ STRANĚ POUZE JAKO JEDNOTLIVEC, A NIKOLI JAKO ŽALOBCE NEBO ČLEN TŘÍDY V JAKÉMKOLI TŘÍDNÍM NEBO REPREZENTATIVNÍM ŘÍZENÍ, VČETNĚ FEDERÁLNÍCH NEBO STÁTNÍCH HROMADNÝCH ŽALOB NEBO HROMADNÝCH ARBITRÁŽÍ. HROMADNÉ ŽALOBY, ARBITRÁŽE V CELÉ TŘÍDĚ, SOUKROMÉ ŽALOBY GENERÁLNÍHO PROKURÁTORA, A JAKÉKOLI JINÉ ŘÍZENÍ, KDE NĚKDO JEDNÁ V ZASTUPITELSKÉ FUNKCI, NENÍ POVOLENO. V SOULADU S TÍM, PODLE ROZHODČÍCH POSTUPŮ UVEDENÝCH V TOMTO ODDÍLE, ROZHODCE NESMÍ KOMBINOVAT NEBO KONSOLIDOVAT NÁROKY VÍCE NEŽ JEDNÉ STRANY BEZ PÍSEMNÉHO SOUHLASU VŠECH DOTČENÝCH STRAN ROZHODČÍHO ŘÍZENÍ. 
+13.4 ODDÍL 13.3 PLATÍ VŽDY, BEZ OHLEDU NA PRÁVO A JURISDIKCI, KTERÁ JE SKUTEČNĚ POUŽITELNÁ.
+
+Zhuhai Pantum Electronics Co., Ltd.

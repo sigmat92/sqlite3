@@ -1,0 +1,72 @@
+[Zásady ochrany osobních údajů]
+Poslední Aktualizace: 1. května, 2023
+
+Zhuhai Pantum Electronics Co., Ltd., a její globální pobočky („Pantum“, „my“, „nás“, „naše“) respektují vaše soukromí a zavazují se chránit vaše soukromí. Řekneme vám, jak Software shromažďuje a zpracuje Vaše osobní údaje a informace prostřednictvím těchto Zásad ochrany osobních údajů („Zásady“). Berte prosím na vědomí, že tyto zásady se vztahují na všechny informace a údaje předané nebo shromážděné a zpracované firmou PANTUM (včetně osobních údajů. „Osobní údaje“ znamenají jakékoli informace, elektronicky nebo jinak zaznamenané, související s identifikovanou nebo identifikovatelnou fyzickou osobou).
+Než začnete používat naše produkty a služby, pečlivě projděte a pochopte tyto zásady, zejména podmínky označené tučným písmem, abyste se ujistili, že těmto Zásadám správně rozumíte a že s nimi souhlasíte před použitím.
+
+Účelem těchto zásad je především ukázat vám:
+I. Jak „PANTUM“ shromažďuje a používá vaše osobní údaje
+II. Jak „PANTUM“ ukládá a zveřejňuje vaše osobní údaje
+III. Jak „PANTUM“ chrání vaše osobní údaje
+IV. Jak „PANTUM“ zpracuje osobní údaje nezletilých
+V. Jak „PANTUM“ chrání vaše právo na přístup k informacím
+VI. Jak „PANTUM“ opravuje vaše osobní údaje
+VII. Jak „PANTUM“ vymaže vaše shromážděné osobní údaje
+VIII. Jak „PANTUM“ chrání vaše právo odvolat svůj souhlas
+IX. Jak „PANTUM“ zpracovává vaše osobní údaje přes státní hranice
+X. Jak nás kontaktovat
+XI. Změny k zásadám ochrany osobních údajů
+I. Jak „PANTUM“ shromažďuje a používá vaše osobní údaje
+Tento software shromažďuje potřebné informace a data, jak je popsáno níže:
+1. Shromažďují se informace o vaší tiskárně (sériové číslo tiskárny, IP adresa a stav tiskárny);
+2. Shromažďují se informace o vaší tiskové úloze (počet kopií, velikost papíru, tiskové médium);
+3. Informace o vaší úloze skenování (zdroj skenování, barva, rozlišení, velikost, naskenovaná obrazová data);
+Výše uvedené informace jsou shromažďovány, aby pomohly operačnímu systému dokončit instalaci ovladače tiskárny. Základní funkci tisku lze dokončit až po úspěšné instalaci ovladače. Pokud odmítnete použít výše uvedené informace, nebudete moci používat základní funkce tohoto produktu. Vaše osobní údaje a údaje nebudeme používat k jiným účelům, než jsou zde uvedené, bez vašeho souhlasu. Je důležité poznamenat, že to pokrývá primární způsoby, jakými jsou vaše informace používány. Váš souhlas bude požadován vždy, když budeme potřebovat použít vaše údaje pro jiné účely, než jsou ty, které jsou popsány v těchto zásadách, nebo když budeme chtít použít shromážděné informace pro konkrétní účel. Pokud se změní povaha funkcí, váš původní souhlas již nebude platný a v tomto okamžiku získáme váš nový souhlas.
+
+II. Jak „PANTUM“ ukládá a zveřejňuje vaše osobní údaje
+1. Místo uložení
+Tento software je pouze hardwarovým ovladačem pro váš skener, je to nástroj pro připojení operačního systému vašeho počítače k hardwaru skeneru. Software používá výše uvedené informace pouze k identifikaci vašeho softwaru ovladače, aby jej mohl hladce nainstalovat. Neukládá žádné vaše osobní údaje.
+2. Zveřejnění Informace
+1) Na základě potřeby poskytnout vám požadované služby souhlasíte s tím, že nám umožníte poskytnout vaše údaje přidruženým společnostem Pantum, prodejcům nebo distributorům, autorizovaným poskytovatelům služeb a třetím stranám zapojeným do transakcí společnosti (vaše údaje budou zveřejněny třetím stranám jako součást podnikové kombinace nebo převodu).
+2) Vaše osobní údaje mohou být zveřejněny za kterékoli z následujících okolností:
+• Splnit zákonné požadavky nebo reagovat na povinná soudní řízení (jako je příkaz k domovní prohlídce nebo jiný soudní příkaz)
+• Ochranit zákonná práva nebo integrity firmy Pantum (včetně jejích přidružených společností, obchodních partnerů/a zákazníků). Tato doložka může být v některých zemích (regionech) nebo jurisdikcích neplatná, takže se na vás nemusí vztahovat.
+
+III. Jak „PANTUM“ chrání vaše osobní údaje
+K ochraně vašich osobních údajů před neoprávněným přístupem, zneužitím, zveřejněním nebo změnou používá společnost Zhuhai Pantum Electronics Co., Ltd. přiměřené a vhodné šifrovací postupy, aby zajistila, že informace shromážděné a zpracované společností „PANTUM“ jsou bezpečné. Je však třeba vzít v úvahu, že neexistuje žádná webová stránka, internetový přenos, počítačový systém nebo bezdrátové připojení, které by bylo zcela bezpečné, a to i přes všechny dostupné kroky podniknuté k ochraně vašich informací.
+
+IV. Jak „PANTUM“ zpracuje osobní údaje nezletilých
+1.„PANTUM“ nebude vědomě shromažďovat osobní údaje od dětí mladších 13 let (nebo ekvivalentního minimálního věku stanoveného v daných jurisdikcích) a „PANTUM“ není zaměřeno na děti mladší 13 let (nebo ekvivalentní minimální věk stanovený v příslušných jurisdikcích). );
+2. Pokud jste dítě mladší 13 let, neuvádějte v tomto produktu žádné osobní údaje;
+3. Pokud „PANTUM“ při používání tohoto produktu obdrží osobní údaje poskytnuté dítětem mladším 13 let, vymažeme tyto informace v souladu s platnými zákony.
+V. Jak „PANTUM“ chrání vaše právo na přístup k informacím
+Jako individuální uživatel „PANTUM“ máte právo na přístup ke svým osobním údajům, pokud zákon nevyžaduje jinak. Ke svým osobním údajům se můžete dostat takto:
+1. Můžete nám poslat žádost o revizi vašich osobních údajů zasláním e-mailu (privacy@pantum.com) a my ověříme vaši identitu (pro zajištění bezpečnosti vašeho účtu nebo informací) a dostanete odpověď co nejdříve přiměřené lhůty v závislosti na složitosti informací, na které se chcete dotazovat, a na zvyklostech daného odvětví při dotazování na informace.
+2. Platba za vaši žádost o kontrolu vašich osobních údajů v zásadě není vyžadována, ale více než tři opakované v průběhu tří měsíců bude účtován poplatek v závislosti na případu.
+VI. Jak „PANTUM“ opravuje vaše osobní údaje
+Můžete požádat o opravu chybných osobních údajů, které nám byly zaslány. Můžete požádat o provedení opravy zasláním e-mailu (privacy@pantum.com). Na vaši žádost o nápravu odpovíme do 5 dnů.
+VII. Jak „PANTUM“ vymaže vaše shromážděné osobní údaje
+1. Odinstalujte tento software přímo z vašeho počítače;
+2. Můžete požádat o vymazání svých osobních údajů zasláním e-mailu (privacy@pantum.com):
+• Pokud se domníváte, že vaše osobní údaje zpracováváme v rozporu s příslušnými zákony a předpisy;
+• Pokud se domníváte, že jsme zpracovali vaše osobní údaje bez vašeho souhlasu;
+• Pokud je zpracování vašich osobních údajů v rozporu s naší dohodou s vámi;
+• Pokud zrušíte svůj účet nebo odmítnete používat náš produkt;
+Když obdržíme vaši e-mailovou žádost o vymazání vašich osobních údajů, podnikneme v této věci do 15 pracovních dnů příslušné kroky.
+3. Můžeme pravidelně kontrolovat údaje, které uchováváme, a jednostranně smazat vše, co již není potřeba, abychom vám mohli poskytovat služby podle našeho uvážení.
+
+VIII. Jak „PANTUM“ chrání vaše právo odvolat svůj souhlas
+Plně respektujeme vaše právo odvolat souhlas se shromažďováním a používáním vašich osobních údajů. Pokud se rozhodnete svůj souhlas odvolat, nebudeme již zpracovávat vaše osobní údaje, které odpovídají oprávnění, a nebudeme vám schopni poskytnout všechny funkční služby odpovídající oprávnění. Budete muset kontaktovat PANTUM na emailovou adresu: privacy@pantum.com, a požádat PANTUM, aby tak učinila za vás.
+
+IX. Jak „PANTUM“ zpracovává vaše osobní údaje přes státní hranice
+V současné době nebudeme používat, uchovávat, sdílet ani zveřejňovat vaše osobní údaje v žádném nadnárodním podnikání ani převádět vaše osobní údaje do zámoří. Pokud musí být vaše osobní údaje přeneseny přes státní hranice v důsledku jakýchkoli změn v obsahu našich služeb, učiníme tak po obdržení vašeho souhlasu a splníme všechny podmínky stanovené zákonem, správními předpisy nebo národní správou kybernetického prostoru.
+
+X. Jak nás kontaktovat
+Máte-li jakékoli dotazy nebo připomínky k těmto Zásadám, můžete nás kontaktovat na následujících adresách
+E-mail: privacy@pantum.com
+Poštovní adresa: Zhuhai Pantum Electronics Co., Ltd.
+No.3883 Zhuhai Avenue, Xiangzhou District, Zhuhai City, Guangdong Province, China
+
+XI. Změny k zásadám ochrany osobních údajů
+Tyto Zásady můžeme kdykoli revidovat a budete informováni o všech změnách těchto Zásad. Neomezíme vaše práva podle těchto Zásad ochrany osobních údajů bez vašeho souhlasu. V případě jakýchkoli podstatných změn zveřejníme výrazné upozornění.
+Jakákoli revidovaná verze těchto zásad přijde do platnosti teprve dnem zveřejnění.

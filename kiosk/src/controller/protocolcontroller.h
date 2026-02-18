@@ -1,10 +1,10 @@
 #pragma once
+
 #include <QObject>
-#include <QTimer>
+#include <QByteArray>
 
 class UartDevice;
 class ProtocolParser;
-class VitalsModel;
 
 class ProtocolController : public QObject
 {
@@ -12,23 +12,20 @@ class ProtocolController : public QObject
 public:
     explicit ProtocolController(UartDevice* uart,
                                 ProtocolParser* parser,
-                                VitalsModel* vitals,
                                 QObject* parent = nullptr);
 
-public slots:
     void requestTemperature();
-    void setIdle();   // 
+    void setIdle();
+
+signals:
+    // RAW signals → VitalsService
+    void temperatureRaw(double value, char unit);
+    void spo2Raw(int spo2, int pulse);
+    void weightRaw(double weight);
+    void heightRaw(int height);
+    void nibpRaw(int sys, int dia, int map);
 
 private:
-    enum class MeasureState {
-        Idle,
-        Waiting
-    };
-
-    MeasureState state{MeasureState::Idle};
-
-    UartDevice* uart;
-    ProtocolParser* parser;
-    VitalsModel* vitals;
+    UartDevice* uart{nullptr};
+    ProtocolParser* parser{nullptr};
 };
-

@@ -2,9 +2,10 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/src/controller/printcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QImage \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -250,38 +251,21 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
- /usr/include/c++/11/cstring /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
- /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
- /usr/include/c++/11/bits/locale_classes.h \
- /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_uninitialized.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/ostream \
- /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
@@ -293,13 +277,13 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
- /usr/include/c++/11/bits/ranges_algobase.h \
+ /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/algorithm \
- /usr/include/c++/11/bits/ranges_algo.h \
- /usr/include/c++/11/bits/ranges_util.h \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
@@ -309,12 +293,22 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
+ /usr/include/c++/11/cstring /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
@@ -326,38 +320,20 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringtokenizer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QFile \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
@@ -372,16 +348,24 @@ CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime /usr/include/c++/11/filesystem \
- /usr/include/c++/11/bits/fs_fwd.h /usr/include/c++/11/bits/fs_path.h \
- /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h
+ /usr/include/c++/11/ctime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../model/printserviceclient.h

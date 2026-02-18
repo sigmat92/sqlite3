@@ -1,0 +1,5160 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% Copyright 1987-1996 Adobe Systems Incorporated.
+*% All Rights Reserved.
+*% Permission is granted for redistribution of this file as
+*% long as this copyright notice is intact and the contents
+*% of the file is not altered in any way from its original form.
+*% End of Copyright statement
+*FileVersion: "2.8"
+*FormatVersion: "4.3"
+*%cupsManualCopies: True
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Pantum"
+*PCFileName: "CM230ADW.PPD"
+*Product: "(Pantum CM230ADW Series)"
+*PSVersion: "(3015.103) 1"
+*ShortNickName: "CM230ADW Series PS"
+*ModelName: "Pantum CM230ADW Series PS"
+*NickName: "Pantum CM230ADW Series PS"
+*cupsPreFilter: "application/pdf 100 prepdftopdf"
+*%cupsFilter:"application/vnd.cups-postscript 0 ptps"
+*cupsFilter:"application/vnd.cups-pdf 21 ptps"
+
+
+*% == UseRenderer Information ==
+*cupsIPPReason UseRenderer/UseRenderer: "text:PDFTOPS"
+*End
+
+*% == Constraints (InputSlot vs. Tray) ==
+*UIConstraints: *InputSlot Tray1                  *Tray1 NotInstalled
+*UIConstraints: *InputSlot Tray2                  *Tray2 NotInstalled
+
+*% == Constraints (Tray  vs. InputSlot) ==
+*UIConstraints: *Tray1 NotInstalled              *InputSlot Tray1
+*UIConstraints: *Tray2 NotInstalled              *InputSlot Tray2
+
+*% == Constraints (PageSize vs. InputSlot) ==
+*UIConstraints: *PageSize A6                      *InputSlot Standard
+*UIConstraints: *PageSize Com10Envelope           *InputSlot Standard
+*UIConstraints: *PageSize EnvMonarch              *InputSlot Standard
+*UIConstraints: *PageSize EnvC5                   *InputSlot Standard
+*UIConstraints: *PageSize EnvC6                   *InputSlot Standard
+*UIConstraints: *PageSize EnvDL                   *InputSlot Standard
+*UIConstraints: *PageSize DoublePostcardRotated   *InputSlot Standard
+
+*UIConstraints: *PageSize A6                      *InputSlot AutoSelect
+*UIConstraints: *PageSize Com10Envelope           *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvMonarch              *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvC5                   *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvC6                   *InputSlot AutoSelect
+*UIConstraints: *PageSize EnvDL                   *InputSlot AutoSelect
+*UIConstraints: *PageSize DoublePostcardRotated   *InputSlot AutoSelect
+
+
+*UIConstraints: *PageSize A6                      *InputSlot Tray2
+*UIConstraints: *PageSize Com10Envelope           *InputSlot Tray2
+*UIConstraints: *PageSize EnvMonarch              *InputSlot Tray2
+*UIConstraints: *PageSize EnvC5                   *InputSlot Tray2
+*UIConstraints: *PageSize EnvC6                   *InputSlot Tray2
+*UIConstraints: *PageSize EnvDL                   *InputSlot Tray2
+*UIConstraints: *PageSize DoublePostcardRotated   *InputSlot Tray2
+
+
+*UIConstraints: *PageSize A6                      *InputSlot Tray1
+*UIConstraints: *PageSize Com10Envelope           *InputSlot Tray1
+*UIConstraints: *PageSize EnvMonarch              *InputSlot Tray1
+*UIConstraints: *PageSize EnvC5                   *InputSlot Tray1
+*UIConstraints: *PageSize EnvC6                   *InputSlot Tray1
+*UIConstraints: *PageSize EnvDL                   *InputSlot Tray1
+*UIConstraints: *PageSize DoublePostcardRotated   *InputSlot Tray1
+
+
+*% == Constraints (InputSlot vs. PageSize) ==
+*UIConstraints: *InputSlot Standard              *PageSize A6
+*UIConstraints: *InputSlot Standard              *PageSize Com10Envelope
+*UIConstraints: *InputSlot Standard              *PageSize EnvMonarch
+*UIConstraints: *InputSlot Standard              *PageSize EnvC5
+*UIConstraints: *InputSlot Standard              *PageSize EnvC6
+*UIConstraints: *InputSlot Standard              *PageSize EnvDL
+*UIConstraints: *InputSlot Standard              *PageSize DoublePostcardRotated
+
+*UIConstraints: *InputSlot AutoSelect            *PageSize A6
+*UIConstraints: *InputSlot AutoSelect            *PageSize Com10Envelope
+*UIConstraints: *InputSlot AutoSelect            *PageSize EnvMonarch
+*UIConstraints: *InputSlot AutoSelect            *PageSize EnvC5
+*UIConstraints: *InputSlot AutoSelect            *PageSize EnvC6
+*UIConstraints: *InputSlot AutoSelect            *PageSize EnvDL
+*UIConstraints: *InputSlot AutoSelect            *PageSize DoublePostcardRotated
+
+*UIConstraints: *InputSlot Tray1                 *PageSize A6
+*UIConstraints: *InputSlot Tray1                 *PageSize Com10Envelope
+*UIConstraints: *InputSlot Tray1                 *PageSize EnvMonarch
+*UIConstraints: *InputSlot Tray1                 *PageSize EnvC5
+*UIConstraints: *InputSlot Tray1                 *PageSize EnvC6
+*UIConstraints: *InputSlot Tray1                 *PageSize EnvDL
+*UIConstraints: *InputSlot Tray1                 *PageSize DoublePostcardRotated
+
+*UIConstraints: *InputSlot Tray2                 *PageSize A6
+*UIConstraints: *InputSlot Tray2                 *PageSize Com10Envelope
+*UIConstraints: *InputSlot Tray2                 *PageSize EnvMonarch
+*UIConstraints: *InputSlot Tray2                 *PageSize EnvC5
+*UIConstraints: *InputSlot Tray2                 *PageSize EnvC6
+*UIConstraints: *InputSlot Tray2                 *PageSize EnvDL
+*UIConstraints: *InputSlot Tray2                 *PageSize DoublePostcardRotated
+
+*% == Constraints (InputSlot vs. MediaType) ==
+*%UIConstraints: *InputSlot Tray1                *MediaType Thick1
+*UIConstraints: *InputSlot Tray1                 *MediaType Thick2
+*UIConstraints: *InputSlot Tray1                 *MediaType Thick3
+*UIConstraints: *InputSlot Tray1                 *MediaType Envelope
+*UIConstraints: *InputSlot Tray1                 *MediaType PostCard
+*UIConstraints: *InputSlot Tray1                 *MediaType Labels
+
+*%UIConstraints: *InputSlot Tray2                *MediaType Thick1
+*UIConstraints: *InputSlot Tray2                 *MediaType Thick2
+*UIConstraints: *InputSlot Tray2                 *MediaType Thick3
+*UIConstraints: *InputSlot Tray2                 *MediaType Envelope
+*UIConstraints: *InputSlot Tray2                 *MediaType PostCard
+*UIConstraints: *InputSlot Tray2                 *MediaType Labels
+
+*UIConstraints: *InputSlot Standard              *MediaType Thick2
+*UIConstraints: *InputSlot Standard              *MediaType Thick3
+*UIConstraints: *InputSlot Standard              *MediaType Envelope
+*UIConstraints: *InputSlot Standard              *MediaType PostCard
+*UIConstraints: *InputSlot Standard              *MediaType Labels
+
+*UIConstraints: *InputSlot AutoSelect            *MediaType Thick2
+*UIConstraints: *InputSlot AutoSelect            *MediaType Thick3
+*UIConstraints: *InputSlot AutoSelect            *MediaType Envelope
+*UIConstraints: *InputSlot AutoSelect            *MediaType PostCard
+*UIConstraints: *InputSlot AutoSelect            *MediaType Labels
+
+
+*% == Constraints (MediaType vs. InputSlot) ==
+*UIConstraints: *MediaType Envelope              *InputSlot Tray1
+*UIConstraints: *MediaType PostCard              *InputSlot Tray1
+*UIConstraints: *MediaType Labels                *InputSlot Tray1
+*UIConstraints: *MediaType Thick2                *InputSlot Tray1
+*UIConstraints: *MediaType Thick3                *InputSlot Tray1
+
+*UIConstraints: *MediaType Envelope              *InputSlot Tray2
+*UIConstraints: *MediaType PostCard              *InputSlot Tray2
+*UIConstraints: *MediaType Labels                *InputSlot Tray2
+*UIConstraints: *MediaType Thick2                *InputSlot Tray2
+*UIConstraints: *MediaType Thick3                *InputSlot Tray2
+
+*UIConstraints: *MediaType Envelope              *InputSlot Standard
+*UIConstraints: *MediaType PostCard              *InputSlot Standard
+*UIConstraints: *MediaType Thick2                *InputSlot Standard
+*UIConstraints: *MediaType Thick3                *InputSlot Standard
+*UIConstraints: *MediaType Labels                *InputSlot Standard
+
+*UIConstraints: *MediaType Envelope              *InputSlot AutoSelect
+*UIConstraints: *MediaType PostCard              *InputSlot AutoSelect
+*UIConstraints: *MediaType Labels                *InputSlot AutoSelect
+*UIConstraints: *MediaType Thick2                *InputSlot AutoSelect
+*UIConstraints: *MediaType Thick3                *InputSlot AutoSelect
+
+
+
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Envelope              *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Envelope              *Duplex DuplexTumble
+
+*UIConstraints: *MediaType PostCard              *Duplex DuplexNoTumble
+*UIConstraints: *MediaType PostCard              *Duplex DuplexTumble
+
+*UIConstraints: *MediaType Labels                *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Labels                *Duplex DuplexTumble
+
+*UIConstraints: *MediaType Thin                  *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Thin                  *Duplex DuplexTumble
+
+*UIConstraints: *MediaType Thick1                *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Thick1                *Duplex DuplexTumble
+
+*UIConstraints: *MediaType Thick2                *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Thick2                *Duplex DuplexTumble
+
+*UIConstraints: *MediaType Thick3                *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Thick3                *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Envelope 
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType PostCard 
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Labels
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Thin 
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Thick1 
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Thick2
+*UIConstraints: *Duplex DuplexNoTumble           *MediaType Thick3
+
+*UIConstraints: *Duplex DuplexTumble             *MediaType Envelope 
+*UIConstraints: *Duplex DuplexTumble             *MediaType PostCard 
+*UIConstraints: *Duplex DuplexTumble             *MediaType Labels
+*UIConstraints: *Duplex DuplexTumble             *MediaType Thin 
+*UIConstraints: *Duplex DuplexTumble             *MediaType Thick1 
+*UIConstraints: *Duplex DuplexTumble             *MediaType Thick2
+*UIConstraints: *Duplex DuplexTumble             *MediaType Thick3
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize Com10Envelope          *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Com10Envelope          *Duplex DuplexTumble 
+
+*UIConstraints: *PageSize EnvMonarch             *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvMonarch             *Duplex DuplexTumble
+
+*UIConstraints: *PageSize EnvC5                  *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5                  *Duplex DuplexTumble
+
+*UIConstraints: *PageSize EnvC6                  *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC6                  *Duplex DuplexTumble
+
+*UIConstraints: *PageSize EnvDL                  *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL                  *Duplex DuplexTumble
+
+*UIConstraints: *PageSize DoublePostcardRotated  *Duplex DuplexNoTumble
+*UIConstraints: *PageSize DoublePostcardRotated  *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize EnvC6
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize EnvDL 
+*UIConstraints: *Duplex DuplexNoTumble           *PageSize DoublePostcardRotated
+
+*UIConstraints: *Duplex DuplexTumble             *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexTumble             *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble             *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble             *PageSize EnvC6
+*UIConstraints: *Duplex DuplexTumble             *PageSize EnvDL 
+*UIConstraints: *Duplex DuplexTumble             *PageSize DoublePostcardRotated
+
+*% == Constraints (Duplex vs. Booklet) ==
+*UIConstraints: *Duplex DuplexNoTumble           *Booklet True
+*UIConstraints: *Duplex None                     *Booklet True
+
+*% == Constraints (Booklet vs. Duplex) ==
+*UIConstraints: *Booklet True                    *Duplex DuplexNoTumble    
+*UIConstraints: *Booklet True                    *Duplex None
+
+*% == Constraints (TonerMode vs. Density) ==
+*UIConstraints: *TonerMode True                  *Density PrinterSetting
+*UIConstraints: *TonerMode True                  *Density Level2
+*UIConstraints: *TonerMode True                  *Density Level3
+*UIConstraints: *TonerMode True                  *Density Level4
+*UIConstraints: *TonerMode True                  *Density Level5
+
+*% == Constraints (Density vs. TonerMode) ==
+*UIConstraints: *Density PrinterSetting          *TonerMode True
+*UIConstraints: *Density Level2                  *TonerMode True
+*UIConstraints: *Density Level3                  *TonerMode True
+*UIConstraints: *Density Level4                  *TonerMode True
+*UIConstraints: *Density Level5                  *TonerMode True
+
+
+*% == Constraints (BlankSuppress  vs Duplex) ==
+*%UIConstraints: *BlankSuppress True            *Duplex DuplexNoTumble
+*%UIConstraints: *BlankSuppress True            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs  BlankSuppress) ==
+*%UIConstraints: *Duplex DuplexNoTumble         *BlankSuppress True
+*%UIConstraints: *Duplex DuplexTumble           *BlankSuppress True
+
+*% == Constraints (BlankSuppress  vs Booklet) ==
+*UIConstraints: *BlankSuppress True             *Booklet True
+*UIConstraints: *BlankSuppress PrinterSetting   *Booklet True
+
+*% == Constraints (Booklet  vs BlankSuppress) ==
+*UIConstraints: *Booklet True                   *BlankSuppress True 
+*UIConstraints: *Booklet True                   *BlankSuppress PrinterSetting 
+
+*% == Constraints (RedAndBlackPrinting  vs ColorModel) ==
+*UIConstraints: *RedAndBlackPrinting True       *ColorModel Grayscale
+
+
+*% == Constraints (ColorModel  vs  RedAndBlackPrinting) ==
+*UIConstraints: *ColorModel Grayscale           *RedAndBlackPrinting True
+
+*% == Constraints (RedAndBlackPrinting  vs CMYK) ==
+*UIConstraints: *RedAndBlackPrinting True       *Cyan Level1
+*UIConstraints: *RedAndBlackPrinting True       *Cyan Level2
+*UIConstraints: *RedAndBlackPrinting True       *Cyan Level3
+*UIConstraints: *RedAndBlackPrinting True       *Cyan Level4
+*UIConstraints: *RedAndBlackPrinting True       *Cyan Level5
+
+*UIConstraints: *RedAndBlackPrinting True       *Magenta Level1
+*UIConstraints: *RedAndBlackPrinting True       *Magenta Level2
+*UIConstraints: *RedAndBlackPrinting True       *Magenta Level3
+*UIConstraints: *RedAndBlackPrinting True       *Magenta Level4
+*UIConstraints: *RedAndBlackPrinting True       *Magenta Level5
+
+*UIConstraints: *RedAndBlackPrinting True       *Yellow Level1
+*UIConstraints: *RedAndBlackPrinting True       *Yellow Level2
+*UIConstraints: *RedAndBlackPrinting True       *Yellow Level3
+*UIConstraints: *RedAndBlackPrinting True       *Yellow Level4
+*UIConstraints: *RedAndBlackPrinting True       *Yellow Level5
+
+*UIConstraints: *RedAndBlackPrinting True       *Black Level1
+*UIConstraints: *RedAndBlackPrinting True       *Black Level2
+*UIConstraints: *RedAndBlackPrinting True       *Black Level3
+*UIConstraints: *RedAndBlackPrinting True       *Black Level4
+*UIConstraints: *RedAndBlackPrinting True       *Black Level5
+
+*% == Constraints (CMYK vs RedAndBlackPrinting ) ==
+*UIConstraints: *Cyan Level1                    *RedAndBlackPrinting True
+*UIConstraints: *Cyan Level2                    *RedAndBlackPrinting True
+*UIConstraints: *Cyan Level3                    *RedAndBlackPrinting True
+*UIConstraints: *Cyan Level4                    *RedAndBlackPrinting True
+*UIConstraints: *Cyan Level5                    *RedAndBlackPrinting True
+
+*UIConstraints: *Magenta Level1                 *RedAndBlackPrinting True
+*UIConstraints: *Magenta Level2                 *RedAndBlackPrinting True
+*UIConstraints: *Magenta Level3                 *RedAndBlackPrinting True
+*UIConstraints: *Magenta Level4                 *RedAndBlackPrinting True
+*UIConstraints: *Magenta Level5                 *RedAndBlackPrinting True
+
+*UIConstraints: *Yellow Level1                  *RedAndBlackPrinting True
+*UIConstraints: *Yellow Level2                  *RedAndBlackPrinting True
+*UIConstraints: *Yellow Level3                  *RedAndBlackPrinting True
+*UIConstraints: *Yellow Level4                  *RedAndBlackPrinting True
+*UIConstraints: *Yellow Level5                  *RedAndBlackPrinting True
+
+*UIConstraints: *Black Level1                   *RedAndBlackPrinting True
+*UIConstraints: *Black Level2                   *RedAndBlackPrinting True
+*UIConstraints: *Black Level3                   *RedAndBlackPrinting True
+*UIConstraints: *Black Level4                   *RedAndBlackPrinting True
+*UIConstraints: *Black Level5                   *RedAndBlackPrinting True
+
+
+*% == Constraints (RedAndBlackPrinting  vs RGB) ==
+*UIConstraints: *RedAndBlackPrinting True       *Saturations Level1
+*UIConstraints: *RedAndBlackPrinting True       *Saturations Level2
+*UIConstraints: *RedAndBlackPrinting True       *Saturations Level3
+*UIConstraints: *RedAndBlackPrinting True       *Saturations Level4
+*UIConstraints: *RedAndBlackPrinting True       *Saturations Level5
+
+*UIConstraints: *RedAndBlackPrinting True       *Contrast Level1
+*UIConstraints: *RedAndBlackPrinting True       *Contrast Level2
+*UIConstraints: *RedAndBlackPrinting True       *Contrast Level3
+*UIConstraints: *RedAndBlackPrinting True       *Contrast Level4
+*UIConstraints: *RedAndBlackPrinting True       *Contrast Level5
+
+*UIConstraints: *RedAndBlackPrinting True       *Lightness Level1
+*UIConstraints: *RedAndBlackPrinting True       *Lightness Level2
+*UIConstraints: *RedAndBlackPrinting True       *Lightness Level3
+*UIConstraints: *RedAndBlackPrinting True       *Lightness Level4
+*UIConstraints: *RedAndBlackPrinting True       *Lightness Level5
+
+
+*% == Constraints (RGB vs RedAndBlackPrinting ) ==
+*UIConstraints: *Saturations Level1             *RedAndBlackPrinting True
+*UIConstraints: *Saturations Level2             *RedAndBlackPrinting True
+*UIConstraints: *Saturations Level3             *RedAndBlackPrinting True
+*UIConstraints: *Saturations Level4             *RedAndBlackPrinting True
+*UIConstraints: *Saturations Level5             *RedAndBlackPrinting True
+
+*UIConstraints: *Contrast Level1                *RedAndBlackPrinting True
+*UIConstraints: *Contrast Level2                *RedAndBlackPrinting True
+*UIConstraints: *Contrast Level3                *RedAndBlackPrinting True
+*UIConstraints: *Contrast Level4                *RedAndBlackPrinting True
+*UIConstraints: *Contrast Level5                *RedAndBlackPrinting True
+
+*UIConstraints: *Lightness Level1               *RedAndBlackPrinting True
+*UIConstraints: *Lightness Level2               *RedAndBlackPrinting True
+*UIConstraints: *Lightness Level3               *RedAndBlackPrinting True
+*UIConstraints: *Lightness Level4               *RedAndBlackPrinting True
+*UIConstraints: *Lightness Level5               *RedAndBlackPrinting True
+
+
+*% == Constraints (LockedPinPrint  vs TimePrint) ==
+*UIConstraints: *LockedPinPrint True            *TimePrint True
+
+*% == Constraints (TimePrint  vs  LockedPinPrint) ==
+*UIConstraints: *TimePrint True                 *LockedPinPrint True
+
+*% == Constraints (LockedPinPrint  vs HoldPrint) ==
+*UIConstraints: *LockedPinPrint True            *HoldPrint True
+
+*% == Constraints (HoldPrint  vs  LockedPinPrint) ==
+*UIConstraints: *HoldPrint True                 *LockedPinPrint True
+
+*% == Constraints (HoldPrint  vs TimePrint) ==
+*UIConstraints: *HoldPrint True                 *TimePrint True
+
+*% == Constraints (TimePrint  vs HoldPrint) ==
+*UIConstraints: *TimePrint True                 *HoldPrint True
+
+
+
+
+
+
+
+
+*% ==== Device Capabilities ===============
+*LanguageLevel: "3"
+*Protocols: TBCP PJL
+*1284Modes Parallel: Compat Nibble ECP
+*%1284DeviceID: "CMD:PS3;MFG:Pantum;MDL:CM230ADW series;"
+*1284DeviceID: "MFG:Pantum;CMD:ACL,ZJS,URF,PJL,PS3;MDL:Pantum CM230ADW series;CID:Pantum CM230ADW series;CLS:PRINTER;DES:Pantum CM230ADW series;"
+*End
+
+*ColorDevice:True
+*DefaultColorSpace: RGB
+*VariablePaperSize: True
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*?TTRasterizer: "
+save
+    42 /FontType resourcestatus
+    {pop pop (Type42)}{(No Type42)} ifelse = flush
+restore
+"
+*End
+*FileSystem: True
+*?FileSystem: "
+  save false
+   (%disk?%)
+   { currentdevparams dup /Writeable known
+      { /Writeable get {pop true} if }  { pop } ifelse
+    } 10 string /IODevice resourceforall
+    {(True)}{(False)} ifelse = flush
+ restore
+"
+*End
+
+*Throughput: "30"
+*Password: "()"
+*ExitServer: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+     (WARNING: Cannot modify initial VM.) =
+     (Missing or invalid password.) =
+     (Please contact the author of this software.) = flush quit
+     } if
+"
+*End
+*Reset: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+    (WARNING: Cannot reset printer.) =
+    (Missing or invalid password.) =
+    (Please contact the author of this software.) = flush quit
+    } if
+ systemdict /quit get exec
+ (WARNING : Printer Reset Failed.) = flush
+"
+*End
+
+*AccurateScreensSupport: True
+*SuggestedJobTimeout: "0"
+*SuggestedWaitTimeout: "300"
+*PrintPSErrors: True
+
+
+
+
+
+
+
+
+
+
+*% == InstallableOptions ==
+*OpenGroup: InstallableOptions/Installable Options
+
+*OpenUI *Tray1/Tray1: PickOne
+*OrderDependency: 0 AnySetup *Tray1
+*DefaultTray1: NotInstalled
+*Tray1 NotInstalled/Not Installed: ""
+*Tray1 Installed/Installed: ""
+*CloseUI: *Tray1
+
+*OpenUI *Tray2/Tray2: PickOne
+*OrderDependency: 0 AnySetup *Tray2
+*DefaultTray2: NotInstalled
+*Tray2 NotInstalled/Not Installed: ""
+*Tray2 Installed/Installed: ""
+*CloseUI: *Tray2
+
+
+*CloseGroup: InstallableOptions
+*% == InstallableOptions ==
+
+*% == General ==
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 60 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A3/A3: "<</DeferredMediaSelection true/PageSize [842 1191]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4: "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5: "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageSize B4/JIS B4: "<</DeferredMediaSelection true/PageSize [729 1032]/ImagingBBox null>>setpagedevice"
+*PageSize JISB5/JIS B5: "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageSize ISOB5/ISO B5: "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageSize 11*17/11"×17": "<</DeferredMediaSelection true/PageSize [792 1224]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter: "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal: "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize Folio/Folio: "<</DeferredMediaSelection true/PageSize [612 935]/ImagingBBox null>>setpagedevice"
+*PageSize Oficio/Oficio: "<</DeferredMediaSelection true/PageSize [612 972]/ImagingBBox null>>setpagedevice"
+*PageSize Executive/Executive: "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageSize Statement/Statement: "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageSize 8K/8K: "<</DeferredMediaSelection true/PageSize [765 1106]/ImagingBBox null>>setpagedevice"
+*PageSize 16K/16K: "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*PageSize A6/A6: "<</DeferredMediaSelection true/PageSize [297 420]/ImagingBBox null>>setpagedevice"
+*PageSize Com10Envelope/No.10 Env: "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageSize EnvMonarch/Monarch Env: "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC6/C6 Env: "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC5/C5 Env: "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageSize EnvDL/DL Env: "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageSize DoublePostcardRotated/Postcard: "<</DeferredMediaSelection true/PageSize [420 567]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 80 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A3/A3: "<</DeferredMediaSelection true/PageSize [842 1191]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4: "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5: "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion B4/JIS B4: "<</DeferredMediaSelection true/PageSize [729 1032]/ImagingBBox null>>setpagedevice"
+*PageRegion JISB5/JIS B5: "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion ISOB5/ISO B5: "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageRegion 11*17/11"×17": "<</DeferredMediaSelection true/PageSize [792 1224]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter: "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal: "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion Folio/Folio: "<</DeferredMediaSelection true/PageSize [612 935]/ImagingBBox null>>setpagedevice"
+*PageRegion Oficio/Oficio: "<</DeferredMediaSelection true/PageSize [612 972]/ImagingBBox null>>setpagedevice"
+*PageRegion Executive/Executive: "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageRegion Statement/Statement: "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageRegion 8K/8K: "<</DeferredMediaSelection true/PageSize [765 1106]/ImagingBBox null>>setpagedevice"
+*PageRegion 16K/16K: "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*PageRegion A6/A6: "<</DeferredMediaSelection true/PageSize [297 420]/ImagingBBox null>>setpagedevice"
+*PageRegion Com10Envelope/No.10 Env: "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvMonarch/Monarch Env: "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC6/C6 Env: "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC5/C5 Env: "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvDL/DL Env: "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion DoublePostcardRotated/Postcard: "<<DeferredMediaSelection true/PageSize [420 567]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea A3/A3: "14.17 14.17 827.83 1176.83"
+*ImageableArea A4/A4: "14.17 14.17 580.83 827.83"
+*ImageableArea A5/A5: "14.17 14.17 405.83 580.83"
+*ImageableArea B4/JIS B4: "14.17 14.17 714.83 1017.83"
+*ImageableArea JISB5/JIS B5: "14.17 14.17 501.83 714.83"
+*ImageableArea ISOB5/ISO B5: "14.17 14.17 484.83 694.83"
+*ImageableArea 11*17/11"×17": "14.17 14.17 777.83 1209.83"
+*ImageableArea Letter/Letter: "14.17 14.17 597.83 777.83"
+*ImageableArea Legal/Legal: "14.17 14.17 597.83 993.83"
+*ImageableArea Folio/Folio: "14.17 14.17 597.83 920.83"
+*ImageableArea Oficio/Oficio: "14.17 14.17 597.83 957.83"
+*ImageableArea Executive/Executive: "14.17 14.17 507.83 741.83"
+*ImageableArea Statement/Statement: "14.17 14.17 381.83 597.83"
+*ImageableArea 8K/8K: "14.17 14.17 750.83 1091.83"
+*ImageableArea 16K/16K: "14.17 14.17 509.83 722.83"
+*ImageableArea A6/A6: "14.17 14.17 282.83 405.83"
+*ImageableArea Com10Envelope/No.10 Env: "14.17 14.17 282.83 669.83"
+*ImageableArea EnvMonarch/Monarch Env: "14.17 14.17 264.83 525.83"
+*ImageableArea EnvC6/C6 Env: "14.17 14.17 308.83 444.83"
+*ImageableArea EnvC5/C5 Env: "14.17 14.17 444.83 634.83"
+*ImageableArea EnvDL/DL Env: "14.17 14.17 297.83 609.83"
+*ImageableArea DoublePostcardRotated/Postcard: "14.17 14.17 405.83 552.83"
+
+
+*DefaultPaperDimension: A4
+*PaperDimension A3/A3: "842 1191"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension A5/A5: "420 595"
+*PaperDimension B4/JIS B4: "729 1032"
+*PaperDimension JISB5/JIS B5: "516 729"
+*PaperDimension ISOB5/ISO B5: "499 709"
+*PaperDimension 11*17/11"×17": "792 1224"
+*PaperDimension Letter/Letter: "612 792"
+*PaperDimension Legal/Legal: "612 1008"
+*PaperDimension Folio/Folio: "612 935"
+*PaperDimension Oficio/Oficio: "612 972"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension Statement/Statement: "396 612"
+*PaperDimension 8K/8K: "765 1106"
+*PaperDimension 16K/16K: "524 737"
+*PaperDimension A6/A6: "297 420"
+*PaperDimension Com10Envelope/No.10 Env: "297 684"
+*PaperDimension EnvMonarch/Monarch Env: "279 540"
+*PaperDimension EnvC6/C6 Env: "323 459"
+*PaperDimension EnvC5/C5 Env: "459 649"
+*PaperDimension EnvDL/DL Env: "312 624"
+*PaperDimension DoublePostcardRotated/Postcard: "420 567"
+
+
+*%==== custom paper supported =====
+*HWMargins: 14.17 14.17 14.17 14.17
+*LeadingEdge Short: ""
+*LeadingEdge Long: ""
+*DefaultLeadingEdge: Short
+*MaxMediaWidth: "842"
+*MaxMediaHeight: "1225"
+
+
+*CustomPageSize True: "pop pop pop <</PageSize [5 -2 roll] /ImagingBBox null /Policies <</PageSize 2 /MediaType 2>> /DeferredMediaSelection true>> setpagedevice"
+
+
+*ParamCustomPageSize Width:  1 points 269 842
+*ParamCustomPageSize Height: 2 points 396 1225
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 1 1
+
+*NonUIOrderDependency: 21 AnySetup *customPageSize True
+
+*RequiresPageRegion All: True
+
+*%=== JCL Features ==========================
+*JCLBegin:           "<1B>%-12345X@PJL JOB<0A>"
+*JCLToPSInterpreter: "@PJL ENTER LANGUAGE=POSTSCRIPT<0A>"
+*%JCLEnd:             "<04><1B>%-12345X<0A>"
+*JCLEnd:             "<04><1B>%-12345X@PJL EOJ<0A><1B>%-12345X"
+
+
+*OpenUI *InputSlot/Media Source: PickOne
+*OrderDependency: 110 JCLSetup *InputSlot
+*DefaultInputSlot: AutoSelect
+*InputSlot AutoSelect/AutoSelect: "@PJL SET MEDIASOURCE=AUTOSELECT<0A>"
+*InputSlot Standard/Standard: "@PJL SET MEDIASOURCE=STANDARD<0A>"
+*InputSlot MultiPurposeTray/MultiPurposeTray: "@PJL SET MEDIASOURCE=MULTIPLE<0A>"
+*InputSlot Tray1/Tray1: "@PJL SET MEDIASOURCE=OPTIONAL1<0A>"
+*InputSlot Tray2/Tray2: "@PJL SET MEDIASOURCE=OPTIONAL2<0A>"
+*CloseUI: *InputSlot
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 120 JCLSetup *MediaType
+*DefaultMediaType: Plain1
+*MediaType Plain1/Plain1 Paper: "@PJL SET MEDIATYPE=PLAIN1<0A>"
+*MediaType Plain2/Plain2 Paper: "@PJL SET MEDIATYPE=PLAIN2<0A>"
+*MediaType Thin/Thin: "@PJL SET MEDIATYPE=TAB<0A>"
+*MediaType Recycled/Recycled: "@PJL SET MEDIATYPE=RECYCLED<0A>"
+*MediaType Thick1/Thick1(106-130gsm): "@PJL SET MEDIATYPE=THICK1<0A>"
+*MediaType Thick2/Thick2(131-176gsm): "@PJL SET MEDIATYPE=THICK2<0A>"
+*MediaType Thick3/Thick3(177-216gsm): "@PJL SET MEDIATYPE=THICK3<0A>"
+*MediaType Envelope/Envelope: "@PJL SET MEDIATYPE=ENVELOPE<0A>"	
+*MediaType PostCard/PostCard: "@PJL SET MEDIATYPE=POSTCARD<0A>"
+*%MediaType Bond/Bond: "@PJL SET MEDIATYPE=BOND<0A>"
+*MediaType Labels/Labels: "@PJL SET MEDIATYPE=LABELS<0A>"
+*CloseUI: *MediaType
+
+*OpenUI *Duplex/Double-Sided Printing: PickOne
+*OrderDependency: 80 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false /Tumble false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge: "<</Duplex true /Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge: "<</Duplex true /Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 50 JCLSetup *Collate
+*DefaultCollate: False
+*Collate False/Off: "@PJL SET QTY=<0A>"
+*Collate True/On: "@PJL SET QTY=<0A>"
+*?Collate: "
+  save
+    currentpagedevice /Collate get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *Collate
+
+*CloseGroup: General
+*% == General ==
+
+*% == PrintoutMode ==
+*OpenGroup: PrintoutMode/Printout Mode
+
+*OpenUI *ColorModel/Color Mode: PickOne
+*OPOptionHints ColorModel: "radiobuttons"
+*OrderDependency: 90 JCLSetup *ColorModel
+*DefaultColorModel: RGB
+*StpDefaultColorModel: RGB
+*ColorModel RGB/Color: "@PJL SET LCOLORMODEL=CMYK<0A>@PJL SET RENDERMODE=COLOR<0A>"
+*ColorModel Grayscale/Monochrome: "@PJL SET LCOLORMODEL=BLACK<0A>@PJL SET RENDERMODE=GRAYSCALE<0A>"
+*CloseUI: *ColorModel
+
+*OpenUI *PTResolution/PTResolution: PickOne
+*OrderDependency: 70 AnySetup *PTResolution
+*DefaultPTResolution: 600x600dpi
+*PTResolution 600x600dpi/600dpi: "<</HWResolution [600 600] >> setpagedevice"
+*PTResolution 1200x1200dpi/1200dpi: "<</HWResolution [1200 1200] >> setpagedevice"
+*CloseUI: *PTResolution
+
+*OpenUI *Booklet/Booklet: PickOne
+*OrderDependency: 60 AnySetup *Booklet
+*DefaultBooklet: False
+*Booklet True/on: ""
+*Booklet False/Off: ""
+*CloseUI: *Booklet
+
+
+*OpenUI *BlankSuppress/BlankSuppress: PickOne
+*OrderDependency: 60 JCLSetup *BlankSuppress
+*DefaultBlankSuppress: False
+*BlankSuppress PrinterSetting/Printer Setting: ""
+*BlankSuppress False/Off: "@PJL SET BLANKSUPPRESS=DISABLE<0A>"
+*BlankSuppress True/On: "@PJL SET BLANKSUPPRESS=ENABLE<0A>"
+*CloseUI: *BlankSuppress
+
+
+*CloseGroup: PrintoutMode
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*OpenGroup: RedHeadSpotColor/RedHeadSpotColor
+
+*OpenUI *RedAndBlackPrinting/RedAndBlackPrinting: PickOne
+*OrderDependency: 140 JCLSetup *RedAndBlackPrinting
+*DefaultRedAndBlackPrinting: False
+*%RedAndBlackPrinting PrinterSetting/Printer Setting: "@PJL SET RBMODE=<0A>"
+*RedAndBlackPrinting False/Off: "@PJL SET RBMODE=DISABLE<0A>"
+*RedAndBlackPrinting True/On: "@PJL SET RBMODE=ENABLE<0A>"
+*CloseUI: *RedAndBlackPrinting
+
+*OpenUI *RbModeCvtThreshold /RbModeCvtThreshold : PickOne
+*OrderDependency: 180 JCLSetup *RbModeCvtThreshold 
+*DefaultRbModeCvtThreshold : 127
+*RbModeCvtThreshold  0: "@PJL SET RBMODECVTTHRESHOLD=0<0A>"
+*RbModeCvtThreshold  25: "@PJL SET RBMODECVTTHRESHOLD=25<0A>"
+*RbModeCvtThreshold  50: "@PJL SET RBMODECVTTHRESHOLD=50<0A>"
+*RbModeCvtThreshold  75: "@PJL SET RBMODECVTTHRESHOLD=75<0A>"
+*RbModeCvtThreshold  100: "@PJL SET RBMODECVTTHRESHOLD=100<0A>"
+*RbModeCvtThreshold  127: "@PJL SET RBMODECVTTHRESHOLD=127<0A>"
+*RbModeCvtThreshold  155: "@PJL SET RBMODECVTTHRESHOLD=155<0A>"
+*RbModeCvtThreshold  180: "@PJL SET RBMODECVTTHRESHOLD=180<0A>"
+*RbModeCvtThreshold  205: "@PJL SET RBMODECVTTHRESHOLD=205<0A>"
+*RbModeCvtThreshold  230: "@PJL SET RBMODECVTTHRESHOLD=230<0A>"
+*RbModeCvtThreshold  255: "@PJL SET RBMODECVTTHRESHOLD=255<0A>"
+*CloseUI: *RbModeCvtThreshold
+
+*OpenUI *RbModeRedlevel/RbModeRedlevel: PickOne
+*OrderDependency: 181 JCLSetup *RbModeRedlevel
+*DefaultRbModeRedlevel: Level3
+*%RbModeRedlevel PrinterSetting/Printer Setting: ""
+*RbModeRedlevel Level1/Level1: "@PJL SET RBMODEREDLEVEL=1<0A>"
+*RbModeRedlevel Level2/Level2: "@PJL SET RBMODEREDLEVEL=2<0A>"
+*RbModeRedlevel Level3/Level3: "@PJL SET RBMODEREDLEVEL=3<0A>"
+*RbModeRedlevel Level4/Level4: "@PJL SET RBMODEREDLEVEL=4<0A>"
+*RbModeRedlevel Level5/Level5: "@PJL SET RBMODEREDLEVEL=5<0A>"
+*CloseUI: *RbModeRedlevel
+
+*OpenUI *RbModeBlacklevel/RbModeBlacklevel: PickOne
+*OrderDependency: 182 JCLSetup *RbModeBlacklevel
+*DefaultRbModeBlacklevel: Level3
+*%RbModeBlacklevel PrinterSetting/Printer Setting: ""
+*RbModeBlacklevel Level1/Level1: "@PJL SET RBMODEBLACKLEVEL=1<0A>"
+*RbModeBlacklevel Level2/Level2: "@PJL SET RBMODEBLACKLEVEL=2<0A>"
+*RbModeBlacklevel Level3/Level3: "@PJL SET RBMODEBLACKLEVEL=3<0A>"
+*RbModeBlacklevel Level4/Level4: "@PJL SET RBMODEBLACKLEVEL=4<0A>"
+*RbModeBlacklevel Level5/Level5: "@PJL SET RBMODEBLACKLEVEL=5<0A>"
+*CloseUI: *RbModeBlacklevel
+
+*CloseGroup: RedHeadSpotColor
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*OpenGroup: PinPrint/Pin Print
+
+*OpenUI *LockedPinPrint/Enale PIN Print(PIN 4-digits): Boolean
+*OrderDependency: 30 AnySetup *LockedPinPrint
+*DefaultLockedPinPrint: False
+*LockedPinPrint False/OFF:""
+*LockedPinPrint True/ON:""
+*?LockedPinPrint: "
+  save
+    currentpagedevice /LockedPinPrint get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *LockedPinPrint
+
+*OpenUI *PinNum1/PIN(Disgit 1): PickOne
+*OrderDependency: 31 AnySetup *PinNum1
+*DefaultPinNum1: 0
+*PinNum1 0: ""
+*PinNum1 1: ""
+*PinNum1 2: ""
+*PinNum1 3: ""
+*PinNum1 4: ""
+*PinNum1 5: ""
+*PinNum1 6: ""
+*PinNum1 7: ""
+*PinNum1 8: ""
+*PinNum1 9: ""
+*CloseUI: *PinNum1
+
+*OpenUI *PinNum2/PIN(Disgit 2): PickOne
+*OrderDependency: 32 AnySetup *PinNum2
+*DefaultPinNum2: 0
+*PinNum2 0: ""
+*PinNum2 1: ""
+*PinNum2 2: ""
+*PinNum2 3: ""
+*PinNum2 4: ""
+*PinNum2 5: ""
+*PinNum2 6: ""
+*PinNum2 7: ""
+*PinNum2 8: ""
+*PinNum2 9: ""
+*CloseUI: *PinNum2
+
+*OpenUI *PinNum3/PIN(Disgit 3): PickOne
+*OrderDependency: 33 AnySetup *PinNum3
+*DefaultPinNum3: 0
+*PinNum3 0: ""
+*PinNum3 1: ""
+*PinNum3 2: ""
+*PinNum3 3: ""
+*PinNum3 4: ""
+*PinNum3 5: ""
+*PinNum3 6: ""
+*PinNum3 7: ""
+*PinNum3 8: ""
+*PinNum3 9: ""
+*CloseUI: *PinNum3
+
+*OpenUI *PinNum4/PIN(Disgit 4): PickOne
+*OrderDependency: 34 AnySetup *PinNum4
+*DefaultPinNum4: 0
+*PinNum4 0: ""
+*PinNum4 1: ""
+*PinNum4 2: ""
+*PinNum4 3: ""
+*PinNum4 4: ""
+*PinNum4 5: ""
+*PinNum4 6: ""
+*PinNum4 7: ""
+*PinNum4 8: ""
+*PinNum4 9: ""
+*CloseUI: *PinNum4
+
+*OpenUI *TimePrint/TimePrint: Boolean
+*OrderDependency: 40 JCLSetup *TimePrint
+*DefaultTimePrint: False
+*TimePrint False/Off: "@PJL SET TIMEPRINT=DISABLE<0A>"
+*TimePrint True/On: "@PJL SET TIMEPRINT=ENABLE<0A>"
+*?TimePrint: "
+  save
+    currentpagedevice /TimePrint get
+    {(True)}{(False)}ifelse = flush
+  restore
+"
+*End
+*CloseUI: *TimePrint
+
+*OpenUI *PrintTimeH/PrintTimeH: PickOne
+*OrderDependency: 31 AnySetup *PrintTimeH
+*DefaultPrintTimeH: 1
+*PrintTimeH 0: ""
+*PrintTimeH 1: ""
+*PrintTimeH 2: ""
+*PrintTimeH 3: ""
+*PrintTimeH 4: ""
+*PrintTimeH 5: ""
+*PrintTimeH 6: ""
+*PrintTimeH 7: ""
+*PrintTimeH 8: ""
+*PrintTimeH 9: ""
+*PrintTimeH 10: ""
+*PrintTimeH 11: ""
+*PrintTimeH 12: ""
+*PrintTimeH 13: ""
+*PrintTimeH 14: ""
+*PrintTimeH 15: ""
+*PrintTimeH 16: ""
+*PrintTimeH 17: ""
+*PrintTimeH 18: ""
+*PrintTimeH 19: ""
+*PrintTimeH 20: ""
+*PrintTimeH 21: ""
+*PrintTimeH 22: ""
+*PrintTimeH 23: ""
+
+*CloseUI: *PrintTimeH
+
+
+*OpenUI *PrintTimeM/PrintTimeM: PickOne
+*OrderDependency: 31 AnySetup *PrintTimeM
+*DefaultPrintTimeM: 0
+*PrintTimeM 0: ""
+*PrintTimeM 1: ""
+*PrintTimeM 2: ""
+*PrintTimeM 3: ""
+*PrintTimeM 4: ""
+*PrintTimeM 5: ""
+*PrintTimeM 6: ""
+*PrintTimeM 7: ""
+*PrintTimeM 8: ""
+*PrintTimeM 9: ""
+*PrintTimeM 10: ""
+*PrintTimeM 11: ""
+*PrintTimeM 12: ""
+*PrintTimeM 13: ""
+*PrintTimeM 14: ""
+*PrintTimeM 15: ""
+*PrintTimeM 16: ""
+*PrintTimeM 17: ""
+*PrintTimeM 18: ""
+*PrintTimeM 19: ""
+*PrintTimeM 20: ""
+*PrintTimeM 21: ""
+*PrintTimeM 22: ""
+*PrintTimeM 23: ""
+*PrintTimeM 24: ""
+*PrintTimeM 25: ""
+*PrintTimeM 26: ""
+*PrintTimeM 27: ""
+*PrintTimeM 28: ""
+*PrintTimeM 29: ""
+*PrintTimeM 30: ""
+*PrintTimeM 31: ""
+*PrintTimeM 32: ""
+*PrintTimeM 33: ""
+*PrintTimeM 34: ""
+*PrintTimeM 35: ""
+*PrintTimeM 36: ""
+*PrintTimeM 37: ""
+*PrintTimeM 38: ""
+*PrintTimeM 39: ""
+*PrintTimeM 40: ""
+*PrintTimeM 41: ""
+*PrintTimeM 42: ""
+*PrintTimeM 43: ""
+*PrintTimeM 44: ""
+*PrintTimeM 45: ""
+*PrintTimeM 46: ""
+*PrintTimeM 47: ""
+*PrintTimeM 48: ""
+*PrintTimeM 49: ""
+*PrintTimeM 50: ""
+*PrintTimeM 51: ""
+*PrintTimeM 52: ""
+*PrintTimeM 53: ""
+*PrintTimeM 54: ""
+*PrintTimeM 55: ""
+*PrintTimeM 56: ""
+*PrintTimeM 57: ""
+*PrintTimeM 58: ""
+*PrintTimeM 59: ""
+
+*CloseUI: *PrintTimeM
+*OpenUI *HoldPrint/HoldPrint: PickOne
+*OrderDependency: 30 JCLSetup *HoldPrint
+*DefaultHoldPrint: False
+*HoldPrint False/Off: "@PJL SET HOLD=OFF<0A>"
+*HoldPrint True/On: "@PJL SET HOLD=PROOF<0A>"
+*CloseUI: *HoldPrint
+
+
+*CloseGroup: PinPrint
+*% == PinPrint ==
+
+*% == ColorGroup ==
+*OpenGroup: ColorGroup/color
+
+*OpenUI *DocumentType/DocumentType: PickOne
+*OrderDependency: 190 JCLSetup *DocumentType
+*DefaultDocumentType: PrinterSetting
+*DocumentType PrinterSetting/Printer Setting: ""
+*DocumentType Document/Document: "@PJL SET DOCUMENTTYPE=DOCUMENT<0A>"
+*DocumentType Photo/Photo: "@PJL SET DOCUMENTTYPE=PHOTO<0A>"
+*DocumentType Mixed/Mixed: "@PJL SET DOCUMENTTYPE=MIXED<0A>"
+*CloseUI: *DocumentType
+
+*OpenUI *Cyan/Cyan: PickOne
+*OrderDependency: 200 JCLSetup *Cyan
+*DefaultCyan: PrinterSetting
+*Cyan PrinterSetting/Printer Setting: ""
+*Cyan Level1/Level1: "@PJL SET COLORBALANCECYAN=1<0A>"
+*Cyan Level2/Level2: "@PJL SET COLORBALANCECYAN=2<0A>"
+*Cyan Level3/Level3: "@PJL SET COLORBALANCECYAN=3<0A>"
+*Cyan Level4/Level4: "@PJL SET COLORBALANCECYAN=4<0A>"
+*Cyan Level5/Level5: "@PJL SET COLORBALANCECYAN=5<0A>"
+*CloseUI: *Cyan
+
+*OpenUI *Magenta/Magenta: PickOne
+*OrderDependency: 201 JCLSetup *Magenta
+*DefaultMagenta: PrinterSetting
+*Magenta PrinterSetting/Printer Setting: ""
+*Magenta Level1/Level1: "@PJL SET COLORBALANCEMAGENTA=1<0A>"
+*Magenta Level2/Level2: "@PJL SET COLORBALANCEMAGENTA=2<0A>"
+*Magenta Level3/Level3: "@PJL SET COLORBALANCEMAGENTA=3<0A>"
+*Magenta Level4/Level4: "@PJL SET COLORBALANCEMAGENTA=4<0A>"
+*Magenta Level5/Level5: "@PJL SET COLORBALANCEMAGENTA=5<0A>"
+*CloseUI: *Magenta
+
+*OpenUI *Yellow/Yellow: PickOne
+*OrderDependency: 202 JCLSetup *Yellow
+*DefaultYellow: PrinterSetting
+*Yellow PrinterSetting/Printer Setting: ""
+*Yellow Level1/Level1: "@PJL SET COLORBALANCEYELLOW=1<0A>"
+*Yellow Level2/Level2: "@PJL SET COLORBALANCEYELLOW=2<0A>"
+*Yellow Level3/Level3: "@PJL SET COLORBALANCEYELLOW=3<0A>"
+*Yellow Level4/Level4: "@PJL SET COLORBALANCEYELLOW=4<0A>"
+*Yellow Level5/Level5: "@PJL SET COLORBALANCEYELLOW=5<0A>"
+*CloseUI: *Yellow
+
+*OpenUI *Black/Black: PickOne
+*OrderDependency: 203 JCLSetup *Black
+*DefaultBlack: PrinterSetting
+*Black PrinterSetting/Printer Setting: ""
+*Black Level1/Level1: "@PJL SET COLORBALANCEBLACK=1<0A>"
+*Black Level2/Level2: "@PJL SET COLORBALANCEBLACK=2<0A>"
+*Black Level3/Level3: "@PJL SET COLORBALANCEBLACK=3<0A>"
+*Black Level4/Level4: "@PJL SET COLORBALANCEBLACK=4<0A>"
+*Black Level5/Level5: "@PJL SET COLORBALANCEBLACK=5<0A>"
+*CloseUI: *Black
+
+*OpenUI *Saturations/Saturations: PickOne
+*OrderDependency: 204 JCLSetup *Saturations
+*DefaultSaturations: PrinterSetting
+*Saturations PrinterSetting/Printer Setting: ""
+*Saturations Level1/Level1: "@PJL SET IMAGESATURATION=1<0A>"
+*Saturations Level2/Level2: "@PJL SET IMAGESATURATION=2<0A>"
+*Saturations Level3/Level3: "@PJL SET IMAGESATURATION=3<0A>"
+*Saturations Level4/Level4: "@PJL SET IMAGESATURATION=4<0A>"
+*Saturations Level5/Level5: "@PJL SET IMAGESATURATION=5<0A>"
+*CloseUI: *Saturations
+
+*OpenUI *Contrast/Contrast: PickOne
+*OrderDependency: 205 JCLSetup *Contrast
+*DefaultContrast: PrinterSetting
+*Contrast PrinterSetting/Printer Setting: ""
+*Contrast Level1/Level1: "@PJL SET IMAGECONTRAST=1<0A>"
+*Contrast Level2/Level2: "@PJL SET IMAGECONTRAST=2<0A>"
+*Contrast Level3/Level3: "@PJL SET IMAGECONTRAST=3<0A>"
+*Contrast Level4/Level4: "@PJL SET IMAGECONTRAST=4<0A>"
+*Contrast Level5/Level5: "@PJL SET IMAGECONTRAST=5<0A>"
+*CloseUI: *Contrast
+
+*OpenUI *Lightness/Lightness: PickOne
+*OrderDependency: 206 JCLSetup *Lightness
+*DefaultLightness: PrinterSetting
+*Lightness PrinterSetting/Printer Setting: ""
+*Lightness Level1/Level1: "@PJL SET IMAGEBRIGHTNESS=1<0A>"
+*Lightness Level2/Level2: "@PJL SET IMAGEBRIGHTNESS=2<0A>"
+*Lightness Level3/Level3: "@PJL SET IMAGEBRIGHTNESS=3<0A>"
+*Lightness Level4/Level4: "@PJL SET IMAGEBRIGHTNESS=4<0A>"
+*Lightness Level5/Level5: "@PJL SET IMAGEBRIGHTNESS=5<0A>"
+*CloseUI: *Lightness
+
+*OpenUI *TonerMode/TonerMode: PickOne
+*OrderDependency: 150 JCLSetup *TonerMode
+*DefaultTonerMode: PrinterSetting
+*TonerMode PrinterSetting/Printer Setting: ""
+*TonerMode True/ON: "@PJL SET TONERSAVE=ENABLE<0A>"
+*TonerMode False/OFF: "@PJL SET TONERSAVE=DISABLE<0A>"
+*CloseUI: *TonerMode
+
+*OpenUI *Density/Density: PickOne
+*OrderDependency: 160 JCLSetup *Density
+*DefaultDensity: PrinterSetting
+*Density PrinterSetting/Printer Setting: ""
+*Density Level1/Level1: "@PJL SET DENSITY=1<0A>"
+*Density Level2/Level2: "@PJL SET DENSITY=2<0A>"
+*Density Level3/Level3: "@PJL SET DENSITY=3<0A>"
+*Density Level4/Level4: "@PJL SET DENSITY=4<0A>"
+*Density Level5/Level5: "@PJL SET DENSITY=5<0A>"
+*CloseUI: *Density
+
+*CloseGroup: ColorGroup
+*% === ColorGroup ===
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these> ]%% )
+*Source: "USB"
+*Source: "EtherTalk"
+*% ===============================================================================
+*% PrintPSErrors
+*% ===============================================================================
+*PrintPSErrors: True
+*% ===============================================================================
+*% Font Info
+*% ===============================================================================
+*DefaultFont: Courier
+*Font CourierHP: Standard "(001.006S)" Standard ROM
+*Font CGTimes: Standard "(001.006S)" Standard ROM
+*Font CGTimes-Bold: Standard "(001.007S)" Standard ROM
+*Font CGTimes-Italic: Standard "(001.007S)" Standard ROM
+*Font CGTimes-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font CGOmega: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Bold: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Italic: Standard "(001.003S)" Standard ROM
+*Font CGOmega-BOLDItalic: Standard "(002.004S)" Standard ROM
+*Font Coronet: Standard "(002.004S)" Standard ROM
+*Font Clarendon-Condensed-Bold: Standard "(002.004S)" Standard ROM
+*Font Univers-Medium: Standard "(002.004S)" Standard ROM
+*Font Univers-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-Medium: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font AntiqueOlive: Standard "(001.006S)" Standard ROM
+*Font AntiqueOlive-Bold: Standard "(001.009S)" Standard ROM
+*Font AntiqueOlive-Italic: Standard "(001.007S)" Standard ROM
+*Font Garamond-Antiqua: Standard "(001.006S)" Standard ROM
+*Font Garamond-Halbfett: Standard "(001.007S)" Standard ROM
+*Font Garamond-Kursiv: Standard "(001.005S)" Standard ROM
+*Font Garamond-KursivHalbfett: Standard "(001.005S)" Standard ROM
+*Font Marigold: Standard "(001.005S)" Standard ROM
+*Font Albertus-Medium: Standard "(001.005S)" Standard ROM
+*Font Albertus-ExtraBold: Special "(001.007S)" Special ROM
+*Font Ryadh: Standard "(001.007S)" Standard ROM
+*Font Ryadh-Bold: Standard "(001.009S)" Standard ROM
+*Font Malka: Standard "(001.007S)" Standard ROM
+*Font Malka-Bold: Standard "(001.007S)" Standard ROM
+*Font Malka-Italic: Standard "(001.007S)" Standard ROM
+*Font Dorit: Standard "(001.006S)" Standard ROM
+*Font Dorit-Bold: Standard "(001.006S)" Standard ROM
+*Font Naamit: Standard "(001.007S)" Standard ROM
+*Font Naamit-Bold: Standard "(001.007S)" Standard ROM
+*Font Arial: Standard "(001.003S)" Standard ROM
+*Font Arial-Bold: Standard "(001.003S)" Standard ROM
+*Font Arial-Italic: Standard "(001.003S)" Standard ROM
+*Font Arial-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font TimesNewRoman: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Bold: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Italic: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-BoldItalic: Standard "(002.004S)" Standard ROM
+*Font Symbol: Standard "(001.006S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.006S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.006S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.007S)" Standard ROM
+*Font Bookman-Light: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.005S)" Standard ROM
+*Font Times-Bold: Standard "(001.005S)" Standard ROM
+*Font Times-Italic: Standard "(001.005S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Helvetica: Special "(001.007S)" Special ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.009S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.007S)" Standard ROM
+*Font Helbetica-Narrow: Standard "(001.005S)" Standard ROM
+*Font Helbetica-Narrow-Bold: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Book: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Demi: Special "(001.007S)" Special ROM
+*Font AvantGarde-BookOblique: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.009S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font SymbolMT: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Wingdings-Regular: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Bold: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Italic: Standard "(001.007S)" Standard ROM
+*Font CourierHP-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Italic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Bold: Standard "(001.007S)" Standard ROM
+*Font Naskh: Standard "(001.007S)" Standard ROM
+*Font Naskh-Bold: Standard "(001.007S)" Standard ROM
+*Font Koufi: Standard "(001.007S)" Standard ROM
+*Font Koufi-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier: Standard "(001.007S)" Standard ROM
+*Font Courier-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier-Oblique: Standard "(001.007S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(001.007S)" Standard ROM
+*?FontList: "
+        save
+                (*) { cvn == } 128 string /Font resourceforall
+                (*) = flush
+        restore
+"
+*End
+*?FontQuery: "
+        save
+                { count 1 gt
+                  { exch dup 127 string cvs (/) print print (:) print
+                    /Font resourcestatus { pop pop (Yes) } { (No) } ifelse =
+                  } { exit } ifelse
+                } bind loop
+                (*) = flush
+        restore
+"
+*End
+
+
+*cupsLanguages: "en zh_CN ru zh_TW de it es pl ro pt ar he tr el fr th"
+
+*% === English  ===
+*% === InstallableOptions ===
+*en.Translation InstallableOptions/Installable Options: ""
+
+*en.Translation Tray1/Optional tray 1: ""
+*en.Tray1 Installed/Installed: ""
+*en.Tray1 NotInstalled/Not installed: ""
+*en.Translation Tray2/Optional tray 2: ""
+*en.Tray2 Installed/Installed: ""
+*en.Tray2 NotInstalled/Not installed: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*en.Translation General/Standard:""
+
+*en.Translation PageSize/Paper Size: ""
+*en.PageSize A4/A4(210 x 297mm): ""
+*en.PageSize A3/A3(297 x 420mm): ""
+*en.PageSize B4/JIS B4(257 x 364mm): ""
+*en.PageSize A5/A5(148 x 210mm): ""
+*en.PageSize A6/A6(105 x 148mm): ""
+*en.PageSize JISB5/JIS B5(182 x 257mm): ""
+*en.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*en.PageSize 11*17/11"×17"(279 x 431.8mm): ""
+*en.PageSize Letter/Letter(216 x 279mm): ""
+*en.PageSize Legal/Legal(216 x 356mm): ""
+*en.PageSize Folio/Folio(216 x 330mm): ""
+*en.PageSize Oficio/Oficio(216 x 343mm): ""
+*en.PageSize Executive/Executive(184 x 267mm): ""
+*en.PageSize Statement/Statement(139.7 x 216mm): ""
+*en.PageSize 8K/8K(270 x 390mm): ""
+*en.PageSize 16K/16K(185 x 260mm): ""
+*en.PageSize Com10Envelope/Envelope No.10 (105 x 241mm): ""
+*en.PageSize EnvMonarch/Envelope Monarch (98 x 191mm): ""
+*en.PageSize EnvC6/Envelope C6 (114.0 x 162.0mm): ""
+*en.PageSize EnvC5/Envelope C5 (162 x 229 mm): ""
+*en.PageSize EnvDL/Envelope DL (110 x 220mm): ""
+*en.PageSize DoublePostcardRotated/Postcard(148 x 200mm): ""
+*en.CustomPageSize True/Custom: ""
+
+*en.Translation PageRegion/Page area: ""
+*en.PageRegion A4/A4(210 x 297mm): ""
+*en.PageRegion A3/A3(297 x 420mm): ""
+*en.PageRegion B4/JIS B4(257 x 364mm): ""
+*en.PageRegion A5/A5(148 x 210mm): ""
+*en.PageRegion A6/A6(105 x 148mm): ""
+*en.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*en.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*en.PageRegion 11*17/11"×17"(279 x 431.8mm): ""
+*en.PageRegion Letter/Letter(216 x 279mm): ""
+*en.PageRegion Legal/Legal(216 x 356mm): ""
+*en.PageRegion Folio/Folio(216 x 330mm): ""
+*en.PageRegion Oficio/Oficio(216 x 343mm): ""
+*en.PageRegion Executive/Executive(184 x 267mm): ""
+*en.PageRegion Statement/Statement(139.7 x 216mm): ""
+*en.PageRegion 8K/8K(270 x 390mm): ""
+*en.PageRegion 16K/16K(185 x 260mm): ""
+*en.PageRegion Com10Envelope/Envelope No.10 (105 x 241mm): ""
+*en.PageRegion EnvMonarch/Envelope Monarch (98 x 191mm): ""
+*en.PageRegion EnvC6/Envelope C6 (114.0 x 162.0mm): ""
+*en.PageRegion EnvC5/Envelope C5 (162 x 229 mm): ""
+*en.PageRegion EnvDL/Envelope DL (110 x 220mm): ""
+*en.PageRegion DoublePostcardRotated/Postcard(148 x 200mm): ""
+*en.PageRegion Custom/Custom: ""
+
+*en.Translation InputSlot/Paper Source: ""
+*en.InputSlot AutoSelect/Auto Select: ""
+*en.InputSlot Standard/Standard tray: ""
+*en.InputSlot Tray1/Optional tray 1: ""
+*en.InputSlot Tray2/Optional tray 2: ""
+*en.InputSlot MultiPurposeTray/Multi-purpose tray: ""
+
+*en.Translation MediaType/Paper Type: ""
+*en.MediaType Plain1/Plain Paper 1 (70-89gsm): ""
+*en.MediaType Plain2/Plain paper 2 (90-105gsm): ""
+*en.MediaType Thin/Thin Paper (60-69gsm): ""
+*en.MediaType Recycled/Recycled Paper (70-89gsm): ""
+*en.MediaType Thick1/Thick Paper 1 (106-130gsm): ""
+*en.MediaType Thick2/Thick Paper 2 (131-176gsm): ""
+*en.MediaType Thick3/Thick Paper 3 (177-216gsm): ""
+*en.MediaType Envelope/Envelope: ""	
+*en.MediaType PostCard/Card stock (160gsm): ""
+*en.MediaType Labels/Label: ""
+
+*en.Translation Duplex/Duplex: ""
+*en.Duplex DuplexNoTumble/Duplex Long Edge: ""
+*en.Duplex DuplexTumble/Duplex Short Edge: ""
+*en.Duplex None/Off: ""
+
+*en.Translation Collate/Collate: ""
+*en.Collate False/Close: ""
+*en.Collate True/Turn on: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*en.Translation PrintoutMode/Output Mode: ""
+
+*en.Translation ColorModel/Color Style: ""
+*en.ColorModel RGB/Color printing: ""
+*en.ColorModel Grayscale/Black & white printing: ""
+
+*en.Translation PTResolution/Resolution: ""
+*en.PTResolution 600x600dpi/600dpi: ""
+*en.PTResolution 1200x1200dpi/1200dpi: ""
+
+*en.Translation Booklet/Booklet: ""
+*en.Booklet True/Turn on: ""
+*en.Booklet False/Close: ""
+
+*en.Translation BlankSuppress/Skip blank pages: ""
+*en.BlankSuppress PrinterSetting/Use Printer Settings:""
+*en.BlankSuppress False/Close: ""
+*en.BlankSuppress True/Turn on: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*en.Translation RedHeadSpotColor/Red Header File Printing: ""
+
+*en.Translation RedAndBlackPrinting/Red Header File Printing: ""
+*en.RedAndBlackPrinting False/Close: ""
+*en.RedAndBlackPrinting True/Turn on: ""
+
+*en.Translation RbModeCvtThreshold/Threshold: ""
+
+*en.Translation RbModeRedlevel/Red: ""
+*en.RbModeRedlevel Level1/Level 1: ""
+*en.RbModeRedlevel Level2/Level 2: ""
+*en.RbModeRedlevel Level3/Level 3: ""
+*en.RbModeRedlevel Level4/Level 4: ""
+*en.RbModeRedlevel Level5/Level 5: ""
+
+*en.Translation RbModeBlacklevel/Black: ""
+*en.RbModeBlacklevel Level1/Level 1: ""
+*en.RbModeBlacklevel Level2/Level 2: ""
+*en.RbModeBlacklevel Level3/Level 3: ""
+*en.RbModeBlacklevel Level4/Level 4: ""
+*en.RbModeBlacklevel Level5/Level 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*en.Translation PinPrint/Safe Print: ""
+
+*en.Translation LockedPinPrint/Secure print: ""
+*en.Translation PinNum1/1st character of password: ""
+*en.Translation PinNum2/2nd character of password: ""
+*en.Translation PinNum3/3rd character of password: ""
+*en.Translation PinNum4/4th character of password: ""
+*en.LockedPinPrint False/Close: ""
+*en.LockedPinPrint True/Turn on: ""
+
+*en.Translation TimePrint/Delayed printing: ""
+*en.TimePrint False/Close: ""
+*en.TimePrint True/Turn on: ""
+
+*en.Translation PrintTimeH/Hour: ""
+*en.Translation PrintTimeM/Minute: ""
+
+*en.Translation HoldPrint/Sample printing: ""
+*en.HoldPrint False/Close: ""
+*en.HoldPrint True/Turn on: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*en.Translation ColorGroup/Color Function: ""
+
+*en.Translation DocumentType/Type of Document: ""
+*en.DocumentType PrinterSetting/Use Printer Settings: ""
+*en.DocumentType Document/Text: ""
+*en.DocumentType Photo/Image: ""
+*en.DocumentType Mixed/Text and Image: ""
+
+*en.Translation Cyan/Color Balance - Cyan: ""
+*en.Cyan PrinterSetting/Use Printer Settings: ""
+*en.Cyan Level1/Level 1: ""
+*en.Cyan Level2/Level 2: ""
+*en.Cyan Level3/Level 3: ""
+*en.Cyan Level4/Level 4: ""
+*en.Cyan Level5/Level 5: ""
+
+*en.Translation Magenta/Color Balance - Magenta: ""
+*en.Magenta PrinterSetting/Use Printer Settings: ""
+*en.Magenta Level1/Level 1: ""
+*en.Magenta Level2/Level 2: ""
+*en.Magenta Level3/Level 3: ""
+*en.Magenta Level4/Level 4: ""
+*en.Magenta Level5/Level 5: ""
+
+*en.Translation Yellow/Color Balance - Yellow: ""
+*en.Yellow PrinterSetting/Use Printer Settings: ""
+*en.Yellow Level1/Level 1: ""
+*en.Yellow Level2/Level 2: ""
+*en.Yellow Level3/Level 3: ""
+*en.Yellow Level4/Level 4: ""
+*en.Yellow Level5/Level 5: ""
+
+*en.Translation Black/Color Balance - Black: ""
+*en.Black PrinterSetting/Use Printer Settings: ""
+*en.Black Level1/Level 1: ""
+*en.Black Level2/Level 2: ""
+*en.Black Level3/Level 3: ""
+*en.Black Level4/Level 4: ""
+*en.Black Level5/Level 5: ""
+
+*en.Translation Saturations/RGB Saturation: ""
+*en.Saturations PrinterSetting/Use Printer Settings: ""
+*en.Saturations Level1/Level 1: ""
+*en.Saturations Level2/Level 2: ""
+*en.Saturations Level3/Level 3: ""
+*en.Saturations Level4/Level 4: ""
+*en.Saturations Level5/Level 5: ""
+
+*en.Translation Contrast/RGB Contrast: ""
+*en.Contrast PrinterSetting/Use Printer Settings: ""
+*en.Contrast Level1/Level 1: ""
+*en.Contrast Level2/Level 2: ""
+*en.Contrast Level3/Level 3: ""
+*en.Contrast Level4/Level 4: ""
+*en.Contrast Level5/Level 5: ""
+
+*en.Translation Lightness/RGB Brightness: ""
+*en.Lightness PrinterSetting/Use Printer Settings: ""
+*en.Lightness Level1/Level 1: ""
+*en.Lightness Level2/Level 2: ""
+*en.Lightness Level3/Level 3: ""
+*en.Lightness Level4/Level 4: ""
+*en.Lightness Level5/Level 5: ""
+
+*en.Translation TonerMode/Toner Save: ""
+*en.TonerMode PrinterSetting/Use Printer Settings: ""
+*en.TonerMode False/Close: ""
+*en.TonerMode True/Turn on: ""
+
+*en.Translation Density/Density: ""
+*en.Density PrinterSetting/Use Printer Settings: ""
+*en.Density Level1/Light: ""
+*en.Density Level2/Lighter: ""
+*en.Density Level3/Normal: ""
+*en.Density Level4/Darker: ""
+*en.Density Level5/Dark: ""
+*% === ColorGroup ===
+
+
+
+
+*% === Chinese ===
+*% === InstallableOptions ===
+*zh_CN.Translation InstallableOptions/可安装选项: ""
+
+*zh_CN.Translation Tray1/选配纸盒1: ""
+*zh_CN.Tray1 Installed/已安装: ""
+*zh_CN.Tray1 NotInstalled/未安装: ""
+*zh_CN.Translation Tray2/选配纸盒2: ""
+*zh_CN.Tray2 Installed/已安装: ""
+*zh_CN.Tray2 NotInstalled/未安装: ""
+
+
+*% === InstallableOptions ===
+
+*% === General ===
+*zh_CN.Translation General/常规:""
+
+*zh_CN.Translation PageSize/纸张尺寸: ""
+*zh_CN.PageSize A4/A4(210 x 297mm): ""
+*zh_CN.PageSize A3/A3(297 x 420mm): ""
+*zh_CN.PageSize B4/JIS B4(257 x 364mm): ""
+*zh_CN.PageSize A5/A5(148 x 210mm): ""
+*zh_CN.PageSize A6/A6(105 x 148mm): ""
+*zh_CN.PageSize JISB5/JIS B5(182 x 257mm): ""
+*zh_CN.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*zh_CN.PageSize 11*17/11"×17"(279 x 431.8mm): ""
+*zh_CN.PageSize Letter/Letter(216 x 279mm): ""
+*zh_CN.PageSize Legal/Legal(216 x 356mm): ""
+*zh_CN.PageSize Folio/Folio(216 x 330mm): ""
+*zh_CN.PageSize Oficio/Oficio(216 x 343mm): ""
+*zh_CN.PageSize Executive/Executive(184 x 267mm): ""
+*zh_CN.PageSize Statement/Statement(139.7 x 216mm): ""
+*zh_CN.PageSize 8K/8K(270 x 390mm): ""
+*zh_CN.PageSize 16K/16K(185 x 260mm): ""
+*zh_CN.PageSize Com10Envelope/信封No.10(105 x 241mm): ""
+*zh_CN.PageSize EnvMonarch/信封Monarch(98 x 191mm): ""
+*zh_CN.PageSize EnvC6/信封C6(114.0 x 162.0mm): ""
+*zh_CN.PageSize EnvC5/信封C5(162 x 229mm): ""
+*zh_CN.PageSize EnvDL/信封DL(110 x 220mm): ""
+*zh_CN.PageSize DoublePostcardRotated/Postcard(148 x 200mm): ""
+*zh_CN.CustomPageSize True/自定义: ""
+
+*zh_CN.Translation PageRegion/页面区域: ""
+*zh_CN.PageRegion A4/A4(210 x 297mm): ""
+*zh_CN.PageRegion A3/A3(297 x 420mm): ""
+*zh_CN.PageRegion B4/JIS B4(257 x 364mm): ""
+*zh_CN.PageRegion A5/A5(148 x 210mm): ""
+*zh_CN.PageRegion A6/A6(105 x 148mm): ""
+*zh_CN.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*zh_CN.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*zh_CN.PageRegion 11*17/11"×17"(279 x 431.8mm): ""
+*zh_CN.PageRegion Letter/Letter(216 x 279mm): ""
+*zh_CN.PageRegion Legal/Legal(216 x 356mm): ""
+*zh_CN.PageRegion Folio/Folio(216 x 330mm): ""
+*zh_CN.PageRegion Oficio/Oficio(216 x 343mm): ""
+*zh_CN.PageRegion Executive/Executive(184 x 267mm): ""
+*zh_CN.PageRegion Statement/Statement(139.7 x 216mm): ""
+*zh_CN.PageRegion 8K/8K(270 x 390mm): ""
+*zh_CN.PageRegion 16K/16K(185 x 260mm): ""
+*zh_CN.PageRegion Com10Envelope/信封No.10(105 x 241mm): ""
+*zh_CN.PageRegion EnvMonarch/信封Monarch(98 x 191mm): ""
+*zh_CN.PageRegion EnvC6/信封C6(114.0 x 162.0mm): ""
+*zh_CN.PageRegion EnvC5/信封C5(162 x 229mm): ""
+*zh_CN.PageRegion EnvDL/信封DL(110 x 220mm): ""
+*zh_CN.PageRegion DoublePostcardRotated/Postcard(148 x 200mm): ""
+*zh_CN.PageRegion Custom/自定义: ""
+
+*zh_CN.Translation InputSlot/纸张来源: ""
+*zh_CN.InputSlot AutoSelect/自动选择: ""
+*zh_CN.InputSlot Standard/标准进纸盒: ""
+*zh_CN.InputSlot Tray1/选配纸盒1: ""
+*zh_CN.InputSlot Tray2/选配纸盒2: ""
+*zh_CN.InputSlot MultiPurposeTray/多功能进纸盒: ""
+
+*zh_CN.Translation MediaType/纸张类型: ""
+*zh_CN.MediaType Plain1/普通纸1(70-89gsm): ""
+*zh_CN.MediaType Plain2/普通纸2(90-105gsm): ""
+*zh_CN.MediaType Thin/薄纸(60-69gsm): ""
+*zh_CN.MediaType Recycled/再生纸(70-89gsm): ""
+*zh_CN.MediaType Thick1/厚纸1(106-130gsm): ""
+*zh_CN.MediaType Thick2/厚纸2(131-176gsm): ""
+*zh_CN.MediaType Thick3/厚纸3(177-216gsm): ""
+*zh_CN.MediaType Envelope/信封纸: ""
+*zh_CN.MediaType PostCard/卡片纸(160gsm): ""
+*zh_CN.MediaType Labels/标签纸: ""
+
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex DuplexNoTumble/双面长边: ""
+*zh_CN.Duplex DuplexTumble/双面短边: ""
+*zh_CN.Duplex None/无: ""
+
+*zh_CN.Translation Collate/逐份: ""
+*zh_CN.Collate False/关闭: ""
+*zh_CN.Collate True/开启: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*zh_CN.Translation PrintoutMode/输出模式: ""
+
+*zh_CN.Translation ColorModel/颜色样式: ""
+*zh_CN.ColorModel RGB/彩色打印: ""
+*zh_CN.ColorModel Grayscale/黑白打印: ""
+
+*zh_CN.Translation PTResolution/分辨率: ""
+*zh_CN.PTResolution 600x600dpi/600dpi: ""
+*zh_CN.PTResolution 1200x1200dpi/1200dpi: ""
+
+*zh_CN.Translation Booklet/小册子: ""
+*zh_CN.Booklet True/开启: ""
+*zh_CN.Booklet False/关闭: ""
+
+*zh_CN.Translation BlankSuppress/跳过空白页: ""
+*zh_CN.BlankSuppress PrinterSetting/使用打印机设置: ""
+*zh_CN.BlankSuppress False/关闭: ""
+*zh_CN.BlankSuppress True/开启: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*zh_CN.Translation RedHeadSpotColor/红头文件打印: ""
+
+*zh_CN.Translation RedAndBlackPrinting/红头文件打印: ""
+*zh_CN.RedAndBlackPrinting False/关闭: ""
+*zh_CN.RedAndBlackPrinting True/开启: ""
+
+*zh_CN.Translation RbModeCvtThreshold/阈值: ""
+
+*zh_CN.Translation RbModeRedlevel/红色: ""
+*zh_CN.RbModeRedlevel Level1/1级: ""
+*zh_CN.RbModeRedlevel Level2/2级: ""
+*zh_CN.RbModeRedlevel Level3/3级: ""
+*zh_CN.RbModeRedlevel Level4/4级: ""
+*zh_CN.RbModeRedlevel Level5/5级: ""
+
+*zh_CN.Translation RbModeBlacklevel/黑色: ""
+*zh_CN.RbModeBlacklevel Level1/1级: ""
+*zh_CN.RbModeBlacklevel Level2/2级: ""
+*zh_CN.RbModeBlacklevel Level3/3级: ""
+*zh_CN.RbModeBlacklevel Level4/4级: ""
+*zh_CN.RbModeBlacklevel Level5/5级: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*zh_CN.Translation PinPrint/安全打印: ""
+
+*zh_CN.Translation LockedPinPrint/密码打印: ""
+*zh_CN.Translation PinNum1/第1位密码: ""
+*zh_CN.Translation PinNum2/第2位密码: ""
+*zh_CN.Translation PinNum3/第3位密码: ""
+*zh_CN.Translation PinNum4/第4位密码: ""
+*zh_CN.LockedPinPrint False/关闭: ""
+*zh_CN.LockedPinPrint True/开启: ""
+
+*zh_CN.Translation TimePrint/延迟打印: ""
+*zh_CN.TimePrint False/关闭: ""
+*zh_CN.TimePrint True/开启: ""
+
+*zh_CN.Translation PrintTimeH/小时: ""
+*zh_CN.Translation PrintTimeM/分钟: ""
+
+*zh_CN.Translation HoldPrint/样本打印: ""
+*zh_CN.HoldPrint False/关闭: ""
+*zh_CN.HoldPrint True/开启: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*zh_CN.Translation ColorGroup/色彩功能: ""
+
+*zh_CN.Translation DocumentType/原稿类型: ""
+*zh_CN.DocumentType PrinterSetting/使用打印机设置: ""
+*zh_CN.DocumentType Document/文本: ""
+*zh_CN.DocumentType Photo/图像: ""
+*zh_CN.DocumentType Mixed/文图: ""
+
+*zh_CN.Translation Cyan/色彩平衡-青色: ""
+*zh_CN.Cyan PrinterSetting/使用打印机设置: ""
+*zh_CN.Cyan Level1/1级: ""
+*zh_CN.Cyan Level2/2级: ""
+*zh_CN.Cyan Level3/3级: ""
+*zh_CN.Cyan Level4/4级: ""
+*zh_CN.Cyan Level5/5级: ""
+
+*zh_CN.Translation Magenta/色彩平衡-品红色: ""
+*zh_CN.Magenta PrinterSetting/使用打印机设置: ""
+*zh_CN.Magenta Level1/1级: ""
+*zh_CN.Magenta Level2/2级: ""
+*zh_CN.Magenta Level3/3级: ""
+*zh_CN.Magenta Level4/4级: ""
+*zh_CN.Magenta Level5/5级: ""
+
+*zh_CN.Translation Yellow/色彩平衡-黄色: ""
+*zh_CN.Yellow PrinterSetting/使用打印机设置: ""
+*zh_CN.Yellow Level1/1级: ""
+*zh_CN.Yellow Level2/2级: ""
+*zh_CN.Yellow Level3/3级: ""
+*zh_CN.Yellow Level4/4级: ""
+*zh_CN.Yellow Level5/5级: ""
+
+*zh_CN.Translation Black/色彩平衡-黑色: ""
+*zh_CN.Black PrinterSetting/使用打印机设置: ""
+*zh_CN.Black Level1/1级: ""
+*zh_CN.Black Level2/2级: ""
+*zh_CN.Black Level3/3级: ""
+*zh_CN.Black Level4/4级: ""
+*zh_CN.Black Level5/5级: ""
+
+*zh_CN.Translation Saturations/RGB饱和度: ""
+*zh_CN.Saturations PrinterSetting/使用打印机设置: ""
+*zh_CN.Saturations Level1/1级: ""
+*zh_CN.Saturations Level2/2级: ""
+*zh_CN.Saturations Level3/3级: ""
+*zh_CN.Saturations Level4/4级: ""
+*zh_CN.Saturations Level5/5级: ""
+
+*zh_CN.Translation Contrast/RGB对比度: ""
+*zh_CN.Contrast PrinterSetting/使用打印机设置: ""
+*zh_CN.Contrast Level1/1级: ""
+*zh_CN.Contrast Level2/2级: ""
+*zh_CN.Contrast Level3/3级: ""
+*zh_CN.Contrast Level4/4级: ""
+*zh_CN.Contrast Level5/5级: ""
+
+*zh_CN.Translation Lightness/RGB明亮度: ""
+*zh_CN.Lightness PrinterSetting/使用打印机设置: ""
+*zh_CN.Lightness Level1/1级: ""
+*zh_CN.Lightness Level2/2级: ""
+*zh_CN.Lightness Level3/3级: ""
+*zh_CN.Lightness Level4/4级: ""
+*zh_CN.Lightness Level5/5级: ""
+
+*zh_CN.Translation TonerMode/省墨: ""
+*zh_CN.TonerMode PrinterSetting/使用打印机设置: ""
+*zh_CN.TonerMode False/关闭: ""
+*zh_CN.TonerMode True/开启: ""
+
+*zh_CN.Translation Density/浓度: ""
+*zh_CN.Density PrinterSetting/使用打印机设置: ""
+*zh_CN.Density Level1/淡: ""
+*zh_CN.Density Level2/较淡: ""
+*zh_CN.Density Level3/正常: ""
+*zh_CN.Density Level4/较浓: ""
+*zh_CN.Density Level5/浓: ""
+*% === ColorGroup ===
+
+
+
+
+*% === ru ===
+*% === InstallableOptions ===
+*ru.Translation InstallableOptions/Устанав.параметры: ""
+*ru.Translation Tray1/Дополнительный лоток 1: ""
+*ru.Tray1 Installed/Установлено: ""
+*ru.Tray1 NotInstalled/Не установлено: ""
+*ru.Translation Tray2/Дополнительный лоток 2: ""
+*ru.Tray2 Installed/Установлено: ""
+*ru.Tray2 NotInstalled/Не установлено: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*ru.Translation General/Стандартный:""
+
+*ru.Translation PageSize/Размер бумаги: ""
+*ru.PageSize A4/A4 (210 x 297 мм): ""
+*ru.PageSize A3/A3 (297 x 420 мм): ""
+*ru.PageSize B4/JIS B4 (257 x 364 мм): ""
+*ru.PageSize A5/A5 (148 x 210 мм): ""
+*ru.PageSize A6/A6 (105 x 148 мм): ""
+*ru.PageSize JISB5/JIS B5 (182 x 257 мм): ""
+*ru.PageSize ISOB5/ISO B5(176 x 250 мм): ""
+*ru.PageSize 11*17/11"×17" (279 x 431,8 мм): ""
+*ru.PageSize Letter/Letter (216 x 279 мм): ""
+*ru.PageSize Legal/Legal (216 x 356 мм): ""
+*ru.PageSize Folio/Folio (216 x 330 мм): ""
+*ru.PageSize Oficio/Oficio (216 x 343 мм): ""
+*ru.PageSize Executive/Executive (184 x 267 мм): ""
+*ru.PageSize Statement/Statement (139.7 x 216 мм): ""
+*ru.PageSize 8K/8K (270 x 390 мм): ""
+*ru.PageSize 16K/16K (185 x 260 мм): ""
+*ru.PageSize Com10Envelope/Конверт № 10 (105 x 241 мм): ""
+*ru.PageSize EnvMonarch/Конверт Monarch (98 x 191 мм): ""
+*ru.PageSize EnvC6/Конверт C6 (114,0 x 162,0 мм): ""
+*ru.PageSize EnvC5/Конверт C5 (162 x 229 мм): ""
+*ru.PageSize EnvDL/Конверт DL (110 x 220 мм): ""
+*ru.PageSize DoublePostcardRotated/Postcard (148 x 200 мм):: ""
+*ru.CustomPageSize True/Настраиваемый: ""
+
+*ru.Translation PageRegion/Область страницы: ""
+*ru.PageRegion A4/A4 (210 x 297 мм): ""
+*ru.PageRegion A3/A3 (297 x 420 мм): ""
+*ru.PageRegion B4/JIS B4 (257 x 364 мм): ""
+*ru.PageRegion A5/A5 (148 x 210 мм): ""
+*ru.PageRegion A6/A6 (105 x 148 мм): ""
+*ru.PageRegion JISB5/JIS B5 (182 x 257 мм): ""
+*ru.PageRegion ISOB5/ISO B5(176 x 250 мм): ""
+*ru.PageRegion 11*17/11"×17" (279 x 431,8 мм): ""
+*ru.PageRegion Letter/Letter (216 x 279 мм): ""
+*ru.PageRegion Legal/Legal (216 x 356 мм): ""
+*ru.PageRegion Folio/Folio (216 x 330 мм): ""
+*ru.PageRegion Oficio/Oficio (216 x 343 мм): ""
+*ru.PageRegion Executive/Executive (184 x 267 мм): ""
+*ru.PageRegion Statement/Statement (139.7 x 216 мм): ""
+*ru.PageRegion 8K/8K (270 x 390 мм): ""
+*ru.PageRegion 16K/16K (185 x 260 мм): ""
+*ru.PageRegion Com10Envelope/Конверт № 10 (105 x 241 мм): ""
+*ru.PageRegion EnvMonarch/Конверт Monarch (98 x 191 мм): ""
+*ru.PageRegion EnvC6/Конверт C6 (114,0 x 162,0 мм): ""
+*ru.PageRegion EnvC5/Конверт C5 (162 x 229 мм): ""
+*ru.PageRegion EnvDL/Конверт DL (110 x 220 мм): ""
+*ru.PageRegion DoublePostcardRotated/Postcard (148 x 200 мм):: ""
+*ru.PageRegion Custom/Настраиваемый: ""
+
+*ru.Translation InputSlot/Источник бумаги: ""
+*ru.InputSlot AutoSelect/Автоматический выбор: ""
+*ru.InputSlot Standard/Стандартный лоток: ""
+*ru.InputSlot Tray1/Дополнительный лоток 1: ""
+*ru.InputSlot Tray2/Дополнительный лоток 2: ""
+*ru.InputSlot MultiPurposeTray/Многоцелевой лоток: ""
+
+*ru.Translation MediaType/Тип бумаги: ""
+*ru.MediaType Plain1/Простая бумага 1 (70-89 г/м2): ""
+*ru.MediaType Plain2/Простая бумага 2 (90-105 г/м2): ""
+*ru.MediaType Thin/Тонкая бумага (60-69 г/м2): ""
+*ru.MediaType Recycled/Перераб.Бумага(70-89 г/м2): ""
+*ru.MediaType Thick1/Плотная бумага 1 (106-130 г/м2): ""
+*ru.MediaType Thick2/Плотная бумага 2 (131-176 г/м2): ""
+*ru.MediaType Thick3/Плотная бумага 3 (177-216 г/м2): ""
+*ru.MediaType Envelope/Конверт: ""
+*ru.MediaType PostCard/Запас открыток (160 г/м2): ""
+*ru.MediaType Labels/Этикетка: ""
+
+*ru.Translation Duplex/Двусторонняя: ""
+*ru.Duplex DuplexNoTumble/Двусторонняя печать с длинным краем: ""
+*ru.Duplex DuplexTumble/Двусторонняя печать с коротким краем: ""
+*ru.Duplex None/Выкл: ""
+
+*ru.Translation Collate/Разбор: ""
+*ru.Collate False/Закрыть: ""
+*ru.Collate True/Включить: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*ru.Translation PrintoutMode/Режим вывода: ""
+
+*ru.Translation ColorModel/Цветовой стиль: ""
+*ru.ColorModel RGB/Цветная печать: ""
+*ru.ColorModel Grayscale/Черно-белая печать: ""
+
+*ru.Translation PTResolution/Разрешение: ""
+*ru.PTResolution 600x600dpi/600 точек на дюйм: ""
+*ru.PTResolution 1200x1200dpi/1200 точек на дюйм: ""
+
+*ru.Translation Booklet/Буклет: ""
+*ru.Booklet True/Включить: ""
+*ru.Booklet False/Закрыть: ""
+
+*ru.Translation BlankSuppress/Пропускать пустые страницы: ""
+*ru.BlankSuppress PrinterSetting/Используйте настройки принтера: ""
+*ru.BlankSuppress False/Закрыть: ""
+*ru.BlankSuppress True/Включить: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*ru.Translation RedHeadSpotColor/Печ.фай.с кра.загол.: ""
+
+*ru.Translation RedAndBlackPrinting/Печ.фай.с кра.загол.: ""
+*ru.RedAndBlackPrinting False/Закрыть: ""
+*ru.RedAndBlackPrinting True/Включить: ""
+
+*ru.Translation RbModeCvtThreshold/Порог: ""
+
+*ru.Translation RbModeRedlevel/Красный: ""
+*ru.RbModeRedlevel Level1/Уровень 1: ""
+*ru.RbModeRedlevel Level2/Уровень 2: ""
+*ru.RbModeRedlevel Level3/Уровень 3: ""
+*ru.RbModeRedlevel Level4/Уровень 4: ""
+*ru.RbModeRedlevel Level5/Уровень 5: ""
+
+*ru.Translation RbModeBlacklevel/Черный: ""
+*ru.RbModeBlacklevel Level1/Уровень 1: ""
+*ru.RbModeBlacklevel Level2/Уровень 2: ""
+*ru.RbModeBlacklevel Level3/Уровень 3: ""
+*ru.RbModeBlacklevel Level4/Уровень 4: ""
+*ru.RbModeBlacklevel Level5/Уровень 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*ru.Translation PinPrint/Безопасная Печать: ""
+
+*ru.Translation LockedPinPrint/Безопасная печать: ""
+*ru.Translation PinNum1/1-й символ пароля: ""
+*ru.Translation PinNum2/2-й символ пароля: ""
+*ru.Translation PinNum3/3-й символ пароля: ""
+*ru.Translation PinNum4/4-й символ пароля: ""
+*ru.LockedPinPrint False/Закрыть: ""
+*ru.LockedPinPrint True/Включить: ""
+
+*ru.Translation TimePrint/Печать с задержкой: ""
+*ru.TimePrint False/Закрыть: ""
+*ru.TimePrint True/Включить: ""
+
+*ru.Translation PrintTimeH/Час: ""
+*ru.Translation PrintTimeM/Минута: ""
+
+*ru.Translation HoldPrint/Печать образца: ""
+*ru.HoldPrint False/Закрыть: ""
+*ru.HoldPrint True/Включить: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*ru.Translation ColorGroup/Цветовая функция: ""
+
+*ru.Translation DocumentType/Тип документа: ""
+*ru.DocumentType PrinterSetting/Используйте настройки принтера: ""
+*ru.DocumentType Document/Текст: ""
+*ru.DocumentType Photo/Изображение: ""
+*ru.DocumentType Mixed/Текст и изображение: ""
+
+*ru.Translation Cyan/Цветовой баланс - голубой: ""
+*ru.Cyan PrinterSetting/Используйте настройки принтера: ""
+*ru.Cyan Level1/Уровень 1: ""
+*ru.Cyan Level2/Уровень 2: ""
+*ru.Cyan Level3/Уровень 3: ""
+*ru.Cyan Level4/Уровень 4: ""
+*ru.Cyan Level5/Уровень 5: ""
+
+*ru.Translation Magenta/Цветовой баланс - лиловый: ""
+*ru.Magenta PrinterSetting/Используйте настройки принтера: ""
+*ru.Magenta Level1/Уровень 1: ""
+*ru.Magenta Level2/Уровень 2: ""
+*ru.Magenta Level3/Уровень 3: ""
+*ru.Magenta Level4/Уровень 4: ""
+*ru.Magenta Level5/Уровень 5: ""
+
+*ru.Translation Yellow/Цветовой баланс - желтый: ""
+*ru.Yellow PrinterSetting/Используйте настройки принтера: ""
+*ru.Yellow Level1/Уровень 1: ""
+*ru.Yellow Level2/Уровень 2: ""
+*ru.Yellow Level3/Уровень 3: ""
+*ru.Yellow Level4/Уровень 4: ""
+*ru.Yellow Level5/Уровень 5: ""
+
+*ru.Translation Black/Цветовой баланс - черный: ""
+*ru.Black PrinterSetting/Используйте настройки принтера: ""
+*ru.Black Level1/Уровень 1: ""
+*ru.Black Level2/Уровень 2: ""
+*ru.Black Level3/Уровень 3: ""
+*ru.Black Level4/Уровень 4: ""
+*ru.Black Level5/Уровень 5: ""
+
+*ru.Translation Saturations/Насыщенность RGB: ""
+*ru.Saturations PrinterSetting/Используйте настройки принтера: ""
+*ru.Saturations Level1/Уровень 1: ""
+*ru.Saturations Level2/Уровень 2: ""
+*ru.Saturations Level3/Уровень 3: ""
+*ru.Saturations Level4/Уровень 4: ""
+*ru.Saturations Level5/Уровень 5: ""
+
+*ru.Translation Contrast/Контраст RGB: ""
+*ru.Contrast PrinterSetting/Используйте настройки принтера: ""
+*ru.Contrast Level1/Уровень 1: ""
+*ru.Contrast Level2/Уровень 2: ""
+*ru.Contrast Level3/Уровень 3: ""
+*ru.Contrast Level4/Уровень 4: ""
+*ru.Contrast Level5/Уровень 5: ""
+
+*ru.Translation Lightness/Яркость RGB: ""
+*ru.Lightness PrinterSetting/Используйте настройки принтера: ""
+*ru.Lightness Level1/Уровень 1: ""
+*ru.Lightness Level2/Уровень 2: ""
+*ru.Lightness Level3/Уровень 3: ""
+*ru.Lightness Level4/Уровень 4: ""
+*ru.Lightness Level5/Уровень 5: ""
+
+*ru.Translation TonerMode/Экономия тонера: ""
+*ru.TonerMode PrinterSetting/Используйте настройки принтера: ""
+*ru.TonerMode False/Закрыть: ""
+*ru.TonerMode True/Включить: ""
+
+*ru.Translation Density/Плотность: ""
+*ru.Density PrinterSetting/Используйте настройки принтера: ""
+*ru.Density Level1/Светлый: ""
+*ru.Density Level2/Самый светлый: ""
+*ru.Density Level3/Нормальный: ""
+*ru.Density Level4/Максимальная плотность: ""
+*ru.Density Level5/Темный: ""
+*% === ColorGroup ===
+
+
+
+
+
+*% === zhtw ===
+*% === InstallableOptions ===
+*zh_TW.Translation InstallableOptions/可安裝選項: ""
+
+*zh_TW.Translation Tray1/選配紙匣 1: ""
+*zh_TW.Tray1 Installed/已安裝: ""
+*zh_TW.Tray1 NotInstalled/未安裝: ""
+*zh_TW.Translation Tray2/選配紙匣 2: ""
+*zh_TW.Tray2 Installed/已安裝: ""
+*zh_TW.Tray2 NotInstalled/未安裝: ""
+
+
+*% === InstallableOptions ===
+
+*% === General ===
+*zh_TW.Translation General/常規:""
+
+*zh_TW.Translation PageSize/紙張大小: ""
+*zh_TW.PageSize A4/A4(210 x 297mm): ""
+*zh_TW.PageSize A3/A3(297 x 420mm): ""
+*zh_TW.PageSize B4/JIS B4(257 x 364mm): ""
+*zh_TW.PageSize A5/A5(148 x 210mm): ""
+*zh_TW.PageSize A6/A6(105 x 148mm): ""
+*zh_TW.PageSize JISB5/JIS B5(182 x 257mm): ""
+*zh_TW.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*zh_TW.PageSize 11*17/11"×17"(279 x 431.8mm): ""
+*zh_TW.PageSize Letter/Letter(216 x 279mm): ""
+*zh_TW.PageSize Legal/Legal(216 x 356mm): ""
+*zh_TW.PageSize Folio/Folio(216 x 330mm): ""
+*zh_TW.PageSize Oficio/Oficio(216 x 343mm): ""
+*zh_TW.PageSize Executive/Executive(184 x 267mm): ""
+*zh_TW.PageSize Statement/Statement(139.7 x 216mm): ""
+*zh_TW.PageSize 8K/8K(270 x 390mm): ""
+*zh_TW.PageSize 16K/16K(185 x 260mm): ""
+*zh_TW.PageSize Com10Envelope/信封No.10(105 x 241mm): ""
+*zh_TW.PageSize EnvMonarch/信封Monarch(98 x 191mm): ""
+*zh_TW.PageSize EnvC6/信封C6(114.0 x 162.0mm): ""
+*zh_TW.PageSize EnvC5/信封C5(162 x 229mm): ""
+*zh_TW.PageSize EnvDL/信封DL(110 x 220mm): ""
+*zh_TW.PageSize DoublePostcardRotated/Postcard (148 x 200mm): ""
+*zh_TW.CustomPageSize True/自訂: ""
+
+*zh_TW.Translation PageRegion/頁面區域: ""
+*zh_TW.PageRegion A4/A4(210 x 297mm): ""
+*zh_TW.PageRegion A3/A3(297 x 420mm): ""
+*zh_TW.PageRegion B4/JIS B4(257 x 364mm): ""
+*zh_TW.PageRegion A5/A5(148 x 210mm): ""
+*zh_TW.PageRegion A6/A6(105 x 148mm): ""
+*zh_TW.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*zh_TW.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*zh_TW.PageRegion 11*17/11"×17"(279 x 431.8mm): ""
+*zh_TW.PageRegion Letter/Letter(216 x 279mm): ""
+*zh_TW.PageRegion Legal/Legal(216 x 356mm): ""
+*zh_TW.PageRegion Folio/Folio(216 x 330mm): ""
+*zh_TW.PageRegion Oficio/Oficio(216 x 343mm): ""
+*zh_TW.PageRegion Executive/Executive(184 x 267mm): ""
+*zh_TW.PageRegion Statement/Statement(139.7 x 216mm): ""
+*zh_TW.PageRegion 8K/8K(270 x 390mm): ""
+*zh_TW.PageRegion 16K/16K(185 x 260mm): ""
+*zh_TW.PageRegion Com10Envelope/信封No.10(105 x 241mm): ""
+*zh_TW.PageRegion EnvMonarch/信封Monarch(98 x 191mm): ""
+*zh_TW.PageRegion EnvC6/信封C6(114.0 x 162.0mm): ""
+*zh_TW.PageRegion EnvC5/信封C5(162 x 229mm): ""
+*zh_TW.PageRegion EnvDL/信封DL(110 x 220mm): ""
+*zh_TW.PageRegion DoublePostcardRotated/Postcard (148 x 200mm): ""
+*zh_TW.PageRegion Custom/自訂: ""
+
+*zh_TW.Translation InputSlot/紙張來源: ""
+*zh_TW.InputSlot AutoSelect/自動選擇: ""
+*zh_TW.InputSlot Standard/標準紙盒: ""
+*zh_TW.InputSlot Tray1/選配紙匣 1: ""
+*zh_TW.InputSlot Tray2/選配紙匣 2: ""
+*zh_TW.InputSlot MultiPurposeTray/多功能紙盒: ""
+
+*zh_TW.Translation MediaType/紙張類型: ""
+*zh_TW.MediaType Plain1/普通紙1(70-89gsm): ""
+*zh_TW.MediaType Plain2/普通紙2(90-105gsm): ""
+*zh_TW.MediaType Thin/薄紙(60-69gsm): ""
+*zh_TW.MediaType Recycled/再生紙(70-89gsm): ""
+*zh_TW.MediaType Thick1/厚紙1(106-130gsm): ""
+*zh_TW.MediaType Thick2/厚紙2(131-176gsm): ""
+*zh_TW.MediaType Thick3/厚紙3(177-216gsm): ""
+*zh_TW.MediaType Envelope/信封紙: ""
+*zh_TW.MediaType PostCard/卡片紙(160gsm): ""
+*zh_TW.MediaType Labels/標籤紙: ""
+
+*zh_TW.Translation Duplex/雙面列印: ""
+*zh_TW.Duplex DuplexNoTumble/雙面長邊: ""
+*zh_TW.Duplex DuplexTumble/雙面短邊: ""
+*zh_TW.Duplex None/無: ""
+
+*zh_TW.Translation Collate/逐份: ""
+*zh_TW.Collate False/關閉: ""
+*zh_TW.Collate True/開啟: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*zh_TW.Translation PrintoutMode/輸出模式: ""
+
+*zh_TW.Translation ColorModel/顏色樣式: ""
+*zh_TW.ColorModel RGB/彩色列印: ""
+*zh_TW.ColorModel Grayscale/黑白列印: ""
+
+*zh_TW.Translation PTResolution/解析度: ""
+*zh_TW.PTResolution 600x600dpi/600dpi: ""
+*zh_TW.PTResolution 1200x1200dpi/1200dpi: ""
+
+*zh_TW.Translation Booklet/小冊子: ""
+*zh_TW.Booklet True/開啟: ""
+*zh_TW.Booklet False/關閉: ""
+
+*zh_TW.Translation BlankSuppress/跳過空白頁: ""
+*zh_TW.BlankSuppress PrinterSetting/使用印表機設置: ""
+*zh_TW.BlankSuppress False/關閉: ""
+*zh_TW.BlankSuppress True/開啟: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*zh_TW.Translation RedHeadSpotColor/紅頭文件列印: ""
+
+*zh_TW.Translation RedAndBlackPrinting/紅頭文件列印: ""
+*zh_TW.RedAndBlackPrinting False/關閉: ""
+*zh_TW.RedAndBlackPrinting True/開啟: ""
+
+*zh_TW.Translation RbModeCvtThreshold/閾值: ""
+
+*zh_TW.Translation RbModeRedlevel/紅色: ""
+*zh_TW.RbModeRedlevel Level1/1級: ""
+*zh_TW.RbModeRedlevel Level2/2級: ""
+*zh_TW.RbModeRedlevel Level3/3級: ""
+*zh_TW.RbModeRedlevel Level4/4級: ""
+*zh_TW.RbModeRedlevel Level5/5級: ""
+
+*zh_TW.Translation RbModeBlacklevel/黑色: ""
+*zh_TW.RbModeBlacklevel Level1/1級: ""
+*zh_TW.RbModeBlacklevel Level2/2級: ""
+*zh_TW.RbModeBlacklevel Level3/3級: ""
+*zh_TW.RbModeBlacklevel Level4/4級: ""
+*zh_TW.RbModeBlacklevel Level5/5級: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*zh_TW.Translation PinPrint/安全列印: ""
+
+*zh_TW.Translation LockedPinPrint/密碼列印: ""
+*zh_TW.Translation PinNum1/第1位元密碼: ""
+*zh_TW.Translation PinNum2/第2位元密碼: ""
+*zh_TW.Translation PinNum3/第3位元密碼: ""
+*zh_TW.Translation PinNum4/第4位元密碼: ""
+*zh_TW.LockedPinPrint False/關閉: ""
+*zh_TW.LockedPinPrint True/開啟: ""
+
+*zh_TW.Translation TimePrint/延遲列印: ""
+*zh_TW.TimePrint False/關閉: ""
+*zh_TW.TimePrint True/開啟: ""
+
+*zh_TW.Translation PrintTimeH/小時: ""
+*zh_TW.Translation PrintTimeM/分鐘: ""
+
+*zh_TW.Translation HoldPrint/樣本列印: ""
+*zh_TW.HoldPrint False/關閉: ""
+*zh_TW.HoldPrint True/開啟: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*zh_TW.Translation ColorGroup/色彩功能: ""
+
+*zh_TW.Translation DocumentType/原稿類型: ""
+*zh_TW.DocumentType PrinterSetting/使用印表機設置: ""
+*zh_TW.DocumentType Document/文本: ""
+*zh_TW.DocumentType Photo/圖像: ""
+*zh_TW.DocumentType Mixed/文圖: ""
+
+*zh_TW.Translation Cyan/色彩平衡-青色: ""
+*zh_TW.Cyan PrinterSetting/使用印表機設置: ""
+*zh_TW.Cyan Level1/1級: ""
+*zh_TW.Cyan Level2/2級: ""
+*zh_TW.Cyan Level3/3級: ""
+*zh_TW.Cyan Level4/4級: ""
+*zh_TW.Cyan Level5/5級: ""
+
+*zh_TW.Translation Magenta/色彩平衡-品紅色: ""
+*zh_TW.Magenta PrinterSetting/使用印表機設置: ""
+*zh_TW.Magenta Level1/1級: ""
+*zh_TW.Magenta Level2/2級: ""
+*zh_TW.Magenta Level3/3級: ""
+*zh_TW.Magenta Level4/4級: ""
+*zh_TW.Magenta Level5/5級: ""
+
+*zh_TW.Translation Yellow/色彩平衡-黃色: ""
+*zh_TW.Yellow PrinterSetting/使用印表機設置: ""
+*zh_TW.Yellow Level1/1級: ""
+*zh_TW.Yellow Level2/2級: ""
+*zh_TW.Yellow Level3/3級: ""
+*zh_TW.Yellow Level4/4級: ""
+*zh_TW.Yellow Level5/5級: ""
+
+*zh_TW.Translation Black/色彩平衡-黑色: ""
+*zh_TW.Black PrinterSetting/使用印表機設置: ""
+*zh_TW.Black Level1/1級: ""
+*zh_TW.Black Level2/2級: ""
+*zh_TW.Black Level3/3級: ""
+*zh_TW.Black Level4/4級: ""
+*zh_TW.Black Level5/5級: ""
+
+*zh_TW.Translation Saturations/RGB飽和度: ""
+*zh_TW.Saturations PrinterSetting/使用印表機設置: ""
+*zh_TW.Saturations Level1/1級: ""
+*zh_TW.Saturations Level2/2級: ""
+*zh_TW.Saturations Level3/3級: ""
+*zh_TW.Saturations Level4/4級: ""
+*zh_TW.Saturations Level5/5級: ""
+
+*zh_TW.Translation Contrast/RGB對比度: ""
+*zh_TW.Contrast PrinterSetting/使用印表機設置: ""
+*zh_TW.Contrast Level1/1級: ""
+*zh_TW.Contrast Level2/2級: ""
+*zh_TW.Contrast Level3/3級: ""
+*zh_TW.Contrast Level4/4級: ""
+*zh_TW.Contrast Level5/5級: ""
+
+*zh_TW.Translation Lightness/RGB明亮度: ""
+*zh_TW.Lightness PrinterSetting/使用印表機設置: ""
+*zh_TW.Lightness Level1/1級: ""
+*zh_TW.Lightness Level2/2級: ""
+*zh_TW.Lightness Level3/3級: ""
+*zh_TW.Lightness Level4/4級: ""
+*zh_TW.Lightness Level5/5級: ""
+
+*zh_TW.Translation TonerMode/省墨: ""
+*zh_TW.TonerMode PrinterSetting/使用印表機設置: ""
+*zh_TW.TonerMode False/關閉: ""
+*zh_TW.TonerMode True/開啟: ""
+
+*zh_TW.Translation Density/濃度: ""
+*zh_TW.Density PrinterSetting/使用印表機設置: ""
+*zh_TW.Density Level1/淡: ""
+*zh_TW.Density Level2/較淡: ""
+*zh_TW.Density Level3/正常: ""
+*zh_TW.Density Level4/較濃: ""
+*zh_TW.Density Level5/濃: ""
+*% === ColorGroup ===
+
+
+
+
+
+*% === de ===
+*% === InstallableOptions ===
+*de.Translation InstallableOptions/Installierbare Option: ""
+
+*de.Translation Tray1/Optionale Papierzufuhr 1: ""
+*de.Tray1 Installed/Installiert: ""
+*de.Tray1 NotInstalled/Nicht installiert: ""
+*de.Translation Tray2/Optionale Papierzufuhr 2: ""
+*de.Tray2 Installed/Installiert: ""
+*de.Tray2 NotInstalled/Nicht installiert: ""
+
+
+*% === InstallableOptions ===
+
+*% === General ===
+*de.Translation General/Standard:""
+
+*de.Translation PageSize/Papiergröße: ""
+*de.PageSize A4/A4 (210 x 297 mm): ""
+*de.PageSize A3/A3 (297 x 420 mm): ""
+*de.PageSize B4/JIS B4 (257 x 364 mm): ""
+*de.PageSize A5/A5 (148 x 210 mm): ""
+*de.PageSize A6/A6 (105 x 148 mm): ""
+*de.PageSize JISB5/JIS B5 (182 x 257 mm): ""
+*de.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*de.PageSize 11*17/11 Zoll × 17 Zoll (279 x 431,8 mm): ""
+*de.PageSize Letter/Letter (216 x 279 mm): ""
+*de.PageSize Legal/Legal (216 x 356 mm): ""
+*de.PageSize Folio/Folio (216 x 330 mm): ""
+*de.PageSize Oficio/Oficio (216 x 343 mm): ""
+*de.PageSize Executive/Executive (184 x 267 mm): ""
+*de.PageSize Statement/Statement (139,7 x 216 mm): ""
+*de.PageSize 8K/8K (270 x 390 mm): ""
+*de.PageSize 16K/16K (185 x 260 mm): ""
+*de.PageSize Com10Envelope/Umschlag Nr. 10 (105 x 241 mm): ""
+*de.PageSize EnvMonarch/Umschlag Monarch (98 x 191 mm): ""
+*de.PageSize EnvC6/Umschlag C6 (114,0 x 162,0 mm): ""
+*de.PageSize EnvC5/Umschlag C5 (162 x 229 mm): ""
+*de.PageSize EnvDL/Umschlag DL (110 x 220 mm): ""
+*de.PageSize DoublePostcardRotated/Postkarte(148 x 200 mm): ""
+*de.CustomPageSize True/Benutzerdefiniert: ""
+
+*de.Translation PageRegion/Bereich Seite: ""
+*de.PageRegion A4/A4 (210 x 297 mm): ""
+*de.PageRegion A3/A3 (297 x 420 mm): ""
+*de.PageRegion B4/JIS B4 (257 x 364 mm): ""
+*de.PageRegion A5/A5 (148 x 210 mm): ""
+*de.PageRegion A6/A6 (105 x 148 mm): ""
+*de.PageRegion JISB5/JIS B5 (182 x 257 mm): ""
+*de.PageRegion ISOB5/ISO B5 (176 x 250 mm): ""
+*de.PageRegion 11*17/11 Zoll × 17 Zoll (279 x 431,8 mm): ""
+*de.PageRegion Letter/Letter (216 x 279 mm): ""
+*de.PageRegion Legal/Legal (216 x 356 mm): ""
+*de.PageRegion Folio/Folio (216 x 330 mm): ""
+*de.PageRegion Oficio/Oficio (216 x 343 mm): ""
+*de.PageRegion Executive/Executive (184 x 267 mm): ""
+*de.PageRegion Statement/Statement (139,7 x 216 mm): ""
+*de.PageRegion 8K/8K (270 x 390 mm): ""
+*de.PageRegion 16K/16K (185 x 260 mm): ""
+*de.PageRegion Com10Envelope/Umschlag Nr. 10 (105 x 241 mm): ""
+*de.PageRegion EnvMonarch/Umschlag Monarch (98 x 191 mm): ""
+*de.PageRegion EnvC6/Umschlag C6 (114,0 x 162,0 mm): ""
+*de.PageRegion EnvC5/Umschlag C5 (162 x 229 mm): ""
+*de.PageRegion EnvDL/Umschlag DL (110 x 220 mm): ""
+*de.PageRegion DoublePostcardRotated/Postkarte(148 x 200 mm): ""
+*de.PageRegion Custom/Benutzerdefiniert: ""
+
+*de.Translation InputSlot/Papierquelle: ""
+*de.InputSlot AutoSelect/Autom. Auswahl: ""
+*de.InputSlot Standard/Standardpapierfach: ""
+*de.InputSlot Tray1/Optionale Papierzufuhr 1: ""
+*de.InputSlot Tray2/Optionale Papierzufuhr 2: ""
+*de.InputSlot MultiPurposeTray/Mehrzweckpapierfach: ""
+
+*de.Translation MediaType/Papiertyp: ""
+*de.MediaType Plain1/Normalpapier 1 (70-89 g/m2): ""
+*de.MediaType Plain2/Normales Papier 2 (90-105 g/m2): ""
+*de.MediaType Thin/Dünnes Papier (60-69 g/m²): ""
+*de.MediaType Recycled/Recyclingpapier (70-89 g/m2): ""
+*de.MediaType Thick1/Dickes Papier 1 (106-130 g/m²): ""
+*de.MediaType Thick2/Dickes Papier 2 (131-176 g/m²): ""
+*de.MediaType Thick3/Dickes Papier 3 (177-216 g/m²): ""
+*de.MediaType Envelope/Umschlag: ""	
+*de.MediaType PostCard/Kartenmaterial (160 g/m²): ""
+*de.MediaType Labels/Etikette: ""
+
+*de.Translation Duplex/Duplex: ""
+*de.Duplex DuplexNoTumble/Duplex Lange Kante: ""
+*de.Duplex DuplexTumble/Duplex Kurzer Rand: ""
+*de.Duplex None/Aus: ""
+
+*de.Translation Collate/Sortieren: ""
+*de.Collate False/Schließen: ""
+*de.Collate True/Einschalten: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*de.Translation PrintoutMode/Ausgabe-Modus: ""
+
+*de.Translation ColorModel/Farbstil: ""
+*de.ColorModel RGB/Farbdruck: ""
+*de.ColorModel Grayscale/Schwarzweiß-Druck: ""
+
+*de.Translation PTResolution/Auflösung: ""
+*de.PTResolution 600x600dpi/600dpi: ""
+*de.PTResolution 1200x1200dpi/1200dpi: ""
+
+*de.Translation Booklet/Broschüre: ""
+*de.Booklet True/Einschalten: ""
+*de.Booklet False/Schließen: ""
+
+*de.Translation BlankSuppress/Leere Seiten überspringen: ""
+*de.BlankSuppress PrinterSetting/Druckereinstellungen verwen: ""
+*de.BlankSuppress False/Schließen: ""
+*de.BlankSuppress True/Einschalten: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*de.Translation RedHeadSpotColor/Druck einer Roten Kopfleistendatei: ""
+
+*de.Translation RedAndBlackPrinting/Druck einer Roten Kopfleistendatei: ""
+*de.RedAndBlackPrinting False/Schließen: ""
+*de.RedAndBlackPrinting True/Einschalten: ""
+
+*de.Translation RbModeCvtThreshold/Schwelle: ""
+
+*de.Translation RbModeRedlevel/Rot: ""
+*de.RbModeRedlevel Level1/Stufe 1: ""
+*de.RbModeRedlevel Level2/Stufe 2: ""
+*de.RbModeRedlevel Level3/Stufe 3: ""
+*de.RbModeRedlevel Level4/Stufe 4: ""
+*de.RbModeRedlevel Level5/Stufe 5: ""
+
+*de.Translation RbModeBlacklevel/Schwarz: ""
+*de.RbModeBlacklevel Level1/Stufe 1: ""
+*de.RbModeBlacklevel Level2/Stufe 2: ""
+*de.RbModeBlacklevel Level3/Stufe 3: ""
+*de.RbModeBlacklevel Level4/Stufe 4: ""
+*de.RbModeBlacklevel Level5/Stufe 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*de.Translation PinPrint/Sicheres Drucken: ""
+
+*de.Translation LockedPinPrint/Sicherer Druck: ""
+*de.Translation PinNum1/1. Zeichen des Passworts: ""
+*de.Translation PinNum2/2. Zeichen des Passworts: ""
+*de.Translation PinNum3/3. Zeichen des Passworts: ""
+*de.Translation PinNum4/4. Zeichen des Passworts: ""
+*de.LockedPinPrint False/Schließen: ""
+*de.LockedPinPrint True/Einschalten: ""
+
+*de.Translation TimePrint/Verzögertes Drucken: ""
+*de.TimePrint False/Schließen: ""
+*de.TimePrint True/Einschalten: ""
+
+*de.Translation PrintTimeH/Stunde: ""
+*de.Translation PrintTimeM/Minute: ""
+
+*de.Translation HoldPrint/Musterdruck: ""
+*de.HoldPrint False/Schließen: ""
+*de.HoldPrint True/Einschalten: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*de.Translation ColorGroup/Farbfunktion: ""
+
+*de.Translation DocumentType/Art des Dokuments: ""
+*de.DocumentType PrinterSetting/Druckereinstellungen verwen: ""
+*de.DocumentType Document/Text: ""
+*de.DocumentType Photo/Bild: ""
+*de.DocumentType Mixed/Text und Bild: ""
+
+*de.Translation Cyan/Farbausgleich - Cyan: ""
+*de.Cyan PrinterSetting/Druckereinstellungen verwen: ""
+*de.Cyan Level1/Stufe 1: ""
+*de.Cyan Level2/Stufe 2: ""
+*de.Cyan Level3/Stufe 3: ""
+*de.Cyan Level4/Stufe 4: ""
+*de.Cyan Level5/Stufe 5: ""
+
+*de.Translation Magenta/Farbausgleich - Magenta: ""
+*de.Magenta PrinterSetting/Druckereinstellungen verwen: ""
+*de.Magenta Level1/Stufe 1: ""
+*de.Magenta Level2/Stufe 2: ""
+*de.Magenta Level3/Stufe 3: ""
+*de.Magenta Level4/Stufe 4: ""
+*de.Magenta Level5/Stufe 5: ""
+
+*de.Translation Yellow/Farbausgleich - Gelb: ""
+*de.Yellow PrinterSetting/Druckereinstellungen verwen: ""
+*de.Yellow Level1/Stufe 1: ""
+*de.Yellow Level2/Stufe 2: ""
+*de.Yellow Level3/Stufe 3: ""
+*de.Yellow Level4/Stufe 4: ""
+*de.Yellow Level5/Stufe 5: ""
+
+*de.Translation Black/Farbausgleich - Schwarz: ""
+*de.Black PrinterSetting/Druckereinstellungen verwen: ""
+*de.Black Level1/Stufe 1: ""
+*de.Black Level2/Stufe 2: ""
+*de.Black Level3/Stufe 3: ""
+*de.Black Level4/Stufe 4: ""
+*de.Black Level5/Stufe 5: ""
+
+*de.Translation Saturations/RGB Sättigung: ""
+*de.Saturations PrinterSetting/Druckereinstellungen verwen: ""
+*de.Saturations Level1/Stufe 1: ""
+*de.Saturations Level2/Stufe 2: ""
+*de.Saturations Level3/Stufe 3: ""
+*de.Saturations Level4/Stufe 4: ""
+*de.Saturations Level5/Stufe 5: ""
+
+*de.Translation Contrast/RGB-Kontrast: ""
+*de.Contrast PrinterSetting/Druckereinstellungen verwen: ""
+*de.Contrast Level1/Stufe 1: ""
+*de.Contrast Level2/Stufe 2: ""
+*de.Contrast Level3/Stufe 3: ""
+*de.Contrast Level4/Stufe 4: ""
+*de.Contrast Level5/Stufe 5: ""
+
+*de.Translation Lightness/RGB-Helligkeit: ""
+*de.Lightness PrinterSetting/Druckereinstellungen verwen: ""
+*de.Lightness Level1/Stufe 1: ""
+*de.Lightness Level2/Stufe 2: ""
+*de.Lightness Level3/Stufe 3: ""
+*de.Lightness Level4/Stufe 4: ""
+*de.Lightness Level5/Stufe 5: ""
+
+*de.Translation TonerMode/Tonersparmodus: ""
+*de.TonerMode PrinterSetting/Druckereinstellungen verwen: ""
+*de.TonerMode False/Schließen: ""
+*de.TonerMode True/Einschalten: ""
+
+*de.Translation Density/Dichte: ""
+*de.Density PrinterSetting/Druckereinstellungen verwen: ""
+*de.Density Level1/Hell: ""
+*de.Density Level2/Sehr hell: ""
+*de.Density Level3/Normal: ""
+*de.Density Level4/Sehr dunkel: ""
+*de.Density Level5/Dunkel: ""
+*% === ColorGroup ===
+
+
+
+
+*% === it ===
+*% === InstallableOptions ===
+*it.Translation InstallableOptions/Opzione installabile: ""
+
+*it.Translation Tray1/Vassoio opzionale 1: ""
+*it.Tray1 Installed/Installato: ""
+*it.Tray1 NotInstalled/Non installato: ""
+*it.Translation Tray2/Vassoio opzionale 2: ""
+*it.Tray2 Installed/Installato: ""
+*it.Tray2 NotInstalled/Non installato: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*it.Translation General/Standard:""
+
+*it.Translation PageSize/Formato carta: ""
+*it.PageSize A4/A4(210 x 297 mm): ""
+*it.PageSize A3/A3(297 x 420 mm): ""
+*it.PageSize B4/JIS B4(257 x 364 mm): ""
+*it.PageSize A5/A5(148 x 210 mm): ""
+*it.PageSize A6/A6(105 x 148 mm): ""
+*it.PageSize JISB5/JIS B5(182 x 257 mm): ""
+*it.PageSize ISOB5/ISO B5(176 x 250 mm): ""
+*it.PageSize 11*17/11"×17"(279 x 431.8mm): ""
+*it.PageSize Letter/Lettera(216 x 279 mm): ""
+*it.PageSize Legal/Legale(216 x 356 mm): ""
+*it.PageSize Folio/Folio(216 x 330 mm): ""
+*it.PageSize Oficio/Oficio(216 x 343 mm): ""
+*it.PageSize Executive/Executive(184 x 267 mm): ""
+*it.PageSize Statement/Statement(139,7 x 216 mm): ""
+*it.PageSize 8K/8K(270 x 390 mm): ""
+*it.PageSize 16K/16K(185 x 260 mm): ""
+*it.PageSize Com10Envelope/Busta N.10(105 x 241 mm): ""
+*it.PageSize EnvMonarch/Busta Monarch(98 x 191 mm): ""
+*it.PageSize EnvC6/Busta C6(114,0 x 162,0 mm): ""
+*it.PageSize EnvC5/Busta C5(162 x 229 mm): ""
+*it.PageSize EnvDL/Busta DL(110 x 220 mm): ""
+*it.PageSize DoublePostcardRotated/Cartolina(148 x 200 mm): ""
+*it.CustomPageSize True/Personalizzato: ""
+
+*it.Translation PageRegion/Area pagina: ""
+*it.PageRegion A4/A4(210 x 297 mm): ""
+*it.PageRegion A3/A3(297 x 420 mm): ""
+*it.PageRegion B4/JIS B4(257 x 364 mm): ""
+*it.PageRegion A5/A5(148 x 210 mm): ""
+*it.PageRegion A6/A6(105 x 148 mm): ""
+*it.PageRegion JISB5/JIS B5(182 x 257 mm): ""
+*it.PageRegion ISOB5/ISO B5(176 x 250 mm): ""
+*it.PageRegion 11*17/11"×17"(279 x 431.8mm): ""
+*it.PageRegion Letter/Lettera(216 x 279 mm): ""
+*it.PageRegion Legal/Legale(216 x 356 mm): ""
+*it.PageRegion Folio/Folio(216 x 330 mm): ""
+*it.PageRegion Oficio/Oficio(216 x 343 mm): ""
+*it.PageRegion Executive/Executive(184 x 267 mm): ""
+*it.PageRegion Statement/Statement(139,7 x 216 mm): ""
+*it.PageRegion 8K/8K(270 x 390 mm): ""
+*it.PageRegion 16K/16K(185 x 260 mm): ""
+*it.PageRegion Com10Envelope/Busta N.10(105 x 241 mm): ""
+*it.PageRegion EnvMonarch/Busta Monarch(98 x 191 mm): ""
+*it.PageRegion EnvC6/Busta C6(114,0 x 162,0 mm): ""
+*it.PageRegion EnvC5/Busta C5(162 x 229 mm): ""
+*it.PageRegion EnvDL/Busta DL(110 x 220 mm): ""
+*it.PageRegion DoublePostcardRotated/Cartolina(148 x 200 mm): ""
+*it.PageRegion Custom/Personalizzato: ""
+
+*it.Translation InputSlot/Alimentazione carta: ""
+*it.InputSlot AutoSelect/Selezione automatica: ""
+*it.InputSlot Standard/Vassoio standard: ""
+*it.InputSlot Tray1/Vassoio opzionale 1: ""
+*it.InputSlot Tray2/Vassoio opzionale 2: ""
+*it.InputSlot MultiPurposeTray/Vassoio multifunzione: ""
+
+*it.Translation MediaType/Tipo di carta: ""
+*it.MediaType Plain1/Carta comune 1 (70-89 g/m²): ""
+*it.MediaType Plain2/Carta comune 2 (90-105 g/m ²): ""
+*it.MediaType Thin/Carta sottile (60-69 g/m²): ""
+*it.MediaType Recycled/Carta riciclata (70-89 g/m²): ""
+*it.MediaType Thick1/Carta spessa 1 (106-130 g/m²): ""
+*it.MediaType Thick2/Carta spessa 2 (131-176 g/m²): ""
+*it.MediaType Thick3/Carta spessa 3 (177-216 g/m²): ""
+*it.MediaType Envelope/Busta: ""
+*it.MediaType PostCard/Cartoncino (160 g/m²): ""
+*it.MediaType Labels/Etichetta: ""
+
+*it.Translation Duplex/Fronte/retro: ""
+*it.Duplex DuplexNoTumble/Lato lungo fronte/retro: ""
+*it.Duplex DuplexTumble/Lato corto fronte/retro: ""
+*it.Duplex None/Disattivato: ""
+
+*it.Translation Collate/Fascicola: ""
+*it.Collate False/Chiudi: ""
+*it.Collate True/Accendi: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*it.Translation PrintoutMode/Modalità di uscita: ""
+
+*it.Translation ColorModel/Stile colore: ""
+*it.ColorModel RGB/Stampa a colori: ""
+*it.ColorModel Grayscale/Stampa in bianco e nero: ""
+
+*it.Translation PTResolution/Risoluzione: ""
+*it.PTResolution 600x600dpi/600dpi: ""
+*it.PTResolution 1200x1200dpi/1200dpi: ""
+
+*it.Translation Booklet/Opuscolo: ""
+*it.Booklet True/Accendi: ""
+*it.Booklet False/Chiudi: ""
+
+*it.Translation BlankSuppress/Salta pagine vuote: ""
+*it.BlankSuppress PrinterSetting/Usa impostazioni stampante: ""
+*it.BlankSuppress False/Chiudi: ""
+*it.BlankSuppress True/Accendi: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*it.Translation RedHeadSpotColor/Stampa file intestazione rossa: ""
+
+*it.Translation RedAndBlackPrinting/Stampa file intestazione rossa: ""
+*it.RedAndBlackPrinting False/Chiudi: ""
+*it.RedAndBlackPrinting True/Accendi: ""
+
+*it.Translation RbModeCvtThreshold/Soglia: ""
+
+*it.Translation RbModeRedlevel/Rosso: ""
+*it.RbModeRedlevel Level1/Livello 1: ""
+*it.RbModeRedlevel Level2/Livello 2: ""
+*it.RbModeRedlevel Level3/Livello 3: ""
+*it.RbModeRedlevel Level4/Livello 4: ""
+*it.RbModeRedlevel Level5/Livello 5: ""
+
+*it.Translation RbModeBlacklevel/Nero: ""
+*it.RbModeBlacklevel Level1/Livello 1: ""
+*it.RbModeBlacklevel Level2/Livello 2: ""
+*it.RbModeBlacklevel Level3/Livello 3: ""
+*it.RbModeBlacklevel Level4/Livello 4: ""
+*it.RbModeBlacklevel Level5/Livello 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*it.Translation PinPrint/Stampa Sicura: ""
+
+*it.Translation LockedPinPrint/Stampa sicura: ""
+*it.Translation PinNum1/1° carattere della password: ""
+*it.Translation PinNum2/2° carattere della password: ""
+*it.Translation PinNum3/3° carattere della password: ""
+*it.Translation PinNum4/4° carattere della password: ""
+*it.LockedPinPrint False/Chiudi: ""
+*it.LockedPinPrint True/Accendi: ""
+
+*it.Translation TimePrint/Stampa ritardata: ""
+*it.TimePrint False/Chiudi: ""
+*it.TimePrint True/Accendi: ""
+
+*it.Translation PrintTimeH/Ore: ""
+*it.Translation PrintTimeM/Minuti: ""
+
+*it.Translation HoldPrint/Stampa di esempio: ""
+*it.HoldPrint False/Chiudi: ""
+*it.HoldPrint True/Accendi: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*it.Translation ColorGroup/Funzione colore: ""
+
+*it.Translation DocumentType/Tipo di documento: ""
+*it.DocumentType PrinterSetting/Usa impostazioni stampante: ""
+*it.DocumentType Document/Testo: ""
+*it.DocumentType Photo/Immagine: ""
+*it.DocumentType Mixed/Testo e immagine: ""
+
+*it.Translation Cyan/Bilanciamento colore - Ciano: ""
+*it.Cyan PrinterSetting/Usa impostazioni stampante: ""
+*it.Cyan Level1/Livello 1: ""
+*it.Cyan Level2/Livello 2: ""
+*it.Cyan Level3/Livello 3: ""
+*it.Cyan Level4/Livello 4: ""
+*it.Cyan Level5/Livello 5: ""
+
+*it.Translation Magenta/Bilanciamento colore - Magenta: ""
+*it.Magenta PrinterSetting/Usa impostazioni stampante: ""
+*it.Magenta Level1/Livello 1: ""
+*it.Magenta Level2/Livello 2: ""
+*it.Magenta Level3/Livello 3: ""
+*it.Magenta Level4/Livello 4: ""
+*it.Magenta Level5/Livello 5: ""
+
+*it.Translation Yellow/Bilanciamento colore - Giallo: ""
+*it.Yellow PrinterSetting/Usa impostazioni stampante: ""
+*it.Yellow Level1/Livello 1: ""
+*it.Yellow Level2/Livello 2: ""
+*it.Yellow Level3/Livello 3: ""
+*it.Yellow Level4/Livello 4: ""
+*it.Yellow Level5/Livello 5: ""
+
+*it.Translation Black/Bilanciamento colore - Nero: ""
+*it.Black PrinterSetting/Usa impostazioni stampante: ""
+*it.Black Level1/Livello 1: ""
+*it.Black Level2/Livello 2: ""
+*it.Black Level3/Livello 3: ""
+*it.Black Level4/Livello 4: ""
+*it.Black Level5/Livello 5: ""
+
+*it.Translation Saturations/Saturazione RGB: ""
+*it.Saturations PrinterSetting/Usa impostazioni stampante: ""
+*it.Saturations Level1/Livello 1: ""
+*it.Saturations Level2/Livello 2: ""
+*it.Saturations Level3/Livello 3: ""
+*it.Saturations Level4/Livello 4: ""
+*it.Saturations Level5/Livello 5: ""
+
+*it.Translation Contrast/Contrasto RGB: ""
+*it.Contrast PrinterSetting/Usa impostazioni stampante: ""
+*it.Contrast Level1/Livello 1: ""
+*it.Contrast Level2/Livello 2: ""
+*it.Contrast Level3/Livello 3: ""
+*it.Contrast Level4/Livello 4: ""
+*it.Contrast Level5/Livello 5: ""
+
+*it.Translation Lightness/Luminosità RGB: ""
+*it.Lightness PrinterSetting/Usa impostazioni stampante: ""
+*it.Lightness Level1/Livello 1: ""
+*it.Lightness Level2/Livello 2: ""
+*it.Lightness Level3/Livello 3: ""
+*it.Lightness Level4/Livello 4: ""
+*it.Lightness Level5/Livello 5: ""
+
+*it.Translation TonerMode/Risparmio toner: ""
+*it.TonerMode PrinterSetting/Usa impostazioni stampante: ""
+*it.TonerMode False/Chiudi: ""
+*it.TonerMode True/Accendi: ""
+
+*it.Translation Density/Densità: ""
+*it.Density PrinterSetting/Usa impostazioni stampante: ""
+*it.Density Level1/Leggero: ""
+*it.Density Level2/Molto chiaro: ""
+*it.Density Level3/Normale: ""
+*it.Density Level4/Il più scuro: ""
+*it.Density Level5/Scuro: ""
+*% === ColorGroup ===
+
+
+
+
+
+*% === es ===
+*% === InstallableOptions ===
+*es.Translation InstallableOptions/Opción instalable: ""
+
+*es.Translation Tray1/Bandeja opcional 1: ""
+*es.Tray1 Installed/Instalado: ""
+*es.Tray1 NotInstalled/No instalado: ""
+*es.Translation Tray2/Bandeja opcional 2: ""
+*es.Tray2 Installed/Instalado: ""
+*es.Tray2 NotInstalled/No instalado: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*es.Translation General/Estándar:""
+
+*es.Translation PageSize/Tamaño papel: ""
+*es.PageSize A4/A4(210 x 297mm): ""
+*es.PageSize A3/A3(297 x 420 mm): ""
+*es.PageSize B4/JIS B4(257 x 364mm): ""
+*es.PageSize A5/A5(148 x 210mm): ""
+*es.PageSize A6/A6(105 x 148mm): ""
+*es.PageSize JISB5/JIS B5(182 x 257 mm): ""
+*es.PageSize ISOB5/ISO B5(176 x 250 mm): ""
+*es.PageSize 11*17/11 pulgadas ×17 pulgadas (279 x 431,8mm): ""
+*es.PageSize Letter/Carta (216 x 279 mm): ""
+*es.PageSize Legal/Legal (216 x 356 mm): ""
+*es.PageSize Folio/Folio(216 x 330mm): ""
+*es.PageSize Oficio/Oficio(216 x 343mm): ""
+*es.PageSize Executive/Ejecutivo(184 x 267mm): ""
+*es.PageSize Statement/Declaración (139,7 x 216 mm): ""
+*es.PageSize 8K/8K(270 x 390mm): ""
+*es.PageSize 16K/16K(185 x 260mm): ""
+*es.PageSize Com10Envelope/Sobre nº 10 (105 x 241mm): ""
+*es.PageSize EnvMonarch/Sobre Monarca (98 x 191mm): ""
+*es.PageSize EnvC6/Sobre C6 (114,0 x 162,0 mm): ""
+*es.PageSize EnvC5/Sobre C5 (162 x 229 mm): ""
+*es.PageSize EnvDL/Sobre DL (110 x 220 mm): ""
+*es.PageSize DoublePostcardRotated/Postal (148 x 200 mm): ""
+*es.CustomPageSize True/Personalizado: ""
+
+*es.Translation PageRegion/Área de la página: ""
+*es.PageRegion A4/A4(210 x 297mm): ""
+*es.PageRegion A3/A3(297 x 420 mm): ""
+*es.PageRegion B4/JIS B4(257 x 364mm): ""
+*es.PageRegion A5/A5(148 x 210mm): ""
+*es.PageRegion A6/A6(105 x 148mm): ""
+*es.PageRegion JISB5/JIS B5(182 x 257 mm): ""
+*es.PageRegion ISOB5/ISO B5(176 x 250 mm): ""
+*es.PageRegion 11*17/11 pulgadas ×17 pulgadas (279 x 431,8mm): ""
+*es.PageRegion Letter/Carta (216 x 279 mm): ""
+*es.PageRegion Legal/Legal (216 x 356 mm): ""
+*es.PageRegion Folio/Folio(216 x 330mm): ""
+*es.PageRegion Oficio/Oficio(216 x 343mm): ""
+*es.PageRegion Executive/Ejecutivo(184 x 267mm): ""
+*es.PageRegion Statement/Declaración (139,7 x 216 mm): ""
+*es.PageRegion 8K/8K(270 x 390mm): ""
+*es.PageRegion 16K/16K(185 x 260mm): ""
+*es.PageRegion Com10Envelope/Sobre nº 10 (105 x 241mm): ""
+*es.PageRegion EnvMonarch/Sobre Monarca (98 x 191mm): ""
+*es.PageRegion EnvC6/Sobre C6 (114,0 x 162,0 mm): ""
+*es.PageRegion EnvC5/Sobre C5 (162 x 229 mm): ""
+*es.PageRegion EnvDL/Sobre DL (110 x 220 mm): ""
+*es.PageRegion DoublePostcardRotated/Postal (148 x 200 mm): ""
+*es.PageRegion Custom/Personalizado: ""
+
+*es.Translation InputSlot/Origen del papel: ""
+*es.InputSlot AutoSelect/Selección automática: ""
+*es.InputSlot Standard/Bandeja estándar: ""
+*es.InputSlot Tray1/Bandeja opcional 1: ""
+*es.InputSlot Tray2/Bandeja opcional 2: ""
+*es.InputSlot MultiPurposeTray/Bandeja multipropósito: ""
+
+*es.Translation MediaType/Tipo de papel: ""
+*es.MediaType Plain1/Papel simple 1 (70-89 gsm): ""
+*es.MediaType Plain2/Papel normal 2 (90-105gsm): ""
+*es.MediaType Thin/Papel delgado (60-69 gsm): ""
+*es.MediaType Recycled/Papel reciclado (70-89 gsm): ""
+*es.MediaType Thick1/Papel grueso 1 (106-130 gsm): ""
+*es.MediaType Thick2/Papel grueso 2 (131-176 gsm): ""
+*es.MediaType Thick3/Papel grueso 3 (177-216 gsm): ""
+*es.MediaType Envelope/Sobre: ""
+*es.MediaType PostCard/Cartulina (160 gsm): ""
+*es.MediaType Labels/Etiqueta: ""
+
+*es.Translation Duplex/Doble cara: ""
+*es.Duplex DuplexNoTumble/Dúplex Borde Largo: ""
+*es.Duplex DuplexTumble/Dúplex Borde Corto: ""
+*es.Duplex None/Desactivado: ""
+
+*es.Translation Collate/Intercalar: ""
+*es.Collate False/Cerrar: ""
+*es.Collate True/Encender: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*es.Translation PrintoutMode/Modo de salida: ""
+
+*es.Translation ColorModel/Estilo de Color: ""
+*es.ColorModel RGB/Impresión a color: ""
+*es.ColorModel Grayscale/Impresión en blanco y negro: ""
+
+*es.Translation PTResolution/Resolución: ""
+*es.PTResolution 600x600dpi/600dpi: ""
+*es.PTResolution 1200x1200dpi/1200dpi: ""
+
+*es.Translation Booklet/Cuadernillo: ""
+*es.Booklet True/Encender: ""
+*es.Booklet False/Cerrar: ""
+
+*es.Translation BlankSuppress/Saltar páginas en blanco: ""
+*es.BlankSuppress PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.BlankSuppress False/Cerrar: ""
+*es.BlankSuppress True/Encender: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*es.Translation RedHeadSpotColor/Impresión del Archivo de encabezado rojo: ""
+
+*es.Translation RedAndBlackPrinting/Impresión del Archivo de encabezado rojo: ""
+*es.RedAndBlackPrinting False/Cerrar: ""
+*es.RedAndBlackPrinting True/Encender: ""
+
+*es.Translation RbModeCvtThreshold/Umbral: ""
+
+*es.Translation RbModeRedlevel/Rojo: ""
+*es.RbModeRedlevel Level1/Nivel 1: ""
+*es.RbModeRedlevel Level2/Nivel 2: ""
+*es.RbModeRedlevel Level3/Nivel 3: ""
+*es.RbModeRedlevel Level4/Nivel 4: ""
+*es.RbModeRedlevel Level5/Nivel 5: ""
+
+*es.Translation RbModeBlacklevel/Negro: ""
+*es.RbModeBlacklevel Level1/Nivel 1: ""
+*es.RbModeBlacklevel Level2/Nivel 2: ""
+*es.RbModeBlacklevel Level3/Nivel 3: ""
+*es.RbModeBlacklevel Level4/Nivel 4: ""
+*es.RbModeBlacklevel Level5/Nivel 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*es.Translation PinPrint/Impresión segura: ""
+
+*es.Translation LockedPinPrint/Impresión segura: ""
+*es.Translation PinNum1/1er carácter de la contraseña: ""
+*es.Translation PinNum2/2do carácter de la contraseña: ""
+*es.Translation PinNum3/3er carácter de la contraseña: ""
+*es.Translation PinNum4/4to carácter de la contraseña: ""
+*es.LockedPinPrint False/Cerrar: ""
+*es.LockedPinPrint True/Encender: ""
+
+*es.Translation TimePrint/Impresión retardada: ""
+*es.TimePrint False/Cerrar: ""
+*es.TimePrint True/Encender: ""
+
+*es.Translation PrintTimeH/Hora: ""
+*es.Translation PrintTimeM/Minuto: ""
+
+*es.Translation HoldPrint/Impresión de muestra: ""
+*es.HoldPrint False/Cerrar: ""
+*es.HoldPrint True/Encender: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*es.Translation ColorGroup/Función de Color: ""
+
+*es.Translation DocumentType/Tipo de documento: ""
+*es.DocumentType PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.DocumentType Document/Texto: ""
+*es.DocumentType Photo/Imagen: ""
+*es.DocumentType Mixed/Texto e imagen: ""
+
+*es.Translation Cyan/Balance de Color - Cian: ""
+*es.Cyan PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Cyan Level1/Nivel 1: ""
+*es.Cyan Level2/Nivel 2: ""
+*es.Cyan Level3/Nivel 3: ""
+*es.Cyan Level4/Nivel 4: ""
+*es.Cyan Level5/Nivel 5: ""
+
+*es.Translation Magenta/Balance de Color - Magenta: ""
+*es.Magenta PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Magenta Level1/Nivel 1: ""
+*es.Magenta Level2/Nivel 2: ""
+*es.Magenta Level3/Nivel 3: ""
+*es.Magenta Level4/Nivel 4: ""
+*es.Magenta Level5/Nivel 5: ""
+
+*es.Translation Yellow/Balance de Color - Amarillo: ""
+*es.Yellow PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Yellow Level1/Nivel 1: ""
+*es.Yellow Level2/Nivel 2: ""
+*es.Yellow Level3/Nivel 3: ""
+*es.Yellow Level4/Nivel 4: ""
+*es.Yellow Level5/Nivel 5: ""
+
+*es.Translation Black/Balance de Color - Negro: ""
+*es.Black PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Black Level1/Nivel 1: ""
+*es.Black Level2/Nivel 2: ""
+*es.Black Level3/Nivel 3: ""
+*es.Black Level4/Nivel 4: ""
+*es.Black Level5/Nivel 5: ""
+
+*es.Translation Saturations/Saturación RGB: ""
+*es.Saturations PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Saturations Level1/Nivel 1: ""
+*es.Saturations Level2/Nivel 2: ""
+*es.Saturations Level3/Nivel 3: ""
+*es.Saturations Level4/Nivel 4: ""
+*es.Saturations Level5/Nivel 5: ""
+
+*es.Translation Contrast/Contraste RGB: ""
+*es.Contrast PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Contrast Level1/Nivel 1: ""
+*es.Contrast Level2/Nivel 2: ""
+*es.Contrast Level3/Nivel 3: ""
+*es.Contrast Level4/Nivel 4: ""
+*es.Contrast Level5/Nivel 5: ""
+
+*es.Translation Lightness/Brillo RGB: ""
+*es.Lightness PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Lightness Level1/Nivel 1: ""
+*es.Lightness Level2/Nivel 2: ""
+*es.Lightness Level3/Nivel 3: ""
+*es.Lightness Level4/Nivel 4: ""
+*es.Lightness Level5/Nivel 5: ""
+
+*es.Translation TonerMode/Ahorro tóner: ""
+*es.TonerMode PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.TonerMode False/Cerrar: ""
+*es.TonerMode True/Encender: ""
+
+*es.Translation Density/Densidad: ""
+*es.Density PrinterSetting/Utilice las configuraciones de la impresora: ""
+*es.Density Level1/Claro: ""
+*es.Density Level2/La más clara: ""
+*es.Density Level3/Normal: ""
+*es.Density Level4/La más oscura: ""
+*es.Density Level5/Oscuro: ""
+*% === ColorGroup ===
+
+
+
+
+
+*% === pl ===
+*% === InstallableOptions ===
+*pl.Translation InstallableOptions/Opcja do instalacji: ""
+
+*pl.Translation Tray1/Podajnik opcjonalny 1: ""
+*pl.Tray1 Installed/Zainstalowano: ""
+*pl.Tray1 NotInstalled/Nie zainstalowano: ""
+*pl.Translation Tray2/Podajnik opcjonalny 2: ""
+*pl.Tray2 Installed/Zainstalowano: ""
+*pl.Tray2 NotInstalled/Nie zainstalowano: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*pl.Translation General/Standardowy:""
+
+*pl.Translation PageSize/Rozmiar papieru: ""
+*pl.PageSize A4/A4 (210 x 297 mm): ""
+*pl.PageSize A3/A3 (297 x 420 mm): ""
+*pl.PageSize B4/JIS B4 (257 x 364 mm): ""
+*pl.PageSize A5/A5 (148 x 210 mm): ""
+*pl.PageSize A6/A6 (105 x 148 mm): ""
+*pl.PageSize JISB5/JIS B5 (182 x 257 mm): ""
+*pl.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*pl.PageSize 11*17/11"×17"(279 x 431,8mm): ""
+*pl.PageSize Letter/Letter (216 x 279 mm): ""
+*pl.PageSize Legal/Legal (216 x 356 mm): ""
+*pl.PageSize Folio/Folio (216 x 330 mm): ""
+*pl.PageSize Oficio/Oficio (216 x 343 mm): ""
+*pl.PageSize Executive/Executive (184 x 267 mm): ""
+*pl.PageSize Statement/Statement (139,7 x 216 mm): ""
+*pl.PageSize 8K/8K (270 x 390 mm): ""
+*pl.PageSize 16K/16K (185 x 260 mm): ""
+*pl.PageSize Com10Envelope/Koperta nr 10 (105 x 241 mm): ""
+*pl.PageSize EnvMonarch/Koperta Monarch (98 x 191 mm): ""
+*pl.PageSize EnvC6/Koperta C6 (114,0 x 162,0 mm): ""
+*pl.PageSize EnvC5/Koperta C5 (162 x 229 mm): ""
+*pl.PageSize EnvDL/Koperta DL (110 x 220 mm): ""
+*pl.PageSize DoublePostcardRotated/Pocztówka (148 x 200 mm): ""
+*pl.CustomPageSize True/Dostosuj: ""
+
+*pl.Translation PageRegion/Obszar strony: ""
+*pl.PageRegion A4/A4 (210 x 297 mm): ""
+*pl.PageRegion A3/A3 (297 x 420 mm): ""
+*pl.PageRegion B4/JIS B4 (257 x 364 mm): ""
+*pl.PageRegion A5/A5 (148 x 210 mm): ""
+*pl.PageRegion A6/A6 (105 x 148 mm): ""
+*pl.PageRegion JISB5/JIS B5 (182 x 257 mm): ""
+*pl.PageRegion ISOB5/ISO B5 (176 x 250 mm): ""
+*pl.PageRegion 11*17/11"×17"(279 x 431,8mm): ""
+*pl.PageRegion Letter/Letter (216 x 279 mm): ""
+*pl.PageRegion Legal/Legal (216 x 356 mm): ""
+*pl.PageRegion Folio/Folio (216 x 330 mm): ""
+*pl.PageRegion Oficio/Oficio (216 x 343 mm): ""
+*pl.PageRegion Executive/Executive (184 x 267 mm): ""
+*pl.PageRegion Statement/Statement (139,7 x 216 mm): ""
+*pl.PageRegion 8K/8K (270 x 390 mm): ""
+*pl.PageRegion 16K/16K (185 x 260 mm): ""
+*pl.PageRegion Com10Envelope/Koperta nr 10 (105 x 241 mm): ""
+*pl.PageRegion EnvMonarch/Koperta Monarch (98 x 191 mm): ""
+*pl.PageRegion EnvC6/Koperta C6 (114,0 x 162,0 mm): ""
+*pl.PageRegion EnvC5/Koperta C5 (162 x 229 mm): ""
+*pl.PageRegion EnvDL/Koperta DL (110 x 220 mm): ""
+*pl.PageRegion DoublePostcardRotated/Pocztówka (148 x 200 mm): ""
+*pl.PageRegion Custom/Dostosuj: ""
+
+*pl.Translation InputSlot/Źródło papieru: ""
+*pl.InputSlot AutoSelect/Wybór automatyczny: ""
+*pl.InputSlot Standard/Podajnik standardowy: ""
+*pl.InputSlot Tray1/Podajnik opcjonalny 1: ""
+*pl.InputSlot Tray2/Podajnik opcjonalny 2: ""
+*pl.InputSlot MultiPurposeTray/Podajnik uniwersalny: ""
+
+*pl.Translation MediaType/Typ papieru: ""
+*pl.MediaType Plain1/Zwykły papier 1 (70-89 g/m²): ""
+*pl.MediaType Plain2/Zwykły papier 2 (90-105 g/m²): ""
+*pl.MediaType Thin/Cienki papier (60-69 g/m²): ""
+*pl.MediaType Recycled/Papier z recyklingu (70-89 g/m²): ""
+*pl.MediaType Thick1/Gruby papier 1 (106-130 g/m²): ""
+*pl.MediaType Thick2/Gruby papier 2 (131-176 g/m²): ""
+*pl.MediaType Thick3/Gruby papier 3 (177-216 g/m²): ""
+*pl.MediaType Envelope/Koperta: ""
+*pl.MediaType PostCard/Pojemność karty (160 g/m²): ""
+*pl.MediaType Labels/Etykieta: ""
+
+*pl.Translation Duplex/Druk na obu stronach: ""
+*pl.Duplex DuplexNoTumble/Drukowanie dwustronne - długa krawędź: ""
+*pl.Duplex DuplexTumble/Drukowanie dwustronne - krótka krawędź: ""
+*pl.Duplex None/Brak: ""
+
+*pl.Translation Collate/Sortuj: ""
+*pl.Collate False/Wyłącz: ""
+*pl.Collate True/Włącz: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*pl.Translation PrintoutMode/Tryb wyjścia: ""
+
+*pl.Translation ColorModel/Styl kolorów: ""
+*pl.ColorModel RGB/Wydruk w kolorze: ""
+*pl.ColorModel Grayscale/Drukowanie czarno - białe: ""
+
+*pl.Translation PTResolution/Rozdzielczość: ""
+*pl.PTResolution 600x600dpi/600dpi: ""
+*pl.PTResolution 1200x1200dpi/1200dpi: ""
+
+*pl.Translation Booklet/Broszura: ""
+*pl.Booklet True/Włącz: ""
+*pl.Booklet False/Wyłącz: ""
+
+*pl.Translation BlankSuppress/Pomiń puste strony: ""
+*pl.BlankSuppress PrinterSetting/Używaj ustawień drukarki: ""
+*pl.BlankSuppress False/Wyłącz: ""
+*pl.BlankSuppress True/Włącz: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*pl.Translation RedHeadSpotColor/Drukowanie pliku nagłówka czerwonego: ""
+
+*pl.Translation RedAndBlackPrinting/Drukowanie pliku nagłówka czerwonego: ""
+*pl.RedAndBlackPrinting False/Wyłącz: ""
+*pl.RedAndBlackPrinting True/Włącz: ""
+
+*pl.Translation RbModeCvtThreshold/Progi: ""
+
+*pl.Translation RbModeRedlevel/Czerwony: ""
+*pl.RbModeRedlevel Level1/Poziom 1: ""
+*pl.RbModeRedlevel Level2/Poziom 2: ""
+*pl.RbModeRedlevel Level3/Poziom 3: ""
+*pl.RbModeRedlevel Level4/Poziom 4: ""
+*pl.RbModeRedlevel Level5/Poziom 5: ""
+
+*pl.Translation RbModeBlacklevel/Czarny: ""
+*pl.RbModeBlacklevel Level1/Poziom 1: ""
+*pl.RbModeBlacklevel Level2/Poziom 2: ""
+*pl.RbModeBlacklevel Level3/Poziom 3: ""
+*pl.RbModeBlacklevel Level4/Poziom 4: ""
+*pl.RbModeBlacklevel Level5/Poziom 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*pl.Translation PinPrint/Bezpieczne drukowanie: ""
+
+*pl.Translation LockedPinPrint/Bezpieczne drukowanie: ""
+*pl.Translation PinNum1/Pierwszy znak hasła: ""
+*pl.Translation PinNum2/Drugi znak hasła: ""
+*pl.Translation PinNum3/Trzeci znak hasła: ""
+*pl.Translation PinNum4/Czwarty znak hasła: ""
+*pl.LockedPinPrint False/Wyłącz: ""
+*pl.LockedPinPrint True/Włącz: ""
+
+*pl.Translation TimePrint/Drukowanie opóźnione: ""
+*pl.TimePrint False/Wyłącz: ""
+*pl.TimePrint True/Włącz: ""
+
+*pl.Translation PrintTimeH/Godzina: ""
+*pl.Translation PrintTimeM/Minuta: ""
+
+*pl.Translation HoldPrint/Drukowanie próbne: ""
+*pl.HoldPrint False/Wyłącz: ""
+*pl.HoldPrint True/Włącz: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*pl.Translation ColorGroup/Funkcja kolorów: ""
+
+*pl.Translation DocumentType/Rodzaj dokumentu: ""
+*pl.DocumentType PrinterSetting/Używaj ustawień drukarki: ""
+*pl.DocumentType Document/Tekst: ""
+*pl.DocumentType Photo/Obraz: ""
+*pl.DocumentType Mixed/Tekst i obraz: ""
+
+*pl.Translation Cyan/Balans kolorów - cyjan: ""
+*pl.Cyan PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Cyan Level1/Poziom 1: ""
+*pl.Cyan Level2/Poziom 2: ""
+*pl.Cyan Level3/Poziom 3: ""
+*pl.Cyan Level4/Poziom 4: ""
+*pl.Cyan Level5/Poziom 5: ""
+
+*pl.Translation Magenta/Balans kolorów - magenta: ""
+*pl.Magenta PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Magenta Level1/Poziom 1: ""
+*pl.Magenta Level2/Poziom 2: ""
+*pl.Magenta Level3/Poziom 3: ""
+*pl.Magenta Level4/Poziom 4: ""
+*pl.Magenta Level5/Poziom 5: ""
+
+*pl.Translation Yellow/Balans kolorów - żółty: ""
+*pl.Yellow PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Yellow Level1/Poziom 1: ""
+*pl.Yellow Level2/Poziom 2: ""
+*pl.Yellow Level3/Poziom 3: ""
+*pl.Yellow Level4/Poziom 4: ""
+*pl.Yellow Level5/Poziom 5: ""
+
+*pl.Translation Black/Balans kolorów - czarny: ""
+*pl.Black PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Black Level1/Poziom 1: ""
+*pl.Black Level2/Poziom 2: ""
+*pl.Black Level3/Poziom 3: ""
+*pl.Black Level4/Poziom 4: ""
+*pl.Black Level5/Poziom 5: ""
+
+*pl.Translation Saturations/Nasycenie RGB: ""
+*pl.Saturations PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Saturations Level1/Poziom 1: ""
+*pl.Saturations Level2/Poziom 2: ""
+*pl.Saturations Level3/Poziom 3: ""
+*pl.Saturations Level4/Poziom 4: ""
+*pl.Saturations Level5/Poziom 5: ""
+
+*pl.Translation Contrast/Kontrast RGB: ""
+*pl.Contrast PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Contrast Level1/Poziom 1: ""
+*pl.Contrast Level2/Poziom 2: ""
+*pl.Contrast Level3/Poziom 3: ""
+*pl.Contrast Level4/Poziom 4: ""
+*pl.Contrast Level5/Poziom 5: ""
+
+*pl.Translation Lightness/Jaskrawość RGB: ""
+*pl.Lightness PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Lightness Level1/Poziom 1: ""
+*pl.Lightness Level2/Poziom 2: ""
+*pl.Lightness Level3/Poziom 3: ""
+*pl.Lightness Level4/Poziom 4: ""
+*pl.Lightness Level5/Poziom 5: ""
+
+*pl.Translation TonerMode/Oszczędzanie tonera: ""
+*pl.TonerMode PrinterSetting/Używaj ustawień drukarki: ""
+*pl.TonerMode False/Wyłącz: ""
+*pl.TonerMode True/Włącz: ""
+
+*pl.Translation Density/Nasycenie: ""
+*pl.Density PrinterSetting/Używaj ustawień drukarki: ""
+*pl.Density Level1/Jaśniej: ""
+*pl.Density Level2/Zapalniczka: ""
+*pl.Density Level3/Normalny: ""
+*pl.Density Level4/Ciemniejszy: ""
+*pl.Density Level5/Ciemny: ""
+*% === ColorGroup ===
+
+
+
+
+*% === ro ===
+*% === InstallableOptions ===
+*ro.Translation InstallableOptions/Opţiune instalabilă: ""
+
+*ro.Translation Tray1/Tava opțională 1: ""
+*ro.Tray1 Installed/Instalat: ""
+*ro.Tray1 NotInstalled/Neinstalat: ""
+*ro.Translation Tray2/Tava opțională 2: ""
+*ro.Tray2 Installed/Instalat: ""
+*ro.Tray2 NotInstalled/Neinstalat: ""
+
+
+*% === InstallableOptions ===
+
+*% === General ===
+*ro.Translation General/Standard :""
+
+*ro.Translation PageSize/Dimensiune hârtie: ""
+*ro.PageSize A4/A4(210 x 297mm): ""
+*ro.PageSize A3/A3(297 x 420mm): ""
+*ro.PageSize B4/JIS B4(257 x 364mm): ""
+*ro.PageSize A5/A5(148 x 210mm): ""
+*ro.PageSize A6/A6(105 x 148mm): ""
+*ro.PageSize JISB5/JIS B5(182 x 257mm): ""
+*ro.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*ro.PageSize 11*17/11"×17"(279 x 431,8mm): ""
+*ro.PageSize Letter/Scrisoare(216 x 279mm): ""
+*ro.PageSize Legal/Legal(216 x 356mm): ""
+*ro.PageSize Folio/Folio(216 x 330mm): ""
+*ro.PageSize Oficio/Oficio(216 x 343mm): ""
+*ro.PageSize Executive/Executiv(184 x 267mm): ""
+*ro.PageSize Statement/Declarație(139,7 x 216mm): ""
+*ro.PageSize 8K/8K(270 x 390mm): ""
+*ro.PageSize 16K/16K(185 x 260mm): ""
+*ro.PageSize Com10Envelope/Plic Nr.10 (105 x 241mm): ""
+*ro.PageSize EnvMonarch/Plic Monarh (98 x 191mm): ""
+*ro.PageSize EnvC6/Plic C6 (114,0 x 162,0mm): ""
+*ro.PageSize EnvC5/Plic C5 (162 x 229 mm): ""
+*ro.PageSize EnvDL/Plic DL (110 x 220 mm): ""
+*ro.PageSize DoublePostcardRotated/Carte poștală(148 x 200mm): ""
+*ro.CustomPageSize True/Personalizarea: ""
+
+*ro.Translation PageRegion/Zona paginii: ""
+*ro.PageRegion A4/A4(210 x 297mm): ""
+*ro.PageRegion A3/A3(297 x 420mm): ""
+*ro.PageRegion B4/JIS B4(257 x 364mm): ""
+*ro.PageRegion A5/A5(148 x 210mm): ""
+*ro.PageRegion A6/A6(105 x 148mm): ""
+*ro.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*ro.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*ro.PageRegion 11*17/11"×17"(279 x 431,8mm): ""
+*ro.PageRegion Letter/Scrisoare(216 x 279mm): ""
+*ro.PageRegion Legal/Legal(216 x 356mm): ""
+*ro.PageRegion Folio/Folio(216 x 330mm): ""
+*ro.PageRegion Oficio/Oficio(216 x 343mm): ""
+*ro.PageRegion Executive/Executiv(184 x 267mm): ""
+*ro.PageRegion Statement/Declarație(139,7 x 216mm): ""
+*ro.PageRegion 8K/8K(270 x 390mm): ""
+*ro.PageRegion 16K/16K(185 x 260mm): ""
+*ro.PageRegion Com10Envelope/Plic Nr.10 (105 x 241mm): ""
+*ro.PageRegion EnvMonarch/Plic Monarh (98 x 191mm): ""
+*ro.PageRegion EnvC6/Plic C6 (114,0 x 162,0mm): ""
+*ro.PageRegion EnvC5/Plic C5 (162 x 229 mm): ""
+*ro.PageRegion EnvDL/Plic DL (110 x 220 mm): ""
+*ro.PageRegion DoublePostcardRotated/Carte poștală(148 x 200mm): ""
+*ro.PageRegion Custom/Personalizarea: ""
+
+*ro.Translation InputSlot/Sursa hârtiei: ""
+*ro.InputSlot AutoSelect/Selectare automată: ""
+*ro.InputSlot Standard/Tavă standard : ""
+*ro.InputSlot Tray1/Tava opțională 1: ""
+*ro.InputSlot Tray2/Tava opțională 2: ""
+*ro.InputSlot MultiPurposeTray/Tavă multifuncțională: ""
+
+*ro.Translation MediaType/Tipul hârtiei: ""
+*ro.MediaType Plain1/Hârtie simplă 1 (70-89 g/m²): ""
+*ro.MediaType Plain2/Hârtie simplă 2 (90-105 g/m²): ""
+*ro.MediaType Thin/Hârtie subțire (60-69 g/m²): ""
+*ro.MediaType Recycled/Hârtie reciclată (70-89 g/m²): ""
+*ro.MediaType Thick1/Hârtie Groasă 1 (106-130 g/m²): ""
+*ro.MediaType Thick2/Hârtie Groasă 2 (131-176gsm): ""
+*ro.MediaType Thick3/Hârtie Groasă 3 (177-216gsm): ""
+*ro.MediaType Envelope/Plic : ""
+*ro.MediaType PostCard/Carton (160 g/m²): ""
+*ro.MediaType Labels/Etichetă: ""
+
+*ro.Translation Duplex/Față-verso: ""
+*ro.Duplex DuplexNoTumble/Duplex cu margine lungă: ""
+*ro.Duplex DuplexTumble/Duplex cu margine scurtă: ""
+*ro.Duplex None/Niciuna: ""
+
+*ro.Translation Collate/Colaționarea: ""
+*ro.Collate False/Închide: ""
+*ro.Collate True/Activare : ""
+*% === General ===
+
+*% === PrintoutMode ===
+*ro.Translation PrintoutMode/Mod ieșire: ""
+
+*ro.Translation ColorModel/Stil de culoare: ""
+*ro.ColorModel RGB/Tipărire color: ""
+*ro.ColorModel Grayscale/Tipărire alb-negru: ""
+
+*ro.Translation PTResolution/Rezoluția: ""
+*ro.PTResolution 600x600dpi/600dpi: ""
+*ro.PTResolution 1200x1200dpi/1200dpi: ""
+
+*ro.Translation Booklet/Broșură : ""
+*ro.Booklet True/Activare : ""
+*ro.Booklet False/Închide: ""
+
+*ro.Translation BlankSuppress/Omitere pagini goale : ""
+*ro.BlankSuppress PrinterSetting/Utilizare setări imprimantă: ""
+*ro.BlankSuppress False/Închide: ""
+*ro.BlankSuppress True/Activare : ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*ro.Translation RedHeadSpotColor/Imprimare fișier cu antet roșu: ""
+
+*ro.Translation RedAndBlackPrinting/Imprimare fișier cu antet roșu: ""
+*ro.RedAndBlackPrinting False/Închide: ""
+*ro.RedAndBlackPrinting True/Activare : ""
+
+*ro.Translation RbModeCvtThreshold/Limită: ""
+
+*ro.Translation RbModeRedlevel/Roșu: ""
+*ro.RbModeRedlevel Level1/Nivel 1: ""
+*ro.RbModeRedlevel Level2/Nivel 2: ""
+*ro.RbModeRedlevel Level3/Nivel 3: ""
+*ro.RbModeRedlevel Level4/Nivel 4: ""
+*ro.RbModeRedlevel Level5/Nivel 5: ""
+
+*ro.Translation RbModeBlacklevel/Negru: ""
+*ro.RbModeBlacklevel Level1/Nivel 1: ""
+*ro.RbModeBlacklevel Level2/Nivel 2: ""
+*ro.RbModeBlacklevel Level3/Nivel 3: ""
+*ro.RbModeBlacklevel Level4/Nivel 4: ""
+*ro.RbModeBlacklevel Level5/Nivel 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*ro.Translation PinPrint/Imprimare securizată: ""
+
+*ro.Translation LockedPinPrint/Imprimare securizată: ""
+*ro.Translation PinNum1/Primul caracter al parolei: ""
+*ro.Translation PinNum2/Al doilea caracter al parolei: ""
+*ro.Translation PinNum3/Al treilea caracter al parolei: ""
+*ro.Translation PinNum4/Al patrulea caracter al parolei: ""
+*ro.LockedPinPrint False/Închide: ""
+*ro.LockedPinPrint True/Activare : ""
+
+*ro.Translation TimePrint/Imprimare întârziată: ""
+*ro.TimePrint False/Închide: ""
+*ro.TimePrint True/Activare : ""
+
+*ro.Translation PrintTimeH/Oră : ""
+*ro.Translation PrintTimeM/Minut : ""
+
+*ro.Translation HoldPrint/Imprimare de probă: ""
+*ro.HoldPrint False/Închide: ""
+*ro.HoldPrint True/Activare : ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*ro.Translation ColorGroup/Funcția de culoare: ""
+
+*ro.Translation DocumentType/Tip document: ""
+*ro.DocumentType PrinterSetting/Utilizare setări imprimantă: ""
+*ro.DocumentType Document/Text: ""
+*ro.DocumentType Photo/Imagine: ""
+*ro.DocumentType Mixed/Text și imagine: ""
+
+*ro.Translation Cyan/Echilibru de culoare - Cyan: ""
+*ro.Cyan PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Cyan Level1/Nivel 1: ""
+*ro.Cyan Level2/Nivel 2: ""
+*ro.Cyan Level3/Nivel 3: ""
+*ro.Cyan Level4/Nivel 4: ""
+*ro.Cyan Level5/Nivel 5: ""
+
+*ro.Translation Magenta/Echilibru de culoare - Magenta: ""
+*ro.Magenta PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Magenta Level1/Nivel 1: ""
+*ro.Magenta Level2/Nivel 2: ""
+*ro.Magenta Level3/Nivel 3: ""
+*ro.Magenta Level4/Nivel 4: ""
+*ro.Magenta Level5/Nivel 5: ""
+
+*ro.Translation Yellow/Echilibru de culoare - Galben: ""
+*ro.Yellow PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Yellow Level1/Nivel 1: ""
+*ro.Yellow Level2/Nivel 2: ""
+*ro.Yellow Level3/Nivel 3: ""
+*ro.Yellow Level4/Nivel 4: ""
+*ro.Yellow Level5/Nivel 5: ""
+
+*ro.Translation Black/Echilibru de culoare - Negru: ""
+*ro.Black PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Black Level1/Nivel 1: ""
+*ro.Black Level2/Nivel 2: ""
+*ro.Black Level3/Nivel 3: ""
+*ro.Black Level4/Nivel 4: ""
+*ro.Black Level5/Nivel 5: ""
+
+*ro.Translation Saturations/Saturație RGB: ""
+*ro.Saturations PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Saturations Level1/Nivel 1: ""
+*ro.Saturations Level2/Nivel 2: ""
+*ro.Saturations Level3/Nivel 3: ""
+*ro.Saturations Level4/Nivel 4: ""
+*ro.Saturations Level5/Nivel 5: ""
+
+*ro.Translation Contrast/Contrastul RGB: ""
+*ro.Contrast PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Contrast Level1/Nivel 1: ""
+*ro.Contrast Level2/Nivel 2: ""
+*ro.Contrast Level3/Nivel 3: ""
+*ro.Contrast Level4/Nivel 4: ""
+*ro.Contrast Level5/Nivel 5: ""
+
+*ro.Translation Lightness/Luminozitate RGB: ""
+*ro.Lightness PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Lightness Level1/Nivel 1: ""
+*ro.Lightness Level2/Nivel 2: ""
+*ro.Lightness Level3/Nivel 3: ""
+*ro.Lightness Level4/Nivel 4: ""
+*ro.Lightness Level5/Nivel 5: ""
+
+*ro.Translation TonerMode/Economisirea tonerului: ""
+*ro.TonerMode PrinterSetting/Utilizare setări imprimantă: ""
+*ro.TonerMode False/Închide: ""
+*ro.TonerMode True/Activare : ""
+
+*ro.Translation Density/Densitatea: ""
+*ro.Density PrinterSetting/Utilizare setări imprimantă: ""
+*ro.Density Level1/Deschis: ""
+*ro.Density Level2/Cel mai luminos: ""
+*ro.Density Level3/Normal: ""
+*ro.Density Level4/Cel mai întunecat: ""
+*ro.Density Level5/Închis: ""
+*% === ColorGroup ===
+
+
+
+
+
+*% === Pt ===
+*% === InstallableOptions ===
+*pt.Translation InstallableOptions/Opção instalável: ""
+
+*pt.Translation Tray1/Bandeja opcional 1: ""
+*pt.Tray1 Installed/Instalado: ""
+*pt.Tray1 NotInstalled/Não instalado: ""
+*pt.Translation Tray2/Bandeja opcional 2: ""
+*pt.Tray2 Installed/Instalado: ""
+*pt.Tray2 NotInstalled/Não instalado: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*pt.Translation General/Padrão:""
+
+*pt.Translation PageSize/Tamanho de papel: ""
+*pt.PageSize A4/A4(210 x 297 mm): ""
+*pt.PageSize A3/A3(297 x 420 mm): ""
+*pt.PageSize B4/JIS B4 (257 x 364mm): ""
+*pt.PageSize A5/A5(148 x 210 mm): ""
+*pt.PageSize A6/A6(105 x 148 mm): ""
+*pt.PageSize JISB5/JIS B5 (182 x 257mm): ""
+*pt.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*pt.PageSize 11*17/11 polegadas ×17 polegadas (279 x 431,8mm): ""
+*pt.PageSize Letter/Carta (216 x 279mm): ""
+*pt.PageSize Legal/Legal (216 x 356mm): ""
+*pt.PageSize Folio/Folio (216 x 330mm): ""
+*pt.PageSize Oficio/Ofício (216 x 343mm): ""
+*pt.PageSize Executive/Executivo (184 x 267mm): ""
+*pt.PageSize Statement/Statement(139,7 x 216mm): ""
+*pt.PageSize 8K/8K (270 x 390mm): ""
+*pt.PageSize 16K/16K (185 x 260mm): ""
+*pt.PageSize Com10Envelope/Envelope Nº 10 (105 x 241mm): ""
+*pt.PageSize EnvMonarch/Envelope Monarch (98 x 191mm): ""
+*pt.PageSize EnvC6/Envelope C6 (114,0 x 162,0mm): ""
+*pt.PageSize EnvC5/Envelope C5 (162 x 229mm): ""
+*pt.PageSize EnvDL/Envelope DL (110 x 220mm): ""
+*pt.PageSize DoublePostcardRotated/Cartão Postal (148 x 200mm): ""
+*pt.CustomPageSize True/Personalizado: ""
+
+*pt.Translation PageRegion/Área da página: ""
+*pt.PageRegion A4/A4(210 x 297 mm): ""
+*pt.PageRegion A3/A3(297 x 420 mm): ""
+*pt.PageRegion B4/JIS B4 (257 x 364mm): ""
+*pt.PageRegion A5/A5(148 x 210 mm): ""
+*pt.PageRegion A6/A6(105 x 148 mm): ""
+*pt.PageRegion JISB5/JIS B5 (182 x 257mm): ""
+*pt.PageRegion ISOB5/ISO B5 (176 x 250mm): ""
+*pt.PageRegion 11*17/11 polegadas ×17 polegadas (279 x 431,8mm): ""
+*pt.PageRegion Letter/Carta (216 x 279mm): ""
+*pt.PageRegion Legal/Legal (216 x 356mm): ""
+*pt.PageRegion Folio/Folio (216 x 330mm): ""
+*pt.PageRegion Oficio/Ofício (216 x 343mm): ""
+*pt.PageRegion Executive/Executivo (184 x 267mm): ""
+*pt.PageRegion Statement/Statement(139,7 x 216mm): ""
+*pt.PageRegion 8K/8K (270 x 390mm): ""
+*pt.PageRegion 16K/16K (185 x 260mm): ""
+*pt.PageRegion Com10Envelope/Envelope Nº 10 (105 x 241mm): ""
+*pt.PageRegion EnvMonarch/Envelope Monarch (98 x 191mm): ""
+*pt.PageRegion EnvC6/Envelope C6 (114,0 x 162,0mm): ""
+*pt.PageRegion EnvC5/Envelope C5 (162 x 229mm): ""
+*pt.PageRegion EnvDL/Envelope DL (110 x 220mm): ""
+*pt.PageRegion DoublePostcardRotated/Cartão Postal (148 x 200mm): ""
+*pt.PageRegion Custom/Personalizado: ""
+
+*pt.Translation InputSlot/Origem do Papel: ""
+*pt.InputSlot AutoSelect/Seleção automática: ""
+*pt.InputSlot Standard/Bandeja padrão: ""
+*pt.InputSlot Tray1/Bandeja opcional 1: ""
+*pt.InputSlot Tray2/Bandeja opcional 2: ""
+*pt.InputSlot MultiPurposeTray/Bandeja multifuncional: ""
+
+*pt.Translation MediaType/Tipo de papel: ""
+*pt.MediaType Plain1/Papel Comum 1 (70-89gsm): ""
+*pt.MediaType Plain2/Papel comum 2 (90-105gsm): ""
+*pt.MediaType Thin/Papel Fino (60-69gsm): ""
+*pt.MediaType Recycled/Papel Reciclado (70-89gsm): ""
+*pt.MediaType Thick1/Papel Grosso 1 (106-130gsm): ""
+*pt.MediaType Thick2/Papel Grosso 2 (131-176gsm): ""
+*pt.MediaType Thick3/Papel Grosso 3 (177-216gsm): ""
+*pt.MediaType Envelope/Envelope: ""	
+*pt.MediaType PostCard/Papel cartão (160gsm): ""
+*pt.MediaType Labels/Etiqueta: ""
+
+*pt.Translation Duplex/Duplex: ""
+*pt.Duplex DuplexNoTumble/Borda Grande Frente-e-Verso: ""
+*pt.Duplex DuplexTumble/Borda Pequena Frente-e-Verso: ""
+*pt.Duplex None/Nenhum: ""
+
+*pt.Translation Collate/Agrupar: ""
+*pt.Collate False/Fechar: ""
+*pt.Collate True/Ligar: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*pt.Translation PrintoutMode/Modo de Saída: ""
+
+*pt.Translation ColorModel/Estilo de Cor: ""
+*pt.ColorModel RGB/Impressão colorida: ""
+*pt.ColorModel Grayscale/Impressão em Preto e Branco: ""
+
+*pt.Translation PTResolution/Resolução: ""
+*pt.PTResolution 600x600dpi/600dpi: ""
+*pt.PTResolution 1200x1200dpi/1200dpi: ""
+
+*pt.Translation Booklet/Manual: ""
+*pt.Booklet True/Ligar: ""
+*pt.Booklet False/Fechar: ""
+
+*pt.Translation BlankSuppress/Ignorar páginas em branco: ""
+*pt.BlankSuppress PrinterSetting/Usar Configurações da Impressora: ""
+*pt.BlankSuppress False/Fechar: ""
+*pt.BlankSuppress True/Ligar: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*pt.Translation RedHeadSpotColor/Impressão de Arquivo com Cabeçalho Vermelho: ""
+
+*pt.Translation RedAndBlackPrinting/Impressão de Arquivo com Cabeçalho Vermelho: ""
+*pt.RedAndBlackPrinting False/Fechar: ""
+*pt.RedAndBlackPrinting True/Ligar: ""
+
+*pt.Translation RbModeCvtThreshold/Patamar: ""
+
+*pt.Translation RbModeRedlevel/Vermelho: ""
+*pt.RbModeRedlevel Level1/Nível 1: ""
+*pt.RbModeRedlevel Level2/Nível 2: ""
+*pt.RbModeRedlevel Level3/Nível 3: ""
+*pt.RbModeRedlevel Level4/Nível 4: ""
+*pt.RbModeRedlevel Level5/Nível 5: ""
+
+*pt.Translation RbModeBlacklevel/Preto: ""
+*pt.RbModeBlacklevel Level1/Nível 1: ""
+*pt.RbModeBlacklevel Level2/Nível 2: ""
+*pt.RbModeBlacklevel Level3/Nível 3: ""
+*pt.RbModeBlacklevel Level4/Nível 4: ""
+*pt.RbModeBlacklevel Level5/Nível 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*pt.Translation PinPrint/Impressão Segura: ""
+
+*pt.Translation LockedPinPrint/Impressão segura: ""
+*pt.Translation PinNum1/1º caractere da senha: ""
+*pt.Translation PinNum2/2º caractere da senha: ""
+*pt.Translation PinNum3/3º caractere da senha: ""
+*pt.Translation PinNum4/4º caractere da senha: ""
+*pt.LockedPinPrint False/Fechar: ""
+*pt.LockedPinPrint True/Ligar: ""
+
+*pt.Translation TimePrint/Impressão atrasada: ""
+*pt.TimePrint False/Fechar: ""
+*pt.TimePrint True/Ligar: ""
+
+*pt.Translation PrintTimeH/Hora: ""
+*pt.Translation PrintTimeM/Minuto: ""
+
+*pt.Translation HoldPrint/Impressão de amostra: ""
+*pt.HoldPrint False/Fechar: ""
+*pt.HoldPrint True/Ligar: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*pt.Translation ColorGroup/Função Colorida: ""
+
+*pt.Translation DocumentType/Tipo de Documento: ""
+*pt.DocumentType PrinterSetting/Usar Configurações da Impressora: ""
+*pt.DocumentType Document/Texto: ""
+*pt.DocumentType Photo/Imagem: ""
+*pt.DocumentType Mixed/Texto e Imagem: ""
+
+*pt.Translation Cyan/Equilíbrio de Cor - Ciano: ""
+*pt.Cyan PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Cyan Level1/Nível 1: ""
+*pt.Cyan Level2/Nível 2: ""
+*pt.Cyan Level3/Nível 3: ""
+*pt.Cyan Level4/Nível 4: ""
+*pt.Cyan Level5/Nível 5: ""
+
+*pt.Translation Magenta/Equilíbrio de Cor - Magenta: ""
+*pt.Magenta PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Magenta Level1/Nível 1: ""
+*pt.Magenta Level2/Nível 2: ""
+*pt.Magenta Level3/Nível 3: ""
+*pt.Magenta Level4/Nível 4: ""
+*pt.Magenta Level5/Nível 5: ""
+
+*pt.Translation Yellow/Equilíbrio de Cor - Amarelo: ""
+*pt.Yellow PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Yellow Level1/Nível 1: ""
+*pt.Yellow Level2/Nível 2: ""
+*pt.Yellow Level3/Nível 3: ""
+*pt.Yellow Level4/Nível 4: ""
+*pt.Yellow Level5/Nível 5: ""
+
+*pt.Translation Black/Equilíbrio de Cor - Preto: ""
+*pt.Black PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Black Level1/Nível 1: ""
+*pt.Black Level2/Nível 2: ""
+*pt.Black Level3/Nível 3: ""
+*pt.Black Level4/Nível 4: ""
+*pt.Black Level5/Nível 5: ""
+
+*pt.Translation Saturations/Saturação RGB: ""
+*pt.Saturations PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Saturations Level1/Nível 1: ""
+*pt.Saturations Level2/Nível 2: ""
+*pt.Saturations Level3/Nível 3: ""
+*pt.Saturations Level4/Nível 4: ""
+*pt.Saturations Level5/Nível 5: ""
+
+*pt.Translation Contrast/Contraste RGB: ""
+*pt.Contrast PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Contrast Level1/Nível 1: ""
+*pt.Contrast Level2/Nível 2: ""
+*pt.Contrast Level3/Nível 3: ""
+*pt.Contrast Level4/Nível 4: ""
+*pt.Contrast Level5/Nível 5: ""
+
+*pt.Translation Lightness/Brilho RGB: ""
+*pt.Lightness PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Lightness Level1/Nível 1: ""
+*pt.Lightness Level2/Nível 2: ""
+*pt.Lightness Level3/Nível 3: ""
+*pt.Lightness Level4/Nível 4: ""
+*pt.Lightness Level5/Nível 5: ""
+
+*pt.Translation TonerMode/Poupar tinta: ""
+*pt.TonerMode PrinterSetting/Usar Configurações da Impressora: ""
+*pt.TonerMode False/Fechar: ""
+*pt.TonerMode True/Ligar: ""
+
+*pt.Translation Density/Concentração: ""
+*pt.Density PrinterSetting/Usar Configurações da Impressora: ""
+*pt.Density Level1/Luz: ""
+*pt.Density Level2/Claríssimo: ""
+*pt.Density Level3/Normal: ""
+*pt.Density Level4/Escuríssimo: ""
+*pt.Density Level5/Escuro: ""
+*% === ColorGroup ===
+
+
+
+
+*% === ar ===
+*% === InstallableOptions ===
+*ar.Translation InstallableOptions/خيار قابل للتركيب: ""
+
+*ar.Translation Tray1/الدرج الاختياري 1: ""
+*ar.Tray1 Installed/مركب: ""
+*ar.Tray1 NotInstalled/غير مركب: ""
+*ar.Translation Tray2/الدرج الاختياري 2: ""
+*ar.Tray2 Installed/مركب: ""
+*ar.Tray2 NotInstalled/غير مركب: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*ar.Translation General/قياسي:""
+
+*ar.Translation PageSize/حجم الورقة: ""
+*ar.PageSize A4/ (210 x 297 ملم) A4: ""
+*ar.PageSize A3/(297 x 420) ملم A3: ""
+*ar.PageSize B4/  (257 x 364 ملم) JIS B4: ""
+*ar.PageSize A5/(148 x 210) ملم A5: ""
+*ar.PageSize A6/(105 x 148) ملم A6: ""
+*ar.PageSize JISB5/  (182 x 257 ملم) JIS B5: ""
+*ar.PageSize ISOB5/  (176 x 250) ملم ISO B5: ""
+*ar.PageSize 11*17/ (279 x 431.8 ملم) 11"×17": ""
+*ar.PageSize Letter/ (216 x 279 ملم) Letter: ""
+*ar.PageSize Legal/ (216 x 356 ملم) Legal: ""
+*ar.PageSize Folio/ (216 x 330 ملم) Folio: ""
+*ar.PageSize Oficio/ (216 x 343 ملم) Oficio: ""
+*ar.PageSize Executive/ (184 x 267 ملم) Executive: ""
+*ar.PageSize Statement/ (139.7 x 216 ملم) Statement: ""
+*ar.PageSize 8K/(270 x 390 ملم) 8K: ""
+*ar.PageSize 16K/(185 x 260 ملم) 16K: ""
+*ar.PageSize Com10Envelope/(105 x 241 ملم) مغلف رقم 10: ""
+*ar.PageSize EnvMonarch/(98 x 191 ملم) مغلف مونراش: ""
+*ar.PageSize EnvC6/(114.0 x 162.0 ملم) مغلف C6: ""
+*ar.PageSize EnvC5/(162 x 229 ملم) مغلف C5: ""
+*ar.PageSize EnvDL/(110 x 220 ملم) مغلف DL: ""
+*ar.PageSize DoublePostcardRotated/بطاقة بريدية (148 × 200 ملم): ""
+*ar.CustomPageSize True/مخصص: ""
+
+*ar.Translation PageRegion/منطقة الصفحة: ""
+*ar.PageRegion A4/ (210 x 297 ملم) A4: ""
+*ar.PageRegion A3/(297 x 420) ملم A3: ""
+*ar.PageRegion B4/  (257 x 364 ملم) JIS B4: ""
+*ar.PageRegion A5/(148 x 210) ملم A5: ""
+*ar.PageRegion A6/(105 x 148) ملم A6: ""
+*ar.PageRegion JISB5/  (182 x 257 ملم) JIS B5: ""
+*ar.PageRegion ISOB5/  (176 x 250) ملم ISO B5: ""
+*ar.PageRegion 11*17/ (279 x 431.8 ملم) 11"×17": ""
+*ar.PageRegion Letter/ (216 x 279 ملم) Letter: ""
+*ar.PageRegion Legal/ (216 x 356 ملم) Legal: ""
+*ar.PageRegion Folio/ (216 x 330 ملم) Folio: ""
+*ar.PageRegion Oficio/ (216 x 343 ملم) Oficio: ""
+*ar.PageRegion Executive/ (184 x 267 ملم) Executive: ""
+*ar.PageRegion Statement/ (139.7 x 216 ملم) Statement: ""
+*ar.PageRegion 8K/(270 x 390 ملم) 8K: ""
+*ar.PageRegion 16K/(185 x 260 ملم) 16K: ""
+*ar.PageRegion Com10Envelope/(105 x 241 ملم) مغلف رقم 10: ""
+*ar.PageRegion EnvMonarch/(98 x 191 ملم) مغلف مونراش: ""
+*ar.PageRegion EnvC6/(114.0 x 162.0 ملم) مغلف C6: ""
+*ar.PageRegion EnvC5/(162 x 229 ملم) مغلف C5: ""
+*ar.PageRegion EnvDL/(110 x 220 ملم) مغلف DL: ""
+*ar.PageRegion DoublePostcardRotated/بطاقة بريدية (148 × 200 ملم): ""
+*ar.PageRegion Custom/مخصص: ""
+
+*ar.Translation InputSlot/مصدر الورق: ""
+*ar.InputSlot AutoSelect/تحديد تلقائي: ""
+*ar.InputSlot Standard/الدرج القياسي: ""
+*ar.InputSlot Tray1/الدرج الاختياري 1: ""
+*ar.InputSlot Tray2/الدرج الاختياري 2: ""
+*ar.InputSlot MultiPurposeTray/الدرج متعدد الأغراض: ""
+
+*ar.Translation MediaType/نوع الورق: ""
+*ar.MediaType Plain1/ورق عادي  1 (70-89 غم لكل متر مربع): ""
+*ar.MediaType Plain2/ورق عادي 2 (90-105 غم لكل متر مربع): ""
+*ar.MediaType Thin/ورق رقيق (60-69 غم لكل متر مربع): ""
+*ar.MediaType Recycled/ورق معاد تدويره (70- 89 غم لكل متر مربع): ""
+*ar.MediaType Thick1/ورق سميك 1 (106-130 غم لكل متر مربع): ""
+*ar.MediaType Thick2/ورق سميك 2 (131-176 غم لكل متر مربع): ""
+*ar.MediaType Thick3/ورق سميك 3 (177-216 غم لكل متر مربع): ""
+*ar.MediaType Envelope/مغلف: ""	
+*ar.MediaType PostCard/مجموعة بطاقات (160 غم لكل متر مربع): ""
+*ar.MediaType Labels/ملصق: ""
+
+*ar.Translation Duplex/طباعة على الوجهين: ""
+*ar.Duplex DuplexNoTumble/على الوجهين بحافة طويلة: ""
+*ar.Duplex DuplexTumble/على الوجهين بحافة قصيرة: ""
+*ar.Duplex None/لا: ""
+
+*ar.Translation Collate/ترتيب: ""
+*ar.Collate False/اغلق: ""
+*ar.Collate True/التشغيل: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*ar.Translation PrintoutMode/وضع الإخراج: ""
+
+*ar.Translation ColorModel/النمط الملون: ""
+*ar.ColorModel RGB/طباعة ملونة: ""
+*ar.ColorModel Grayscale/طباعة بالأبيض والأسود: ""
+
+*ar.Translation PTResolution/القرار: ""
+*ar.PTResolution 600x600dpi/600dpi: ""
+*ar.PTResolution 1200x1200dpi/1200dpi: ""
+
+*ar.Translation Booklet/كتيب: ""
+*ar.Booklet True/التشغيل: ""
+*ar.Booklet False/اغلق: ""
+
+*ar.Translation BlankSuppress/تخطي الصفحات الفارغة: ""
+*ar.BlankSuppress PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.BlankSuppress False/اغلق: ""
+*ar.BlankSuppress True/التشغيل: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*ar.Translation RedHeadSpotColor/طباعة ملف رأس أحمر: ""
+
+*ar.Translation RedAndBlackPrinting/طباعة ملف رأس أحمر: ""
+*ar.RedAndBlackPrinting False/اغلق: ""
+*ar.RedAndBlackPrinting True/التشغيل: ""
+
+*ar.Translation RbModeCvtThreshold/العتبة: ""
+
+*ar.Translation RbModeRedlevel/الأحمر: ""
+*ar.RbModeRedlevel Level1/المستوى 1: ""
+*ar.RbModeRedlevel Level2/المستوى 2: ""
+*ar.RbModeRedlevel Level3/المستوى 3: ""
+*ar.RbModeRedlevel Level4/المستوى 4: ""
+*ar.RbModeRedlevel Level5/المستوى 5: ""
+
+*ar.Translation RbModeBlacklevel/أسود: ""
+*ar.RbModeBlacklevel Level1/المستوى 1: ""
+*ar.RbModeBlacklevel Level2/المستوى 2: ""
+*ar.RbModeBlacklevel Level3/المستوى 3: ""
+*ar.RbModeBlacklevel Level4/المستوى 4: ""
+*ar.RbModeBlacklevel Level5/المستوى 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*ar.Translation PinPrint/طباعة آمنة: ""
+
+*ar.Translation LockedPinPrint/طباعة آمنة: ""
+*ar.Translation PinNum1/الحرف الأول من كلمة المرور: ""
+*ar.Translation PinNum2/الحرف الثاني من كلمة المرور: ""
+*ar.Translation PinNum3/الحرف الثالث من كلمة المرور: ""
+*ar.Translation PinNum4/الحرف الرابع من كلمة المرور: ""
+*ar.LockedPinPrint False/اغلق: ""
+*ar.LockedPinPrint True/التشغيل: ""
+
+*ar.Translation TimePrint/الطباعة المتأخرة: ""
+*ar.TimePrint False/اغلق: ""
+*ar.TimePrint True/التشغيل: ""
+
+*ar.Translation PrintTimeH/ساعة: ""
+*ar.Translation PrintTimeM/دقيقة: ""
+
+*ar.Translation HoldPrint/طباعة العينة: ""
+*ar.HoldPrint False/اغلق: ""
+*ar.HoldPrint True/التشغيل: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*ar.Translation ColorGroup/وظيفة الألوان: ""
+
+*ar.Translation DocumentType/نوع المستند: ""
+*ar.DocumentType PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.DocumentType Document/نص: ""
+*ar.DocumentType Photo/صورة: ""
+*ar.DocumentType Mixed/النص والصورة: ""
+
+*ar.Translation Cyan/توزان اللون - الأزرق السماوي: ""
+*ar.Cyan PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Cyan Level1/المستوى 1: ""
+*ar.Cyan Level2/المستوى 2: ""
+*ar.Cyan Level3/المستوى 3: ""
+*ar.Cyan Level4/المستوى 4: ""
+*ar.Cyan Level5/المستوى 5: ""
+
+*ar.Translation Magenta/توزان اللون - الأرجواني: ""
+*ar.Magenta PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Magenta Level1/المستوى 1: ""
+*ar.Magenta Level2/المستوى 2: ""
+*ar.Magenta Level3/المستوى 3: ""
+*ar.Magenta Level4/المستوى 4: ""
+*ar.Magenta Level5/المستوى 5: ""
+
+*ar.Translation Yellow/توزان اللون - الأصفر: ""
+*ar.Yellow PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Yellow Level1/المستوى 1: ""
+*ar.Yellow Level2/المستوى 2: ""
+*ar.Yellow Level3/المستوى 3: ""
+*ar.Yellow Level4/المستوى 4: ""
+*ar.Yellow Level5/المستوى 5: ""
+
+*ar.Translation Black/توزان اللون - الأسود: ""
+*ar.Black PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Black Level1/المستوى 1: ""
+*ar.Black Level2/المستوى 2: ""
+*ar.Black Level3/المستوى 3: ""
+*ar.Black Level4/المستوى 4: ""
+*ar.Black Level5/المستوى 5: ""
+
+*ar.Translation Saturations/تشبع RGB: ""
+*ar.Saturations PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Saturations Level1/المستوى 1: ""
+*ar.Saturations Level2/المستوى 2: ""
+*ar.Saturations Level3/المستوى 3: ""
+*ar.Saturations Level4/المستوى 4: ""
+*ar.Saturations Level5/المستوى 5: ""
+
+*ar.Translation Contrast/تباين RGB : ""
+*ar.Contrast PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Contrast Level1/المستوى 1: ""
+*ar.Contrast Level2/المستوى 2: ""
+*ar.Contrast Level3/المستوى 3: ""
+*ar.Contrast Level4/المستوى 4: ""
+*ar.Contrast Level5/المستوى 5: ""
+
+*ar.Translation Lightness/سطوع RGB: ""
+*ar.Lightness PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Lightness Level1/المستوى 1: ""
+*ar.Lightness Level2/المستوى 2: ""
+*ar.Lightness Level3/المستوى 3: ""
+*ar.Lightness Level4/المستوى 4: ""
+*ar.Lightness Level5/المستوى 5: ""
+
+*ar.Translation TonerMode/توفير الحبر: ""
+*ar.TonerMode PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.TonerMode False/اغلق: ""
+*ar.TonerMode True/التشغيل: ""
+
+*ar.Translation Density/الكثافة: ""
+*ar.Density PrinterSetting/استخدم إعدادات الطابعة: ""
+*ar.Density Level1/الأخف: ""
+*ar.Density Level2/خفيف: ""
+*ar.Density Level3/عادي: ""
+*ar.Density Level4/الأغمق: ""
+*ar.Density Level5/غامق: ""
+*% === ColorGroup ===
+
+
+
+
+*% === he ===
+*% === InstallableOptions ===
+*he.Translation InstallableOptions/אפשרות להתקנה: ""
+
+*he.Translation Tray1/מגש  אופציונלי1: ""
+*he.Tray1 Installed/מותקן: ""
+*he.Tray1 NotInstalled/לא מותקן: ""
+*he.Translation Tray2/מגש  אופציונלי2: ""
+*he.Tray2 Installed/מותקן: ""
+*he.Tray2 NotInstalled/לא מותקן: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*he.Translation General/סטנדרטי:""
+
+*he.Translation PageSize/גודל נייר: ""
+*he.PageSize A4/(210 x 297 מ"מ) A4: ""
+*he.PageSize A3/(297 x 420 מ"מ) A3: ""
+*he.PageSize B4/(257 x 364 מ"מ) JIS B4: ""
+*he.PageSize A5/(148 x 210 מ"מ) A5: ""
+*he.PageSize A6/(105 x 148 מ"מ) A6: ""
+*he.PageSize JISB5/(182 x 257 מ"מ) JIS B5: ""
+*he.PageSize ISOB5/(176 x 250 מ"מ) ISO B5: ""
+*he.PageSize 11*17/(279 x 431.8 מ"מ) 11 "× 17 ": ""
+*he.PageSize Letter/(216 x 279 מ"מ) מכתב: ""
+*he.PageSize Legal/(216 x 356 מ"מ) חוקי: ""
+*he.PageSize Folio/(216 x 330 מ"מ) פוליו: ""
+*he.PageSize Oficio/(216 x 343 מ"מ) Oficio: ""
+*he.PageSize Executive/(184 x 267 מ"מ) מנהל: ""
+*he.PageSize Statement/(139.7 x 216 מ"מ) הצהרה: ""
+*he.PageSize 8K/(270 x 390 מ"מ) 8K: ""
+*he.PageSize 16K/(185 x 260 מ"מ) 16K: ""
+*he.PageSize Com10Envelope/(105 x 241 מ"מ) מעטפה מס '10: ""
+*he.PageSize EnvMonarch/(98 x 191 מ"מ) מעטפת מונרך: ""
+*he.PageSize EnvC6/(114.0 x 162.0 מ"מ) מעטפה C6: ""
+*he.PageSize EnvC5/(162 x 229 מ"מ) מעטפה C5: ""
+*he.PageSize EnvDL/(110 x 220 מ"מ) מעטפה DL: ""
+*he.PageSize DoublePostcardRotated/גלויה (148 x 200 מ"מ): ""
+*he.CustomPageSize True/הגדרה עצמית: ""
+
+*he.Translation PageRegion/אזור עמוד: ""
+*he.PageRegion A4/(210 x 297 מ"מ) A4: ""
+*he.PageRegion A3/(297 x 420 מ"מ) A3: ""
+*he.PageRegion B4/(257 x 364 מ"מ) JIS B4: ""
+*he.PageRegion A5/(148 x 210 מ"מ) A5: ""
+*he.PageRegion A6/(105 x 148 מ"מ) A6: ""
+*he.PageRegion JISB5/(182 x 257 מ"מ) JIS B5: ""
+*he.PageRegion ISOB5/(176 x 250 מ"מ) ISO B5: ""
+*he.PageRegion 11*17/(279 x 431.8 מ"מ) 11 "× 17 ": ""
+*he.PageRegion Letter/(216 x 279 מ"מ) מכתב: ""
+*he.PageRegion Legal/(216 x 356 מ"מ) חוקי: ""
+*he.PageRegion Folio/(216 x 330 מ"מ) פוליו: ""
+*he.PageRegion Oficio/(216 x 343 מ"מ) Oficio: ""
+*he.PageRegion Executive/(184 x 267 מ"מ) מנהל: ""
+*he.PageRegion Statement/(139.7 x 216 מ"מ) הצהרה: ""
+*he.PageRegion 8K/(270 x 390 מ"מ) 8K: ""
+*he.PageRegion 16K/(185 x 260 מ"מ) 16K: ""
+*he.PageRegion Com10Envelope/(105 x 241 מ"מ) מעטפה מס '10: ""
+*he.PageRegion EnvMonarch/(98 x 191 מ"מ) מעטפת מונרך: ""
+*he.PageRegion EnvC6/(114.0 x 162.0 מ"מ) מעטפה C6: ""
+*he.PageRegion EnvC5/(162 x 229 מ"מ) מעטפה C5: ""
+*he.PageRegion EnvDL/(110 x 220 מ"מ) מעטפה DL: ""
+*he.PageRegion DoublePostcardRotated/גלויה (148 x 200 מ"מ): ""
+*he.PageRegion Custom/הגדרה עצמית: ""
+
+*he.Translation InputSlot/מקור הנייר: ""
+*he.InputSlot AutoSelect/בחירה אוטומטית: ""
+*he.InputSlot Standard/מגש רגיל: ""
+*he.InputSlot Tray1/מגש  אופציונלי1: ""
+*he.InputSlot Tray2/מגש  אופציונלי2: ""
+*he.InputSlot MultiPurposeTray/מגש רב תכליתי: ""
+
+*he.Translation MediaType/סןג נייר: ""
+*he.MediaType Plain1/נייר רגיל 1 (70-89 גרם): ""
+*he.MediaType Plain2/(90-105 גרם) נייר רגיל 2: ""
+*he.MediaType Thin/נייר דק (60-69 גרם): ""
+*he.MediaType Recycled/נייר ממוחזר (70-89 גרם): ""
+*he.MediaType Thick1/נייר עבה 1 (130-106 גרם): ""
+*he.MediaType Thick2/נייר עבה 2 (176-131 גרם): ""
+*he.MediaType Thick3/נייר עבה 3 (216-177 גרם): ""
+*he.MediaType Envelope/מעטפה: ""
+*he.MediaType PostCard/מלאי כרטיסים (160 גרם): ""
+*he.MediaType Labels/לייבל: ""
+
+*he.Translation Duplex/דו צדדי: ""
+*he.Duplex DuplexNoTumble/דופלקס לונג אדג ': ""
+*he.Duplex DuplexTumble/דופלקס קצה קצר: ""
+*he.Duplex None/ללא: ""
+
+*he.Translation Collate/איסוף: ""
+*he.Collate False/כבוי: ""
+*he.Collate True/הפעל: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*he.Translation PrintoutMode/מצב פלט: ""
+
+*he.Translation ColorModel/סגנון צבע: ""
+*he.ColorModel RGB/הדפסה צבעונית: ""
+*he.ColorModel Grayscale/הדפסה בשחור לבן: ""
+
+*he.Translation PTResolution/:רזולוציה: ""
+*he.PTResolution 600x600dpi/600dpi: ""
+*he.PTResolution 1200x1200dpi/1200dpi: ""
+
+*he.Translation Booklet/חוברת: ""
+*he.Booklet True/הפעל: ""
+*he.Booklet False/כבוי: ""
+
+*he.Translation BlankSuppress/דלג על דפים ריקים: ""
+*he.BlankSuppress PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.BlankSuppress False/כבוי: ""
+*he.BlankSuppress True/הפעל: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*he.Translation RedHeadSpotColor/הדפסת קובץ כותרת אדומה: ""
+
+*he.Translation RedAndBlackPrinting/הדפסת קובץ כותרת אדומה: ""
+*he.RedAndBlackPrinting False/כבוי: ""
+*he.RedAndBlackPrinting True/הפעל: ""
+
+*he.Translation RbModeCvtThreshold/סף: ""
+
+*he.Translation RbModeRedlevel/אדום: ""
+*he.RbModeRedlevel Level1/רמה 1: ""
+*he.RbModeRedlevel Level2/רמה 2: ""
+*he.RbModeRedlevel Level3/רמה 3: ""
+*he.RbModeRedlevel Level4/רמה 4: ""
+*he.RbModeRedlevel Level5/רמה 5: ""
+
+*he.Translation RbModeBlacklevel/שחור: ""
+*he.RbModeBlacklevel Level1/רמה 1: ""
+*he.RbModeBlacklevel Level2/רמה 2: ""
+*he.RbModeBlacklevel Level3/רמה 3: ""
+*he.RbModeBlacklevel Level4/רמה 4: ""
+*he.RbModeBlacklevel Level5/רמה 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*he.Translation PinPrint/הדפסה בטוחה: ""
+
+*he.Translation LockedPinPrint/הדפסה מאובטחת: ""
+*he.Translation PinNum1/תו 1 של הסיסמה: ""
+*he.Translation PinNum2/תו 2 של הסיסמה: ""
+*he.Translation PinNum3/תו 3 של הסיסמה: ""
+*he.Translation PinNum4/תו 4 של הסיסמה: ""
+*he.LockedPinPrint False/כבוי: ""
+*he.LockedPinPrint True/הפעל: ""
+
+*he.Translation TimePrint/הדפסה מושהית: ""
+*he.TimePrint False/כבוי: ""
+*he.TimePrint True/הפעל: ""
+
+*he.Translation PrintTimeH/שעה: ""
+*he.Translation PrintTimeM/דקה: ""
+
+*he.Translation HoldPrint/הדפסה לדוגמה: ""
+*he.HoldPrint False/כבוי: ""
+*he.HoldPrint True/הפעל: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*he.Translation ColorGroup/פונקציית צבע: ""
+
+*he.Translation DocumentType/סוג המסמך: ""
+*he.DocumentType PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.DocumentType Document/טקסט: ""
+*he.DocumentType Photo/תמונה: ""
+*he.DocumentType Mixed/טקסט ותמונה: ""
+
+*he.Translation Cyan/איזון צבעים - ציאן: ""
+*he.Cyan PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Cyan Level1/רמה 1: ""
+*he.Cyan Level2/רמה 2: ""
+*he.Cyan Level3/רמה 3: ""
+*he.Cyan Level4/רמה 4: ""
+*he.Cyan Level5/רמה 5: ""
+
+*he.Translation Magenta/איזון צבע - מגנטה: ""
+*he.Magenta PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Magenta Level1/רמה 1: ""
+*he.Magenta Level2/רמה 2: ""
+*he.Magenta Level3/רמה 3: ""
+*he.Magenta Level4/רמה 4: ""
+*he.Magenta Level5/רמה 5: ""
+
+*he.Translation Yellow/איזון צבע - צהוב: ""
+*he.Yellow PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Yellow Level1/רמה 1: ""
+*he.Yellow Level2/רמה 2: ""
+*he.Yellow Level3/רמה 3: ""
+*he.Yellow Level4/רמה 4: ""
+*he.Yellow Level5/רמה 5: ""
+
+*he.Translation Black/איזון צבעים - שחור: ""
+*he.Black PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Black Level1/רמה 1: ""
+*he.Black Level2/רמה 2: ""
+*he.Black Level3/רמה 3: ""
+*he.Black Level4/רמה 4: ""
+*he.Black Level5/רמה 5: ""
+
+*he.Translation Saturations/רוויה RGB: ""
+*he.Saturations PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Saturations Level1/רמה 1: ""
+*he.Saturations Level2/רמה 2: ""
+*he.Saturations Level3/רמה 3: ""
+*he.Saturations Level4/רמה 4: ""
+*he.Saturations Level5/רמה 5: ""
+
+*he.Translation Contrast/ניגודיות RGB: ""
+*he.Contrast PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Contrast Level1/רמה 1: ""
+*he.Contrast Level2/רמה 2: ""
+*he.Contrast Level3/רמה 3: ""
+*he.Contrast Level4/רמה 4: ""
+*he.Contrast Level5/רמה 5: ""
+
+*he.Translation Lightness/בהירות RGB: ""
+*he.Lightness PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Lightness Level1/רמה 1: ""
+*he.Lightness Level2/רמה 2: ""
+*he.Lightness Level3/רמה 3: ""
+*he.Lightness Level4/רמה 4: ""
+*he.Lightness Level5/רמה 5: ""
+
+*he.Translation TonerMode/שמירת טונר: ""
+*he.TonerMode PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.TonerMode False/כבוי: ""
+*he.TonerMode True/הפעל: ""
+
+*he.Translation Density/צפיפות: ""
+*he.Density PrinterSetting/שימוש בהגדרות מדפסת: ""
+*he.Density Level1/בהיר: ""
+*he.Density Level2/בהיר יותר: ""
+*he.Density Level3/רגיל: ""
+*he.Density Level4/כהה יותר: ""
+*he.Density Level5/כהה: ""
+*% === ColorGroup ===
+
+
+
+
+*% === tr ===
+*% === InstallableOptions ===
+*tr.Translation InstallableOptions/Kurulabilir seçenek: ""
+
+*tr.Translation Tray1/Seçmeli tepsi 1: ""
+*tr.Tray1 Installed/Kurulu: ""
+*tr.Tray1 NotInstalled/Kurulu değil: ""
+
+*tr.Translation Tray2/Seçmeli tepsi 2: ""
+*tr.Tray2 Installed/Kurulu: ""
+*tr.Tray2 NotInstalled/Kurulu değil: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*tr.Translation General/Standart:""
+
+*tr.Translation PageSize/Kağıt Boyutu: ""
+*tr.PageSize A4/A4(210x297mm): ""
+*tr.PageSize A3/A3(297x420mm): ""
+*tr.PageSize B4/JIS B4(257 x 364 mm): ""
+*tr.PageSize A5/A5(148x210mm): ""
+*tr.PageSize A6/A6(105x148mm): ""
+*tr.PageSize JISB5/JIS B5(182 x 257mm): ""
+*tr.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*tr.PageSize 11*17/11"×17"(279 x 431,8mm): ""
+*tr.PageSize Letter/Mektup (216 x 279 mm): ""
+*tr.PageSize Legal/Yasal (216 x 356mm): ""
+*tr.PageSize Folio/Folyo (216 x 330mm): ""
+*tr.PageSize Oficio/Ofis (216 x 343 mm): ""
+*tr.PageSize Executive/Özel (184 x 267 mm): ""
+*tr.PageSize Statement/Çizelge (139,7 x 216 mm): ""
+*tr.PageSize 8K/8K(270x390mm): ""
+*tr.PageSize 16K/16K(185x260mm): ""
+*tr.PageSize Com10Envelope/Zarf No.10 (105 x 241 mm): ""
+*tr.PageSize EnvMonarch/Zarf Monarch (98 x 191 mm): ""
+*tr.PageSize EnvC6/Zarf C6 (114,0 x 162,0 mm): ""
+*tr.PageSize EnvC5/Zarf C5 (162 x 229 mm): ""
+*tr.PageSize EnvDL/Zarf DL (110 x 220 mm): ""
+*tr.PageSize DoublePostcardRotated/Posta Kartı (148 x 200mm): ""
+*tr.CustomPageSize True/Özel: ""
+
+*tr.Translation PageRegion/Sayfa alanı: ""
+*tr.PageRegion A4/A4(210x297mm): ""
+*tr.PageRegion A3/A3(297x420mm): ""
+*tr.PageRegion B4/JIS B4(257 x 364 mm): ""
+*tr.PageRegion A5/A5(148x210mm): ""
+*tr.PageRegion A6/A6(105x148mm): ""
+*tr.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*tr.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*tr.PageRegion 11*17/11"×17"(279 x 431,8mm): ""
+*tr.PageRegion Letter/Mektup (216 x 279 mm): ""
+*tr.PageRegion Legal/Yasal (216 x 356mm): ""
+*tr.PageRegion Folio/Folyo (216 x 330mm): ""
+*tr.PageRegion Oficio/Ofis (216 x 343 mm): ""
+*tr.PageRegion Executive/Özel (184 x 267 mm): ""
+*tr.PageRegion Statement/Çizelge (139,7 x 216 mm): ""
+*tr.PageRegion 8K/8K(270x390mm): ""
+*tr.PageRegion 16K/16K(185x260mm): ""
+*tr.PageRegion Com10Envelope/Zarf No.10 (105 x 241 mm): ""
+*tr.PageRegion EnvMonarch/Zarf Monarch (98 x 191 mm): ""
+*tr.PageRegion EnvC6/Zarf C6 (114,0 x 162,0 mm): ""
+*tr.PageRegion EnvC5/Zarf C5 (162 x 229 mm): ""
+*tr.PageRegion EnvDL/Zarf DL (110 x 220 mm): ""
+*tr.PageRegion DoublePostcardRotated/Posta Kartı (148 x 200mm): ""
+*tr.PageRegion Custom/Özel: ""
+
+*tr.Translation InputSlot/Kağıt Kaynağı: ""
+*tr.InputSlot AutoSelect/Otomatik Seçim: ""
+*tr.InputSlot Standard/Standart tepsi: ""
+*tr.InputSlot Tray1/Seçmeli tepsi 1: ""
+*tr.InputSlot Tray2/Seçmeli tepsi 2: ""
+*tr.InputSlot MultiPurposeTray/Çok amaçlı tepsi: ""
+
+*tr.Translation MediaType/Kağıt Türü: ""
+*tr.MediaType Plain1/Düz Kağıt 1 (70-89gsm): ""
+*tr.MediaType Plain2/Düz kağıt 2 (90-105gsm): ""
+*tr.MediaType Thin/İnce Kağıt (60-69gsm): ""
+*tr.MediaType Recycled/Geri Dönüştürülmüş Kağıt (70-89gsm): ""
+*tr.MediaType Thick1/Kalın Kağıt 1 (106-130gsm): ""
+*tr.MediaType Thick2/Kalın Kağıt 2 (131-176gsm): ""
+*tr.MediaType Thick3/Kalın Kağıt 3 (177-216gsm): ""
+*tr.MediaType Envelope/Mektup: ""
+*tr.MediaType PostCard/Kart stoğu (160gsm): ""
+*tr.MediaType Labels/Etiket: ""
+
+*tr.Translation Duplex/Çift yönlü: ""
+*tr.Duplex DuplexNoTumble/Çift Taraflı Uzun Kenar: ""
+*tr.Duplex DuplexTumble/Çift Taraflı Kısa Kenar: ""
+*tr.Duplex None/Kapalı: ""
+
+*tr.Translation Collate/Harmanla: ""
+*tr.Collate False/Kapat: ""
+*tr.Collate True/Aç: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*tr.Translation PrintoutMode/Çıkış Modu: ""
+
+*tr.Translation ColorModel/Renk Stili: ""
+*tr.ColorModel RGB/Renkli baskı: ""
+*tr.ColorModel Grayscale/Siyah & beyaz baskı: ""
+
+*tr.Translation PTResolution/Çözünürlük: ""
+*tr.PTResolution 600x600dpi/600dpi: ""
+*tr.PTResolution 1200x1200dpi/1200dpi: ""
+
+*tr.Translation Booklet/Kitapçık: ""
+*tr.Booklet True/Aç: ""
+*tr.Booklet False/Kapat: ""
+
+*tr.Translation BlankSuppress/Boş sayfaları atla: ""
+*tr.BlankSuppress PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.BlankSuppress False/Kapat: ""
+*tr.BlankSuppress True/Aç: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*tr.Translation RedHeadSpotColor/Kırmızı Başlık Dosyası Yazdırma: ""
+
+*tr.Translation RedAndBlackPrinting/Kırmızı Başlık Dosyası Yazdırma: ""
+*tr.RedAndBlackPrinting False/Kapat: ""
+*tr.RedAndBlackPrinting True/Aç: ""
+
+*tr.Translation RbModeCvtThreshold/Eşik: ""
+
+*tr.Translation RbModeRedlevel/Kırmızı: ""
+*tr.RbModeRedlevel Level1/Seviye 1: ""
+*tr.RbModeRedlevel Level2/Seviye 2: ""
+*tr.RbModeRedlevel Level3/Seviye 3: ""
+*tr.RbModeRedlevel Level4/Seviye 4: ""
+*tr.RbModeRedlevel Level5/Seviye 5: ""
+
+*tr.Translation RbModeBlacklevel/Siyah: ""
+*tr.RbModeBlacklevel Level1/Seviye 1: ""
+*tr.RbModeBlacklevel Level2/Seviye 2: ""
+*tr.RbModeBlacklevel Level3/Seviye 3: ""
+*tr.RbModeBlacklevel Level4/Seviye 4: ""
+*tr.RbModeBlacklevel Level5/Seviye 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*tr.Translation PinPrint/Güvenli Yazdır: ""
+
+*tr.Translation LockedPinPrint/Güvenli baskı: ""
+*tr.Translation PinNum1/Şifrenin 1. karakteri: ""
+*tr.Translation PinNum2/Şifrenin 2. karakteri: ""
+*tr.Translation PinNum3/Şifrenin 3. karakteri: ""
+*tr.Translation PinNum4/Şifrenin 4. karakteri: ""
+*tr.LockedPinPrint False/Kapat: ""
+*tr.LockedPinPrint True/Aç: ""
+
+*tr.Translation TimePrint/Gecikmeli yazdırma: ""
+*tr.TimePrint False/Kapat: ""
+*tr.TimePrint True/Aç: ""
+
+*tr.Translation PrintTimeH/Saat: ""
+*tr.Translation PrintTimeM/Dakika: ""
+
+*tr.Translation HoldPrint/Örnek yazdırma: ""
+*tr.HoldPrint False/Kapat: ""
+*tr.HoldPrint True/Aç: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*tr.Translation ColorGroup/Renk Fonksiyonu: ""
+
+*tr.Translation DocumentType/Belge Türü: ""
+*tr.DocumentType PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.DocumentType Document/Metin: ""
+*tr.DocumentType Photo/Görüntü: ""
+*tr.DocumentType Mixed/Metin ve Resim: ""
+
+*tr.Translation Cyan/Renk Dengesi - Camgöbeği: ""
+*tr.Cyan PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Cyan Level1/Seviye 1: ""
+*tr.Cyan Level2/Seviye 2: ""
+*tr.Cyan Level3/Seviye 3: ""
+*tr.Cyan Level4/Seviye 4: ""
+*tr.Cyan Level5/Seviye 5: ""
+
+*tr.Translation Magenta/Renk Dengesi - Galibarda: ""
+*tr.Magenta PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Magenta Level1/Seviye 1: ""
+*tr.Magenta Level2/Seviye 2: ""
+*tr.Magenta Level3/Seviye 3: ""
+*tr.Magenta Level4/Seviye 4: ""
+*tr.Magenta Level5/Seviye 5: ""
+
+*tr.Translation Yellow/Renk Dengesi - Sarı: ""
+*tr.Yellow PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Yellow Level1/Seviye 1: ""
+*tr.Yellow Level2/Seviye 2: ""
+*tr.Yellow Level3/Seviye 3: ""
+*tr.Yellow Level4/Seviye 4: ""
+*tr.Yellow Level5/Seviye 5: ""
+
+*tr.Translation Black/Renk Dengesi - Siyah: ""
+*tr.Black PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Black Level1/Seviye 1: ""
+*tr.Black Level2/Seviye 2: ""
+*tr.Black Level3/Seviye 3: ""
+*tr.Black Level4/Seviye 4: ""
+*tr.Black Level5/Seviye 5: ""
+
+*tr.Translation Saturations/RGB Doygunluğu: ""
+*tr.Saturations PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Saturations Level1/Seviye 1: ""
+*tr.Saturations Level2/Seviye 2: ""
+*tr.Saturations Level3/Seviye 3: ""
+*tr.Saturations Level4/Seviye 4: ""
+*tr.Saturations Level5/Seviye 5: ""
+
+*tr.Translation Contrast/RGB Kontrastı: ""
+*tr.Contrast PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Contrast Level1/Seviye 1: ""
+*tr.Contrast Level2/Seviye 2: ""
+*tr.Contrast Level3/Seviye 3: ""
+*tr.Contrast Level4/Seviye 4: ""
+*tr.Contrast Level5/Seviye 5: ""
+
+*tr.Translation Lightness/RGB Parlaklığı: ""
+*tr.Lightness PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Lightness Level1/Seviye 1: ""
+*tr.Lightness Level2/Seviye 2: ""
+*tr.Lightness Level3/Seviye 3: ""
+*tr.Lightness Level4/Seviye 4: ""
+*tr.Lightness Level5/Seviye 5: ""
+
+*tr.Translation TonerMode/Toner Tasarrufu: ""
+*tr.TonerMode PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.TonerMode False/Kapat: ""
+*tr.TonerMode True/Aç: ""
+
+*tr.Translation Density/Yoğunluk: ""
+*tr.Density PrinterSetting/Yazıcı Ayarlarını Kullanın: ""
+*tr.Density Level1/Açık: ""
+*tr.Density Level2/En açık: ""
+*tr.Density Level3/Normal: ""
+*tr.Density Level4/En koyu: ""
+*tr.Density Level5/Koyu: ""
+*% === ColorGroup ===
+
+
+
+
+*% === el ===
+*% === InstallableOptions ===
+*el.Translation InstallableOptions/Επιλογές με δυνατότητα εγκατάστασης: ""
+
+*el.Translation Tray1/Προαιρετικός δίσκος 1: ""
+*el.Tray1 Installed/Εγκαταστάθηκε: ""
+*el.Tray1 NotInstalled/Δεν έχει εγκατασταθεί: ""
+*el.Translation Tray2/Προαιρετικός δίσκος 2: ""
+*el.Tray2 Installed/Εγκαταστάθηκε: ""
+*el.Tray2 NotInstalled/Δεν έχει εγκατασταθεί: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*el.Translation General/Πρότυπο:""
+
+*el.Translation PageSize/Μέγεθος χαρτιού: ""
+*el.PageSize A4/A4 (210 x 297 mm): ""
+*el.PageSize A3/A3(297 x 420mm): ""
+*el.PageSize B4/JIS B4(257 x 364mm): ""
+*el.PageSize A5/A5(148 x 210mm): ""
+*el.PageSize A6/A6(105 x 148mm): ""
+*el.PageSize JISB5/JIS B5 (182 x 257 mm): ""
+*el.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*el.PageSize 11*17/11"×17"(279 x 431.8mm): ""
+*el.PageSize Letter/Επιστολή (216 x 279 mm): ""
+*el.PageSize Legal/Επιστολή (216 x 356 mm): ""
+*el.PageSize Folio/Φύλο (216 x 330 mm): ""
+*el.PageSize Oficio/Εμπορική επιστολή (216 x 343 mm): ""
+*el.PageSize Executive/Επιχειρηματικό (184 x 267 mm): ""
+*el.PageSize Statement/Λογιστική Κατάσταση (139,7 x 216 mm): ""
+*el.PageSize 8K/8K (270 x 390 mm): ""
+*el.PageSize 16K/16K(185 x 260mm): ""
+*el.PageSize Com10Envelope/Φάκελος Νο. 10 (105 x 241 mm): ""
+*el.PageSize EnvMonarch/Μεγάλος φάκελος εγγράφων (98 x 191 mm): ""
+*el.PageSize EnvC6/Φάκελος C6 (114,0 x 162,0 mm): ""
+*el.PageSize EnvC5/Φάκελος C5 (162 x 229 mm): ""
+*el.PageSize EnvDL/Φάκελος DL (110 x 220mm): ""
+*el.PageSize DoublePostcardRotated/Καρτ ποστάλ (148 × 200mm): ""
+*el.CustomPageSize True/Προσαρμογή: ""
+
+*el.Translation PageRegion/Περιοχή χαρτιού: ""
+*el.PageRegion A4/A4 (210 x 297 mm): ""
+*el.PageRegion A3/A3(297 x 420mm): ""
+*el.PageRegion B4/JIS B4(257 x 364mm): ""
+*el.PageRegion A5/A5(148 x 210mm): ""
+*el.PageRegion A6/A6(105 x 148mm): ""
+*el.PageRegion JISB5/JIS B5 (182 x 257 mm): ""
+*el.PageRegion ISOB5/ISO B5 (176 x 250 mm): ""
+*el.PageRegion 11*17/11"×17"(279 x 431.8mm): ""
+*el.PageRegion Letter/Επιστολή (216 x 279 mm): ""
+*el.PageRegion Legal/Επιστολή (216 x 356 mm): ""
+*el.PageRegion Folio/Φύλο (216 x 330 mm): ""
+*el.PageRegion Oficio/Εμπορική επιστολή (216 x 343 mm): ""
+*el.PageRegion Executive/Επιχειρηματικό (184 x 267 mm): ""
+*el.PageRegion Statement/Λογιστική Κατάσταση (139,7 x 216 mm): ""
+*el.PageRegion 8K/8K (270 x 390 mm): ""
+*el.PageRegion 16K/16K(185 x 260mm): ""
+*el.PageRegion Com10Envelope/Φάκελος Νο. 10 (105 x 241 mm): ""
+*el.PageRegion EnvMonarch/Μεγάλος φάκελος εγγράφων (98 x 191 mm): ""
+*el.PageRegion EnvC6/Φάκελος C6 (114,0 x 162,0 mm): ""
+*el.PageRegion EnvC5/Φάκελος C5 (162 x 229 mm): ""
+*el.PageRegion EnvDL/Φάκελος DL (110 x 220mm): ""
+*el.PageRegion DoublePostcardRotated/Καρτ ποστάλ (148 × 200mm): ""
+*el.PageRegion Custom/Προσαρμογή: ""
+
+*el.Translation InputSlot/Πηγή χαρτιού: ""
+*el.InputSlot AutoSelect/Αυτόματη επιλογή: ""
+*el.InputSlot Standard/Πρότυπος δίσκος: ""
+*el.InputSlot Tray1/Προαιρετικός δίσκος 1: ""
+*el.InputSlot Tray2/Προαιρετικός δίσκος 2: ""
+*el.InputSlot MultiPurposeTray/Δίσκος πολλαπλής χρήσης: ""
+
+*el.Translation MediaType/Τύπος χαρτιού: ""
+*el.MediaType Plain1/Απλό χαρτί 1 (70-89gsm): ""
+*el.MediaType Plain2/Απλό χαρτί 2 (90-105 gsm): ""
+*el.MediaType Thin/Λεπτό χαρτί (60-69gsm): ""
+*el.MediaType Recycled/Ανακυκλωμένο χαρτί (70-89gsm): ""
+*el.MediaType Thick1/Πυκνό χαρτί 1 (106-130 gsm): ""
+*el.MediaType Thick2/Πυκνό χαρτί 2 (131-176gsm): ""
+*el.MediaType Thick3/Πυκνό χαρτί 3 (177-216gsm): ""
+*el.MediaType Envelope/Φάκελος: ""
+*el.MediaType PostCard/Απόθεμα καρτών (160gsm): ""
+*el.MediaType Labels/Ετικέτα: ""
+
+*el.Translation Duplex/Διπλότυπο: ""
+*el.Duplex DuplexNoTumble/Μακριά πλευρά διπλής όψης: ""
+*el.Duplex DuplexTumble/Πλαϊνή πλευρά διπλής όψης: ""
+*el.Duplex None/Κανένα: ""
+
+*el.Translation Collate/Αντιπαραβολή: ""
+*el.Collate False/Κλείσε: ""
+*el.Collate True/Ενεργοποίηση: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*el.Translation PrintoutMode/Λειτουργία εξόδου: ""
+
+*el.Translation ColorModel/Στυλ χρώματος: ""
+*el.ColorModel RGB/Έγχρωμη εκτύπωση: ""
+*el.ColorModel Grayscale/Ασπρόμαυρη εκτύπωση: ""
+
+*el.Translation PTResolution/Ανάλυση: ""
+*el.PTResolution 600x600dpi/600dpi: ""
+*el.PTResolution 1200x1200dpi/1200dpi: ""
+
+*el.Translation Booklet/Φυλλάδιο: ""
+*el.Booklet True/Ενεργοποίηση: ""
+*el.Booklet False/Κλείσε: ""
+
+*el.Translation BlankSuppress/Παράλειψη κενών σελίδων: ""
+*el.BlankSuppress PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.BlankSuppress False/Κλείσε: ""
+*el.BlankSuppress True/Ενεργοποίηση: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*el.Translation RedHeadSpotColor/Εκτύπωση αρχείου κόκκινης κεφαλίδας: ""
+
+*el.Translation RedAndBlackPrinting/Εκτύπωση αρχείου κόκκινης κεφαλίδας: ""
+*el.RedAndBlackPrinting False/Κλείσε: ""
+*el.RedAndBlackPrinting True/Ενεργοποίηση: ""
+
+*el.Translation RbModeCvtThreshold/Κατώφλι: ""
+
+*el.Translation RbModeRedlevel/Κόκκινο : ""
+*el.RbModeRedlevel Level1/Επίπεδο 1: ""
+*el.RbModeRedlevel Level2/Επίπεδο 2: ""
+*el.RbModeRedlevel Level3/Επίπεδο 3: ""
+*el.RbModeRedlevel Level4/Επίπεδο 4: ""
+*el.RbModeRedlevel Level5/Επίπεδο 5: ""
+
+*el.Translation RbModeBlacklevel/Μαύρο: ""
+*el.RbModeBlacklevel Level1/Επίπεδο 1: ""
+*el.RbModeBlacklevel Level2/Επίπεδο 2: ""
+*el.RbModeBlacklevel Level3/Επίπεδο 3: ""
+*el.RbModeBlacklevel Level4/Επίπεδο 4: ""
+*el.RbModeBlacklevel Level5/Επίπεδο 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*el.Translation PinPrint/Εκτύπωση με ασφάλεια: ""
+
+*el.Translation LockedPinPrint/Ασφαλής εκτύπωση: ""
+*el.Translation PinNum1/1ος χαρακτήρας του κωδικού πρόσβασης: ""
+*el.Translation PinNum2/2ος χαρακτήρας του κωδικού πρόσβασης: ""
+*el.Translation PinNum3/3ος χαρακτήρας του κωδικού πρόσβασης: ""
+*el.Translation PinNum4/4ος χαρακτήρας του κωδικού πρόσβασης: ""
+*el.LockedPinPrint False/Κλείσε: ""
+*el.LockedPinPrint True/Ενεργοποίηση: ""
+
+*el.Translation TimePrint/Καθυστερημένη εκτύπωση: ""
+*el.TimePrint False/Κλείσε: ""
+*el.TimePrint True/Ενεργοποίηση: ""
+
+*el.Translation PrintTimeH/Ώρα: ""
+*el.Translation PrintTimeM/Λεπτό: ""
+
+*el.Translation HoldPrint/Εκτύπωση δείγματος: ""
+*el.HoldPrint False/Κλείσε: ""
+*el.HoldPrint True/Ενεργοποίηση: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*el.Translation ColorGroup/Λειτουργία χρώματος: ""
+
+*el.Translation DocumentType/Τύπος εγγράφου: ""
+*el.DocumentType PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.DocumentType Document/Κείμενο: ""
+*el.DocumentType Photo/Εικόνα: ""
+*el.DocumentType Mixed/Κείμενο και εικόνα: ""
+
+*el.Translation Cyan/Ισορροπία χρώματος - Κυανό: ""
+*el.Cyan PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Cyan Level1/Επίπεδο 1: ""
+*el.Cyan Level2/Επίπεδο 2: ""
+*el.Cyan Level3/Επίπεδο 3: ""
+*el.Cyan Level4/Επίπεδο 4: ""
+*el.Cyan Level5/Επίπεδο 5: ""
+
+*el.Translation Magenta/Ισορροπία χρωμάτων - Ματζέντα: ""
+*el.Magenta PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Magenta Level1/Επίπεδο 1: ""
+*el.Magenta Level2/Επίπεδο 2: ""
+*el.Magenta Level3/Επίπεδο 3: ""
+*el.Magenta Level4/Επίπεδο 4: ""
+*el.Magenta Level5/Επίπεδο 5: ""
+
+*el.Translation Yellow/Ισορροπία χρώματος - Κίτρινο: ""
+*el.Yellow PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Yellow Level1/Επίπεδο 1: ""
+*el.Yellow Level2/Επίπεδο 2: ""
+*el.Yellow Level3/Επίπεδο 3: ""
+*el.Yellow Level4/Επίπεδο 4: ""
+*el.Yellow Level5/Επίπεδο 5: ""
+
+*el.Translation Black/Ισορροπία χρωμάτων - Μαύρο: ""
+*el.Black PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Black Level1/Επίπεδο 1: ""
+*el.Black Level2/Επίπεδο 2: ""
+*el.Black Level3/Επίπεδο 3: ""
+*el.Black Level4/Επίπεδο 4: ""
+*el.Black Level5/Επίπεδο 5: ""
+
+*el.Translation Saturations/Κορεσμός RGB: ""
+*el.Saturations PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Saturations Level1/Επίπεδο 1: ""
+*el.Saturations Level2/Επίπεδο 2: ""
+*el.Saturations Level3/Επίπεδο 3: ""
+*el.Saturations Level4/Επίπεδο 4: ""
+*el.Saturations Level5/Επίπεδο 5: ""
+
+*el.Translation Contrast/Αντίθεση RGB: ""
+*el.Contrast PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Contrast Level1/Επίπεδο 1: ""
+*el.Contrast Level2/Επίπεδο 2: ""
+*el.Contrast Level3/Επίπεδο 3: ""
+*el.Contrast Level4/Επίπεδο 4: ""
+*el.Contrast Level5/Επίπεδο 5: ""
+
+*el.Translation Lightness/Φωτεινότητα RGB: ""
+*el.Lightness PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Lightness Level1/Επίπεδο 1: ""
+*el.Lightness Level2/Επίπεδο 2: ""
+*el.Lightness Level3/Επίπεδο 3: ""
+*el.Lightness Level4/Επίπεδο 4: ""
+*el.Lightness Level5/Επίπεδο 5: ""
+
+*el.Translation TonerMode/Εξοικονόμηση μελανιού: ""
+*el.TonerMode PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.TonerMode False/Κλείσε: ""
+*el.TonerMode True/Ενεργοποίηση: ""
+
+*el.Translation Density/Πυκνότητα: ""
+*el.Density PrinterSetting/Χρησιμοποιήστε τις Ρυθμίσεις εκτυπωτή: ""
+*el.Density Level1/Φως: ""
+*el.Density Level2/Το πιο ελαφρύ: ""
+*el.Density Level3/Κανονικό: ""
+*el.Density Level4/Το πιο σκοτεινό: ""
+*el.Density Level5/Σκούρο: ""
+*% === ColorGroup ===
+
+
+
+
+*% === fr ===
+*% === InstallableOptions ===
+*fr.Translation InstallableOptions/Accessoires à installer: ""
+
+*fr.Translation Tray1/Bac 1 facultatif: ""
+*fr.Tray1 Installed/Installé: ""
+*fr.Tray1 NotInstalled/Non installé: ""
+*fr.Translation Tray2/Bac 2 facultatif: ""
+*fr.Tray2 Installed/Installé: ""
+*fr.Tray2 NotInstalled/Non installé: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*fr.Translation General/Standard:""
+
+*fr.Translation PageSize/Format de papier: ""
+*fr.PageSize A4/A4(210 x 297mm): ""
+*fr.PageSize A3/A3(297 x 420mm): ""
+*fr.PageSize B4/JIS B4(257 x 364mm): ""
+*fr.PageSize A5/A5(148 x 210mm): ""
+*fr.PageSize A6/A6(105 x 148mm): ""
+*fr.PageSize JISB5/JIS B5(182 x 257mm): ""
+*fr.PageSize ISOB5/ISO B5(176 x 250mm): ""
+*fr.PageSize 11*17/11"×17"(279 x 431,8mm): ""
+*fr.PageSize Letter/Lettre(216 x 279mm): ""
+*fr.PageSize Legal/Legal(216 x 356mm): ""
+*fr.PageSize Folio/Folio(216 x 330mm): ""
+*fr.PageSize Oficio/Oficio(216 x 343mm): ""
+*fr.PageSize Executive/Executive(184 x 267mm): ""
+*fr.PageSize Statement/Statement(139.7 x 216mm): ""
+*fr.PageSize 8K/8K(270 x 390mm): ""
+*fr.PageSize 16K/16K(185 x 260mm): ""
+*fr.PageSize Com10Envelope/Enveloppe n° 10 (105 x 241 mm): ""
+*fr.PageSize EnvMonarch/Enveloppe Monarch (98 x 191mm): ""
+*fr.PageSize EnvC6/Enveloppe C6 (114.0 x 162,0mm): ""
+*fr.PageSize EnvC5/Enveloppe C5 (162 x 229 mm): ""
+*fr.PageSize EnvDL/Enveloppe DL (110 x 220 mm): ""
+*fr.PageSize DoublePostcardRotated/Carte postale (148 x 200mm): ""
+*fr.CustomPageSize True/Personnalisé: ""
+
+*fr.Translation PageRegion/Zone de page: ""
+*fr.PageRegion A4/A4(210 x 297mm): ""
+*fr.PageRegion A3/A3(297 x 420mm): ""
+*fr.PageRegion B4/JIS B4(257 x 364mm): ""
+*fr.PageRegion A5/A5(148 x 210mm): ""
+*fr.PageRegion A6/A6(105 x 148mm): ""
+*fr.PageRegion JISB5/JIS B5(182 x 257mm): ""
+*fr.PageRegion ISOB5/ISO B5(176 x 250mm): ""
+*fr.PageRegion 11*17/11"×17"(279 x 431,8mm): ""
+*fr.PageRegion Letter/Lettre(216 x 279mm): ""
+*fr.PageRegion Legal/Legal(216 x 356mm): ""
+*fr.PageRegion Folio/Folio(216 x 330mm): ""
+*fr.PageRegion Oficio/Oficio(216 x 343mm): ""
+*fr.PageRegion Executive/Executive(184 x 267mm): ""
+*fr.PageRegion Statement/Statement(139.7 x 216mm): ""
+*fr.PageRegion 8K/8K(270 x 390mm): ""
+*fr.PageRegion 16K/16K(185 x 260mm): ""
+*fr.PageRegion Com10Envelope/Enveloppe n° 10 (105 x 241 mm): ""
+*fr.PageRegion EnvMonarch/Enveloppe Monarch (98 x 191mm): ""
+*fr.PageRegion EnvC6/Enveloppe C6 (114.0 x 162,0mm): ""
+*fr.PageRegion EnvC5/Enveloppe C5 (162 x 229 mm): ""
+*fr.PageRegion EnvDL/Enveloppe DL (110 x 220 mm): ""
+*fr.PageRegion DoublePostcardRotated/Carte postale (148 x 200mm): ""
+*fr.PageRegion Custom/Personnalisé: ""
+
+*fr.Translation InputSlot/Source papier: ""
+*fr.InputSlot AutoSelect/Sélection automatique: ""
+*fr.InputSlot Standard/Bac standard: ""
+*fr.InputSlot Tray1/Bac 1 facultatif: ""
+*fr.InputSlot Tray2/Bac 2 facultatif: ""
+*fr.InputSlot MultiPurposeTray/Bac polyvalent: ""
+
+*fr.Translation MediaType/Type de papier: ""
+*fr.MediaType Plain1/Papier ordinaire 1 (70-89 g/m²): ""
+*fr.MediaType Plain2/Papier ordinaire 2 (90-105 g/m²): ""
+*fr.MediaType Thin/Papier fin (60-69 g/m²): ""
+*fr.MediaType Recycled/Papier recyclé (70-89 g/m²): ""
+*fr.MediaType Thick1/Papier épais 1 (106-130 g/m²): ""
+*fr.MediaType Thick2/Papier épais 2 (131-176 g/m²): ""
+*fr.MediaType Thick3/Papier épais 3 (177-216 g/m²): ""
+*fr.MediaType Envelope/Enveloppe: ""
+*fr.MediaType PostCard/Papier cartonné (160 g/m²): ""
+*fr.MediaType Labels/Étiquette: ""
+
+*fr.Translation Duplex/Recto-verso: ""
+*fr.Duplex DuplexNoTumble/Recto-verso bord long: ""
+*fr.Duplex DuplexTumble/Recto-verso bord court: ""
+*fr.Duplex None/Désactivé: ""
+
+*fr.Translation Collate/Assemblées: ""
+*fr.Collate False/Fermer: ""
+*fr.Collate True/Activer: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*fr.Translation PrintoutMode/Mode de sortie: ""
+
+*fr.Translation ColorModel/Style de couleur: ""
+*fr.ColorModel RGB/Impression couleur: ""
+*fr.ColorModel Grayscale/Impression en noir et blanc: ""
+
+*fr.Translation PTResolution/Résolution: ""
+*fr.PTResolution 600x600dpi/600dpi: ""
+*fr.PTResolution 1200x1200dpi/1200dpi: ""
+
+*fr.Translation Booklet/Livret: ""
+*fr.Booklet True/Activer: ""
+*fr.Booklet False/Fermer: ""
+
+*fr.Translation BlankSuppress/Sauter les pages vierges: ""
+*fr.BlankSuppress PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.BlankSuppress False/Fermer: ""
+*fr.BlankSuppress True/Activer: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*fr.Translation RedHeadSpotColor/Impression du fichier d'en-tête rouge: ""
+
+*fr.Translation RedAndBlackPrinting/Impression du fichier d'en-tête rouge: ""
+*fr.RedAndBlackPrinting False/Fermer: ""
+*fr.RedAndBlackPrinting True/Activer: ""
+
+*fr.Translation RbModeCvtThreshold/Seuil: ""
+
+*fr.Translation RbModeRedlevel/Rouge: ""
+*fr.RbModeRedlevel Level1/Niveau 1: ""
+*fr.RbModeRedlevel Level2/Niveau 2: ""
+*fr.RbModeRedlevel Level3/Niveau 3: ""
+*fr.RbModeRedlevel Level4/Niveau 4: ""
+*fr.RbModeRedlevel Level5/Niveau 5: ""
+
+*fr.Translation RbModeBlacklevel/Noir: ""
+*fr.RbModeBlacklevel Level1/Niveau 1: ""
+*fr.RbModeBlacklevel Level2/Niveau 2: ""
+*fr.RbModeBlacklevel Level3/Niveau 3: ""
+*fr.RbModeBlacklevel Level4/Niveau 4: ""
+*fr.RbModeBlacklevel Level5/Niveau 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*fr.Translation PinPrint/Impression sécurisée: ""
+
+*fr.Translation LockedPinPrint/Impression sécurisée: ""
+*fr.Translation PinNum1/1er caractère du mot de passe: ""
+*fr.Translation PinNum2/2ème caractère du mot de passe: ""
+*fr.Translation PinNum3/3ème caractère du mot de passe: ""
+*fr.Translation PinNum4/4ème caractère du mot de passe: ""
+*fr.LockedPinPrint False/Fermer: ""
+*fr.LockedPinPrint True/Activer: ""
+
+*fr.Translation TimePrint/Impression différée: ""
+*fr.TimePrint False/Fermer: ""
+*fr.TimePrint True/Activer: ""
+
+*fr.Translation PrintTimeH/Heure: ""
+*fr.Translation PrintTimeM/Minute: ""
+
+*fr.Translation HoldPrint/Exemple d'impression: ""
+*fr.HoldPrint False/Fermer: ""
+*fr.HoldPrint True/Activer: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*fr.Translation ColorGroup/Fonction couleur: ""
+
+*fr.Translation DocumentType/Type de document: ""
+*fr.DocumentType PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.DocumentType Document/Texte: ""
+*fr.DocumentType Photo/Image: ""
+*fr.DocumentType Mixed/Texte et image: ""
+
+*fr.Translation Cyan/Balance des couleurs - Cyan: ""
+*fr.Cyan PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Cyan Level1/Niveau 1: ""
+*fr.Cyan Level2/Niveau 2: ""
+*fr.Cyan Level3/Niveau 3: ""
+*fr.Cyan Level4/Niveau 4: ""
+*fr.Cyan Level5/Niveau 5: ""
+
+*fr.Translation Magenta/Balance des couleurs - Magenta: ""
+*fr.Magenta PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Magenta Level1/Niveau 1: ""
+*fr.Magenta Level2/Niveau 2: ""
+*fr.Magenta Level3/Niveau 3: ""
+*fr.Magenta Level4/Niveau 4: ""
+*fr.Magenta Level5/Niveau 5: ""
+
+*fr.Translation Yellow/Balance des couleurs - Jaune: ""
+*fr.Yellow PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Yellow Level1/Niveau 1: ""
+*fr.Yellow Level2/Niveau 2: ""
+*fr.Yellow Level3/Niveau 3: ""
+*fr.Yellow Level4/Niveau 4: ""
+*fr.Yellow Level5/Niveau 5: ""
+
+*fr.Translation Black/Balance des couleurs - Noir: ""
+*fr.Black PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Black Level1/Niveau 1: ""
+*fr.Black Level2/Niveau 2: ""
+*fr.Black Level3/Niveau 3: ""
+*fr.Black Level4/Niveau 4: ""
+*fr.Black Level5/Niveau 5: ""
+
+*fr.Translation Saturations/Saturation RGB: ""
+*fr.Saturations PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Saturations Level1/Niveau 1: ""
+*fr.Saturations Level2/Niveau 2: ""
+*fr.Saturations Level3/Niveau 3: ""
+*fr.Saturations Level4/Niveau 4: ""
+*fr.Saturations Level5/Niveau 5: ""
+
+*fr.Translation Contrast/Contraste RGB: ""
+*fr.Contrast PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Contrast Level1/Niveau 1: ""
+*fr.Contrast Level2/Niveau 2: ""
+*fr.Contrast Level3/Niveau 3: ""
+*fr.Contrast Level4/Niveau 4: ""
+*fr.Contrast Level5/Niveau 5: ""
+
+*fr.Translation Lightness/Luminosité RGB: ""
+*fr.Lightness PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Lightness Level1/Niveau 1: ""
+*fr.Lightness Level2/Niveau 2: ""
+*fr.Lightness Level3/Niveau 3: ""
+*fr.Lightness Level4/Niveau 4: ""
+*fr.Lightness Level5/Niveau 5: ""
+
+*fr.Translation TonerMode/Économie de toner: ""
+*fr.TonerMode PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.TonerMode False/Fermer: ""
+*fr.TonerMode True/Activer: ""
+
+*fr.Translation Density/Densité: ""
+*fr.Density PrinterSetting/Utiliser les paramètres de l'imprimante: ""
+*fr.Density Level1/Légère: ""
+*fr.Density Level2/Plus clair: ""
+*fr.Density Level3/Normale: ""
+*fr.Density Level4/Plus sombre: ""
+*fr.Density Level5/Sombre: ""
+*% === ColorGroup ===
+
+
+
+
+*% === th ===
+*% === InstallableOptions ===
+*th.Translation InstallableOptions/ตัวเลือกที่ติดตั้งได้: ""
+
+*th.Translation Tray1/ถาดเสริม 1: ""
+*th.Tray1 Installed/ติดตั้งแล้ว: ""
+*th.Tray1 NotInstalled/ยังไม่ได้ติดตั้ง: ""
+*th.Translation Tray2/ถาดเสริม 2: ""
+*th.Tray2 Installed/ติดตั้งแล้ว: ""
+*th.Tray2 NotInstalled/ยังไม่ได้ติดตั้ง: ""
+
+*% === InstallableOptions ===
+
+*% === General ===
+*th.Translation General/มาตรฐาน:""
+
+*th.Translation PageSize/ขนาดกระดาษ: ""
+*th.PageSize A4/A4 (210 x 297 มม.): ""
+*th.PageSize A3/A3(297 x 420 มม.): ""
+*th.PageSize B4/JIS B4(257 x 364 มม.): ""
+*th.PageSize A5/A5(148 x 210 มม.): ""
+*th.PageSize A6/A6(105 x 148 มม.): ""
+*th.PageSize JISB5/JIS B5 (182 x 257 มม.): ""
+*th.PageSize ISOB5/ISO B5 (176 x 250 มม.): ""
+*th.PageSize 11*17/11"×17"(279 x 431.8 มม.): ""
+*th.PageSize Letter/Letter (216 x 279 มม.): ""
+*th.PageSize Legal/Legal (216 x 356 มม.): ""
+*th.PageSize Folio/Folio (216 x 330 มม.): ""
+*th.PageSize Oficio/Oficio (216 x 343 มม.): ""
+*th.PageSize Executive/Executive (184 x 267 มม.): ""
+*th.PageSize Statement/Statement (139.7 x 216 มม.): ""
+*th.PageSize 8K/8K (270 x 390 มม.): ""
+*th.PageSize 16K/16K(185 x 260 มม.): ""
+*th.PageSize Com10Envelope/Envelope No.10 (105 x 241 มม.): ""
+*th.PageSize EnvMonarch/Envelope Monarch (98 x 191 มม.): ""
+*th.PageSize EnvC6/Envelope C6 (114.0 x 162.0 มม.): ""
+*th.PageSize EnvC5/Envelope C5 (162 x 229 มม.): ""
+*th.PageSize EnvDL/Envelope DL (110 x 220 มม.): ""
+*th.PageSize DoublePostcardRotated/โปสการ์ด (148 x 200 มม.): ""
+*th.CustomPageSize True/กำหนดเอง: ""
+
+*th.Translation PageRegion/พื้นที่ของหน้า: ""
+*th.PageRegion A4/A4 (210 x 297 มม.): ""
+*th.PageRegion A3/A3(297 x 420 มม.): ""
+*th.PageRegion B4/JIS B4(257 x 364 มม.): ""
+*th.PageRegion A5/A5(148 x 210 มม.): ""
+*th.PageRegion A6/A6(105 x 148 มม.): ""
+*th.PageRegion JISB5/JIS B5 (182 x 257 มม.): ""
+*th.PageRegion ISOB5/ISO B5 (176 x 250 มม.): ""
+*th.PageRegion 11*17/11"×17"(279 x 431.8 มม.): ""
+*th.PageRegion Letter/Letter (216 x 279 มม.): ""
+*th.PageRegion Legal/Legal (216 x 356 มม.): ""
+*th.PageRegion Folio/Folio (216 x 330 มม.): ""
+*th.PageRegion Oficio/Oficio (216 x 343 มม.): ""
+*th.PageRegion Executive/Executive (184 x 267 มม.): ""
+*th.PageRegion Statement/Statement (139.7 x 216 มม.): ""
+*th.PageRegion 8K/8K (270 x 390 มม.): ""
+*th.PageRegion 16K/16K(185 x 260 มม.): ""
+*th.PageRegion Com10Envelope/Envelope No.10 (105 x 241 มม.): ""
+*th.PageRegion EnvMonarch/Envelope Monarch (98 x 191 มม.): ""
+*th.PageRegion EnvC6/Envelope C6 (114.0 x 162.0 มม.): ""
+*th.PageRegion EnvC5/Envelope C5 (162 x 229 มม.): ""
+*th.PageRegion EnvDL/Envelope DL (110 x 220 มม.): ""
+*th.PageRegion DoublePostcardRotated/โปสการ์ด (148 x 200 มม.): ""
+*th.PageRegion Custom/กำหนดเอง: ""
+
+*th.Translation InputSlot/แหล่งจ่ายกระดาษ: ""
+*th.InputSlot AutoSelect/เลือกอัตโนมัติ: ""
+*th.InputSlot Standard/ถาดมาตรฐาน: ""
+*th.InputSlot Tray1/ถาดเสริม 1: ""
+*th.InputSlot Tray2/ถาดเสริม 2: ""
+*th.InputSlot MultiPurposeTray/ถาดอเนกประสงค์: ""
+
+*th.Translation MediaType/ประเภทกระดาษ: ""
+*th.MediaType Plain1/กระดาษธรรมดา 1 (70-89 แกรม): ""
+*th.MediaType Plain2/กระดาษธรรมดา 2 (90-105 แกรม): ""
+*th.MediaType Thin/กระดาษบาง (60-69 แกรม): ""
+*th.MediaType Recycled/กระดาษรีไซเคิล (70-89 แกรม): ""
+*th.MediaType Thick1/กระดาษหนา 1 (106-130 แกรม): ""
+*th.MediaType Thick2/กระดาษหนา 2 (131-176 แกรม): ""
+*th.MediaType Thick3/กระดาษหนา 3 (177-216 แกรม): ""
+*th.MediaType Envelope/ซองจดหมาย: ""
+*th.MediaType PostCard/กระดาษการ์ด (160 แกรม): ""
+*th.MediaType Labels/ฉลาก: ""
+
+*th.Translation Duplex/พิมพ์สองด้าน: ""
+*th.Duplex DuplexNoTumble/Duplex ขอบยาว: ""
+*th.Duplex DuplexTumble/Duplex ขอบสั้น: ""
+*th.Duplex None/ไม่มี: ""
+
+*th.Translation Collate/เรียงชุด: ""
+*th.Collate False/ปิด: ""
+*th.Collate True/เปิด: ""
+*% === General ===
+
+*% === PrintoutMode ===
+*th.Translation PrintoutMode/โหมดงานพิมพ์: ""
+
+*th.Translation ColorModel/รูปแบบของสี: ""
+*th.ColorModel RGB/การพิมพ์สี: ""
+*th.ColorModel Grayscale/การพิมพ์ขาวดำ: ""
+
+*th.Translation PTResolution/ความละเอียด: ""
+*th.PTResolution 600x600dpi/600dpi: ""
+*th.PTResolution 1200x1200dpi/1200dpi: ""
+
+*th.Translation Booklet/จุลสาร: ""
+*th.Booklet True/เปิด: ""
+*th.Booklet False/ปิด: ""
+
+*th.Translation BlankSuppress/ข้ามหน้าว่างเปล่า: ""
+*th.BlankSuppress PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.BlankSuppress False/ปิด: ""
+*th.BlankSuppress True/เปิด: ""
+
+*% === PrintoutMode ===
+
+*% === RedHeadSpotColor ===
+*th.Translation RedHeadSpotColor/การพิมพ์ไฟล์หัวกระดาษสีแดง: ""
+
+*th.Translation RedAndBlackPrinting/การพิมพ์ไฟล์หัวกระดาษสีแดง: ""
+*th.RedAndBlackPrinting False/ปิด: ""
+*th.RedAndBlackPrinting True/เปิด: ""
+
+*th.Translation RbModeCvtThreshold/เทรสโฮลด์: ""
+
+*th.Translation RbModeRedlevel/สีแดง: ""
+*th.RbModeRedlevel Level1/ระดับ 1: ""
+*th.RbModeRedlevel Level2/ระดับ 2: ""
+*th.RbModeRedlevel Level3/ระดับ 3: ""
+*th.RbModeRedlevel Level4/ระดับ 4: ""
+*th.RbModeRedlevel Level5/ระดับ 5: ""
+
+*th.Translation RbModeBlacklevel/สีดำ: ""
+*th.RbModeBlacklevel Level1/ระดับ 1: ""
+*th.RbModeBlacklevel Level2/ระดับ 2: ""
+*th.RbModeBlacklevel Level3/ระดับ 3: ""
+*th.RbModeBlacklevel Level4/ระดับ 4: ""
+*th.RbModeBlacklevel Level5/ระดับ 5: ""
+
+*% === RedHeadSpotColor ===
+
+*% === PinPrint ===
+*th.Translation PinPrint/การพิมพ์อย่างปลอดภัย: ""
+
+*th.Translation LockedPinPrint/การพิมพ์แบบปลอดภัย : ""
+*th.Translation PinNum1/ตัวอักษรตัวที่ 1 ของรหัสผ่าน: ""
+*th.Translation PinNum2/ตัวอักษรตัวที่ 2 ของรหัสผ่าน: ""
+*th.Translation PinNum3/ตัวอักษรตัวที่ 3 ของรหัสผ่าน: ""
+*th.Translation PinNum4/ตัวอักษรตัวที่ 4 ของรหัสผ่าน: ""
+*th.LockedPinPrint False/ปิด: ""
+*th.LockedPinPrint True/เปิด: ""
+
+*th.Translation TimePrint/การพิมพ์หน่วงเวลา: ""
+*th.TimePrint False/ปิด: ""
+*th.TimePrint True/เปิด: ""
+
+*th.Translation PrintTimeH/ชั่วโมง: ""
+*th.Translation PrintTimeM/นาที: ""
+
+*th.Translation HoldPrint/ตัวอย่างการพิมพ์: ""
+*th.HoldPrint False/ปิด: ""
+*th.HoldPrint True/เปิด: ""
+*% === PinPrint ===
+
+*% === ColorGroup ===
+*th.Translation ColorGroup/ฟังก์ชันสี: ""
+
+*th.Translation DocumentType/ประเภทของเอกสาร: ""
+*th.DocumentType PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.DocumentType Document/ข้อความ: ""
+*th.DocumentType Photo/รูปภาพ: ""
+*th.DocumentType Mixed/ข้อความและรูปภาพ: ""
+
+*th.Translation Cyan/ความสมดุลของสี – สีไซอัน: ""
+*th.Cyan PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Cyan Level1/ระดับ 1: ""
+*th.Cyan Level2/ระดับ 2: ""
+*th.Cyan Level3/ระดับ 3: ""
+*th.Cyan Level4/ระดับ 4: ""
+*th.Cyan Level5/ระดับ 5: ""
+
+*th.Translation Magenta/ความสมดุลของสี – สีม่วงแดง: ""
+*th.Magenta PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Magenta Level1/ระดับ 1: ""
+*th.Magenta Level2/ระดับ 2: ""
+*th.Magenta Level3/ระดับ 3: ""
+*th.Magenta Level4/ระดับ 4: ""
+*th.Magenta Level5/ระดับ 5: ""
+
+*th.Translation Yellow/ความสมดุลของสี – สีเหลือง: ""
+*th.Yellow PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Yellow Level1/ระดับ 1: ""
+*th.Yellow Level2/ระดับ 2: ""
+*th.Yellow Level3/ระดับ 3: ""
+*th.Yellow Level4/ระดับ 4: ""
+*th.Yellow Level5/ระดับ 5: ""
+
+*th.Translation Black/ความสมดุลของสี – สีดำ: ""
+*th.Black PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Black Level1/ระดับ 1: ""
+*th.Black Level2/ระดับ 2: ""
+*th.Black Level3/ระดับ 3: ""
+*th.Black Level4/ระดับ 4: ""
+*th.Black Level5/ระดับ 5: ""
+
+*th.Translation Saturations/ความอิ่มตัว RGB : ""
+*th.Saturations PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Saturations Level1/ระดับ 1: ""
+*th.Saturations Level2/ระดับ 2: ""
+*th.Saturations Level3/ระดับ 3: ""
+*th.Saturations Level4/ระดับ 4: ""
+*th.Saturations Level5/ระดับ 5: ""
+
+*th.Translation Contrast/ความเปรียบต่าง RGB : ""
+*th.Contrast PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Contrast Level1/ระดับ 1: ""
+*th.Contrast Level2/ระดับ 2: ""
+*th.Contrast Level3/ระดับ 3: ""
+*th.Contrast Level4/ระดับ 4: ""
+*th.Contrast Level5/ระดับ 5: ""
+
+*th.Translation Lightness/ความสว่าง RGB : ""
+*th.Lightness PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Lightness Level1/ระดับ 1: ""
+*th.Lightness Level2/ระดับ 2: ""
+*th.Lightness Level3/ระดับ 3: ""
+*th.Lightness Level4/ระดับ 4: ""
+*th.Lightness Level5/ระดับ 5: ""
+
+*th.Translation TonerMode/ประหยัดหมึก: ""
+*th.TonerMode PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.TonerMode False/ปิด: ""
+*th.TonerMode True/เปิด: ""
+
+*th.Translation Density/ความหนาแน่น: ""
+*th.Density PrinterSetting/ใช้การตั้งค่าเครื่องพิมพ์: ""
+*th.Density Level1/สว่าง: ""
+*th.Density Level2/สว่างขึ้น: ""
+*th.Density Level3/ปกติ: ""
+*th.Density Level4/มืดขึ้น: ""
+*th.Density Level5/มืด: ""
+*% === ColorGroup ===
+

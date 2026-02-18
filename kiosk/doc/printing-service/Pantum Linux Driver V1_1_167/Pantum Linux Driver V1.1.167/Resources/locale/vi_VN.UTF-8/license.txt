@@ -1,0 +1,78 @@
+[Thỏa thuận Cấp phép Người dùng Cuối] 
+Cập nhật lần cuối: Ngày 1 tháng 5, 2023 
+
+Vui lòng đọc kỹ Thỏa thuận Cấp phép Người dùng Cuối này ("EULA") và Phụ lục của Thỏa thuận, Chính sách Quyền riêng tư trước khi cài đặt hoặc sử dụng phần mềm. 
+
+Zhuhai Pantum Electronics Co.,Ltd. (“BÊN CẤP PHÉP”) SẴN SÀNG CẤP PHÉP PHẦN MỀM CHO CÁ NHÂN HOẶC THỰC THỂ NHẬN PHẦN MỀM (“BẠN”) CHỈ VỚI ĐIỀU KIỆN LÀ BẠN CHẤP NHẬN TẤT CẢ CÁC ĐIỀU KHOẢN CÓ TRONG THỎA THUẬN CẤP PHÉP NGƯỜI DÙNG CUỐI NÀY (“EULA”) VÀ PHỤ LỤC CỦA THỎA THUẬN, CHÍNH SÁCH QUYỀN RIÊNG TƯ (“Chính sách quyền riêng tư”). TRƯỚC KHI BẤM VÀO NÚT “Tôi đồng ý với THỎA THUẬN CẤP PHÉP NGƯỜI DÙNG CUỐI và CHÍNH SÁCH QUYỀN RIÊNG TƯ” (sau đây gọi là NÚT “Tôi đồng ý”) Ở CUỐI TÀI LIỆU NÀY HOẶC CÀI ĐẶT, SAO CHÉP, TẢI XUỐNG, HAY SỬ DỤNG PHẦN MỀM THEO BẤT CỨ CÁCH NÀO KHÁC, BẠN VUI LÒNG ĐỌC KỸ CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN CỦA EULA NÀY VÀ PHỤ LỤC CỦA EULA NÀY, CHÍNH SÁCH QUYỀN RIÊNG TƯ. NẾU BẠN KHÔNG BẤM VÀO NÚT “Tôi đồng ý”, BẠN SẼ KHÔNG ĐƯỢC PHÉP BẤM VÀO NÚT “TIẾP THEO” ĐỂ HOÀN TẤT CÀI ĐẶT PHẦN MỀM, VÀ BẠN KHÔNG ĐƯỢC PHÉP CÀI ĐẶT, SAO CHÉP, TẢI XUỐNG HOẶC SỬ DỤNG PHẦN MỀM THEO BẤT CỨ CÁCH NÀO KHÁC VÀ BẠN PHẢI NGAY LẬP TỨC GỠ PHẦN MỀM RA KHỎI HỆ THỐNG CỦA BẠN. BẰNG CÁCH BẤM VÀO NÚT “Tôi đồng ý” HOẶC CÀI ĐẶT, SAO CHÉP, TẢI XUỐNG HOẶC SỬ DỤNG PHẦN MỀM THEO CÁCH NÀO KHÁC, BẠN ĐỒNG Ý CHỊU RÀNG BUỘC BỞI THỎA THUẬN, ĐẢM BẢO TUÂN THỦ VÀ TRỞ THÀNH MỘT BÊN CỦA EULA NÀY VÀ PHỤ LỤC CỦA EULA, CHÍNH SÁCH QUYỀN RIÊNG TƯ. 
+NẾU BẠN KHÔNG ĐỒNG Ý CHỊU RÀNG BUỘC BỞI EULA NÀY VÀ CHÍNH SÁCH QUYỀN RIÊNG TƯ, BẠN CÓ THỂ TRẢ LẠI “Sản phẩm của Bên cấp phép” CHƯA SỬ DỤNG VÀ PHẦN MỀM NÀY TRONG VÒNG MƯỜI BỐN (14) NGÀY TÍNH TỪ NGÀY MUA HÀNG ĐỂ ĐƯỢC HOÀN TIỀN THEO CHÍNH SÁCH HOÀN TIỀN CỦA NƠI MUA HÀNG. 
+THÔNG BÁO QUAN TRỌNG: PHẦN 13 LÀ QUY ĐỊNH RÀNG BUỘC LIÊN QUAN ĐẾN LUẬT ÁP DỤNG VÀ PHÂN XỬ, VÀ NÊU RÕ VIỆC BẠN TỪ BỎ QUYỀN THAM GIA VÀO CÁC VỤ KIỆN TẬP THỂ HOẶC PHÂN XỬ TẬP THỂ ĐỐI VỚI NHỮNG TRANH CHẤP TRONG BẤT KỲ KHU VỰC PHÁP LÝ NÀO. 
+
+1. Phần mềm 
+“Phần mềm” có nghĩa là các chương trình máy tính có trong gói hàng do Bên cấp phép cung cấp, cùng tất cả mã, kỹ thuật, công cụ phần mềm, định dạng, thiết kế, khái niệm, phương pháp và ý tưởng liên quan đến các chương trình máy tính đó và tất cả tài liệu liên quan. 
+
+2. Quyền sở hữu 
+Bạn thừa nhận và đồng ý rằng Phần mềm cấu thành bí mật thương mại có giá trị của Bên cấp phép và các bên cấp phép thứ ba của Bên cấp phép, và Bên cấp phép hoặc bên cấp phép thứ ba sở hữu độc quyền tất cả bản quyền trong nước và nước ngoài cũng như các quyền sở hữu trí tuệ khác đối với Phần mềm và tất cả bản sao Phần mềm. Trừ khi Bạn được cấp phép rõ ràng trong EULA này thì tất cả các quyền trong Phần mềm và đối với Phần mềm cũng như tất cả quyền sở hữu trí tuệ trong đó đều thuộc quyền và dành cho Bên cấp phép và bên cấp phép thứ ba. Không có quyền hoặc quyền sở hữu nào của Phần mềm được chuyển giao cho Bạn. Bạn phải sao chép và đưa các thông báo về bản quyền và quyền sở hữu khác vào các bản sao Phần mềm, bao gồm nhưng không giới hạn bản sao một phần, bản sao cứng hoặc bản sao điện tử. Trong trường hợp bạn thực hiện hoặc đề xuất bất kỳ thay đổi hoặc sửa đổi nào đối với Phần mềm, Bạn thừa nhận rằng Bạn không có quyền, tư cách hoặc lợi ích đối với những thay đổi hoặc sửa đổi này, và đồng ý thêm rằng những thay đổi hoặc sửa đổi này sẽ thuộc sở hữu độc quyền của Bên cấp phép hoặc bên cấp phép thứ ba. 
+
+3. Giấy phép 
+Sau khi bạn chấp nhận EULA này, trong thời hạn của EULA này, Bên cấp phép cấp phép cho Bạn, và Bạn đồng ý chấp nhận giấy phép cá nhân có giới hạn, không độc quyền, không thể chuyển nhượng để thực hiện những điều sau, tùy thuộc vào việc bạn tuân thủ các điều khoản và điều kiện của EULA này: 
+(a) cài đặt và sử dụng Phần mềm riêng biệt với sản phẩm của Bên cấp phép được cung cấp cùng Phần mềm hoặc cho mục đích mà Phần mềm dự định như được nêu trong tài liệu sản phẩm liên quan về Phần mềm hoặc Bên cấp phép (gọi tắt là "Sản phẩm của Bên cấp phép");
+
+(b) cài đặt và sử dụng Phần mềm trên một hoặc nhiều máy tính khi cần thiết cho mục đích sử dụng thông thường và dự định của Sản phẩm của Bên cấp phép;
+
+(c) chỉ sử dụng Phần mềm cho mục đích cá nhân hoặc kinh doanh thông thường của riêng bạn đối với Sản phẩm Bên cấp phép;
+
+(d) chỉ tạo số lượng bản sao Phần mềm hợp lý nhằm hỗ trợ sử dụng Phần mềm theo mục đích dự định và thông thường, với điều kiện là bản sao đó có chứa tất cả các thông báo về quyền sở hữu được cung cấp cùng Phần mềm và bản sao đó chỉ được sử dụng cho mục đích sao lưu hoặc cài đặt.
+
+(e) chuyển quyền sở hữu bản sao Phần mềm cho một bên khác bằng cách chuyển bản sao EULA này và tất cả các tài liệu khác cùng với ít nhất một bản sao Phần mềm nguyên vẹn hoàn chỉnh, với điều kiện là:
+(i) Bạn phải đồng thời chuyển nhượng cho bên kia hoặc hủy tất cả các bản sao của Phần mềm mà bạn có;
+(ii) việc chuyển nhượng quyền sở hữu này sẽ chấm dứt giấy phép của bạn với Bên cấp phép;
+(iii) việc chuyển nhượng Sản phẩm Bên cấp phép mà việc sử dụng Phần mềm bị hạn chế;
+(iv) bên kia chấp nhận và đồng ý bị ràng buộc bởi các điều khoản và điều kiện của EULA này khi họ sử dụng Phần mềm ;
+(v) Bạn phải bồi thường toàn bộ cho Bên cấp phép đối với bất kỳ khiếu nại, tổn thất hoặc thiệt hại nào phát sinh từ việc bên kia không tuân thủ EULA này, bao gồm nhưng không giới hạn tới các vấn đề kiểm soát xuất khẩu.
+
+4. Hạn chế 
+(a) Nếu không có sự đồng ý trước bằng văn bản của Bên cấp phép, Bạn không được cho phép người khác:
+(i) sử dụng, sao chép, sửa đổi, hợp nhất hoặc chuyển nhượng các bản sao Phần mềm (hoặc bất kỳ phần nào trong đó), trừ khi được cho phép rõ ràng trong EULA này;
+(ii) thiết kế đảo ngược, lắp ráp đảo ngược, hoặc biên dịch đảo ngược hoặc cố gắng tạo lại Phần mềm hoặc tìm mã nguồn của Phần mềm, trừ khi được cho phép rõ ràng theo luật pháp hiện hành mà không có khả năng bị từ bỏ hợp đồng;
+(iii) cấp phép lại, thuê, cho mượn, cho thuê, tiếp thị, bán hoặc phân phối Phần mềm hoặc bất kỳ bản sao nào của Phần mềm;
+(iv) tạo các sản phẩm phái sinh từ Phần mềm, hoặc sửa đổi hoặc vô hiệu hóa bất kỳ tính năng cấp phép hoặc điều khiển nào của Phần mềm, hoặc xóa, tách nhóm, tách rời hoặc tách riêng bất kỳ thành phần nào của Phần mềm;
+(v) sử dụng Phần mềm trong môi trường dịch vụ lưu trữ, chia sẻ thời gian hoặc văn phòng dịch vụ ;
+(vi) xóa bất kỳ thông báo hoặc nhãn độc quyền nào trên Phần mềm.
+(b) Bạn không được xuất hoặc tái xuất Phần mềm (hoặc bất kỳ phần nào trong đó) dưới bất kỳ hình thức nào mà vi phạm các hạn chế xuất khẩu của chính phủ nước bạn.
+
+(c) Bạn phải tuân thủ mọi giới hạn và hạn chế bổ sung liên quan đến Phần mềm mà có thể được quy định trong tài liệu liên quan.
+
+5. Cập nhật giấy phép 
+Nếu Bên cấp phép cung cấp Phần mềm dưới dạng bản cập nhật, nâng cấp, phiên bản mới hoặc phần bổ sung (gọi chung là “Bản cập nhật”), thì Bạn sẽ chỉ được cấp phép sử dụng Bản cập nhật nếu Bạn có giấy phép hợp lệ đối với Phần mềm mà Bên cấp phép xác định là đủ điều kiện để sử dụng Bản cập nhật. Đến một mức độ nào đó mà Bản cập nhật thế chỗ hoặc thay thế cho Phần mềm gốc thì Bạn không còn được sử dụng Phần mềm đó. Trừ khi Bên cấp phép cho biết các điều khoản khác sẽ áp dụng tại đâu, EULA này sẽ áp dụng cho từng Bản cập nhật. Trong trường hợp có xung đột, các điều khoản khác này sẽ chiếm quyền ưu tiên so với EULA này. 
+
+6. Phần mềm bên thứ ba 
+Đối với bất kỳ Phần mềm nào (hoặc các phần trong đó) được cung cấp theo giấy phép từ bên thứ ba (gọi tắt là “Phần mềm bên thứ ba”), Bạn đều phải tuân thủ tất cả các điều khoản cấp phép bổ sung do bên cấp phép thứ ba đó ban hành (gọi tắt là “Điều khoản cấp phép bên thứ ba”). Điều khoản cấp phép bên thứ ba thường nằm trong một tệp cung cấp cùng Phần mềm. Tuy nhiên, khi được yêu cầu Bên cấp phép phải cung cấp cho Bạn thông báo về các điều khoản đó. Trong trường hợp có xung đột, Điều khoản Cấp phép Bên Thứ ba sẽ chiếm quyền ưu tiên so với EULA này khi xét đến Phần mềm Bên Thứ ba đó. 
+
+7. Đồng ý Sử dụng Dữ liệu 
+Bạn thừa nhận và đồng ý rằng Bên cấp phép (và các chi nhánh của nó) có thể thu thập và sử dụng thông tin bạn cung cấp liên quan đến (i) Phần mềm hoặc các sản phẩm của Bên cấp phép, (ii) các dịch vụ hỗ trợ cho Phần mềm hoặc các sản phẩm của Bên cấp phép và (iii) việc bạn sử dụng Phần mềm hoặc các sản phẩm của Bên cấp phép, bao gồm nhưng không giới hạn ở: Phần mềm này thu thập các thông tin sau:
+1. Thông tin về máy in (Số sê-ri máy in, địa chỉ IP và trạng thái máy in);
+2. Thông tin về lệnh in (số lượng bản in, khổ giấy, phương tiện in);
+3. Thông tin về lệnh quét (nguồn quét, màu sắc, độ phân giải, kích thước, dữ liệu hình ảnh quét); Bên cấp phép và các chi nhánh sẽ chỉ thu thập từ bạn những thông tin cần thiết để cung cấp cho bạn dịch vụ, hoặc chỉ thu thập một phần chứ không phải tất cả các thông tin trên đây về một số hệ điều hành dựa trên các chức năng sản phẩm khác nhau trên các hệ điều hành này. Mọi dữ liệu và thông tin cá nhân của các thể nhân được thu thập theo cách này đều được xử lý theo Chính sách Quyền riêng tư của Bên cấp phép. Chính sách Quyền riêng tư là một phụ lục của EULA và có hiệu lực pháp lý tương tự như EULA. Ngoại trừ mục đích duy nhất là cung cấp cho bạn dịch vụ, Bên cấp phép không được sử dụng các dữ liệu này theo cách mà nhận dạng cá nhân bạn. 
+
+8. TỪ CHỐI BẢO HÀNH 
+Các chi tiết và giới hạn bảo hành đối với phần cứng có chứa Phần mềm được mô tả trong Tuyên bố Bảo hành Giới hạn đi kèm phần cứng đó. NGOẠI TRỪ NHỮNG BẢO HÀNH ĐÃ NÓI Ở TRÊN CHỈ ÁP DỤNG CHO PHẦN CỨNG VÀ PHƯƠNG TIỆN, PHẦN MỀM KHÔNG ĐƯỢC BẢO HÀNH VÀ ĐƯỢC CUNG CẤP “NGUYÊN TRẠNG” VÀ KHÔNG CÓ BẤT KỲ BẢO HÀNH, ĐẠI DIỆN HOẶC ĐẢM BẢO NÀO DƯỚI MỌI HÌNH THỨC, DÙ RÕ RÀNG HAY NGỤ Ý, THEO LUẬT PHÁP HAY PHƯƠNG THỨC NÀO KHÁC, BAO GỒM CÁC BẢO HÀNH VỀ KHẢ NĂNG BÁN HÀNG HOẶC SỰ PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ, TƯ CÁCH, KHÔNG VI PHẠM VÀ BẤT KỲ BẢO HÀNH NÀO CÓ THỂ PHÁT SINH TỪ MỘT QUÁ TRÌNH ỨNG XỬ, SỬ DỤNG THƯƠNG MẠI HOẶC THÔNG LỆ THƯƠNG MẠI. BÊN CẤP PHÉP KHÔNG ĐẠI DIỆN, BẢO HÀNH HOẶC BẢO ĐẢM RẰNG HOẠT ĐỘNG CỦA PHẦN MỀM SẼ KHÔNG BỊ GIÁN ĐOẠN HOẶC KHÔNG CÓ LỖI HOẶC TƯƠNG THÍCH VỚI MÔI TRƯỜNG XỬ LÝ DỮ LIỆU DO BẠN SỬ DỤNG HOẶC LỖI CÓ THỂ HOẶC PHẢI ĐƯỢC SỬA CHỮA. Khu vực thẩm quyền không được phép loại trừ bất kỳ bảo hành ngụ ý nào, vì vậy những miễn trừ trách nhiệm trên đây không áp dụng cho bạn. Bạn có thể có các quyền hợp pháp khác với khu vực thẩm quyền. 
+
+9. HẠN CHẾ CÁC BIỆN PHÁP KHẮC PHỤC 
+Trách nhiệm tổng gộp của Bên cấp phép đối với tất cả các tổn thất và thiệt hại theo hoặc liên quan đến EULA này, bao gồm, nhưng không giới hạn những tổn thất và thiệt hại phát sinh ngoài hợp đồng, sai lầm cá nhân hoặc dân sự (bao gồm các hành động do sơ suất, trách nhiệm nghiêm ngặt, và hành vi cố ý và/hoặc có chủ đích), bảo hành, bồi thường, hoặc lý thuyết trách nhiệm khác và do không cung cấp hoặc thực hiện, hoặc liên quan đến thiết kế, hiệu suất, sử dụng, khiếm khuyết hoặc lỗi Phần mềm, và biện pháp khắc phục duy nhất của bạn được giới hạn ở mức cao hơn số tiền Bạn đã thanh toán cho Phần mềm hay U.S.$5.00. TRONG MỌI TRƯỜNG HỢP BÊN CẤP PHÉP HOẶC BÊN CẤP PHÉP THỨ BA HOẶC CÁC CÔNG TY, NHÀ CUNG CẤP, NHÀ PHÂN PHỐI HOẶC NGƯỜI BÁN LẠI LIÊN KẾT KHÔNG CHỊU TRÁCH NHIỆM VỀ CÁC TỔN THẤT LỢI NHUẬN, MẤT DỮ LIỆU, GIÁN ĐOẠN KINH DOANH, HOẶC BẤT KỲ THIỆT HẠI NÀO GIÁN TIẾP, HẬU QUẢ, BẤT NGỜ, PHỤ, CẢNH CÁO, TRỪNG PHẠT, HOẶC ĐẶC BIỆT LIÊN QUAN ĐẾN HOẶC LÀ KẾT QUẢ CỦA VIỆC SỬ DỤNG HOẶC KHÔNG THỂ SỬ DỤNG PHẦN MỀM, NGAY CẢ KHI NHỮNG THIỆT HẠI NÀY CÓ THỂ DỰ BÁO TRƯỚC HOẶC BÊN CẤP PHÉP HOẶC BÊN CẤP PHÉP THỨ BA HOẶC ĐẠI LÝ ỦY QUYỀN CỦA BÊN CẤP PHÉP ĐÃ ĐƯỢC THÔNG BÁO VỀ KHẢ NĂNG THIỆT HẠI NÀY HOẶC ĐỐI VỚI KHIẾU NẠI BẠN ĐƯA RA DỰA TRÊN KHIẾU NẠI CỦA BÊN THỨ BA, VÀ BẤT KỂ LÀ KHIẾU NẠI ĐÓ CÓ DỰA TRÊN HỢP ĐỒNG, SAI LẦM CÁ NHÂN HOẶC DÂN SỰ (BAO GỒM SƠ SUẤT, TRÁCH NHIỆM NGHIÊM NGẶT, VÀ HÀNH VI CỐ Ý VÀ/HOẶC CÓ CHỦ ĐÍCH), BẢO HÀNH, BỒI THƯỜNG, HOẶC LÝ THUYẾT TRÁCH NHIỆM KHÁC HAY KHÔNG. BẠN ĐỒNG Ý RẰNG (A) CÁC GIỚI HẠN TRÁCH NHIỆM ĐƯỢC QUY ĐỊNH TRONG EULA NÀY THỂ HIỆN SỰ VIỆN DẪN CẦN THIẾT VÀ GIÁ TRỊ ĐỂ BÊN CẤP PHÉP CẤP PHÉP PHẦN MỀM CHO BẠN, VÀ (B) NHỮNG GIỚI HẠN NÀY KHÔNG ĐƯỢC KHIẾN EULA MẤT ĐI MỤC ĐÍCH THIẾT YẾU DO THIẾU BIỆN PHÁP KHẮC PHỤC HOẶC PHƯƠNG THỨC NÀO KHÁC. Khu vực thẩm quyền không được phép loại trừ bất kỳ hạn chế trách nhiệm nào, vì vậy những miễn trừ trách nhiệm trên đây không áp dụng cho bạn. Bạn có thể có các quyền hợp pháp khác với khu vực pháp lý này. 
+
+10. Chú giải về các Quyền Hạn chế 
+Bạn thừa nhận rằng Phần mềm là phần mềm máy tính thương mại được phát triển bằng chi phí cá nhân của bạn. Quyền sử dụng, sao chép, hoặc tiết lộ của bạn bị giới hạn bởi EULA này. Trong trường hợp người dùng cuối là cơ quan Chính phủ Hoa Kỳ thì việc sử dụng, sao chép, và tiết lộ sẽ bị hạn chế như nêu ở đây đến mức độ tối đa được phép của Quy định Bổ sung về Mua sắm Liên bang của Bộ Quốc phòng hoặc Quy định về Mua sắm Liên bang, nếu có. 
+
+11. Chấm dứt 
+Bạn có thể chấm dứt giấy phép vào bất kỳ lúc nào bằng cách hủy Phần mềm và tất cả bản sao của Phần mềm hoặc theo cách khác được mô tả trong EULA này. Trường hợp Bạn không tuân thủ nghiêm ngặt EULA này, giấy phép sử dụng Phần mềm của Bạn sẽ tự động chấm dứt ngay lập tức mà không cần thông báo. Khi chấm dứt giấy phép này, Bạn phải chấm dứt ngay lập tức mọi hoạt động sử dụng Phần mềm và hủy tất cả các bản sao của Phần mềm. Bên cấp phép có quyền thay đổi giá thành, tính năng, thông số kỹ thuật, khả năng, chức năng, điều khoản cấp phép, ngày phát hành, tính khả dụng chung hoặc các đặc điểm khác của Phần mềm vào bất kỳ lúc nào. 
+
+12. Điều khoản khác 
+Chỉ có thể sửa đổi EULA này bằng văn bản có chữ ký của Bạn và nhân viên ủy quyền của Bên cấp phép. Nếu bất kỳ điều khoản nào của EULA này, vì lý do nào đó bị coi là bất hợp pháp hoặc không thể thi hành bởi tòa án có thẩm quyền, thì các điều khoản còn lại của EULA này sẽ vẫn tiếp tục có hiệu lực đầy đủ, và điều khoản vi phạm sẽ bị giới hạn hoặc sửa đổi thành mức độ cần thiết có thể giúp nó có hiệu lực thi hành. 
+
+13. LUẬT ÁP DỤNG VÀ KHU VỰC THẨM QUYỀN 
+13.1 EULA buộc phải tuân thủ và hiểu theo luật pháp của Cộng hòa Nhân dân Trung Hoa mà không áp dụng các nguyên tắc xung đột pháp luật.
+13.2 Mọi tranh chấp phát sinh từ hoặc liên quan đến EULA sẽ được gửi lên Tòa án Trọng tài Quốc tế Thâm Quyến (SCIA) để phân xử.Phân xử phải được tiến hành tại Thâm Quyến theo các quy tắc trọng tài hiện hành. Số lượng người phân xử là một, và ngôn ngữ phân xử là tiếng Anh. 
+13.3 TỪ BỎ KIỆN TẬP THỂ VÀ PHÂN XỬ TẬP THỂ.BẠN VÀ BÊN CẤP PHÉP ĐỒNG Ý RẰNG MỖI BÊN CHỈ ĐƯỢC KIỆN BÊN KIA Ở NĂNG LỰC CÁ NHÂN, VÀ KHÔNG PHẢI LÀ NGƯỜI ĐỨNG KIỆN HOẶC THÀNH VIÊN CỦA TẬP THỂ TRONG BẤT KỲ VỤ KIỆN TẬP THỂ HOẶC ĐẠI DIỆN TẬP THỂ NÀO, BAO GỒM NHƯNG KHÔNG GIỚI HẠN CÁC KHỞI KIỆN TẬP THỂ, HOẶC PHÂN XỬ TẬP THỂ CỦA LIÊN BANG HOẶC TIỂU BANG. KHÔNG CHO PHÉP CÁC VỤ KIỆN TẬP THỂ, PHÂN XỬ TẬP THỂ DIỆN RỘNG, CÁC VỤ KIỆN CHUNG CÓ LUẬT SƯ RIÊNG, VÀ BẤT KỲ KIỆN TỤNG NÀO KHÁC TRONG ĐÓ CÓ NGƯỜI ĐÓNG VAI TRÒ ĐẠI DIỆN. THEO ĐÓ, NHƯ CÁC QUY TRÌNH TRỌNG TÀI ĐƯỢC NÊU TRONG MỤC NÀY, NGƯỜI PHÂN XỬ KHÔNG ĐƯỢC KẾT HỢP HOẶC HỢP NHẤT CÁC KHIẾU NẠI CỦA NHIỀU HƠN MỘT BÊN NẾU KHÔNG CÓ SỰ ĐỒNG Ý BẰNG VĂN BẢN CỦA TẤT CẢ CÁC BÊN CÓ ẢNH HƯỞNG ĐẾN TỐ TỤNG PHÂN XỬ. 
+13.4 MỤC 13.3 SẼ LUÔN ĐƯỢC ÁP DỤNG, BẤT KỂ LUẬT PHÁP VÀ KHU VỰC THẨM QUYỀN THỰC TẾ.
+
+Zhuhai Pantum Electronics Co.,Ltd.

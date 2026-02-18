@@ -22,7 +22,8 @@ public:
 //    void onTemperatureChanged(double temp);
 public slots:
     void onTemperatureChanged(double value, char unit);
-
+    void onSpO2Changed(int spo2, int pulse);
+    //void onSpO2Changed(int spo2, int pulse);
     //void onStartNewTest();
     //void onVitalsUpdated(int spo2, int pulse);
     //void onPatientLoaded();

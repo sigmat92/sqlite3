@@ -1,0 +1,48 @@
+# Load firmware for this printer.
+
+#ACTION!="add", GOTO="mud_rules_end"
+
+#SUBSYSTEM=="usb_device", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="1e10", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM230DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6303", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM230ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6304", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM230ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6305", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM230N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6300", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM230ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6301", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM320ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6302", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM230ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6308", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM320ADW
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6309", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#LP7125V1R6
+#CM230-DN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6312", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#CM230-ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6313", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#LP2621V1R7
+#BM230-N
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6314", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM230-ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6315", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+#BM320-ADN
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="232b", ATTR{idProduct}=="6316", MODE="0666", OWNER="root", GROUP="lp", ENV{libsane_matched}="yes"
+
+LABEL="mud_rules_end"

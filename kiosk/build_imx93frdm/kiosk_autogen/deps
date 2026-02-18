@@ -21,6 +21,8 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/model/barcodemodel.cpp \
 	/home/prakash/sqlite3/kiosk/src/model/barcodemodel.h \
 	/home/prakash/sqlite3/kiosk/src/model/patient.h \
+	/home/prakash/sqlite3/kiosk/src/model/printserviceclient.cpp \
+	/home/prakash/sqlite3/kiosk/src/model/printserviceclient.h \
 	/home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp \
 	/home/prakash/sqlite3/kiosk/src/model/qrgenerator.h \
 	/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp \
@@ -33,20 +35,23 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.h \
 	/home/prakash/sqlite3/kiosk/src/service/inputservice.cpp \
 	/home/prakash/sqlite3/kiosk/src/service/inputservice.h \
+	/home/prakash/sqlite3/kiosk/src/service/protocol.h \
 	/home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp \
 	/home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
+	/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp \
+	/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
 	/home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp \
 	/home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
 	/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp \
 	/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
 	/home/prakash/sqlite3/kiosk/src/view/homeview.cpp \
 	/home/prakash/sqlite3/kiosk/src/view/homeview.h \
-	/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp \
-	/home/prakash/sqlite3/kiosk/src/view/mainwindow.h \
 	/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp \
 	/home/prakash/sqlite3/kiosk/src/view/metriccard.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSet \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QThread \
@@ -199,11 +204,8 @@ kiosk_autogen/timestamp: \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtguiglobal.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtransform.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qwindowdefs.h \
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgets-config.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsexports.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \
@@ -733,6 +735,31 @@ kiosk_autogen/timestamp: \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-release.cmake \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QNetworkManagerNetworkInformationPluginAdditionalTargetInfo.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QNetworkManagerNetworkInformationPluginConfig.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QNetworkManagerNetworkInformationPluginTargets-release.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QNetworkManagerNetworkInformationPluginTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \

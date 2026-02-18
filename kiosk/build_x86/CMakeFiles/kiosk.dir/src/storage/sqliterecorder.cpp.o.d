@@ -349,7 +349,11 @@ CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/sqlite3.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
@@ -362,4 +366,7 @@ CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

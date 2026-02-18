@@ -32,11 +32,17 @@ public:
     void setTemperatureBusy(bool busy);  
 
 signals:
+
+    void startTemperatureRequested();
     void startSpo2Requested();
-    void startNibpRequested();
+    void startNIBPRequested();
     void startHeightRequested();
     void startWeightRequested();
-    void startTemperatureRequested(); //
+    void startVisionTestRequested();
+    void startNewTestRequested();
+    void startSettingsRequested();
+    void startPrintingRequested();
+
 public slots:
     void onVitalsUpdated(int spo2, int pulse);
     
@@ -54,17 +60,12 @@ private:
     QRadioButton* femaleBtn{nullptr};
 
     /* ---------- Metric values ---------- */
-    /*
-    QLabel* spo2Value{nullptr};
-    QLabel* nibpValue{nullptr};
-    QLabel* heightValue{nullptr};
-    QLabel* weightValue{nullptr};
-    QLabel* tempValue{nullptr};
-    */
+
     MetricCard* temperatureCard{nullptr};
     MetricCard* spo2Card{nullptr};
     MetricCard* nibpCard{nullptr};
     MetricCard* heightCard{nullptr};
     MetricCard* weightCard{nullptr};
+    MetricCard* visionTestCard{nullptr};
 };
 

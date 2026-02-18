@@ -407,8 +407,7 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

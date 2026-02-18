@@ -293,7 +293,7 @@ void MainWindow::onPrintQR()
     if (currentQR.isNull())
         return;
 
-    PrinterController::printQR(currentQR, m_text);
+    //PrintController::printQR(currentQR, m_text);
 }
 
 /* ---------- CAMERA FRAME UPDATE ---------- */

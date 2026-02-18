@@ -1,0 +1,69 @@
+Lisensavtale for sluttbruker
+
+Programvaren (som er definert nedenfor) er underlagt de betingelser og vilkår som fremgår av den følgende lisensavtalen. 
+
+Zhuhai Pantum Electronics Co., Ltd (“LISENSUTSTEDEREN”) ER VILLIG TIL Å GI LISENS FOR PROGRAMVAREN TIL DEN PERSON ELLER ENHET SOM MOTTAR PROGRAMVAREN ("DU/DEG") KUN PÅ BETINGELSE AT DU GODTAR ALLE BESTEMMELSENE I DENNE LISENSAVTALEN FOR SLUTTBRUKERE ("LFS").  FØR DU KLIKKER PÅ "Jeg samtykker" NEDERST I DETTE DOKUMENTET, ELLER FØR DU INSTALLERER, KOPIERER, LASTER NED ELLER PÅ ANNEN MÅTE BRUKER PROGRAMVAREN, BER VI DEG LESE BETINGELSENE OG VILKÅRENE FOR LFS.  DERSOM DU IKKE SAMTYKKER I DISSE BETINGELSENE OG VILKÅRENE, VIL IKKE LISENSUTSTEDEREN GI DEG LISENS FOR PROGRAMVAREN, OG DU MÅ DA KLIKKE PÅ “Jeg samtykker ikke”, HVORPÅ DU IKKE HAR TILLATELSE TIL Å INSTALLERE, KOPIERE, LASTE NED ELLER PÅ ANNEN MÅTE BRUKE PROGRAMVAREN, OG DU MÅ UMIDDELBART FJERNE PROGRAMVAREN FRA DITT SYSTEM.  VED Å KLIKKE PÅ “Jeg samtykker”, ELLER HVIS DU INSTALLERER, KOPIERER, LASTER NED ELLER PÅ ANNEN MÅTE BRUKER PROGRAMVAREN, GODTAR DU Å VÆRE BUNDET AV DENNE LFS, HANDLE I SAMSVAR MED DEN OG BLI EN AVTALEPART TIL LFS.  DERSOM DU HAR KJØPT PROGRAMVAREN, MEN IKKE SAMTYKKER Å BLI BUNDET AV DENNE LFS, KAN DU RETURNERE PROGRAMVAREN TIL UTSALGSSTEDET INNEN FJORTEN (14) DAGER FRA KJØPSDATO FOR Å FÅ REFUSJON. DERSOM PROGRAMVAREN ER INSTALLERT ELLER GJORT TILGJENGELIG MED ET ANNET PRODUKT FRA LISENSUTSTEDEREN, MÅ DU RETURNERE HELE VAREN I UBRUKT TILSTAND FOR Å KUNNE FÅ REFUSJON.
+
+1. Programvare.  
+"Programvare" betyr dataprogrammene som finnes i pakningen fra lisensutsteder, sammen med alle koder, teknikker, programvareverktøy, formater, design, konsepter, metoder og ideer som er tilknyttet disse dataprogrammene, samt all relatert dokumentasjon.  
+
+2. Eierskap.  
+Du godtar og samtykker i at programvaren utgjør en verdifull handelshemmelighet for lisensutstederen og dennes tredjeparts lisensutstedere, og at lisensutstederen eller dennes tredjeparts lisensutstedere ene og alene eier alle utenlandske og nasjonale opphavsrettigheter, andre åndsverksrettigheter i og til programvaren, samt for alle kopier av denne.  Bortsett fra hva som uttrykkelig blir avgitt til deg gjennom lisensen i denne LFS, er alle rettigheter i og til programvaren, samt tilknyttede åndsverkrettigheter, forbeholdt av og for lisensutstederen og dennes tredjeparts lisensutstedere.  Ingen rettighet eller eierskap til programvaren overføres til deg.  Du skal reprodusere og inkludere merknader om opphavsrett og annet eierskap på og i alle kopier, inkludert, men ikke begrenses til delvise, fysiske eller elektroniske kopier av programvaren.  Dersom du foretar eller foreslår endringer eller modifikasjoner til programvaren, anerkjenner du at du ikke har noen rett til, tilhørighet eller interesse knyttet til slike endringer eller modifikasjoner, og samtykker videre i at slike endringer eller modifikasjoner kun eies av lisensutstederen eller dennes tredjeparts lisensutstedere.
+
+3. Lisens.  
+Etter at du har gitt ditt samtykke til denne LFS, gir lisensutstederen en begrenset, ikke eksklusiv, personlig lisens som ikke kan overdras, en lisens du gir ditt samtykke til slik at du kan gjøre følgende, i samsvar med betingelsene og vilkårene for denne LFS, og for avtalens varighet:
+
+(a) installere og benytte programvaren kun med det medfølgende produktet fra lisensutstederen, eller for det programvaren er tiltenkt brukt sammen med, som spesifisert i tilknyttet dokumentasjon for lisensutstederens produkt ("lisensutstederens produkt")
+
+(b) installere og benytte programvaren på én eller flere datamaskiner, i henhold til normal og forespeilet bruk av lisensutstederens produkt 
+
+(c) benytte programvaren kun for egen, sedvanlig forretningsbruk eller ved personlig formål for å benytte lisensutstederens produkt
+
+(d) kun å benytte et rimelig antall kopier av programvaren for å støtte opp om normal og forespeilet bruk av programvaren, så lenge slike kopier inneholder alle merknader på programvaren som omhandler opphavsrettigheter, og når kopien kun benyttes til sikkerhetskopi eller for installering
+
+(e) overføre kopier av programvaren for besittelse av en annen part ved å overføre en kopi av denne LFS og all annen dokumentasjon, sammen med minst ett komplett og uendret eksemplar av programvaren, såfremt:
+(i) du enten overfører til annen part eller ødelegger alle dine kopier av programvaren samtidig
+(ii) denne overføringen av besittelse avslutter din lisens med lisensutstederen
+(iii) denne overføringen overfører lisensutstederens produkt som programvaren er begrenset til 
+(iv) den annen part godtar og samtykker til å bli bundet av betingelsene og vilkårene i denne LFS med deres benyttelse av programvaren
+(v) du gir lisensutstederen komplett skadeserstatning for alle krav, tap eller skader som grunner i den annens parts manglende handling i samsvar med denne LFS, inkludert, uten begrensning, alle saker som omhandler eksportkontroll.
+
+4. Begrensninger.
+(a) Du skal ikke selv, og heller ikke la andre, uten lisensutsteders på forhånd avgitte, skriftlige samtykke, gi tillatelse til følgende: 
+(i) bruke, kopiere, endre, kombinere eller overføre kopier av programvaren (eller deler av denne), bortsett fra slik det uttrykkelig gis godkjenning til i denne LFS
+(ii) dekomponere, ta fra hverandre eller sette sammen i motsatt rekkefølge, forsøke å reprodusere programvaren eller finne programvarens kildekode, unntatt slik det uttrykkelig er godkjent av gjeldende lovgivning, og uten mulighet for ansvarsfraskrivelse gjennom kontrakt         
+(iii) gi underlisens, leie, låne, lease, markedsføre, selge eller distribuere programvaren eller en kopi av denne        
+(iv) lage avledninger av programvaren, eller endre eller deaktivere noe av lisensen eller kontrollfunksjonene i programvaren, ei heller fjerne, demontere, koble fra eller på annen måte separere noen av programvarens komponenter 
+(v) benytte programvaren i et miljø for hosting, time-sharing eller ved et servicekontor; eller
+(vi) fjerne noen merknader eller etiketter på programvaren som omhandler opphavsrettigheter.
+          
+(b) Du kan ikke eksportere eller videreeksportere programvaren (eller noen del av denne) på noen som helst måte, hvor dette bryter med eksportbegrensningene fra myndighetene i ditt land.
+
+(c) Du må handle i samsvar med andre tilleggsbestemmelser og begrensninger om programvaren som kan fremgå av tilknyttet dokumentasjon.
+
+5. Oppdateringslisenser.  
+Dersom lisensutstederen tilbyr en oppdatering, oppgradering, ny versjon eller et tillegg til programvaren (samlet kalt en "oppdatering"), skal du kun få lisens til å benytte oppdateringen dersom du har en gyldig lisens for programvaren, og som lisensutstederen anser som kvalifiserende for oppdateringen.  I den grad oppdateringen fortrenger eller erstatter den opprinnelige programvaren, kan du ikke lenger bruke programvaren.  Denne LFS skal være gjeldende for hver oppdatering, såfremt ikke lisensutstederen angir at andre betingelser skal gjelde.  Ved tvist skal slike andre betingelser ha fortrinn overfor denne LFS.
+
+6. Tredjeparts programvare.  
+Vedrørende programvare (eller deler av denne) som gis på lisens fra en tredjepart ("tredjeparts programvare"), skal du også handle i samsvar med alle tilleggsbestemmelser for lisensen som pålegges av slik tredjeparts lisensutsteder ("tredjeparts lisensbetingelser").  Tredjepartens lisensbetingelser finnes vanligvis i en fil som medfølger programvaren.  Lisensutstederen skal imidlertid gi deg informasjon om slike betingelser på anmodning.  Dersom en tvist skulle oppstå, skal tredjepartens lisensbetingelser ha fortrinn fremfor denne LFS hva angår tredjepartens programvare. 
+
+7. Samtykke til bruk av data.  
+Du anerkjenner og samtykker i at lisensutsteder (og dennes tilknyttede partnere) kan innehente og bruke teknisk informasjon du oppgir i forbindelse med (i) programvaren eller lisensutstederens produkt, (ii) støttetjenester knyttet til programvaren eller lisensutstederens produkt, samt (iii) bruke din erfaring med programvaren eller lisensutstederens produkt.  Alle opplysninger som innhentes, behandles i henhold til lisensutstederens personvernpolitikk (tilgjenglig på http://www.pantum.com).  Lisensutstederen skal ikke bruke disse opplysningene på en måte som identifiserer deg personlig, bortsett fra når det er nødvendig eller praktisk for å forbedre eller yte tilleggstjenester, eller for å gi deg bedre brukerforhold.
+
+8. GARANTIFRASKRIVELSE.  
+Garantien angir detaljer og begrensninger for maskinvaren hvor programvaren finnes, og er beskrevet i kunngjøringen for begrenset garanti som var vedlagt maskinvaren.  MED UNNTAK AV FOREGÅENDE UTTRYKTE GARANTIER SOM KUN GJELDER FOR MASKINVARE OG MEDIA, GIS PROGRAMVAREN INGEN GARANTI OG LEVERES "SOM DEN ER" UTEN NOEN SOM HELST FORM FOR FORSIKRING, SIKKERHET ELLER GARANTI, HVERKEN UTTRYKT ELLER IMPLISITT, NEDFELT I REGELVERK ELLER ANNET, INKLUDERT GARANTIER FOR SALGBARHET ELLER EGNETHET FOR ET BESTEMT FORMÅL, RETTIGHET ELLER BRUDD PÅ RETTIGHET, SAMT ALLE GARANTIER SOM KAN OPPSTÅ GJENNOM ATFERD, HANDELSBRUK ELLER -PRAKSIS.  LISENSUTSTEDER GIR INGEN SIKKERHET, FORSIKRING ELLER GARANTI FOR AT ANVENDELSEN AV PROGRAMVAREN SKAL VÆRE FRI FRA AVBRUDD ELLER FEILFRI ELLER KOMPATIBEL MED DATABEHANDLINGSMILJØET SOM DU BENYTTER, EI HELLER AT MANGLER KAN ELLER SKAL RETTES OPP.  Visse land eller andre rettsmyndigheter tillater ikke ekskludering av en implisitt garanti, og det kan derfor være at ansvarsfraskrivelsen ovenfor ikke gjelder deg, og du kan ha andre juridiske rettigheter som varierer etter rettsmyndighet.  
+
+9. BEGRENSNING AV TILTAK. 
+Lisensutstederens totale ansvar for alle tap og skadeserstatninger etter eller i forbindelse med denne LFS, inkludert, uten begrensning, ansvar nedfelt i kontrakt, skade (inkludert handlinger som skyldes uaktsomhet, objektivt ansvar samt bevisst og/eller forsettlig atferd), sikring, skadeserstatning eller andre former for ansvar, enten det dreier seg om manglende leveranse eller ytelse eller annet relatert til utforming, prestasjon, bruk, defekt eller mangel ved programvaren, og din eneste og unike erstatning skal være begrenset til det beløpet du betalte for programvaren eller USD 5,00, hva som enn er høyest av disse to.  IKKE UNDER NOEN OMSTENDIGHET SKAL LISENSUTSTEDEREN ELLER DENNES TREDJEPARTS LISENSUTSTEDERE ELLER RESPEKTIVE TILKNYTTEDE SELSKAP, LEVERANDØRER, DISTRIBUTØRER ELLER FORHANDLERE VÆRE ANSVARLIG FOR TAPT FORTJENESTE, TAPTE DATA, AVBRUDD I FORRETNINGER ELLER NOEN INDIREKTE, FØLGESRELATERT, TILFELDIG, SIDEORDNET, EKSEMPLARISK, AVSKREKKENDE, TILKNYTTET ELLER SPESIELL SKADESERSTATNING SOM RELATERES TIL ELLER STAMMER FRA BRUK ELLER MANGLENDE MULIGHET TIL Å BRUKE PROGRAMVAREN, SELV OM SLIK SKADESERSTATNING ER FORUTSETT, ELLER LISENSUTSTEDER ELLER DENNES LISENSUTSTEDERE ELLER GODKJENTE FORHANDLERE HAR BLITT GJORT KJENT MED MULIGHETEN FOR SLIK SKADESERSTATNING ELLER FOR NOE KRAV FRA DEG BASERT PÅ TREDJEPARTS KRAV, UAVHENGIG AV HVORVIDT KRAVET TAR UTGANGSPUNKT I KONTRAKT, SKADE (INKLUDERT UAKTSOMHET, OBJEKTIVT ANSVAR SAMT BEVISST OG/ELLER FORSETTLIG ATFERD), SIKRING, ERSTATNING ELLER ANNET FORM FOR ANSVAR.  DU SAMTYKKER I AT (A) ANSVARSBEGRENSNINGENE SOM FREMGÅR AV DENNE LFS REPRESENTERER ET VERDIFULLT OG NØDVENDIG INCENTIV FOR LISENSUTSTEDEREN TIL Å GI DEG LISENS FOR PROGRAMVAREN, OG AT (B) DISSE BEGRENSNINGENE IKKE SKAL VÆRE TIL HINDER FOR AT DENNE LFS TJENER SITT VESENTLIGE FORMÅL VED MANGLENDE ERSTATNINGSMULIGHET ELLER ANNET.  Visse land eller andre jurisdiksjoner tillater ikke ansvarsbegrensninger, så det kan være at begrensningene ovenfor ikke gjelder for deg, og du kan ha andre juridiske rettigheter som varierer i henhold til jurisdiksjon.  
+
+10. Klausul for begrensede rettigheter.  
+Du anerkjenner at programvaren er en kommersiell dataprogramvare, utviklet på privat kostnad.  Dine rettigheter til å bruke, kopiere eller fremvise programvaren er begrenset gjennom denne LFS.  Dersom sluttbrukeren er et kontor tilhørende USAs regjering, skal bruk, kopiering og fremvising være begrenset slik det her er angitt til slik det er maksimalt tillatt av Defense Federal Acquisition Regulation Supplement eller Federal Acquisition Regulation, hva som enn måtte gjelde.
+
+11. Terminering.  
+Lisensen kan termineres når som helst ved at du ødelegger programvaren og alle dine kopier av programvaren, eller på annen måte slik det fremgår av denne LFS.  Din lisens til bruk av programvaren skal umiddelbart og automatisk terminere, uten forvarsel, dersom du ikke handler fullt og helt i samsvar med denne LFS.  Dersom lisensen termineres, skal all bruk av programvaren umiddelbart opphøre, og du skal ødelegge alle kopier av programvaren. Lisensutstederen forbeholder seg rettigheten til enhver tid å endre priser, særtrekk, spesifikasjoner, muligheter, funksjoner, lisensbestemmelser, utgivelsesdatoer, generell tilgjengelighet eller andre karakteristika ved programvaren.
+
+12. Diverse.  
+Denne LFS kan kun bli endret skriftlig, undertegnet av deg og en godkjent representant for lisensutstederen. Dersom noen bestemmelse i denne LFS av noen som helst årsak skulle bli ansett som ulovlig eller ugyldig av en kompetent rettsmyndighet, skal likevel de øvrige bestemmelsene i denne LFS ha full kraft og virkning, og den omstridte bestemmelsen skal begrenses eller endres i den grad dette er nødvendig for at bestemmelsen skal bli gyldig. Denne LFS skal styres og fortolkes i samsvar med lovene i Folkerepublikken Kina, uten anvendelse av lovstridige prinsipper. 
+
+Zhuhai Pantum Electronics Co., Ltd.
+1. juli 2011

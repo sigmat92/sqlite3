@@ -1,0 +1,8 @@
+str_processName = Pantum Driver Installer
+str_noticeLabel = Les følgende grundig, og godta vilkårene i avtalen for å installere.
+str_Button_license = Lisensavtale for sluttbruker
+str_Button_privacy = Privacy Policy
+str_checkButton = I agree to End User License Agreement and Privacy Policy
+str_installButton = Installer
+str_finishLabel = Installasjon fullført
+str_doneButton = Ferdig

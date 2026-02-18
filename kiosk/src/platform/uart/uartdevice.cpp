@@ -9,7 +9,7 @@ UartDevice::UartDevice(QObject* parent) : QObject(parent) {}
 bool UartDevice::open(const QString& dev, int baud)
 {
     m_fd = ::open(dev.toLocal8Bit().constData(),
-                  O_RDWR | O_NOCTTY);   // 🔥 NO O_NONBLOCK
+                  O_RDWR | O_NOCTTY);   // | O_NONBLOCK for async read, but we use QSocketNotifier instead
     if (m_fd < 0) {
         qWarning() << "UART open failed";
         return false;
@@ -21,7 +21,7 @@ bool UartDevice::open(const QString& dev, int baud)
         return false;
     }
 
-    // 🔥 RAW mode (pySerial equivalent)
+    // RAW mode (pySerial equivalent)
     cfmakeraw(&tio);
 
     speed_t speed = B9600;

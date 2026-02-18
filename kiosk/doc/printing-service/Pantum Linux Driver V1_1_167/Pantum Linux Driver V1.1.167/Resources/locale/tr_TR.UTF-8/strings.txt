@@ -1,0 +1,8 @@
+str_processName = Pantum Driver Installer
+str_noticeLabel = Lütfen aşağıdaki Sözleşmesini dikkatle okuyun ve kuruluma devam etmek için Sözleşme hükümlerini kabul edin.
+str_Button_license = Son Kullanıcı Lisans Anlaşması
+str_Button_privacy = Gizlilik Politikası
+str_checkButton = Son Kullanıcı Lisans Anlaşması ile Gizlilik Politikasını kabul ediyorum
+str_installButton = Kur
+str_finishLabel = Kurulum Tamamlandı
+str_doneButton = Bitti

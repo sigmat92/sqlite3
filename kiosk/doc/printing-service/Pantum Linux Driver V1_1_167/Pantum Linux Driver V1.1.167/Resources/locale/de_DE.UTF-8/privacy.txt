@@ -1,0 +1,76 @@
+【Datenschutzerklärung】 
+Zuletzt aktualisiert: 1. Mai 2023
+
+Zhuhai Pantum Electronics Co., Ltd. und seine weltweiten Niederlassungen („Pantum“, „wir“, „uns“, „unser“) sind sich der Bedeutung Ihrer Privatsphäre bewusst und verpflichten sich zum Schutz Ihrer Privatsphäre.  Mit dieser Datenschutzerklärung („Datenschutzerklärung“) informieren wir Sie darüber, wie die Software Ihre personenbezogenen Daten und Informationen erhebt und verarbeitet. Bitte beachten Sie, dass diese Datenschutzerklärung für alle Daten und Informationen gilt, die an PANTUM übermittelt oder von PANTUM erhoben und verarbeitet werden (einschließlich personenbezogener Daten, „personenbezogene Daten“ bedeutet alle Arten von elektronisch oder anderweitig aufgezeichneten Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen).
+Bevor Sie unsere Produkte und Dienste verwenden, lesen Sie bitte diese Datenschutzerklärung sorgfältig durch, insbesondere die fett gedruckten Begriffe, um sicherzustellen, dass Sie diese Datenschutzerklärung vollständig verstehen und ihr zustimmen.
+
+Diese Datenschutzerklärung dient hauptsächlich dazu, Sie zu informieren:
+I. Wie „PANTUM“ Ihre personenbezogenen Daten erhebt und verwendet
+II. Wie „PANTUM“ Ihre personenbezogenen Daten speichert und offenlegt
+III. Wie „PANTUM“ Ihre personenbezogenen Daten schützt
+IV. Wie „PANTUM“ mit den personenbezogenen Daten von Kindern umgeht
+V. Wie „PANTUM“ Ihr Recht auf Zugang zu Daten schützt
+VI. Wie „PANTUM“ Ihre personenbezogenen Daten korrigiert
+VII. Wie „PANTUM“ die erhobenen personenbezogenen Daten löscht
+VIII. Wie „PANTUM“ Ihr Recht schützt, Ihr Einverständnis zu widerrufen
+IX. Wie „PANTUM“ Ihre personenbezogenen Daten grenzüberschreitend verarbeitet
+X. Wie Sie uns kontaktieren können
+XI. Änderungen an dieser Datenschutzerklärung
+ 
+I. Wie „PANTUM“ Ihre personenbezogenen Daten erhebt und verwendet
+Diese Software erhebt die erforderlichen Daten wie unten beschrieben:
+1. Wir erheben Daten über Ihren Drucker (Seriennummer des Druckers, IP-Adresse und Druckerstatus);
+2. Wir erheben die Daten Ihres Druckauftrags (Anzahl der Kopien, Papierformat, Druckmedium);
+3. Wir erheben Daten zu Ihrem Scanauftrag (Scanquelle, Farbe, Auflösung, Größe, gescannte Bilddaten); 
+Wir erheben die oben genannten Daten, um dem Betriebssystem zu helfen, die Installation des Druckertreibers abzuschließen.  Die grundlegende Druckfunktion kann erst nach erfolgreicher Installation des Treibers ausgeführt werden.  Wenn Sie sich weigern, die oben genannten Daten zu verwenden, können Sie die Grundfunktionen dieses Produkts nicht nutzen. Ohne Ihr Einverständnis werden wir Ihre personenbezogenen Daten nicht für andere als die hier genannten Zwecke verwenden.  Es ist wichtig zu beachten, dass die oben genannten Verwendungszwecke die wichtigsten Arten sind, in denen wir Ihre Daten verwenden.  Wir werden Sie um Ihr Einverständnis bitten, wenn wir Daten für andere als die in dieser Datenschutzerklärung beschriebenen Zwecke verwenden wollen, oder wenn wir die erhobenen Daten für einen bestimmten Zweck verwenden wollen. Wenn sich die Funktionen ändern und die ursprüngliche Zustimmung nicht mehr gültig ist, werden wir Ihr neues Einverständnis einholen.
+
+II. Wie „PANTUM“ Ihre personenbezogenen Daten speichert und offenlegt
+1. Speicherort
+Diese Software ist nur ein Hardware-Treiber für Ihren Scanner, sie ist ein Werkzeug, um Ihr Computer-Betriebssystem mit der Scanner-Hardware zu verbinden. Die Software verwendet die oben genannten Daten nur, um Ihre Treibersoftware zu identifizieren, damit sie reibungslos installiert werden kann, sie speichert keine personenbezogenen Daten von Ihnen. 
+2. Offenlegung von Daten
+1) Sie erklären sich damit einverstanden, dass wir Ihre Daten an verbundene Unternehmen, Händler oder Distributoren, autorisierte Dienstleister von Pantum und Drittanbieter im Zusammenhang mit Unternehmenstransaktionen weitergeben (Ihre Daten werden wahrscheinlich im Rahmen eines Unternehmenszusammenschlusses oder -transfers an Dritte offengelegt), sofern dies erforderlich ist, um Ihnen die gewünschten Dienste bereitzustellen.
+2) Wir können Ihre personenbezogenen Daten unter einem der folgenden Umstände offenlegen:
+•Zur Erfüllung gesetzlicher Anforderungen oder als Reaktion auf obligatorische Gerichtsverfahren (z.B. Durchsuchungsbefehl oder andere gerichtliche Anordnung)
+•Zum Schutz der Rechte oder der Sicherheit von Pantum (einschließlich seiner Tochtergesellschaften, Geschäftspartner und Kunden). Diese Klausel kann in einigen Ländern (Regionen) oder Gerichtsbarkeiten ungültig sein, so dass sie möglicherweise nicht auf Sie zutrifft.
+
+III. Wie „PANTUM“ Ihre personenbezogenen Daten schützt
+Um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Missbrauch, Weitergabe oder Veränderung zu schützen, setzt Zhuhai Pantum Electronics Co., Ltd. angemessene und geeignete Verschlüsselungsverfahren ein, um die Sicherheit der von „PANTUM“ erhobenen und verarbeiteten Daten zu gewährleisten. Bitte beachten Sie jedoch, dass trotz aller angemessenen Maßnahmen, die wir zum Schutz Ihrer Daten ergriffen haben, keine Website, Internetübertragung, kein Computersystem und keine drahtlose Verbindung vollkommen sicher ist.
+
+IV. Wie „PANTUM“ mit den personenbezogenen Daten von Kindern umgeht
+1. „PANTUM“ wird nicht wissentlich personenbezogene Daten von Kindern unter 13 Jahren (oder einem entsprechenden, in den jeweiligen Gerichtsbarkeiten festgelegten Mindestalter) erheben und „PANTUM“ richtet sich nicht an Kinder unter 13 Jahren (oder einem entsprechenden, in den jeweiligen Gerichtsbarkeiten festgelegten Mindestalter);
+2. Wenn Sie ein Kind unter 13 Jahren sind, übermitteln Sie bitte keine personenbezogenen Daten über dieses Produkt;
+3. Wenn „PANTUM“ personenbezogene Daten erhält, die von einem Kind unter 13 Jahren über dieses Produkt übermittelt wurden, werden wir diese Daten in Übereinstimmung mit geltendem Recht löschen.
+ 
+V. Wie „PANTUM“ Ihr Recht auf Zugang zu Daten schützt
+Sofern gesetzlich nicht anders vorgesehen, haben Sie als individueller Benutzer von „PANTUM“ das Recht, auf Ihre personenbezogenen Daten zuzugreifen. Sie können auf Ihre personenbezogenen Daten auf folgende Weise zugreifen:
+1. Sie können uns einen Antrag zur Einsicht in Ihre personenbezogenen Daten senden, indem Sie uns eine E-Mail (privacy@pantum.com) schicken. Wir werden Ihre Identität überprüfen (um die Sicherheit Ihres Kontos oder Ihrer Daten zu gewährleisten) und Ihren Antrag so schnell wie möglich innerhalb eines angemessenen Zeitraums beantworten, abhängig von der Schwierigkeit der Daten, die Sie erfragen möchten, und den branchenüblichen Praktiken für Informationsanfragen.
+2. Im Prinzip müssen Sie für Ihren Antrag zur Einsicht in Ihre personenbezogenen Daten nichts bezahlen, aber bei wiederholten Anträgen, die mehr als dreimal innerhalb von drei Monaten erfolgen, werden wir gegebenenfalls eine bestimmte Gebühr erheben.
+ 
+VI. Wie „PANTUM“ Ihre personenbezogenen Daten korrigiert
+Wenn Sie feststellen, dass die von uns erhobenen personenbezogenen Daten fehlerhaft sind, haben Sie das Recht, von uns eine Korrektur zu beantragen.  Sie können eine Korrektur beantragen, indem Sie uns eine E-Mail schicken (privacy@pantum.com). Wir werden innerhalb von 5 Tagen auf Ihren Korrekturantrag antworten.
+ 
+VII. Wie „PANTUM“ die erhobenen personenbezogenen Daten löscht
+1. Deinstallieren Sie diese Software direkt von Ihrem Computer; 
+2. Sie können uns den Antrag auf Löschung Ihrer personenbezogenen Daten stellen, indem Sie uns eine E-Mail schicken (privacy@pantum.com):
+•Wenn Sie der Meinung sind, dass wir Ihre personenbezogenen Daten unter Verletzung der einschlägigen Gesetze und Vorschriften verarbeiten;
+•Wenn Sie der Meinung sind, dass wir Ihre Daten ohne Ihr Einverständnis verarbeitet haben;
+•Wenn wir Ihre personenbezogenen Daten unter Verstoß gegen unsere Vereinbarung mit Ihnen verarbeiten;
+•Wenn Sie Ihr Konto kündigen oder sich weigern, unser Produkt zu verwenden;
+Nachdem wir Ihre E-Mail mit dem Antrag zur Löschung Ihrer personenbezogenen Daten erhalten haben, verpflichten wir uns, auf Ihren Antrag innerhalb von 15 Arbeitstagen angemessen zu reagieren.
+3. Wir können in regelmäßigen Abständen die von uns gespeicherten Daten überprüfen und nach unserem Ermessen einseitig alles löschen, was nicht mehr notwendig ist, um Ihnen Dienste zu erbringen.
+
+VIII. Wie „PANTUM“ Ihr Recht schützt, Ihr Einverständnis zu widerrufen
+Wir schützen in vollem Umfang Ihr Recht, Ihr Einverständnis zur Erhebung und Verwendung personenbezogener Daten zu widerrufen. Wenn Sie sich dafür entscheiden, Ihr Einverständnis zu widerrufen, werden wir die personenbezogenen Daten, die der Ermächtigung entsprechen, nicht weiterverarbeiten und wir werden nicht in der Lage sein, Ihnen die funktionalen Dienste, die der Ermächtigung entsprechen, zur Verfügung zu stellen. Sie kontaktieren PANTUM über privacy@pantum.com, um von PANTUM zu verlangen, dies für Sie zu tun.
+
+IX. Wie „PANTUM“ Ihre personenbezogenen Daten grenzüberschreitend verarbeitet
+Derzeit werden wir Ihre personenbezogenen Daten nicht für grenzüberschreitende Geschäfte verwenden, speichern, weitergeben und offenlegen oder Ihre personenbezogenen Daten ins Ausland übermitteln. Sollten wir Ihre personenbezogenen Daten aufgrund nachträglicher Änderungen unseres Dienstes grenzüberschreitend übermitteln müssen, werden wir dies nur tun, nachdem wir Ihr Einverständnis eingeholt haben und andere durch Gesetze, Verwaltungsvorschriften oder die nationale Cyberspace-Verwaltung festgelegte Bedingungen erfüllen.
+
+X. Wie Sie uns kontaktieren können
+Wenn Sie Fragen oder Anmerkungen zu dieser Datenschutzerklärung haben, können Sie uns auf folgende Weise kontaktieren
+E-Mail: privacy@pantum.com
+Postanschrift: Zhuhai Pantum Electronics Co., Ltd.
+Nr. 3883 Zhuhai Allee, Xiangzhou Bezirk, Zhuhai Stadt, Guangdong Provinz, China
+
+XI. Änderungen an dieser Datenschutzerklärung
+Wir können diese Datenschutzerklärung jederzeit überarbeiten und werden Sie über alle Änderungen dieser Datenschutzerklärung auf dem Laufenden halten.  Wir werden Ihre Rechte im Rahmen dieser Datenschutzerklärung nicht ohne Ihr Einverständnis einschränken. Bei wesentlichen Änderungen werden wir eine gut sichtbare Erklärung veröffentlichen.
+Jede überarbeitete Version dieser Datenschutzerklärung tritt erst in Kraft, wenn sie veröffentlicht wird.

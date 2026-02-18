@@ -1,0 +1,76 @@
+【Politica de confidențialitate 】
+Ultima actualizare: 1 mai 2023
+
+Zhuhai Pantum Electronics Co., Ltd. și filialele sale globale („Pantum”, „noi”, „noi”, „al nostru”) recunosc importanța confidențialității dumneavoastră și își iau angajamentul să să vă protejeze confidențialitatea. Vă vom informa modul în care Software-ul colectează și prelucrează datele și informațiile dumneavoastră personale prin această Politică de confidențialitate („Politică”). Este important să rețineți că această Politică se aplică tuturor informațiilor și datelor transmise sau colectate și procesate de PANTUM (inclusiv informațiile personale, „informații personale” înseamnă toate tipurile de informații, înregistrate electronic sau în alt mod, referitoare la o persoană fizică identificată sau identificabilă).
+Înainte de a începe să utilizați produsele și serviciile noastre, vă rugăm să citiți și să înțelegeți cu atenție această Politică, în special termenii marcați cu caractere aldine, pentru a vă asigura că înțelegeți pe deplin și sunteți de acord cu această Politică înainte de a o utiliza.
+
+Această politică este destinată în principal să vă arate:
+I. Modul în care „PANTUM” colectează și utilizează informațiile dumneavoastră personale
+II. Modul în care „PANTUM” stochează și dezvăluie informațiile dumneavoastră personale
+III. Modul în care vă protejează „PANTUM” informațiile personale
+IV. Modul în care „PANTUM” gestionează informațiile personale ale copiilor
+V. Modul în care „PANTUM” vă protejează dreptul de acces la informații
+VI. Modul în care „PANTUM” vă corectează informațiile personale
+VII. Modul în care „PANTUM” șterge informațiile personale colectate
+VIII. Modul în care vă protejează „PANTUM” dreptul de a vă retrage consimțământul
+IX. Modul în care „PANTUM” prelucrează informațiile dumneavoastră personale în afara frontierelor
+X. Modalități de contact
+XI. Modificări ale acestei politici
+
+I. Modul în care „PANTUM” colectează și utilizează informațiile dumneavoastră personale
+Acest software va colecta informațiile și datele necesare, așa cum este descris mai jos:
+1. Vom colecta informațiile despre imprimantă (numărul de serie al imprimantei,adresa IP și starea imprimantei);
+2. Vom colecta informațiile despre lucrările dvs. de imprimare (număr de copii, dimensiunea hârtiei, suport de imprimare);
+3. Vom colecta informațiile despre lucrările dvs. de scanare (sursa de scanare, culoare, rezoluție, dimensiune, date de imagine scanată);
+Colectăm informațiile de mai sus pentru a ajuta sistemul de operare să finalizeze instalarea driverului de imprimantă. Funcția de imprimare de bază poate fi finalizată numai după ce driverul este instalat cu succes. Dacă refuzați să utilizați informațiile de mai sus, nu veți putea folosi funcțiile de bază ale acestui produs. Nu vom folosi informațiile și datele dumneavoastră cu caracter personal în alte scopuri decât cele menționate aici fără consimțământul dumneavoastră. Este important să rețineți că utilizările de mai sus acoperă modurile principale în care folosim informațiile dumneavoastră. Vom solicita consimțământul dumneavoastră atunci când vom dori să folosim informații în alte scopuri decât cele descrise în această politică sau când dorim să folosim informațiile colectate într-un anumit scop. Dacă funcțiile se modifică, atunci consimțământul inițial nu mai este valabil, atunci vom obține noul dvs.consimțământ.
+
+II. Modul în care „PANTUM” stochează și dezvăluie informațiile dumneavoastră personale
+1. Locația de depozitare
+Acest software este doar un driver hardware pentru scanerul dvs., este un instrument pentru a conecta sistemul de operare al computerului dvs. la hardware-ul scanerului, Software-ul folosește informațiile de mai sus doar pentru a identifica software-ul driverului pentru a-l instala fără erori, nu va stoca niciuna dintre Informațiile dvs. personale.
+2. Dezvăluirea informatiilor
+1) Pe baza satisfacerii nevoii de a vă furniza serviciile solicitate, sunteți de acord că putem furniza informațiile dvs. afiliaților, dealerilor sau distribuitorilor, furnizorilor de servicii autorizați ai Pantum și terților legate de tranzacțiile companiei (este probabil ca informațiile dvs. să fie dezvăluite terților ca parte a unei combinări de întreprinderi sau a unui transfer).
+2) Putem dezvălui informațiile dumneavoastră personale în oricare dintre următoarele circumstanțe:
+•Pentru a se conforma cerințelor legale sau a răspunde la procedurile legale obligatorii (cum ar fi mandatul de percheziție sau alt ordin judecătoresc)
+• Protejați drepturile legale sau securitatea Pantum (inclusiv afiliații, partenerii de afaceri/și clienții săi). Această clauză poate fi invalidă în unele țări (regiuni) sau jurisdicții, așa că este posibil să nu se aplice în cazul dvs.
+
+III. Modul în care vă protejează „PANTUM” informațiile personale
+Pentru a vă proteja informațiile personale împotriva accesului neautorizat, utilizării eronate, dezvăluirii sau modificării, Zhuhai Pantum Electronics Co., Ltd. utilizează proceduri de criptare rezonabile și adecvate pentru a asigura securitatea informațiilor colectate și procesate de „PANTUM”.cu toate acestea, vă rugăm să rețineți că niciun site web, transmisie prin Internet, sistem informatic sau conexiune wireless nu este complet sigur, în ciuda tuturor măsurilor rezonabile pe care le-am luat pentru a vă proteja informațiile.
+
+IV. Modul în care „PANTUM” gestionează informațiile personale ale copiilor
+1. „PANTUM” nu va colecta cu bună știință informații personale de la copii sub 13 ani (sau vârsta minimă echivalentă specificată în jurisdicțiile relevante), iar „PANTUM” nu vizează copiii sub 13 ani (sau vârsta minimă echivalentă specificată în jurisdicțiile relevante);
+2. Dacă sunteți un copil sub 13 ani, vă rugăm să nu trimiteți nicio informație personală prin intermediul acestui produs;
+3. Dacă „PANTUM” primește informații personale transmise de un copil cu vârsta sub 13 ani prin intermediul acestui produs, vom șterge aceste informații în conformitate cu legea aplicabilă.
+
+V. Modul în care „PANTUM” vă protejează dreptul de acces la informații
+Cu excepția cazului în care legea prevede altfel, în calitate de utilizator individual al „PANTUM”, aveți dreptul de a accesa informațiile dumneavoastră personale. Puteți accesa informațiile dumneavoastră personale prin următoarea metodă:
+1. Ne puteți trimite o solicitare de revizuire a informațiilor dvs. personale trimițându-ne un e-mail (privacy@pantum.com), iar noi vă vom verifica identitatea (pentru a asigura securitatea contului sau a informațiilor dvs.) și vom răspunde solicitării dvs.cât mai curând posibil, într-o perioadă rezonabilă, în funcție de dificultatea informațiilor despre care doriți să solicitați informații și de practicile din industrie pentru solicitarea de informații.
+2. În principiu, nu trebuie să plătiți pentru solicitarea dumneavoastră de a vă revizui informațiile personale, dar pentru solicitările repetate care depășesc mai mult de trei ori în decurs de trei luni, vom percepe un anumit cost, după caz.
+
+VI. Modul în care „PANTUM” vă corectează informațiile personale
+Când ați constatat că există o eroare în informațiile personale pe care le-am colectat de la dvs., aveți dreptul de a ne solicita să facem o corecție. Puteți solicita corectarea trimițându-ne un e-mail (privacy@pantum.com). Vom răspunde solicitării dvs. de corectare în termen de 5 zile.
+
+VII. Modul în care „PANTUM” șterge informațiile personale colectate
+1. Dezinstalați acest software direct de pe computer;
+2. Ne puteți solicita să vă ștergem informațiile personale, trimițându-ne un e-mail (privacy@pantum.com):
+•Dacă considerați că prelucrăm informațiile dumneavoastră personale cu încălcarea legilor și reglementărilor relevante;
+•Dacă considerați că v-am prelucrat informațiile fără consimțământul dumneavoastră;
+•Dacă procesăm informațiile dumneavoastră personale cu încălcarea acordului nostru cu dumneavoastră;
+•Dacă vă anulați contul sau refuzați să utilizați produsul nostru;
+După primirea e-mailului dumneavoastră pentru a solicita ștergerea informațiilor dumneavoastră personale, ne vom angaja să luăm măsurile corespunzătoare în legătură cu solicitarea dumneavoastră în termen de 15 zile lucrătoare.
+3. Este posibil să revizuim periodic datele pe care le deținem și să ștergem unilateral orice nu mai este necesar pentru a vă oferi servicii la discreția noastră.
+
+VIII. Modul în care vă protejează „PANTUM” dreptul de a vă retrage consimțământul
+Vă protejăm pe deplin dreptul de a vă retrage consimțământul pentru colectarea și utilizarea informațiilor personale. Atunci când alegeți să vă retrageți consimțământul, nu vom procesa ulterior informațiile personale corespunzătoare autorizației și nu vă vom putea furniza serviciile funcționale corespunzătoare autorizației.contactați PANTUM prin privacy@pantum.com pentru a solicita PANTUM să facă acest lucru în numele dvs.
+
+IX. Modul în care „PANTUM” prelucrează informațiile dumneavoastră personale în afara frontierelor
+În prezent, nu vom folosi, stoca, împărtăși și dezvălui informațiile dumneavoastră personale în afaceri transfrontaliere și nu vom transfera informațiile dumneavoastră personale în străinătate. Dacă trebuie să transferăm informațiile dumneavoastră personale peste granițe din cauza oricăror modificări ulterioare ale conținutului serviciului nostru, vom face acest lucru numai după obținerea consimțământului dumneavoastră și după îndeplinirea altor condiții stipulate de legi, reglementări administrative sau administrația națională a spațiului cibernetic.
+
+X. Modalități de contact
+Dacă aveți întrebări sau comentarii despre această Politică, ne puteți contacta în următoarele moduri
+E-mail: privacy@pantum.com
+Adresă poștală: Zhuhai Pantum Electronics Co., Ltd.
+Nr. 3883 strada Zhuhai districtul Xiangzhou, orașul Zhuhai, provincia Guangdong, China
+
+XI. Modificări ale acestei politici
+Putem revizui oricând această Politică și vă vom ține la curent cu orice modificări aduse acestei Politici. Nu vă vom limita drepturile conform acestei Politici de confidențialitate fără consimțământul dumneavoastră. Pentru orice modificare materială, vom publica o notificare vizibilă.
+Orice versiune revizuită a acestei Politici va intra în vigoare numai de la data publicării acesteia.

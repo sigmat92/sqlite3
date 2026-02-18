@@ -1,0 +1,500 @@
+  108  ls
+  109  ./QtScanner 
+  110  ./QtScanner 
+  111  ls
+  112  GST_DEBUG=3 ./QtScanner
+  113  exit
+  114  echo $XDG_SESSION_TYPE
+  115  export QT_QPA_PLATFORM=wayland;./QtScanner 
+  116  exit
+  117  ls
+  118  export QT_QPA_PLATFORM=wayland;./QtScanner 
+  119  exit
+  120  ls
+  121  export QT_QPA_PLATFORM=wayland;./QtScanner 
+  122  exit
+  123  [ 98%] Building CXX object CMakeFiles/QtScanner.dir/scanner/qrscannerwidget.cpp.o
+  124  /home/prakash/kiosk-mini/QRScanner/scanner/qrscannerwidget.cpp:23:1: error: definition of explicitly-defaulted ‘QrScannerWidget::~QrScannerWidget()’
+  125     23 | QrScannerWidget::~QrScannerWidget() = default;
+  126        | ^~~~~~~~~~~~~~~
+  127  In file included from /home/prakash/kiosk-mini/QRScanner/scanner/qrscannerwidget.cpp:1:
+  128  /home/prakash/kiosk-mini/QRScanner/scanner/qrscannerwidget.h:13:5: note: ‘virtual QrScannerWidget::~QrScannerWidget()’ explicitly defaulted here
+  129     13 |     ~QrScannerWidget() override = default;
+  130        |     ^
+  131  gmake[2]: *** [CMakeFiles/QtScanner.dir/build.make:124: CMakeFiles/QtScanner.dir/scanner/qrscannerwidget.cpp.o] Error 1
+  132  gmake[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/QtScanner.dir/all] Error 2
+  133  gmake: *** [Makefile:136: all] Error 2
+  134  gst-launch v4l2src ! autovideosink
+  135  ls
+  136  cd scripts/
+  137  ls
+  138  ./cam_gst_sink.sh 
+  139  vim cam_gst_sink.sh 
+  140  vi cam_gst_sink.sh 
+  141  ./cam_gst_sink.sh 
+  142  exit
+  143  export QT_QPA_PLATFORM=wayland;./QtScanner 
+  144  ./QtScanner 
+  145  exit
+  146  export QT_QPA_PLATFORM=wayland;./QtScanner 
+  147  ls
+  148  mv QtScanner QtScanner_1
+  149  ./QtScanner_1 
+  150  exit
+  151  ls
+  152  ./QtGstZXing 
+  153  ./QtScanner_1 
+  154  exit
+  155  ls
+  156  ./QtScanner_1 
+  157  init 0
+  158  ls
+  159  ./QRScanner 
+  160  init 0
+  161  ./QRScanner 
+  162  ls
+  163  ./QtScanner_1 
+  164  init 0
+  165  ls
+  166  ./QRScanner 
+  167  exit
+  168  ls
+  169  ./QtScanner_1 
+  170  ./QRScanner 
+  171  exit
+  172  ls
+  173  ./runQRScanner.sh 
+  174  ls
+  175  ./runQRScanner.sh 
+  176  exit
+  177  ./runQRScanner.sh 
+  178  exit
+  179  ./runQRScanner.sh 
+  180  ./runQRScanner.sh 
+  181  exit
+  182  ./runQRScanner.sh 
+  183  exit
+  184  ls
+  185  rm QtScanner_1 
+  186  ls
+  187  ./runQRScanner.sh 
+  188  init 0
+  189  ls
+  190  ls
+  191  ./runQRScanner.sh 
+  192  exit
+  193  init 0
+  194  init 0
+  195  ls
+  196  ./QRScanner 
+  197  ls
+  198  rm frame.raw 
+  199  ls
+  200  rm camPreviewQtScanner 
+  201  ls
+  202  ls
+  203  ./kiosk-mini 
+  204  ./kiosk-mini 
+  205  exit
+  206  ls
+  207  ./kiosk-mini 
+  208  exit
+  209  init 0
+  210  ls
+  211  ls
+  212  ./kiosk
+  213  ./kiosk
+  214  ls
+  215  ls
+  216  sqlite3 barcodes.db 
+  217  ./kiosk-mini 
+  218  init 0
+  219  ls
+  220  ls
+  221  ls
+  222  ./kiosk
+  223  pwd
+  224  cd /root
+  225  ls
+  226  ./kiosk
+  227  init 5
+  228  init 6
+  229  init 6
+  230  init 6
+  231  clear
+  232  ls
+  233  mpg123 --version
+  234  mpg123 -v TEST\ COMPLETED.mp3 
+  235  mpg123 TEST\ COMPLETED.mp3 
+  236  aplay -l
+  237  aplay TEST\ COMPLETED.mp3 
+  238  mpg123 -a hw:0,0 TEST\ COMPLETED.mp3
+  239  init 0
+  240  ls
+  241  rm kiosk
+  242  df -h
+  243  ls -l kiosk
+  244  init 0
+  245  ls
+  246  ./kiosk 
+  247  ls
+  248  python3 read_temp.py 
+  249  ls
+  250  ./kiosk 
+  251  ls /dev/vid*
+  252  init 6
+  253  ls
+  254  ./kiosk 
+  255  ./kiosk 
+  256  ls /dev/vid*
+  257  ls /dev/vid*
+  258  ./kiosk 
+  259  ls
+  260  ./kiosk 
+  261  ls
+  262  mv kiosk kiosk_working
+  263  ls
+  264  ./kiosk_working 
+  265  ./kiosk_working 
+  266  ls
+  267  ./cutecom-serial 
+  268  ls /dev/tty*
+  269  ls
+  270  python read_temp.py 
+  271  python3 read_temp.py 
+  272  init 0
+  273  ls
+  274  find / -name "libQt6SerialPort.so*" 2>/dev/null
+  275  ls
+  276  ls
+  277  ldd kiosk | grep Qt6
+  278  python3 -m pip install pyserial
+  279  ldd kiosk | grep SerialPort
+  280  find / -name "libQt6SerialPort.so*"
+  281  apt update
+  282  apt install qt6-serialport-dev
+  283  init 0
+  284  ls
+  285  cp libQt6SerialPort.so.6 /usr/lib
+  286  ldconfig
+  287  ldconfig -p | grep Qt6Serial
+  288  ls
+  289  ./kiosk
+  290  ./kiosk
+  291  ./kiosk
+  292  ./kiosk
+  293  init 0
+  294  pwd
+  295  cd /root
+  296  ls
+  297  ./kiosk
+  298  ls
+  299  ls
+  300  ./kiosk
+  301  ./kiosk_working 
+  302  ./kiosk_working 
+  303  ./kiosk
+  304  ls
+  305  mv kiosk kiosk_1
+  306  ./kiosk_1 
+  307  ls
+  308  ./kiosk_working 
+  309  ls
+  310  ./kiosk
+  311  ls
+  312  rm kiosk
+  313  ./kiosk
+  314  chmod a+x kiosk
+  315  ./kiosk
+  316  init 0
+  317  clear
+  318  ls
+  319  rm read_temp.py 
+  320  ls
+  321  ifconfig
+  322  ls
+  323  cd uart_test/
+  324  ls
+  325  vi readme.md 
+  326  g++ -std=c++17 get_version.cpp -o get_version
+  327  ls
+  328  g++ get_version.cpp -o get_version
+  329  gcc -v
+  330  gcc -x c++ -std=gnu++17 vitals_fsm_autodetect.cpp -lstdc++ -o vitals_fsm
+  331  ls
+  332  g++ get_version.cpp -o get_version
+  333  clear
+  334  ls
+  335  g++ get_version.cpp -o get_version
+  336  ls
+  337  vim get_version.cpp 
+  338  vi get_version.cpp 
+  339  g++ get_version.cpp -o get_version
+  340  ./get_version 
+  341  vi get_temp.cpp 
+  342  g++ get_temp.cpp -o get_temp
+  343  ./get_temp 
+  344  ./get_temp 
+  345  ls
+  346  vi vitals_fsm_auto_detect.cpp 
+  347  g++ vitals_fsm_auto_detect.cpp -o vitals_fsm_auto_detect
+  348  ./vitals_fsm_auto_detect 
+  349  ./vitals_fsm_auto_detect 
+  350  vi get_height.cpp 
+  351  g++ get_height.cpp -o get_height.cpp 
+  352  g++ get_height.cpp -o get_height
+  353  ls
+  354  vi get_nibp.cpp 
+  355  g++ get_nibp.cpp -o get_nibp
+  356  vi get_spo2.cpp 
+  357  g++ get_spo2.cpp get_spo2
+  358  g++ get_spo2.cpp -o get_spo2
+  359  ls
+  360  vi get_weight.cpp 
+  361  g++ get_weight.cpp -o get_weight
+  362  vi vitals_fsm
+  363  vi vitals_fsm.cpp 
+  364  g++ vitals_fsm.cpp -o vitals_fsm
+  365  vim readme.md 
+  366  ls
+  367  cd ..
+  368  pwd
+  369  ls
+  370  ifconfig
+  371  init 0
+  372  ls
+  373  lsmod | grep usblp
+  374  modprobe usblp
+  375  ls
+  376  systemctl status ipp-usb
+  377  systemctl status cups
+  378  lpinfo -v
+  379  init 0
+  380  clear
+  381  ls
+  382  find /lib/modules/$(uname -r) -name "usblp.ko*"
+  383  which cupsd
+  384  which gs
+  385  cat /sys/kernel/debug/usb/devices
+  386  ls /usr/include/libusb-1.0/libusb.h
+  387  init 0
+  388  ls
+  389  lpinfo -v
+  390  init 0
+  391  init 0
+  392  ls
+  393  ls
+  394  cd /opt/ 
+  395  ls
+  396  cd ltp/
+  397  ls
+  398  cd ..
+  399  ls
+  400  tar xzf /root/print_stack_arm64.tar.gz
+  401  ls
+  402  mv install/ print_stack
+  403  ls -l print_stack/bin/cupsd
+  404  ls
+  405  ls print_stack/bin/gs
+  406  ls print_stack/sbin/cupsd
+  407  print_stack/sbin/cupsd -f
+  408  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  409  /opt/print_stack/sbin/cupsd -f
+  410  mv /root/print_helper .
+  411  ls
+  412  ./print_helper 
+  413  ./print_helper 
+  414  ps | grep cupsd
+  415  /opt/print_stack/bin/lpstat -r
+  416  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  417  /opt/print_stack/bin/lpstat -r
+  418  /opt/print_stack/bin/lpinfo -v
+  419  /opt/print_stack/bin/lpstat -r
+  420  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  421  /opt/print_stack/bin/lpstat -r
+  422  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  423  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  424  ldd /opt/print_stack/bin/lpstat
+  425  /opt/print_stack/bin/gs -v
+  426  /opt/print_stack/sbin/cupsd -v
+  427  nc 127.0.0.1 9100
+  428  mkdir -p /opt/print_stack/var/spool/cups
+  429  mkdir -p /opt/print_stack/var/run
+  430  mkdir -p /opt/print_stack/var/log/cups
+  431  mkdir -p /opt/print_stack/etc/cups
+  432  vi /opt/print_stack/etc/cups/cupsd.conf
+  433  mv  /opt/print_stack/etc/cups/cupsd.conf vi /opt/print_stack/etc/cups/cupsd.conf
+  434  mv /opt/print_stack/etc/cups/cupsd.conf /opt/print_stack/etc/cups/cupsd.conf.original
+  435  vi /opt/print_stack/etc/cups/cupsd.conf
+  436  /opt/print_stack/sbin/cupsd -f -c /opt/print_stack/etc/cups/cupsd.conf
+  437  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  438  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  439  lpstat -r
+  440  find /opt/print_stack -name lpinfo
+  441  lpinfo -v
+  442  ls /opt/print_stack/lib/cups/backend/
+  443  lpinfo -v
+  444  ls -l /dev/null /dev/urandom
+  445  ls -l /dev/null /dev/urandom
+  446  vi /opt/print_stack/etc/cups/cups-files.conf
+  447  mkdir -p /opt/print_stack/var/cache/cups
+  448  chown -R root:root /opt/print_stack
+  449  chmod -R 755 /opt/print_stack
+  450  chmod -R 777 /opt/print_stack/var
+  451  cat /opt/print_stack/var/log/cups/error_log
+  452  lpinfo -v
+  453  lpinfo -v
+  454  /opt/print_stack/bin/lpstat -r
+  455  /opt/print_stack/bin/lpstat -r
+  456  killall cupsd 2>/dev/null
+  457  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  458  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  459  ldd /opt/print_stack/sbin/cupsd
+  460  /opt/print_stack/sbin/cupsd -f -c /opt/print_stack/etc/cups/cupsd.conf -o LogLevel=debug2
+  461  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  462  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  463  lpstat -r
+  464  vi /opt/print_stack/etc/cups/cupsd.conf
+  465  mkdir -p /opt/print_stack/var/run
+  466  chmod 777 /opt/print_stack/var/run
+  467  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  468  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  469  lpstat -r
+  470  lpinfo -v
+  471  vi /opt/print_stack/etc/cups/cupsd.conf
+  472  vi /opt/print_stack/etc/cups/cups-files.conf
+  473  mkdir -p /opt/print_stack/var/cache/cups
+  474  mkdir -p /opt/print_stack/share/cups
+  475  chown -R root:root /opt/print_stack
+  476  chmod -R 755 /opt/print_stack
+  477  chmod -R 777 /opt/print_stack/var
+  478  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  479  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  480  lpstat -r
+  481  /opt/print_stack/sbin/cupsd -f -c /opt/print_stack/etc/cups/cupsd.conf
+  482  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  483  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  484  lpstat -r
+  485  /opt/print_stack/sbin/cupsd -f -c /opt/print_stack/etc/cups/cupsd.conf
+  486  ls -l /opt/print_stack/var/log/cups
+  487  cat /opt/print_stack/var/log/cups/error_log
+  488  vi /opt/print_stack/etc/cups/cupsd.conf
+  489  vi /opt/print_stack/etc/cups/cups-files.conf
+  490  mkdir -p /opt/print_stack/var/{run,spool/cups,cache/cups,log/cups}
+  491  mkdir -p /opt/print_stack/share/cups
+  492  chmod -R 777 /opt/print_stack/var
+  493  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  494  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  495  /opt/print_stack/sbin/cupsd -f -c /opt/print_stack/etc/cups/cupsd.conf
+  496  export PATH=/opt/print_stack/bin:/opt/print_stack/sbin:$PATH
+  497  export LD_LIBRARY_PATH=/opt/print_stack/lib64
+  498  lpstat -r
+  499  ls /opt/print_stack/var/log/cups
+  500  init 0
+  501  ls
+  502  cd /opt/
+  503  ls
+  504  rm print_helper 
+  505  rm print_stack/
+  506  rm -rf print_stack/
+  507  ls
+  508  cd ltp/
+  509  ls
+  510  ./IDcheck.sh 
+  511  ls
+  512  ./runltp 
+  513  cd ..
+  514  ls
+  515  source /opt/print/env.sh
+  516  cd
+  517  source /opt/print/env.sh
+  518  cd /opt/
+  519  ls
+  520  source /opt/print/env.sh
+  521  /stage/opt/print/env.sh
+  522  source /stage/opt/print/env.sh
+  523  mv /stage/opt/ /opt
+  524  ls
+  525  cd /opt/
+  526  ls
+  527  cd /opt/
+  528  ls
+  529  rm -rf opt/
+  530  ls
+  531  cd
+  532  cd /opt
+  533  ls
+  534  cd
+  535  cd /
+  536  ls
+  537  cd stage/
+  538  ls
+  539  cd ..
+  540  rm -rf stage/
+  541  ls
+  542  cd /opt/
+  543  ls
+  544  cd print/
+  545  ls
+  546  cd
+  547  source /opt/print/env.sh
+  548  cupsd &
+  549  echo $LD_LIBRARY_PATH
+  550  source /opt/print/env.sh
+  551  /opt/print/sbin/cupsd -f
+  552  ls /opt/print/lib/libcups.so*
+  553  find / -name "libcups.so*" 2>/dev/null
+  554  sed -i 's|LD_LIBRARY_PATH=.*|export LD_LIBRARY_PATH=/opt/print/lib64|' /opt/print/env.sh
+  555  source /opt/print/env.sh
+  556  /opt/print/sbin/cupsd -f
+  557  ldd /opt/print/sbin/cupsd | grep libcups
+  558  /opt/print/sbin/cupsd &
+  559  lpinfo -v
+  560  mkdir -p /opt/print/var/run/cups
+  561  mkdir -p /opt/print/var/cache/cups
+  562  mkdir -p /opt/print/var/log/cups
+  563  chmod 755 /opt/print/var /opt/print/var/run /opt/print/var/run/cups
+  564  source /opt/print/env.sh
+  565  /opt/print/sbin/cupsd -f
+  566  /opt/print/sbin/cupsd -t
+  567  cat /opt/print/var/log/cups/error_log
+  568  /opt/print/sbin/cupsd -V
+  569  /opt/print/sbin/cupsd -f -c /opt/print/etc/cups/cupsd.conf
+  570  /opt/print/sbin/cupsd   -c /opt/print/etc/cups/cupsd.conf   -f
+  571  /opt/print/sbin/cupsd   -c /opt/print/etc/cups/cupsd.conf   -f
+  572  strace /opt/print/sbin/cupsd -f 2>&1 | tail -30
+  573  ls -l /etc
+  574  ls /etc/
+  575  ln -s /opt/print/etc/cups /etc/cups
+  576  ls -l /etc/cups
+  577  export LD_LIBRARY_PATH=/opt/print/lib64
+  578  /opt/print/sbin/cupsd -f
+  579  lpstat -r
+  580  ls -ld /var/run/cups
+  581  mkdir -p /var/run
+  582  ln -s /opt/print/var/run/cups /var/run/cups
+  583  mkdir -p /var/log
+  584  ln -s /opt/print/var/log/cups /var/log/cups
+  585  mkdir -p /var/cache
+  586  ln -s /opt/print/var/cache/cups /var/cache/cups
+  587  ls -ld /var/run/cups
+  588  ls -ld /var/log/cups
+  589  ls -ld /var/cache/cups
+  590  export LD_LIBRARY_PATH=/opt/print/lib64
+  591  /opt/print/sbin/cupsd -f
+  592  lpstat -r
+  593  ls -l /opt/print/etc/cups
+  594  /opt/print/sbin/cupsd -t
+  595  groupadd lp
+  596  groupadd lpadmin
+  597  useradd -g lp -G lpadmin -s /sbin/nologin lp
+  598  getent group lp
+  599  getent group lpadmin
+  600  getent passwd lp
+  601  chown -R lp:lp /opt/print/var
+  602  export LD_LIBRARY_PATH=/opt/print/lib64
+  603  /opt/print/sbin/cupsd -f
+  604  export PATH=/opt/print/bin:/opt/print/sbin:$PATH
+  605  lpstat -r
+  606  lpinfo -v
+  607  history > history_for_cups.txt

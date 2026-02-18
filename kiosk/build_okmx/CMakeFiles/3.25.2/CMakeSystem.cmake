@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.8.0-90-generic")
+set(CMAKE_HOST_SYSTEM "Linux-6.8.0-94-generic")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.8.0-90-generic")
+set(CMAKE_HOST_SYSTEM_VERSION "6.8.0-94-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake")

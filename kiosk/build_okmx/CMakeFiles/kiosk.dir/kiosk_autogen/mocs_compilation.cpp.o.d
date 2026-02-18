@@ -483,17 +483,18 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/homecontroller.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_printcontroller.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/printcontroller.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolcontroller.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
- /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolparser.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolparser.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/moc_barcodemodel.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/../../../src/model/barcodemodel.h \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/moc_printserviceclient.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/../../../src/model/printserviceclient.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
@@ -507,6 +508,16 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/moc_sessionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/../../../src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSet \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/F2ESZRYZMC/moc_patientrepository.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/F2ESZRYZMC/../../../src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/F2ESZRYZMC/moc_sqliterecorder.cpp \
@@ -535,7 +546,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata_impl.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/q20memory.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qpalette.h \
@@ -546,11 +556,5 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/3JYSCEOBDA/moc_mainwindow.cpp \
- /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/3JYSCEOBDA/../../../src/view/mainwindow.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
  /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h

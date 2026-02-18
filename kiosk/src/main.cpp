@@ -1,39 +1,36 @@
 #include <QApplication>
-#include "view/mainwindow.h"
-#include "controller/cameracontroller.h"
-#include "controller/barcodescanner.h"
-#include "model/barcodemodel.h"
-#include "storage/sqliterecorder.h"
+#include <QObject>
 
 #include "view/homeview.h"
 #include "controller/homecontroller.h"
+
+#include "service/vitalsservice.h"
 #include "service/sessionservice.h"
+
 #include "storage/patientrepository.h"
 #include "storage/sqliterecorder.h"
+
 #include "controller/protocolcontroller.h"
-//#include "uart/uartdevice.h"
 #include "controller/protocolparser.h"
 #include "model/vitalsmodel.h"
-#include <QObject>
+#include "platform/uart/uartdevice.h"
 
 int main(int argc, char *argv[])
 {
-	
-    qputenv("QT_QPA_PLATFORM", "wayland");   // or "eglfs" if no compositor
-    qputenv("QT_OPENGL", "software");        // 
-    qputenv("QT_QUICK_BACKEND", "software"); // safety
-    
+    qputenv("QT_QPA_PLATFORM", "wayland");
+    qputenv("QT_OPENGL", "software");
+    qputenv("QT_QUICK_BACKEND", "software");
+
     QApplication app(argc, argv);
 
-    //UartDevice* uart = new UartDevice(&app);
     /* ---------- UI ---------- */
     HomeView* view = new HomeView;
-    //view->show();
 
-    /* ---------- Models ---------- */
+    /* ---------- Model ---------- */
     VitalsModel* vitals = new VitalsModel(&app);
 
     /* ---------- Services ---------- */
+    VitalsService* service = new VitalsService(&app);
     SessionService* session = new SessionService(&app);
     PatientRepository* repo = new PatientRepository(&app);
 
@@ -44,7 +41,7 @@ int main(int argc, char *argv[])
     ProtocolParser* parser = new ProtocolParser(&app);
 
     ProtocolController* protocolCtrl =
-        new ProtocolController(uart, parser, vitals, &app);
+        new ProtocolController(uart, parser, &app);
 
     /* ---------- Controllers ---------- */
     new HomeController(
@@ -56,44 +53,39 @@ int main(int argc, char *argv[])
         &app
     );
 
+    /* ---------- Protocol → Service ---------- */
+    QObject::connect(protocolCtrl, &ProtocolController::temperatureRaw,
+                     service, &VitalsService::onTemperatureRaw);
+
+    QObject::connect(protocolCtrl, &ProtocolController::spo2Raw,
+                     service, &VitalsService::onSpO2Raw);
+
+    QObject::connect(protocolCtrl, &ProtocolController::weightRaw,
+                     service, &VitalsService::onWeightRaw);
+
+    QObject::connect(protocolCtrl, &ProtocolController::heightRaw,
+                     service, &VitalsService::onHeightRaw);
+
+    QObject::connect(protocolCtrl, &ProtocolController::nibpRaw,
+                     service, &VitalsService::onNibpRaw);
+
+    /* ---------- Service → Model ---------- */
+    QObject::connect(service, &VitalsService::temperatureReady,
+                     vitals, &VitalsModel::setTemperature);
+
+    QObject::connect(service, &VitalsService::spo2Ready,
+                     vitals, &VitalsModel::setSpO2);
+
+    QObject::connect(service, &VitalsService::weightReady,
+                     vitals, &VitalsModel::setWeight);
+
+    QObject::connect(service, &VitalsService::heightReady,
+                     vitals, &VitalsModel::setHeight);
+
+    QObject::connect(service, &VitalsService::nibpReady,
+                     vitals, &VitalsModel::setNIBP);
+
     view->show();
-    //view.showFullScreen();
     return app.exec();
 }
-    //QApplication app(argc, argv);
-
-    //MainWindow win;
-
-    /* Working Camera QR Scanner Code - Uncomment to enable
-    BarcodeModel model;
-    SQLiteRecorder db("barcodes.db");
-
-    CameraController camera("/dev/video0");
-    BarcodeScanner scanner;
-
-    QObject::connect(&camera, &CameraController::frameColorReady,
-                     &win, &MainWindow::updateFrame);
-
-    QObject::connect(&camera, &CameraController::frameGrayReady,
-                     &scanner, &BarcodeScanner::onFrame);
-
-    QObject::connect(&scanner, &BarcodeScanner::barcodeDetected,
-                     &model, &BarcodeModel::setBarcode);
-
-    QObject::connect(&model, &BarcodeModel::barcodeChanged, [&]() {
-        win.updateBarcode(model.text(), model.format());
-        db.store(model.text(), model.format());
-    });
-
-    camera.start();
-    win.show();
-
-    int ret = app.exec();
-
-    camera.stop();
-    camera.wait();
-    */
-    //win.show();
-    //return app.exec();
-//}
 

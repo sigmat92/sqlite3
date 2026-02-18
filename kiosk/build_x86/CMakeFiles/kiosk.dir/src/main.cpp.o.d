@@ -396,9 +396,10 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
- /home/prakash/sqlite3/kiosk/src/view/mainwindow.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMainWindow \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmainwindow.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
@@ -409,47 +410,27 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QImage \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/sqlite3/kiosk/src/controller/cameracontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QThread \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
- /usr/include/c++/11/future /usr/include/c++/11/mutex \
- /usr/include/c++/11/bits/unique_lock.h \
- /usr/include/c++/11/condition_variable /usr/include/c++/11/stop_token \
- /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/semaphore \
- /usr/include/c++/11/bits/semaphore_base.h \
- /usr/include/c++/11/bits/atomic_timed_wait.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/11/bits/atomic_futex.h \
- /home/prakash/sqlite3/kiosk/src/controller/barcodescanner.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/prakash/sqlite3/kiosk/src/model/barcodemodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
- /usr/include/sqlite3.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/src/view/homeview.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
+ /usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h

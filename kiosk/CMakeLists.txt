@@ -28,10 +28,7 @@ endif()
 # --------------------------------------------------
 # Qt
 # --------------------------------------------------
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
-# Explicitly disable OpenGL
-#set(QT_FEATURE_opengl OFF)
-#set(QT_FEATURE_opengles2 OFF)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
 
 # --------------------------------------------------
 # SQLite3 (from Yocto sysroot)
@@ -70,6 +67,8 @@ set(SRC
     src/model/vitalsmodel.h
     src/model/vitalsmodel.cpp
     src/model/patient.h
+    src/model/printserviceclient.h
+    src/model/printserviceclient.cpp
 
     # Controllers
     src/controller/cameracontroller.h
@@ -85,6 +84,8 @@ set(SRC
     src/controller/homecontroller.h
     src/controller/homecontroller.cpp
     src/controller/inputcontroller.h
+    src/controller/printcontroller.h
+    src/controller/printcontroller.cpp
     #src/controller/inputcontroller.cpp
 
     #service
@@ -92,6 +93,10 @@ set(SRC
     src/service/sessionservice.cpp
     src/service/inputservice.h
     src/service/inputservice.cpp
+    src/service/protocol.h
+    src/service/vitalsservice.h
+    src/service/vitalsservice.cpp
+    #src/service/printhelper.cpp
 
     # Platform
     src/platform/v4l2/v4l2camera.h
@@ -106,9 +111,10 @@ set(SRC
     src/storage/sqliterecorder.cpp
     src/storage/patientrepository.h
     src/storage/patientrepository.cpp
+
     # Views
-    src/view/mainwindow.h
-    src/view/mainwindow.cpp
+    #src/view/mainwindow.h
+    #src/view/mainwindow.cpp
     src/view/homeview.h
     src/view/homeview.cpp
     src/view/metriccard.h
@@ -137,7 +143,8 @@ target_link_libraries(kiosk
         Qt6::Widgets
         ZXing::ZXing
         SQLite::SQLite3
-	#Qt6::SerialPort
+        Qt6::Network
+	    
 )
 
 # --------------------------------------------------

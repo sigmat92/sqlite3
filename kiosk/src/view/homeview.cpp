@@ -11,128 +11,10 @@
 #include <QTimer>
 #include <QDateTime>
 #include <QProcess>
-/* =====================================================
- * Helper functions to cretate metric cards
- * ===================================================== */
-/*
- static QWidget* metricCard(const QString& title, QLabel*& valueLabel)
-{
-    QWidget* card = new QWidget;
-    card->setStyleSheet("background:#e1f5fe; border-radius:8px;");
 
-    auto* layout = new QVBoxLayout(card);
-    layout->setContentsMargins(12, 12, 12, 12);
-
-    QLabel* titleLabel = new QLabel(title);
-    titleLabel->setAlignment(Qt::AlignCenter);
-    titleLabel->setStyleSheet("font-weight:bold;");
-
-    valueLabel = new QLabel("--");
-    valueLabel->setAlignment(Qt::AlignCenter);
-    valueLabel->setStyleSheet("font-size:22px; font-weight:bold;");
-
-    QPushButton* startBtn = new QPushButton("Start");
-    startBtn->setMinimumHeight(36);
-    startBtn->setStyleSheet("background:#0d47a1; color:white;");
-
-    layout->addWidget(titleLabel);
-    layout->addStretch();
-    layout->addWidget(valueLabel);
-    layout->addWidget(startBtn);
-
-    return card;
-}
-*/
-/*
- static QWidget* metricCard(const QString& title)
-{
-    QWidget* card = new QWidget;
-    card->setStyleSheet("background:#e1f5fe; border-radius:8px;");
-
-    auto* layout = new QVBoxLayout(card);
-    layout->setContentsMargins(12, 12, 12, 12);
-
-    QLabel* label = new QLabel(title);
-    label->setAlignment(Qt::AlignCenter);
-    label->setStyleSheet("font-weight:bold;");
-
-    QPushButton* startBtn = new QPushButton("Start");
-    startBtn->setMinimumHeight(40);
-    startBtn->setStyleSheet("background:#0d47a1; color:white;");
-
-    layout->addWidget(label);
-    layout->addStretch();
-    layout->addWidget(startBtn);
-
-    return card;
-}
-*/
-/*================vision test card============*/
-static QWidget* visionTestCard(const QString& title)
-{
-    QWidget* card = new QWidget;
-    card->setStyleSheet("background:#e1f5fe; border-radius:8px;");
-
-    auto* layout = new QVBoxLayout(card);
-    layout->setContentsMargins(12, 12, 12, 12);
-
-    QLabel* label = new QLabel(title);
-    label->setAlignment(Qt::AlignCenter);
-    label->setStyleSheet("font-weight:bold;");
-
-    //QPushButton* startBtn = new QPushButton("Start");
-    auto* vision = new QPushButton("👁 Vision Test");
-    vision->setMinimumHeight(40);
-    vision->setStyleSheet("background:#0d47a1; color:white;");
-
-    layout->addWidget(label);
-    layout->addStretch();
-    layout->addWidget(vision);
-
-    return card;
-}
-
-/*
-QLineEdit* nameEdit;
-QLineEdit* mobileEdit;
-QLineEdit* ageEdit;
-QRadioButton* maleBtn;
-QRadioButton* femaleBtn;
-
-void HomeView::clearPatient()
-{
-    nameEdit->clear();
-    mobileEdit->clear();
-    ageEdit->clear();
-    maleBtn->setChecked(false);
-    femaleBtn->setChecked(false);
-}
-
-void HomeView::setPatientName(const QString& name)
-{
-    nameEdit->setText(name);
-}
-
-void HomeView::setMobile(const QString& mobile)
-{
-    mobileEdit->setText(mobile);
-}
-
-void HomeView::setAge(int age)
-{
-    ageEdit->setText(QString::number(age));
-}
-
-void HomeView::setGender(const QString& gender)
-{
-    maleBtn->setChecked(gender.compare("male", Qt::CaseInsensitive) == 0);
-    femaleBtn->setChecked(gender.compare("female", Qt::CaseInsensitive) == 0);
-}
-
-*/
 HomeView::HomeView(QWidget* parent) : QWidget(parent)
 {
-    //style
+//style
 this->setStyleSheet(R"(
 #headerBar {
     background-color: #000000;
@@ -173,6 +55,11 @@ this->setStyleSheet(R"(
     root->setContentsMargins(12, 12, 12, 12);
     root->setSpacing(10);
 
+   /* ================= Test Status Strip =============*/
+    QLabel *status = new QLabel("Test Status:");
+    status->setStyleSheet("background:#bbdefb; padding:8px; font-size:20px; font-weight:bold;");
+    status->setMinimumHeight(60);
+    status->setAlignment(Qt::AlignCenter);
     /* ================= HEADER ================= */
         
     auto* headerBar = new QWidget;
@@ -187,11 +74,20 @@ this->setStyleSheet(R"(
     title->setObjectName("headerTitle");
     /* New Test Button */
     QPushButton *newTest = new QPushButton("NEW TEST");
+    connect(newTest, &QPushButton::clicked, this, [=]() {
+        emit startNewTestRequested();
+        qDebug() << "HomeView: New Test requested";
+        status->setText("Test Status: New Test request starting...");
+    });
     /*Settings Button*/
     QPushButton *settings = new QPushButton("⚙ Settings");
-
     newTest->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
     settings->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
+    connect(settings, &QPushButton::clicked, this, [=]() {
+        emit startSettingsRequested();
+        qDebug() << "HomeView: settings start requested";
+        status->setText("Test Status: Settings requested");
+    });
     /* RT Clock */
     m_timeLabel = new QLabel;
     m_timeLabel->setObjectName("headerTime");
@@ -209,15 +105,9 @@ this->setStyleSheet(R"(
     auto* powerBtn = new QPushButton("⏻");
     powerBtn->setObjectName("powerButton");
     powerBtn->setFixedSize(48, 48);
-    
-    /*
-    auto* haltBtn = new QPushButton("⏻");
-    haltBtn->setObjectName("haltBtn");
-    
-    haltBtn->setFixedSize(48, 48);
-    */
-    connect(powerBtn, &QPushButton::clicked, this, []() {
-    // Immediate halt
+
+    connect(powerBtn, &QPushButton::clicked, this, [=]() {
+    status->setText("Test Status: Shutting Down...");
     QProcess::startDetached("poweroff");
     });
 
@@ -294,40 +184,67 @@ this->setStyleSheet(R"(
     auto* mLayout = new QGridLayout(metricsPanel);
     mLayout->setContentsMargins(16, 12, 16, 12);
     mLayout->setSpacing(12);
-/*
-    auto* spo2Card = new MetricCard("SpO2 / Pulse");
-    auto* nibpCard = new MetricCard("NIBP");
-    auto* heightCard = new MetricCard("Height");
-    auto* weightCard = new MetricCard("Weight");
-    auto* temperatureCard = new MetricCard("Temperature");
-*/
+
     // Create cards (store as members)
+    visionTestCard  = new MetricCard("👁 Vision Test");
 	spo2Card        = new MetricCard("SpO2 / Pulse");
 	nibpCard        = new MetricCard("NIBP");
 	heightCard      = new MetricCard("Height");
 	weightCard      = new MetricCard("Weight");
 	temperatureCard = new MetricCard("Temperature");
-/**
-    connect(spo2Card, &MetricCard::startRequested,
-            this, &HomeView::startSpo2Requested);
-
-    connect(nibpCard, &MetricCard::startRequested,
-            this, &HomeView::startNibpRequested);
-
-    connect(heightCard, &MetricCard::startRequested,
-            this, &HomeView::startHeightRequested);
-
-    connect(weightCard, &MetricCard::startRequested,
-            this, &HomeView::startWeightRequested);
-*/
-	// Temperature start
-    connect(temperatureCard, &MetricCard::startRequested,
-            this, &HomeView::startTemperatureRequested);
+ 
+    // vision test start
+    connect(visionTestCard, &MetricCard::startRequested,
+            this, &HomeView::startVisionTestRequested);
     // Debug (optional – remove later)
-    connect(this, &HomeView::startTemperatureRequested, this, []{
-    qDebug() << "HomeView: Temperature start requested";
+    connect(this, &HomeView::startVisionTestRequested, this, [=]{
+    qDebug() << "HomeView: Vision Test start requested";
+    status->setText("Test Status: Vision Test starting...");
     });
 
+    // Spo2 start
+    connect(spo2Card, &MetricCard::startRequested,
+            this, &HomeView::startSpo2Requested);
+    // Debug (optional – remove later)
+    connect(this, &HomeView::startSpo2Requested, this, [=]{
+    qDebug() << "HomeView: SpO2 start requested";
+    status->setText("Test Status: SpO2 measurement started...");
+    });
+    // NIBPstart
+    connect(nibpCard, &MetricCard::startRequested,
+            this, &HomeView::startNIBPRequested);
+    // Debug (optional – remove later)
+    connect(this, &HomeView::startNIBPRequested, this, [=]{
+    qDebug() << "HomeView: NIBP start requested";
+    status->setText("Test Status: NIBP measurement started...");
+    });
+    // Height start
+    connect(heightCard, &MetricCard::startRequested,
+            this, &HomeView::startHeightRequested);
+    // Debug (optional – remove later)
+    connect(this, &HomeView::startHeightRequested, this, [=]{
+    qDebug() << "HomeView: Height start requested";
+    status->setText("Test Status: Height measurement started...");
+    });
+    // Weight start
+    connect(weightCard, &MetricCard::startRequested,
+            this, &HomeView::startWeightRequested);
+    // Debug (optional – remove later)
+    connect(this, &HomeView::startWeightRequested, this, [=]{
+    qDebug() << "HomeView: Weight start requested";
+    status->setText("Test Status: Weight measurement started...");
+    });
+
+	// Temperature start ->emiting sigmnal controlller ->handles it
+    connect(temperatureCard, &MetricCard::startRequested,
+            this, &HomeView::startTemperatureRequested);
+
+    connect(this, &HomeView::startTemperatureRequested, this, [=]{
+    qDebug() << "HomeView: Temperature start requested";
+    status->setText("Test Status: Temperature measurement started...");
+    
+     //status->setText("Test Status:");
+    });
 
     mLayout->addWidget(spo2Card, 0, 0);
     mLayout->addWidget(nibpCard, 0, 1);
@@ -336,44 +253,14 @@ this->setStyleSheet(R"(
     
     mLayout->addWidget(temperatureCard,1, 2);
     
-    mLayout->addWidget(visionTestCard("Vision Test"),0, 2);
-    /*
-    QWidget* metricsPanel = new QWidget(this);
-    metricsPanel->setObjectName("panel");
+    mLayout->addWidget(visionTestCard,0, 2);
 
-    auto* mLayout = new QGridLayout(metricsPanel);
-    mLayout->setContentsMargins(16, 12, 16, 12);
-    mLayout->setSpacing(12);
-
-    mLayout->addWidget(metricCard("SpO2 / Pulse", spo2Value), 0, 0);
-    mLayout->addWidget(metricCard("NIBP", nibpValue),         0, 1);
-    mLayout->addWidget(metricCard("Height", heightValue),     1, 0);
-    mLayout->addWidget(metricCard("Weight", weightValue),     1, 1);
-    mLayout->addWidget(metricCard("Temperature", tempValue),  1, 2);
-    mLayout->addWidget(visionTestCard("Vision Test"),        0, 2);
-    */
-/*
-    mLayout->addWidget(metricCard("SpO2 / Pulse"), 0, 0);
-    mLayout->addWidget(metricCard("NIBP"),         0, 1);
-    mLayout->addWidget(visionTestCard("VisionTest"),   0, 2);
-    mLayout->addWidget(metricCard("Height"),       1, 0);
-    mLayout->addWidget(metricCard("Weight"),       1, 1);
-    mLayout->addWidget(metricCard("Temperature"),  1, 2);
-*/
     root->addWidget(metricsPanel);
-
-
-    /* ================= Test Status Strip =============*/
-
-    QLabel *status = new QLabel("Test Status:");
-    status->setStyleSheet("background:#bbdefb; padding:8px; font-weight:bold;");
-    //
+    
     //QPushButton *printBtn = new QPushButton("🖨 PRINT RESULT");
     //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px;");
 
     //rLayout->addWidget(printBtn, 0, 2, 2, 1);
-    //
-
     root->addWidget(status);
     //root->addWidget(printBtn);
     /* ================= BMI + ACTIONS ================= */
@@ -401,6 +288,11 @@ this->setStyleSheet(R"(
     auto* printBtn = new QPushButton("🖨 Print Results");
     printBtn->setMinimumHeight(40);
     printBtn->setStyleSheet("background:#0d47a1; color:white;");
+    connect(printBtn, &QPushButton::clicked, this, [=]() {
+        emit startPrintingRequested();
+        qDebug() << "HomeView: print button clicked";
+        status->setText("Test Status: Printing results...");
+    });
     //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px;");
 
     //rLayout->addWidget(printBtn, 0, 2, 2, 1);
@@ -430,39 +322,7 @@ this->setStyleSheet(R"(
 
     root->addWidget(footerBar);
 }
-//shuold come from domain
-/*
-void HomeView::setSpO2(int spo2, int pulse)
-{
-    if (!spo2Value) return;
-    spo2Value->setText(QString("%1 / %2").arg(spo2).arg(pulse));
-}
 
-void HomeView::setNIBP(const QString& value)
-{
-    if (!nibpValue) return;
-    nibpValue->setText(value);
-}
-
-void HomeView::setHeight(int cm)
-{
-    if (!heightValue) return;
-    heightValue->setText(QString::number(cm));
-}
-
-void HomeView::setWeight(double kg)
-{
-    if (!weightValue) return;
-    weightValue->setText(QString::number(kg, 'f', 1));
-}
-
-void HomeView::setTemperature(double f)
-{
-    if (!tempValue) return;
-    tempValue->setText(QString::number(f, 'f', 1));
-}
-*/
-//
 void HomeView::setTemperatureBusy(bool busy)
 {
     if (temperatureCard)

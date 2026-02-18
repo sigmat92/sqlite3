@@ -1,0 +1,77 @@
+【Privacy Policy 】 
+Last Updated: May 1, 2023
+
+Zhuhai Pantum Electronics Co., Ltd. and its global branch offices (“Pantum”, “we”, “us”, “our”) recognizes the importance of your privacy and is committed to protecting your privacy. We will inform you how the Software collects and processes your personal data and information through this Privacy Policy (“Policy”). Please note that this Policy applies to all information and data submitted to or collected and processed by PANTUM (including personal information, “personal information” means all kinds of information, electronically or otherwise recorded, related to an identified or identifiable natural person).
+Before you start using our products and services, please carefully read and understand this Policy, especially the terms marked in bold, to ensure that you thoroughly understand and agree to this Policy before your use.
+
+This Policy is mainly intended to show you:
+I. How “PANTUM” collects and uses your personal information
+II. How “PANTUM” stores and discloses your personal information
+III. How “PANTUM” protects your personal information
+IV. How “PANTUM” handles the personal information of children
+V. How “PANTUM” protects your right of access to information
+VI. How “PANTUM” corrects your personal information
+VII. How “PANTUM” deletes the personal information collected
+VIII. How “PANTUM”protect your right to withdraw your consent
+IX. How “PANTUM” processes your personal information across borders
+X. How to Contact Us
+XI. Changes to this Policy
+ 
+I. How “PANTUM” collects and uses your personal information
+This software will collect the required information and data as described below：
+1. We will collect your Printer information (Printer serial number,AP name, AP password, Wi-Fi connected, IP address and printer status);
+2. We will collect your print job information (number of copies, paper size, Printing medium);
+3. We will collect your scan job information (scan source, color, resolution, size, scanned image data); 
+We collect the above information to help the operating system to complete the printer driver installation. The basic printing function can only be completed after the driver is successfully installed. If you refuse to use the above information, you will not be able to use the basic functions of this product.We will not use your personal information and data for purposes other than those stated herein without your consent. It is important to note that the above uses cover the primary ways in which we use your information. We will seek for your consent when we want to use information for purposes other than those described in this policy, or when we want to use information collected for a specific purpose. If the functions change then the original consent is no longer valid,then we will obtain your new consent.
+
+II. How “PANTUM” stores and discloses your personal information
+1. Storage location
+This software is only a hardware driver for your scanner, it is a tool to connect your computer operating system to the scanner hardware, the Software uses the above information just to identify your driver software to make it smoothly installed, it does not store any of your personal information. 
+2. Information disclosure
+1) Based on the satisfaction of the need to provide you with the required services, you agree that we may provide your information to the affiliates, dealers or distributors, authorized service providers of Pantum and third parties related to company transactions (your information will probably be disclosed to third parties as part of a business combination or transfer).
+2) We may disclose your personal information under any of the following circumstances:
+•To comply with legal requirements or respond to mandatory legal proceedings (such as search warrant or other court order)
+•Protect the legal rights or security of Pantum (including its affiliates, business partners/and customers). This clause may be invalid in some countries (regions) or jurisdictions, so it may not apply to you.
+
+III. How “PANTUM” protects your personal information
+To protect your personal information against unauthorized access, misuse, disclosure or alteration, Zhuhai Pantum Electronics Co., Ltd. utilizes reasonable and appropriate encryption procedures to ensure the security of the information collected and processed by “PANTUM”. However, please note that no website, Internet transmission, computer system or wireless connection is completely secure, despite all reasonable steps we have taken to protect your information.
+
+IV. How “PANTUM” handles the personal information of children
+1. “PANTUM” will not knowingly collect personal information from children under the age of 13 (or equivalent minimum age specified in the relevant jurisdictions) and “PANTUM” is not target children under the age of 13 (or equivalent minimum age specified in the relevant jurisdictions);
+2. If you are a child under the age of 13, please do not submit any personal information through this product;
+3. If “PANTUM” receives personal information submitted by a child under the age of 13 through this product, we will delete such information in accordance with applicable law.
+ 
+V. How “PANTUM” protects your right of access to information
+Unless otherwise provided by law, as an individual user of “PANTUM”, you have the right to access your personal information. You can access your personal information by the following method:
+1.You can send us an request to review your personal information by sending us an email (privacy@pantum.com), and we will verify your identity (to ensure the security of your account or information), and respond to your request as soon as possible within a reasonable period depending on the difficulty of the information you want to inquire about and the industry practices for information inquiry.
+2. In principle, you do not need to pay for your request to review your personal information, but for repeated requests that exceed three times within three months, we will charge a certain cost as the case may be.
+ 
+VI. How “PANTUM” corrects your personal information
+When you found that there is an error in the personal information we have collected from you, you have the right to request us to make a correction. You may request correction by sending us an email (privacy@pantum.com). We will respond to your correction request within 5 days.
+ 
+VII. How “PANTUM” deletes the personal information collected
+1. Uninstall this software directly from your computer; 
+2. You may request us to delete your personal information by sending us an email (privacy@pantum.com):
+•If you think that we process your personal information in violation of relevant laws and regulations;
+•If you think that we have processed your information without your consent;
+•If we process your personal information in violation of our agreement with you;
+•If you cancel your account or refuse to use our product;
+After receiving your email to request deletion of your personal information, we will undertake to take appropriate action on your request within 15 working days.
+3. We may periodically review the data we hold and unilaterally delete anything that is no longer necessary to provide you with services at our discretion.
+
+VIII. How “PANTUM”protect your right to withdraw your consent
+We fully protect your right to withdraw your consent to the collection and use of personal information. When you choose to withdraw your consent, we shall not subsequently process the personal information corresponding to the authorization, and we shall not be able to provide you with the functional services corresponding to the authorization.You contact PANTUM through privacy@pantum.com to require PANTUM to do so for you.
+
+IX. How “PANTUM” processes your personal information across borders
+Currently, we will not use, store, share and disclose your personal information in cross-border business, or transfer your personal information overseas. If we need to transfer your personal information across borders due to any subsequent changes in our service content, we will only do so after obtaining your consent and meeting other conditions stipulated by laws, administrative regulations or the national cyberspace administration.
+
+X. How to Contact Us
+If you have any questions or comments about this Policy, you can contact us in the following ways
+Email: privacy@pantum.com
+Mailing address: Zhuhai Pantum Electronics Co., Ltd.
+No. 3883 Zhuhai Avenue, Xiangzhou District, Zhuhai City, Guangdong Province, China
+
+XI. Changes to this Policy
+We may revise this Policy at any time and we will keep you updated on any changes to this Policy. We will not limit your rights under this Privacy Policy without your consent. For any material changes, we will post a prominent notice.
+Any revised version of this Policy will only be effective from the date when it is posted.
+

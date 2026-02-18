@@ -1,0 +1,76 @@
+【Gizlilik Politikası 】
+Son Güncelleme Tarihi: 1 Mayıs 2023
+
+Zhuhai Pantum Electronics Co., Ltd. ve dünya çapında yer alan şubeleri (“Pantum”, “biz”, “bize”, “bizim”) gizliliğinizin önemini çok iyi bir şekilde anlamakta ve gizliliğinizi koruma konusunda taahhütte bulunmaktadır. Yazılımın kişisel verileriniz ile bilgilerinizi nasıl topladığını ve işlediğini size bu Gizlilik Politikası (“Politika”) aracılığıyla açıklayacağız. Lütfen bu Politika'nın PANTUM tarafından toplanan ve işlenen tüm bilgilere ve verilere (kişisel bilgiler de dahildir, “kişisel bilgiler” ifadesi, bir kişiyle ilişkilendirilebilen veya kişi için tanımlanabilen, elektronik olarak veya farklı şekillerde kaydedilmiş her türlü bilgi anlamına gelmektedir) uygulandığını unutmayın.
+Ürünlerimizi ve hizmetlerimizi kullanmaya başlamadan önce, lütfen özellikle kalın şekilde yazılmış olan hükümleri dikkatlice okuyun ve anlayın, böylece kullanmadan önce bu Politika'yı tam anlamıyla anladığınızı ve kabul ettiğinizi onaylamış olursunuz.
+
+Bu Politika esasen size aşağıdaki başıklarla ilgili bilgileri göstermeyi amaçlamaktadır:
+I. “PANTUM” kişisel bilgilerinizi nasıl toplar ve kullanır?
+II. “PANTUM” kişisel bilgilerinizi nasıl saklar ve ifşa eder?
+III. “PANTUM” kişisel bilgilerinizi nasıl korur?
+IV. “PANTUM” çocukların kişisel bilgilerini nasıl işleme alır?
+V. “PANTUM” bilgilere erişim hakkınızı nasıl korur?
+VI. “PANTUM” kişisel bilgilerinizi nasıl düzeltir?
+VII. “PANTUM” toplanan kişisel bilgileri nasıl siler?
+VIII. “PANTUM” onayınızı geri çekme hakkınızı nasıl korur?
+IX. “PANTUM” kişisel bilgilerinizi sınır ötesi ülkelerde nasıl işler?
+X. Bizimle İletişime Nasıl Geçebilirsiniz?
+XI. Bu Politikada Yapılan Değişiklikler
+
+I. “PANTUM” kişisel bilgilerinizi nasıl toplar ve kullanır?
+Bu yazılım aşağıda açıklandığı gibi gerekli olan tüm bilgi ve verileri toplayacaktır:
+1. Yazıcınızın bilgilerini toplayacağız (Yazıcı seri numarası,IP adresi ve yazıcı durumu);
+2. Baskı işinizle ilgili bilgileri toplayacağız (kopya sayısı, kağıt boyutu, Yazdırma ortamı);
+3. Tarama işinizle ilgili bilgileri toplayacağız (tarama kaynağı, renk, çözünürlük, boyut, taranan görüntü verileri);
+İşletim sisteminin yazıcı sürücüsünün kurulumunu tamamlamasına yardımcı olmak için yukarıdaki bilgileri toplayacağız. Temel yazdırma fonksiyonu, yalnızca sürücü başarılı bir şekilde kurulduktan sonra yerine getirilebilir. Yukarıdaki bilgilerin kullanılmasını reddetmeniz durumunda bu ürünün temel fonksiyonlarını kullanamayacaksınız. Kişisel bilgi ve verilerinizi burada belirtilen amaçlar dışında kullanmayacağız ve ayrıca izniniz olmadan farklı amaçlar için de kullanmayacağız. Yukarıda belirtilen kullanım şekillerinin, bilgilerinizi nasıl kullandığımıza dair birincil yöntemleri kapsadığını unutmayın. Bu politika içerisinde belirtilen amaçlar dışında yer alan bilgileri kullanmak veya belirli bir amaçla toplanan bilgileri kullanmak istediğimizde izninizi talep edeceğiz. Eğer fonksiyonlarda değişilik yapılırsa, bu durumda almış olduğumuz ilk izin geçerli olmayacak ve değişiklikler için yeni izin talep edeceğiz.
+
+II. “PANTUM” kişisel bilgilerinizi nasıl saklar ve ifşa eder?
+1. Saklama yeri
+Bu yazılım tarayıcınız için yalnızca bir donanım sürücüsüdür, bilgisayarınızın işletim sistemini tarayıcı donanımına bağlamak için bir araçtır. Yazılım, yukarıdaki bilgileri sadece sürücü yazılımınızı tanımlamak ve sorunsuz bir şekilde kurmak için kullanır, kişisel bilgilerinizi saklamaz.
+2. Bilgileri ifşası
+1) Size gerekli hizmetlerin sağlanması neticesinde ihtiyaçlarınızın karşılanmasına bağlı olarak, Pantum'un iştiraklerine, bayilerine veya distribütörlerine, yetkili hizmet sağlayıcılarına ve şirket işlemleriyle ilgili üçüncü taraflara bilgilerinizi verebileceğimizi kabul ediyorsunuz (bilgileriniz muhtemelen bir işletme birleşmesinin veya devrinin bir parçası olarak üçüncü taraflara ifşa edilecektir).
+2) Kişisel bilgilerinizi aşağıdaki koşullardan herhangi birinin gerçekleşmesi durumunda ifşa edebiliriz:
+• Yasal gerekliliklere uymak veya zorunlu yasal taleplere (arama emri veya diğer mahkeme emri gibi) yanıt vermek için
+• Pantum'un (bağlı kuruluşları, iş ortakları/ve müşterileri dahil olmak üzere) yasal haklarını veya güvenliğini korumak. Bu madde bazı ülkelerde (bölgelerde) veya yargı alanlarında geçersiz olabilir, bu nedenle siziçin için uygulanmayabilir.
+
+III. “PANTUM” kişisel bilgilerinizi nasıl korur?
+Kişisel bilgilerinizi yetkisiz erişime, kötüye kullanıma, ifşa etmeye veya değişikliğe karşı korumak için Zhuhai Pantum Electronics Co., Ltd., “PANTUM” tarafından toplanan ve işlenen bilgilerin güvenliğini sağlamak için makul ve uygun şifreleme prosedürleri kullanmaktadır. Ancak, tüm makul önlemlere rağmen, hiçbir internet sitesi, internet kullanımı, bilgisayar sistemi veya kablosuz bağlantı tamamen güvenli değildir.
+
+IV. “PANTUM” çocukların kişisel bilgilerini nasıl işleme alır?
+1.“PANTUM” bilinçli bir şekilde 13 yaşın altındaki çocuklardan (veya ilgili yargı alanlarında belirtilen eşdeğer minimum yaş) kişisel bilgi toplamayacak ve “PANTUM” 13 yaşın altındaki çocukları (veya ilgili yargı alanlarında belirtilen eşdeğer minimum yaş) hedef almamaktadır.
+2. Eğer 13 yaşın altında bir çocuksanız, lütfen bu ürün aracılığıyla herhangi bir kişisel bilgi göndermeyin.
+3. Eğer “PANTUM” 13 yaşın altında bir çocuk tarafından gönderilen kişisel bilgileri toplarsa, ilgili yasa gereğince bu bilgileri sileceğiz.
+
+V. “PANTUM” bilgilere erişim hakkınızı nasıl korur?
+Kanunen aksi belirtilmediği sürece, bireysel “PANTUM” kullanıcısı olarak kişisel bilgilerinize erişim hakkınız bulunmaktadır. Kişisel bilgilerinize aşağıdaki yöntemle erişebilirsiniz:
+1. Kişisel bilgilerinizi incelememiz için bize e-posta göndererek (privacy@pantum.com) talepte bulunabilirsiniz ve ardından kimliğinizi doğrulayacağız (hesabınızın veya bilgilerinizin güvenliğini sağlamak için) ve talebinize, sorgulanacak bilginin ulaşılabilirliğine ve bilgi sorgulama sürecinde sektör uygulamalarına bağlı olarak makul bir süre içerisinde yanıt vereceğiz.
+2. Prensip gereği, kişisel bilgilerinizi inceleme talebinde bulunduğunuzda bir ücret ödemeniz gerekmemektedir, ancak üç ay içinde üç defadan daha fazla talepte bulunmanız durumunda duruma bağlı olarak belirli bir ücret talep edebiliriz.
+
+VI. “PANTUM” kişisel bilgilerinizi nasıl düzeltir?
+Bize verdiğiniz kişisel bilgilerde bir hata tespit ettiğinizde, düzeltme yapmamızı talep etme hakkınız bulunmaktadır. Düzeltme talebinizi privacy@pantum.com adresine e-posta göndererek yapabilirsiniz. Düzeltme talebinize 5 gün içerisinde yanıt vereceğiz.
+
+VII. “PANTUM” toplanan kişisel bilgileri nasıl siler?
+1. Bu yazılımı direkt olarak bilgisayarınızdan kaldırın;
+2. Kişisel bilgilerinizi silmemiz için privacy@pantum.com adresine e-posta göndererek talep edebilirsiniz:
+• Kişisel bilgilerinizi ilgili yasalara ve düzenlemelere aykırı olarak işlediğimizi düşünüyorsanız;
+• Bilgilerinizin izniniz olmadan işlendiğini düşünüyorsanız;
+• Kişisel bilgilerinizi sizinle olan anlaşmamıza aykırı olarak işliyorsak;
+• Hesabınızı iptal ederseniz veya ürünümüzü kullanmaktan vazgeçerseniz.
+Kişisel bilgilerinizin silinmesi talebinize ilişkin gerekli işlemleri, e-postanızı aldıktan sonra en geç 15 iş günü içinde gerçekleştireceğiz.
+3. Tercihimize bağlı olarak, size hizmet sunmak için artık gerekli olmayan verileri düzenli olarak gözden geçirerek tek taraflı olarak silebiliriz.
+
+VIII. “PANTUM” onayınızı geri çekme hakkınızı nasıl korur?
+Kişisel bilgilerinizin toplanması ve kullanımına verdiğiniz onayı geri çekme hakkınız tamamen korunmaktadır. İzininizi geri çekmeyi tercih ederseniz, yetkilendirmeyle ilişkili kişisel bilgileri artık işlemeyeceğiz ve yetkilendirmeyle ilişkili fonksiyonel hizmetleri sunamayacağız. PANTUM adına bunu yapması için privacy@pantum.com adresine e-posta göndererek PANTUM'dan talepte bulunabilirsiniz.
+
+IX. “PANTUM” kişisel bilgilerinizi sınır ötesi ülkelerde nasıl işler?
+Şu anda kişisel bilgilerinizi sınır ötesi operasyonlarda kullanmayacak, saklamayacak, paylaşmayacak veya ifşa etmeyeceğiz ve ayrıca bunları yurtdışına taşımayacağız. Hizmet içeriğimizde değişiklikler nedeniyle kişisel bilgilerinizi sınır ötesine taşımamız gerekiyorsa, bunu yalnızca sizin onayınızla ve yasalar, idari kurallar veya ulusal siber mekan yönetimi tarafından getirilen ek kısıtlamaları karşıladıktan sonra gerçekleştireceğiz.
+
+X. Bizimle İletişime Nasıl Geçebilirsiniz?
+Politikamızla ilgili herhangi bir sorunuz veya şikayetiniz varsa, aşağıdaki bilgileri kullanarak bizimle iletişime geçebilirsiniz.
+E-posta: privacy@pantum.com
+Posta adresi: Zhuhai Pantum Electronics Co., Ltd.
+No.3883 Zhuhai Bulvarı, Xiangzhou Bölgesi, Zhuhai Şehri, Guangdong Eyaleti, Çin
+
+XI. Bu Politikada Yapılan Değişiklikler
+Bu Politikayı her zaman revize edebiliriz ve sizi bu Politikada yapılan herhangi bir değişiklikten haberdar edeceğiz. Bu Gizlilik Politikası kapsamındaki haklarınızı, izniniz olmadan sınırlamayacağız. Herhangi bir önemli değişiklik durumunda bunu belirtine bildirim yayınlayacağız.
+Bu Politikanın revize edilmiş herhangi bir versiyonu, yalnızca yayınlandığı tarihten itibaren geçerli olacaktır.

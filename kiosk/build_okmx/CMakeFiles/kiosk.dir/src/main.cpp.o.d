@@ -481,9 +481,10 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qlocale.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qguiapplication_platform.h \
- /home/prakash/sqlite3/kiosk/src/view/mainwindow.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMainWindow \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmainwindow.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
+ /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qaction.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qkeysequence.h \
@@ -494,52 +495,27 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qfontmetrics.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qfontinfo.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtabwidget.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/QImage \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qimage.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
- /home/prakash/sqlite3/kiosk/src/controller/cameracontroller.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QThread \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qthread.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qdeadlinetimer.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qelapsedtimer.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/future \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/mutex \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/unique_lock.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/condition_variable \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/stop_token \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/std_thread.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/semaphore \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/semaphore_base.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/atomic_timed_wait.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/this_thread_sleep.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sys/time.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/semaphore.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/semaphore.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/bits/semaphore-64.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/atomic_futex.h \
- /home/prakash/sqlite3/kiosk/src/controller/barcodescanner.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
- /home/prakash/sqlite3/kiosk/src/model/barcodemodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSet \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/src/view/homeview.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
- /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h

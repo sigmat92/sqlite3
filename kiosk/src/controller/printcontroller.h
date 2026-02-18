@@ -1,9 +1,19 @@
 #pragma once
+#include <QObject>
 #include <QImage>
-#include <QString>
 
-class PrinterController {
+class PrintServiceClient;
+
+class PrintController : public QObject {
+    Q_OBJECT
 public:
-    static bool printQR(const QImage& image, const QString& text = "");
+    explicit PrintController(QObject* parent=nullptr);
+    void printQR(const QImage& img);
+
+signals:
+    void printResult(bool ok, const QString& msg);
+
+private:
+    PrintServiceClient* client;
 };
 

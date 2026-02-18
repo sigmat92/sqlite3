@@ -1,0 +1,72 @@
+[Adatvédelmi szabályzat]
+Utolsó frissítés: 2023. május 1.
+
+A Zhuhai Pantum Electronics Co., Ltd. és fiókirodái világszerte (továbbiakban: „Pantum”, „mi”, „minket”, „miénk”) felismeri az Ön személyes adatainak a védelmének fontosságát és elkötelezett az Ön adatai védelme mellett. A jelen Adatvédelmi szabályzat („Szabályzat”) segítségével tájékoztatjuk Önt arról, hogy a Szoftver hogyan gyűjti és dolgozza fel az Ön személyes adatait és információit. Felhívjuk figyelmét, hogy a jelen Szabályzat a PANTUMNAK elküldött vagy az általa gyűjtött összes információra és adatra vonatkozik (beleértve a személyes adatokat, a „személyes adat” minden olyan információt jelent, amely elektronikusan vagy más módon van rögzítve és azonosított vagy azonosítható természetes személyhez kapcsolódik).
+Mielőtt elkezdi használni termékeinket és szolgáltatásainkat, kérjük, figyelmesen olvassa el és értse meg a jelen Szabályzatot, különösen a félkövérrel kiemelt kifejezéseket, annak érdekében, hogy használat előtt alaposan megértse és elfogadja jelen Szabályzatot.
+
+A jelen Szabályzatnak elsődleges célja a következők bemutatása az Ön számára:
+I. Hogyan gyűjti és használja fel a „PANTUM” az Ön személyes adatait
+II. Hogyan tárolja és hozza nyilvánosságra a „PANTUM” az Ön személyes adatait
+III. Hogyan védi a „PANTUM” az Ön személyes adatait
+IV. Hogyan kezeli a „PANTUM” a gyermekek személyes adatait
+V. Hogyan védi a „PANTUM” az Ön információhoz való hozzáférési jogát
+VI. Hogyan javítja ki a „PANTUM” az Ön személyes adatait
+VII. Hogyan törli a „PANTUM” az összegyűjtött személyes adatokat
+VIII. Hogyan védi a „PANTUM” az Ön hozzájárulásának visszavonásához való jogát
+IX. Hogyan dolgozza fel a „PANTUM” az Ön személyes adatait határokon átnyúlóan
+X. Hogyan léphet kapcsolatba velünk
+XI. Jelen szabályzat változásai
+I. Hogyan gyűjti és használja fel a „PANTUM” az Ön személyes adatait
+A szoftver az alábbiak szerint gyűjti össze a szükséges információkat és adatokat:
+1. Gyűjtjük a nyomtató adatait (nyomtató sorozatszáma, IP-cím és nyomtató állapota);
+2. Gyűjtjük a nyomtatási munkával kapcsolatos információkat (példányszám, papírméret, nyomathordozó);
+3. Gyűjtjük a szkennelési munkával kapcsolatos információkat (beolvasási forrás, szín, felbontás, méret, beolvasott képadatok); 
+A fenti információkat azért gyűjtjük, hogy segítsük az operációs rendszert a nyomtató-illesztőprogram telepítésének befejezésében. Az alap nyomtatási funkció csak az illesztőprogram sikeres telepítése után hajtható végre. Ha megtagadja a fenti információk felhasználását, akkor nem fogja tudni használni a jelen termék alapfunkcióit. Az Ön beleegyezése nélkül nem használjuk fel személyes információit és adatait az itt megjelölt céloktól eltérő célokra. Fontos felhívnunk az Ön figyelmét, hogy a fenti felhasználások az Ön adatai felhasználásának elsődleges módjai. A hozzájárulását fogjuk kérni, ha a jelen szabályzatban leírtaktól eltérő célokra akarjuk felhasználni az információkat, vagy a begyűjtött adatokat meghatározott célra szeretnénk felhasználni. Ha a funkciók változnak, akkor az eredeti hozzájárulás érvényét veszti és új hozzájárulást kérünk Öntől.
+
+II. Hogyan tárolja és hozza nyilvánosságra a „PANTUM” az Ön személyes adatait
+1. Tárolás helye
+Ez a szoftver csak egy hardver illesztőprogram az Ön szkenneréhez, amely csatlakoztatja a számítógép operációs rendszerét a szkenner hardveréhez, a Szoftver a fenti információkat csak az illesztőprogram azonosítására használja a zökkenőmentes telepítés érdekében, nem tárolja az Ön személyes adatait. 
+2. Az információk közzététele
+1) Az előírt szolgáltatások biztosításának szükségessége alapján, Ön beleegyezik abba, hogy adatait átadjuk a Pantum leányvállalatainak, kereskedőinek vagy forgalmazóinak, hivatalos szolgáltatóinak és a vállalati tranzakciókkal kapcsolatos harmadik feleinek (valószínűleg harmadik felek tudomására hozzuk az Ön adatait üzleti kombináció vagy átruházás részeként).
+2) Személyes adatait az alábbi körülmények bármelyike esetén kiadhatjuk:
+• A jogszabályok betartása érdekében vagy válaszként kötelező jogi eljárásokra (például házkutatási parancs vagy más bírósági végzés)
+• Védjük a Pantum törvényes jogait vagy biztonságát (beleértve leányvállalatait, üzleti partnereit/és ügyfeleit). Ez a cikk érvénytelen lehet egyes országokban (régiókban) vagy joghatóságokban, de előfordulhat, hogy nem vonatkozik Önre.
+
+III. Hogyan védi a „PANTUM” az Ön személyes adatait
+Az Ön Személyes adataihoz való jogosulatlan hozzáférés, visszaélés, nyilvánosságra hozatal vagy megváltoztatás elleni védelem érdekében a Zhuhai Pantum Electronics Co., Ltd. ésszerű és megfelelő titkosítási eljárásokat alkalmaz a „PANTUM” által gyűjtött és feldolgozott információk biztonságának biztosítása érdekében. Azonban kérjük, vegye figyelembe, hogy bár ésszerű lépéseket teszünk az Ön adatainak védelme érdekében, egyetlen webhely, internetes adatátvitel, számítógépes rendszer vagy vezeték nélküli kapcsolat sem teljesen biztonságos.
+
+IV. Hogyan kezeli a „PANTUM” a gyermekek személyes adatait
+1. A „PANTUM” tudatosan nem gyűjt adatokat 13 (a vonatkozó joghatóságokban meghatározott alsó korhatár) évnél fiatalabb gyermekektől, és a „PANTUM” nem célozza meg a 13 (a vonatkozó joghatóságokban meghatározott alsó korhatár) éven aluliakat;
+2. Ha Ön 13 éven aluli gyermek, kérjük, ne adjon meg személyes adatokat ezen a terméken keresztül;
+3. Ha a „PANTUM” 13 éven aluli gyermek által ezen a terméken keresztül elküldött személyes adatokat kap, ezeket az információkat a vonatkozó jogszabályoknak megfelelően töröljük.
+V. Hogyan védi a „PANTUM” az Ön információhoz való hozzáférési jogát
+Ha jogszabály másképp nem rendelkezik, Önnek, mint a „PANTUM” természetes személy használója, jogában áll hozzáférni személyes adataihoz. Az alábbi módon férhet hozzá személyes adataihoz:
+1. Kérheti személyes adatai megtekintését, ha e-mailt küld (privacy@pantum.com), mi ellenőrizni fogjuk személyazonosságát (a fiókja vagy adatai biztonságának biztosítása érdekében), és a lehető leghamarabb, ésszerű időn belül megválaszoljuk kérését az Ön által kért információ bonyolultságától és az információ lekérdezés iparági gyakorlatától függően.
+2. Főszabály szerint, Önnek nem kell fizetnie a személyes adatai megtekintésére irányuló kéréséért, de három hónapon belül háromnál több alkalommal ismételt kérés esetén bizonyos költséget számítunk fel.
+VI. Hogyan javítja ki a „PANTUM” az Ön személyes adatait
+Ha úgy találja, hogy hiba van az Öntől begyűjtött adatokban, akkor jogában áll kérni azok kijavítását. A javítást e-mail küldésével kérheti (privacy@pantum.com). A javításra vonatkozó kérelmére 5 napon belül válaszolunk.
+VII. Hogyan törli a „PANTUM” az összegyűjtött személyes adatokat
+1. Távolítsa el ezt a szoftvert közvetlenül a számítógépéről; 
+2. Személyes adatai törlését e-mail küldésével kérheti (privacy@pantum.com) a következő esetekben:
+• Ha úgy gondolja, hogy személyes adatait a vonatkozó törvények és rendelkezések megsértésével dolgozzuk fel;
+• Ha úgy gondolja, hogy az Ön hozzájárulása nélkül dolgoztuk fel adatait;
+• Ha az Ön személyes adatait az Önnel kötött megállapodásunk megsértésével dolgozzuk fel;
+• Ha megszünteti fiókját vagy elutasítja termékünk használatát;
+A személyes adatai törlésérét kérő e-mail kézhezvételét követően, vállaljuk, hogy 15 munkanapon belül megtesszük a megfelelő lépéseket az Ön kérése teljesítése érdekében.
+3. Rendszeresen felülvizsgálhatjuk a birtokunkban lévő adatokat, és saját belátásunk szerint egyoldalúan törölhetjük azokat az adatokat, amelyek már nem szükségesek az Ön szolgáltatásainak nyújtásához.
+
+VIII. Hogyan védi a „PANTUM” az Ön hozzájárulásának visszavonásához való jogát
+Teljes mértékben védjük az Ön azon jogát, hogy visszavonja a személyes adatok gyűjtéséhez és felhasználásához adott hozzájárulását. Ha úgy dönt, hogy visszavonja hozzájárulását, ezt követően nem dolgozzuk fel az meghatalmazásnak megfelelő személyes adatokat, és nem áll módunkban a felhatalmazásnak megfelelő funkcionális szolgáltatásokat nyújtani Önnek. A privacy@pantum.com e-mail címen léphet kapcsolatba a PANTUM-mal, és kérheti, hogy a PANTUM tegye ezt meg Önnek.
+
+IX. Hogyan dolgozza fel a „PANTUM” az Ön személyes adatait határokon átnyúlóan
+Jelenleg nem használjuk, tároljuk, osztjuk meg és hozzuk nyilvánosságra az Ön személyes adatait határon átnyúló üzleti tevékenységben, és nem továbbítjuk személyes adatait külföldre. Ha szolgáltatásunk tartalmának későbbi változásai miatt szükséges külföldre továbbítanunk személyes adatait, azt csak az Ön hozzájárulásának megszerzése és a törvények, közigazgatási rendelkezések vagy a nemzeti kibertér-igazgatás által előírt egyéb feltételek teljesítése után tesszük meg.
+
+X. Hogyan léphet kapcsolatba velünk
+Ha bármilyen kérdése vagy észrevétele van jelen Szabályzattal kapcsolatban, az alábbi módokon veheti fel velünk a kapcsolatot
+Email: privacy@pantum.com
+Postacím: Zhuhai Pantum Electronics Co., Ltd.
+3883. sz. Zhuhai Avenue, Xiangzhou kerület, Zhuhai város, Guangdong tartomány, Kína
+
+XI. Jelen szabályzat változásai
+Ezt a szabályzatot bármikor felülvizsgálhatjuk, és folyamatosan tájékoztatjuk Önt a szabályzat változásairól. Az Ön hozzájárulása nélkül nem korlátozzuk a jelen Adatvédelmi szabályzat szerinti jogait. Bármilyen lényeges változásról szembetűnő értesítést teszünk közzé.
+A jelen szabályzat bármely módosítása csak a közzététel napjától lép hatályba.

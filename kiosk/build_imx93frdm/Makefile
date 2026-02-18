@@ -455,6 +455,30 @@ src/model/barcodemodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/barcodemodel.cpp.s
 .PHONY : src/model/barcodemodel.cpp.s
 
+src/model/printserviceclient.o: src/model/printserviceclient.cpp.o
+.PHONY : src/model/printserviceclient.o
+
+# target to build an object file
+src/model/printserviceclient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.o
+.PHONY : src/model/printserviceclient.cpp.o
+
+src/model/printserviceclient.i: src/model/printserviceclient.cpp.i
+.PHONY : src/model/printserviceclient.i
+
+# target to preprocess a source file
+src/model/printserviceclient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.i
+.PHONY : src/model/printserviceclient.cpp.i
+
+src/model/printserviceclient.s: src/model/printserviceclient.cpp.s
+.PHONY : src/model/printserviceclient.s
+
+# target to generate assembly for a file
+src/model/printserviceclient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.s
+.PHONY : src/model/printserviceclient.cpp.s
+
 src/model/qrgenerator.o: src/model/qrgenerator.cpp.o
 .PHONY : src/model/qrgenerator.o
 
@@ -623,6 +647,30 @@ src/service/sessionservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.s
 .PHONY : src/service/sessionservice.cpp.s
 
+src/service/vitalsservice.o: src/service/vitalsservice.cpp.o
+.PHONY : src/service/vitalsservice.o
+
+# target to build an object file
+src/service/vitalsservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o
+.PHONY : src/service/vitalsservice.cpp.o
+
+src/service/vitalsservice.i: src/service/vitalsservice.cpp.i
+.PHONY : src/service/vitalsservice.i
+
+# target to preprocess a source file
+src/service/vitalsservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.i
+.PHONY : src/service/vitalsservice.cpp.i
+
+src/service/vitalsservice.s: src/service/vitalsservice.cpp.s
+.PHONY : src/service/vitalsservice.s
+
+# target to generate assembly for a file
+src/service/vitalsservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.s
+.PHONY : src/service/vitalsservice.cpp.s
+
 src/storage/patientrepository.o: src/storage/patientrepository.cpp.o
 .PHONY : src/storage/patientrepository.o
 
@@ -695,30 +743,6 @@ src/view/homeview.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/homeview.cpp.s
 .PHONY : src/view/homeview.cpp.s
 
-src/view/mainwindow.o: src/view/mainwindow.cpp.o
-.PHONY : src/view/mainwindow.o
-
-# target to build an object file
-src/view/mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o
-.PHONY : src/view/mainwindow.cpp.o
-
-src/view/mainwindow.i: src/view/mainwindow.cpp.i
-.PHONY : src/view/mainwindow.i
-
-# target to preprocess a source file
-src/view/mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.i
-.PHONY : src/view/mainwindow.cpp.i
-
-src/view/mainwindow.s: src/view/mainwindow.cpp.s
-.PHONY : src/view/mainwindow.s
-
-# target to generate assembly for a file
-src/view/mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.s
-.PHONY : src/view/mainwindow.cpp.s
-
 src/view/metriccard.o: src/view/metriccard.cpp.o
 .PHONY : src/view/metriccard.o
 
@@ -788,6 +812,9 @@ help:
 	@echo "... src/model/barcodemodel.o"
 	@echo "... src/model/barcodemodel.i"
 	@echo "... src/model/barcodemodel.s"
+	@echo "... src/model/printserviceclient.o"
+	@echo "... src/model/printserviceclient.i"
+	@echo "... src/model/printserviceclient.s"
 	@echo "... src/model/qrgenerator.o"
 	@echo "... src/model/qrgenerator.i"
 	@echo "... src/model/qrgenerator.s"
@@ -809,6 +836,9 @@ help:
 	@echo "... src/service/sessionservice.o"
 	@echo "... src/service/sessionservice.i"
 	@echo "... src/service/sessionservice.s"
+	@echo "... src/service/vitalsservice.o"
+	@echo "... src/service/vitalsservice.i"
+	@echo "... src/service/vitalsservice.s"
 	@echo "... src/storage/patientrepository.o"
 	@echo "... src/storage/patientrepository.i"
 	@echo "... src/storage/patientrepository.s"
@@ -818,9 +848,6 @@ help:
 	@echo "... src/view/homeview.o"
 	@echo "... src/view/homeview.i"
 	@echo "... src/view/homeview.s"
-	@echo "... src/view/mainwindow.o"
-	@echo "... src/view/mainwindow.i"
-	@echo "... src/view/mainwindow.s"
 	@echo "... src/view/metriccard.o"
 	@echo "... src/view/metriccard.i"
 	@echo "... src/view/metriccard.s"

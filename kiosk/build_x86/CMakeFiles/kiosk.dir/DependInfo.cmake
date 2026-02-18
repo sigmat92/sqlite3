@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/controller/protocolparser.cpp" "CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/main.cpp" "CMakeFiles/kiosk.dir/src/main.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/main.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/model/barcodemodel.cpp" "CMakeFiles/kiosk.dir/src/model/barcodemodel.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/barcodemodel.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/model/printserviceclient.cpp" "CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp" "CMakeFiles/kiosk.dir/src/model/qrgenerator.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/qrgenerator.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp" "CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp" "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o.d"
@@ -24,10 +25,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.cpp" "CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/service/inputservice.cpp" "CMakeFiles/kiosk.dir/src/service/inputservice.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/service/inputservice.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp" "CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp" "CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp" "CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp" "CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
-  "/home/prakash/sqlite3/kiosk/src/view/mainwindow.cpp" "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/mainwindow.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
   )
 

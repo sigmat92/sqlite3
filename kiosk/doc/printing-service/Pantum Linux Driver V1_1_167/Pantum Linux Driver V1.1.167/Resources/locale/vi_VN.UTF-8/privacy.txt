@@ -1,0 +1,73 @@
+[Chính sách Quyền riêng tư] 
+Cập nhật lần cuối: Ngày 1 tháng 5, 2023 
+
+Zhuhai Pantum Electronics Co., Ltd. và các văn phòng chi nhánh toàn cầu (gọi tắt là “Pantum”, “chúng tôi”, “của chúng tôi”) nhận ra tầm quan trọng của quyền riêng tư của bạn và cam kết bảo vệ quyền riêng tư của bạn. Chúng tôi sẽ thông báo cho bạn cách thức Phần mềm thu thập và xử lý dữ liệu và thông tin cá nhân của bạn thông qua Chính sách Quyền riêng tư này (gọi tắt là “Chính sách”). Xin lưu ý rằng Chính sách này áp dụng cho tất cả thông tin và dữ liệu được gửi đến hoặc được thu thập và xử lý bởi PANTUM (bao gồm thông tin cá nhân, "thông tin cá nhân" có nghĩa là tất cả các loại thông tin, được ghi lại bằng điện tử hoặc bằng cách khác, liên quan đến một thể nhân đã xác định hoặc có thể xác định). 
+Trước khi sử dụng bất kỳ sản phẩm hoặc dịch vụ nào của chúng tôi, vui lòng đọc kỹ chính sách này, đặc biệt là các điều khoản và điều kiện được in đậm, để đảm bảo rằng bạn hoàn toàn hiểu và đồng ý với nó trước khi sử dụng. 
+
+Chính sách này nhằm mục đích chủ yếu cho bạn thấy: 
+I. Cách thức “PANTUM” thu thập và sử dụng thông tin cá nhân của bạn 
+II. Cách thức “PANTUM” lưu trữ và tiết lộ thông tin cá nhân của bạn 
+III. Cách thức “PANTUM” bảo vệ thông tin cá nhân của bạn 
+IV. Cách thức “PANTUM” xử lý thông tin cá nhân của trẻ em 
+V. Cách thức “PANTUM” bảo vệ quyền truy cập thông tin của bạn 
+VI. Cách thức “PANTUM” hiệu chỉnh thông tin cá nhân của bạn 
+VII. Cách thức “PANTUM” xóa thông tin cá nhân đã thu thập 
+VIII. Cách thức “PANTUM” bảo vệ quyền bạn rút lại sự đồng ý 
+IX. Cách thức “PANTUM” xử lý thông tin cá nhân của bạn xuyên biên giới 
+X. Cách liên hệ với chúng tôi 
+XI. Thay đổi đối với Chính sách này 
+I. Cách thức “PANTUM” thu thập và sử dụng thông tin cá nhân của bạn 
+Phần mềm này sẽ thu thập thông tin và dữ liệu cần thiết như mô tả dưới đây: 
+1. Chúng tôi sẽ thu thập thông tin về Máy in của bạn (Số sê-ri Máy in, địa chỉ IP và trạng thái máy in); 
+2. Chúng tôi sẽ thu thập thông tin về lệnh in của bạn (số lượng bản in, khổ giấy, phương tiện in); 
+3. Chúng tôi thu thập thông tin về công việc quét của bạn (nguồn quét, màu sắc, độ phân giải, kích thước, dữ liệu hình ảnh được quét); 
+Chúng tôi thu thập những thông tin trên để giúp hệ điều hành hoàn tất cài đặt driver máy in. Chỉ có thể thực hiện chức năng in cơ bản sau khi cài đặt driver thành công. Nếu bạn chọn không cung cấp các thông tin trên, bạn sẽ không thể sử dụng các tính năng cơ bản của sản phẩm này. Chúng tôi sẽ không sử dụng thông tin và dữ liệu cá nhân của bạn cho bất kỳ mục đích nào khác ngoài những mục đích được mô tả ở đây mà không có sự đồng ý của bạn. Điều quan trọng cần lưu ý là những cách sử dụng trên đây đã bao gồm những cách chủ yếu mà chúng tôi sử dụng thông tin của bạn. Khi chúng tôi muốn sử dụng thông tin cho các mục đích khác với những mục đích được mô tả trong chính sách này, hoặc khi chúng tôi muốn sử dụng thông tin thu thập được cho một mục đích cụ thể, chúng tôi sẽ xin ý kiến đồng ý của bạn. Nếu các chức năng thay đổi thì sự đồng ý ban đầu của bạn không còn hiệu lực, khi đó chúng tôi sẽ lấy sự đồng ý mới của bạn. 
+
+II. Cách thức “PANTUM” lưu trữ và tiết lộ thông tin cá nhân của bạn 
+1. Vị trí lưu trữ 
+Phần mềm này chỉ là driver phần cứng cho máy quét, nó là công cụ để kết nối hệ điều hành máy tính của bạn với phần cứng máy quét. Phần mềm sử dụng các thông tin trên chỉ để xác định phần mềm driver của bạn để cài đặt nó dễ dàng hơn chứ không lưu trữ bất kỳ thông tin cá nhân nào của bạn. 
+2. Công bố thông tin 
+1) Dựa trên đáp ứng nhu cầu cung cấp cho bạn các dịch vụ cần thiết, bạn đồng ý rằng chúng tôi có thể cung cấp thông tin của bạn cho các chi nhánh, đại lý hoặc nhà phân phối, nhà cung cấp dịch vụ ủy quyền của Pantum, và các bên thứ ba có liên quan đến giao dịch của công ty (thông tin của bạn có thể sẽ được tiết lộ cho bên thứ ba như là một phần của quá trình hợp nhất hoặc chuyển nhượng kinh doanh).
+2) Chúng tôi có thể tiết lộ thông tin cá nhân của bạn trong những trường hợp sau:
+• Để tuân thủ các yêu cầu của pháp luật hoặc phản hồi các thủ tục pháp lý bắt buộc (như lệnh khám xét hoặc lệnh khác của tòa án)
+• Để bảo vệ các quyền hợp pháp hoặc bảo mật của Pantum (bao gồm các chi nhánh, đối tác kinh doanh/và khách hàng của Pantum).Điều khoản này có thể không có hiệu lực ở một số quốc gia (khu vực) hoặc khu vực pháp lý, do đó nó có thể không áp dụng cho bạn. 
+
+III. Cách thức “PANTUM” bảo vệ thông tin cá nhân của bạn 
+Để bảo vệ thông tin cá nhân của bạn khỏi bị truy cập trái phép, lạm dụng, tiết lộ hoặc thay đổi, Zhuhai Pantum Electronics Co., Ltd. tận dụng các quy trình mã hóa hợp lý và phù hợp để đảm bảo tính bảo mật của những thông tin do “PANTUM” thu thập và xử lý. Tuy nhiên, xin lưu ý rằng mặc dù chúng tôi đã thực hiện tất cả các bước hợp lý để bảo vệ thông tin của bạn nhưng không có trang web, đường truyền Internet, hệ thống máy tính hoặc kết nối không dây nào là hoàn toàn an toàn. 
+
+IV. Cách thức “PANTUM” xử lý thông tin cá nhân của trẻ em 
+1. "PANTUM" sẽ không cố ý thu thập thông tin từ trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu tương đương quy định trong khu vực pháp lý liên quan) và "PANTUM" không nhắm đến đối tượng là trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu tương đương quy định trong khu vực pháp lý liên quan); 
+2. Vui lòng không gửi bất kỳ thông tin cá nhân nào thông qua sản phẩm này nếu bạn là trẻ em dưới 13 tuổi; 
+3. Nếu “PANTUM” nhận được thông tin cá nhân được gửi bởi trẻ em dưới 13 tuổi thông qua sản phẩm này, chúng tôi sẽ xóa thông tin đó theo quy định của pháp luật hiện hành. 
+V. Cách thức “PANTUM” bảo vệ quyền truy cập thông tin của bạn 
+Trừ khi có quy định khác của pháp luật, với tư cách là người dùng cá nhân của “PANTUM”, bạn có quyền truy cập vào thông tin cá nhân của bạn. Bạn có thể truy cập thông tin cá nhân của mình bằng phương pháp sau: 
+1. Bạn có thể gửi email cho chúng tôi (privacy@pantum.com) để yêu cầu xem xét các thông tin cá nhân của bạn, và chúng tôi sẽ xác minh danh tính của bạn (để đảm bảo tính bảo mật cho tài khoản hoặc thông tin của bạn), và trả lời yêu cầu của bạn trong thời gian sớm nhất có thể tùy thuộc vào độ khó của thông tin bạn muốn hỏi và các thông lệ ngành đối với quy trình yêu cầu thông tin. 
+2. Về nguyên tắc, bạn không cần phải trả phí cho yêu cầu xem xét thông tin cá nhân của bản thân, nhưng khi số lượng yêu cầu vượt quá ba lần trong vòng ba tháng, chúng tôi sẽ tính một khoản phí nhất định tùy từng trường hợp. 
+VI. Cách thức “PANTUM” hiệu chỉnh thông tin cá nhân của bạn 
+Khi phát hiện có sai sót trong thông tin cá nhân mà chúng tôi đã thu thập từ bạn, bạn có quyền yêu cầu chúng tôi sửa chữa. Bạn có thể yêu cầu chúng tôi sửa chữa bằng cách gửi email đến privacy@pantum.com. Chúng tôi sẽ trả lời yêu cầu sửa chữa của bạn trong vòng 5 ngày. 
+VII. Cách thức “PANTUM” xóa thông tin cá nhân đã thu thập 
+1. Gỡ cài đặt phần mềm này trực tiếp khỏi máy tính của bạn; 
+2. Bạn có thể yêu cầu chúng tôi xóa thông tin cá nhân của bạn bằng cách gửi email đến (privacy@pantum.com: 
+• Nếu bạn cho rằng chúng tôi xử lý thông tin cá nhân của bạn là vi phạm luật và quy định hiện hành;
+• Nếu bạn cho rằng chúng tôi đã xử lý thông tin của bạn khi chưa được bạn đồng ý;
+• Nếu chúng tôi xử lý thông tin cá nhân của bạn là vi phạm thỏa thuận giữa chúng tôi với bạn;
+• Nếu bạn hủy tài khoản hoặc từ chối sử dụng sản phẩm của chúng tôi;
+Sau khi nhận được email yêu cầu xóa thông tin cá nhân của bạn, trong vòng 15 ngày làm việc chúng tôi sẽ thực hiện các hành động thích hợp theo yêu cầu. 
+3. Chúng tôi có thể định kỳ xem xét dữ liệu mà chúng tôi nắm giữ và đơn phương xóa thông tin nào không còn cần thiết theo quyết định của riêng chúng tôi để cung cấp dịch vụ cho bạn. 
+
+VIII. Cách thức “PANTUM” bảo vệ quyền bạn rút lại sự đồng ý 
+Chúng tôi hoàn toàn bảo vệ quyền rút lại sự đồng ý của bạn đối với việc thu thập và sử dụng thông tin cá nhân. Khi bạn chọn rút lại sự đồng ý, sau đó chúng tôi sẽ không xử lý thông tin cá nhân tương ứng với ủy quyền, và chúng tôi sẽ không thể cung cấp cho bạn các dịch vụ chức năng tương ứng với ủy quyền đó. Vui lòng liên hệ với PANTUM qua email privacy@pantum.com để yêu cầu PANTUM thực hiện điều đó cho bạn. 
+
+IX. Cách thức “PANTUM” xử lý thông tin cá nhân của bạn xuyên biên giới 
+Chúng tôi hiện không sử dụng, lưu trữ, chia sẻ hoặc tiết lộ thông tin cá nhân của bạn trong các giao dịch xuyên biên giới hoặc chuyển thông tin cá nhân của bạn ra nước ngoài. Nếu do các thay đổi sau này trong nội dung dịch vụ của chúng tôi mà chúng tôi cần phải chuyển thông tin cá nhân của bạn ra nước ngoài, chúng tôi sẽ chỉ làm điều đó sau khi được bạn đồng ý và đáp ứng các điều kiện khác theo quy định của pháp luật, quy định hành chính hoặc cơ quan quản lý không gian mạng quốc gia. 
+
+X. Cách liên hệ với chúng tôi 
+Nếu bạn có bất kỳ câu hỏi hoặc nhận xét nào về chính sách này, bạn có thể liên hệ với chúng tôi như sau 
+Email: privacy@pantum.com 
+Địa chỉ gửi thư: Zhuhai Pantum Electronics Co., Ltd. 
+Số 3883 Đại lộ Chu Hải, Huyện Tương Châu, Thành phố Chu Hải, Tỉnh Quảng Đông, Trung Quốc 
+
+XI. Thay đổi đối với Chính sách này 
+Chúng tôi có thể sửa đổi Chính sách này vào bất kỳ lúc nào và chúng tôi sẽ thông báo cho bạn về các thay đổi đối với Chính sách. Chúng tôi sẽ không giới hạn quyền của bạn theo Chính sách Quyền riêng tư này mà không có sự đồng ý của bạn. Đối với bất kỳ thay đổi quan trọng nào, chúng tôi sẽ đăng thông báo công khai. 
+Bất kỳ phiên bản sửa đổi nào của Chính sách này sẽ chỉ có hiệu lực kể từ ngày đăng.
+
