@@ -557,4 +557,8 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QStringList \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qstringlist.h \
- /home/prakash/sqlite3/kiosk/src/view/visiontestview.h
+ /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
+ /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h

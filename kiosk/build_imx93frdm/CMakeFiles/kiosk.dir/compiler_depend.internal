@@ -20,6 +20,8 @@
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h
  /home/prakash/sqlite3/kiosk/src/controller/protocolparser.cpp
  /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h
+ /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp
+ /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h
  /home/prakash/sqlite3/kiosk/src/main.cpp
@@ -30,6 +32,8 @@
  /home/prakash/sqlite3/kiosk/src/model/printserviceclient.h
  /home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp
  /home/prakash/sqlite3/kiosk/src/model/qrgenerator.h
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.cpp
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h
  /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp
@@ -43,16 +47,22 @@
  /home/prakash/sqlite3/kiosk/src/service/protocol.h
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.cpp
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h
  /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp
  /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h
  /home/prakash/sqlite3/kiosk/src/view/homeview.cpp
  /home/prakash/sqlite3/kiosk/src/view/homeview.h
  /home/prakash/sqlite3/kiosk/src/view/metriccard.cpp
  /home/prakash/sqlite3/kiosk/src/view/metriccard.h
+ /home/prakash/sqlite3/kiosk/src/view/settingsview.cpp
+ /home/prakash/sqlite3/kiosk/src/view/settingsview.h
  /home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp
  /home/prakash/sqlite3/kiosk/src/view/visiontestview.h
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray

@@ -539,6 +539,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h",
+			"MU",
+			"KECQXMYYOW/moc_settingscontroller.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h",
 			"MU",
 			"KECQXMYYOW/moc_visiontestcontroller.cpp",
@@ -566,6 +572,12 @@
 			"/home/prakash/sqlite3/kiosk/src/model/qrgenerator.h",
 			"MU",
 			"VNQA4LF4BW/moc_qrgenerator.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/model/settingsmodel.h",
+			"MU",
+			"VNQA4LF4BW/moc_settingsmodel.cpp",
 			null
 		],
 		[
@@ -611,6 +623,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/settingsservice.h",
+			"MU",
+			"RIEQWACMR2/moc_settingsservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h",
 			"MU",
 			"RIEQWACMR2/moc_vitalsservice.cpp",
@@ -620,6 +638,12 @@
 			"/home/prakash/sqlite3/kiosk/src/storage/patientrepository.h",
 			"MU",
 			"F2ESZRYZMC/moc_patientrepository.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h",
+			"MU",
+			"F2ESZRYZMC/moc_settingsrepository.cpp",
 			null
 		],
 		[
@@ -638,6 +662,12 @@
 			"/home/prakash/sqlite3/kiosk/src/view/metriccard.h",
 			"MU",
 			"3JYSCEOBDA/moc_metriccard.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/settingsview.h",
+			"MU",
+			"3JYSCEOBDA/moc_settingsview.cpp",
 			null
 		],
 		[
@@ -757,6 +787,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp",
 			"MU",
 			null
@@ -769,6 +804,7 @@
 			null
 		],
 		[ "/home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/model/settingsmodel.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp", "MU", null ],
 		[
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp",
@@ -796,6 +832,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/settingsservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp",
 			"MU",
 			null
@@ -806,12 +847,18 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp",
 			"MU",
 			null
 		],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

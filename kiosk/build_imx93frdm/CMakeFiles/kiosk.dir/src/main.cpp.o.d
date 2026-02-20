@@ -540,6 +540,9 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
