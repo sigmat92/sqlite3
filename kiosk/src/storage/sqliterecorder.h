@@ -2,6 +2,8 @@
 
 #include <QObject>
 #include <sqlite3.h>
+#include <QString>
+//#include "model/settingsmodel.h"
 
 class SQLiteRecorder : public QObject
 {
@@ -17,6 +19,14 @@ public slots:
                      int spo2, int pulse,
                      double weight, int height,
                      int sys, int dia, int map);
+    //void storeSettings(QString ssid,
+    //               QString key,
+    //               QString serverIp,
+    //               int port,
+    //               bool dhcp);
+
+    //bool loadSettings(SettingsModel* model);
+
 
 private:
     void open(const char* path);

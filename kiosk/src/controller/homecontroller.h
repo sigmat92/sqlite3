@@ -7,17 +7,28 @@ class SessionService;
 class PatientRepository;
 class VitalsModel;
 class ProtocolController; 
+class SettingsService;
 
 class HomeController : public QObject
 {
     Q_OBJECT
 public:
-    explicit HomeController(HomeView* view,
-                            SessionService* session,
-                            PatientRepository* repo,
-                            VitalsModel* vitalsModel,
-                            ProtocolController* protocol,
-                            QObject* parent = nullptr);
+
+    explicit HomeController(HomeView* v,
+                        SessionService* s,
+                        PatientRepository* r,
+                        VitalsModel* vm,
+                        ProtocolController* pc,
+                        SettingsService* ss,
+                        QObject* parent=nullptr);
+
+
+    //explicit HomeController(HomeView* view,
+    //                        SessionService* session,
+    //                        PatientRepository* repo,
+    //                        VitalsModel* vitalsModel,
+    //                        ProtocolController* protocol,
+    //                        QObject* parent = nullptr);
 //public slots:
 //    void onTemperatureChanged(double temp);
 public slots:
@@ -33,7 +44,9 @@ private:
     SessionService* m_session;
     PatientRepository* m_repo;
     VitalsModel* m_vitals;
-    ProtocolController* m_protocolController;
+    ProtocolController* m_protocol;
+    SettingsService* m_settingsService;
+
 };
 
 

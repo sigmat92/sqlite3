@@ -67,6 +67,8 @@ set(SRC
     src/model/vitalsmodel.h
     src/model/vitalsmodel.cpp
     src/model/patient.h
+    src/model/settingsmodel.h
+    src/model/settingsmodel.cpp
     src/model/printserviceclient.h
     src/model/printserviceclient.cpp
 
@@ -88,6 +90,8 @@ set(SRC
     src/controller/printcontroller.cpp
     src/controller/visiontestcontroller.h
     src/controller/visiontestcontroller.cpp
+    src/controller/settingscontroller.h
+    src/controller/settingscontroller.cpp
     #src/controller/inputcontroller.cpp
 
     #service
@@ -98,7 +102,10 @@ set(SRC
     src/service/protocol.h
     src/service/vitalsservice.h
     src/service/vitalsservice.cpp
+    src/service/settingsservice.h
+    src/service/settingsservice.cpp
     #src/service/printhelper.cpp
+
 
     # Platform
     src/platform/v4l2/v4l2camera.h
@@ -113,7 +120,9 @@ set(SRC
     src/storage/sqliterecorder.cpp
     src/storage/patientrepository.h
     src/storage/patientrepository.cpp
-
+    src/storage/settingsrepository.h
+    src/storage/settingsrepository.cpp
+    
     # Views
     #src/view/mainwindow.h
     #src/view/mainwindow.cpp
@@ -123,6 +132,8 @@ set(SRC
     src/view/metriccard.cpp
     src/view/visiontestview.h
     src/view/visiontestview.cpp
+    src/view/settingsview.h
+    src/view/settingsview.cpp
 )
 
 # --------------------------------------------------

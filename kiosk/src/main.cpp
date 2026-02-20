@@ -6,6 +6,7 @@
 
 #include "service/vitalsservice.h"
 #include "service/sessionservice.h"
+#include "service/settingsservice.h"
 
 #include "storage/patientrepository.h"
 #include "storage/sqliterecorder.h"
@@ -34,6 +35,21 @@ int main(int argc, char *argv[])
     SessionService* session = new SessionService(&app);
     PatientRepository* repo = new PatientRepository(&app);
 
+    /* ---------- Settings MVVM ---------- */
+    SettingsModel* settingsModel = new SettingsModel(&app);
+    SettingsRepository* settingsRepo = new SettingsRepository(&app);
+    SettingsService* settingsService =
+            new SettingsService(settingsModel, settingsRepo, &app);
+
+    settingsService->load();
+    settingsService->applyNetwork();
+
+    //SQLiteRecorder* recorder = new SQLiteRecorder("/data/carenest.db", &app);
+    //SettingsService* settingsService = new SettingsService(recorder, &app);
+    //settingsService->load();
+    //settingsService->applyNetwork();
+
+
     /* ---------- UART / Protocol ---------- */
     UartDevice* uart = new UartDevice(&app);
     uart->open("/dev/ttyACM0", 9600);
@@ -44,14 +60,16 @@ int main(int argc, char *argv[])
         new ProtocolController(uart, parser, &app);
 
     /* ---------- Controllers ---------- */
-    new HomeController(
-        view,
-        session,
-        repo,
-        vitals,
-        protocolCtrl,
-        &app
-    );
+new HomeController(
+    view,
+    session,
+    repo,
+    vitals,
+    protocolCtrl,
+    settingsService,   // ✅ pass this
+    &app
+);
+
 
     /* ---------- Protocol → Service ---------- */
     QObject::connect(protocolCtrl, &ProtocolController::temperatureRaw,

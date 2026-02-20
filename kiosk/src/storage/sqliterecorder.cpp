@@ -1,4 +1,6 @@
 #include "sqliterecorder.h"
+#include "service/settingsservice.h"
+#include "model/settingsmodel.h"
 #include <QDateTime> 
 #include <QDebug>
 
@@ -99,3 +101,48 @@ void SQLiteRecorder::storeVitals(double temperature, char tempUnit,
 
     sqlite3_finalize(stmt);
 }
+/*
+void SQLiteRecorder::storeSettings(QString ssid,
+                                   QString key,
+                                   QString serverIp,
+                                   int port,
+                                   bool dhcp)
+{
+    const char* sql =
+        "INSERT OR REPLACE INTO settings "
+        "(id,ssid,security_key,server_ip,server_port,dhcp) "
+        "VALUES(1,?,?,?,?,?);";
+
+    sqlite3_stmt* stmt;
+    sqlite3_prepare_v2(m_db, sql, -1, &stmt, nullptr);
+
+    sqlite3_bind_text(stmt,2, ssid.toUtf8(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt,3, key.toUtf8(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt,4, serverIp.toUtf8(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_int(stmt,5, port);
+    sqlite3_bind_int(stmt,6, dhcp);
+
+    sqlite3_step(stmt);
+    sqlite3_finalize(stmt);
+}
+
+bool SQLiteRecorder::loadSettings(SettingsModel* model)
+{
+    const char* sql = "SELECT ssid,security_key,server_ip,server_port,dhcp FROM settings WHERE id=1;";
+    sqlite3_stmt* stmt;
+
+    if (sqlite3_prepare_v2(m_db, sql, -1, &stmt, nullptr)!=SQLITE_OK)
+        return false;
+
+    if (sqlite3_step(stmt)==SQLITE_ROW) {
+        model->setSsid((const char*)sqlite3_column_text(stmt,0));
+        model->setSecurityKey((const char*)sqlite3_column_text(stmt,1));
+        model->setServerIp((const char*)sqlite3_column_text(stmt,2));
+        model->setServerPort(sqlite3_column_int(stmt,3));
+        model->setDhcpEnabled(sqlite3_column_int(stmt,4));
+    }
+
+    sqlite3_finalize(stmt);
+    return true;
+}
+*/

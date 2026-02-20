@@ -1,6 +1,7 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_sqliterecorder.cpp: /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \

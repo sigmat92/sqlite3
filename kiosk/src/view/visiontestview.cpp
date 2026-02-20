@@ -1,4 +1,8 @@
 #include "visiontestview.h"
+#include "model/settingsmodel.h"
+
+#include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>

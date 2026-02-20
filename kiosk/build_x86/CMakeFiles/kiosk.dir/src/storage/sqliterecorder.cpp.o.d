@@ -349,6 +349,11 @@ CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/sqlite3.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \

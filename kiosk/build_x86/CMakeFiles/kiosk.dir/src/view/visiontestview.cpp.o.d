@@ -397,6 +397,9 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \

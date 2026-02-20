@@ -14,6 +14,8 @@
 #include <QDebug>
 #include "controller/visiontestcontroller.h"
 #include "view/visiontestview.h"
+#include "view/settingsview.h"
+#include "service/settingsservice.h"
 
 HomeView::HomeView(QWidget* parent) : QWidget(parent)
 {
@@ -77,6 +79,7 @@ this->setStyleSheet(R"(
     title->setObjectName("headerTitle");
     /* New Test Button */
     QPushButton *newTest = new QPushButton("NEW TEST");
+
     connect(newTest, &QPushButton::clicked, this, [=]() {
         emit startNewTestRequested();
         qDebug() << "HomeView: New Test requested";
@@ -86,11 +89,27 @@ this->setStyleSheet(R"(
     QPushButton *settings = new QPushButton("⚙ Settings");
     newTest->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
     settings->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
+
     connect(settings, &QPushButton::clicked, this, [=]() {
-        emit startSettingsRequested();
-        qDebug() << "HomeView: settings start requested";
-        status->setText("Test Status: Settings requested");
-    });
+    emit settingsRequested();   // cleaner name
+    qDebug() << "HomeView: settings requested";
+    status->setText("Test Status: Settings requested");
+});
+
+
+
+    //connect(settings, &QPushButton::clicked, this, [=]() {
+    //    emit startSettingsRequested();
+    //    qDebug() << "HomeView: settings start requested";
+    //    status->setText("Test Status: Settings requested");
+
+        //settingsView->show();
+            //SettingsView* settingsView = new SettingsView;
+    //settingsView->setModel(settingsService->getModel());
+    //settingsView->show();
+    //});
+    
+
     /* RT Clock */
     m_timeLabel = new QLabel;
     m_timeLabel->setObjectName("headerTime");

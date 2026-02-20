@@ -50,13 +50,14 @@ static constexpr auto qt_meta_stringdata_CLASSHomeViewENDCLASS = QtMocHelpers::s
     "startSettingsRequested",
     "startPrintingRequested",
     "visionTestRequested",
+    "settingsRequested",
     "onVitalsUpdated",
     "spo2",
     "pulse"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
-    uint offsetsAndSizes[30];
+    uint offsetsAndSizes[32];
     char stringdata0[9];
     char stringdata1[26];
     char stringdata2[1];
@@ -69,9 +70,10 @@ struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
     char stringdata9[23];
     char stringdata10[23];
     char stringdata11[20];
-    char stringdata12[16];
-    char stringdata13[5];
-    char stringdata14[6];
+    char stringdata12[18];
+    char stringdata13[16];
+    char stringdata14[5];
+    char stringdata15[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeViewENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -89,9 +91,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
         QT_MOC_LITERAL(163, 22),  // "startSettingsRequested"
         QT_MOC_LITERAL(186, 22),  // "startPrintingRequested"
         QT_MOC_LITERAL(209, 19),  // "visionTestRequested"
-        QT_MOC_LITERAL(229, 15),  // "onVitalsUpdated"
-        QT_MOC_LITERAL(245, 4),  // "spo2"
-        QT_MOC_LITERAL(250, 5)   // "pulse"
+        QT_MOC_LITERAL(229, 17),  // "settingsRequested"
+        QT_MOC_LITERAL(247, 15),  // "onVitalsUpdated"
+        QT_MOC_LITERAL(263, 4),  // "spo2"
+        QT_MOC_LITERAL(268, 5)   // "pulse"
     },
     "HomeView",
     "startTemperatureRequested",
@@ -105,6 +108,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
     "startSettingsRequested",
     "startPrintingRequested",
     "visionTestRequested",
+    "settingsRequested",
     "onVitalsUpdated",
     "spo2",
     "pulse"
@@ -119,27 +123,28 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-      10,       // signalCount
+      11,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   80,    2, 0x06,    1 /* Public */,
-       3,    0,   81,    2, 0x06,    2 /* Public */,
-       4,    0,   82,    2, 0x06,    3 /* Public */,
-       5,    0,   83,    2, 0x06,    4 /* Public */,
-       6,    0,   84,    2, 0x06,    5 /* Public */,
-       7,    0,   85,    2, 0x06,    6 /* Public */,
-       8,    0,   86,    2, 0x06,    7 /* Public */,
-       9,    0,   87,    2, 0x06,    8 /* Public */,
-      10,    0,   88,    2, 0x06,    9 /* Public */,
-      11,    0,   89,    2, 0x06,   10 /* Public */,
+       1,    0,   86,    2, 0x06,    1 /* Public */,
+       3,    0,   87,    2, 0x06,    2 /* Public */,
+       4,    0,   88,    2, 0x06,    3 /* Public */,
+       5,    0,   89,    2, 0x06,    4 /* Public */,
+       6,    0,   90,    2, 0x06,    5 /* Public */,
+       7,    0,   91,    2, 0x06,    6 /* Public */,
+       8,    0,   92,    2, 0x06,    7 /* Public */,
+       9,    0,   93,    2, 0x06,    8 /* Public */,
+      10,    0,   94,    2, 0x06,    9 /* Public */,
+      11,    0,   95,    2, 0x06,   10 /* Public */,
+      12,    0,   96,    2, 0x06,   11 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      12,    2,   90,    2, 0x0a,   11 /* Public */,
+      13,    2,   97,    2, 0x0a,   12 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -152,9 +157,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,   13,   14,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   14,   15,
 
        0        // eod
 };
@@ -188,6 +194,8 @@ Q_CONSTINIT const QMetaObject HomeView::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'visionTestRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'settingsRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onVitalsUpdated'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
@@ -212,7 +220,8 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 7: _t->startSettingsRequested(); break;
         case 8: _t->startPrintingRequested(); break;
         case 9: _t->visionTestRequested(); break;
-        case 10: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 10: _t->settingsRequested(); break;
+        case 11: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -287,6 +296,13 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
                 return;
             }
         }
+        {
+            using _t = void (HomeView::*)();
+            if (_t _q_method = &HomeView::settingsRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 10;
+                return;
+            }
+        }
     }
 }
 
@@ -309,13 +325,13 @@ int HomeView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }
@@ -378,5 +394,11 @@ void HomeView::startPrintingRequested()
 void HomeView::visionTestRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 9, nullptr);
+}
+
+// SIGNAL 10
+void HomeView::settingsRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 10, nullptr);
 }
 QT_WARNING_POP

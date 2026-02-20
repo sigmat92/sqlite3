@@ -401,44 +401,9 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_protocolparser.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/protocolparser.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_visiontestcontroller.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/visiontestcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_barcodemodel.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/barcodemodel.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_printserviceclient.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/printserviceclient.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_uartdevice.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/../../../src/platform/uart/uartdevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_inputservice.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/inputservice.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_sessionservice.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/sessionservice.h \
- /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_patientrepository.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/../../../src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_sqliterecorder.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/../../../src/storage/sqliterecorder.h \
- /usr/include/sqlite3.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_homeview.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_settingscontroller.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/settingscontroller.h \
+ /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -460,6 +425,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
@@ -470,7 +436,51 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_visiontestcontroller.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/visiontestcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_barcodemodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/barcodemodel.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_printserviceclient.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/printserviceclient.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_settingsmodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_uartdevice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/../../../src/platform/uart/uartdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_inputservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/inputservice.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_sessionservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/sessionservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/patient.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_settingsservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_patientrepository.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/../../../src/storage/patientrepository.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_settingsrepository.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_sqliterecorder.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/../../../src/storage/sqliterecorder.h \
+ /usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_homeview.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/homeview.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/metriccard.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_visiontestview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/visiontestview.h
