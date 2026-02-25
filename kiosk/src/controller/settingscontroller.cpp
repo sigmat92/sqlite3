@@ -1,38 +1,36 @@
 #include "settingscontroller.h"
-#include <QMessageBox>
+#include "../view/settingsview.h"
+#include "../service/systemsettingsservice.h"
+#include "../service/adminauthservice.h"
 
-SettingsController::SettingsController(SettingsView* v,
-                                       SettingsService* s,
-                                       SettingsModel* m,
+SettingsController::SettingsController(SettingsView* view,
+                                       SystemSettingsService* service,
+                                       AdminAuthService* auth,
                                        QObject* parent)
-    : QObject(parent)
+    : QObject(parent),
+      m_view(view),
+      m_service(service),
+      m_auth(auth)
 {
-    connect(v,&SettingsView::saveRequested,
-            s,&SettingsService::save);
+    // 🔐 Admin login
+    connect(m_view, &SettingsView::adminLoginRequested,
+            this, [=](QString pin)
+    {
+        if (m_auth->authenticate(pin))
+            m_view->unlockControls();
+        else
+            m_view->lockControls();
+    });
 
-    connect(v,&SettingsView::scanWifiRequested,
-            s,&SettingsService::scanWifi);
+    // 📡 WiFi connect
+    connect(m_view, &SettingsView::wifiConnectRequested,
+            m_service, &SystemSettingsService::connectWifi);
 
-    connect(v,&SettingsView::testConnectionRequested,
-            s,&SettingsService::testConnection);
-            
-    connect(s,&SettingsService::wifiListReady,
-        v,&SettingsView::updateWifiList);
+    // 🔁 DHCP toggle
+    connect(m_view, &SettingsView::dhcpToggled,
+            m_service, &SystemSettingsService::enableDHCP);
 
-    //connect(s,&SettingsService::wifiListReady,
-    //        v,[=](QStringList list){
-    //            v->ssidCombo->clear();
-    //            v->ssidCombo->addItems(list);
-    //        });
-
-    connect(s,&SettingsService::connectivityResult,
-            v,[=](bool ok){
-                QMessageBox::information(
-                    v,"Connectivity",
-                    ok?"Internet OK":"No Connection");
-            });
-
-    connect(v,&SettingsView::exitRequested,
-            v,&QWidget::close);
+    // 🌐 Static IP
+    connect(m_view, &SettingsView::staticIPRequested,
+            m_service, &SystemSettingsService::setStaticIP);
 }
-

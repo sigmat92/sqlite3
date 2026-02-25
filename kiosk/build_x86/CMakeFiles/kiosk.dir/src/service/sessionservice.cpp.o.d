@@ -365,4 +365,6 @@ CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
+ /usr/include/sqlite3.h

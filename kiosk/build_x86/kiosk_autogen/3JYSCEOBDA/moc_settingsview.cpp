@@ -39,39 +39,67 @@ namespace {
 struct qt_meta_stringdata_CLASSSettingsViewENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSSettingsViewENDCLASS = QtMocHelpers::stringData(
     "SettingsView",
-    "saveRequested",
+    "adminLoginRequested",
     "",
-    "scanWifiRequested",
-    "testConnectionRequested",
-    "exitRequested"
+    "pin",
+    "wifiConnectRequested",
+    "ssid",
+    "pass",
+    "dhcpToggled",
+    "enabled",
+    "staticIPRequested",
+    "ip",
+    "mask",
+    "gateway"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSSettingsViewENDCLASS_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[26];
     char stringdata0[13];
-    char stringdata1[14];
+    char stringdata1[20];
     char stringdata2[1];
-    char stringdata3[18];
-    char stringdata4[24];
-    char stringdata5[14];
+    char stringdata3[4];
+    char stringdata4[21];
+    char stringdata5[5];
+    char stringdata6[5];
+    char stringdata7[12];
+    char stringdata8[8];
+    char stringdata9[18];
+    char stringdata10[3];
+    char stringdata11[5];
+    char stringdata12[8];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSSettingsViewENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSSettingsViewENDCLASS_t qt_meta_stringdata_CLASSSettingsViewENDCLASS = {
     {
         QT_MOC_LITERAL(0, 12),  // "SettingsView"
-        QT_MOC_LITERAL(13, 13),  // "saveRequested"
-        QT_MOC_LITERAL(27, 0),  // ""
-        QT_MOC_LITERAL(28, 17),  // "scanWifiRequested"
-        QT_MOC_LITERAL(46, 23),  // "testConnectionRequested"
-        QT_MOC_LITERAL(70, 13)   // "exitRequested"
+        QT_MOC_LITERAL(13, 19),  // "adminLoginRequested"
+        QT_MOC_LITERAL(33, 0),  // ""
+        QT_MOC_LITERAL(34, 3),  // "pin"
+        QT_MOC_LITERAL(38, 20),  // "wifiConnectRequested"
+        QT_MOC_LITERAL(59, 4),  // "ssid"
+        QT_MOC_LITERAL(64, 4),  // "pass"
+        QT_MOC_LITERAL(69, 11),  // "dhcpToggled"
+        QT_MOC_LITERAL(81, 7),  // "enabled"
+        QT_MOC_LITERAL(89, 17),  // "staticIPRequested"
+        QT_MOC_LITERAL(107, 2),  // "ip"
+        QT_MOC_LITERAL(110, 4),  // "mask"
+        QT_MOC_LITERAL(115, 7)   // "gateway"
     },
     "SettingsView",
-    "saveRequested",
+    "adminLoginRequested",
     "",
-    "scanWifiRequested",
-    "testConnectionRequested",
-    "exitRequested"
+    "pin",
+    "wifiConnectRequested",
+    "ssid",
+    "pass",
+    "dhcpToggled",
+    "enabled",
+    "staticIPRequested",
+    "ip",
+    "mask",
+    "gateway"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -91,16 +119,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSettingsViewENDCLASS[] = {
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    1 /* Public */,
-       3,    0,   39,    2, 0x06,    2 /* Public */,
-       4,    0,   40,    2, 0x06,    3 /* Public */,
-       5,    0,   41,    2, 0x06,    4 /* Public */,
+       1,    1,   38,    2, 0x06,    1 /* Public */,
+       4,    2,   41,    2, 0x06,    3 /* Public */,
+       7,    1,   46,    2, 0x06,    6 /* Public */,
+       9,    3,   49,    2, 0x06,    8 /* Public */,
 
  // signals: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,    5,    6,
+    QMetaType::Void, QMetaType::Bool,    8,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::QString,   10,   11,   12,
 
        0        // eod
 };
@@ -114,14 +142,21 @@ Q_CONSTINIT const QMetaObject SettingsView::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSSettingsViewENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<SettingsView, std::true_type>,
-        // method 'saveRequested'
+        // method 'adminLoginRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'scanWifiRequested'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'wifiConnectRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'testConnectionRequested'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'dhcpToggled'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'exitRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'staticIPRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
@@ -132,44 +167,43 @@ void SettingsView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         auto *_t = static_cast<SettingsView *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->saveRequested(); break;
-        case 1: _t->scanWifiRequested(); break;
-        case 2: _t->testConnectionRequested(); break;
-        case 3: _t->exitRequested(); break;
+        case 0: _t->adminLoginRequested((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->wifiConnectRequested((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 2: _t->dhcpToggled((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 3: _t->staticIPRequested((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (SettingsView::*)();
-            if (_t _q_method = &SettingsView::saveRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (SettingsView::*)(QString );
+            if (_t _q_method = &SettingsView::adminLoginRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (SettingsView::*)();
-            if (_t _q_method = &SettingsView::scanWifiRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (SettingsView::*)(QString , QString );
+            if (_t _q_method = &SettingsView::wifiConnectRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (SettingsView::*)();
-            if (_t _q_method = &SettingsView::testConnectionRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (SettingsView::*)(bool );
+            if (_t _q_method = &SettingsView::dhcpToggled; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (SettingsView::*)();
-            if (_t _q_method = &SettingsView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (SettingsView::*)(QString , QString , QString );
+            if (_t _q_method = &SettingsView::staticIPRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 3;
                 return;
             }
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *SettingsView::metaObject() const
@@ -203,26 +237,30 @@ int SettingsView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void SettingsView::saveRequested()
+void SettingsView::adminLoginRequested(QString _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void SettingsView::scanWifiRequested()
+void SettingsView::wifiConnectRequested(QString _t1, QString _t2)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void SettingsView::testConnectionRequested()
+void SettingsView::dhcpToggled(bool _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
-void SettingsView::exitRequested()
+void SettingsView::staticIPRequested(QString _t1, QString _t2, QString _t3)
 {
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 QT_WARNING_POP

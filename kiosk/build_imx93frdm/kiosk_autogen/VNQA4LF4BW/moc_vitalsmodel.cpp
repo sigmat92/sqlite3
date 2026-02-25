@@ -51,6 +51,11 @@ constexpr auto qt_meta_stringdata_CLASSVitalsModelENDCLASS = QtMocHelpers::strin
     "sys",
     "dia",
     "map",
+    "temperatureFinal",
+    "spo2Final",
+    "weightFinal",
+    "heightFinal",
+    "nibpFinal",
     "setTemperature",
     "setSpO2",
     "setWeight",
@@ -68,26 +73,31 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVitalsModelENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      10,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       5,       // signalCount
+      10,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   74,    2, 0x06,    1 /* Public */,
-       5,    2,   79,    2, 0x06,    4 /* Public */,
-       8,    1,   84,    2, 0x06,    7 /* Public */,
-      10,    1,   87,    2, 0x06,    9 /* Public */,
-      12,    3,   90,    2, 0x06,   11 /* Public */,
+       1,    2,  104,    2, 0x06,    1 /* Public */,
+       5,    2,  109,    2, 0x06,    4 /* Public */,
+       8,    1,  114,    2, 0x06,    7 /* Public */,
+      10,    1,  117,    2, 0x06,    9 /* Public */,
+      12,    3,  120,    2, 0x06,   11 /* Public */,
+      16,    1,  127,    2, 0x06,   15 /* Public */,
+      17,    2,  130,    2, 0x06,   17 /* Public */,
+      18,    1,  135,    2, 0x06,   20 /* Public */,
+      19,    1,  138,    2, 0x06,   22 /* Public */,
+      20,    2,  141,    2, 0x06,   24 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      16,    2,   97,    2, 0x0a,   15 /* Public */,
-      17,    2,  102,    2, 0x0a,   18 /* Public */,
-      18,    1,  107,    2, 0x0a,   21 /* Public */,
-      19,    1,  110,    2, 0x0a,   23 /* Public */,
-      20,    3,  113,    2, 0x0a,   25 /* Public */,
+      21,    2,  146,    2, 0x0a,   27 /* Public */,
+      22,    2,  151,    2, 0x0a,   30 /* Public */,
+      23,    1,  156,    2, 0x0a,   33 /* Public */,
+      24,    1,  159,    2, 0x0a,   35 /* Public */,
+      25,    3,  162,    2, 0x0a,   37 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
@@ -95,6 +105,11 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVitalsModelENDCLASS[] = {
     QMetaType::Void, QMetaType::Double,    9,
     QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,   13,   14,   15,
+    QMetaType::Void, QMetaType::Double,    3,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
+    QMetaType::Void, QMetaType::Double,    9,
+    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   13,   14,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
@@ -134,6 +149,23 @@ Q_CONSTINIT const QMetaObject VitalsModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'temperatureFinal'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'spo2Final'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'weightFinal'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        // method 'heightFinal'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'nibpFinal'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'setTemperature'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
@@ -168,11 +200,16 @@ void VitalsModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 2: _t->weightChanged((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
         case 3: _t->heightChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 4: _t->nibpChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
-        case 5: _t->setTemperature((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
-        case 6: _t->setSpO2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 7: _t->setWeight((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
-        case 8: _t->setHeight((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->setNIBP((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 5: _t->temperatureFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 6: _t->spo2Final((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 7: _t->weightFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 8: _t->heightFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 9: _t->nibpFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 10: _t->setTemperature((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
+        case 11: _t->setSpO2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 12: _t->setWeight((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 13: _t->setHeight((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 14: _t->setNIBP((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -212,6 +249,41 @@ void VitalsModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
                 return;
             }
         }
+        {
+            using _t = void (VitalsModel::*)(double );
+            if (_t _q_method = &VitalsModel::temperatureFinal; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 5;
+                return;
+            }
+        }
+        {
+            using _t = void (VitalsModel::*)(int , int );
+            if (_t _q_method = &VitalsModel::spo2Final; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 6;
+                return;
+            }
+        }
+        {
+            using _t = void (VitalsModel::*)(double );
+            if (_t _q_method = &VitalsModel::weightFinal; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 7;
+                return;
+            }
+        }
+        {
+            using _t = void (VitalsModel::*)(int );
+            if (_t _q_method = &VitalsModel::heightFinal; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 8;
+                return;
+            }
+        }
+        {
+            using _t = void (VitalsModel::*)(int , int );
+            if (_t _q_method = &VitalsModel::nibpFinal; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 9;
+                return;
+            }
+        }
     }
 }
 
@@ -234,13 +306,13 @@ int VitalsModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 15)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 15;
     }
     return _id;
 }
@@ -278,5 +350,40 @@ void VitalsModel::nibpChanged(int _t1, int _t2, int _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
+}
+
+// SIGNAL 5
+void VitalsModel::temperatureFinal(double _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void VitalsModel::spo2Final(int _t1, int _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
+}
+
+// SIGNAL 7
+void VitalsModel::weightFinal(double _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 7, _a);
+}
+
+// SIGNAL 8
+void VitalsModel::heightFinal(int _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 8, _a);
+}
+
+// SIGNAL 9
+void VitalsModel::nibpFinal(int _t1, int _t2)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    QMetaObject::activate(this, &staticMetaObject, 9, _a);
 }
 QT_WARNING_POP

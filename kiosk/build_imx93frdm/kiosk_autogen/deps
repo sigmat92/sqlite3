@@ -39,6 +39,8 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
 	/home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.cpp \
 	/home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.h \
+	/home/prakash/sqlite3/kiosk/src/service/adminauthservice.cpp \
+	/home/prakash/sqlite3/kiosk/src/service/adminauthservice.h \
 	/home/prakash/sqlite3/kiosk/src/service/inputservice.cpp \
 	/home/prakash/sqlite3/kiosk/src/service/inputservice.h \
 	/home/prakash/sqlite3/kiosk/src/service/protocol.h \
@@ -46,14 +48,20 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
 	/home/prakash/sqlite3/kiosk/src/service/settingsservice.cpp \
 	/home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+	/home/prakash/sqlite3/kiosk/src/service/systemsettingsservice.cpp \
+	/home/prakash/sqlite3/kiosk/src/service/systemsettingsservice.h \
 	/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp \
 	/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+	/home/prakash/sqlite3/kiosk/src/storage/databasemanager.cpp \
+	/home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
 	/home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp \
 	/home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+	/home/prakash/sqlite3/kiosk/src/storage/sessionrepository.cpp \
+	/home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \
 	/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp \
 	/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
-	/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp \
-	/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
+	/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp \
+	/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
 	/home/prakash/sqlite3/kiosk/src/view/homeview.cpp \
 	/home/prakash/sqlite3/kiosk/src/view/homeview.h \
 	/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp \
@@ -565,7 +573,6 @@ kiosk_autogen/timestamp: \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/pthread.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sched.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/semaphore.h \
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdint.h \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdio.h \

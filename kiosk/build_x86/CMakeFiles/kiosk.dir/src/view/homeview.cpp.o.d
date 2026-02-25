@@ -446,4 +446,7 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h

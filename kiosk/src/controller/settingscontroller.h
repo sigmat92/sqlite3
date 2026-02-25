@@ -1,15 +1,21 @@
 #pragma once
 #include <QObject>
-#include "view/settingsview.h"
-#include "service/settingsservice.h"
+
+class SettingsView;
+class SystemSettingsService;
+class AdminAuthService;
 
 class SettingsController : public QObject
 {
     Q_OBJECT
 public:
-    SettingsController(SettingsView* v,
-                       SettingsService* s,
-                       SettingsModel* m,
-                       QObject* parent=nullptr);
-};
+    explicit SettingsController(SettingsView* view,
+                                SystemSettingsService* service,
+                                AdminAuthService* auth,
+                                QObject* parent = nullptr);
 
+private:
+    SettingsView* m_view;
+    SystemSettingsService* m_service;
+    AdminAuthService* m_auth;
+};

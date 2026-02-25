@@ -1,5 +1,5 @@
 #include <QApplication>
-#include <QObject>
+#include <QDebug>
 
 #include "view/homeview.h"
 #include "controller/homecontroller.h"
@@ -9,7 +9,7 @@
 #include "service/settingsservice.h"
 
 #include "storage/patientrepository.h"
-#include "storage/sqliterecorder.h"
+#include "storage/databasemanager.h"
 
 #include "controller/protocolcontroller.h"
 #include "controller/protocolparser.h"
@@ -20,37 +20,28 @@ int main(int argc, char *argv[])
 {
     qputenv("QT_QPA_PLATFORM", "wayland");
     qputenv("QT_OPENGL", "software");
-    qputenv("QT_QUICK_BACKEND", "software");
 
     QApplication app(argc, argv);
 
-    /* ---------- UI ---------- */
-    HomeView* view = new HomeView;
+    // ---------- DATABASE ----------
+    if (!DatabaseManager::instance().open("kiosk.db"))
+    {
+        qDebug() << "Database initialization failed";
+        return -1;
+    }
 
-    /* ---------- Model ---------- */
-    VitalsModel* vitals = new VitalsModel(&app);
+    // ---------- VIEW ----------
+    HomeView* homeView = new HomeView;
 
-    /* ---------- Services ---------- */
-    VitalsService* service = new VitalsService(&app);
-    SessionService* session = new SessionService(&app);
-    PatientRepository* repo = new PatientRepository(&app);
+    // ---------- MODEL ----------
+    VitalsModel* vitalsModel = new VitalsModel(&app);
 
-    /* ---------- Settings MVVM ---------- */
-    SettingsModel* settingsModel = new SettingsModel(&app);
-    SettingsRepository* settingsRepo = new SettingsRepository(&app);
-    SettingsService* settingsService =
-            new SettingsService(settingsModel, settingsRepo, &app);
+    // ---------- SERVICES ----------
+    VitalsService* vitalsService = new VitalsService(&app);
+    SessionService* sessionService = new SessionService(&app);
+    PatientRepository* patientRepo = new PatientRepository;
 
-    settingsService->load();
-    settingsService->applyNetwork();
-
-    //SQLiteRecorder* recorder = new SQLiteRecorder("/data/carenest.db", &app);
-    //SettingsService* settingsService = new SettingsService(recorder, &app);
-    //settingsService->load();
-    //settingsService->applyNetwork();
-
-
-    /* ---------- UART / Protocol ---------- */
+    // ---------- UART ----------
     UartDevice* uart = new UartDevice(&app);
     uart->open("/dev/ttyACM0", 9600);
 
@@ -59,51 +50,48 @@ int main(int argc, char *argv[])
     ProtocolController* protocolCtrl =
         new ProtocolController(uart, parser, &app);
 
-    /* ---------- Controllers ---------- */
-new HomeController(
-    view,
-    session,
-    repo,
-    vitals,
-    protocolCtrl,
-    settingsService,   // ✅ pass this
-    &app
-);
-
-
-    /* ---------- Protocol → Service ---------- */
+    // ---------- CONNECT Protocol → Service ----------
     QObject::connect(protocolCtrl, &ProtocolController::temperatureRaw,
-                     service, &VitalsService::onTemperatureRaw);
+                     vitalsService, &VitalsService::onTemperatureRaw);
 
     QObject::connect(protocolCtrl, &ProtocolController::spo2Raw,
-                     service, &VitalsService::onSpO2Raw);
+                     vitalsService, &VitalsService::onSpO2Raw);
 
     QObject::connect(protocolCtrl, &ProtocolController::weightRaw,
-                     service, &VitalsService::onWeightRaw);
+                     vitalsService, &VitalsService::onWeightRaw);
 
     QObject::connect(protocolCtrl, &ProtocolController::heightRaw,
-                     service, &VitalsService::onHeightRaw);
+                     vitalsService, &VitalsService::onHeightRaw);
 
     QObject::connect(protocolCtrl, &ProtocolController::nibpRaw,
-                     service, &VitalsService::onNibpRaw);
+                     vitalsService, &VitalsService::onNibpRaw);
 
-    /* ---------- Service → Model ---------- */
-    QObject::connect(service, &VitalsService::temperatureReady,
-                     vitals, &VitalsModel::setTemperature);
+    // ---------- CONNECT Service → Model ----------
+    QObject::connect(vitalsService, &VitalsService::temperatureReady,
+                     vitalsModel, &VitalsModel::setTemperature);
 
-    QObject::connect(service, &VitalsService::spo2Ready,
-                     vitals, &VitalsModel::setSpO2);
+    QObject::connect(vitalsService, &VitalsService::spo2Ready,
+                     vitalsModel, &VitalsModel::setSpO2);
 
-    QObject::connect(service, &VitalsService::weightReady,
-                     vitals, &VitalsModel::setWeight);
+    QObject::connect(vitalsService, &VitalsService::weightReady,
+                     vitalsModel, &VitalsModel::setWeight);
 
-    QObject::connect(service, &VitalsService::heightReady,
-                     vitals, &VitalsModel::setHeight);
+    QObject::connect(vitalsService, &VitalsService::heightReady,
+                     vitalsModel, &VitalsModel::setHeight);
 
-    QObject::connect(service, &VitalsService::nibpReady,
-                     vitals, &VitalsModel::setNIBP);
+    QObject::connect(vitalsService, &VitalsService::nibpReady,
+                     vitalsModel, &VitalsModel::setNIBP);
 
-    view->show();
+    // ---------- HOME CONTROLLER ----------
+    new HomeController(homeView,
+                       sessionService,
+                       patientRepo,
+                       vitalsModel,
+                       protocolCtrl,   
+                       nullptr,
+                       &app);
+
+    homeView->show();
+
     return app.exec();
 }
-

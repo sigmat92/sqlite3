@@ -23,6 +23,13 @@ signals:
     void heightChanged(int height);
     void nibpChanged(int sys, int dia, int map);
 
+    // FINAL STABLE SIGNALS
+    void temperatureFinal(double value);
+    void spo2Final(int spo2, int pulse);
+    void weightFinal(double weight);
+    void heightFinal(int height);
+    void nibpFinal(int sys, int dia);
+
 private:
     double m_temperature{0.0};
     char   m_tempUnit{'F'}; 

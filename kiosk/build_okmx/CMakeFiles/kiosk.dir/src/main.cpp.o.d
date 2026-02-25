@@ -481,8 +481,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qlocale.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qguiapplication_platform.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QDebug \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qdebug.h \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
@@ -496,6 +496,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qfontinfo.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qobject.h \
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSet \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
@@ -508,8 +510,11 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \

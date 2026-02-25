@@ -396,8 +396,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
@@ -411,6 +411,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
@@ -427,7 +429,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
  /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \

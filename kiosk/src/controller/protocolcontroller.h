@@ -15,6 +15,7 @@ public:
                                 QObject* parent = nullptr);
 
     void requestTemperature();
+    void requestSpo2();
     void setIdle();
 
 signals:

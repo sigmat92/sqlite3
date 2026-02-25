@@ -86,8 +86,6 @@ set(SRC
     src/controller/homecontroller.h
     src/controller/homecontroller.cpp
     src/controller/inputcontroller.h
-    src/controller/printcontroller.h
-    src/controller/printcontroller.cpp
     src/controller/visiontestcontroller.h
     src/controller/visiontestcontroller.cpp
     src/controller/settingscontroller.h
@@ -104,9 +102,11 @@ set(SRC
     src/service/vitalsservice.cpp
     src/service/settingsservice.h
     src/service/settingsservice.cpp
-    #src/service/printhelper.cpp
-
-
+    src/service/systemsettingsservice.h
+    src/service/systemsettingsservice.cpp
+    src/service/adminauthservice.h
+    src/service/adminauthservice.cpp
+    
     # Platform
     src/platform/v4l2/v4l2camera.h
     src/platform/v4l2/v4l2camera.cpp
@@ -116,12 +116,18 @@ set(SRC
     src/platform/input/rotaryhandler.cpp
 
     # Storage
-    src/storage/sqliterecorder.h
-    src/storage/sqliterecorder.cpp
+    #src/storage/sqliterecorder.h
+    #src/storage/sqliterecorder.cpp
     src/storage/patientrepository.h
     src/storage/patientrepository.cpp
     src/storage/settingsrepository.h
     src/storage/settingsrepository.cpp
+    src/storage/databasemanager.h
+    src/storage/databasemanager.cpp
+    src/storage/sessionrepository.h
+    src/storage/sessionrepository.cpp
+    src/storage/vitalsrepository.h
+    src/storage/vitalsrepository.cpp
     
     # Views
     #src/view/mainwindow.h

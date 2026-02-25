@@ -11,6 +11,7 @@
 VisionTestView::VisionTestView(QWidget* parent)
     : QWidget(parent)
 {
+    resize(620, 340);
     setWindowTitle("Near Vision Test");
     setStyleSheet("background-color:#4fc3f7;");
 

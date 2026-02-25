@@ -596,6 +596,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/adminauthservice.h",
+			"MU",
+			"RIEQWACMR2/moc_adminauthservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/inputservice.h",
 			"MU",
 			"RIEQWACMR2/moc_inputservice.cpp",
@@ -620,9 +626,21 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/systemsettingsservice.h",
+			"MU",
+			"RIEQWACMR2/moc_systemsettingsservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h",
 			"MU",
 			"RIEQWACMR2/moc_vitalsservice.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/databasemanager.h",
+			"MU",
+			"F2ESZRYZMC/moc_databasemanager.cpp",
 			null
 		],
 		[
@@ -632,15 +650,21 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h",
+			"MU",
+			"F2ESZRYZMC/moc_sessionrepository.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h",
 			"MU",
 			"F2ESZRYZMC/moc_settingsrepository.cpp",
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.h",
+			"/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h",
 			"MU",
-			"F2ESZRYZMC/moc_sqliterecorder.cpp",
+			"F2ESZRYZMC/moc_vitalsrepository.cpp",
 			null
 		],
 		[
@@ -803,6 +827,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/adminauthservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/inputservice.cpp",
 			"MU",
 			null
@@ -818,7 +847,17 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/systemsettingsservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/databasemanager.cpp",
 			"MU",
 			null
 		],
@@ -828,12 +867,17 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/storage/sessionrepository.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/storage/sqliterecorder.cpp",
+			"/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp",
 			"MU",
 			null
 		],

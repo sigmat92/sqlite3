@@ -15,7 +15,7 @@ class SessionService : public QObject
     Q_OBJECT
 public:
     explicit SessionService(QObject* parent = nullptr);
-
+    int createSession(int patientId);
     void reset();
 
     //const Patient& currentPatient() const;

@@ -31,6 +31,18 @@ public:
     void setTemperatureText(const QString& text);
     void setTemperatureBusy(bool busy);  
 
+    // ---- Patient getters ----
+    QString patientName() const;
+    QString patientAge() const;
+    QString patientMobile() const;
+    QString patientGender() const;
+
+    // ---- UI control ----
+    void showError(const QString& message);
+    void lockPatientFields();
+    void unlockPatientFields();
+    void clearPatientFields();
+
 signals:
 
     void startTemperatureRequested();

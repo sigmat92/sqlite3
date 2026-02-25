@@ -349,7 +349,10 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
- /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../view/homeview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -400,22 +403,20 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../storage/vitalsrepository.h \
+ /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
- /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
- /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../controller/settingscontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/systemsettingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/adminauthservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

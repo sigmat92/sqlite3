@@ -434,7 +434,10 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/istream \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/istream.tcc \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/bits/sstream.tcc \
- /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../view/homeview.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qwidget.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qtwidgetsglobal.h \
@@ -485,18 +488,20 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qsizepolicy.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../storage/vitalsrepository.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
- /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QStringList \
- /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qstringlist.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../controller/settingscontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/systemsettingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/adminauthservice.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QDebug \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qdebug.h

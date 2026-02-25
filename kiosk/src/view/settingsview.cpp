@@ -1,104 +1,252 @@
 #include "settingsview.h"
-#include "model/settingsmodel.h"
 #include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QGridLayout>
+#include <QTabWidget>
 #include <QLineEdit>
 #include <QPushButton>
-#include <QComboBox>
-#include <QCheckBox>
 #include <QLabel>
+#include <QGroupBox>
+#include <QIntValidator>
 
 SettingsView::SettingsView(QWidget* parent)
     : QWidget(parent)
 {
+    setWindowTitle("Carenest mini");
+    resize(620, 340);
+
+    setStyleSheet(R"(
+        QWidget {
+            font-size: 16px;
+        }
+        QTabBar::tab {
+            background: #147da7;
+            padding: 10px;
+            min-width: 150px;
+        }
+        QTabBar::tab:selected {
+            background: #021a39;
+            color: white;
+        }
+        QGroupBox {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        QPushButton {
+            background-color: #2ccfe5;
+            color: white;
+            padding: 8px 15px;
+        }
+    )");
+
+    setupUI();
+}
+void SettingsView::setupUI()
+{
+    QVBoxLayout* mainLayout = new QVBoxLayout(this);
+
+    m_tabs = new QTabWidget;
+    m_tabs->addTab(createCommTab(), "Comm Settings");
+    m_tabs->addTab(new QWidget, "Date & Time");
+    m_tabs->addTab(new QWidget, "Calibration");
     
-    //setStyleSheet("background-color: #1e1e1e; color: white;");
 
-        setStyleSheet(
-        "QWidget { background-color: #1e1e1e; color: white; }"
-        "QPushButton { background-color: #0078D7; padding: 10px; border-radius: 6px; }"
-        "QPushButton:hover { background-color: #005fa3; }"
-        "QComboBox { padding: 8px; }"
-        "QLineEdit { padding: 8px; }"
-    );
+    mainLayout->addWidget(m_tabs);
+}
+QWidget* SettingsView::createCommTab()
+{
+    QWidget* tab = new QWidget;
+    QVBoxLayout* layout = new QVBoxLayout(tab);
 
-    setWindowTitle("Settings");
-    //setStyleSheet("background:#f5f5f5;");
+    // WIFI SECTION
+    QGroupBox* wifiBox = new QGroupBox("WIFI SETTINGS");
+    QGridLayout* wifiLayout = new QGridLayout(wifiBox);
 
-    auto* layout = new QVBoxLayout(this);
+    m_ssid = new QLineEdit;
+    m_key  = new QLineEdit;
+    m_key->setEchoMode(QLineEdit::Password);
 
-    layout->addWidget(new QLabel("WiFi SSID"));
-    ssidCombo = new QComboBox;
-    layout->addWidget(ssidCombo);
+    wifiLayout->addWidget(new QLabel("SSID:"),0,0);
+    wifiLayout->addWidget(m_ssid,0,1);
 
-    QPushButton* scanBtn = new QPushButton("Scan WiFi");
-    layout->addWidget(scanBtn);
+    wifiLayout->addWidget(new QLabel("Security:"),1,0);
+    wifiLayout->addWidget(new QLabel("WPA/WPA2"),1,1);
 
-    layout->addWidget(new QLabel("Security Key"));
-    keyEdit = new QLineEdit;
-    keyEdit->setEchoMode(QLineEdit::Password);
-    layout->addWidget(keyEdit);
+    wifiLayout->addWidget(new QLabel("Security Key:"),2,0);
+    wifiLayout->addWidget(m_key,2,1);
 
-    layout->addWidget(new QLabel("Server IP"));
-    serverIpEdit = new QLineEdit;
-    layout->addWidget(serverIpEdit);
+    QPushButton* connectBtn = new QPushButton("Connect");
+    wifiLayout->addWidget(connectBtn,3,1);
 
-    layout->addWidget(new QLabel("Server Port"));
-    portEdit = new QLineEdit;
-    layout->addWidget(portEdit);
+    layout->addWidget(wifiBox);
 
-    layout->addWidget(new QLabel("Device IP"));
-    deviceIpEdit = new QLineEdit;
-    layout->addWidget(deviceIpEdit);
+    // SERVER SECTION
+    QGroupBox* serverBox = new QGroupBox("SERVER SETTINGS");
+    QGridLayout* serverLayout = new QGridLayout(serverBox);
 
-    layout->addWidget(new QLabel("Subnet"));
-    subnetEdit = new QLineEdit;
-    layout->addWidget(subnetEdit);
+    serverLayout->addWidget(new QLabel("IP Address:"),0,0);
+    serverLayout->addWidget(createIPRow(
+        m_serverIp1,m_serverIp2,
+        m_serverIp3,m_serverIp4),0,1);
 
-    layout->addWidget(new QLabel("Gateway"));
-    gatewayEdit = new QLineEdit;
-    layout->addWidget(gatewayEdit);
+    m_port = new QLineEdit;
+    m_port->setValidator(new QIntValidator(1,65535,this));
 
-    dhcpCheck = new QCheckBox("Enable DHCP");
-    layout->addWidget(dhcpCheck);
+    serverLayout->addWidget(new QLabel("Port No:"),1,0);
+    serverLayout->addWidget(m_port,1,1);
 
-    QPushButton* testBtn = new QPushButton("Test Connectivity");
-    layout->addWidget(testBtn);
+    layout->addWidget(serverBox);
 
-    QPushButton* saveBtn = new QPushButton("Save");
-    layout->addWidget(saveBtn);
+    // DEVICE SECTION
+    QGroupBox* deviceBox = new QGroupBox("DEVICE SETTINGS");
+    QGridLayout* deviceLayout = new QGridLayout(deviceBox);
 
-    QPushButton* exitBtn = new QPushButton("Exit");
-    layout->addWidget(exitBtn);
-    //layout->addStretch();
-    //layout->setContentsMargins(20, 20, 20, 20);
-    //layout->setSpacing(15);
-    layout->setAlignment(Qt::AlignTop);
-     connect(saveBtn,&QPushButton::clicked,
-            this,&SettingsView::saveRequested);
-    connect(saveBtn,&QPushButton::clicked,
-            this,&SettingsView::saveRequested);
+    deviceLayout->addWidget(new QLabel("IP Address:"),0,0);
+    deviceLayout->addWidget(createIPRow(
+        m_devIp1,m_devIp2,
+        m_devIp3,m_devIp4),0,1);
 
-    connect(scanBtn,&QPushButton::clicked,
-            this,&SettingsView::scanWifiRequested);
+    deviceLayout->addWidget(new QLabel("Subnet Mask:"),1,0);
+    deviceLayout->addWidget(createIPRow(
+        m_mask1,m_mask2,
+        m_mask3,m_mask4),1,1);
 
-    connect(testBtn,&QPushButton::clicked,
-            this,&SettingsView::testConnectionRequested);
+    deviceLayout->addWidget(new QLabel("Gateway:"),2,0);
+    deviceLayout->addWidget(createIPRow(
+        m_gate1,m_gate2,
+        m_gate3,m_gate4),2,1);
 
-    connect(exitBtn,&QPushButton::clicked,
-            this,&SettingsView::exitRequested);
+    m_dhcpBtn = new QPushButton("ENABLE DHCP");
+    deviceLayout->addWidget(m_dhcpBtn,3,1);
+
+    QHBoxLayout* bottomBtns = new QHBoxLayout;
+    QPushButton* saveBtn = new QPushButton("SAVE");
+    QPushButton* exitBtn = new QPushButton("EXIT");
+
+    bottomBtns->addWidget(saveBtn);
+    bottomBtns->addWidget(exitBtn);
+
+    deviceLayout->addLayout(bottomBtns,4,1);
+
+    layout->addWidget(deviceBox);
+
+    layout->addStretch();
+//
+connect(connectBtn, &QPushButton::clicked, this, [=]()
+{
+    emit wifiConnectRequested(m_ssid->text(),
+                              m_key->text());
+});
+
+connect(m_dhcpBtn, &QPushButton::clicked, this, [=]()
+{
+    emit dhcpToggled(true);
+});
+
+connect(saveBtn, &QPushButton::clicked, this, [=]()
+{
+    QString ip = m_devIp1->text() + "." +
+                 m_devIp2->text() + "." +
+                 m_devIp3->text() + "." +
+                 m_devIp4->text();
+
+    QString mask = m_mask1->text() + "." +
+                   m_mask2->text() + "." +
+                   m_mask3->text() + "." +
+                   m_mask4->text();
+
+    QString gateway = m_gate1->text() + "." +
+                      m_gate2->text() + "." +
+                      m_gate3->text() + "." +
+                      m_gate4->text();
+
+    emit staticIPRequested(ip, mask, gateway);
+});
+//
+    return tab;
+}
+QWidget* SettingsView::createIPRow(QLineEdit*& a,
+                                   QLineEdit*& b,
+                                   QLineEdit*& c,
+                                   QLineEdit*& d)
+{
+    QWidget* row = new QWidget;
+    QHBoxLayout* layout = new QHBoxLayout(row);
+
+    auto makeField = [this]() {
+        QLineEdit* e = new QLineEdit;
+        e->setFixedWidth(50);
+        e->setValidator(new QIntValidator(0,255,this));
+        return e;
+    };
+
+    a = makeField();
+    b = makeField();
+    c = makeField();
+    d = makeField();
+
+    layout->addWidget(a);
+    layout->addWidget(new QLabel("."));
+    layout->addWidget(b);
+    layout->addWidget(new QLabel("."));
+    layout->addWidget(c);
+    layout->addWidget(new QLabel("."));
+    layout->addWidget(d);
+
+    return row;
+}
+void SettingsView::lockControls()
+{
+    m_ssid->setEnabled(false);
+    m_key->setEnabled(false);
+    m_dhcpBtn->setEnabled(false);
+
+    m_serverIp1->setEnabled(false);
+    m_serverIp2->setEnabled(false);
+    m_serverIp3->setEnabled(false);
+    m_serverIp4->setEnabled(false);
+    m_port->setEnabled(false);
+
+    m_devIp1->setEnabled(false);
+    m_devIp2->setEnabled(false);
+    m_devIp3->setEnabled(false);
+    m_devIp4->setEnabled(false);
+
+    m_mask1->setEnabled(false);
+    m_mask2->setEnabled(false);
+    m_mask3->setEnabled(false);
+    m_mask4->setEnabled(false);
+
+    m_gate1->setEnabled(false);
+    m_gate2->setEnabled(false);
+    m_gate3->setEnabled(false);
+    m_gate4->setEnabled(false);
 }
 
-void SettingsView::updateWifiList(const QStringList& list)
+void SettingsView::unlockControls()
 {
-    ssidCombo->clear();
-    ssidCombo->addItems(list);
-}
+    m_ssid->setEnabled(true);
+    m_key->setEnabled(true);
+    m_dhcpBtn->setEnabled(true);
 
-void SettingsView::setModel(SettingsModel* model)
-{
-    if (!model)
-        return;
+    m_serverIp1->setEnabled(true);
+    m_serverIp2->setEnabled(true);
+    m_serverIp3->setEnabled(true);
+    m_serverIp4->setEnabled(true);
+    m_port->setEnabled(true);
 
-    // Example binding
-    ssidCombo->setCurrentText(model->ssid());
+    m_devIp1->setEnabled(true);
+    m_devIp2->setEnabled(true);
+    m_devIp3->setEnabled(true);
+    m_devIp4->setEnabled(true);
+
+    m_mask1->setEnabled(true);
+    m_mask2->setEnabled(true);
+    m_mask3->setEnabled(true);
+    m_mask4->setEnabled(true);
+
+    m_gate1->setEnabled(true);
+    m_gate2->setEnabled(true);
+    m_gate3->setEnabled(true);
+    m_gate4->setEnabled(true);
 }

@@ -1,23 +1,23 @@
 #pragma once
 
-#include <QObject>
 #include <QString>
 
-class PatientRepository : public QObject
+class PatientRepository
 {
-    Q_OBJECT
 public:
-    explicit PatientRepository(QObject* parent = nullptr);
+    PatientRepository();
+    
+    int savePatient(const QString& name,
+                    int age,
+                    const QString& mobile,
+                    const QString& gender);
+    
+    //bool savePatient(const QString& name,
+    //                 int age,
+    //                 const QString& mobile,
+    //                 const QString& gender);
 
-    // Save patient identity (once)
-    bool savePatient(const QString& patientId,
-                     const QString& name,
-                     int age,
-                     const QString& gender);
-
-    // Save vitals (many times)
-    bool saveVitals(const QString& patientId,
+    bool saveVitals(int patientId,
                     int spo2,
                     int pulse);
 };
-

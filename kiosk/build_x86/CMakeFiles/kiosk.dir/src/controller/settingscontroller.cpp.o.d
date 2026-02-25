@@ -349,7 +349,7 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
- /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -400,10 +400,7 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
- /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h
+ /home/prakash/sqlite3/kiosk/src/controller/../service/systemsettingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/adminauthservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h

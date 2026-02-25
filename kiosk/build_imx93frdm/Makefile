@@ -671,6 +671,30 @@ src/platform/v4l2/v4l2camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.s
 .PHONY : src/platform/v4l2/v4l2camera.cpp.s
 
+src/service/adminauthservice.o: src/service/adminauthservice.cpp.o
+.PHONY : src/service/adminauthservice.o
+
+# target to build an object file
+src/service/adminauthservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.o
+.PHONY : src/service/adminauthservice.cpp.o
+
+src/service/adminauthservice.i: src/service/adminauthservice.cpp.i
+.PHONY : src/service/adminauthservice.i
+
+# target to preprocess a source file
+src/service/adminauthservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.i
+.PHONY : src/service/adminauthservice.cpp.i
+
+src/service/adminauthservice.s: src/service/adminauthservice.cpp.s
+.PHONY : src/service/adminauthservice.s
+
+# target to generate assembly for a file
+src/service/adminauthservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.s
+.PHONY : src/service/adminauthservice.cpp.s
+
 src/service/inputservice.o: src/service/inputservice.cpp.o
 .PHONY : src/service/inputservice.o
 
@@ -743,6 +767,30 @@ src/service/settingsservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/settingsservice.cpp.s
 .PHONY : src/service/settingsservice.cpp.s
 
+src/service/systemsettingsservice.o: src/service/systemsettingsservice.cpp.o
+.PHONY : src/service/systemsettingsservice.o
+
+# target to build an object file
+src/service/systemsettingsservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.o
+.PHONY : src/service/systemsettingsservice.cpp.o
+
+src/service/systemsettingsservice.i: src/service/systemsettingsservice.cpp.i
+.PHONY : src/service/systemsettingsservice.i
+
+# target to preprocess a source file
+src/service/systemsettingsservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.i
+.PHONY : src/service/systemsettingsservice.cpp.i
+
+src/service/systemsettingsservice.s: src/service/systemsettingsservice.cpp.s
+.PHONY : src/service/systemsettingsservice.s
+
+# target to generate assembly for a file
+src/service/systemsettingsservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.s
+.PHONY : src/service/systemsettingsservice.cpp.s
+
 src/service/vitalsservice.o: src/service/vitalsservice.cpp.o
 .PHONY : src/service/vitalsservice.o
 
@@ -766,6 +814,30 @@ src/service/vitalsservice.s: src/service/vitalsservice.cpp.s
 src/service/vitalsservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.s
 .PHONY : src/service/vitalsservice.cpp.s
+
+src/storage/databasemanager.o: src/storage/databasemanager.cpp.o
+.PHONY : src/storage/databasemanager.o
+
+# target to build an object file
+src/storage/databasemanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o
+.PHONY : src/storage/databasemanager.cpp.o
+
+src/storage/databasemanager.i: src/storage/databasemanager.cpp.i
+.PHONY : src/storage/databasemanager.i
+
+# target to preprocess a source file
+src/storage/databasemanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.i
+.PHONY : src/storage/databasemanager.cpp.i
+
+src/storage/databasemanager.s: src/storage/databasemanager.cpp.s
+.PHONY : src/storage/databasemanager.s
+
+# target to generate assembly for a file
+src/storage/databasemanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.s
+.PHONY : src/storage/databasemanager.cpp.s
 
 src/storage/patientrepository.o: src/storage/patientrepository.cpp.o
 .PHONY : src/storage/patientrepository.o
@@ -791,6 +863,30 @@ src/storage/patientrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.s
 .PHONY : src/storage/patientrepository.cpp.s
 
+src/storage/sessionrepository.o: src/storage/sessionrepository.cpp.o
+.PHONY : src/storage/sessionrepository.o
+
+# target to build an object file
+src/storage/sessionrepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o
+.PHONY : src/storage/sessionrepository.cpp.o
+
+src/storage/sessionrepository.i: src/storage/sessionrepository.cpp.i
+.PHONY : src/storage/sessionrepository.i
+
+# target to preprocess a source file
+src/storage/sessionrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.i
+.PHONY : src/storage/sessionrepository.cpp.i
+
+src/storage/sessionrepository.s: src/storage/sessionrepository.cpp.s
+.PHONY : src/storage/sessionrepository.s
+
+# target to generate assembly for a file
+src/storage/sessionrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.s
+.PHONY : src/storage/sessionrepository.cpp.s
+
 src/storage/settingsrepository.o: src/storage/settingsrepository.cpp.o
 .PHONY : src/storage/settingsrepository.o
 
@@ -815,29 +911,29 @@ src/storage/settingsrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.s
 .PHONY : src/storage/settingsrepository.cpp.s
 
-src/storage/sqliterecorder.o: src/storage/sqliterecorder.cpp.o
-.PHONY : src/storage/sqliterecorder.o
+src/storage/vitalsrepository.o: src/storage/vitalsrepository.cpp.o
+.PHONY : src/storage/vitalsrepository.o
 
 # target to build an object file
-src/storage/sqliterecorder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.o
-.PHONY : src/storage/sqliterecorder.cpp.o
+src/storage/vitalsrepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o
+.PHONY : src/storage/vitalsrepository.cpp.o
 
-src/storage/sqliterecorder.i: src/storage/sqliterecorder.cpp.i
-.PHONY : src/storage/sqliterecorder.i
+src/storage/vitalsrepository.i: src/storage/vitalsrepository.cpp.i
+.PHONY : src/storage/vitalsrepository.i
 
 # target to preprocess a source file
-src/storage/sqliterecorder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.i
-.PHONY : src/storage/sqliterecorder.cpp.i
+src/storage/vitalsrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.i
+.PHONY : src/storage/vitalsrepository.cpp.i
 
-src/storage/sqliterecorder.s: src/storage/sqliterecorder.cpp.s
-.PHONY : src/storage/sqliterecorder.s
+src/storage/vitalsrepository.s: src/storage/vitalsrepository.cpp.s
+.PHONY : src/storage/vitalsrepository.s
 
 # target to generate assembly for a file
-src/storage/sqliterecorder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/sqliterecorder.cpp.s
-.PHONY : src/storage/sqliterecorder.cpp.s
+src/storage/vitalsrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s
+.PHONY : src/storage/vitalsrepository.cpp.s
 
 src/view/homeview.o: src/view/homeview.cpp.o
 .PHONY : src/view/homeview.o
@@ -1007,6 +1103,9 @@ help:
 	@echo "... src/platform/v4l2/v4l2camera.o"
 	@echo "... src/platform/v4l2/v4l2camera.i"
 	@echo "... src/platform/v4l2/v4l2camera.s"
+	@echo "... src/service/adminauthservice.o"
+	@echo "... src/service/adminauthservice.i"
+	@echo "... src/service/adminauthservice.s"
 	@echo "... src/service/inputservice.o"
 	@echo "... src/service/inputservice.i"
 	@echo "... src/service/inputservice.s"
@@ -1016,18 +1115,27 @@ help:
 	@echo "... src/service/settingsservice.o"
 	@echo "... src/service/settingsservice.i"
 	@echo "... src/service/settingsservice.s"
+	@echo "... src/service/systemsettingsservice.o"
+	@echo "... src/service/systemsettingsservice.i"
+	@echo "... src/service/systemsettingsservice.s"
 	@echo "... src/service/vitalsservice.o"
 	@echo "... src/service/vitalsservice.i"
 	@echo "... src/service/vitalsservice.s"
+	@echo "... src/storage/databasemanager.o"
+	@echo "... src/storage/databasemanager.i"
+	@echo "... src/storage/databasemanager.s"
 	@echo "... src/storage/patientrepository.o"
 	@echo "... src/storage/patientrepository.i"
 	@echo "... src/storage/patientrepository.s"
+	@echo "... src/storage/sessionrepository.o"
+	@echo "... src/storage/sessionrepository.i"
+	@echo "... src/storage/sessionrepository.s"
 	@echo "... src/storage/settingsrepository.o"
 	@echo "... src/storage/settingsrepository.i"
 	@echo "... src/storage/settingsrepository.s"
-	@echo "... src/storage/sqliterecorder.o"
-	@echo "... src/storage/sqliterecorder.i"
-	@echo "... src/storage/sqliterecorder.s"
+	@echo "... src/storage/vitalsrepository.o"
+	@echo "... src/storage/vitalsrepository.i"
+	@echo "... src/storage/vitalsrepository.s"
 	@echo "... src/view/homeview.o"
 	@echo "... src/view/homeview.i"
 	@echo "... src/view/homeview.s"

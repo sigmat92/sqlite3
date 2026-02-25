@@ -16,6 +16,7 @@
 #include "view/visiontestview.h"
 #include "view/settingsview.h"
 #include "service/settingsservice.h"
+#include <QMessageBox>
 
 HomeView::HomeView(QWidget* parent) : QWidget(parent)
 {
@@ -87,6 +88,7 @@ this->setStyleSheet(R"(
     });
     /*Settings Button*/
     QPushButton *settings = new QPushButton("⚙ Settings");
+    
     newTest->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
     settings->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
 
@@ -95,20 +97,6 @@ this->setStyleSheet(R"(
     qDebug() << "HomeView: settings requested";
     status->setText("Test Status: Settings requested");
 });
-
-
-
-    //connect(settings, &QPushButton::clicked, this, [=]() {
-    //    emit startSettingsRequested();
-    //    qDebug() << "HomeView: settings start requested";
-    //    status->setText("Test Status: Settings requested");
-
-        //settingsView->show();
-            //SettingsView* settingsView = new SettingsView;
-    //settingsView->setModel(settingsService->getModel());
-    //settingsView->show();
-    //});
-    
 
     /* RT Clock */
     m_timeLabel = new QLabel;
@@ -124,7 +112,8 @@ this->setStyleSheet(R"(
 
     /* Power button */
     
-    auto* powerBtn = new QPushButton("⏻");
+    auto* powerBtn = new QPushButton("🔴");
+    
     powerBtn->setObjectName("powerButton");
     powerBtn->setFixedSize(48, 48);
 
@@ -161,8 +150,6 @@ this->setStyleSheet(R"(
     pLayout->addWidget(new QLabel("Patient Name"), 0, 0);
     pLayout->addWidget(new QLabel("Patient Age"), 0, 1);
 
-    //QLineEdit *nameEdit = new QLineEdit;
-    //QLineEdit *ageEdit = new QLineEdit;
     nameEdit = new QLineEdit;
     ageEdit = new QLineEdit;
     mobileEdit = new QLineEdit;
@@ -170,18 +157,12 @@ this->setStyleSheet(R"(
     maleBtn = new QRadioButton("Male");
     femaleBtn = new QRadioButton("Female");
 
-    
-    //nameEdit->setReadOnly(true);
-    //ageEdit->setReadOnly(true);
 
     pLayout->addWidget(nameEdit, 1, 0);
     pLayout->addWidget(ageEdit, 1, 1);
 
     pLayout->addWidget(new QLabel("Mobile Number"), 2, 0);
     pLayout->addWidget(new QLabel("Patient Gender"), 2, 1);
-
-    //QLineEdit *mobileEdit = new QLineEdit;
-    //mobileEdit->setReadOnly(true);
 
     QWidget *genderBox = new QWidget;
     auto *gLayout = new QHBoxLayout(genderBox);
@@ -208,7 +189,8 @@ this->setStyleSheet(R"(
     mLayout->setSpacing(12);
 
     // Create cards (store as members)
-    visionTestCard  = new MetricCard("👁 Vision Test");
+    //visionTestCard  = new MetricCard("👁 Vision Test");
+    visionTestCard  = new MetricCard("👁️Vision Test");
 	spo2Card        = new MetricCard("SpO2 / Pulse");
 	nibpCard        = new MetricCard("NIBP");
 	heightCard      = new MetricCard("Height");
@@ -316,7 +298,7 @@ this->setStyleSheet(R"(
     //QPushButton *printBtn = new QPushButton("🖨 Print Results");
     //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
 
-    auto* printBtn = new QPushButton("🖨 Print Results");
+    auto* printBtn = new QPushButton("🖨️ Print Results");
     printBtn->setMinimumHeight(40);
     printBtn->setStyleSheet("background:#0d47a1; color:white;");
     connect(printBtn, &QPushButton::clicked, this, [=]() {
@@ -366,9 +348,62 @@ void HomeView::setTemperatureText(const QString& text)
         temperatureCard->setValue(text);
 }
 
-//
 void HomeView::onVitalsUpdated(int spo2, int pulse)
 {
     if (spo2Card)
         spo2Card->setValue(QString("%1 / %2").arg(spo2).arg(pulse));
+}
+//
+QString HomeView::patientName() const
+{
+    return nameEdit->text().trimmed();
+}
+
+QString HomeView::patientAge() const
+{
+    return ageEdit->text().trimmed();
+}
+
+QString HomeView::patientMobile() const
+{
+    return mobileEdit->text().trimmed();
+}
+
+QString HomeView::patientGender() const
+{
+    if (maleBtn->isChecked()) return "Male";
+    if (femaleBtn->isChecked()) return "Female";
+    return "";
+}
+
+void HomeView::lockPatientFields()
+{
+    nameEdit->setReadOnly(true);
+    ageEdit->setReadOnly(true);
+    mobileEdit->setReadOnly(true);
+    maleBtn->setEnabled(false);
+    femaleBtn->setEnabled(false);
+}
+
+void HomeView::showError(const QString& msg)
+{
+    QMessageBox::warning(this, "Error", msg);
+}
+
+void HomeView::unlockPatientFields()
+{
+    nameEdit->setReadOnly(false);
+    ageEdit->setReadOnly(false);
+    mobileEdit->setReadOnly(false);
+    maleBtn->setEnabled(true);
+    femaleBtn->setEnabled(true);
+}
+
+void HomeView::clearPatientFields()
+{
+    nameEdit->clear();
+    ageEdit->clear();
+    mobileEdit->clear();
+    maleBtn->setChecked(false);
+    femaleBtn->setChecked(false);
 }

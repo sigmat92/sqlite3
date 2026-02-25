@@ -561,4 +561,8 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QMessageBox \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qmessagebox.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qdialog.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qdialogbuttonbox.h
