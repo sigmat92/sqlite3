@@ -1,0 +1,233 @@
+Command: /home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/prakash/esp-idf/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/prakash/REST/kiosk-connect/build/kiosk-connect.elf /home/prakash/REST/kiosk-connect/build/bootloader/bootloader.elf -m '/home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/prakash/esp-idf/esp-idf/tools/idf.py'
+X�}��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (233) app_init: Project name:     kiosk-connect[0m
+[0;32mI (238) app_init: App version:      1[0m
+[0;32mI (241) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (246) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (250) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (258) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (262) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (277) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: boya[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (313) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (233) app_init: Project name:     kiosk-connect[0m
+[0;32mI (238) app_init: App version:      1[0m
+[0;32mI (241) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (246) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (250) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (258) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (262) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (277) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: boya[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (313) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (233) app_init: Project name:     kiosk-connect[0m
+[0;32mI (238) app_init: App version:      1[0m
+[0;32mI (241) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (246) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (250) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (258) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (262) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (277) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: boya[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (313) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (224) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (233) app_init: Project name:     kiosk-connect[0m
+[0;32mI (238) app_init: App version:      1[0m
+[0;32mI (241) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (246) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (250) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (258) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (262) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (277) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: boya[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;32mI (300) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (306) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (313) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4200d5ff  PS      : 0x00060830  A0      : 0x8037d9dc  A1      : 0x3fcac370  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fced158  A5      : 0x3fced0f0  
+A6      : 0x00005c4f  A7      : 0x3fcec8ec  A8      : 0x8200d5ff  A9      : 0x3fcac350  
+A10     : 0x00000000  A11     : 0x3c0b5f88  A12     : 0x00000713  A13     : 0x00000000  
+A14     : 0x3fc9b8d0  A15     : 0x3fca0700  SAR     : 0x00000016  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000010  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4200d5fc:0x3fcac370 0x4037d9d9:0x3fcac390
+
+
+
+
+ELF file SHA256: c6179f242
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037ce04
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) app_init: Application information:[0m
+[0;32mI (238) app_init: Project name:     kiosk-connect[0m
+[0;32mI (242) app_init: App version:      1[0m
+[0;32mI (245) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (250) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (255) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (259) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (262) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (266) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (298) spi_flash: detected chip: boya[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (304) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (310) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4200d5ff  PS      : 0x00060830  A0      : 0x8037d9dc  A1      : 0x3fcac370  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fced158  A5      : 0x3fced0f0  
+A6      : 0x000026fd  A7      : 0x3fcec8ec  A8      : 0x8200d5ff  A9      : 0x3fcac350  
+A10     : 0x00000000  A11     : 0x3c0b5f88  A12     : 0x00000713  A13     : 0x00000000  
+A14     : 0x3fc9b8d0  A15     : 0x3fca0700  SAR     : 0x00000016  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000010  LBEG    : 0x40056fc5  LEND    : 0x40056fe7  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4200d5fc:0x3fcac370 0x4037d9d9:0x3fcac390
+
+
+
+
+ELF file SHA256: c6179f242
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037ce04
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x468
+load:0x403c8700,len:0xa84
+load:0x403cb700,len:0x26a8
+entry 0x403c8874
+[0;32mI (228) cpu_start: Multicore app[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) app_init: Application information:[0m
+[0;32mI (238) app_init: Project name:     kiosk-connect[0m
+[0;32mI (242) app_init: App version:      1[0m
+[0;32mI (245) app_init: Compile time:     Mar  2 2026 10:57:03[0m
+[0;32mI (250) app_init: ELF file SHA256:  c6179f242...[0m
+[0;32mI (255) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (259) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (262) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (266) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FCA4708 len 00045008 (276 KiB): RAM[0m
+[0;32mI (282) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (298) spi_flash: detected chip: boya[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;32mI (304) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (310) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (357) main_task: Calling app_main()[0m

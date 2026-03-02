@@ -87,7 +87,7 @@ this->setStyleSheet(R"(
         status->setText("Test Status: New Test request starting...");
     });
     /*Settings Button*/
-    QPushButton *settings = new QPushButton("⚙ Settings");
+    QPushButton *settings = new QPushButton("Settings");
     
     newTest->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
     settings->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
@@ -112,7 +112,7 @@ this->setStyleSheet(R"(
 
     /* Power button */
     
-    auto* powerBtn = new QPushButton("🔴");
+    auto* powerBtn = new QPushButton("halt");
     
     powerBtn->setObjectName("powerButton");
     powerBtn->setFixedSize(48, 48);
@@ -190,7 +190,7 @@ this->setStyleSheet(R"(
 
     // Create cards (store as members)
     //visionTestCard  = new MetricCard("👁 Vision Test");
-    visionTestCard  = new MetricCard("👁️Vision Test");
+    visionTestCard  = new MetricCard("Vision Test");
 	spo2Card        = new MetricCard("SpO2 / Pulse");
 	nibpCard        = new MetricCard("NIBP");
 	heightCard      = new MetricCard("Height");
@@ -209,12 +209,6 @@ this->setStyleSheet(R"(
     //v->showFullScreen();   // kiosk mode
     v->show();
     });
-    
-    //connect(view, &HomeView::visionTestRequested, this, [this]() {
-    //auto* v = new VisionTestView;
-    //new VisionTestController(v, v);
-    //v->showFullScreen();   // kiosk mode
-//});
     // Spo2 start
     connect(spo2Card, &MetricCard::startRequested,
             this, &HomeView::startSpo2Requested);
@@ -270,10 +264,6 @@ this->setStyleSheet(R"(
 
     root->addWidget(metricsPanel);
     
-    //QPushButton *printBtn = new QPushButton("🖨 PRINT RESULT");
-    //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px;");
-
-    //rLayout->addWidget(printBtn, 0, 2, 2, 1);
     root->addWidget(status);
     //root->addWidget(printBtn);
     /* ================= BMI + ACTIONS ================= */
@@ -295,10 +285,7 @@ this->setStyleSheet(R"(
     rLayout->addWidget(new QLabel("Near Vision"), 3, 2);
     rLayout->addWidget(new QLabel(" -- "), 3, 3);
 
-    //QPushButton *printBtn = new QPushButton("🖨 Print Results");
-    //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
-
-    auto* printBtn = new QPushButton("🖨️ Print Results");
+    auto* printBtn = new QPushButton("Print Results");
     printBtn->setMinimumHeight(40);
     printBtn->setStyleSheet("background:#0d47a1; color:white;");
     connect(printBtn, &QPushButton::clicked, this, [=]() {
@@ -306,10 +293,7 @@ this->setStyleSheet(R"(
         qDebug() << "HomeView: print button clicked";
         status->setText("Test Status: Printing results...");
     });
-    //printBtn->setStyleSheet("background:#0d47a1; color:white; padding:8px;");
-
-    //rLayout->addWidget(printBtn, 0, 2, 2, 1);
-
+  
     root->addWidget(results);
     
     //root->addWidget(printBtn,0,Qt::AlignRight);

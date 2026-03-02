@@ -1,0 +1,79 @@
+Command: ninja flash
+[1/5] cd /home/prakash/REST/kiosk-connect/build/esp-idf/esptool_py && /home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/prakash/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/prakash/REST/kiosk-connect/build/partition_table/partition-table.bin /home/prakash/REST/kiosk-connect/build/kiosk-connect.bin
+kiosk-connect.bin binary size 0xf7160 bytes. Smallest app partition is 0x100000 bytes. 0x8ea0 bytes (3%) free.
+Warning: The smallest app partition is nearly full (3% free space left)!
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/prakash/REST/kiosk-connect/build/bootloader/esp-idf/esptool_py && /home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/prakash/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/prakash/REST/kiosk-connect/build/bootloader/bootloader.bin
+Bootloader binary size 0x35f0 bytes. 0x4a10 bytes (58%) free.
+[2/3] cd /home/prakash/esp-idf/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/prakash/esp-idf/esp-idf -D "SERIAL_TOOL=/home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python;;/home/prakash/esp-idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/prakash/REST/kiosk-connect/build -P /home/prakash/esp-idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 kiosk-connect.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: a0:85:e3:f0:74:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00003fff...
+Flash will be erased from 0x00010000 to 0x00107fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 13808 bytes to 9538...
+Writing at 0x00000000... (100 %)
+Wrote 13808 bytes (9538 compressed) at 0x00000000 in 0.5 seconds (effective 245.3 kbit/s)...
+Hash of data verified.
+Compressed 1012064 bytes to 637944...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001cf3c... (5 %)
+Writing at 0x00025eba... (7 %)
+Writing at 0x0002abb3... (10 %)
+Writing at 0x0002fc11... (12 %)
+Writing at 0x0003533e... (15 %)
+Writing at 0x0003e030... (17 %)
+Writing at 0x000485f6... (20 %)
+Writing at 0x0004e54e... (23 %)
+Writing at 0x000542b9... (25 %)
+Writing at 0x0005aa0a... (28 %)
+Writing at 0x00060fa2... (30 %)
+Writing at 0x000671d1... (33 %)
+Writing at 0x0006cf8e... (35 %)
+Writing at 0x00072d47... (38 %)
+Writing at 0x00078f1f... (41 %)
+Writing at 0x0007f07f... (43 %)
+Writing at 0x000846aa... (46 %)
+Writing at 0x000898a6... (48 %)
+Writing at 0x0008ed32... (51 %)
+Writing at 0x00094620... (53 %)
+Writing at 0x00099b04... (56 %)
+Writing at 0x0009eef9... (58 %)
+Writing at 0x000a4484... (61 %)
+Writing at 0x000aa72e... (64 %)
+Writing at 0x000b00cc... (66 %)
+Writing at 0x000b5b5b... (69 %)
+Writing at 0x000bb7a7... (71 %)
+Writing at 0x000c13d0... (74 %)
+Writing at 0x000c6ca3... (76 %)
+Writing at 0x000ccabc... (79 %)
+Writing at 0x000d2ea3... (82 %)
+Writing at 0x000d8889... (84 %)
+Writing at 0x000ddf7c... (87 %)
+Writing at 0x000e4849... (89 %)
+Writing at 0x000eeaa3... (92 %)
+Writing at 0x000f5621... (94 %)
+Writing at 0x000fbbec... (97 %)
+Writing at 0x001019bb... (100 %)
+Wrote 1012064 bytes (637944 compressed) at 0x00010000 in 15.4 seconds (effective 527.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 459.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

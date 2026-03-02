@@ -1,0 +1,2 @@
+source /home/prakash/REST/kiosk-connect/build/gdbinit/symbols
+source /home/prakash/REST/kiosk-connect/build/gdbinit/connect

@@ -1,0 +1,69 @@
+Command: ninja flash
+[1/5] cd /home/prakash/REST/kiosk-connect/build/esp-idf/esptool_py && /home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/prakash/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/prakash/REST/kiosk-connect/build/partition_table/partition-table.bin /home/prakash/REST/kiosk-connect/build/kiosk-connect.bin
+kiosk-connect.bin binary size 0xbae60 bytes. Smallest app partition is 0x100000 bytes. 0x451a0 bytes (27%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/prakash/REST/kiosk-connect/build/bootloader/esp-idf/esptool_py && /home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/prakash/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/prakash/REST/kiosk-connect/build/bootloader/bootloader.bin
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[2/3] cd /home/prakash/esp-idf/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/prakash/esp-idf/esp-idf -D "SERIAL_TOOL=/home/prakash/.espressif/python_env/idf5.5_py3.10_env/bin/python;;/home/prakash/esp-idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/prakash/REST/kiosk-connect/build -P /home/prakash/esp-idf/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 kiosk-connect.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port /dev/ttyACM0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: a0:85:e3:f0:74:08
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000cafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21056 bytes to 13388...
+Writing at 0x00000000... (100 %)
+Wrote 21056 bytes (13388 compressed) at 0x00000000 in 0.6 seconds (effective 261.4 kbit/s)...
+Hash of data verified.
+Compressed 765536 bytes to 475438...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c840... (6 %)
+Writing at 0x000255ba... (10 %)
+Writing at 0x000307d5... (13 %)
+Writing at 0x00036b14... (16 %)
+Writing at 0x0003d2af... (20 %)
+Writing at 0x00043301... (23 %)
+Writing at 0x0004969d... (26 %)
+Writing at 0x0004f237... (30 %)
+Writing at 0x00054cdd... (33 %)
+Writing at 0x0005a2b4... (36 %)
+Writing at 0x0005f63b... (40 %)
+Writing at 0x000649ab... (43 %)
+Writing at 0x00069a6c... (46 %)
+Writing at 0x0006f258... (50 %)
+Writing at 0x000749e8... (53 %)
+Writing at 0x0007a6f4... (56 %)
+Writing at 0x00080197... (60 %)
+Writing at 0x00085ee6... (63 %)
+Writing at 0x0008b8f3... (66 %)
+Writing at 0x000914bd... (70 %)
+Writing at 0x000971f3... (73 %)
+Writing at 0x0009c8d0... (76 %)
+Writing at 0x000a2020... (80 %)
+Writing at 0x000ad064... (83 %)
+Writing at 0x000b2c5e... (86 %)
+Writing at 0x000b8f50... (90 %)
+Writing at 0x000bf00d... (93 %)
+Writing at 0x000c5056... (96 %)
+Writing at 0x000cacbc... (100 %)
+Wrote 765536 bytes (475438 compressed) at 0x00010000 in 11.7 seconds (effective 524.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 490.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
