@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_visiontestview.cpp: /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -16,6 +17,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare_impl.h \
@@ -28,6 +30,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
@@ -39,11 +42,13 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
@@ -103,6 +108,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
@@ -121,23 +127,38 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+  /home/prakash/sqlite3/kiosk/src/view/baseview.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

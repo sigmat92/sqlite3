@@ -17,6 +17,7 @@
 #include "../controller/settingscontroller.h"
 #include "../service/systemsettingsservice.h"
 #include "../service/adminauthservice.h"
+#include "view/visiontestview.h"
 #include <QDebug>
 
 HomeController::HomeController(HomeView* view,
@@ -48,7 +49,8 @@ HomeController::HomeController(HomeView* view,
                             systemService,
                             authService);
 
-        settingsView->show();
+        //settingsView->show();
+        settingsView->showFullScreen();
     });
 
     // ===== FINAL SIGNALS (Save to DB) =====
@@ -213,4 +215,26 @@ void HomeController::onStartSpo2Requested()
         return;
 
     m_protocol->requestSpo2();
+}
+
+void HomeController::visionTestRequested()
+{
+    qDebug() << "HomeController: launching Vision Test";
+
+    if (!m_visionView)
+    {
+        m_visionView = new VisionTestView();
+
+        connect(m_visionView,
+                &VisionTestView::exitRequested,
+                this,
+                [this]()
+                {
+                    m_visionView->hide();
+                    m_view->showFullScreen();
+                });
+    }
+
+    m_view->hide();
+    m_visionView->showFullScreen();
 }

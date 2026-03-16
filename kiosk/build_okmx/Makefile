@@ -765,6 +765,30 @@ src/service/systemsettingsservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.s
 .PHONY : src/service/systemsettingsservice.cpp.s
 
+src/service/visionservice.o: src/service/visionservice.cpp.o
+.PHONY : src/service/visionservice.o
+
+# target to build an object file
+src/service/visionservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.o
+.PHONY : src/service/visionservice.cpp.o
+
+src/service/visionservice.i: src/service/visionservice.cpp.i
+.PHONY : src/service/visionservice.i
+
+# target to preprocess a source file
+src/service/visionservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.i
+.PHONY : src/service/visionservice.cpp.i
+
+src/service/visionservice.s: src/service/visionservice.cpp.s
+.PHONY : src/service/visionservice.s
+
+# target to generate assembly for a file
+src/service/visionservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.s
+.PHONY : src/service/visionservice.cpp.s
+
 src/service/vitalsservice.o: src/service/vitalsservice.cpp.o
 .PHONY : src/service/vitalsservice.o
 
@@ -908,6 +932,30 @@ src/storage/vitalsrepository.s: src/storage/vitalsrepository.cpp.s
 src/storage/vitalsrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s
 .PHONY : src/storage/vitalsrepository.cpp.s
+
+src/view/baseview.o: src/view/baseview.cpp.o
+.PHONY : src/view/baseview.o
+
+# target to build an object file
+src/view/baseview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.o
+.PHONY : src/view/baseview.cpp.o
+
+src/view/baseview.i: src/view/baseview.cpp.i
+.PHONY : src/view/baseview.i
+
+# target to preprocess a source file
+src/view/baseview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.i
+.PHONY : src/view/baseview.cpp.i
+
+src/view/baseview.s: src/view/baseview.cpp.s
+.PHONY : src/view/baseview.s
+
+# target to generate assembly for a file
+src/view/baseview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.s
+.PHONY : src/view/baseview.cpp.s
 
 src/view/homeview.o: src/view/homeview.cpp.o
 .PHONY : src/view/homeview.o
@@ -1090,6 +1138,9 @@ help:
 	@echo "... src/service/systemsettingsservice.o"
 	@echo "... src/service/systemsettingsservice.i"
 	@echo "... src/service/systemsettingsservice.s"
+	@echo "... src/service/visionservice.o"
+	@echo "... src/service/visionservice.i"
+	@echo "... src/service/visionservice.s"
 	@echo "... src/service/vitalsservice.o"
 	@echo "... src/service/vitalsservice.i"
 	@echo "... src/service/vitalsservice.s"
@@ -1108,6 +1159,9 @@ help:
 	@echo "... src/storage/vitalsrepository.o"
 	@echo "... src/storage/vitalsrepository.i"
 	@echo "... src/storage/vitalsrepository.s"
+	@echo "... src/view/baseview.o"
+	@echo "... src/view/baseview.i"
+	@echo "... src/view/baseview.s"
 	@echo "... src/view/homeview.o"
 	@echo "... src/view/homeview.i"
 	@echo "... src/view/homeview.s"

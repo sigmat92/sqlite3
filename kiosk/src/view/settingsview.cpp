@@ -2,251 +2,300 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGridLayout>
-#include <QTabWidget>
-#include <QLineEdit>
-#include <QPushButton>
 #include <QLabel>
-#include <QGroupBox>
 #include <QIntValidator>
 
-SettingsView::SettingsView(QWidget* parent)
-    : QWidget(parent)
+// =========================================
+// Constructor
+// =========================================
+SettingsView::SettingsView(QWidget *parent)
+    : BaseView("Settings", parent)
 {
-    setWindowTitle("Carenest mini");
-    resize(620, 340);
-
-    setStyleSheet(R"(
-        QWidget {
-            font-size: 16px;
-        }
-        QTabBar::tab {
-            background: #147da7;
-            padding: 10px;
-            min-width: 150px;
-        }
-        QTabBar::tab:selected {
-            background: #021a39;
-            color: white;
-        }
-        QGroupBox {
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        QPushButton {
-            background-color: #2ccfe5;
-            color: white;
-            padding: 8px 15px;
-        }
-    )");
-
-    setupUI();
+    setupUi();
 }
-void SettingsView::setupUI()
+
+// =========================================
+// Utility: Create IP Row
+// =========================================
+QWidget* SettingsView::createIpFieldRow(QLineEdit* fields[4])
 {
-    QVBoxLayout* mainLayout = new QVBoxLayout(this);
+    QWidget *row = new QWidget;
+    QHBoxLayout *layout = new QHBoxLayout(row);
+    layout->setSpacing(5);
 
-    m_tabs = new QTabWidget;
-    m_tabs->addTab(createCommTab(), "Comm Settings");
-    m_tabs->addTab(new QWidget, "Date & Time");
-    m_tabs->addTab(new QWidget, "Calibration");
-    
+    for(int i = 0; i < 4; i++)
+    {
+        fields[i] = new QLineEdit;
+        fields[i]->setFixedWidth(60);
+        fields[i]->setMaxLength(3);
+        fields[i]->setValidator(new QIntValidator(0,255,this));
+        layout->addWidget(fields[i]);
 
-    mainLayout->addWidget(m_tabs);
-}
-QWidget* SettingsView::createCommTab()
-{
-    QWidget* tab = new QWidget;
-    QVBoxLayout* layout = new QVBoxLayout(tab);
-
-    // WIFI SECTION
-    QGroupBox* wifiBox = new QGroupBox("WIFI SETTINGS");
-    QGridLayout* wifiLayout = new QGridLayout(wifiBox);
-
-    m_ssid = new QLineEdit;
-    m_key  = new QLineEdit;
-    m_key->setEchoMode(QLineEdit::Password);
-
-    wifiLayout->addWidget(new QLabel("SSID:"),0,0);
-    wifiLayout->addWidget(m_ssid,0,1);
-
-    wifiLayout->addWidget(new QLabel("Security:"),1,0);
-    wifiLayout->addWidget(new QLabel("WPA/WPA2"),1,1);
-
-    wifiLayout->addWidget(new QLabel("Security Key:"),2,0);
-    wifiLayout->addWidget(m_key,2,1);
-
-    QPushButton* connectBtn = new QPushButton("Connect");
-    wifiLayout->addWidget(connectBtn,3,1);
-
-    layout->addWidget(wifiBox);
-
-    // SERVER SECTION
-    QGroupBox* serverBox = new QGroupBox("SERVER SETTINGS");
-    QGridLayout* serverLayout = new QGridLayout(serverBox);
-
-    serverLayout->addWidget(new QLabel("IP Address:"),0,0);
-    serverLayout->addWidget(createIPRow(
-        m_serverIp1,m_serverIp2,
-        m_serverIp3,m_serverIp4),0,1);
-
-    m_port = new QLineEdit;
-    m_port->setValidator(new QIntValidator(1,65535,this));
-
-    serverLayout->addWidget(new QLabel("Port No:"),1,0);
-    serverLayout->addWidget(m_port,1,1);
-
-    layout->addWidget(serverBox);
-
-    // DEVICE SECTION
-    QGroupBox* deviceBox = new QGroupBox("DEVICE SETTINGS");
-    QGridLayout* deviceLayout = new QGridLayout(deviceBox);
-
-    deviceLayout->addWidget(new QLabel("IP Address:"),0,0);
-    deviceLayout->addWidget(createIPRow(
-        m_devIp1,m_devIp2,
-        m_devIp3,m_devIp4),0,1);
-
-    deviceLayout->addWidget(new QLabel("Subnet Mask:"),1,0);
-    deviceLayout->addWidget(createIPRow(
-        m_mask1,m_mask2,
-        m_mask3,m_mask4),1,1);
-
-    deviceLayout->addWidget(new QLabel("Gateway:"),2,0);
-    deviceLayout->addWidget(createIPRow(
-        m_gate1,m_gate2,
-        m_gate3,m_gate4),2,1);
-
-    m_dhcpBtn = new QPushButton("ENABLE DHCP");
-    deviceLayout->addWidget(m_dhcpBtn,3,1);
-
-    QHBoxLayout* bottomBtns = new QHBoxLayout;
-    QPushButton* saveBtn = new QPushButton("SAVE");
-    QPushButton* exitBtn = new QPushButton("EXIT");
-
-    bottomBtns->addWidget(saveBtn);
-    bottomBtns->addWidget(exitBtn);
-
-    deviceLayout->addLayout(bottomBtns,4,1);
-
-    layout->addWidget(deviceBox);
-
-    layout->addStretch();
-//
-connect(connectBtn, &QPushButton::clicked, this, [=]()
-{
-    emit wifiConnectRequested(m_ssid->text(),
-                              m_key->text());
-});
-
-connect(m_dhcpBtn, &QPushButton::clicked, this, [=]()
-{
-    emit dhcpToggled(true);
-});
-
-connect(saveBtn, &QPushButton::clicked, this, [=]()
-{
-    QString ip = m_devIp1->text() + "." +
-                 m_devIp2->text() + "." +
-                 m_devIp3->text() + "." +
-                 m_devIp4->text();
-
-    QString mask = m_mask1->text() + "." +
-                   m_mask2->text() + "." +
-                   m_mask3->text() + "." +
-                   m_mask4->text();
-
-    QString gateway = m_gate1->text() + "." +
-                      m_gate2->text() + "." +
-                      m_gate3->text() + "." +
-                      m_gate4->text();
-
-    emit staticIPRequested(ip, mask, gateway);
-});
-//
-    return tab;
-}
-QWidget* SettingsView::createIPRow(QLineEdit*& a,
-                                   QLineEdit*& b,
-                                   QLineEdit*& c,
-                                   QLineEdit*& d)
-{
-    QWidget* row = new QWidget;
-    QHBoxLayout* layout = new QHBoxLayout(row);
-
-    auto makeField = [this]() {
-        QLineEdit* e = new QLineEdit;
-        e->setFixedWidth(50);
-        e->setValidator(new QIntValidator(0,255,this));
-        return e;
-    };
-
-    a = makeField();
-    b = makeField();
-    c = makeField();
-    d = makeField();
-
-    layout->addWidget(a);
-    layout->addWidget(new QLabel("."));
-    layout->addWidget(b);
-    layout->addWidget(new QLabel("."));
-    layout->addWidget(c);
-    layout->addWidget(new QLabel("."));
-    layout->addWidget(d);
+        if(i < 3)
+            layout->addWidget(new QLabel("."));
+    }
 
     return row;
 }
+
+// =========================================
+// Setup UI
+// =========================================
+void SettingsView::setupUi()
+{
+    QVBoxLayout *main = new QVBoxLayout(m_contentWidget);
+    main->setContentsMargins(20,20,20,20);
+
+    // ================= Tabs =================
+    m_tabs = new QTabWidget;
+    m_tabs->setTabPosition(QTabWidget::North);
+    m_tabs->setDocumentMode(true);
+
+    m_dateTab = new QWidget;
+    m_calibrationTab = new QWidget;
+    m_commTab = new QWidget;
+
+    m_tabs->addTab(m_dateTab, "Date & Time Settings");
+    m_tabs->addTab(m_calibrationTab, "Calibration Settings");
+    m_tabs->addTab(m_commTab, "Comm. Settings");
+
+    main->addWidget(m_tabs);
+
+    // ================= DATE TAB =================
+    QVBoxLayout *dateLayout = new QVBoxLayout(m_dateTab);
+
+    QLabel *dateLabel = new QLabel("System Date & Time");
+    dateLabel->setStyleSheet("font-weight:bold; font-size:18px;");
+
+    dateLayout->addWidget(dateLabel);
+    dateLayout->addSpacing(20);
+    dateLayout->addWidget(new QPushButton("Set Date"));
+    dateLayout->addWidget(new QPushButton("Set Time"));
+    dateLayout->addWidget(new QPushButton("Sync with Server"));
+    dateLayout->addStretch();
+
+    // ================= CALIBRATION TAB =================
+    QVBoxLayout *calLayout = new QVBoxLayout(m_calibrationTab);
+
+    QLabel *calLabel = new QLabel("Device Calibration");
+    calLabel->setStyleSheet("font-weight:bold; font-size:18px;");
+
+    calLayout->addWidget(calLabel);
+    calLayout->addSpacing(20);
+    calLayout->addWidget(new QPushButton("Start Calibration"));
+    calLayout->addWidget(new QPushButton("Reset Calibration"));
+    calLayout->addStretch();
+
+    // ================= COMM TAB =================
+    QVBoxLayout *commLayout = new QVBoxLayout(m_commTab);
+    commLayout->setContentsMargins(40,30,40,30);
+    commLayout->setSpacing(20);
+
+    // -------- WIFI --------
+    QLabel *wifiLabel = new QLabel("WIFI SETTINGS");
+    wifiLabel->setStyleSheet("font-weight:bold;");
+
+    QGridLayout *wifiGrid = new QGridLayout;
+
+    m_ssid = new QLineEdit;
+    m_securityType = new QComboBox;
+    m_securityType->addItems({"WPA/WPA2","WPA2","Open"});
+    m_securityKey = new QLineEdit;
+    m_deviceId = new QLineEdit;
+
+    wifiGrid->addWidget(new QLabel("SSID:"),0,0);
+    wifiGrid->addWidget(m_ssid,0,1);
+
+    wifiGrid->addWidget(new QLabel("SECURITY TYPE:"),1,0);
+    wifiGrid->addWidget(m_securityType,1,1);
+
+    wifiGrid->addWidget(new QLabel("SECURITY KEY:"),2,0);
+    wifiGrid->addWidget(m_securityKey,2,1);
+
+    wifiGrid->addWidget(new QLabel("DEVICE ID:"),2,2);
+    wifiGrid->addWidget(m_deviceId,2,3);
+
+    commLayout->addWidget(wifiLabel);
+    commLayout->addLayout(wifiGrid);
+
+    // -------- SERVER --------
+    QLabel *serverLabel = new QLabel("SERVER SETTINGS");
+    serverLabel->setStyleSheet("font-weight:bold;");
+    commLayout->addWidget(serverLabel);
+
+    QGridLayout *serverGrid = new QGridLayout;
+
+    serverGrid->addWidget(new QLabel("IP ADDRESS:"),0,0);
+    serverGrid->addWidget(createIpFieldRow(m_serverIp),0,1);
+
+    m_serverPort = new QLineEdit;
+    serverGrid->addWidget(new QLabel("PORT NO:"),1,0);
+    serverGrid->addWidget(m_serverPort,1,1);
+
+    commLayout->addLayout(serverGrid);
+
+    // -------- DEVICE --------
+    QLabel *deviceLabel = new QLabel("DEVICE SETTINGS");
+    deviceLabel->setStyleSheet("font-weight:bold;");
+    commLayout->addWidget(deviceLabel);
+
+    QGridLayout *deviceGrid = new QGridLayout;
+
+    deviceGrid->addWidget(new QLabel("IP ADDRESS:"),0,0);
+    deviceGrid->addWidget(createIpFieldRow(m_deviceIp),0,1);
+
+    deviceGrid->addWidget(new QLabel("SUBNET MASK:"),1,0);
+    deviceGrid->addWidget(createIpFieldRow(m_subnet),1,1);
+
+    deviceGrid->addWidget(new QLabel("DEF. GATEWAY:"),2,0);
+    deviceGrid->addWidget(createIpFieldRow(m_gateway),2,1);
+
+    commLayout->addLayout(deviceGrid);
+
+    // -------- Bottom Controls --------
+    QHBoxLayout *bottomLayout = new QHBoxLayout;
+
+    m_dhcpBtn = new QPushButton("ENABLE");
+    m_autoSend = new QCheckBox("AUTO SEND");
+
+    m_usbDevice = new QRadioButton("USB Device");
+    m_usbHostMSC = new QRadioButton("USB Host MSC");
+    m_usbHostCDC = new QRadioButton("USB Host CDC");
+
+    m_usbGroup = new QButtonGroup(this);
+    m_usbGroup->addButton(m_usbDevice);
+    m_usbGroup->addButton(m_usbHostMSC);
+    m_usbGroup->addButton(m_usbHostCDC);
+
+    bottomLayout->addWidget(m_dhcpBtn);
+    bottomLayout->addWidget(m_autoSend);
+    bottomLayout->addWidget(m_usbDevice);
+    bottomLayout->addWidget(m_usbHostMSC);
+    bottomLayout->addWidget(m_usbHostCDC);
+
+    commLayout->addLayout(bottomLayout);
+
+    // -------- Save / Exit --------
+    QHBoxLayout *btnLayout = new QHBoxLayout;
+
+    m_saveBtn = new QPushButton("SAVE");
+    m_exitBtn = new QPushButton("EXIT");
+
+    btnLayout->addWidget(m_saveBtn);
+    btnLayout->addWidget(m_exitBtn);
+
+    commLayout->addLayout(btnLayout);
+
+    // -------- Connections --------
+    connect(m_saveBtn,&QPushButton::clicked,this,&SettingsView::saveRequested);
+    connect(m_exitBtn,&QPushButton::clicked,this,&SettingsView::exitRequested);
+
+    connect(m_dhcpBtn,&QPushButton::clicked,this,[this](){
+        m_dhcpEnabled = !m_dhcpEnabled;
+        emit dhcpToggled(m_dhcpEnabled);
+    });
+
+    // -------- Styling --------
+    m_tabs->setStyleSheet(R"(
+        QTabBar::tab {
+            background: #e0e0e0;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        QTabBar::tab:selected {
+            background: #4A90E2;
+            color: white;
+        }
+
+        QTabWidget::pane {
+            border: 1px solid #c0c0c0;
+            top: -1px;
+        }
+
+        QPushButton {
+            background-color: #4A90E2;
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        QPushButton:hover {
+            background-color: #357ABD;
+        }
+    )");
+}
+
+// =========================================
+// Lock / Unlock
+// =========================================
 void SettingsView::lockControls()
 {
-    m_ssid->setEnabled(false);
-    m_key->setEnabled(false);
-    m_dhcpBtn->setEnabled(false);
-
-    m_serverIp1->setEnabled(false);
-    m_serverIp2->setEnabled(false);
-    m_serverIp3->setEnabled(false);
-    m_serverIp4->setEnabled(false);
-    m_port->setEnabled(false);
-
-    m_devIp1->setEnabled(false);
-    m_devIp2->setEnabled(false);
-    m_devIp3->setEnabled(false);
-    m_devIp4->setEnabled(false);
-
-    m_mask1->setEnabled(false);
-    m_mask2->setEnabled(false);
-    m_mask3->setEnabled(false);
-    m_mask4->setEnabled(false);
-
-    m_gate1->setEnabled(false);
-    m_gate2->setEnabled(false);
-    m_gate3->setEnabled(false);
-    m_gate4->setEnabled(false);
+    this->setEnabled(false);
 }
 
 void SettingsView::unlockControls()
 {
-    m_ssid->setEnabled(true);
-    m_key->setEnabled(true);
-    m_dhcpBtn->setEnabled(true);
+    this->setEnabled(true);
+}
 
-    m_serverIp1->setEnabled(true);
-    m_serverIp2->setEnabled(true);
-    m_serverIp3->setEnabled(true);
-    m_serverIp4->setEnabled(true);
-    m_port->setEnabled(true);
+// =========================================
+// Getters
+// =========================================
+QString SettingsView::ssid() const { return m_ssid->text(); }
+QString SettingsView::securityType() const { return m_securityType->currentText(); }
+QString SettingsView::securityKey() const { return m_securityKey->text(); }
+int SettingsView::deviceId() const { return m_deviceId->text().toInt(); }
 
-    m_devIp1->setEnabled(true);
-    m_devIp2->setEnabled(true);
-    m_devIp3->setEnabled(true);
-    m_devIp4->setEnabled(true);
+QString SettingsView::serverIp() const
+{
+    return QString("%1.%2.%3.%4")
+            .arg(m_serverIp[0]->text())
+            .arg(m_serverIp[1]->text())
+            .arg(m_serverIp[2]->text())
+            .arg(m_serverIp[3]->text());
+}
 
-    m_mask1->setEnabled(true);
-    m_mask2->setEnabled(true);
-    m_mask3->setEnabled(true);
-    m_mask4->setEnabled(true);
+int SettingsView::serverPort() const
+{
+    return m_serverPort->text().toInt();
+}
 
-    m_gate1->setEnabled(true);
-    m_gate2->setEnabled(true);
-    m_gate3->setEnabled(true);
-    m_gate4->setEnabled(true);
+QString SettingsView::deviceIp() const
+{
+    return QString("%1.%2.%3.%4")
+            .arg(m_deviceIp[0]->text())
+            .arg(m_deviceIp[1]->text())
+            .arg(m_deviceIp[2]->text())
+            .arg(m_deviceIp[3]->text());
+}
+
+QString SettingsView::subnetMask() const
+{
+    return QString("%1.%2.%3.%4")
+            .arg(m_subnet[0]->text())
+            .arg(m_subnet[1]->text())
+            .arg(m_subnet[2]->text())
+            .arg(m_subnet[3]->text());
+}
+
+QString SettingsView::gateway() const
+{
+    return QString("%1.%2.%3.%4")
+            .arg(m_gateway[0]->text())
+            .arg(m_gateway[1]->text())
+            .arg(m_gateway[2]->text())
+            .arg(m_gateway[3]->text());
+}
+
+bool SettingsView::isDhcpEnabled() const { return m_dhcpEnabled; }
+bool SettingsView::isAutoSendEnabled() const { return m_autoSend->isChecked(); }
+
+QString SettingsView::usbMode() const
+{
+    if(m_usbDevice->isChecked()) return "USB_DEVICE";
+    if(m_usbHostMSC->isChecked()) return "USB_HOST_MSC";
+    if(m_usbHostCDC->isChecked()) return "USB_HOST_CDC";
+    return "";
 }

@@ -7,6 +7,7 @@
 *****************************************************************************/
 
 #include "../../../src/view/visiontestview.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -39,39 +40,39 @@ namespace {
 struct qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSVisionTestViewENDCLASS = QtMocHelpers::stringData(
     "VisionTestView",
-    "startRequested",
+    "leftStartRequested",
     "",
-    "okPressed",
-    "cantSeePressed",
-    "backPressed"
+    "rightStartRequested",
+    "backRequested",
+    "exitRequested"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t {
     uint offsetsAndSizes[12];
     char stringdata0[15];
-    char stringdata1[15];
+    char stringdata1[19];
     char stringdata2[1];
-    char stringdata3[10];
-    char stringdata4[15];
-    char stringdata5[12];
+    char stringdata3[20];
+    char stringdata4[14];
+    char stringdata5[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t qt_meta_stringdata_CLASSVisionTestViewENDCLASS = {
     {
         QT_MOC_LITERAL(0, 14),  // "VisionTestView"
-        QT_MOC_LITERAL(15, 14),  // "startRequested"
-        QT_MOC_LITERAL(30, 0),  // ""
-        QT_MOC_LITERAL(31, 9),  // "okPressed"
-        QT_MOC_LITERAL(41, 14),  // "cantSeePressed"
-        QT_MOC_LITERAL(56, 11)   // "backPressed"
+        QT_MOC_LITERAL(15, 18),  // "leftStartRequested"
+        QT_MOC_LITERAL(34, 0),  // ""
+        QT_MOC_LITERAL(35, 19),  // "rightStartRequested"
+        QT_MOC_LITERAL(55, 13),  // "backRequested"
+        QT_MOC_LITERAL(69, 13)   // "exitRequested"
     },
     "VisionTestView",
-    "startRequested",
+    "leftStartRequested",
     "",
-    "okPressed",
-    "cantSeePressed",
-    "backPressed"
+    "rightStartRequested",
+    "backRequested",
+    "exitRequested"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -106,7 +107,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVisionTestViewENDCLASS[] = {
 };
 
 Q_CONSTINIT const QMetaObject VisionTestView::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
+    QMetaObject::SuperData::link<BaseView::staticMetaObject>(),
     qt_meta_stringdata_CLASSVisionTestViewENDCLASS.offsetsAndSizes,
     qt_meta_data_CLASSVisionTestViewENDCLASS,
     qt_static_metacall,
@@ -114,13 +115,13 @@ Q_CONSTINIT const QMetaObject VisionTestView::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<VisionTestView, std::true_type>,
-        // method 'startRequested'
+        // method 'leftStartRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'okPressed'
+        // method 'rightStartRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'cantSeePressed'
+        // method 'backRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'backPressed'
+        // method 'exitRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -132,38 +133,38 @@ void VisionTestView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<VisionTestView *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->startRequested(); break;
-        case 1: _t->okPressed(); break;
-        case 2: _t->cantSeePressed(); break;
-        case 3: _t->backPressed(); break;
+        case 0: _t->leftStartRequested(); break;
+        case 1: _t->rightStartRequested(); break;
+        case 2: _t->backRequested(); break;
+        case 3: _t->exitRequested(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::startRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::leftStartRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::okPressed; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::rightStartRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::cantSeePressed; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::backRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::backPressed; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 3;
                 return;
             }
@@ -182,12 +183,12 @@ void *VisionTestView::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSVisionTestViewENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return BaseView::qt_metacast(_clname);
 }
 
 int VisionTestView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = BaseView::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -203,25 +204,25 @@ int VisionTestView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void VisionTestView::startRequested()
+void VisionTestView::leftStartRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void VisionTestView::okPressed()
+void VisionTestView::rightStartRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
-void VisionTestView::cantSeePressed()
+void VisionTestView::backRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 
 // SIGNAL 3
-void VisionTestView::backPressed()
+void VisionTestView::exitRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }

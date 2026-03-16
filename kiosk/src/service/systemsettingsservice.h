@@ -1,14 +1,15 @@
 #pragma once
-#include <QObject>
+#include <QString>
 
-class SystemSettingsService : public QObject
+class SystemSettingsService
 {
-    Q_OBJECT
 public:
-    explicit SystemSettingsService(QObject* parent = nullptr);
+    void setWifi(const QString &ssid, const QString &key);
+    void setServer(const QString &ip, int port);
+    void setDeviceNetwork(const QString &ip,
+                          const QString &subnet,
+                          const QString &gateway);
+    void setDhcpEnabled(bool enabled);
 
-public slots:
-    void connectWifi(QString ssid, QString password);
-    void enableDHCP(bool enable);
-    void setStaticIP(QString ip, QString mask, QString gateway);
+    void save();
 };

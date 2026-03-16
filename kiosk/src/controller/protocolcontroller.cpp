@@ -1,3 +1,81 @@
+/*
+#include "protocolcontroller.h"
+#include <QTimer>
+
+static QByteArray idleFrame()
+{
+    QByteArray idle;
+    idle.append(char(0x96));
+    idle.append(char(0xAA));
+    idle.append(char(0xFB));
+    idle.append(char(0x49));
+    idle.append(char(0x73));
+    return idle;
+}
+
+ProtocolController::ProtocolController(UartDevice* uart,
+                                       ProtocolParser* parser,
+                                       QObject* parent)
+    : QObject(parent),
+      uart(uart),
+      parser(parser)
+{
+    connect(uart,
+            &UartDevice::bytesReceived,
+            parser,
+            &ProtocolParser::feed);
+}
+
+void ProtocolController::sendWrappedCommand(quint8 cmd)
+{
+    // 1 Send IDLE first
+    uart->send(idleFrame());
+
+    // 2 Small delay for MCU sync
+    QTimer::singleShot(40, this, [this, cmd]()
+    {
+        QByteArray frame;
+
+        frame.append(char(0x96));
+        frame.append(char(0xAA));
+        frame.append(char(cmd));
+
+        uart->send(frame);
+
+        // 3 Return to IDLE
+        QTimer::singleShot(40, this, [this]()
+        {
+            uart->send(idleFrame());
+        });
+    });
+}
+
+void ProtocolController::requestTemperature()
+{
+    sendWrappedCommand(0x54);
+}
+
+void ProtocolController::requestSpo2()
+{
+    sendWrappedCommand(0x53);
+}
+
+void ProtocolController::requestWeight()
+{
+    sendWrappedCommand(0x57);
+}
+
+void ProtocolController::requestHeight()
+{
+    sendWrappedCommand(0x48);
+}
+
+void ProtocolController::requestNibp()
+{
+    sendWrappedCommand(0x4E);
+}
+*/
+
 #include "protocolcontroller.h"
 #include "platform/uart/uartdevice.h"
 #include "controller/protocolparser.h"

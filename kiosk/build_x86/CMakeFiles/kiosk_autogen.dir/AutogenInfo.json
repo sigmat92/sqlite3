@@ -478,6 +478,21 @@
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake",
 		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-relwithdebinfo.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessTargets.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportPlugins.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginTargets.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginTargets-relwithdebinfo.cmake",
+		"/home/prakash/Qt/6.5.3/gcc_64/lib/cmake/Qt6PrintSupport/Qt6QCupsPrinterSupportPluginAdditionalTargetInfo.cmake",
 		"/usr/share/cmake-3.22/Modules/FindSQLite3.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
@@ -632,6 +647,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/visionservice.h",
+			"MU",
+			"RIEQWACMR2/moc_visionservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h",
 			"MU",
 			"RIEQWACMR2/moc_vitalsservice.cpp",
@@ -668,6 +689,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/view/baseview.h",
+			"MU",
+			"3JYSCEOBDA/moc_baseview.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/view/homeview.h",
 			"MU",
 			"3JYSCEOBDA/moc_homeview.cpp",
@@ -701,6 +728,7 @@
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"ZX_USE_UTF8"
 	],
@@ -722,6 +750,7 @@
 		"/home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++",
 		"/home/prakash/Qt/6.5.3/gcc_64/include/QtGui",
 		"/home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork",
+		"/home/prakash/Qt/6.5.3/gcc_64/include/QtPrintSupport",
 		"/usr/include",
 		"/usr/include/c++/11",
 		"/usr/include/x86_64-linux-gnu/c++/11",
@@ -852,6 +881,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/visionservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp",
 			"MU",
 			null
@@ -881,6 +915,7 @@
 			"MU",
 			null
 		],
+		[ "/home/prakash/sqlite3/kiosk/src/view/baseview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp", "MU", null ],

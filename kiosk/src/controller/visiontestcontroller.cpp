@@ -1,43 +1,52 @@
-#include "visiontestcontroller.h"
-#include "view/visiontestview.h"
+#include "../controller/visiontestcontroller.h"
+#include "../view/visiontestview.h"
+#include "../service/visionservice.h"
 
 VisionTestController::VisionTestController(
-        VisionTestView* v, QObject* parent)
-    : QObject(parent), view(v)
+        VisionTestView *view,
+        VisionService *service,
+        QObject *parent)
+    : QObject(parent),
+      m_view(view),
+      m_service(service)
 {
-    connect(view, &VisionTestView::startRequested,
-            this, &VisionTestController::onStart);
-    connect(view, &VisionTestView::okPressed,
-            this, &VisionTestController::onOk);
-    connect(view, &VisionTestView::cantSeePressed,
-            this, &VisionTestController::onCantSee);
-    connect(view, &VisionTestView::backPressed,
-            this, &VisionTestController::onBack);
+    //connect(m_view, &VisionTestView::leftStartRequested,
+    //        this, &VisionTestController::startLeftTest);
+
+    //connect(m_view, &VisionTestView::rightStartRequested,
+    //        this, &VisionTestController::startRightTest);
+
+    connect(m_view, &VisionTestView::backRequested,
+            this, &VisionTestController::goBack);
+}
+/*
+void VisionTestController::startLeftTest()
+{
+    m_view->setEnabled(false);
+
+    QString result = m_service->runLeftEyeTest();
+
+    m_view->setLeftResult(result);
+    m_view->setEnabled(true);
 }
 
-void VisionTestController::onStart()
+void VisionTestController::startRightTest()
 {
-    index = 0;
-    view->setTestText(testSequence[index]);
+    m_view->setEnabled(false);
+
+    QString result = m_service->runRightEyeTest();
+
+    m_view->setRightResult(result);
+    m_view->setEnabled(true);
+}
+*/
+void VisionTestController::goBack()
+{
+    // Navigation handled by parent stacked widget
+    emit m_view->backRequested();
 }
 
-void VisionTestController::onOk()
-{
-    index++;
-    if (index >= testSequence.size()) {
-        view->setTestText("TEST PASSED");
-    } else {
-        view->setTestText(testSequence[index]);
-    }
-}
-
-void VisionTestController::onCantSee()
-{
-    view->setTestText("TEST FAILED");
-}
-
-void VisionTestController::onBack()
-{
-    view->close();
-}
-
+//void VisionTestController::exitRequested()
+//{
+//    emit m_view->exitRequested();
+//}

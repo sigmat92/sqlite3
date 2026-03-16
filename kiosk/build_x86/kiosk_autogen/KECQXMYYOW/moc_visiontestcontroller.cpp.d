@@ -1,7 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_visiontestcontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \

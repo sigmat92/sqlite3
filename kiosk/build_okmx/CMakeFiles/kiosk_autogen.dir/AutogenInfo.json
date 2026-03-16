@@ -474,6 +474,15 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-release.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessTargets.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/FindSQLite3.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.25/Modules/FindPackageMessage.cmake"
@@ -628,6 +637,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/visionservice.h",
+			"MU",
+			"RIEQWACMR2/moc_visionservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h",
 			"MU",
 			"RIEQWACMR2/moc_vitalsservice.cpp",
@@ -664,6 +679,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/view/baseview.h",
+			"MU",
+			"3JYSCEOBDA/moc_baseview.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/view/homeview.h",
 			"MU",
 			"3JYSCEOBDA/moc_homeview.cpp",
@@ -697,6 +718,7 @@
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"ZX_USE_UTF8"
 	],
@@ -717,6 +739,7 @@
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/lib/mkspecs/linux-g++",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtNetwork",
+		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtPrintSupport",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0",
 		"/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/c++/12.3.0/aarch64-poky-linux",
@@ -855,6 +878,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/visionservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/vitalsservice.cpp",
 			"MU",
 			null
@@ -884,6 +912,7 @@
 			"MU",
 			null
 		],
+		[ "/home/prakash/sqlite3/kiosk/src/view/baseview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp", "MU", null ],

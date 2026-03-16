@@ -1,7 +1,9 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp: /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
@@ -16,6 +18,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare_impl.h \
@@ -28,6 +31,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
@@ -39,11 +43,13 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
@@ -64,6 +70,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocessordetection.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
@@ -103,6 +110,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtversionchecks.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
@@ -121,23 +129,63 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QButtonGroup \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QCheckBox \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QTabWidget \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcheckbox.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+  /home/prakash/sqlite3/kiosk/src/view/baseview.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

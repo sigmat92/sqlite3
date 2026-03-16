@@ -1,3 +1,36 @@
+/*
+#pragma once
+
+#include <QObject>
+#include <QByteArray>
+
+class UartDevice;
+class ProtocolParser;
+
+class ProtocolController : public QObject
+{
+    Q_OBJECT
+
+public:
+    explicit ProtocolController(UartDevice* uart,
+                                ProtocolParser* parser,
+                                QObject* parent = nullptr);
+
+    // measurement requests
+    void requestTemperature();
+    void requestSpo2();
+    void requestWeight();
+    void requestHeight();
+    void requestNibp();
+
+private:
+    UartDevice* uart;
+    ProtocolParser* parser;
+
+    void sendWrappedCommand(quint8 cmd);
+};
+*/
+
 #pragma once
 
 #include <QObject>
@@ -15,6 +48,7 @@ public:
                                 QObject* parent = nullptr);
 
     void requestTemperature();
+    void requestWeight();
     void requestSpo2();
     void setIdle();
 

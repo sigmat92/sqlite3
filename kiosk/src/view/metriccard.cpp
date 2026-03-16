@@ -1,46 +1,56 @@
 #include "metriccard.h"
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QPushButton>
 
-MetricCard::MetricCard(const QString& title, QWidget* parent)
+#include <QVBoxLayout>
+
+MetricCard::MetricCard(const QString &title, QWidget *parent)
     : QWidget(parent)
 {
-        
-    setStyleSheet("background:#e1f5fe; border-radius:8px;");
+    setStyleSheet(
+        "font-size:24px;"
+        "background:#e1f5fe;"
+        "font-weight:bold;"
+        "border-radius: 10px;"
+        "color:#555;"
+    );
 
-    auto* layout = new QVBoxLayout(this);
-    layout->setContentsMargins(12, 12, 12, 12);
+setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+//setMinimumWidth(200);
+//setMaximumWidth(250);
 
-    QLabel* titleLabel = new QLabel(title);
+    QVBoxLayout *layout = new QVBoxLayout(this);
+
+    titleLabel = new QLabel(title);
     titleLabel->setAlignment(Qt::AlignCenter);
-    titleLabel->setStyleSheet("font-weight:bold;");
 
     valueLabel = new QLabel("--");
     valueLabel->setAlignment(Qt::AlignCenter);
-    valueLabel->setStyleSheet("font-size:22px; font-weight:bold;");
 
-    startBtn = new QPushButton("Start");
-    startBtn->setMinimumHeight(36);
-    startBtn->setStyleSheet("background:#0d47a1; color:white;");
-
-    connect(startBtn, &QPushButton::clicked,
-            this, &MetricCard::startRequested);
+    startButton = new QPushButton("Start");
+    startButton->setStyleSheet(
+        "font-size:24px;"
+        "font-weight:bold;"
+        "background:#0288d1;"
+        "color:white;"
+        "border-radius: 10px;"
+    );
 
     layout->addWidget(titleLabel);
-    layout->addStretch();
+    //layout->addStretch();
     layout->addWidget(valueLabel);
-    layout->addWidget(startBtn);
+    //layout->addStretch();
+    layout->addWidget(startButton);
+
+    connect(startButton,&QPushButton::clicked,
+            this,&MetricCard::startRequested);
 }
 
-void MetricCard::setValue(const QString& value)
+void MetricCard::setValue(const QString &value)
 {
     valueLabel->setText(value);
 }
 
 void MetricCard::setBusy(bool busy)
 {
-    startBtn->setEnabled(!busy);
-    startBtn->setText(busy ? "Measuring..." : "Start");
+    if(busy)
+        valueLabel->setText("...");
 }
-

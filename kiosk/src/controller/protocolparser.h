@@ -1,3 +1,4 @@
+
 #pragma once
 #include <QObject>
 #include <QByteArray>
@@ -12,9 +13,9 @@ public slots:
     void feed(const QByteArray& data);
 
 signals:
-    //void temperature(double tempF);
+    
     void temperature(double value, char unit);
-
+    void spo2(int spo2Percent, int pulseRate);
 
 private:
     QByteArray buffer;

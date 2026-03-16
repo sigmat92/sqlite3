@@ -399,6 +399,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
@@ -410,6 +411,36 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
@@ -438,4 +469,45 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
+ /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QCheckBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcheckbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QButtonGroup \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QTabWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDir \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdir.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h

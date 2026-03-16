@@ -15,6 +15,10 @@
 #include "controller/protocolparser.h"
 #include "model/vitalsmodel.h"
 #include "platform/uart/uartdevice.h"
+#include "view/settingsview.h"
+
+#include <QDir>
+#include <QStringList>
 
 int main(int argc, char *argv[])
 {
@@ -42,9 +46,43 @@ int main(int argc, char *argv[])
     PatientRepository* patientRepo = new PatientRepository;
 
     // ---------- UART ----------
-    UartDevice* uart = new UartDevice(&app);
-    uart->open("/dev/ttyACM0", 9600);
+UartDevice* uart = new UartDevice(&app);
+/*
+QStringList ports;
 
+QDir dev("/dev");
+ports = dev.entryList(QStringList() << "ttyACM*");
+
+for(const auto& p : ports)
+{
+    QString path="/dev/"+p;
+
+    if(uart->open(path.toStdString().c_str(),9600))
+    {
+        qDebug()<<"UART connected:"<<path;
+        break;
+    }
+}
+*/
+//uart->open("/dev/kiosk_sensor",9600);
+
+QStringList ports = {
+    "/dev/ttyACM0",
+    "/dev/ttyACM1"
+};
+
+for (const auto& dev : ports)
+{
+    qDebug() << "Trying UART:" << dev;
+
+    if (uart->open(dev.toStdString().c_str(),9600))
+    {
+        qDebug() << "UART connected:" << dev;
+        break;
+    }
+}
+
+// ---------- PROTOCOL ----------
     ProtocolParser* parser = new ProtocolParser(&app);
 
     ProtocolController* protocolCtrl =
@@ -90,8 +128,27 @@ int main(int argc, char *argv[])
                        protocolCtrl,   
                        nullptr,
                        &app);
+    // ---------- SETTINGS VIEW ----------
+SettingsView* settingsView = new SettingsView;
 
-    homeView->show();
+// Home → Settings
+QObject::connect(homeView,
+                 &HomeView::settingsRequested,
+                 [=]() {
+                     homeView->hide();
+                     settingsView->showFullScreen();
+                 });
 
+// Settings → Home
+QObject::connect(settingsView,
+                 &SettingsView::exitRequested,
+                 [=]() {
+                     settingsView->hide();
+                     homeView->showFullScreen();
+                 });
+
+
+    homeView->showFullScreen();
+    //homeView->show();
     return app.exec();
 }

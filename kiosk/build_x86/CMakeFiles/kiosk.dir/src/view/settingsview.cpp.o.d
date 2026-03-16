@@ -2,6 +2,7 @@ CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -397,6 +398,17 @@ CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
@@ -404,30 +416,39 @@ CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QTabWidget \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGroupBox \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgroupbox.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QIntValidator \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QCheckBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcheckbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QButtonGroup \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QTabWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QIntValidator \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h

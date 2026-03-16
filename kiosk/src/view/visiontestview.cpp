@@ -1,86 +1,57 @@
 #include "visiontestview.h"
-#include "model/settingsmodel.h"
-
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QLabel>
-#include <QPushButton>
 
-VisionTestView::VisionTestView(QWidget* parent)
-    : QWidget(parent)
+VisionTestView::VisionTestView(QWidget *parent)
+    : BaseView("Vision Test", parent)
 {
-    resize(620, 340);
-    setWindowTitle("Near Vision Test");
-    setStyleSheet("background-color:#4fc3f7;");
-
-    auto* root = new QVBoxLayout(this);
-    root->setContentsMargins(30, 30, 30, 30);
-    root->setSpacing(20);
-
-    // Title
-    QLabel* title = new QLabel("Near Vision Test");
-    title->setAlignment(Qt::AlignCenter);
-    title->setStyleSheet("font-size:28px; font-weight:bold;");
-    root->addWidget(title);
-
-    QLabel* instruction =
-        new QLabel("Put Yourself on 36 cm Distance");
-    instruction->setAlignment(Qt::AlignCenter);
-    instruction->setStyleSheet("font-size:18px;");
-    root->addWidget(instruction);
-
-    // START button
-    QPushButton* startBtn = new QPushButton("START");
-    startBtn->setMinimumHeight(50);
-    startBtn->setStyleSheet(
-        "font-size:20px; background:#e0e0e0;");
-    connect(startBtn, &QPushButton::clicked,
-            this, &VisionTestView::startRequested);
-    root->addWidget(startBtn, 0, Qt::AlignCenter);
-
-    // Test display
-    testLabel = new QLabel("--");
-    testLabel->setAlignment(Qt::AlignCenter);
-    testLabel->setMinimumHeight(200);
-    testLabel->setStyleSheet(
-        "background:white;"
-        "font-size:48px;"
-        "border-radius:6px;");
-    root->addWidget(testLabel);
-
-    // OK / CAN'T SEE buttons
-    auto* btnRow = new QHBoxLayout;
-
-    QPushButton* cantSee = new QPushButton("CAN'T SEE");
-    cantSee->setMinimumHeight(50);
-    cantSee->setStyleSheet(
-        "background:#e53935; color:white; font-size:18px;");
-    connect(cantSee, &QPushButton::clicked,
-            this, &VisionTestView::cantSeePressed);
-
-    QPushButton* ok = new QPushButton("OK");
-    ok->setMinimumHeight(50);
-    ok->setStyleSheet(
-        "background:#43a047; color:white; font-size:18px;");
-    connect(ok, &QPushButton::clicked,
-            this, &VisionTestView::okPressed);
-
-    btnRow->addWidget(cantSee);
-    btnRow->addWidget(ok);
-    root->addLayout(btnRow);
-
-    // Back
-    QPushButton* back = new QPushButton("BACK");
-    back->setMinimumHeight(40);
-    connect(back, &QPushButton::clicked,
-            this, &VisionTestView::backPressed);
-    root->addWidget(back, 0, Qt::AlignLeft);
+    setupUi();
 }
 
-void VisionTestView::setTestText(const QString& text)
+void VisionTestView::setupUi()
 {
-    testLabel->setText(text);
+    QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
+    layout->setContentsMargins(40,40,40,40);
+    layout->setSpacing(30);
+
+    m_leftBtn = new QPushButton("Start Left Eye Test");
+    m_rightBtn = new QPushButton("Start Right Eye Test");
+    m_backBtn = new QPushButton("Back");
+
+    m_leftResult = new QLabel("--");
+    m_rightResult = new QLabel("--");
+
+    m_leftBtn->setStyleSheet("background:#1E4E9E;color:white;");
+    m_rightBtn->setStyleSheet("background:#1E4E9E;color:white;");
+    m_backBtn->setStyleSheet("background:#1E4E9E;color:white;");
+
+    layout->addWidget(m_leftBtn);
+    layout->addWidget(m_leftResult);
+    layout->addSpacing(20);
+    layout->addWidget(m_rightBtn);
+    layout->addWidget(m_rightResult);
+    layout->addSpacing(20);
+    layout->addWidget(m_backBtn);
+
+    connect(m_leftBtn, &QPushButton::clicked,
+            this, &VisionTestView::leftStartRequested);
+
+    connect(m_rightBtn, &QPushButton::clicked,
+            this, &VisionTestView::rightStartRequested);
+
+    connect(m_backBtn, &QPushButton::clicked,
+            this, &VisionTestView::backRequested);
+    
+    connect(m_exitBtn, &QPushButton::clicked,
+        this, &VisionTestView::exitRequested);
 }
 
+void VisionTestView::setLeftResult(const QString &value)
+{
+    m_leftResult->setText(value);
+}
+
+void VisionTestView::setRightResult(const QString &value)
+{
+    m_rightResult->setText(value);
+}

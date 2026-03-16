@@ -1,25 +1,24 @@
 #pragma once
 #include <QObject>
-#include <QStringList>
 
 class VisionTestView;
+class VisionService;
 
 class VisionTestController : public QObject
 {
     Q_OBJECT
 public:
-    explicit VisionTestController(VisionTestView* view,
-                                  QObject* parent = nullptr);
+    explicit VisionTestController(VisionTestView *view,
+                                  VisionService *service,
+                                  QObject *parent = nullptr);
 
 private slots:
-    void onStart();
-    void onOk();
-    void onCantSee();
-    void onBack();
+    //void startLeftTest();
+    //void startRightTest();
+    void goBack();
+    //void exitRequested();
 
 private:
-    VisionTestView* view;
-    QStringList testSequence { "CS", "DN", "RP", "ET", "ZO" };
-    int index{0};
+    VisionTestView *m_view;
+    VisionService *m_service;
 };
-

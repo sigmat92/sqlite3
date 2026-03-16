@@ -1,343 +1,274 @@
 #include "homeview.h"
 #include "metriccard.h"
-#include <QWidget>
-#include <QLabel>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QRadioButton>
+
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGridLayout>
-#include <QTimer>
-#include <QDateTime>
-#include <QProcess>
-#include <QDebug>
-#include "controller/visiontestcontroller.h"
-#include "view/visiontestview.h"
-#include "view/settingsview.h"
-#include "service/settingsservice.h"
+#include <QPushButton>
+#include <QLabel>
+#include <QLineEdit>
+#include <QRadioButton>
 #include <QMessageBox>
+#include <QDebug>
 
-HomeView::HomeView(QWidget* parent) : QWidget(parent)
+HomeView::HomeView(QWidget *parent)
+    : BaseView("", parent)
 {
-//style
-this->setStyleSheet(R"(
-#headerBar {
-    background-color: #000000;
-}
+    auto *layout = new QVBoxLayout(m_contentWidget);
+    //layout->setSpacing(12);
+    //layout->setContentsMargins(10,10,10,10);
 
-#footerBar {
-    background-color: #000000;
-}
+    /* ---------------- ACTION BAR ---------------- */
 
-#headerTitle {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
+    QWidget *actionBar = new QWidget;
+    QHBoxLayout *actionLayout = new QHBoxLayout(actionBar);
 
-#headerTime {
-    color: #DDDDDD;
-    font-size: 20px;
-    font-weight: bold;
-}
+    QPushButton *newTestBtn = new QPushButton("New Test");
+    QPushButton *settingsBtn = new QPushButton("Settings");
 
-#powerButton {
-    background-color: transparent;
-    color: red;
-    font-size: 32px;
-    border: none;
-}
+    //newTestBtn->setMinimumHeight(40);
+    //settingsBtn->setMinimumHeight(40);
 
-#footerText {
-    color: #AAAAAA;
-    font-size: 20px;
-}
-)");
+    //newTestBtn->setStyleSheet("background:#0d47a1;color:white;");
+    newTestBtn->setStyleSheet(
+        "font-size:22px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#0d47a1;"
+        "color:white;"
+    );
+    //newTestBtn->addStretch();
+    //settingsBtn->setStyleSheet("background:#455a64;color:white;");
+    settingsBtn->setStyleSheet(
+        "font-size:22px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#455a64;"
+        "color:white;"
+    );
 
-    /* -------- SCREEN -------- */
+    //actionLayout->addStretch();
+    actionLayout->addWidget(newTestBtn);
+    actionLayout->addWidget(settingsBtn);
 
-    auto* root = new QVBoxLayout(this);
-    root->setContentsMargins(12, 12, 12, 12);
-    root->setSpacing(10);
+    connect(newTestBtn,&QPushButton::clicked,this,[this](){
 
-   /* ================= Test Status Strip =============*/
-    QLabel *status = new QLabel("Test Status:");
-    status->setStyleSheet("background:#bbdefb; padding:8px; font-size:20px; font-weight:bold;");
-    status->setMinimumHeight(60);
-    status->setAlignment(Qt::AlignCenter);
-    /* ================= HEADER ================= */
-        
-    auto* headerBar = new QWidget;
-    headerBar->setObjectName("headerBar");
-    headerBar->setFixedHeight(60);
+        clearPatientFields();
+        unlockPatientFields();
+        statusLabel->setText("Test Status: New test started");
 
-    auto* headerLayout = new QHBoxLayout(headerBar);
-    headerLayout->setContentsMargins(12, 6, 12, 6);
-
-    /* METSL title */
-    auto* title = new QLabel("metsl");
-    title->setObjectName("headerTitle");
-    /* New Test Button */
-    QPushButton *newTest = new QPushButton("NEW TEST");
-
-    connect(newTest, &QPushButton::clicked, this, [=]() {
-        emit startNewTestRequested();
-        qDebug() << "HomeView: New Test requested";
-        status->setText("Test Status: New Test request starting...");
-    });
-    /*Settings Button*/
-    QPushButton *settings = new QPushButton("Settings");
-    
-    newTest->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
-    settings->setStyleSheet("background:#0d47a1; color:white; padding:8px 14px;");
-
-    connect(settings, &QPushButton::clicked, this, [=]() {
-    emit settingsRequested();   // cleaner name
-    qDebug() << "HomeView: settings requested";
-    status->setText("Test Status: Settings requested");
-});
-
-    /* RT Clock */
-    m_timeLabel = new QLabel;
-    m_timeLabel->setObjectName("headerTime");
-    auto* clockTimer = new QTimer(this);
-
-    connect(clockTimer, &QTimer::timeout, this, [this]() {
-        m_timeLabel->setText(
-        QDateTime::currentDateTime().toString("dd-MM-yyyy HH:mm:ss")
-       );
-    });
-    clockTimer->start(1000); // update every second
-
-    /* Power button */
-    
-    auto* powerBtn = new QPushButton("halt");
-    
-    powerBtn->setObjectName("powerButton");
-    powerBtn->setFixedSize(48, 48);
-
-    connect(powerBtn, &QPushButton::clicked, this, [=]() {
-    status->setText("Test Status: Shutting Down...");
-    QProcess::startDetached("poweroff");
     });
 
-    /* Layout order */
-    headerLayout->addWidget(title);
-    headerLayout->addStretch();
-    headerLayout->addWidget(newTest);
-    headerLayout->addSpacing(8);
-    headerLayout->addWidget(settings);
-    headerLayout->addSpacing(16);
-    headerLayout->addWidget(m_timeLabel);
-    headerLayout->addSpacing(16);
-    headerLayout->addWidget(powerBtn);
+    connect(settingsBtn,&QPushButton::clicked,this,[this](){
 
-    root->addWidget(headerBar);
+        emit settingsRequested();
 
-    /* ================= PATIENT INFO ================= */
+    });
+
+    layout->addWidget(actionBar);
+
+    /* ---------------- STATUS ---------------- */
+
+    statusLabel = new QLabel("Test Status: Ready...");
+
+    statusLabel->setAlignment(Qt::AlignCenter);
+    statusLabel->setMinimumHeight(45);
+
+    statusLabel->setStyleSheet(
+        "background:#bbdefb;"
+        "font-weight:bold;"
+        "border-radius: 8px;"
+        "font-size:22px;"
+    );
+
+    layout->addWidget(statusLabel);
+
+    /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
-    //patientPanel->setStyleSheet("background:#b3e5fc;");
-    patientPanel->setStyleSheet("background:#90caf9;");
-    auto *pLayout = new QGridLayout(patientPanel);
-    pLayout->setContentsMargins(16, 12, 16, 12);
-    pLayout->setHorizontalSpacing(20);
-    pLayout->setVerticalSpacing(10);
+    //patientPanel->setStyleSheet("background:#90caf9;");
+    patientPanel->setStyleSheet(
+        "background:#bbdefb;"
+        "font-weight:bold;"
+        "font-size:20px;"
+        "border-radius: 8px;"
+    );
 
-    //auto labelStyle = "font-weight:bold;"; //Common style foel labels
-
-    pLayout->addWidget(new QLabel("Patient Name"), 0, 0);
-    pLayout->addWidget(new QLabel("Patient Age"), 0, 1);
+    QGridLayout *pLayout = new QGridLayout(patientPanel);
 
     nameEdit = new QLineEdit;
+    nameEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+
     ageEdit = new QLineEdit;
+    ageEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
     mobileEdit = new QLineEdit;
+    mobileEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
 
     maleBtn = new QRadioButton("Male");
     femaleBtn = new QRadioButton("Female");
 
-
-    pLayout->addWidget(nameEdit, 1, 0);
-    pLayout->addWidget(ageEdit, 1, 1);
-
-    pLayout->addWidget(new QLabel("Mobile Number"), 2, 0);
-    pLayout->addWidget(new QLabel("Patient Gender"), 2, 1);
-
     QWidget *genderBox = new QWidget;
-    auto *gLayout = new QHBoxLayout(genderBox);
+    QHBoxLayout *gLayout = new QHBoxLayout(genderBox);
     gLayout->addWidget(maleBtn);
     gLayout->addWidget(femaleBtn);
 
-    pLayout->addWidget(mobileEdit, 3, 0);
-    pLayout->addWidget(genderBox, 3, 1);
+    pLayout->addWidget(new QLabel("Patient Name"),0,0);
+    pLayout->addWidget(new QLabel("Age"),0,1);
 
-    root->addWidget(patientPanel);
+    pLayout->addWidget(nameEdit,1,0);
+    pLayout->addWidget(ageEdit,1,1);
 
-    /* ================= VITALS ================= */
-   
+    pLayout->addWidget(new QLabel("Mobile Number"),2,0);
+    pLayout->addWidget(new QLabel("Gender"),2,1);
 
-    /* ========= Health Metrics.Vision Test ============ */
+    pLayout->addWidget(mobileEdit,3,0);
+    pLayout->addWidget(genderBox,3,1);
 
-    // ---- Health Metrics Panel ----
+    layout->addWidget(patientPanel);
 
-    QWidget* metricsPanel = new QWidget(this);
-    metricsPanel->setObjectName("panel");
+    /* ---------------- METRIC GRID ---------------- */
 
-    auto* mLayout = new QGridLayout(metricsPanel);
-    mLayout->setContentsMargins(16, 12, 16, 12);
-    mLayout->setSpacing(12);
+    QWidget *metricsPanel = new QWidget;
+    QGridLayout *grid = new QGridLayout(metricsPanel);
 
-    // Create cards (store as members)
-    //visionTestCard  = new MetricCard("👁 Vision Test");
-    visionTestCard  = new MetricCard("Vision Test");
-	spo2Card        = new MetricCard("SpO2 / Pulse");
-	nibpCard        = new MetricCard("NIBP");
-	heightCard      = new MetricCard("Height");
-	weightCard      = new MetricCard("Weight");
-	temperatureCard = new MetricCard("Temperature");
- 
-    // vision test start
-    connect(visionTestCard, &MetricCard::startRequested,
-            this, &HomeView::startVisionTestRequested);
-    // Debug (optional – remove later)
-    connect(this, &HomeView::startVisionTestRequested, this, [=]{
-    qDebug() << "HomeView: Vision Test start requested";
-    status->setText("Test Status: Vision Test starting...");
-    auto* v = new VisionTestView;
-    new VisionTestController(v, v);
-    //v->showFullScreen();   // kiosk mode
-    v->show();
-    });
-    // Spo2 start
-    connect(spo2Card, &MetricCard::startRequested,
-            this, &HomeView::startSpo2Requested);
-    // Debug (optional – remove later)
-    connect(this, &HomeView::startSpo2Requested, this, [=]{
-    qDebug() << "HomeView: SpO2 start requested";
-    status->setText("Test Status: SpO2 measurement started...");
-    });
-    // NIBPstart
-    connect(nibpCard, &MetricCard::startRequested,
-            this, &HomeView::startNIBPRequested);
-    // Debug (optional – remove later)
-    connect(this, &HomeView::startNIBPRequested, this, [=]{
-    qDebug() << "HomeView: NIBP start requested";
-    status->setText("Test Status: NIBP measurement started...");
-    });
-    // Height start
-    connect(heightCard, &MetricCard::startRequested,
-            this, &HomeView::startHeightRequested);
-    // Debug (optional – remove later)
-    connect(this, &HomeView::startHeightRequested, this, [=]{
-    qDebug() << "HomeView: Height start requested";
-    status->setText("Test Status: Height measurement started...");
-    });
-    // Weight start
-    connect(weightCard, &MetricCard::startRequested,
-            this, &HomeView::startWeightRequested);
-    // Debug (optional – remove later)
-    connect(this, &HomeView::startWeightRequested, this, [=]{
-    qDebug() << "HomeView: Weight start requested";
-    status->setText("Test Status: Weight measurement started...");
-    });
+    struct MetricDef
+    {
+        QString title;
+        QString status;
+        std::function<void()> signal;
+    };
 
-	// Temperature start ->emiting sigmnal controlller ->handles it
-    connect(temperatureCard, &MetricCard::startRequested,
-            this, &HomeView::startTemperatureRequested);
+    std::vector<MetricDef> metrics =
+    {
+        {"Vision Test","Vision test started",[this]{ emit visionTestRequested(); }},
+        {"SpO2 / Pulse","SpO2 measurement started",[this]{ emit startSpo2Requested(); }},
+        {"NIBP","NIBP measurement started",[this]{ emit startNIBPRequested(); }},
+        {"Height","Height measurement started",[this]{ emit startHeightRequested(); }},
+        {"Weight","Weight measurement started",[this]{ emit startWeightRequested(); }},
+        {"Temperature","Temperature measurement started",[this]{ emit startTemperatureRequested(); }}
+    };
 
-    connect(this, &HomeView::startTemperatureRequested, this, [=]{
-    qDebug() << "HomeView: Temperature start requested";
-    status->setText("Test Status: Temperature measurement started...");
-    
-     //status->setText("Test Status:");
-    });
+    const int columns = 3;
 
-    mLayout->addWidget(spo2Card, 0, 0);
-    mLayout->addWidget(nibpCard, 0, 1);
-    mLayout->addWidget(heightCard,1, 0);
-    mLayout->addWidget(weightCard,1, 1);
-    
-    mLayout->addWidget(temperatureCard,1, 2);
-    
-    mLayout->addWidget(visionTestCard,0, 2);
+    for(size_t i=0;i<metrics.size();++i)
+    {
+        MetricCard *card = new MetricCard(metrics[i].title);
 
-    root->addWidget(metricsPanel);
-    
-    root->addWidget(status);
-    //root->addWidget(printBtn);
-    /* ================= BMI + ACTIONS ================= */
-    QWidget *results = new QWidget;
-    results->setStyleSheet("background:#90caf9;");
-    auto *rLayout = new QGridLayout(results);
+        int row = i / columns;
+        int col = i % columns;
 
-    rLayout->addWidget(new QLabel("Test Results :"), 0, 0);
-    rLayout->addWidget(new QLabel("Body Mass Index"), 1, 0);
-    rLayout->addWidget(new QLabel(" -- "), 1, 1);
-    rLayout->addWidget(new QLabel("BMI Analysis"), 1, 2);
-    rLayout->addWidget(new QLabel(" -- "), 1, 3);
-    rLayout->addWidget(new QLabel("Basal Metabolic Rate"), 2, 0);
-    rLayout->addWidget(new QLabel(" -- "), 2, 1);
-    rLayout->addWidget(new QLabel("Body Surface Area"), 2, 2);
-    rLayout->addWidget(new QLabel(" -- "), 2, 3);
-    rLayout->addWidget(new QLabel("Far Vision"), 3, 0);
-    rLayout->addWidget(new QLabel(" -- "), 3, 1);
-    rLayout->addWidget(new QLabel("Near Vision"), 3, 2);
-    rLayout->addWidget(new QLabel(" -- "), 3, 3);
+        grid->addWidget(card,row,col);
+grid->setColumnStretch(0,1);
+grid->setColumnStretch(1,1);
+grid->setColumnStretch(2,1);
 
-    auto* printBtn = new QPushButton("Print Results");
-    printBtn->setMinimumHeight(40);
-    printBtn->setStyleSheet("background:#0d47a1; color:white;");
-    connect(printBtn, &QPushButton::clicked, this, [=]() {
+        connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
+
+            metrics[i].signal();
+
+            statusLabel->setText("Test Status: " + metrics[i].status);
+
+            qDebug() << metrics[i].title << "requested";
+
+        });
+
+        if(metrics[i].title == "SpO2 / Pulse")
+            spo2Card = card;
+
+        if(metrics[i].title == "Temperature")
+            temperatureCard = card;
+    }
+
+    layout->addWidget(metricsPanel);
+
+    /* ---------------- RESULTS PANEL ---------------- */
+
+    QWidget *resultsPanel = new QWidget;
+    //resultsPanel->setStyleSheet("background:#90caf9;");
+    resultsPanel->setStyleSheet(
+            "background:#bbdefb;"
+            "font-weight:bold;"
+            "font-size:20px;"
+            "border-radius: 8px;"
+        );
+    QGridLayout *rLayout = new QGridLayout(resultsPanel);
+
+    rLayout->addWidget(new QLabel("Test Results :"),0,0);
+
+    rLayout->addWidget(new QLabel("Body Mass Index"),1,0);
+    bmiLabel = new QLabel("--");
+    rLayout->addWidget(bmiLabel,1,1);
+
+    rLayout->addWidget(new QLabel("BMI Analysis"),1,2);
+    bmiAnalysisLabel = new QLabel("--");
+    rLayout->addWidget(bmiAnalysisLabel,1,3);
+
+    rLayout->addWidget(new QLabel("Basal Metabolic Rate"),2,0);
+    bmrLabel = new QLabel("--");
+    rLayout->addWidget(bmrLabel,2,1);
+
+    rLayout->addWidget(new QLabel("Body Surface Area"),2,2);
+    bsaLabel = new QLabel("--");
+    rLayout->addWidget(bsaLabel,2,3);
+
+    rLayout->addWidget(new QLabel("Far Vision"),3,0);
+    farVisionLabel = new QLabel("--");
+    rLayout->addWidget(farVisionLabel,3,1);
+
+    rLayout->addWidget(new QLabel("Near Vision"),3,2);
+    nearVisionLabel = new QLabel("--");
+    rLayout->addWidget(nearVisionLabel,3,3);
+
+    layout->addWidget(resultsPanel);
+
+    /* ---------------- PRINT BUTTON ---------------- */
+
+    QPushButton *printBtn = new QPushButton("Print Results");
+
+    //printBtn->setMinimumHeight(45);
+    //printBtn->setStyleSheet("background:#0d47a1;color:white;");
+    printBtn->setStyleSheet(
+        "font-size:22px;"
+        "font-weight:bold;"
+        "background:#0d47a1;"
+        "color:white;"
+        "border-radius: 5px;"
+    );
+
+    connect(printBtn,&QPushButton::clicked,this,[this](){
+
         emit startPrintingRequested();
-        qDebug() << "HomeView: print button clicked";
-        status->setText("Test Status: Printing results...");
+        statusLabel->setText("Test Status: Printing results...");
+
     });
-  
-    root->addWidget(results);
-    
-    //root->addWidget(printBtn,0,Qt::AlignRight);
-    /* ================= FOOTER ================= */
 
-    auto* footerBar = new QWidget;
-    footerBar->setObjectName("footerBar");
-    footerBar->setFixedHeight(60);
-
-    auto* footerLayout = new QHBoxLayout(footerBar);
-    footerLayout->setContentsMargins(12, 4, 12, 4);
-
-    auto* statusLabel = new QLabel("Care Nest Mini v1.0.0");
-    statusLabel->setObjectName("footerText");
-
-    auto* versionLabel = new QLabel("Care Nest Mini v1.0.0");
-    versionLabel->setObjectName("footerText");
-
-    footerLayout->addWidget(statusLabel);
-    //footerLayout->addStretch();
-    footerLayout->addWidget(printBtn,0,Qt::AlignRight);
-    //footerLayout->addWidget(versionLabel,0,Qt::AlignLeft);
-
-    root->addWidget(footerBar);
+    layout->addWidget(printBtn);
 }
+
+/* ================= TEMPERATURE ================= */
 
 void HomeView::setTemperatureBusy(bool busy)
 {
-    if (temperatureCard)
+    if(temperatureCard)
         temperatureCard->setBusy(busy);
 }
 
-void HomeView::setTemperatureText(const QString& text)
+void HomeView::setTemperatureText(const QString &text)
 {
-    if (temperatureCard)
+    if(temperatureCard)
         temperatureCard->setValue(text);
 }
 
-void HomeView::onVitalsUpdated(int spo2, int pulse)
+/* ================= SPO2 ================= */
+
+void HomeView::onVitalsUpdated(int spo2,int pulse)
 {
-    if (spo2Card)
+    if(spo2Card)
         spo2Card->setValue(QString("%1 / %2").arg(spo2).arg(pulse));
 }
-//
+
+/* ================= PATIENT DATA ================= */
+
 QString HomeView::patientName() const
 {
     return nameEdit->text().trimmed();
@@ -355,23 +286,21 @@ QString HomeView::patientMobile() const
 
 QString HomeView::patientGender() const
 {
-    if (maleBtn->isChecked()) return "Male";
-    if (femaleBtn->isChecked()) return "Female";
+    if(maleBtn->isChecked()) return "Male";
+    if(femaleBtn->isChecked()) return "Female";
     return "";
 }
+
+/* ================= FIELD CONTROL ================= */
 
 void HomeView::lockPatientFields()
 {
     nameEdit->setReadOnly(true);
     ageEdit->setReadOnly(true);
     mobileEdit->setReadOnly(true);
+
     maleBtn->setEnabled(false);
     femaleBtn->setEnabled(false);
-}
-
-void HomeView::showError(const QString& msg)
-{
-    QMessageBox::warning(this, "Error", msg);
 }
 
 void HomeView::unlockPatientFields()
@@ -379,6 +308,7 @@ void HomeView::unlockPatientFields()
     nameEdit->setReadOnly(false);
     ageEdit->setReadOnly(false);
     mobileEdit->setReadOnly(false);
+
     maleBtn->setEnabled(true);
     femaleBtn->setEnabled(true);
 }
@@ -388,6 +318,14 @@ void HomeView::clearPatientFields()
     nameEdit->clear();
     ageEdit->clear();
     mobileEdit->clear();
+
     maleBtn->setChecked(false);
     femaleBtn->setChecked(false);
+}
+
+/* ================= ERROR ================= */
+
+void HomeView::showError(const QString &msg)
+{
+    QMessageBox::warning(this,"Error",msg);
 }

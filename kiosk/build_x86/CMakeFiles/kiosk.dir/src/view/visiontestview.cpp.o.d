@@ -2,6 +2,7 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -397,16 +398,6 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
@@ -417,4 +408,15 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h

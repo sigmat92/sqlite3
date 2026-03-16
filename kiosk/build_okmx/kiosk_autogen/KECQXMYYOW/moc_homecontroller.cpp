@@ -47,6 +47,7 @@ static constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelp
     "spo2",
     "pulse",
     "onStartSpo2Requested",
+    "visionTestRequested",
     "onSpO2Final",
     "onTemperatureFinal",
     "temp",
@@ -60,7 +61,7 @@ static constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelp
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {
-    uint offsetsAndSizes[38];
+    uint offsetsAndSizes[40];
     char stringdata0[15];
     char stringdata1[21];
     char stringdata2[1];
@@ -70,16 +71,17 @@ struct qt_meta_stringdata_CLASSHomeControllerENDCLASS_t {
     char stringdata6[5];
     char stringdata7[6];
     char stringdata8[21];
-    char stringdata9[12];
-    char stringdata10[19];
-    char stringdata11[5];
-    char stringdata12[14];
-    char stringdata13[7];
-    char stringdata14[14];
-    char stringdata15[7];
-    char stringdata16[12];
-    char stringdata17[4];
+    char stringdata9[20];
+    char stringdata10[12];
+    char stringdata11[19];
+    char stringdata12[5];
+    char stringdata13[14];
+    char stringdata14[7];
+    char stringdata15[14];
+    char stringdata16[7];
+    char stringdata17[12];
     char stringdata18[4];
+    char stringdata19[4];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -94,16 +96,17 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeControllerENDCLASS_t qt_met
         QT_MOC_LITERAL(62, 4),  // "spo2"
         QT_MOC_LITERAL(67, 5),  // "pulse"
         QT_MOC_LITERAL(73, 20),  // "onStartSpo2Requested"
-        QT_MOC_LITERAL(94, 11),  // "onSpO2Final"
-        QT_MOC_LITERAL(106, 18),  // "onTemperatureFinal"
-        QT_MOC_LITERAL(125, 4),  // "temp"
-        QT_MOC_LITERAL(130, 13),  // "onWeightFinal"
-        QT_MOC_LITERAL(144, 6),  // "weight"
-        QT_MOC_LITERAL(151, 13),  // "onHeightFinal"
-        QT_MOC_LITERAL(165, 6),  // "height"
-        QT_MOC_LITERAL(172, 11),  // "onNIBPFinal"
-        QT_MOC_LITERAL(184, 3),  // "sys"
-        QT_MOC_LITERAL(188, 3)   // "dia"
+        QT_MOC_LITERAL(94, 19),  // "visionTestRequested"
+        QT_MOC_LITERAL(114, 11),  // "onSpO2Final"
+        QT_MOC_LITERAL(126, 18),  // "onTemperatureFinal"
+        QT_MOC_LITERAL(145, 4),  // "temp"
+        QT_MOC_LITERAL(150, 13),  // "onWeightFinal"
+        QT_MOC_LITERAL(164, 6),  // "weight"
+        QT_MOC_LITERAL(171, 13),  // "onHeightFinal"
+        QT_MOC_LITERAL(185, 6),  // "height"
+        QT_MOC_LITERAL(192, 11),  // "onNIBPFinal"
+        QT_MOC_LITERAL(204, 3),  // "sys"
+        QT_MOC_LITERAL(208, 3)   // "dia"
     },
     "HomeController",
     "onTemperatureChanged",
@@ -114,6 +117,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeControllerENDCLASS_t qt_met
     "spo2",
     "pulse",
     "onStartSpo2Requested",
+    "visionTestRequested",
     "onSpO2Final",
     "onTemperatureFinal",
     "temp",
@@ -135,7 +139,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -143,24 +147,26 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   62,    2, 0x0a,    1 /* Public */,
-       5,    2,   67,    2, 0x0a,    4 /* Public */,
-       8,    0,   72,    2, 0x0a,    7 /* Public */,
-       9,    2,   73,    2, 0x08,    8 /* Private */,
-      10,    1,   78,    2, 0x08,   11 /* Private */,
-      12,    1,   81,    2, 0x08,   13 /* Private */,
-      14,    1,   84,    2, 0x08,   15 /* Private */,
-      16,    2,   87,    2, 0x08,   17 /* Private */,
+       1,    2,   68,    2, 0x0a,    1 /* Public */,
+       5,    2,   73,    2, 0x0a,    4 /* Public */,
+       8,    0,   78,    2, 0x0a,    7 /* Public */,
+       9,    0,   79,    2, 0x0a,    8 /* Public */,
+      10,    2,   80,    2, 0x08,    9 /* Private */,
+      11,    1,   85,    2, 0x08,   12 /* Private */,
+      13,    1,   88,    2, 0x08,   14 /* Private */,
+      15,    1,   91,    2, 0x08,   16 /* Private */,
+      17,    2,   94,    2, 0x08,   18 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
     QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
-    QMetaType::Void, QMetaType::Double,   11,
-    QMetaType::Void, QMetaType::Double,   13,
-    QMetaType::Void, QMetaType::Int,   15,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,   17,   18,
+    QMetaType::Void, QMetaType::Double,   12,
+    QMetaType::Void, QMetaType::Double,   14,
+    QMetaType::Void, QMetaType::Int,   16,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   18,   19,
 
        0        // eod
 };
@@ -183,6 +189,8 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onStartSpo2Requested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'visionTestRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onSpO2Final'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -214,11 +222,12 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 0: _t->onTemperatureChanged((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
         case 1: _t->onSpO2Changed((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 2: _t->onStartSpo2Requested(); break;
-        case 3: _t->onSpO2Final((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 4: _t->onTemperatureFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
-        case 5: _t->onWeightFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
-        case 6: _t->onHeightFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 7: _t->onNIBPFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 3: _t->visionTestRequested(); break;
+        case 4: _t->onSpO2Final((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 5: _t->onTemperatureFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 6: _t->onWeightFinal((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 7: _t->onHeightFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 8: _t->onNIBPFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     }
@@ -243,13 +252,13 @@ int HomeController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

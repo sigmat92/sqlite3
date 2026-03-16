@@ -9,7 +9,7 @@ public:
     explicit UartDevice(QObject* parent = nullptr);
     bool open(const QString& dev, int baud);
     void writeBytes(const QByteArray& data);
-    void send(const QByteArray& data) { writeBytes(data); }
+    void send(const QByteArray& data);
 
 signals:
     void bytesReceived(const QByteArray& data);

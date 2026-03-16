@@ -1,87 +1,63 @@
 #pragma once
 
-#include <QWidget>
+#include "baseview.h"
+#include "metriccard.h"
 
-class QLabel;
-class QLineEdit;
-class QRadioButton;
-class MetricCard;
+#include <QLineEdit>
+#include <QRadioButton>
+#include <QLabel>
 
-class HomeView : public QWidget
+class HomeView : public BaseView
 {
     Q_OBJECT
 
 public:
-    explicit HomeView(QWidget* parent = nullptr);
+    explicit HomeView(QWidget *parent = nullptr);
 
-    // Patient API
-    void clearPatient();
-    void setPatientName(const QString&);
-    void setMobile(const QString&);
-    void setAge(int);
-    void setGender(const QString&);
-
-    // Metrics API
-    void setSpO2(int spo2, int pulse);
-    void setNIBP(const QString&);
-    void setHeight(int);
-    void setWeight(double);
-    void setTemperature(double);
-    
-    void setTemperatureText(const QString& text);
-    void setTemperatureBusy(bool busy);  
-
-    // ---- Patient getters ----
     QString patientName() const;
     QString patientAge() const;
     QString patientMobile() const;
     QString patientGender() const;
 
-    // ---- UI control ----
-    void showError(const QString& message);
     void lockPatientFields();
     void unlockPatientFields();
     void clearPatientFields();
 
-signals:
+    void showError(const QString &msg);
 
-    void startTemperatureRequested();
+public slots:
+    void setTemperatureBusy(bool busy);
+    void setTemperatureText(const QString &text);
+    void onVitalsUpdated(int spo2,int pulse);
+
+signals:
     void startSpo2Requested();
+    void startTemperatureRequested();
     void startNIBPRequested();
     void startHeightRequested();
     void startWeightRequested();
-    void startVisionTestRequested();
-    void startNewTestRequested();
-    void startSettingsRequested();
-    void startPrintingRequested();
     void visionTestRequested();
+    void startPrintingRequested();
     void settingsRequested();
-    
-
-
-public slots:
-    void onVitalsUpdated(int spo2, int pulse);
-    
-
 
 private:
-    /* ---------- Header ---------- */
-    QLabel* m_timeLabel{nullptr};
 
-    /* ---------- Patient fields ---------- */
-    QLineEdit* nameEdit{nullptr};
-    QLineEdit* mobileEdit{nullptr};
-    QLineEdit* ageEdit{nullptr};
-    QRadioButton* maleBtn{nullptr};
-    QRadioButton* femaleBtn{nullptr};
+    QLabel *statusLabel;
 
-    /* ---------- Metric values ---------- */
+    QLineEdit *nameEdit;
+    QLineEdit *ageEdit;
+    QLineEdit *mobileEdit;
 
-    MetricCard* temperatureCard{nullptr};
-    MetricCard* spo2Card{nullptr};
-    MetricCard* nibpCard{nullptr};
-    MetricCard* heightCard{nullptr};
-    MetricCard* weightCard{nullptr};
-    MetricCard* visionTestCard{nullptr};
+    QRadioButton *maleBtn;
+    QRadioButton *femaleBtn;
+
+    MetricCard *spo2Card = nullptr;
+    MetricCard *temperatureCard = nullptr;
+
+    QLabel *bmiLabel;
+    QLabel *bmiAnalysisLabel;
+    QLabel *bmrLabel;
+    QLabel *bsaLabel;
+    QLabel *farVisionLabel;
+    QLabel *nearVisionLabel;
 };
-

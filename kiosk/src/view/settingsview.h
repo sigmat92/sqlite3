@@ -1,59 +1,84 @@
 #pragma once
-#include <QWidget>
 
-class QTabWidget;
-class QLineEdit;
-class QPushButton;
-class QLabel;
+#include "baseview.h"
+#include <QLineEdit>
+#include <QPushButton>
+#include <QComboBox>
+#include <QCheckBox>
+#include <QRadioButton>
+#include <QButtonGroup>
+#include <QTabWidget>
 
-class SettingsView : public QWidget
+class SettingsView : public BaseView
 {
     Q_OBJECT
-public:
-    explicit SettingsView(QWidget* parent = nullptr);
 
-    void unlockControls();
+public:
+    explicit SettingsView(QWidget *parent = nullptr);
+
+    // ===== Lock / Unlock (Controller uses this) =====
     void lockControls();
+    void unlockControls();
+
+    // ===== WIFI =====
+    QString ssid() const;
+    QString securityType() const;
+    QString securityKey() const;
+    int deviceId() const;
+
+    // ===== SERVER =====
+    QString serverIp() const;
+    int serverPort() const;
+
+    // ===== DEVICE =====
+    QString deviceIp() const;
+    QString subnetMask() const;
+    QString gateway() const;
+
+    bool isDhcpEnabled() const;
+    bool isAutoSendEnabled() const;
+    QString usbMode() const;
 
 signals:
-    void adminLoginRequested(QString pin);
-    void wifiConnectRequested(QString ssid, QString pass);
-    void dhcpToggled(bool enabled);
-    void staticIPRequested(QString ip, QString mask, QString gateway);
+    void saveRequested();
+    void exitRequested();
+    void dhcpToggled(bool);
 
 private:
-    void setupUI();
-    QWidget* createCommTab();
-    QWidget* createIPRow(QLineEdit*& a,
-                         QLineEdit*& b,
-                         QLineEdit*& c,
-                         QLineEdit*& d);
+    void setupUi();
+    QWidget* createIpFieldRow(QLineEdit* fields[4]);
 
-    QTabWidget* m_tabs;
+    // Tabs
+    QTabWidget *m_tabs;
+    QWidget *m_dateTab;
+    QWidget *m_calibrationTab;
+    QWidget *m_commTab;
 
-    QLineEdit* m_ssid;
-    QLineEdit* m_key;
+    // WIFI
+    QLineEdit *m_ssid;
+    QComboBox *m_securityType;
+    QLineEdit *m_securityKey;
+    QLineEdit *m_deviceId;
 
-    QLineEdit* m_serverIp1;
-    QLineEdit* m_serverIp2;
-    QLineEdit* m_serverIp3;
-    QLineEdit* m_serverIp4;
-    QLineEdit* m_port;
+    // SERVER
+    QLineEdit *m_serverIp[4];
+    QLineEdit *m_serverPort;
 
-    QLineEdit* m_devIp1;
-    QLineEdit* m_devIp2;
-    QLineEdit* m_devIp3;
-    QLineEdit* m_devIp4;
+    // DEVICE
+    QLineEdit *m_deviceIp[4];
+    QLineEdit *m_subnet[4];
+    QLineEdit *m_gateway[4];
 
-    QLineEdit* m_mask1;
-    QLineEdit* m_mask2;
-    QLineEdit* m_mask3;
-    QLineEdit* m_mask4;
+    // Bottom Controls
+    QPushButton *m_dhcpBtn;
+    QCheckBox *m_autoSend;
+    QRadioButton *m_usbDevice;
+    QRadioButton *m_usbHostMSC;
+    QRadioButton *m_usbHostCDC;
+    QButtonGroup *m_usbGroup;
 
-    QLineEdit* m_gate1;
-    QLineEdit* m_gate2;
-    QLineEdit* m_gate3;
-    QLineEdit* m_gate4;
+    QPushButton *m_saveBtn;
+    QPushButton *m_exitBtn;
 
-    QPushButton* m_dhcpBtn;
+    bool m_dhcpEnabled = false;
 };

@@ -1,36 +1,58 @@
-#include "settingscontroller.h"
+#include "../controller/settingscontroller.h"
 #include "../view/settingsview.h"
 #include "../service/systemsettingsservice.h"
-#include "../service/adminauthservice.h"
 
-SettingsController::SettingsController(SettingsView* view,
-                                       SystemSettingsService* service,
-                                       AdminAuthService* auth,
-                                       QObject* parent)
+
+SettingsController::SettingsController(
+        SettingsView *view,
+        SystemSettingsService *service,
+        AdminAuthService *authService,
+        QObject *parent)
     : QObject(parent),
       m_view(view),
       m_service(service),
-      m_auth(auth)
+      m_authService(authService)
 {
-    // 🔐 Admin login
-    connect(m_view, &SettingsView::adminLoginRequested,
-            this, [=](QString pin)
-    {
-        if (m_auth->authenticate(pin))
-            m_view->unlockControls();
-        else
-            m_view->lockControls();
-    });
+    connect(m_view, &SettingsView::saveRequested,
+            this, &SettingsController::handleSave);
 
-    // 📡 WiFi connect
-    connect(m_view, &SettingsView::wifiConnectRequested,
-            m_service, &SystemSettingsService::connectWifi);
+    connect(m_view, &SettingsView::exitRequested,
+            this, &SettingsController::handleExit);
 
-    // 🔁 DHCP toggle
     connect(m_view, &SettingsView::dhcpToggled,
-            m_service, &SystemSettingsService::enableDHCP);
-
-    // 🌐 Static IP
-    connect(m_view, &SettingsView::staticIPRequested,
-            m_service, &SystemSettingsService::setStaticIP);
+            this, &SettingsController::handleDhcpToggle);
 }
+
+void SettingsController::handleSave()
+{
+    m_view->lockControls();
+
+    m_service->setWifi(
+        m_view->ssid(),
+        m_view->securityKey());
+
+    m_service->setServer(
+        m_view->serverIp(),
+        m_view->serverPort());
+
+    m_service->setDeviceNetwork(
+        m_view->deviceIp(),
+        m_view->subnetMask(),
+        m_view->gateway());
+
+    m_service->save();
+
+    m_view->unlockControls();
+}
+
+void SettingsController::handleExit()
+{
+    //emit m_view->exitRequested();//wrong
+    emit exitToHomeRequested();
+}
+
+void SettingsController::handleDhcpToggle(bool enabled)
+{
+    m_service->setDhcpEnabled(enabled);
+}
+

@@ -2,6 +2,7 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/view/homeview.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -397,7 +398,6 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
@@ -409,6 +409,18 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
@@ -417,36 +429,10 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QProcess \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
- /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
- /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
- /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qmessagebox.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qdialog.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

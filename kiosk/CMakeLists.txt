@@ -28,7 +28,7 @@ endif()
 # --------------------------------------------------
 # Qt
 # --------------------------------------------------
-find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Network PrintSupport)
 
 # --------------------------------------------------
 # SQLite3 (from Yocto sysroot)
@@ -106,6 +106,8 @@ set(SRC
     src/service/systemsettingsservice.cpp
     src/service/adminauthservice.h
     src/service/adminauthservice.cpp
+    src/service/visionservice.h
+    src/service/visionservice.cpp
     
     # Platform
     src/platform/v4l2/v4l2camera.h
@@ -130,8 +132,7 @@ set(SRC
     src/storage/vitalsrepository.cpp
     
     # Views
-    #src/view/mainwindow.h
-    #src/view/mainwindow.cpp
+    
     src/view/homeview.h
     src/view/homeview.cpp
     src/view/metriccard.h
@@ -140,6 +141,8 @@ set(SRC
     src/view/visiontestview.cpp
     src/view/settingsview.h
     src/view/settingsview.cpp
+    src/view/baseview.h
+    src/view/baseview.cpp
 )
 
 # --------------------------------------------------
@@ -165,6 +168,7 @@ target_link_libraries(kiosk
         ZXing::ZXing
         SQLite::SQLite3
         Qt6::Network
+	Qt6::PrintSupport
 	    
 )
 

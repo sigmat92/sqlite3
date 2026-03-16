@@ -397,12 +397,6 @@ CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
@@ -413,4 +407,10 @@ CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h
