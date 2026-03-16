@@ -29,7 +29,7 @@ int main()
 
     // Start NIBP
     write(fd, "\x96\xAA\xF5\x01\x01", 5);
-
+//while(true) {
     time_t start = time(nullptr);
     while (time(nullptr) - start < 30) {
         uint8_t ctrl;
@@ -51,6 +51,7 @@ int main()
 
     // Stop NIBP
     write(fd, "\x96\xAA\xF5\x01\x00", 5);
+//}
     close(fd);
 }
 

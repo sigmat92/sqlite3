@@ -4,7 +4,6 @@
 #include <fcntl.h>
 #include <termios.h>
 #include <ctime>
-#include <cstdint> 
 
 int open_uart(const char* dev)
 {
@@ -41,7 +40,7 @@ int main()
     // Request SPO2
     write(fd, "\x96\xAA\xF4", 3);
 
-    time_t start = time(nullptr);
+:x    time_t start = time(nullptr);
     while (time(nullptr) - start < 3) {
         uint8_t ctrl;
         std::vector<uint8_t> p;
@@ -49,6 +48,7 @@ int main()
 
         if (ctrl == 0xF4 && p.size() == 1 && p[0] <= 100) {
             std::cout << "SPO2 = " << int(p[0]) << " %\n";
+            std::cout << "Pulse = " << int(p[1]) << " %\n";
             break;
         }
     }

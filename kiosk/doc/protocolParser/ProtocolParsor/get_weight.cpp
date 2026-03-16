@@ -1,8 +1,8 @@
 #include <iostream>
+#include <vector>
 #include <unistd.h>
 #include <fcntl.h>
 #include <termios.h>
-#include <cstdint> 
 
 int main()
 {
@@ -16,17 +16,24 @@ int main()
     tty.c_cc[VMIN] = 0;
     tty.c_cc[VTIME] = 5;
     tcsetattr(fd, TCSANOW, &tty);
+    std::cout << "uart opened";
 
-    write(fd, "\x96\xAA\xF7", 3);
-
-    uint8_t ctrl, nob, val;
+    // Request weight
+    
+    write(fd, "\x96\xAA\xF8", 3);
+    std::cout << "weight request sent";
+    uint8_t ctrl, nob;
     read(fd, &ctrl, 1);
     read(fd, &nob, 1);
-    read(fd, &val, 1);
 
-    if (ctrl == 0xF7 && nob == 1)
-        std::cout << "Height = " << int(val) << "\n";
-
+    while(true) {
+    if (ctrl == 0xF8 && nob == 3) {
+        uint8_t p[3];
+        read(fd, p, 3);
+        float weight = p[0] + p[1] / 10.0f;
+        std::cout << "Weight = " << weight << "\n";
+    }
+    }
     close(fd);
 }
 
