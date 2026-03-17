@@ -31,7 +31,7 @@ setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         "font-weight:bold;"
         "background:#0288d1;"
         "color:white;"
-        "border-radius: 10px;"
+        "border-radius: 5px;"
     );
 
     layout->addWidget(titleLabel);

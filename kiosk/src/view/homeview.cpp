@@ -15,8 +15,6 @@ HomeView::HomeView(QWidget *parent)
     : BaseView("", parent)
 {
     auto *layout = new QVBoxLayout(m_contentWidget);
-    //layout->setSpacing(12);
-    //layout->setContentsMargins(10,10,10,10);
 
     /* ---------------- ACTION BAR ---------------- */
 
@@ -26,28 +24,22 @@ HomeView::HomeView(QWidget *parent)
     QPushButton *newTestBtn = new QPushButton("New Test");
     QPushButton *settingsBtn = new QPushButton("Settings");
 
-    //newTestBtn->setMinimumHeight(40);
-    //settingsBtn->setMinimumHeight(40);
-
-    //newTestBtn->setStyleSheet("background:#0d47a1;color:white;");
     newTestBtn->setStyleSheet(
-        "font-size:22px;"
+        "font-size:28px;"
         "border-radius: 8px;"
         "font-weight:bold;"
         "background:#0d47a1;"
         "color:white;"
     );
-    //newTestBtn->addStretch();
-    //settingsBtn->setStyleSheet("background:#455a64;color:white;");
+
     settingsBtn->setStyleSheet(
-        "font-size:22px;"
+        "font-size:28px;"
         "border-radius: 8px;"
         "font-weight:bold;"
         "background:#455a64;"
         "color:white;"
     );
 
-    //actionLayout->addStretch();
     actionLayout->addWidget(newTestBtn);
     actionLayout->addWidget(settingsBtn);
 
@@ -86,7 +78,7 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
-    //patientPanel->setStyleSheet("background:#90caf9;");
+  
     patientPanel->setStyleSheet(
         "background:#bbdefb;"
         "font-weight:bold;"
@@ -95,7 +87,6 @@ HomeView::HomeView(QWidget *parent)
     );
 
     QGridLayout *pLayout = new QGridLayout(patientPanel);
-
     nameEdit = new QLineEdit;
     nameEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
 
@@ -105,7 +96,9 @@ HomeView::HomeView(QWidget *parent)
     mobileEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
 
     maleBtn = new QRadioButton("Male");
+    maleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
     femaleBtn = new QRadioButton("Female");
+    femaleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
 
     QWidget *genderBox = new QWidget;
     QHBoxLayout *gLayout = new QHBoxLayout(genderBox);
@@ -182,53 +175,64 @@ grid->setColumnStretch(2,1);
     layout->addWidget(metricsPanel);
 
     /* ---------------- RESULTS PANEL ---------------- */
+  
+    QLabel *resultsTitle = new QLabel("Test Results :");
+    resultsTitle->setAlignment(Qt::AlignCenter);
+
+    resultsTitle->setStyleSheet(
+        "background:#bbdefb;"
+        "font-weight:bold;"
+        "border-radius: 8px;"
+        "font-size:24px;"
+    );
 
     QWidget *resultsPanel = new QWidget;
-    //resultsPanel->setStyleSheet("background:#90caf9;");
     resultsPanel->setStyleSheet(
             "background:#bbdefb;"
             "font-weight:bold;"
-            "font-size:20px;"
+            "font-size:22px;"
             "border-radius: 8px;"
         );
     QGridLayout *rLayout = new QGridLayout(resultsPanel);
+    rLayout->setRowStretch(0,1);
+    rLayout->setRowStretch(1,1);
+    rLayout->setRowStretch(2,1);
+    rLayout->setRowStretch(3,1);
+    rLayout->addWidget(resultsTitle);
 
-    rLayout->addWidget(new QLabel("Test Results :"),0,0);
-
-    rLayout->addWidget(new QLabel("Body Mass Index"),1,0);
+    QLabel *bodyMassIndexLabel = new QLabel("Body Mass Index");
+    rLayout->addWidget(bodyMassIndexLabel,1,0);
+    
     bmiLabel = new QLabel("--");
     rLayout->addWidget(bmiLabel,1,1);
-
+    //rLayout->setRowStretch(1,1);
     rLayout->addWidget(new QLabel("BMI Analysis"),1,2);
     bmiAnalysisLabel = new QLabel("--");
     rLayout->addWidget(bmiAnalysisLabel,1,3);
-
     rLayout->addWidget(new QLabel("Basal Metabolic Rate"),2,0);
     bmrLabel = new QLabel("--");
     rLayout->addWidget(bmrLabel,2,1);
-
+    //rLayout->setRowStretch(2,1);
     rLayout->addWidget(new QLabel("Body Surface Area"),2,2);
     bsaLabel = new QLabel("--");
     rLayout->addWidget(bsaLabel,2,3);
-
+    //rLayout->setRowStretch(3,1);
     rLayout->addWidget(new QLabel("Far Vision"),3,0);
     farVisionLabel = new QLabel("--");
     rLayout->addWidget(farVisionLabel,3,1);
-
+  
     rLayout->addWidget(new QLabel("Near Vision"),3,2);
     nearVisionLabel = new QLabel("--");
     rLayout->addWidget(nearVisionLabel,3,3);
-
+    rLayout->setRowStretch(3,1);
     layout->addWidget(resultsPanel);
 
     /* ---------------- PRINT BUTTON ---------------- */
 
     QPushButton *printBtn = new QPushButton("Print Results");
 
-    //printBtn->setMinimumHeight(45);
-    //printBtn->setStyleSheet("background:#0d47a1;color:white;");
     printBtn->setStyleSheet(
-        "font-size:22px;"
+        "font-size:28px;"
         "font-weight:bold;"
         "background:#0d47a1;"
         "color:white;"
