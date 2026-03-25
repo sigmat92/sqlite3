@@ -359,54 +359,6 @@ src/controller/printcontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s
 .PHONY : src/controller/printcontroller.cpp.s
 
-src/controller/protocolcontroller.o: src/controller/protocolcontroller.cpp.o
-.PHONY : src/controller/protocolcontroller.o
-
-# target to build an object file
-src/controller/protocolcontroller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o
-.PHONY : src/controller/protocolcontroller.cpp.o
-
-src/controller/protocolcontroller.i: src/controller/protocolcontroller.cpp.i
-.PHONY : src/controller/protocolcontroller.i
-
-# target to preprocess a source file
-src/controller/protocolcontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.i
-.PHONY : src/controller/protocolcontroller.cpp.i
-
-src/controller/protocolcontroller.s: src/controller/protocolcontroller.cpp.s
-.PHONY : src/controller/protocolcontroller.s
-
-# target to generate assembly for a file
-src/controller/protocolcontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.s
-.PHONY : src/controller/protocolcontroller.cpp.s
-
-src/controller/protocolparser.o: src/controller/protocolparser.cpp.o
-.PHONY : src/controller/protocolparser.o
-
-# target to build an object file
-src/controller/protocolparser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o
-.PHONY : src/controller/protocolparser.cpp.o
-
-src/controller/protocolparser.i: src/controller/protocolparser.cpp.i
-.PHONY : src/controller/protocolparser.i
-
-# target to preprocess a source file
-src/controller/protocolparser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.i
-.PHONY : src/controller/protocolparser.cpp.i
-
-src/controller/protocolparser.s: src/controller/protocolparser.cpp.s
-.PHONY : src/controller/protocolparser.s
-
-# target to generate assembly for a file
-src/controller/protocolparser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.s
-.PHONY : src/controller/protocolparser.cpp.s
-
 src/controller/settingscontroller.o: src/controller/settingscontroller.cpp.o
 .PHONY : src/controller/settingscontroller.o
 
@@ -623,6 +575,30 @@ src/platform/input/rotaryhandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.s
 .PHONY : src/platform/input/rotaryhandler.cpp.s
 
+src/platform/uart/protocolparser.o: src/platform/uart/protocolparser.cpp.o
+.PHONY : src/platform/uart/protocolparser.o
+
+# target to build an object file
+src/platform/uart/protocolparser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o
+.PHONY : src/platform/uart/protocolparser.cpp.o
+
+src/platform/uart/protocolparser.i: src/platform/uart/protocolparser.cpp.i
+.PHONY : src/platform/uart/protocolparser.i
+
+# target to preprocess a source file
+src/platform/uart/protocolparser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.i
+.PHONY : src/platform/uart/protocolparser.cpp.i
+
+src/platform/uart/protocolparser.s: src/platform/uart/protocolparser.cpp.s
+.PHONY : src/platform/uart/protocolparser.s
+
+# target to generate assembly for a file
+src/platform/uart/protocolparser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.s
+.PHONY : src/platform/uart/protocolparser.cpp.s
+
 src/platform/uart/uartdevice.o: src/platform/uart/uartdevice.cpp.o
 .PHONY : src/platform/uart/uartdevice.o
 
@@ -791,6 +767,30 @@ src/service/systemsettingsservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.s
 .PHONY : src/service/systemsettingsservice.cpp.s
 
+src/service/visionservice.o: src/service/visionservice.cpp.o
+.PHONY : src/service/visionservice.o
+
+# target to build an object file
+src/service/visionservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.o
+.PHONY : src/service/visionservice.cpp.o
+
+src/service/visionservice.i: src/service/visionservice.cpp.i
+.PHONY : src/service/visionservice.i
+
+# target to preprocess a source file
+src/service/visionservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.i
+.PHONY : src/service/visionservice.cpp.i
+
+src/service/visionservice.s: src/service/visionservice.cpp.s
+.PHONY : src/service/visionservice.s
+
+# target to generate assembly for a file
+src/service/visionservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/visionservice.cpp.s
+.PHONY : src/service/visionservice.cpp.s
+
 src/service/vitalsservice.o: src/service/vitalsservice.cpp.o
 .PHONY : src/service/vitalsservice.o
 
@@ -935,6 +935,30 @@ src/storage/vitalsrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s
 .PHONY : src/storage/vitalsrepository.cpp.s
 
+src/view/baseview.o: src/view/baseview.cpp.o
+.PHONY : src/view/baseview.o
+
+# target to build an object file
+src/view/baseview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.o
+.PHONY : src/view/baseview.cpp.o
+
+src/view/baseview.i: src/view/baseview.cpp.i
+.PHONY : src/view/baseview.i
+
+# target to preprocess a source file
+src/view/baseview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.i
+.PHONY : src/view/baseview.cpp.i
+
+src/view/baseview.s: src/view/baseview.cpp.s
+.PHONY : src/view/baseview.s
+
+# target to generate assembly for a file
+src/view/baseview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/baseview.cpp.s
+.PHONY : src/view/baseview.cpp.s
+
 src/view/homeview.o: src/view/homeview.cpp.o
 .PHONY : src/view/homeview.o
 
@@ -1064,12 +1088,6 @@ help:
 	@echo "... src/controller/printcontroller.o"
 	@echo "... src/controller/printcontroller.i"
 	@echo "... src/controller/printcontroller.s"
-	@echo "... src/controller/protocolcontroller.o"
-	@echo "... src/controller/protocolcontroller.i"
-	@echo "... src/controller/protocolcontroller.s"
-	@echo "... src/controller/protocolparser.o"
-	@echo "... src/controller/protocolparser.i"
-	@echo "... src/controller/protocolparser.s"
 	@echo "... src/controller/settingscontroller.o"
 	@echo "... src/controller/settingscontroller.i"
 	@echo "... src/controller/settingscontroller.s"
@@ -1097,6 +1115,9 @@ help:
 	@echo "... src/platform/input/rotaryhandler.o"
 	@echo "... src/platform/input/rotaryhandler.i"
 	@echo "... src/platform/input/rotaryhandler.s"
+	@echo "... src/platform/uart/protocolparser.o"
+	@echo "... src/platform/uart/protocolparser.i"
+	@echo "... src/platform/uart/protocolparser.s"
 	@echo "... src/platform/uart/uartdevice.o"
 	@echo "... src/platform/uart/uartdevice.i"
 	@echo "... src/platform/uart/uartdevice.s"
@@ -1118,6 +1139,9 @@ help:
 	@echo "... src/service/systemsettingsservice.o"
 	@echo "... src/service/systemsettingsservice.i"
 	@echo "... src/service/systemsettingsservice.s"
+	@echo "... src/service/visionservice.o"
+	@echo "... src/service/visionservice.i"
+	@echo "... src/service/visionservice.s"
 	@echo "... src/service/vitalsservice.o"
 	@echo "... src/service/vitalsservice.i"
 	@echo "... src/service/vitalsservice.s"
@@ -1136,6 +1160,9 @@ help:
 	@echo "... src/storage/vitalsrepository.o"
 	@echo "... src/storage/vitalsrepository.i"
 	@echo "... src/storage/vitalsrepository.s"
+	@echo "... src/view/baseview.o"
+	@echo "... src/view/baseview.i"
+	@echo "... src/view/baseview.s"
 	@echo "... src/view/homeview.o"
 	@echo "... src/view/homeview.i"
 	@echo "... src/view/homeview.s"

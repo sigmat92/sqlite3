@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QObject>
+#include "service/vitalsservice.h" 
 
 class HomeView;
 class SessionService;
@@ -16,13 +17,14 @@ class HomeController : public QObject
     Q_OBJECT
 
 public:
-    explicit HomeController(HomeView* view,
-                            SessionService* sessionService,
-                            PatientRepository* repo,
-                            VitalsModel* vitalsModel,
-                            ProtocolController* protocol,
-                            SettingsService* settings,
-                            QObject* parent = nullptr);
+        HomeController(HomeView* view,
+                   SessionService* sessionService,
+                   PatientRepository* repo,
+                   VitalsModel* vitalsModel,
+                   VitalsService* vitalsService,   
+                   SettingsService* settings,
+                   QObject* parent = nullptr);
+
 
 public slots:
     void onTemperatureChanged(double value, char unit);
@@ -54,4 +56,5 @@ private:
 
     int m_currentPatientId = -1;
     int m_currentSessionId = -1;
+    VitalsService* m_vitalsService;
 };

@@ -445,10 +445,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
@@ -465,11 +461,11 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \

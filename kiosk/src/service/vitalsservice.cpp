@@ -1,106 +1,112 @@
 #include "vitalsservice.h"
+#include <QDebug>
 
 VitalsService::VitalsService(QObject* parent)
     : QObject(parent)
 {
-    m_expected = {
-        "temperature",
-        "spo2",
-        "weight",
-        "height",
-        "nibp"
-    };
-}
+    timeout.setSingleShot(true);
 
-void VitalsService::startMeasurement()
-{
-    m_completed.clear();
-
-    for (const QString& s : m_expected) {
-        emit sensorBusy(s, true);
-        startTimeout(s);
-    }
-}
-
-void VitalsService::startTimeout(const QString& name)
-{
-    QTimer* t = new QTimer(this);
-    t->setSingleShot(true);
-
-    connect(t, &QTimer::timeout, this, [this, name]() {
-        if (!m_completed.contains(name)) {
-            emit sensorMissing(name);
-            emit sensorBusy(name, false);
-            m_completed.insert(name);
-            checkCompletion();
-        }
+    connect(&timeout,&QTimer::timeout,this,[this](){
+        qDebug()<<"Timeout!";
+        setIdle();
     });
-
-    t->start(5000);
-    m_timers[name] = t;
 }
 
-void VitalsService::markComplete(const QString& name)
+// ---------- REQUESTS ----------
+
+void VitalsService::requestTemperature()
 {
-    if (m_completed.contains(name))
-        return;
+    if(state!=State::Idle) return;
+    state=State::Temp;
 
-    m_completed.insert(name);
-
-    if (m_timers.contains(name))
-        m_timers[name]->stop();
-
-    emit sensorBusy(name, false);
-    checkCompletion();
+    emit sendCommand(QByteArray("\x96\xAA\x54",3));
+    startTimeout();
 }
 
-void VitalsService::checkCompletion()
+void VitalsService::requestSpo2()
 {
-    if (m_completed.size() == m_expected.size())
-        emit measurementFinished();
-}
-//temperature
-void VitalsService::onTemperatureRaw(double value, char unit)
-{
-    if (value <= 0)
-        return;
+    if(state!=State::Idle) return;
+    state=State::Spo2;
 
-    emit temperatureReady(value, unit);
-    markComplete("temperature");
+    emit sendCommand(QByteArray("\x96\xAA\x53",3));
+    startTimeout();
 }
-//SpO2
-void VitalsService::onSpO2Raw(int spo2, int pulse)
-{
-    if (spo2 <= 0)
-        return;
 
-    emit spo2Ready(spo2, pulse);
-    markComplete("spo2");
+void VitalsService::requestNibp()
+{
+    if(state!=State::Idle) return;
+    state=State::Nibp;
+
+    emit sendCommand(QByteArray("\x96\xAA\x4E",3));
+    startTimeout();
 }
-//Weight
-void VitalsService::onWeightRaw(double weight)
-{
-    if (weight <= 0)
-        return;
 
-    emit weightReady(weight);
-    markComplete("weight");
+void VitalsService::requestWeight()
+{
+    if(state!=State::Idle) return;
+    state=State::Weight;
+
+    emit sendCommand(QByteArray("\x96\xAA\x57",3));
+    startTimeout();
 }
-//Height
-void VitalsService::onHeightRaw(int height)
-{
-    if (height <= 0)
-        return;
 
-    emit heightReady(height);
-    markComplete("height");
+void VitalsService::requestHeight()
+{
+    if(state!=State::Idle) return;
+    state=State::Height;
+
+    emit sendCommand(QByteArray("\x96\xAA\x48",3));
+    startTimeout();
 }
-//NIBP
-void VitalsService::onNibpRaw(int sys, int dia, int map)
-{
-    if (sys <= 0 || dia <= 0)
-        return;
 
-    emit nibpReady(sys, dia, map);
-    markComplete("nibp");
+// ---------- RESPONSES ----------
+
+void VitalsService::onTemperature(double v, char unit)
+{
+    if(state!=State::Temp) return;
+    if(v<=1.0) return;
+
+    emit temperatureReady(v, unit); 
+    setIdle();
+}
+
+void VitalsService::onSpo2(int s,int p)
+{
+    if(state!=State::Spo2) return;
+    emit spo2Ready(s,p);
+    setIdle();
+}
+
+void VitalsService::onNibp(int sys,int dia,int pulse)
+{
+    if(state!=State::Nibp) return;
+    emit nibpReady(sys,dia,pulse);
+    setIdle();
+}
+
+void VitalsService::onWeight(double w)
+{
+    if(state!=State::Weight) return;
+    emit weightReady(w);
+    setIdle();
+}
+
+void VitalsService::onHeight(double h)
+{
+    if(state!=State::Height) return;
+    emit heightReady(h);
+    setIdle();
+}
+
+// ---------- INTERNAL ----------
+
+void VitalsService::setIdle()
+{
+    state=State::Idle;
+    timeout.stop();
+}
+
+void VitalsService::startTimeout()
+{
+    timeout.start(20000);
 }

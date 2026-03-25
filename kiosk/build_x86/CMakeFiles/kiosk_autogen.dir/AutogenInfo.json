@@ -533,18 +533,6 @@
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h",
-			"MU",
-			"KECQXMYYOW/moc_protocolcontroller.cpp",
-			null
-		],
-		[
-			"/home/prakash/sqlite3/kiosk/src/controller/protocolparser.h",
-			"MU",
-			"KECQXMYYOW/moc_protocolparser.cpp",
-			null
-		],
-		[
 			"/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h",
 			"MU",
 			"KECQXMYYOW/moc_settingscontroller.cpp",
@@ -596,6 +584,12 @@
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h",
 			"MU",
 			"YTXNRGJSQJ/moc_rotaryhandler.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h",
+			"MU",
+			"I6UGBHFDKN/moc_protocolparser.cpp",
 			null
 		],
 		[
@@ -811,16 +805,6 @@
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/prakash/sqlite3/kiosk/src/controller/protocolparser.cpp",
-			"MU",
-			null
-		],
-		[
 			"/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp",
 			"MU",
 			null
@@ -842,6 +826,11 @@
 		[ "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp", "MU", null ],
 		[
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp",
 			"MU",
 			null
 		],

@@ -1,4 +1,4 @@
-/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_protocolcontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/I6UGBHFDKN/moc_protocolparser.cpp: /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
   /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/moc_predefs.h \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \

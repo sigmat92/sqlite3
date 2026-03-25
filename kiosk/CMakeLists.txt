@@ -79,10 +79,10 @@ set(SRC
     src/controller/barcodescanner.cpp
     src/controller/printcontroller.h
     src/controller/printcontroller.cpp
-    src/controller/protocolparser.h
-    src/controller/protocolparser.cpp
-    src/controller/protocolcontroller.h
-    src/controller/protocolcontroller.cpp
+    #src/controller/protocolparser.h
+    #src/controller/protocolparser.cpp
+    #src/controller/protocolcontroller.h
+    #src/controller/protocolcontroller.cpp
     src/controller/homecontroller.h
     src/controller/homecontroller.cpp
     src/controller/inputcontroller.h
@@ -114,6 +114,8 @@ set(SRC
     src/platform/v4l2/v4l2camera.cpp
     src/platform/uart/uartdevice.h
     src/platform/uart/uartdevice.cpp
+    src/platform/uart/protocolparser.h
+    src/platform/uart/protocolparser.cpp
     src/platform/input/rotaryhandler.h
     src/platform/input/rotaryhandler.cpp
 
@@ -185,9 +187,10 @@ target_link_libraries(kiosk
 # --------------------------------------------------
 target_compile_options(kiosk
     PRIVATE
-        -Wall
-        -Wextra
-        -Wno-unused-parameter
+    -Wall
+    -Wextra
+    -Wpedantic  #added
+    -Wno-unused-parameter
 )
 
 # --------------------------------------------------
@@ -195,3 +198,6 @@ target_compile_options(kiosk
 # --------------------------------------------------
 install(TARGETS kiosk
         RUNTIME DESTINATION bin)
+#extras
+
+set(CMAKE_UNITY_BUILD ON)

@@ -12,9 +12,11 @@
 #include "storage/databasemanager.h"
 
 #include "controller/protocolcontroller.h"
-#include "controller/protocolparser.h"
+//#include "controller/protocolparser.h"
+
 #include "model/vitalsmodel.h"
 #include "platform/uart/uartdevice.h"
+#include "platform/uart/protocolparser.h"
 #include "view/settingsview.h"
 
 #include <QDir>
@@ -47,24 +49,6 @@ int main(int argc, char *argv[])
 
     // ---------- UART ----------
 UartDevice* uart = new UartDevice(&app);
-/*
-QStringList ports;
-
-QDir dev("/dev");
-ports = dev.entryList(QStringList() << "ttyACM*");
-
-for(const auto& p : ports)
-{
-    QString path="/dev/"+p;
-
-    if(uart->open(path.toStdString().c_str(),9600))
-    {
-        qDebug()<<"UART connected:"<<path;
-        break;
-    }
-}
-*/
-//uart->open("/dev/kiosk_sensor",9600);
 
 QStringList ports = {
     "/dev/ttyACM0",
@@ -85,49 +69,58 @@ for (const auto& dev : ports)
 // ---------- PROTOCOL ----------
     ProtocolParser* parser = new ProtocolParser(&app);
 
-    ProtocolController* protocolCtrl =
-        new ProtocolController(uart, parser, &app);
+    //ProtocolController* protocolCtrl =
+    //    new ProtocolController(uart, parser, &app);
 
     // ---------- CONNECT Protocol → Service ----------
-    QObject::connect(protocolCtrl, &ProtocolController::temperatureRaw,
-                     vitalsService, &VitalsService::onTemperatureRaw);
+    // UART → Parser
+    QObject::connect(uart,&UartDevice::bytesReceived,
+            parser,&ProtocolParser::feed);
 
-    QObject::connect(protocolCtrl, &ProtocolController::spo2Raw,
-                     vitalsService, &VitalsService::onSpO2Raw);
+    // Parser → Service
+    QObject::connect(parser,&ProtocolParser::temperatureReceived,
+            vitalsService,&VitalsService::onTemperature);
 
-    QObject::connect(protocolCtrl, &ProtocolController::weightRaw,
-                     vitalsService, &VitalsService::onWeightRaw);
+    QObject::connect(parser,&ProtocolParser::spo2Received,
+            vitalsService,&VitalsService::onSpo2);
 
-    QObject::connect(protocolCtrl, &ProtocolController::heightRaw,
-                     vitalsService, &VitalsService::onHeightRaw);
+    QObject::connect(parser,&ProtocolParser::nibpReceived,
+            vitalsService,&VitalsService::onNibp);
 
-    QObject::connect(protocolCtrl, &ProtocolController::nibpRaw,
-                     vitalsService, &VitalsService::onNibpRaw);
+    QObject::connect(parser,&ProtocolParser::weightReceived,
+            vitalsService,&VitalsService::onWeight);
 
-    // ---------- CONNECT Service → Model ----------
-    QObject::connect(vitalsService, &VitalsService::temperatureReady,
-                     vitalsModel, &VitalsModel::setTemperature);
+    QObject::connect(parser,&ProtocolParser::heightReceived,
+            vitalsService,&VitalsService::onHeight);
 
-    QObject::connect(vitalsService, &VitalsService::spo2Ready,
-                     vitalsModel, &VitalsModel::setSpO2);
+    // Service → UART
+    QObject::connect(vitalsService,&VitalsService::sendCommand,
+            uart,&UartDevice::send);
 
-    QObject::connect(vitalsService, &VitalsService::weightReady,
-                     vitalsModel, &VitalsModel::setWeight);
+    // Service → Model
+    QObject::connect(vitalsService,&VitalsService::temperatureReady,
+            vitalsModel,&VitalsModel::setTemperature);
 
-    QObject::connect(vitalsService, &VitalsService::heightReady,
-                     vitalsModel, &VitalsModel::setHeight);
+    QObject::connect(vitalsService,&VitalsService::spo2Ready,
+            vitalsModel,&VitalsModel::setSpO2);
 
-    QObject::connect(vitalsService, &VitalsService::nibpReady,
-                     vitalsModel, &VitalsModel::setNIBP);
+    QObject::connect(vitalsService,&VitalsService::nibpReady,
+            vitalsModel,&VitalsModel::setNIBP);
 
+    QObject::connect(vitalsService,&VitalsService::weightReady,
+            vitalsModel,&VitalsModel::setWeight);
+
+    QObject::connect(vitalsService,&VitalsService::heightReady,
+            vitalsModel,&VitalsModel::setHeight);
+    
     // ---------- HOME CONTROLLER ----------
     new HomeController(homeView,
-                       sessionService,
-                       patientRepo,
-                       vitalsModel,
-                       protocolCtrl,   
-                       nullptr,
-                       &app);
+                   sessionService,
+                   patientRepo,
+                   vitalsModel,
+                   vitalsService,   
+                   nullptr,
+                   &app);
     // ---------- SETTINGS VIEW ----------
 SettingsView* settingsView = new SettingsView;
 

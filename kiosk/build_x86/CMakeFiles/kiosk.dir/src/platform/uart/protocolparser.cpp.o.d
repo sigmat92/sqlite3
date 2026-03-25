@@ -1,7 +1,7 @@
-CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o: \
- /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.cpp \
+CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o: \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp \
  /usr/include/stdc-predef.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
@@ -351,11 +351,6 @@ CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o: \
  /usr/include/c++/11/ctime \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolparser.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
@@ -369,7 +364,4 @@ CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h

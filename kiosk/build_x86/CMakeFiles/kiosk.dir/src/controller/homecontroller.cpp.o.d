@@ -349,6 +349,11 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
@@ -363,7 +368,6 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
@@ -440,9 +444,6 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/../model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/controller/../storage/vitalsrepository.h \
  /usr/include/sqlite3.h \
- /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \

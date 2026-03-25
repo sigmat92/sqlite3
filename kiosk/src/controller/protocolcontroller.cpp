@@ -78,7 +78,7 @@ void ProtocolController::requestNibp()
 
 #include "protocolcontroller.h"
 #include "platform/uart/uartdevice.h"
-#include "controller/protocolparser.h"
+#include "platform/uart/protocolparser.h"
 
 #include <QDebug>
 #include <QTimer>

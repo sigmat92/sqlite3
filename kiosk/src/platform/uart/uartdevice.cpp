@@ -44,15 +44,6 @@ bool UartDevice::open(const QString& dev, int baud)
 
     return true;
 }
-/*
-void UartDevice::send(const QByteArray& data)
-{
-    if (m_fd < 0)
-        return;
-
-    ::write(m_fd, data.constData(), data.size());
-}
-*/
 
 void UartDevice::send(const QByteArray& data)
 {

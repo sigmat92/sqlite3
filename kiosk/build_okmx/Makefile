@@ -333,54 +333,6 @@ src/controller/printcontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s
 .PHONY : src/controller/printcontroller.cpp.s
 
-src/controller/protocolcontroller.o: src/controller/protocolcontroller.cpp.o
-.PHONY : src/controller/protocolcontroller.o
-
-# target to build an object file
-src/controller/protocolcontroller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.o
-.PHONY : src/controller/protocolcontroller.cpp.o
-
-src/controller/protocolcontroller.i: src/controller/protocolcontroller.cpp.i
-.PHONY : src/controller/protocolcontroller.i
-
-# target to preprocess a source file
-src/controller/protocolcontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.i
-.PHONY : src/controller/protocolcontroller.cpp.i
-
-src/controller/protocolcontroller.s: src/controller/protocolcontroller.cpp.s
-.PHONY : src/controller/protocolcontroller.s
-
-# target to generate assembly for a file
-src/controller/protocolcontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolcontroller.cpp.s
-.PHONY : src/controller/protocolcontroller.cpp.s
-
-src/controller/protocolparser.o: src/controller/protocolparser.cpp.o
-.PHONY : src/controller/protocolparser.o
-
-# target to build an object file
-src/controller/protocolparser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.o
-.PHONY : src/controller/protocolparser.cpp.o
-
-src/controller/protocolparser.i: src/controller/protocolparser.cpp.i
-.PHONY : src/controller/protocolparser.i
-
-# target to preprocess a source file
-src/controller/protocolparser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.i
-.PHONY : src/controller/protocolparser.cpp.i
-
-src/controller/protocolparser.s: src/controller/protocolparser.cpp.s
-.PHONY : src/controller/protocolparser.s
-
-# target to generate assembly for a file
-src/controller/protocolparser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/protocolparser.cpp.s
-.PHONY : src/controller/protocolparser.cpp.s
-
 src/controller/settingscontroller.o: src/controller/settingscontroller.cpp.o
 .PHONY : src/controller/settingscontroller.o
 
@@ -596,6 +548,30 @@ src/platform/input/rotaryhandler.s: src/platform/input/rotaryhandler.cpp.s
 src/platform/input/rotaryhandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.s
 .PHONY : src/platform/input/rotaryhandler.cpp.s
+
+src/platform/uart/protocolparser.o: src/platform/uart/protocolparser.cpp.o
+.PHONY : src/platform/uart/protocolparser.o
+
+# target to build an object file
+src/platform/uart/protocolparser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o
+.PHONY : src/platform/uart/protocolparser.cpp.o
+
+src/platform/uart/protocolparser.i: src/platform/uart/protocolparser.cpp.i
+.PHONY : src/platform/uart/protocolparser.i
+
+# target to preprocess a source file
+src/platform/uart/protocolparser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.i
+.PHONY : src/platform/uart/protocolparser.cpp.i
+
+src/platform/uart/protocolparser.s: src/platform/uart/protocolparser.cpp.s
+.PHONY : src/platform/uart/protocolparser.s
+
+# target to generate assembly for a file
+src/platform/uart/protocolparser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.s
+.PHONY : src/platform/uart/protocolparser.cpp.s
 
 src/platform/uart/uartdevice.o: src/platform/uart/uartdevice.cpp.o
 .PHONY : src/platform/uart/uartdevice.o
@@ -1084,12 +1060,6 @@ help:
 	@echo "... src/controller/printcontroller.o"
 	@echo "... src/controller/printcontroller.i"
 	@echo "... src/controller/printcontroller.s"
-	@echo "... src/controller/protocolcontroller.o"
-	@echo "... src/controller/protocolcontroller.i"
-	@echo "... src/controller/protocolcontroller.s"
-	@echo "... src/controller/protocolparser.o"
-	@echo "... src/controller/protocolparser.i"
-	@echo "... src/controller/protocolparser.s"
 	@echo "... src/controller/settingscontroller.o"
 	@echo "... src/controller/settingscontroller.i"
 	@echo "... src/controller/settingscontroller.s"
@@ -1117,6 +1087,9 @@ help:
 	@echo "... src/platform/input/rotaryhandler.o"
 	@echo "... src/platform/input/rotaryhandler.i"
 	@echo "... src/platform/input/rotaryhandler.s"
+	@echo "... src/platform/uart/protocolparser.o"
+	@echo "... src/platform/uart/protocolparser.i"
+	@echo "... src/platform/uart/protocolparser.s"
 	@echo "... src/platform/uart/uartdevice.o"
 	@echo "... src/platform/uart/uartdevice.i"
 	@echo "... src/platform/uart/uartdevice.s"

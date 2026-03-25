@@ -1,4 +1,4 @@
-/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_protocolcontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/protocolcontroller.h \
+/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_protocolparser.cpp: /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \

@@ -6,5 +6,5 @@ CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRI
 
 CXX_INCLUDES = -I/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/include -I/home/prakash/sqlite3/kiosk/src -I/home/prakash/sqlite3/kiosk/external/zxing-cpp/core -I/home/prakash/sqlite3/kiosk/external/zxing-cpp/core/src -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets -isystem /home/prakash/Qt/6.5.3/gcc_64/include -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtCore -isystem /home/prakash/Qt/6.5.3/gcc_64/mkspecs/linux-g++ -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtGui -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork -isystem /home/prakash/Qt/6.5.3/gcc_64/include/QtPrintSupport
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIE -Wall -Wextra -Wno-unused-parameter -fPIC -std=gnu++20
+CXX_FLAGS = -O3 -DNDEBUG -fPIE -Wall -Wextra -Wpedantic -Wno-unused-parameter -fPIC -std=gnu++20
 

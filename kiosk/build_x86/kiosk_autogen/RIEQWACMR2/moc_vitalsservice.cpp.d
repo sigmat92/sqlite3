@@ -1,8 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp: /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSet \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -39,7 +37,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
@@ -63,7 +60,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \

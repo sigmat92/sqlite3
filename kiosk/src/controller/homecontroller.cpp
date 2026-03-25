@@ -1,18 +1,12 @@
 #include "homecontroller.h"
-
-//#include "view/homeview.h"
-//#include "service/sessionservice.h"
-//#include "storage/patientrepository.h"
 #include "storage/patientrepository.h"
 #include "../view/homeview.h"
 #include "../service/sessionservice.h"
 #include "../model/vitalsmodel.h"
 #include "../storage/vitalsrepository.h"
 #include "storage/vitalsrepository.h"
-//#include "model/vitalsmodel.h"
-#include "controller/protocolcontroller.h"
+//#include "controller/protocolcontroller.h"
 #include "service/settingsservice.h"
-//#include "service/sessionservice.h"
 #include "../view/settingsview.h"
 #include "../controller/settingscontroller.h"
 #include "../service/systemsettingsservice.h"
@@ -24,18 +18,19 @@ HomeController::HomeController(HomeView* view,
                                SessionService* sessionService,
                                PatientRepository* repo,
                                VitalsModel* vitalsModel,
-                               ProtocolController* protocol,
+                               VitalsService* vitalsService,   
                                SettingsService* settings,
                                QObject* parent)
-    : QObject(parent),
-      m_view(view),
-      m_sessionService(sessionService),
-      m_repo(repo),
-      m_vitalsModel(vitalsModel),
-      m_protocol(protocol),
-      m_settings(settings)
+: QObject(parent),
+  m_view(view),
+  m_sessionService(sessionService),
+  m_repo(repo),
+  m_vitalsModel(vitalsModel),
+  m_vitalsService(vitalsService),   
+  m_settings(settings)
 {
     m_vitalsRepo = new VitalsRepository();
+    m_vitalsService = vitalsService;
 
     //settings
         connect(m_view, &HomeView::settingsRequested,
@@ -52,6 +47,26 @@ HomeController::HomeController(HomeView* view,
         //settingsView->show();
         settingsView->showFullScreen();
     });
+
+    //visionTest
+//
+        connect(m_view, &HomeView::visionTestRequested,
+            this, [this]()
+    {
+        VisionTestView* visionTestView = new VisionTestView;
+        SystemSettingsService* systemService = new SystemSettingsService;
+        AdminAuthService* authService = new AdminAuthService;
+
+        //new SettingsController(visionTestView,
+        //                    systemService,
+        //                    authService);
+
+        //settingsView->show();
+        visionTestView->showFullScreen();
+    });
+
+    
+//
 
     // ===== FINAL SIGNALS (Save to DB) =====
 
@@ -81,7 +96,8 @@ HomeController::HomeController(HomeView* view,
                     return;
 
                 m_view->setTemperatureBusy(true);
-                m_protocol->requestTemperature();
+                //m_protocol->requestTemperature();
+                m_vitalsService->requestTemperature();
             });
 
     // ===== LIVE STREAMING TO UI =====
@@ -189,7 +205,7 @@ void HomeController::onTemperatureChanged(double value, char unit)
 
     m_view->setTemperatureText(text);
     m_view->setTemperatureBusy(false);
-    m_protocol->setIdle();
+    //m_protocol->setIdle();
 }
 
 void HomeController::onSpO2Changed(int spo2, int pulse)
@@ -214,7 +230,7 @@ void HomeController::onStartSpo2Requested()
     if (!ensurePatientSaved())
         return;
 
-    m_protocol->requestSpo2();
+    //m_protocol->requestSpo2();
 }
 
 void HomeController::visionTestRequested()

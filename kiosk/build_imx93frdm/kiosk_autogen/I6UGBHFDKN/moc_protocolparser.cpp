@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'protocolcontroller.h'
+** Meta object code from reading C++ file 'protocolparser.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/controller/protocolcontroller.h"
+#include "../../../src/platform/uart/protocolparser.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'protocolcontroller.h' doesn't include <QObject>."
+#error "The header file 'protocolparser.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.7.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -33,31 +33,28 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSProtocolControllerENDCLASS_t {};
-constexpr auto qt_meta_stringdata_CLASSProtocolControllerENDCLASS = QtMocHelpers::stringData(
-    "ProtocolController",
-    "temperatureRaw",
+struct qt_meta_stringdata_CLASSProtocolParserENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASSProtocolParserENDCLASS = QtMocHelpers::stringData(
+    "ProtocolParser",
+    "temperatureReceived",
     "",
     "value",
     "unit",
-    "spo2Raw",
+    "spo2Received",
     "spo2",
     "pulse",
-    "weightRaw",
-    "weight",
-    "heightRaw",
-    "height",
-    "nibpRaw",
+    "nibpReceived",
     "sys",
     "dia",
-    "map"
+    "weightReceived",
+    "heightReceived"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
 #endif // !QT_MOC_HAS_STRINGDATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSProtocolControllerENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASSProtocolParserENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -73,98 +70,98 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSProtocolControllerENDCLASS[] = {
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
        1,    2,   44,    2, 0x06,    1 /* Public */,
        5,    2,   49,    2, 0x06,    4 /* Public */,
-       8,    1,   54,    2, 0x06,    7 /* Public */,
-      10,    1,   57,    2, 0x06,    9 /* Public */,
-      12,    3,   60,    2, 0x06,   11 /* Public */,
+       8,    3,   54,    2, 0x06,    7 /* Public */,
+      11,    1,   61,    2, 0x06,   11 /* Public */,
+      12,    1,   64,    2, 0x06,   13 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    6,    7,
-    QMetaType::Void, QMetaType::Double,    9,
-    QMetaType::Void, QMetaType::Int,   11,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,   13,   14,   15,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,    9,   10,    7,
+    QMetaType::Void, QMetaType::Double,    3,
+    QMetaType::Void, QMetaType::Double,    3,
 
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject ProtocolController::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject ProtocolParser::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_CLASSProtocolControllerENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSProtocolControllerENDCLASS,
+    qt_meta_stringdata_CLASSProtocolParserENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASSProtocolParserENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSProtocolControllerENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSProtocolParserENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<ProtocolController, std::true_type>,
-        // method 'temperatureRaw'
+        QtPrivate::TypeAndForceComplete<ProtocolParser, std::true_type>,
+        // method 'temperatureReceived'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
         QtPrivate::TypeAndForceComplete<char, std::false_type>,
-        // method 'spo2Raw'
+        // method 'spo2Received'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'weightRaw'
+        // method 'nibpReceived'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'weightReceived'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
-        // method 'heightRaw'
+        // method 'heightReceived'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'nibpRaw'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<double, std::false_type>
     >,
     nullptr
 } };
 
-void ProtocolController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ProtocolParser::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<ProtocolController *>(_o);
+        auto *_t = static_cast<ProtocolParser *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->temperatureRaw((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
-        case 1: _t->spo2Raw((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 2: _t->weightRaw((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
-        case 3: _t->heightRaw((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 4: _t->nibpRaw((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 0: _t->temperatureReceived((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
+        case 1: _t->spo2Received((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 2: _t->nibpReceived((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
+        case 3: _t->weightReceived((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 4: _t->heightReceived((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (ProtocolController::*)(double , char );
-            if (_t _q_method = &ProtocolController::temperatureRaw; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ProtocolParser::*)(double , char );
+            if (_t _q_method = &ProtocolParser::temperatureReceived; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (ProtocolController::*)(int , int );
-            if (_t _q_method = &ProtocolController::spo2Raw; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ProtocolParser::*)(int , int );
+            if (_t _q_method = &ProtocolParser::spo2Received; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (ProtocolController::*)(double );
-            if (_t _q_method = &ProtocolController::weightRaw; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ProtocolParser::*)(int , int , int );
+            if (_t _q_method = &ProtocolParser::nibpReceived; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
             }
         }
         {
-            using _t = void (ProtocolController::*)(int );
-            if (_t _q_method = &ProtocolController::heightRaw; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ProtocolParser::*)(double );
+            if (_t _q_method = &ProtocolParser::weightReceived; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 3;
                 return;
             }
         }
         {
-            using _t = void (ProtocolController::*)(int , int , int );
-            if (_t _q_method = &ProtocolController::nibpRaw; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ProtocolParser::*)(double );
+            if (_t _q_method = &ProtocolParser::heightReceived; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 4;
                 return;
             }
@@ -172,20 +169,20 @@ void ProtocolController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     }
 }
 
-const QMetaObject *ProtocolController::metaObject() const
+const QMetaObject *ProtocolParser::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *ProtocolController::qt_metacast(const char *_clname)
+void *ProtocolParser::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSProtocolControllerENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASSProtocolParserENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int ProtocolController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ProtocolParser::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
@@ -203,37 +200,37 @@ int ProtocolController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void ProtocolController::temperatureRaw(double _t1, char _t2)
+void ProtocolParser::temperatureReceived(double _t1, char _t2)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void ProtocolController::spo2Raw(int _t1, int _t2)
+void ProtocolParser::spo2Received(int _t1, int _t2)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void ProtocolController::weightRaw(double _t1)
+void ProtocolParser::nibpReceived(int _t1, int _t2, int _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
-void ProtocolController::heightRaw(int _t1)
+void ProtocolParser::weightReceived(double _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
 }
 
 // SIGNAL 4
-void ProtocolController::nibpRaw(int _t1, int _t2, int _t3)
+void ProtocolParser::heightReceived(double _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 QT_WARNING_POP

@@ -133,6 +133,7 @@ HomeView::HomeView(QWidget *parent)
 
     std::vector<MetricDef> metrics =
     {
+        //title,status.signal
         {"Vision Test","Vision test started",[this]{ emit visionTestRequested(); }},
         {"SpO2 / Pulse","SpO2 measurement started",[this]{ emit startSpo2Requested(); }},
         {"NIBP","NIBP measurement started",[this]{ emit startNIBPRequested(); }},
@@ -158,6 +159,8 @@ grid->setColumnStretch(2,1);
         connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
 
             metrics[i].signal();
+          
+            //qDebug() << metrics[i].status << "is the status";
 
             statusLabel->setText("Test Status: " + metrics[i].status);
 
@@ -205,18 +208,18 @@ grid->setColumnStretch(2,1);
     
     bmiLabel = new QLabel("--");
     rLayout->addWidget(bmiLabel,1,1);
-    //rLayout->setRowStretch(1,1);
+    
     rLayout->addWidget(new QLabel("BMI Analysis"),1,2);
     bmiAnalysisLabel = new QLabel("--");
     rLayout->addWidget(bmiAnalysisLabel,1,3);
     rLayout->addWidget(new QLabel("Basal Metabolic Rate"),2,0);
     bmrLabel = new QLabel("--");
     rLayout->addWidget(bmrLabel,2,1);
-    //rLayout->setRowStretch(2,1);
+   
     rLayout->addWidget(new QLabel("Body Surface Area"),2,2);
     bsaLabel = new QLabel("--");
     rLayout->addWidget(bsaLabel,2,3);
-    //rLayout->setRowStretch(3,1);
+   
     rLayout->addWidget(new QLabel("Far Vision"),3,0);
     farVisionLabel = new QLabel("--");
     rLayout->addWidget(farVisionLabel,3,1);
