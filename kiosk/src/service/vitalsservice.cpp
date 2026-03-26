@@ -12,7 +12,21 @@ VitalsService::VitalsService(QObject* parent)
     });
 }
 
-// ---------- REQUESTS ----------
+// ---------------- SESSION ----------------
+
+void VitalsService::setSessionId(int id)
+{
+    if(m_sessionId > 0)
+    {
+        qDebug()<<"Session already active";
+        return;
+    }
+
+    m_sessionId = id;
+    qDebug()<<"Session set:"<<m_sessionId;
+}
+
+// ---------------- REQUESTS ----------------
 
 void VitalsService::requestTemperature()
 {
@@ -28,7 +42,7 @@ void VitalsService::requestSpo2()
     if(state!=State::Idle) return;
     state=State::Spo2;
 
-    emit sendCommand(QByteArray("\x96\xAA\x53",3));
+    emit sendCommand(QByteArray("\x96\xAA\xF4",3));
     startTimeout();
 }
 
@@ -37,7 +51,7 @@ void VitalsService::requestNibp()
     if(state!=State::Idle) return;
     state=State::Nibp;
 
-    emit sendCommand(QByteArray("\x96\xAA\x4E",3));
+    emit sendCommand(QByteArray("\x96\xAA\xF5\x01\x01",5));
     startTimeout();
 }
 
@@ -46,7 +60,7 @@ void VitalsService::requestWeight()
     if(state!=State::Idle) return;
     state=State::Weight;
 
-    emit sendCommand(QByteArray("\x96\xAA\x57",3));
+    emit sendCommand(QByteArray("\x96\xAA\xF8",3));
     startTimeout();
 }
 
@@ -55,38 +69,56 @@ void VitalsService::requestHeight()
     if(state!=State::Idle) return;
     state=State::Height;
 
-    emit sendCommand(QByteArray("\x96\xAA\x48",3));
+    emit sendCommand(QByteArray("\x96\xAA\xF7",3));
     startTimeout();
 }
 
-// ---------- RESPONSES ----------
+// ---------------- RESPONSES ----------------
 
 void VitalsService::onTemperature(double v, char unit)
 {
     if(state!=State::Temp) return;
     if(v<=1.0) return;
 
-    emit temperatureReady(v, unit); 
+    if(m_repo && m_sessionId > 0)
+    {
+        qDebug()<<"Saving TEMP:"<<v;
+        m_repo->saveTemperature(m_sessionId,v);
+    }
+
+    emit temperatureReady(v,unit);
     setIdle();
 }
 
 void VitalsService::onSpo2(int s,int p)
 {
     if(state!=State::Spo2) return;
+
+    if(m_repo && m_sessionId > 0)
+        m_repo->saveSpO2(m_sessionId,s,p);
+
     emit spo2Ready(s,p);
     setIdle();
 }
 
-void VitalsService::onNibp(int sys,int dia,int pulse)
+void VitalsService::onNibp(int sys,int dia,int map)
 {
     if(state!=State::Nibp) return;
-    emit nibpReady(sys,dia,pulse);
+
+    if(m_repo && m_sessionId > 0)
+        m_repo->saveNIBP(m_sessionId,sys,dia);
+
+    emit nibpReady(sys,dia,map);
     setIdle();
 }
 
 void VitalsService::onWeight(double w)
 {
     if(state!=State::Weight) return;
+
+    if(m_repo && m_sessionId > 0)
+        m_repo->saveWeight(m_sessionId,w);
+
     emit weightReady(w);
     setIdle();
 }
@@ -94,11 +126,15 @@ void VitalsService::onWeight(double w)
 void VitalsService::onHeight(double h)
 {
     if(state!=State::Height) return;
-    emit heightReady(h);
+
+    if(m_repo && m_sessionId > 0)
+        m_repo->saveHeight(m_sessionId,int(h));
+
+    emit heightReady(int(h));
     setIdle();
 }
 
-// ---------- INTERNAL ----------
+// ---------------- INTERNAL ----------------
 
 void VitalsService::setIdle()
 {
@@ -109,4 +145,9 @@ void VitalsService::setIdle()
 void VitalsService::startTimeout()
 {
     timeout.start(20000);
+}
+
+void VitalsService::setRepository(VitalsRepository* repo)
+{
+    m_repo = repo;
 }

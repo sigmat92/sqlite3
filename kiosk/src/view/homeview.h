@@ -40,6 +40,14 @@ signals:
     void startPrintingRequested();
     void settingsRequested();
 
+    void resetSessionRequested();   
+    
+    void startSessionRequested(QString name,
+                               int age,
+                               QString mobile,
+                               QString gender);
+    void newSessionRequested();
+
 private:
 
     QLabel *statusLabel;

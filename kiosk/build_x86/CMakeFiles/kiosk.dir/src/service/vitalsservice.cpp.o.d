@@ -353,6 +353,8 @@ CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /usr/include/sqlite3.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \

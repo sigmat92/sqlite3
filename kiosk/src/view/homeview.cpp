@@ -47,6 +47,7 @@ HomeView::HomeView(QWidget *parent)
 
         clearPatientFields();
         unlockPatientFields();
+        emit resetSessionRequested();
         statusLabel->setText("Test Status: New test started");
 
     });
@@ -155,25 +156,31 @@ HomeView::HomeView(QWidget *parent)
 grid->setColumnStretch(0,1);
 grid->setColumnStretch(1,1);
 grid->setColumnStretch(2,1);
-
         connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
 
-            metrics[i].signal();
-          
-            //qDebug() << metrics[i].status << "is the status";
+    // 1. Create session FIRST (only for first measurement)
+    if(metrics[i].title == "Temperature")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
 
-            statusLabel->setText("Test Status: " + metrics[i].status);
-
-            qDebug() << metrics[i].title << "requested";
-
-        });
-
-        if(metrics[i].title == "SpO2 / Pulse")
-            spo2Card = card;
-
-        if(metrics[i].title == "Temperature")
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
             temperatureCard = card;
     }
+
+    // 2. THEN start measurement
+    metrics[i].signal();
+
+    statusLabel->setText("Test Status: " + metrics[i].status);
+
+    qDebug() << metrics[i].title << "requested";
+});
+
+    }//for
 
     layout->addWidget(metricsPanel);
 
@@ -262,10 +269,12 @@ void HomeView::setTemperatureBusy(bool busy)
 
 void HomeView::setTemperatureText(const QString &text)
 {
+    qDebug() << "VIEW UPDATE:" << text;
+    qDebug() << "temperatureCard ptr:" << temperatureCard;
+
     if(temperatureCard)
         temperatureCard->setValue(text);
 }
-
 /* ================= SPO2 ================= */
 
 void HomeView::onVitalsUpdated(int spo2,int pulse)

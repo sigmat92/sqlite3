@@ -1,18 +1,19 @@
 #include "vitalsmodel.h"
+#include <QDebug>
 
 VitalsModel::VitalsModel(QObject* parent)
     : QObject(parent)
 {
 }
-
 void VitalsModel::setTemperature(double value, char unit)
 {
     m_temperature = value;
     m_tempUnit = unit;
 
+    qDebug() << "MODEL TEMP:" << value << unit;
+
     emit temperatureChanged(value, unit);
 }
-
 void VitalsModel::setSpO2(int spo2, int pulse)
 {
     m_spo2 = spo2;

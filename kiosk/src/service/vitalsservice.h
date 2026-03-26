@@ -1,18 +1,14 @@
-#pragma once
+#ifndef VITALSSERVICE_H
+#define VITALSSERVICE_H
+
 #include <QObject>
 #include <QTimer>
+#include "storage/vitalsrepository.h"
 
-enum class State {
-    Idle,
-    Temp,
-    Spo2,
-    Nibp,
-    Weight,
-    Height
-};
-
-class VitalsService : public QObject {
+class VitalsService : public QObject
+{
     Q_OBJECT
+
 public:
     explicit VitalsService(QObject* parent=nullptr);
 
@@ -22,13 +18,18 @@ public:
     void requestWeight();
     void requestHeight();
 
+    void setRepository(VitalsRepository* repo);
+    void setSessionId(int id);
+    int sessionId() const { return m_sessionId; }
+
 signals:
     void sendCommand(QByteArray);
-    void temperatureReady(double, char);
+
+    void temperatureReady(double,char);
     void spo2Ready(int,int);
     void nibpReady(int,int,int);
     void weightReady(double);
-    void heightReady(double);
+    void heightReady(int);
 
 public slots:
     void onTemperature(double,char);
@@ -38,9 +39,16 @@ public slots:
     void onHeight(double);
 
 private:
-    State state{State::Idle};
+    enum class State { Idle, Temp, Spo2, Nibp, Weight, Height };
+    State state = State::Idle;
+
     QTimer timeout;
+
+    VitalsRepository* m_repo = nullptr;
+    int m_sessionId = -1;
 
     void setIdle();
     void startTimeout();
 };
+
+#endif

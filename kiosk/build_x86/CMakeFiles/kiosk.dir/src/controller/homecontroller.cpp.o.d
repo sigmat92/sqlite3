@@ -354,6 +354,8 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
@@ -442,8 +444,6 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/../service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/controller/../model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/src/controller/../storage/vitalsrepository.h \
- /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \

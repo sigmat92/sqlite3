@@ -395,6 +395,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printcontroller.cpp \
@@ -430,6 +432,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_settingsrepository.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_baseview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/baseview.h \

@@ -93,6 +93,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -253,6 +254,7 @@
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/sqlite3.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \

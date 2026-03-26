@@ -196,18 +196,17 @@ void HomeController::onNIBPFinal(int sys, int dia)
 
     m_vitalsRepo->saveNIBP(m_currentSessionId, sys, dia);
 }
-
 void HomeController::onTemperatureChanged(double value, char unit)
 {
+    qDebug() << "UI TEMP UPDATE:" << value << unit;
+
     QString text = QString::number(value, 'f', 1)
                  + QChar(0x00B0)
                  + QChar(unit);
 
     m_view->setTemperatureText(text);
     m_view->setTemperatureBusy(false);
-    //m_protocol->setIdle();
 }
-
 void HomeController::onSpO2Changed(int spo2, int pulse)
 {
     Q_UNUSED(spo2)

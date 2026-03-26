@@ -859,6 +859,7 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
+ mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -1019,6 +1020,7 @@
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
  mdp:/usr/include/sched.h
+ mdp:/usr/include/sqlite3.h
  mdp:/usr/include/stdc-predef.h
  mdp:/usr/include/stdint.h
  mdp:/usr/include/stdio.h
@@ -1545,6 +1547,7 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
  mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
+ mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -1705,6 +1708,7 @@
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
  mdp:/usr/include/sched.h
+ mdp:/usr/include/sqlite3.h
  mdp:/usr/include/stdc-predef.h
  mdp:/usr/include/stdint.h
  mdp:/usr/include/stdio.h

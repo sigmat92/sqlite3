@@ -11,7 +11,7 @@
 #include "storage/patientrepository.h"
 #include "storage/databasemanager.h"
 
-#include "controller/protocolcontroller.h"
+//#include "controller/protocolcontroller.h"
 //#include "controller/protocolparser.h"
 
 #include "model/vitalsmodel.h"
@@ -43,9 +43,114 @@ int main(int argc, char *argv[])
     VitalsModel* vitalsModel = new VitalsModel(&app);
 
     // ---------- SERVICES ----------
-    VitalsService* vitalsService = new VitalsService(&app);
-    SessionService* sessionService = new SessionService(&app);
-    PatientRepository* patientRepo = new PatientRepository;
+
+VitalsService* vitalsService = new VitalsService(&app);
+SessionService* sessionService = new SessionService(&app);
+PatientRepository* patientRepo = new PatientRepository();
+VitalsRepository* repo = new VitalsRepository();
+
+vitalsService->setRepository(repo);
+
+// SESSION CREATION (ONLY ONCE)
+QObject::connect(homeView,
+    &HomeView::startSessionRequested,
+    [=](QString name,int age,QString mobile,QString gender)
+{
+    if(vitalsService->sessionId() > 0)
+    {
+        qDebug()<<"Session already active";
+        return;
+    }
+
+    int patientId = patientRepo->savePatient(name,age,mobile,gender);
+    if(patientId<=0) return;
+
+    int sessionId = sessionService->createSession(patientId);
+    if(sessionId<=0) return;
+
+    qDebug()<<"Session created:"<<sessionId;
+
+    vitalsService->setSessionId(sessionId);
+});
+
+// RESET SESSION
+QObject::connect(homeView,
+    &HomeView::resetSessionRequested,
+    [=]()
+{
+    qDebug()<<"Reset session";
+    vitalsService->setSessionId(-1);
+});
+    //VitalsService* vitalsService = new VitalsService(&app);
+    //SessionService* sessionService = new SessionService(&app);
+    //PatientRepository* patientRepo = new PatientRepository;
+
+    //VitalsRepository* repo = new VitalsRepository();
+    //    vitalsService->setRepository(repo);
+    //    vitalsService->setSessionId(sessionId);  // 
+
+/*
+VitalsService* vitalsService = new VitalsService(&app);
+
+SessionService* sessionService = new SessionService(&app);
+PatientRepository* patientRepo = new PatientRepository();
+VitalsRepository* repo = new VitalsRepository();
+vitalsService->setRepository(repo);
+
+QObject::connect(homeView,
+    &HomeView::newSessionRequested,
+    [=]()
+{
+    qDebug() << "Session reset";
+
+    vitalsService->setSessionId(-1);
+
+    static bool* sessionActivePtr = new bool(false);
+    *sessionActivePtr = false;
+});
+
+QObject::connect(homeView,
+    &HomeView::startSessionRequested,
+    [=](QString name, int age, QString mobile, QString gender)
+{
+    static bool sessionActive = false;
+
+    if(sessionActive)
+    {
+        qDebug() << "Session already active";
+        return;
+    }
+
+    qDebug() << "SESSION SLOT TRIGGERED";
+
+    if(name.isEmpty() || age <= 0 || gender.isEmpty())
+    {
+        qDebug() << "Invalid patient data";
+        return;
+    }
+
+    int patientId = patientRepo->savePatient(name, age, mobile, gender);
+    if(patientId <= 0) return;
+
+    int sessionId = sessionService->createSession(patientId);
+    if(sessionId <= 0) return;
+
+    qDebug() << "Session created:" << sessionId;
+
+    vitalsService->setSessionId(sessionId);
+
+    sessionActive = true;   // 
+});
+*/
+//hardcode
+//int patientId = patientRepo->savePatient("test", 25, "9999999999", "Male");
+//int sessionId = sessionService->createSession(patientId);
+
+//VitalsRepository* repo = new VitalsRepository();
+
+//vitalsService->setRepository(repo);
+//vitalsService->setSessionId(sessionId);
+
 
     // ---------- UART ----------
 UartDevice* uart = new UartDevice(&app);
@@ -98,6 +203,7 @@ for (const auto& dev : ports)
             uart,&UartDevice::send);
 
     // Service → Model
+        
     QObject::connect(vitalsService,&VitalsService::temperatureReady,
             vitalsModel,&VitalsModel::setTemperature);
 

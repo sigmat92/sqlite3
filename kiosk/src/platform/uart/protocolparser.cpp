@@ -34,6 +34,7 @@ void ProtocolParser::parseFrames()
             int t = quint8(frame[6]);
             int f = quint8(frame[7]);
             char unit = frame[8];
+            //qDebug() << "Frame:" << frame.toHex(' ');
             double val = t + (f / 10.0);
             emit temperatureReceived(val, unit);
             break;
