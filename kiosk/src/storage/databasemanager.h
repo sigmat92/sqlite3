@@ -10,6 +10,7 @@ public:
 
     bool open(const QString& path);
     void close();
+
     sqlite3* connection();
 
 private:

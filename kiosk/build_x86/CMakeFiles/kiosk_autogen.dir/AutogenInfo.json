@@ -665,6 +665,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/storage/record.h",
+			"MU",
+			"F2ESZRYZMC/moc_record.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h",
 			"MU",
 			"F2ESZRYZMC/moc_sessionrepository.cpp",
@@ -698,6 +704,18 @@
 			"/home/prakash/sqlite3/kiosk/src/view/metriccard.h",
 			"MU",
 			"3JYSCEOBDA/moc_metriccard.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/printview.h",
+			"MU",
+			"3JYSCEOBDA/moc_printview.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/view/recordsview.h",
+			"MU",
+			"3JYSCEOBDA/moc_recordsview.cpp",
 			null
 		],
 		[
@@ -907,6 +925,8 @@
 		[ "/home/prakash/sqlite3/kiosk/src/view/baseview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/view/printview.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/view/recordsview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp", "MU", null ]
 	],

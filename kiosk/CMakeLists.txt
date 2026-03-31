@@ -132,6 +132,7 @@ set(SRC
     src/storage/sessionrepository.cpp
     src/storage/vitalsrepository.h
     src/storage/vitalsrepository.cpp
+    src/storage/record.h
     
     # Views
     
@@ -145,6 +146,10 @@ set(SRC
     src/view/settingsview.cpp
     src/view/baseview.h
     src/view/baseview.cpp
+    src/view/recordsview.h
+    src/view/recordsview.cpp
+    src/view/printview.h
+    src/view/printview.cpp
 )
 
 # --------------------------------------------------

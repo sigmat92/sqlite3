@@ -545,6 +545,34 @@ CMakeFiles/kiosk.dir/src/view/baseview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/view/baseview.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/view/baseview.cpp -o CMakeFiles/kiosk.dir/src/view/baseview.cpp.s
 
+CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: ../src/view/recordsview.cpp
+CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/kiosk/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/recordsview.cpp
+
+CMakeFiles/kiosk.dir/src/view/recordsview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/view/recordsview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/view/recordsview.cpp > CMakeFiles/kiosk.dir/src/view/recordsview.cpp.i
+
+CMakeFiles/kiosk.dir/src/view/recordsview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/view/recordsview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/view/recordsview.cpp -o CMakeFiles/kiosk.dir/src/view/recordsview.cpp.s
+
+CMakeFiles/kiosk.dir/src/view/printview.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/view/printview.cpp.o: ../src/view/printview.cpp
+CMakeFiles/kiosk.dir/src/view/printview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prakash/sqlite3/kiosk/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/kiosk.dir/src/view/printview.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/printview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/printview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/printview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/printview.cpp
+
+CMakeFiles/kiosk.dir/src/view/printview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/view/printview.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/view/printview.cpp > CMakeFiles/kiosk.dir/src/view/printview.cpp.i
+
+CMakeFiles/kiosk.dir/src/view/printview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/view/printview.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/view/printview.cpp -o CMakeFiles/kiosk.dir/src/view/printview.cpp.s
+
 # Object files for target kiosk
 kiosk_OBJECTS = \
 "CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o" \
@@ -580,7 +608,9 @@ kiosk_OBJECTS = \
 "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" \
 "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o" \
 "CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o" \
-"CMakeFiles/kiosk.dir/src/view/baseview.cpp.o"
+"CMakeFiles/kiosk.dir/src/view/baseview.cpp.o" \
+"CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o" \
+"CMakeFiles/kiosk.dir/src/view/printview.cpp.o"
 
 # External object files for target kiosk
 kiosk_EXTERNAL_OBJECTS =
@@ -619,6 +649,8 @@ kiosk: CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/baseview.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/view/printview.cpp.o
 kiosk: CMakeFiles/kiosk.dir/build.make
 kiosk: external/zxing-cpp/core/libZXing.a
 kiosk: /usr/lib/x86_64-linux-gnu/libsqlite3.so
@@ -630,7 +662,7 @@ kiosk: /home/prakash/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 kiosk: /usr/lib/x86_64-linux-gnu/libGLX.so
 kiosk: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 kiosk: CMakeFiles/kiosk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/sqlite3/kiosk/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable kiosk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prakash/sqlite3/kiosk/build_x86/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable kiosk"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kiosk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -25,6 +25,8 @@ public:
 
     void showError(const QString &msg);
 
+    void setCurrentSessionId(int id);
+
 public slots:
     void setTemperatureBusy(bool busy);
     void setTemperatureText(const QString &text);
@@ -37,10 +39,11 @@ signals:
     void startHeightRequested();
     void startWeightRequested();
     void visionTestRequested();
-    void startPrintingRequested();
+    //void startPrintingRequested();
     void settingsRequested();
 
-    void resetSessionRequested();   
+    void resetSessionRequested();  
+    void startPrintingRequested(int sessionId); 
     
     void startSessionRequested(QString name,
                                int age,
@@ -59,8 +62,12 @@ private:
     QRadioButton *maleBtn;
     QRadioButton *femaleBtn;
 
-    MetricCard *spo2Card = nullptr;
-    MetricCard *temperatureCard = nullptr;
+    MetricCard* temperatureCard = nullptr;
+    MetricCard* spo2Card = nullptr;
+    MetricCard* nibpCard = nullptr;
+    MetricCard* weightCard = nullptr;
+    MetricCard* heightCard = nullptr;
+    MetricCard* visionTestCard = nullptr;
 
     QLabel *bmiLabel;
     QLabel *bmiAnalysisLabel;
@@ -68,4 +75,7 @@ private:
     QLabel *bsaLabel;
     QLabel *farVisionLabel;
     QLabel *nearVisionLabel;
+
+    bool sessionStarted = false;
+    int currentSessionId = -1;
 };

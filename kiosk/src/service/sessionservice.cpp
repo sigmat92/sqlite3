@@ -1,6 +1,10 @@
 
 #include "sessionservice.h"
+#include "vitalsservice.h"
 #include <QDebug>
+#include "sessionservice.h"
+#include "storage/databasemanager.h"
+#include <sqlite3.h>
 
 SessionService::SessionService(QObject* parent)
     : QObject(parent)
@@ -10,7 +14,15 @@ SessionService::SessionService(QObject* parent)
 void SessionService::startSpo2()
 {
     qDebug() << "SessionService: Starting SpO2 measurement";
-    // TODO: trigger SpO2 device
+
+    auto* vitalsService = parent() ? parent()->findChild<VitalsService*>() : nullptr;
+    if (!vitalsService)
+    {
+        qWarning() << "SessionService: VitalsService not found for SpO2 measurement";
+        return;
+    }
+
+    vitalsService->requestSpo2();
 }
 
 void SessionService::startNibp()
@@ -32,10 +44,6 @@ void SessionService::startTemperature()
 {
     qDebug() << "SessionService: Starting Temperature measurement";
 }
-
-#include "sessionservice.h"
-#include "storage/databasemanager.h"
-#include <sqlite3.h>
 
 int SessionService::createSession(int patientId)
 {

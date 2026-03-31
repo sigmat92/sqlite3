@@ -88,7 +88,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVitalsServiceENDCLASS[] = {
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    2,    2,
     QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,    2,    2,    2,
     QMetaType::Void, QMetaType::Double,    2,
-    QMetaType::Void, QMetaType::Double,    2,
+    QMetaType::Void, QMetaType::Int,    2,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    2,    2,
@@ -130,7 +130,7 @@ Q_CONSTINIT const QMetaObject VitalsService::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
         // method 'heightReady'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<double, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onTemperature'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
@@ -165,7 +165,7 @@ void VitalsService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 2: _t->spo2Ready((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 3: _t->nibpReady((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 4: _t->weightReady((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
-        case 5: _t->heightReady((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 5: _t->heightReady((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 6: _t->onTemperature((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
         case 7: _t->onSpo2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 8: _t->onNibp((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
@@ -211,7 +211,7 @@ void VitalsService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             }
         }
         {
-            using _t = void (VitalsService::*)(double );
+            using _t = void (VitalsService::*)(int );
             if (_t _q_method = &VitalsService::heightReady; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 5;
                 return;
@@ -286,7 +286,7 @@ void VitalsService::weightReady(double _t1)
 }
 
 // SIGNAL 5
-void VitalsService::heightReady(double _t1)
+void VitalsService::heightReady(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);

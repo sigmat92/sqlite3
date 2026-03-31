@@ -1,0 +1,94 @@
+#include "recordsview.h"
+#include "storage/record.h"
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QPushButton>
+#include <QTableView>
+#include <QHeaderView>
+#include <QStandardItemModel>
+#include <QMessageBox>
+#include <QDebug>
+
+RecordsView::RecordsView(QWidget *parent)
+    : BaseView("", parent)
+{
+    QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
+
+    table = new QTableView;
+    model = new QStandardItemModel(this);
+
+    table->setModel(model);
+
+    table->setSelectionBehavior(QAbstractItemView::SelectRows);
+    table->setSelectionMode(QAbstractItemView::SingleSelection);
+
+    table->horizontalHeader()->setStretchLastSection(true);
+
+    layout->addWidget(table);
+
+    /* -------- BUTTONS -------- */
+
+    QHBoxLayout *btnLayout = new QHBoxLayout;
+
+    selectBtn = new QPushButton("SELECT");
+    exitBtn   = new QPushButton("EXIT");
+
+    btnLayout->addWidget(selectBtn);
+    btnLayout->addWidget(exitBtn);
+
+    layout->addLayout(btnLayout);
+
+    connect(selectBtn, &QPushButton::clicked, this, [this]() {
+
+        int id = getSelectedSessionId();
+
+        if(id < 0)
+        {
+            QMessageBox::warning(this,"Warning","Select a record");
+            return;
+        }
+
+        emit recordSelected(id);
+    });
+
+    connect(exitBtn, &QPushButton::clicked,
+            this, &RecordsView::backRequested);
+}
+
+/* -------- SET DATA -------- */
+
+void RecordsView::setData(const std::vector<Record>& records)
+{
+    model->clear();
+
+    model->setHorizontalHeaderLabels(
+        {"Session ID", "Patient ID", "Date", "Time", "Name"}
+    );
+
+    for(const auto& r : records)
+    {
+        QList<QStandardItem*> row;
+
+        row << new QStandardItem(QString::number(r.sessionId));
+        row << new QStandardItem(QString::number(r.patientId));
+        row << new QStandardItem(r.date);
+        row << new QStandardItem(r.time);
+        row << new QStandardItem(r.name);
+
+        model->appendRow(row);
+    }
+}
+
+/* -------- GET SELECTED -------- */
+
+int RecordsView::getSelectedSessionId()
+{
+    QModelIndex index = table->currentIndex();
+
+    if(!index.isValid())
+        return -1;
+
+    int row = index.row();
+
+    return model->item(row, 0)->text().toInt();
+}

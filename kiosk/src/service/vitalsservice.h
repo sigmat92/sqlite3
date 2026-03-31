@@ -49,6 +49,7 @@ private:
 
     void setIdle();
     void startTimeout();
+    
 };
 
 #endif

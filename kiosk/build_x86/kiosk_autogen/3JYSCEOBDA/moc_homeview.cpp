@@ -47,9 +47,10 @@ static constexpr auto qt_meta_stringdata_CLASSHomeViewENDCLASS = QtMocHelpers::s
     "startHeightRequested",
     "startWeightRequested",
     "visionTestRequested",
-    "startPrintingRequested",
     "settingsRequested",
     "resetSessionRequested",
+    "startPrintingRequested",
+    "sessionId",
     "startSessionRequested",
     "name",
     "age",
@@ -66,7 +67,7 @@ static constexpr auto qt_meta_stringdata_CLASSHomeViewENDCLASS = QtMocHelpers::s
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
-    uint offsetsAndSizes[48];
+    uint offsetsAndSizes[50];
     char stringdata0[9];
     char stringdata1[19];
     char stringdata2[1];
@@ -75,22 +76,23 @@ struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
     char stringdata5[21];
     char stringdata6[21];
     char stringdata7[20];
-    char stringdata8[23];
-    char stringdata9[18];
-    char stringdata10[22];
-    char stringdata11[22];
-    char stringdata12[5];
-    char stringdata13[4];
-    char stringdata14[7];
+    char stringdata8[18];
+    char stringdata9[22];
+    char stringdata10[23];
+    char stringdata11[10];
+    char stringdata12[22];
+    char stringdata13[5];
+    char stringdata14[4];
     char stringdata15[7];
-    char stringdata16[20];
-    char stringdata17[19];
-    char stringdata18[5];
-    char stringdata19[19];
-    char stringdata20[5];
-    char stringdata21[16];
-    char stringdata22[5];
-    char stringdata23[6];
+    char stringdata16[7];
+    char stringdata17[20];
+    char stringdata18[19];
+    char stringdata19[5];
+    char stringdata20[19];
+    char stringdata21[5];
+    char stringdata22[16];
+    char stringdata23[5];
+    char stringdata24[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeViewENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -104,22 +106,23 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
         QT_MOC_LITERAL(74, 20),  // "startHeightRequested"
         QT_MOC_LITERAL(95, 20),  // "startWeightRequested"
         QT_MOC_LITERAL(116, 19),  // "visionTestRequested"
-        QT_MOC_LITERAL(136, 22),  // "startPrintingRequested"
-        QT_MOC_LITERAL(159, 17),  // "settingsRequested"
-        QT_MOC_LITERAL(177, 21),  // "resetSessionRequested"
-        QT_MOC_LITERAL(199, 21),  // "startSessionRequested"
-        QT_MOC_LITERAL(221, 4),  // "name"
-        QT_MOC_LITERAL(226, 3),  // "age"
-        QT_MOC_LITERAL(230, 6),  // "mobile"
-        QT_MOC_LITERAL(237, 6),  // "gender"
-        QT_MOC_LITERAL(244, 19),  // "newSessionRequested"
-        QT_MOC_LITERAL(264, 18),  // "setTemperatureBusy"
-        QT_MOC_LITERAL(283, 4),  // "busy"
-        QT_MOC_LITERAL(288, 18),  // "setTemperatureText"
-        QT_MOC_LITERAL(307, 4),  // "text"
-        QT_MOC_LITERAL(312, 15),  // "onVitalsUpdated"
-        QT_MOC_LITERAL(328, 4),  // "spo2"
-        QT_MOC_LITERAL(333, 5)   // "pulse"
+        QT_MOC_LITERAL(136, 17),  // "settingsRequested"
+        QT_MOC_LITERAL(154, 21),  // "resetSessionRequested"
+        QT_MOC_LITERAL(176, 22),  // "startPrintingRequested"
+        QT_MOC_LITERAL(199, 9),  // "sessionId"
+        QT_MOC_LITERAL(209, 21),  // "startSessionRequested"
+        QT_MOC_LITERAL(231, 4),  // "name"
+        QT_MOC_LITERAL(236, 3),  // "age"
+        QT_MOC_LITERAL(240, 6),  // "mobile"
+        QT_MOC_LITERAL(247, 6),  // "gender"
+        QT_MOC_LITERAL(254, 19),  // "newSessionRequested"
+        QT_MOC_LITERAL(274, 18),  // "setTemperatureBusy"
+        QT_MOC_LITERAL(293, 4),  // "busy"
+        QT_MOC_LITERAL(298, 18),  // "setTemperatureText"
+        QT_MOC_LITERAL(317, 4),  // "text"
+        QT_MOC_LITERAL(322, 15),  // "onVitalsUpdated"
+        QT_MOC_LITERAL(338, 4),  // "spo2"
+        QT_MOC_LITERAL(343, 5)   // "pulse"
     },
     "HomeView",
     "startSpo2Requested",
@@ -129,9 +132,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
     "startHeightRequested",
     "startWeightRequested",
     "visionTestRequested",
-    "startPrintingRequested",
     "settingsRequested",
     "resetSessionRequested",
+    "startPrintingRequested",
+    "sessionId",
     "startSessionRequested",
     "name",
     "age",
@@ -172,14 +176,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
        7,    0,  103,    2, 0x06,    6 /* Public */,
        8,    0,  104,    2, 0x06,    7 /* Public */,
        9,    0,  105,    2, 0x06,    8 /* Public */,
-      10,    0,  106,    2, 0x06,    9 /* Public */,
-      11,    4,  107,    2, 0x06,   10 /* Public */,
-      16,    0,  116,    2, 0x06,   15 /* Public */,
+      10,    1,  106,    2, 0x06,    9 /* Public */,
+      12,    4,  109,    2, 0x06,   11 /* Public */,
+      17,    0,  118,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      17,    1,  117,    2, 0x0a,   16 /* Public */,
-      19,    1,  120,    2, 0x0a,   18 /* Public */,
-      21,    2,  123,    2, 0x0a,   20 /* Public */,
+      18,    1,  119,    2, 0x0a,   17 /* Public */,
+      20,    1,  122,    2, 0x0a,   19 /* Public */,
+      22,    2,  125,    2, 0x0a,   21 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -190,14 +194,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::QString, QMetaType::QString,   12,   13,   14,   15,
+    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::QString, QMetaType::QString,   13,   14,   15,   16,
     QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Bool,   18,
-    QMetaType::Void, QMetaType::QString,   20,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,   22,   23,
+    QMetaType::Void, QMetaType::Bool,   19,
+    QMetaType::Void, QMetaType::QString,   21,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   23,   24,
 
        0        // eod
 };
@@ -223,12 +227,13 @@ Q_CONSTINIT const QMetaObject HomeView::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'visionTestRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'startPrintingRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'settingsRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'resetSessionRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startPrintingRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'startSessionRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
@@ -263,9 +268,9 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 3: _t->startHeightRequested(); break;
         case 4: _t->startWeightRequested(); break;
         case 5: _t->visionTestRequested(); break;
-        case 6: _t->startPrintingRequested(); break;
-        case 7: _t->settingsRequested(); break;
-        case 8: _t->resetSessionRequested(); break;
+        case 6: _t->settingsRequested(); break;
+        case 7: _t->resetSessionRequested(); break;
+        case 8: _t->startPrintingRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 9: _t->startSessionRequested((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4]))); break;
         case 10: _t->newSessionRequested(); break;
         case 11: _t->setTemperatureBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
@@ -319,21 +324,21 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         }
         {
             using _t = void (HomeView::*)();
-            if (_t _q_method = &HomeView::startPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &HomeView::settingsRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 6;
                 return;
             }
         }
         {
             using _t = void (HomeView::*)();
-            if (_t _q_method = &HomeView::settingsRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &HomeView::resetSessionRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 7;
                 return;
             }
         }
         {
-            using _t = void (HomeView::*)();
-            if (_t _q_method = &HomeView::resetSessionRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (HomeView::*)(int );
+            if (_t _q_method = &HomeView::startPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 8;
                 return;
             }
@@ -422,21 +427,22 @@ void HomeView::visionTestRequested()
 }
 
 // SIGNAL 6
-void HomeView::startPrintingRequested()
+void HomeView::settingsRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 6, nullptr);
 }
 
 // SIGNAL 7
-void HomeView::settingsRequested()
+void HomeView::resetSessionRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 7, nullptr);
 }
 
 // SIGNAL 8
-void HomeView::resetSessionRequested()
+void HomeView::startPrintingRequested(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 8, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 8, _a);
 }
 
 // SIGNAL 9

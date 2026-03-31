@@ -1,6 +1,7 @@
 /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_homecontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
   /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/moc_predefs.h \
   /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h \
@@ -429,6 +430,7 @@
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/locale.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/pthread.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sched.h \
+  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdint.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdio.h \

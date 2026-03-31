@@ -396,7 +396,26 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /usr/include/sqlite3.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printcontroller.cpp \
@@ -445,21 +464,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
@@ -502,6 +508,10 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_printview.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/printview.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_recordsview.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/recordsview.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \

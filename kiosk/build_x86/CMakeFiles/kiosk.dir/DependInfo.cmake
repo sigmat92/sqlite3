@@ -40,6 +40,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/view/baseview.cpp" "CMakeFiles/kiosk.dir/src/view/baseview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/baseview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/view/printview.cpp" "CMakeFiles/kiosk.dir/src/view/printview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/printview.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/view/recordsview.cpp" "CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp" "CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp" "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o.d"
   )

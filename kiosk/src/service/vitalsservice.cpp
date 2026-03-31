@@ -85,7 +85,7 @@ void VitalsService::onTemperature(double v, char unit)
         qDebug()<<"Saving TEMP:"<<v;
         m_repo->saveTemperature(m_sessionId,v);
     }
-
+    qDebug() << "SessionId in DB:" << m_sessionId;
     emit temperatureReady(v,unit);
     setIdle();
 }

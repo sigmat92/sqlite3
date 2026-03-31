@@ -21,5 +21,7 @@
 #include "3JYSCEOBDA/moc_baseview.cpp"
 #include "3JYSCEOBDA/moc_homeview.cpp"
 #include "3JYSCEOBDA/moc_metriccard.cpp"
+#include "3JYSCEOBDA/moc_printview.cpp"
+#include "3JYSCEOBDA/moc_recordsview.cpp"
 #include "3JYSCEOBDA/moc_settingsview.cpp"
 #include "3JYSCEOBDA/moc_visiontestview.cpp"

@@ -2,11 +2,8 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp \
  /usr/include/stdc-predef.h \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /usr/include/sqlite3.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
- /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -155,6 +152,7 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /usr/include/c++/11/cwchar /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -251,29 +249,17 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtresource.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qttranslation.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydata.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpair.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydatapointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qarraydataops.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
  /usr/include/c++/11/cstring /usr/include/c++/11/iterator \
@@ -283,6 +269,7 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /usr/include/c++/11/bits/locale_classes.h \
  /usr/include/c++/11/bits/locale_classes.tcc \
  /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/ostream \
@@ -297,7 +284,7 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
@@ -308,6 +295,23 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnamespace.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qchar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
@@ -319,4 +323,53 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringtokenizer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearraylist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringmatcher.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcompare.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtaggedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobjectdefs_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /usr/include/sqlite3.h /home/prakash/sqlite3/kiosk/src/storage/record.h

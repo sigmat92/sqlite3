@@ -981,6 +981,54 @@ src/view/metriccard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/metriccard.cpp.s
 .PHONY : src/view/metriccard.cpp.s
 
+src/view/printview.o: src/view/printview.cpp.o
+.PHONY : src/view/printview.o
+
+# target to build an object file
+src/view/printview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/printview.cpp.o
+.PHONY : src/view/printview.cpp.o
+
+src/view/printview.i: src/view/printview.cpp.i
+.PHONY : src/view/printview.i
+
+# target to preprocess a source file
+src/view/printview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/printview.cpp.i
+.PHONY : src/view/printview.cpp.i
+
+src/view/printview.s: src/view/printview.cpp.s
+.PHONY : src/view/printview.s
+
+# target to generate assembly for a file
+src/view/printview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/printview.cpp.s
+.PHONY : src/view/printview.cpp.s
+
+src/view/recordsview.o: src/view/recordsview.cpp.o
+.PHONY : src/view/recordsview.o
+
+# target to build an object file
+src/view/recordsview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o
+.PHONY : src/view/recordsview.cpp.o
+
+src/view/recordsview.i: src/view/recordsview.cpp.i
+.PHONY : src/view/recordsview.i
+
+# target to preprocess a source file
+src/view/recordsview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/recordsview.cpp.i
+.PHONY : src/view/recordsview.cpp.i
+
+src/view/recordsview.s: src/view/recordsview.cpp.s
+.PHONY : src/view/recordsview.s
+
+# target to generate assembly for a file
+src/view/recordsview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/view/recordsview.cpp.s
+.PHONY : src/view/recordsview.cpp.s
+
 src/view/settingsview.o: src/view/settingsview.cpp.o
 .PHONY : src/view/settingsview.o
 
@@ -1141,6 +1189,12 @@ help:
 	@echo "... src/view/metriccard.o"
 	@echo "... src/view/metriccard.i"
 	@echo "... src/view/metriccard.s"
+	@echo "... src/view/printview.o"
+	@echo "... src/view/printview.i"
+	@echo "... src/view/printview.s"
+	@echo "... src/view/recordsview.o"
+	@echo "... src/view/recordsview.i"
+	@echo "... src/view/recordsview.s"
 	@echo "... src/view/settingsview.o"
 	@echo "... src/view/settingsview.i"
 	@echo "... src/view/settingsview.s"

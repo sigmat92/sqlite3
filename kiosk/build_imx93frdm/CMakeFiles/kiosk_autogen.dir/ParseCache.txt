@@ -975,6 +975,7 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/moc_predefs.h
  mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
+ mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h
@@ -1403,6 +1404,7 @@
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/locale.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/pthread.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sched.h
+ mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sqlite3.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdint.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdio.h
@@ -1877,6 +1879,7 @@
  mdp:/home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/moc_predefs.h
  mdp:/home/prakash/sqlite3/kiosk/src/controller/homecontroller.h
  mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
+ mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h
@@ -2305,6 +2308,7 @@
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/locale.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/pthread.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sched.h
+ mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/sqlite3.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdc-predef.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdint.h
  mdp:/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/stdio.h

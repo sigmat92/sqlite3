@@ -11,9 +11,6 @@
 #include "storage/patientrepository.h"
 #include "storage/databasemanager.h"
 
-//#include "controller/protocolcontroller.h"
-//#include "controller/protocolparser.h"
-
 #include "model/vitalsmodel.h"
 #include "platform/uart/uartdevice.h"
 #include "platform/uart/protocolparser.h"
@@ -21,6 +18,61 @@
 
 #include <QDir>
 #include <QStringList>
+#include "view/printview.h"
+
+#include <QStackedWidget>
+
+#include "view/recordsview.h"
+
+#include "storage/vitalsrepository.h"
+
+#include "storage/record.h"
+
+#include <vector>
+
+#include <sqlite3.h>
+
+std::vector<Record> getAllSessions()
+{
+    std::vector<Record> records;
+
+    sqlite3* db = DatabaseManager::instance().connection();
+    sqlite3_stmt* stmt = nullptr;
+
+    const char* sql = R"(
+        SELECT 
+            s.id,
+            p.id,
+            DATE(s.started_at),
+            TIME(s.started_at),
+            p.name
+        FROM sessions s
+        JOIN patients p ON s.patient_id = p.id
+        JOIN vitals v ON v.session_id = s.id   
+        GROUP BY s.id
+        ORDER BY s.id DESC;
+    )";
+
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
+        return records;
+
+    while (sqlite3_step(stmt) == SQLITE_ROW)
+    {
+        Record r;
+
+        r.sessionId = sqlite3_column_int(stmt, 0);
+        r.patientId = sqlite3_column_int(stmt, 1);
+        r.date = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2)));
+        r.time = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3)));
+        r.name = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4)));
+
+        records.push_back(r);
+    }
+
+    sqlite3_finalize(stmt);
+    return records;
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -38,20 +90,33 @@ int main(int argc, char *argv[])
 
     // ---------- VIEW ----------
     HomeView* homeView = new HomeView;
+    RecordsView *recordsView = new RecordsView;
+    PrintView   *printView   = new PrintView;
+        
+    QStackedWidget *stackedWidget = new QStackedWidget;
 
+    stackedWidget->addWidget(homeView);     
+    stackedWidget->addWidget(printView);
+    stackedWidget->addWidget(recordsView);
+
+    //stackedWidget->setCurrentWidget(homeView);
+    //stackedWidget->showFullScreen();
+    
     // ---------- MODEL ----------
     VitalsModel* vitalsModel = new VitalsModel(&app);
 
     // ---------- SERVICES ----------
 
-VitalsService* vitalsService = new VitalsService(&app);
-SessionService* sessionService = new SessionService(&app);
-PatientRepository* patientRepo = new PatientRepository();
-VitalsRepository* repo = new VitalsRepository();
+    VitalsService* vitalsService = new VitalsService(&app);
+    SessionService* sessionService = new SessionService(&app);
+    PatientRepository* patientRepo = new PatientRepository();
+    VitalsRepository* repo = new VitalsRepository();
 
-vitalsService->setRepository(repo);
+    vitalsService->setRepository(repo);
 
 // SESSION CREATION (ONLY ONCE)
+
+
 QObject::connect(homeView,
     &HomeView::startSessionRequested,
     [=](QString name,int age,QString mobile,QString gender)
@@ -66,13 +131,68 @@ QObject::connect(homeView,
     if(patientId<=0) return;
 
     int sessionId = sessionService->createSession(patientId);
+    repo->createEmptyVitals(sessionId);
+
     if(sessionId<=0) return;
 
     qDebug()<<"Session created:"<<sessionId;
 
     vitalsService->setSessionId(sessionId);
+    homeView->setCurrentSessionId(sessionId);   // IMPORTANT
+});
+//Print requested
+    //RecordsView *recordsView = new RecordsView;
+    //PrintView   *printView   = new PrintView;
+
+    //QStackedWidget *stackedWidget = new QStackedWidget;
+
+    //stackedWidget->addWidget(recordsView);
+    //stackedWidget->addWidget(printView);
+
+QObject::connect(homeView, &HomeView::startPrintingRequested,
+                 [&](int sessionId){
+
+    qDebug() << "Printing current session:" << sessionId;
+
+    QVariantMap data = repo->getLatestVitals(sessionId);
+
+    printView->setData(data);
+
+    stackedWidget->setCurrentWidget(printView);
+    stackedWidget->showFullScreen();
+    homeView->hide();
 });
 
+QObject::connect(printView, &PrintView::exitRequested,
+                 [&](){
+
+    stackedWidget->setCurrentWidget(homeView);
+});
+//
+// -------- LOAD RECORDS --------
+std::vector<Record> records = getAllSessions();   // 
+recordsView->setData(records);
+
+// -------- RECORD SELECTION --------
+QObject::connect(recordsView, &RecordsView::recordSelected,
+                 [=](int sessionId){
+
+    qDebug() << "Selected session:" << sessionId;
+
+    QVariantMap data =
+                    repo->getLatestVitals(sessionId);
+       
+    printView->setData(data);
+
+    stackedWidget->setCurrentWidget(printView);
+});
+//back from printview
+QObject::connect(printView, &PrintView::backRequested,
+        [&](){
+
+    stackedWidget->setCurrentWidget(recordsView);
+    stackedWidget->showFullScreen();
+});
 // RESET SESSION
 QObject::connect(homeView,
     &HomeView::resetSessionRequested,
@@ -81,78 +201,9 @@ QObject::connect(homeView,
     qDebug()<<"Reset session";
     vitalsService->setSessionId(-1);
 });
-    //VitalsService* vitalsService = new VitalsService(&app);
-    //SessionService* sessionService = new SessionService(&app);
-    //PatientRepository* patientRepo = new PatientRepository;
-
-    //VitalsRepository* repo = new VitalsRepository();
-    //    vitalsService->setRepository(repo);
-    //    vitalsService->setSessionId(sessionId);  // 
-
-/*
-VitalsService* vitalsService = new VitalsService(&app);
-
-SessionService* sessionService = new SessionService(&app);
-PatientRepository* patientRepo = new PatientRepository();
-VitalsRepository* repo = new VitalsRepository();
-vitalsService->setRepository(repo);
-
-QObject::connect(homeView,
-    &HomeView::newSessionRequested,
-    [=]()
-{
-    qDebug() << "Session reset";
-
-    vitalsService->setSessionId(-1);
-
-    static bool* sessionActivePtr = new bool(false);
-    *sessionActivePtr = false;
-});
-
-QObject::connect(homeView,
-    &HomeView::startSessionRequested,
-    [=](QString name, int age, QString mobile, QString gender)
-{
-    static bool sessionActive = false;
-
-    if(sessionActive)
-    {
-        qDebug() << "Session already active";
-        return;
-    }
-
-    qDebug() << "SESSION SLOT TRIGGERED";
-
-    if(name.isEmpty() || age <= 0 || gender.isEmpty())
-    {
-        qDebug() << "Invalid patient data";
-        return;
-    }
-
-    int patientId = patientRepo->savePatient(name, age, mobile, gender);
-    if(patientId <= 0) return;
-
-    int sessionId = sessionService->createSession(patientId);
-    if(sessionId <= 0) return;
-
-    qDebug() << "Session created:" << sessionId;
-
-    vitalsService->setSessionId(sessionId);
-
-    sessionActive = true;   // 
-});
-*/
-//hardcode
-//int patientId = patientRepo->savePatient("test", 25, "9999999999", "Male");
-//int sessionId = sessionService->createSession(patientId);
-
-//VitalsRepository* repo = new VitalsRepository();
-
-//vitalsService->setRepository(repo);
-//vitalsService->setSessionId(sessionId);
 
 
-    // ---------- UART ----------
+// ---------- UART ----------
 UartDevice* uart = new UartDevice(&app);
 
 QStringList ports = {
@@ -173,9 +224,6 @@ for (const auto& dev : ports)
 
 // ---------- PROTOCOL ----------
     ProtocolParser* parser = new ProtocolParser(&app);
-
-    //ProtocolController* protocolCtrl =
-    //    new ProtocolController(uart, parser, &app);
 
     // ---------- CONNECT Protocol → Service ----------
     // UART → Parser
@@ -247,7 +295,9 @@ QObject::connect(settingsView,
                  });
 
 
-    homeView->showFullScreen();
-    //homeView->show();
+    //homeView->showFullScreen();
+    stackedWidget->setCurrentWidget(homeView);
+    stackedWidget->showFullScreen();
+    
     return app.exec();
 }

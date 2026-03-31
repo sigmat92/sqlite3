@@ -8,6 +8,7 @@ DatabaseManager& DatabaseManager::instance()
 }
 
 DatabaseManager::DatabaseManager() {}
+
 DatabaseManager::~DatabaseManager()
 {
     close();
@@ -38,6 +39,8 @@ sqlite3* DatabaseManager::connection()
     return m_db;
 }
 
+/*  UPDATED SCHEMA (IMPORTANT) */
+
 bool DatabaseManager::initializeSchema()
 {
     const char* sql = R"(
@@ -58,25 +61,42 @@ bool DatabaseManager::initializeSchema()
         FOREIGN KEY(patient_id) REFERENCES patients(id)
     );
 
+    /* ONE ROW PER SESSION */
     CREATE TABLE IF NOT EXISTS vitals (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    session_id INTEGER NOT NULL,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        session_id INTEGER UNIQUE NOT NULL,
 
-    spo2 INTEGER,
-    pulse INTEGER,
+        spo2 INTEGER,
+        pulse INTEGER,
 
-    systolic INTEGER,
-    diastolic INTEGER,
+        systolic INTEGER,
+        diastolic INTEGER,
 
-    height INTEGER,
-    weight REAL,
+        height INTEGER,
+        weight REAL,
 
-    temperature REAL,
+        temperature REAL,
 
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 
-    FOREIGN KEY(session_id) REFERENCES sessions(id)
-);
+        FOREIGN KEY(session_id) REFERENCES sessions(id)
+    );
+/* results */
+        CREATE TABLE IF NOT EXISTS results (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        session_id INTEGER UNIQUE NOT NULL,
+        
+        body_mass_index REAL,
+        basal_metabolic_rate REAL,
+        bmi_analysis REAL,
+        body_surface_area REAL,
+        far_vision REAL,
+        near_vision REAL
+        
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+        FOREIGN KEY(session_id) REFERENCES sessions(id)
+    );
     )";
 
     char* errMsg = nullptr;

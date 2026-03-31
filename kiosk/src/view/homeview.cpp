@@ -149,13 +149,30 @@ HomeView::HomeView(QWidget *parent)
     {
         MetricCard *card = new MetricCard(metrics[i].title);
 
+        // STORE POINTERS
+        if(metrics[i].title == "Temperature")
+            temperatureCard = card;
+
+        if(metrics[i].title == "SpO2 / Pulse")
+            spo2Card = card;
+
+        if(metrics[i].title == "NIBP")
+            nibpCard = card;
+
+        if(metrics[i].title == "Weight")
+            weightCard = card;
+
+        if(metrics[i].title == "Height")
+            heightCard = card;
+
         int row = i / columns;
         int col = i % columns;
 
         grid->addWidget(card,row,col);
-grid->setColumnStretch(0,1);
-grid->setColumnStretch(1,1);
-grid->setColumnStretch(2,1);
+        grid->setColumnStretch(0,1);
+        grid->setColumnStretch(1,1);
+        grid->setColumnStretch(2,1);
+
         connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
 
     // 1. Create session FIRST (only for first measurement)
@@ -169,7 +186,69 @@ grid->setColumnStretch(2,1);
             patientMobile(),
             patientGender()
         );
-            temperatureCard = card;
+    
+    }
+
+    if(metrics[i].title == "SpO2 / Pulse")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
+
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
+            
+    }
+    
+    if(metrics[i].title == "NIBP")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
+
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
+            
+    }
+    if(metrics[i].title == "Height")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
+
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
+            
+    }
+    if(metrics[i].title == "Weight")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
+
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
+            
+    }
+        if(metrics[i].title == "Visison Test")
+    {
+        qDebug() << "EMITTING SESSION SIGNAL";
+
+        emit startSessionRequested(
+            patientName(),
+            patientAge().toInt(),
+            patientMobile(),
+            patientGender()
+        );
+            
     }
 
     // 2. THEN start measurement
@@ -251,10 +330,15 @@ grid->setColumnStretch(2,1);
 
     connect(printBtn,&QPushButton::clicked,this,[this](){
 
-        emit startPrintingRequested();
-        statusLabel->setText("Test Status: Printing results...");
+    if(currentSessionId <= 0)
+    {
+        showError("No session available");
+        return;
+    }
 
-    });
+    emit startPrintingRequested(currentSessionId);
+    statusLabel->setText("Test Status: Printing results...");
+});
 
     layout->addWidget(printBtn);
 }
@@ -279,8 +363,11 @@ void HomeView::setTemperatureText(const QString &text)
 
 void HomeView::onVitalsUpdated(int spo2,int pulse)
 {
+    qDebug() << "VIEW UPDATE:" << spo2 << pulse;
+    qDebug() << "temperatureCard ptr:" << spo2Card;
     if(spo2Card)
         spo2Card->setValue(QString("%1 / %2").arg(spo2).arg(pulse));
+
 }
 
 /* ================= PATIENT DATA ================= */
@@ -344,4 +431,8 @@ void HomeView::clearPatientFields()
 void HomeView::showError(const QString &msg)
 {
     QMessageBox::warning(this,"Error",msg);
+}
+void HomeView::setCurrentSessionId(int id)
+{
+    currentSessionId = id;
 }
