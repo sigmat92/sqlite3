@@ -3,6 +3,7 @@
 #include "KECQXMYYOW/moc_cameracontroller.cpp"
 #include "KECQXMYYOW/moc_homecontroller.cpp"
 #include "KECQXMYYOW/moc_inputcontroller.cpp"
+#include "KECQXMYYOW/moc_navigationmanager.cpp"
 #include "KECQXMYYOW/moc_printcontroller.cpp"
 #include "KECQXMYYOW/moc_settingscontroller.cpp"
 #include "KECQXMYYOW/moc_visiontestcontroller.cpp"

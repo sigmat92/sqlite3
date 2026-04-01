@@ -42,7 +42,7 @@ HomeView::HomeView(QWidget *parent)
 
     actionLayout->addWidget(newTestBtn);
     actionLayout->addWidget(settingsBtn);
-
+    /*
     connect(newTestBtn,&QPushButton::clicked,this,[this](){
 
         clearPatientFields();
@@ -51,9 +51,26 @@ HomeView::HomeView(QWidget *parent)
         statusLabel->setText("Test Status: New test started");
 
     });
+    */
+    connect(newTestBtn,&QPushButton::clicked,this,[this](){
 
+    clearPatientFields();
+    unlockPatientFields();
+
+    emit resetSessionRequested();
+
+    // CREATE SESSION EARLY
+    emit startSessionRequested(
+        patientName(),
+        patientAge().toInt(),
+        patientMobile(),
+        patientGender()
+    );
+
+    statusLabel->setText("Test Status: New test started");
+});
     connect(settingsBtn,&QPushButton::clicked,this,[this](){
-
+        qDebug() << "Settings button clicked in home view";
         emit settingsRequested();
 
     });

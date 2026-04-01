@@ -41,7 +41,7 @@ private slots:
 
 private:
     VisionTestView* m_visionView = nullptr;
-    //VisionTestView* m_visionView;
+    bool validatePatient();
     bool ensurePatientSaved();
     void resetSession();
 

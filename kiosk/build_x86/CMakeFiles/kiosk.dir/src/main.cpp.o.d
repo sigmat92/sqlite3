@@ -441,39 +441,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
- /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
- /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
- /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
- /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
- /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
- /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
- /usr/include/sqlite3.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
@@ -495,28 +462,44 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qbuttongroup.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QTabWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDir \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdir.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
- /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
- /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
- /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfileinfo.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/sqlite3/kiosk/src/view/printview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/view/recordsview.h \
+ /home/prakash/sqlite3/kiosk/src/view/visiontestview.h \
+ /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/sqlite3/kiosk/src/model/patient.h \
+ /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
+ /usr/include/sqlite3.h /home/prakash/sqlite3/kiosk/src/storage/record.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \
- /home/prakash/sqlite3/kiosk/src/view/recordsview.h \
- /home/prakash/sqlite3/kiosk/src/storage/record.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h

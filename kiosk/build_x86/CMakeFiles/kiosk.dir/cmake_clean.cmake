@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o"
   "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o.d"
+  "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o"
+  "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o"
   "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o"

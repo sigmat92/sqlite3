@@ -17,6 +17,12 @@ signals:
     void leftStartRequested();
     void rightStartRequested();
     void backRequested();
+    //void exitRequested();
+
+    void startRequested();
+    void passRequested();
+    void failRequested();
+    void modeChanged(QString mode);
     void exitRequested();
 
 private:
@@ -24,10 +30,22 @@ private:
 
     QPushButton *m_leftBtn;
     QPushButton *m_rightBtn;
-    QPushButton *m_backBtn;
+    //QPushButton *m_backBtn;
     QPushButton *m_exitBtn;
 
     QLabel *m_leftResult;
     QLabel *m_rightResult;
+
+QPushButton *m_nearBtn;
+QPushButton *m_farBtn;
+QPushButton *m_startBtn;
+QPushButton *m_passBtn;
+QPushButton *m_failBtn;
+QPushButton *m_backBtn;
+
+QLabel *m_instruction;
+QLabel *m_testLabel;
+
+QString m_mode = "NEAR";
     
 };

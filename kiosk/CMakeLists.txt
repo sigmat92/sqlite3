@@ -91,6 +91,8 @@ set(SRC
     src/controller/settingscontroller.h
     src/controller/settingscontroller.cpp
     #src/controller/inputcontroller.cpp
+    src/controller/navigationmanager.h
+    src/controller/navigationmanager.cpp
 
     #service
     src/service/sessionservice.h

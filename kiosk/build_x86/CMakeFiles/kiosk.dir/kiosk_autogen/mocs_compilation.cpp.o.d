@@ -418,6 +418,32 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/navigationmanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/printcontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_settingscontroller.cpp \
@@ -457,27 +483,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \

@@ -527,6 +527,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h",
+			"MU",
+			"KECQXMYYOW/moc_navigationmanager.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/controller/printcontroller.h",
 			"MU",
 			"KECQXMYYOW/moc_printcontroller.cpp",
@@ -814,6 +820,11 @@
 		],
 		[
 			"/home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp",
 			"MU",
 			null
 		],

@@ -178,30 +178,20 @@ void PrintView::setData(const QVariantMap& d)
     };
 
     /* -------- Patient Info -------- */
-    /*
-    QString name   = getStr("name");
-    QString mobile = getStr("mobile");
-    QString gender = getStr("gender");
 
-    patientInfoLabel->setText(
-        QString("Name: %1\nMobile: %2\nGender: %3")
-            .arg(name)
-            .arg(mobile)
-            .arg(gender)
-    );
-    */
     QString name   = getStr("name");
     QString mobile = getStr("mobile");
     QString gender = getStr("gender");
     int age        = getInt("age");
 
     patientInfoLabel->setText(
-        QString("Name: %1\nAge: %2\nMobile: %3\nGender: %4")
+        QString("Name: %1\tAge: %2\tMobile: %3\tGender: %4")
             .arg(name)
             .arg(age > 0 ? QString::number(age) : "--")
             .arg(mobile)
             .arg(gender)
     );
+    patientInfoLabel->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
     /* -------- Vitals -------- */
 
     double temp = getDouble("temperature");

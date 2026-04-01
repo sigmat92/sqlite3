@@ -309,6 +309,30 @@ src/controller/homecontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.s
 .PHONY : src/controller/homecontroller.cpp.s
 
+src/controller/navigationmanager.o: src/controller/navigationmanager.cpp.o
+.PHONY : src/controller/navigationmanager.o
+
+# target to build an object file
+src/controller/navigationmanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o
+.PHONY : src/controller/navigationmanager.cpp.o
+
+src/controller/navigationmanager.i: src/controller/navigationmanager.cpp.i
+.PHONY : src/controller/navigationmanager.i
+
+# target to preprocess a source file
+src/controller/navigationmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.i
+.PHONY : src/controller/navigationmanager.cpp.i
+
+src/controller/navigationmanager.s: src/controller/navigationmanager.cpp.s
+.PHONY : src/controller/navigationmanager.s
+
+# target to generate assembly for a file
+src/controller/navigationmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.s
+.PHONY : src/controller/navigationmanager.cpp.s
+
 src/controller/printcontroller.o: src/controller/printcontroller.cpp.o
 .PHONY : src/controller/printcontroller.o
 
@@ -1105,6 +1129,9 @@ help:
 	@echo "... src/controller/homecontroller.o"
 	@echo "... src/controller/homecontroller.i"
 	@echo "... src/controller/homecontroller.s"
+	@echo "... src/controller/navigationmanager.o"
+	@echo "... src/controller/navigationmanager.i"
+	@echo "... src/controller/navigationmanager.s"
 	@echo "... src/controller/printcontroller.o"
 	@echo "... src/controller/printcontroller.i"
 	@echo "... src/controller/printcontroller.s"

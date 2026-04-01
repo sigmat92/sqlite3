@@ -4,71 +4,28 @@
 #include "../service/sessionservice.h"
 #include "../model/vitalsmodel.h"
 #include "../storage/vitalsrepository.h"
-#include "storage/vitalsrepository.h"
-//#include "controller/protocolcontroller.h"
 #include "service/settingsservice.h"
-#include "../view/settingsview.h"
-#include "../controller/settingscontroller.h"
-#include "../service/systemsettingsservice.h"
-#include "../service/adminauthservice.h"
-#include "view/visiontestview.h"
+
 #include <QDebug>
 
 HomeController::HomeController(HomeView* view,
                                SessionService* sessionService,
                                PatientRepository* repo,
                                VitalsModel* vitalsModel,
-                               VitalsService* vitalsService,   
+                               VitalsService* vitalsService,
                                SettingsService* settings,
                                QObject* parent)
-: QObject(parent),
-  m_view(view),
-  m_sessionService(sessionService),
-  m_repo(repo),
-  m_vitalsModel(vitalsModel),
-  m_vitalsService(vitalsService),   
-  m_settings(settings)
+    : QObject(parent),
+      m_view(view),
+      m_sessionService(sessionService),
+      m_repo(repo),
+      m_vitalsModel(vitalsModel),
+      m_vitalsService(vitalsService),
+      m_settings(settings)
 {
     m_vitalsRepo = new VitalsRepository();
-    m_vitalsService = vitalsService;
 
-    //settings
-        connect(m_view, &HomeView::settingsRequested,
-            this, [this]()
-    {
-        SettingsView* settingsView = new SettingsView;
-        SystemSettingsService* systemService = new SystemSettingsService;
-        AdminAuthService* authService = new AdminAuthService;
-
-        new SettingsController(settingsView,
-                            systemService,
-                            authService);
-
-        //settingsView->show();
-        settingsView->showFullScreen();
-    });
-
-    //visionTest
-//
-        connect(m_view, &HomeView::visionTestRequested,
-            this, [this]()
-    {
-        VisionTestView* visionTestView = new VisionTestView;
-        SystemSettingsService* systemService = new SystemSettingsService;
-        AdminAuthService* authService = new AdminAuthService;
-
-        //new SettingsController(visionTestView,
-        //                    systemService,
-        //                    authService);
-
-        //settingsView->show();
-        visionTestView->showFullScreen();
-    });
-
-    
-//
-
-    // ===== FINAL SIGNALS (Save to DB) =====
+    // ================= FINAL SIGNALS (SAVE TO DB) =================
 
     connect(m_vitalsModel, &VitalsModel::spo2Final,
             this, &HomeController::onSpO2Final);
@@ -85,22 +42,25 @@ HomeController::HomeController(HomeView* view,
     connect(m_vitalsModel, &VitalsModel::nibpFinal,
             this, &HomeController::onNIBPFinal);
 
-    // ===== START REQUESTS =====
+    connect(m_vitalsModel, &VitalsModel::temperatureChanged,
+        this, &HomeController::onTemperatureChanged);
+        
+    // ================= START REQUESTS =================
+
+    connect(m_view, &HomeView::startTemperatureRequested,
+            this, [this]() {
+
+        if (!validatePatient())
+            return;
+
+        m_view->setTemperatureBusy(true);
+        m_vitalsService->requestTemperature();
+    });
 
     connect(m_view, &HomeView::startSpo2Requested,
             this, &HomeController::onStartSpo2Requested);
 
-    connect(m_view, &HomeView::startTemperatureRequested,
-            this, [this] {
-                if (!ensurePatientSaved())
-                    return;
-
-                m_view->setTemperatureBusy(true);
-                //m_protocol->requestTemperature();
-                m_vitalsService->requestTemperature();
-            });
-
-    // ===== LIVE STREAMING TO UI =====
+    // ================= LIVE UI UPDATES =================
 
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
             this, &HomeController::onTemperatureChanged);
@@ -108,16 +68,10 @@ HomeController::HomeController(HomeView* view,
     connect(m_vitalsModel, &VitalsModel::spo2Changed,
             this, &HomeController::onSpO2Changed);
 }
-
-bool HomeController::ensurePatientSaved()
+bool HomeController::validatePatient()
 {
-    qDebug() << "Ensuring patient is saved...";
-    if (m_currentPatientId > 0)
-        return true;
-
     QString name = m_view->patientName();
     QString ageStr = m_view->patientAge();
-    QString mobile = m_view->patientMobile();
     QString gender = m_view->patientGender();
 
     if (name.isEmpty() || ageStr.isEmpty() || gender.isEmpty())
@@ -126,80 +80,57 @@ bool HomeController::ensurePatientSaved()
         return false;
     }
 
-    int age = ageStr.toInt();
-    if (age <= 0)
+    if (ageStr.toInt() <= 0)
     {
         m_view->showError("Invalid age");
         return false;
     }
 
-    int patientId = m_repo->savePatient(name, age, mobile, gender);
-
-    if (patientId <= 0)
-    {
-        m_view->showError("Failed to save patient");
-        return false;
-    }
-
-    m_currentPatientId = patientId;
-
-    // CREATE SESSION
-    m_currentSessionId = m_sessionService->createSession(patientId);
-
-    if (m_currentSessionId <= 0)
-    {
-        m_view->showError("Failed to create session");
-        return false;
-    }
-
-    m_view->lockPatientFields();
-
     return true;
 }
-
-void HomeController::onSpO2Final(int spo2, int pulse)
-{
-    if (!ensurePatientSaved())
-        return;
-
-    m_vitalsRepo->saveSpO2(m_currentSessionId, spo2, pulse);
-}
-
 void HomeController::onTemperatureFinal(double temp)
 {
-    if (!ensurePatientSaved())
+    int sessionId = m_vitalsService->sessionId();
+
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session. Skipping temperature save.";
         return;
+    }
 
-    m_vitalsRepo->saveTemperature(m_currentSessionId, temp);
+    m_vitalsRepo->saveTemperature(sessionId, temp);
 }
+void HomeController::onSpO2Final(int spo2, int pulse)
+{
+    int sessionId = m_vitalsService->sessionId();
+    if (sessionId <= 0) return;
 
+    m_vitalsRepo->saveSpO2(sessionId, spo2, pulse);
+}
 void HomeController::onWeightFinal(double weight)
 {
-    if (!ensurePatientSaved())
-        return;
+    int sessionId = m_vitalsService->sessionId();
+    if (sessionId <= 0) return;
 
-    m_vitalsRepo->saveWeight(m_currentSessionId, weight);
+    m_vitalsRepo->saveWeight(sessionId, weight);
 }
-
 void HomeController::onHeightFinal(int height)
 {
-    if (!ensurePatientSaved())
-        return;
+    int sessionId = m_vitalsService->sessionId();
+    if (sessionId <= 0) return;
 
-    m_vitalsRepo->saveHeight(m_currentSessionId, height);
+    m_vitalsRepo->saveHeight(sessionId, height);
 }
-
 void HomeController::onNIBPFinal(int sys, int dia)
 {
-    if (!ensurePatientSaved())
-        return;
+    int sessionId = m_vitalsService->sessionId();
+    if (sessionId <= 0) return;
 
-    m_vitalsRepo->saveNIBP(m_currentSessionId, sys, dia);
+    m_vitalsRepo->saveNIBP(sessionId, sys, dia);
 }
+
 void HomeController::onTemperatureChanged(double value, char unit)
 {
-    qDebug() << "UI TEMP UPDATE:" << value << unit;
-
     QString text = QString::number(value, 'f', 1)
                  + QChar(0x00B0)
                  + QChar(unit);
@@ -207,49 +138,22 @@ void HomeController::onTemperatureChanged(double value, char unit)
     m_view->setTemperatureText(text);
     m_view->setTemperatureBusy(false);
 }
+
 void HomeController::onSpO2Changed(int spo2, int pulse)
 {
     Q_UNUSED(spo2)
     Q_UNUSED(pulse)
 }
-
-void HomeController::resetSession()
-{
-    m_currentPatientId = -1;
-    m_currentSessionId = -1;
-
-    m_view->unlockPatientFields();
-    m_view->clearPatientFields();
-}
-
 void HomeController::onStartSpo2Requested()
 {
     qDebug() << "SpO2 start requested";
 
-    if (!ensurePatientSaved())
+    if (!validatePatient())
         return;
 
-    //m_protocol->requestSpo2();
+    m_vitalsService->requestSpo2();
 }
-
 void HomeController::visionTestRequested()
 {
-    qDebug() << "HomeController: launching Vision Test";
-
-    if (!m_visionView)
-    {
-        m_visionView = new VisionTestView();
-
-        connect(m_visionView,
-                &VisionTestView::exitRequested,
-                this,
-                [this]()
-                {
-                    m_visionView->hide();
-                    m_view->showFullScreen();
-                });
-    }
-
-    m_view->hide();
-    m_visionView->showFullScreen();
+    qDebug() << "Vision test requested (stub)";
 }
