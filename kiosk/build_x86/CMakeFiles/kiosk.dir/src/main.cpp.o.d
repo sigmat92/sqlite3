@@ -502,4 +502,5 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
+ /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h

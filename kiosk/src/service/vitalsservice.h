@@ -46,7 +46,7 @@ private:
 
     VitalsRepository* m_repo = nullptr;
     int m_sessionId = -1;
-
+    
     void setIdle();
     void startTimeout();
     

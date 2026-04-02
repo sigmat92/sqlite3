@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/controller/barcodescanner.cpp" "CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/cameracontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp" "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o.d"
@@ -41,6 +42,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/view/baseview.cpp" "CMakeFiles/kiosk.dir/src/view/baseview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/baseview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/homeview.cpp" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/metriccard.cpp" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/view/printview.cpp" "CMakeFiles/kiosk.dir/src/view/printview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/printview.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/view/recordsview.cpp" "CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/settingsview.cpp" "CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp" "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o.d"
   )

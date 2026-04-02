@@ -13,7 +13,7 @@ VitalsService::VitalsService(QObject* parent)
 }
 
 // ---------------- SESSION ----------------
-
+/*
 void VitalsService::setSessionId(int id)
 {
     if(m_sessionId > 0)
@@ -25,7 +25,17 @@ void VitalsService::setSessionId(int id)
     m_sessionId = id;
     qDebug()<<"Session set:"<<m_sessionId;
 }
+*/
+void VitalsService::setSessionId(int id)
+{
+    qDebug() << "Session set in vitals service:" << id;
+    m_sessionId = id;
+}
 
+//int VitalsService::sessionId() const
+//{
+//    return m_sessionId;
+//}
 // ---------------- REQUESTS ----------------
 
 void VitalsService::requestTemperature()

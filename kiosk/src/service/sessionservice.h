@@ -10,11 +10,12 @@ struct Patient {
     int age = 0;
 };
 */
+class SessionRepository; 
 class SessionService : public QObject
 {
     Q_OBJECT
 public:
-    explicit SessionService(QObject* parent = nullptr);
+    explicit SessionService(SessionRepository* repo, QObject* parent = nullptr);
     int createSession(int patientId);
     void reset();
 
@@ -35,5 +36,6 @@ signals:
 private:
     Patient m_patient;
     QString m_patientId;
+    SessionRepository* m_repo;
 };
 

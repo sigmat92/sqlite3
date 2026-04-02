@@ -5,9 +5,11 @@
 #include "sessionservice.h"
 #include "storage/databasemanager.h"
 #include <sqlite3.h>
+#include "storage/sessionrepository.h"
 
-SessionService::SessionService(QObject* parent)
-    : QObject(parent)
+SessionService::SessionService(SessionRepository* repo, QObject* parent)
+    : QObject(parent),
+      m_repo(repo)
 {
 }
 
@@ -47,6 +49,18 @@ void SessionService::startTemperature()
 
 int SessionService::createSession(int patientId)
 {
+    qDebug() << "Creating NEW session in DB...";
+
+    int sessionId = m_repo->createSession(patientId);
+
+    qDebug() << "Session created:" << sessionId;
+
+    return sessionId;
+}
+
+/*
+int SessionService::createSession(int patientId)
+{
     sqlite3* db = DatabaseManager::instance().connection();
 
     const char* sql =
@@ -69,3 +83,4 @@ int SessionService::createSession(int patientId)
 
     return (int)sqlite3_last_insert_rowid(db);
 }
+*/

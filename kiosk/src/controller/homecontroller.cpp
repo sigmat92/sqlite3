@@ -9,21 +9,24 @@
 #include <QDebug>
 
 HomeController::HomeController(HomeView* view,
-                               SessionService* sessionService,
-                               PatientRepository* repo,
-                               VitalsModel* vitalsModel,
-                               VitalsService* vitalsService,
-                               SettingsService* settings,
-                               QObject* parent)
-    : QObject(parent),
-      m_view(view),
-      m_sessionService(sessionService),
-      m_repo(repo),
-      m_vitalsModel(vitalsModel),
-      m_vitalsService(vitalsService),
-      m_settings(settings)
+               SessionService* sessionService,
+               PatientRepository* repo,
+               VitalsModel* vitalsModel,
+               VitalsService* vitalsService,
+               VitalsRepository* vitalsRepo,   // ADD THIS
+               SettingsService* settings,
+               QObject* parent)
+: QObject(parent),
+  m_view(view),
+  m_sessionService(sessionService),
+  m_repo(repo),
+  m_vitalsModel(vitalsModel),
+  m_settings(settings),        
+  m_vitalsService(vitalsService)
 {
-    m_vitalsRepo = new VitalsRepository();
+    
+    m_vitalsService = vitalsService;
+    m_vitalsRepo = vitalsRepo;
 
     // ================= FINAL SIGNALS (SAVE TO DB) =================
 
@@ -44,18 +47,23 @@ HomeController::HomeController(HomeView* view,
 
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
         this, &HomeController::onTemperatureChanged);
+    connect(m_view, &HomeView::resetSessionRequested,
+        this, &HomeController::resetSession);
         
     // ================= START REQUESTS =================
-
     connect(m_view, &HomeView::startTemperatureRequested,
-            this, [this]() {
+        this, [this] {
 
-        if (!validatePatient())
-            return;
+    qDebug() << "\"Temperature\" requested";
 
-        m_view->setTemperatureBusy(true);
-        m_vitalsService->requestTemperature();
-    });
+    // CRITICAL FIX
+    if (!ensurePatientSaved())
+        return;
+
+    m_view->setTemperatureBusy(true);
+
+    m_vitalsService->requestTemperature();
+});
 
     connect(m_view, &HomeView::startSpo2Requested,
             this, &HomeController::onStartSpo2Requested);
@@ -98,7 +106,8 @@ void HomeController::onTemperatureFinal(double temp)
         return;
     }
 
-    m_vitalsRepo->saveTemperature(sessionId, temp);
+    //m_vitalsRepo->saveTemperature(sessionId, temp);
+    m_vitalsRepo->saveTemperature(m_vitalsService->sessionId(), temp);
 }
 void HomeController::onSpO2Final(int spo2, int pulse)
 {
@@ -152,6 +161,74 @@ void HomeController::onStartSpo2Requested()
         return;
 
     m_vitalsService->requestSpo2();
+}
+
+bool HomeController::ensurePatientSaved()
+{
+    qDebug() << "Ensuring patient/session...";
+
+    if (m_currentSessionId > 0)
+        return true;
+
+    QString name = m_view->patientName();
+    QString ageStr = m_view->patientAge();
+    QString mobile = m_view->patientMobile();
+    QString gender = m_view->patientGender();
+
+    if (name.isEmpty() || ageStr.isEmpty() || gender.isEmpty())
+    {
+        m_view->showError("Please fill patient details");
+        return false;
+    }
+
+    int age = ageStr.toInt();
+    if (age <= 0)
+    {
+        m_view->showError("Invalid age");
+        return false;
+    }
+
+    int patientId = m_repo->savePatient(name, age, mobile, gender);
+    if (patientId <= 0)
+    {
+        m_view->showError("Failed to save patient");
+        return false;
+    }
+
+    m_currentPatientId = patientId;
+
+    qDebug() << "Creating session in controller...";
+
+    m_currentSessionId = m_sessionService->createSession(patientId);
+
+    if (m_currentSessionId <= 0)
+    {
+        m_view->showError("Failed to create session");
+        return false;
+    }
+
+    // CRITICAL FIX
+    m_vitalsService->setSessionId(m_currentSessionId);
+
+    qDebug() << "Session set in vitals service:" << m_currentSessionId;
+
+    m_view->setCurrentSessionId(m_currentSessionId);
+    m_view->lockPatientFields();
+
+    return true;
+}
+void HomeController::resetSession()
+{
+    qDebug() << "Resetting session in controller";
+
+    m_currentPatientId = -1;
+    m_currentSessionId = -1;
+
+    // CRITICAL
+    m_vitalsService->setSessionId(-1);
+
+    m_view->unlockPatientFields();
+    m_view->clearPatientFields();
 }
 void HomeController::visionTestRequested()
 {

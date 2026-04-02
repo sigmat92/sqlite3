@@ -63,6 +63,21 @@ void VisionTestView::setupUi()
 
     // ===== BACK BUTTON =====
     m_backBtn = new QPushButton("BACK");
+        m_backBtn->setStyleSheet(
+        "font-size:28px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#0d47a1;"
+        "color:white;"
+    );
+    m_exitBtn   = new QPushButton("EXIT");
+        m_exitBtn->setStyleSheet(
+        "font-size:28px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#455a64;"
+        "color:white;"
+    );
     main->addWidget(m_backBtn);
 
     // ===== SIGNALS =====

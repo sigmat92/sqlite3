@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/controller/barcodescanner.cpp" "CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/cameracontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp" "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp" "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o.d"

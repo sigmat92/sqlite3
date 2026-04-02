@@ -26,6 +26,8 @@ static void ensureRow(int sessionId)
 
 bool VitalsRepository::saveTemperature(int sessionId, double temperature)
 {
+    qDebug() << "Saving TEMP:" << temperature;
+    qDebug() << "SessionId in DB:" << sessionId;
     ensureRow(sessionId);
 
     sqlite3* db = DatabaseManager::instance().connection();

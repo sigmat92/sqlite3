@@ -381,4 +381,5 @@ CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
- /usr/include/sqlite3.h
+ /usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h

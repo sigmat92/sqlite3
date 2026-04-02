@@ -1,6 +1,5 @@
 #include "homeview.h"
 #include "metriccard.h"
-
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QGridLayout>
@@ -56,16 +55,16 @@ HomeView::HomeView(QWidget *parent)
 
     clearPatientFields();
     unlockPatientFields();
-
+    currentSessionId = -1; 
     emit resetSessionRequested();
 
     // CREATE SESSION EARLY
-    emit startSessionRequested(
-        patientName(),
-        patientAge().toInt(),
-        patientMobile(),
-        patientGender()
-    );
+    //emit startSessionRequested(
+    //    patientName(),
+    //    patientAge().toInt(),
+    //    patientMobile(),
+    //    patientGender()
+    //);
 
     statusLabel->setText("Test Status: New test started");
 });
@@ -152,13 +151,15 @@ HomeView::HomeView(QWidget *parent)
     std::vector<MetricDef> metrics =
     {
         //title,status.signal
+        
         {"Vision Test","Vision test started",[this]{ emit visionTestRequested(); }},
         {"SpO2 / Pulse","SpO2 measurement started",[this]{ emit startSpo2Requested(); }},
         {"NIBP","NIBP measurement started",[this]{ emit startNIBPRequested(); }},
         {"Height","Height measurement started",[this]{ emit startHeightRequested(); }},
         {"Weight","Weight measurement started",[this]{ emit startWeightRequested(); }},
         {"Temperature","Temperature measurement started",[this]{ emit startTemperatureRequested(); }}
-    };
+        
+        };
 
     const int columns = 3;
 
@@ -190,6 +191,16 @@ HomeView::HomeView(QWidget *parent)
         grid->setColumnStretch(1,1);
         grid->setColumnStretch(2,1);
 
+        connect(card, &MetricCard::startRequested, this, [this, metrics, i]() {
+
+            // ONLY emit measurement signal
+            metrics[i].signal();
+
+            statusLabel->setText("Test Status: " + metrics[i].status);
+
+            qDebug() << metrics[i].title << "requested";
+        });
+/*
         connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
 
     // 1. Create session FIRST (only for first measurement)
@@ -203,7 +214,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
-    
+
     }
 
     if(metrics[i].title == "SpO2 / Pulse")
@@ -216,6 +227,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
+
             
     }
     
@@ -229,6 +241,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
+
             
     }
     if(metrics[i].title == "Height")
@@ -241,7 +254,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
-            
+  
     }
     if(metrics[i].title == "Weight")
     {
@@ -253,7 +266,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
-            
+ 
     }
         if(metrics[i].title == "Visison Test")
     {
@@ -265,7 +278,7 @@ HomeView::HomeView(QWidget *parent)
             patientMobile(),
             patientGender()
         );
-            
+    
     }
 
     // 2. THEN start measurement
@@ -275,7 +288,7 @@ HomeView::HomeView(QWidget *parent)
 
     qDebug() << metrics[i].title << "requested";
 });
-
+*/
     }//for
 
     layout->addWidget(metricsPanel);

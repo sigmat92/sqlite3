@@ -28,6 +28,7 @@
 #include <QStringList>
 #include <vector>
 #include <sqlite3.h>
+#include "storage/sessionrepository.h"
 
 /* ================= LOAD ALL SESSIONS ================= */
 
@@ -112,21 +113,25 @@ int main(int argc, char *argv[])
 
     // ---------- SERVICES ----------
     VitalsService* vitalsService = new VitalsService(&app);
-    SessionService* sessionService = new SessionService(&app);
+    
     PatientRepository* patientRepo = new PatientRepository();
     VitalsRepository* repo = new VitalsRepository();
 
     vitalsService->setRepository(repo);
 
-    // ---------- CONTROLLER ----------
-    new HomeController(homeView,
-                       sessionService,
-                       patientRepo,
-                       vitalsModel,
-                       vitalsService,
-                       nullptr,
-                       &app);
+    SessionRepository* sessionRepo = new SessionRepository();
 
+    SessionService* sessionService = new SessionService(sessionRepo, &app);
+
+    // ---------- CONTROLLER ----------
+  new HomeController(homeView,
+                   sessionService,
+                   patientRepo,
+                   vitalsModel,
+                   vitalsService,
+                   repo,              // SAME INSTANCE
+                   nullptr,
+                   &app);
     // ---------- RECORDS LOAD ----------
     recordsView->setData(getAllSessions());
 
@@ -190,40 +195,6 @@ int main(int argc, char *argv[])
                      [=]() {
                          nav->goBack();
                      });
-    //session
-    QObject::connect(homeView,
-    &HomeView::startSessionRequested,
-    [=](QString name,int age,QString mobile,QString gender)
-{
-    qDebug() << "SESSION SIGNAL RECEIVED";
-
-    if(vitalsService->sessionId() > 0)
-    {
-        qDebug()<<"Session already active";
-        return;
-    }
-
-    int patientId = patientRepo->savePatient(name,age,mobile,gender);
-    if(patientId<=0) {
-        qDebug()<<"Patient save failed";
-        return;
-    }
-
-    int sessionId = sessionService->createSession(patientId);
-    repo->createEmptyVitals(sessionId);
-
-    if(sessionId<=0) {
-        qDebug()<<"Session creation failed";
-        return;
-    }
-
-    qDebug()<<"Session created:"<<sessionId;
-
-    vitalsService->setSessionId(sessionId);
-
-    homeView->setCurrentSessionId(sessionId);   // IMPORTANT
-});
-
     // ---------- UART ----------
     UartDevice* uart = new UartDevice(&app);
 
@@ -262,8 +233,11 @@ int main(int argc, char *argv[])
     QObject::connect(vitalsService, &VitalsService::sendCommand,
                      uart, &UartDevice::send);
 
-    QObject::connect(vitalsService, &VitalsService::temperatureReady,
-                     vitalsModel, &VitalsModel::setTemperature);
+    //QObject::connect(vitalsService, &VitalsService::temperatureReady,
+    //                 vitalsModel, &VitalsModel::setTemperature);
+QObject::connect(vitalsService, &VitalsService::temperatureReady,
+                 vitalsModel, &VitalsModel::setTemperature,
+                 Qt::UniqueConnection);
 
     QObject::connect(vitalsService, &VitalsService::spo2Ready,
                      vitalsModel, &VitalsModel::setSpO2);

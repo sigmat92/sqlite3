@@ -31,7 +31,21 @@ RecordsView::RecordsView(QWidget *parent)
     QHBoxLayout *btnLayout = new QHBoxLayout;
 
     selectBtn = new QPushButton("SELECT");
+        selectBtn->setStyleSheet(
+        "font-size:28px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#0d47a1;"
+        "color:white;"
+    );
     exitBtn   = new QPushButton("EXIT");
+       exitBtn->setStyleSheet(
+        "font-size:28px;"
+        "border-radius: 8px;"
+        "font-weight:bold;"
+        "background:#455a64;"
+        "color:white;"
+    );
 
     btnLayout->addWidget(selectBtn);
     btnLayout->addWidget(exitBtn);

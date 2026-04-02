@@ -18,12 +18,13 @@ class HomeController : public QObject
 
 public:
         HomeController(HomeView* view,
-                   SessionService* sessionService,
-                   PatientRepository* repo,
-                   VitalsModel* vitalsModel,
-                   VitalsService* vitalsService,   
-                   SettingsService* settings,
-                   QObject* parent = nullptr);
+               SessionService* sessionService,
+               PatientRepository* repo,
+               VitalsModel* vitalsModel,
+               VitalsService* vitalsService,
+               VitalsRepository* vitalsRepo,   // ADD THIS
+               SettingsService* settings,
+               QObject* parent);
 
 
 public slots:
