@@ -1,52 +1,63 @@
-#include "../controller/visiontestcontroller.h"
-#include "../view/visiontestview.h"
-#include "../service/visionservice.h"
+#include "controller/visiontestcontroller.h"
+#include "view/visiontestview.h"
+#include "service/visionservice.h"
 
 VisionTestController::VisionTestController(
-        VisionTestView *view,
-        VisionService *service,
-        QObject *parent)
+    VisionTestView* view,
+    VisionService* service,
+    QObject* parent)
     : QObject(parent),
       m_view(view),
       m_service(service)
 {
-    //connect(m_view, &VisionTestView::leftStartRequested,
-    //        this, &VisionTestController::startLeftTest);
+    /* -------- START -------- */
+    connect(m_view, &VisionTestView::startRequested,
+            m_service, &VisionService::startTest);
 
-    //connect(m_view, &VisionTestView::rightStartRequested,
-    //        this, &VisionTestController::startRightTest);
+    /* -------- ANSWERS -------- */
+    connect(m_view, &VisionTestView::answerSelected,
+            this, [=](QString ans) {
 
-    connect(m_view, &VisionTestView::backRequested,
-            this, &VisionTestController::goBack);
+        if (ans == "OK")
+            m_service->submitAnswer(true);
+        else
+            m_service->submitAnswer(false);
+    });
+
+    /* -------- UPDATE SYMBOL -------- */
+    connect(m_service, &VisionService::nextSymbol,
+            m_view, &VisionTestView::displaySymbol);
+
+    /* -------- RESULT -------- */
+    connect(m_service, &VisionService::testCompleted,
+            m_view, &VisionTestView::showResult);
 }
 /*
-void VisionTestController::startLeftTest()
+#include "visiontestcontroller.h"
+#include "view/visiontestview.h"
+#include "service/visionservice.h"
+
+VisionTestController::VisionTestController(
+        VisionTestView* view,
+        VisionService* service,
+        QObject* parent)
+    : QObject(parent),
+      m_view(view),
+      m_service(service)
 {
-    m_view->setEnabled(false);
+    // Start test
+    connect(m_view, &VisionTestView::startRequested,
+            m_service, &VisionService::startTest);
 
-    QString result = m_service->runLeftEyeTest();
+    // User answers
+    connect(m_view, &VisionTestView::answerSelected,
+            m_service, &VisionService::submitAnswer);
 
-    m_view->setLeftResult(result);
-    m_view->setEnabled(true);
-}
+    // Update UI
+    connect(m_service, &VisionService::showSymbol,
+            m_view, &VisionTestView::displaySymbol);
 
-void VisionTestController::startRightTest()
-{
-    m_view->setEnabled(false);
-
-    QString result = m_service->runRightEyeTest();
-
-    m_view->setRightResult(result);
-    m_view->setEnabled(true);
+    connect(m_service, &VisionService::testFinished,
+            m_view, &VisionTestView::showResult);
 }
 */
-void VisionTestController::goBack()
-{
-    // Navigation handled by parent stacked widget
-    emit m_view->backRequested();
-}
-
-//void VisionTestController::exitRequested()
-//{
-//    emit m_view->exitRequested();
-//}

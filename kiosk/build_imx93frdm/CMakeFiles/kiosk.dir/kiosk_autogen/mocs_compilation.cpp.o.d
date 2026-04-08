@@ -596,6 +596,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/moc_settingsservice.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/../../../src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/../../../src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/F2ESZRYZMC/moc_settingsrepository.cpp \

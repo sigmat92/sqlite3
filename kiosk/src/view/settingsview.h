@@ -37,13 +37,20 @@ public:
 
     bool isDhcpEnabled() const;
     bool isAutoSendEnabled() const;
+    void darkModeToggled(bool checked) const;
     QString usbMode() const;
+
+    // ===== Dark Mode =====
+    void applyTheme(bool dark);
 
 signals:
     void saveRequested();
     void exitRequested();
     void dhcpToggled(bool);
-
+    void darkModeToggled(bool);//1
+    
+    void themeChanged(bool darkMode);//2
+    
 private:
     void setupUi();
     QWidget* createIpFieldRow(QLineEdit* fields[4]);
@@ -53,6 +60,7 @@ private:
     QWidget *m_dateTab;
     QWidget *m_calibrationTab;
     QWidget *m_commTab;
+    QWidget *m_darkModeTab;
 
     // WIFI
     QLineEdit *m_ssid;

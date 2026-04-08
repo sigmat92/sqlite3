@@ -10,7 +10,10 @@ public:
     SettingsService(SettingsModel* m,
                     SettingsRepository* r,
                     QObject* parent=nullptr);
+    
     SettingsModel* getModel() const;
+    
+    void applyTheme(bool dark);
 
 public slots:
     void save();
@@ -18,6 +21,7 @@ public slots:
     void scanWifi();
     void testConnection();
     void applyNetwork();
+    
 
 signals:
     void wifiListReady(QStringList);

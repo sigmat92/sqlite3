@@ -34,7 +34,7 @@ HomeController::HomeController(HomeView* view,
             this, &HomeController::onSpO2Final);
 
     connect(m_vitalsModel, &VitalsModel::temperatureFinal,
-            this, &HomeController::onTemperatureFinal);
+            this, &HomeController::onTemperatureFinal,Qt::UniqueConnection);
 
     connect(m_vitalsModel, &VitalsModel::weightFinal,
             this, &HomeController::onWeightFinal);
@@ -46,7 +46,7 @@ HomeController::HomeController(HomeView* view,
             this, &HomeController::onNIBPFinal);
 
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
-        this, &HomeController::onTemperatureChanged);
+        this, &HomeController::onTemperatureChanged,Qt::UniqueConnection);
     connect(m_view, &HomeView::resetSessionRequested,
         this, &HomeController::resetSession);
         
@@ -54,7 +54,7 @@ HomeController::HomeController(HomeView* view,
     connect(m_view, &HomeView::startTemperatureRequested,
         this, [this] {
 
-    qDebug() << "\"Temperature\" requested";
+    qDebug() << "homecontroller: \"Temperature\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
     // CRITICAL FIX
     if (!ensurePatientSaved())
@@ -71,7 +71,7 @@ HomeController::HomeController(HomeView* view,
     // ================= LIVE UI UPDATES =================
 
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
-            this, &HomeController::onTemperatureChanged);
+            this, &HomeController::onTemperatureChanged,Qt::UniqueConnection);
 
     connect(m_vitalsModel, &VitalsModel::spo2Changed,
             this, &HomeController::onSpO2Changed);
@@ -107,8 +107,9 @@ void HomeController::onTemperatureFinal(double temp)
     }
 
     //m_vitalsRepo->saveTemperature(sessionId, temp);
-    m_vitalsRepo->saveTemperature(m_vitalsService->sessionId(), temp);
+    qDebug() << "temperature not saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
+
 void HomeController::onSpO2Final(int spo2, int pulse)
 {
     int sessionId = m_vitalsService->sessionId();
@@ -210,7 +211,7 @@ bool HomeController::ensurePatientSaved()
     // CRITICAL FIX
     m_vitalsService->setSessionId(m_currentSessionId);
 
-    qDebug() << "Session set in vitals service:" << m_currentSessionId;
+    qDebug() << "Session setting in vitals service from home controller:" << m_currentSessionId;
 
     m_view->setCurrentSessionId(m_currentSessionId);
     m_view->lockPatientFields();

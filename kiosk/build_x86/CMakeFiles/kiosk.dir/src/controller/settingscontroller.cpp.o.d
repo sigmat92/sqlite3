@@ -453,4 +453,20 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
  /home/prakash/sqlite3/kiosk/src/controller/../service/systemsettingsservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/adminauthservice.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qinputmethod.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

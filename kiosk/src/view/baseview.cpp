@@ -24,26 +24,29 @@ BaseView::BaseView(const QString &title, QWidget *parent)
 QWidget* BaseView::createHeader(const QString &title)
 {
     QWidget *header = new QWidget;
-    header->setStyleSheet("background-color: black; color: white;");
+    header->setObjectName("header");
+    //header->setStyleSheet("background-color: black; color: white;");
     //header->setFixedHeight(70);
 
     QHBoxLayout *layout = new QHBoxLayout(header);
-
+    layout->setObjectName("headerLayout");
     QLabel *logo = new QLabel("metsl");
-    logo->setStyleSheet("font-size: 24px; font-weight: bold;");
+    logo->setObjectName("logo");
+    //logo->setStyleSheet("font-size: 24px; font-weight: bold;");
 
     QLabel *pageTitle = new QLabel(title);
-    pageTitle->setStyleSheet("font-size: 24px;");
+    pageTitle->setObjectName("pageTitle");
+    //pageTitle->setStyleSheet("font-size: 24px;");
 
     m_dateTimeLabel = new QLabel;
-
-
+    m_dateTimeLabel->setObjectName("dateTimeLabel");
+/*
     m_dateTimeLabel->setStyleSheet(
         "color: #DDDDDD;"
         "font-size: 24px;"
         "font-weight: bold;"
     );
-
+*/
     //m_statusIndicator = new QLabel;
     //m_statusIndicator->setFixedSize(20,20);
     //m_statusIndicator->setStyleSheet(
@@ -51,15 +54,15 @@ QWidget* BaseView::createHeader(const QString &title)
     //);
 
     auto* powerBtn = new QPushButton("Stop");
-    
-    powerBtn->setObjectName("powerButton");
+    powerBtn->setObjectName("powerBtn");
+    /*
     powerBtn->setStyleSheet(
         "color: #DDDDDD;"
         "font-size: 24px;"
         "font-weight: bold;"
         "border-radius: 15px;"
     );
-
+    */
     connect(powerBtn, &QPushButton::clicked, this, [this]() {
     //status->setText("Test Status: Shutting Down...");
     QProcess::startDetached("poweroff");
@@ -79,14 +82,18 @@ QWidget* BaseView::createHeader(const QString &title)
 QWidget* BaseView::createFooter()
 {
     QWidget *footer = new QWidget;
-    footer->setStyleSheet("background-color: black; color: white;");
+    footer->setObjectName("footer");
+    //footer->setStyleSheet("background-color: black; color: white;");
     //footer->setFixedHeight(50);
 
     QHBoxLayout *layout = new QHBoxLayout(footer);
+    layout->setObjectName("footerLayout");
     QLabel *version = new QLabel("Care Nest Mini ");
-    version->setStyleSheet("font-size: 24px;");
+    version->setObjectName("version");
+    //version->setStyleSheet("font-size: 24px;");
     QLabel *versionLabel = new QLabel("v1.0.0");
-    versionLabel->setStyleSheet("font-size: 24px;");
+    versionLabel->setObjectName("versionLabel");
+    //versionLabel->setStyleSheet("font-size: 24px;");
     layout->addWidget(version);
     layout->addStretch();
     layout->addWidget(versionLabel);

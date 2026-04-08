@@ -13,29 +13,13 @@ VitalsService::VitalsService(QObject* parent)
 }
 
 // ---------------- SESSION ----------------
-/*
-void VitalsService::setSessionId(int id)
-{
-    if(m_sessionId > 0)
-    {
-        qDebug()<<"Session already active";
-        return;
-    }
 
-    m_sessionId = id;
-    qDebug()<<"Session set:"<<m_sessionId;
-}
-*/
 void VitalsService::setSessionId(int id)
 {
-    qDebug() << "Session set in vitals service:" << id;
+    qDebug() << "Session setting in vitals service :" << id;
     m_sessionId = id;
 }
 
-//int VitalsService::sessionId() const
-//{
-//    return m_sessionId;
-//}
 // ---------------- REQUESTS ----------------
 
 void VitalsService::requestTemperature()
@@ -92,10 +76,10 @@ void VitalsService::onTemperature(double v, char unit)
 
     if(m_repo && m_sessionId > 0)
     {
-        qDebug()<<"Saving TEMP:"<<v;
+        qDebug()<<" Saving TEMP from VitalsService calling repo method:"<<v;
         m_repo->saveTemperature(m_sessionId,v);
     }
-    qDebug() << "SessionId in DB:" << m_sessionId;
+    qDebug() << "SessionId in DB in VitalsService:" << m_sessionId;
     emit temperatureReady(v,unit);
     setIdle();
 }

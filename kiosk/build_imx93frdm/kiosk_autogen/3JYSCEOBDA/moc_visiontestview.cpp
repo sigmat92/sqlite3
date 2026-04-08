@@ -37,16 +37,15 @@ namespace {
 struct qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSVisionTestViewENDCLASS = QtMocHelpers::stringData(
     "VisionTestView",
-    "leftStartRequested",
-    "",
-    "rightStartRequested",
-    "backRequested",
     "startRequested",
-    "passRequested",
-    "failRequested",
-    "modeChanged",
-    "mode",
-    "exitRequested"
+    "",
+    "answerSelected",
+    "answer",
+    "exitRequested",
+    "displaySymbol",
+    "symbol",
+    "showResult",
+    "result"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -59,32 +58,30 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVisionTestViewENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       8,       // signalCount
+       3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x06,    1 /* Public */,
-       3,    0,   63,    2, 0x06,    2 /* Public */,
-       4,    0,   64,    2, 0x06,    3 /* Public */,
-       5,    0,   65,    2, 0x06,    4 /* Public */,
-       6,    0,   66,    2, 0x06,    5 /* Public */,
-       7,    0,   67,    2, 0x06,    6 /* Public */,
-       8,    1,   68,    2, 0x06,    7 /* Public */,
-      10,    0,   71,    2, 0x06,    9 /* Public */,
+       1,    0,   44,    2, 0x06,    1 /* Public */,
+       3,    1,   45,    2, 0x06,    2 /* Public */,
+       5,    0,   48,    2, 0x06,    4 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       6,    1,   49,    2, 0x0a,    5 /* Public */,
+       8,    1,   52,    2, 0x0a,    7 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    4,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
+
+ // slots: parameters
+    QMetaType::Void, QMetaType::QString,    7,
     QMetaType::Void, QMetaType::QString,    9,
-    QMetaType::Void,
 
        0        // eod
 };
@@ -98,23 +95,19 @@ Q_CONSTINIT const QMetaObject VisionTestView::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSVisionTestViewENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<VisionTestView, std::true_type>,
-        // method 'leftStartRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'rightStartRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'backRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'startRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'passRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'failRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'modeChanged'
+        // method 'answerSelected'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'exitRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'displaySymbol'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'showResult'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
@@ -125,71 +118,33 @@ void VisionTestView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<VisionTestView *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->leftStartRequested(); break;
-        case 1: _t->rightStartRequested(); break;
-        case 2: _t->backRequested(); break;
-        case 3: _t->startRequested(); break;
-        case 4: _t->passRequested(); break;
-        case 5: _t->failRequested(); break;
-        case 6: _t->modeChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 7: _t->exitRequested(); break;
+        case 0: _t->startRequested(); break;
+        case 1: _t->answerSelected((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->exitRequested(); break;
+        case 3: _t->displaySymbol((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->showResult((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::leftStartRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::startRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
         }
         {
-            using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::rightStartRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (VisionTestView::*)(QString );
+            if (_t _q_method = &VisionTestView::answerSelected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::backRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 2;
-                return;
-            }
-        }
-        {
-            using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::startRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 3;
-                return;
-            }
-        }
-        {
-            using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::passRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 4;
-                return;
-            }
-        }
-        {
-            using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::failRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 5;
-                return;
-            }
-        }
-        {
-            using _t = void (VisionTestView::*)(QString );
-            if (_t _q_method = &VisionTestView::modeChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 6;
-                return;
-            }
-        }
-        {
-            using _t = void (VisionTestView::*)();
             if (_t _q_method = &VisionTestView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 7;
+                *result = 2;
                 return;
             }
         }
@@ -215,63 +170,33 @@ int VisionTestView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 5;
     }
     return _id;
 }
 
 // SIGNAL 0
-void VisionTestView::leftStartRequested()
+void VisionTestView::startRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 
 // SIGNAL 1
-void VisionTestView::rightStartRequested()
+void VisionTestView::answerSelected(QString _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void VisionTestView::backRequested()
-{
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
-}
-
-// SIGNAL 3
-void VisionTestView::startRequested()
-{
-    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
-}
-
-// SIGNAL 4
-void VisionTestView::passRequested()
-{
-    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
-}
-
-// SIGNAL 5
-void VisionTestView::failRequested()
-{
-    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
-}
-
-// SIGNAL 6
-void VisionTestView::modeChanged(QString _t1)
-{
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 6, _a);
-}
-
-// SIGNAL 7
 void VisionTestView::exitRequested()
 {
-    QMetaObject::activate(this, &staticMetaObject, 7, nullptr);
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
 }
 QT_WARNING_POP

@@ -26,7 +26,7 @@ static void ensureRow(int sessionId)
 
 bool VitalsRepository::saveTemperature(int sessionId, double temperature)
 {
-    qDebug() << "Saving TEMP:" << temperature;
+    qDebug() << " Actual Saving TEMP  from VitalsRepository:" << temperature;
     qDebug() << "SessionId in DB:" << sessionId;
     ensureRow(sessionId);
 

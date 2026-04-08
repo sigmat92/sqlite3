@@ -97,6 +97,11 @@ bool DatabaseManager::initializeSchema()
 
         FOREIGN KEY(session_id) REFERENCES sessions(id)
     );
+    /* For storing settings like WiFi, server, theme etc. */
+    CREATE TABLE IF NOT EXISTS settings (
+    key TEXT PRIMARY KEY,
+    value TEXT
+    );
     )";
 
     char* errMsg = nullptr;

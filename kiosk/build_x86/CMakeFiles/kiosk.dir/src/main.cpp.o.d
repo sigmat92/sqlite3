@@ -481,7 +481,10 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
@@ -503,4 +506,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
- /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \
+ /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h

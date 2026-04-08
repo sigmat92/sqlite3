@@ -19,10 +19,12 @@ HomeView::HomeView(QWidget *parent)
 
     QWidget *actionBar = new QWidget;
     QHBoxLayout *actionLayout = new QHBoxLayout(actionBar);
-
+    actionLayout->setObjectName("actionLayout");
     QPushButton *newTestBtn = new QPushButton("New Test");
+    newTestBtn->setObjectName("newTestBtn");
     QPushButton *settingsBtn = new QPushButton("Settings");
-
+    settingsBtn->setObjectName("settingsBtn");
+    /*
     newTestBtn->setStyleSheet(
         "font-size:28px;"
         "border-radius: 8px;"
@@ -38,33 +40,16 @@ HomeView::HomeView(QWidget *parent)
         "background:#455a64;"
         "color:white;"
     );
-
+    */
     actionLayout->addWidget(newTestBtn);
     actionLayout->addWidget(settingsBtn);
-    /*
-    connect(newTestBtn,&QPushButton::clicked,this,[this](){
 
-        clearPatientFields();
-        unlockPatientFields();
-        emit resetSessionRequested();
-        statusLabel->setText("Test Status: New test started");
-
-    });
-    */
     connect(newTestBtn,&QPushButton::clicked,this,[this](){
 
     clearPatientFields();
     unlockPatientFields();
     currentSessionId = -1; 
     emit resetSessionRequested();
-
-    // CREATE SESSION EARLY
-    //emit startSessionRequested(
-    //    patientName(),
-    //    patientAge().toInt(),
-    //    patientMobile(),
-    //    patientGender()
-    //);
 
     statusLabel->setText("Test Status: New test started");
 });
@@ -79,43 +64,44 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- STATUS ---------------- */
 
     statusLabel = new QLabel("Test Status: Ready...");
-
+    statusLabel->setObjectName("statusLabel");
     statusLabel->setAlignment(Qt::AlignCenter);
     statusLabel->setMinimumHeight(45);
-
+    /*
     statusLabel->setStyleSheet(
         "background:#bbdefb;"
         "font-weight:bold;"
         "border-radius: 8px;"
         "font-size:22px;"
     );
-
+    */
     layout->addWidget(statusLabel);
 
     /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
-  
+    patientPanel->setObjectName("patientPanel");
+    /*
     patientPanel->setStyleSheet(
         "background:#bbdefb;"
         "font-weight:bold;"
         "font-size:20px;"
         "border-radius: 8px;"
     );
-
+    */
     QGridLayout *pLayout = new QGridLayout(patientPanel);
     nameEdit = new QLineEdit;
-    nameEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+    //nameEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
 
     ageEdit = new QLineEdit;
-    ageEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+    //ageEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
     mobileEdit = new QLineEdit;
-    mobileEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+    //mobileEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
 
     maleBtn = new QRadioButton("Male");
-    maleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
+    //maleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
     femaleBtn = new QRadioButton("Female");
-    femaleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
+    //femaleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
 
     QWidget *genderBox = new QWidget;
     QHBoxLayout *gLayout = new QHBoxLayout(genderBox);
@@ -139,7 +125,12 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- METRIC GRID ---------------- */
 
     QWidget *metricsPanel = new QWidget;
+    metricsPanel->setObjectName("metricsPanel");
     QGridLayout *grid = new QGridLayout(metricsPanel);
+
+    //this->setObjectName("metricCard");
+
+ 
 
     struct MetricDef
     {
@@ -200,95 +191,7 @@ HomeView::HomeView(QWidget *parent)
 
             qDebug() << metrics[i].title << "requested";
         });
-/*
-        connect(card,&MetricCard::startRequested,this,[this,card,metrics,i](){
 
-    // 1. Create session FIRST (only for first measurement)
-    if(metrics[i].title == "Temperature")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
-
-    }
-
-    if(metrics[i].title == "SpO2 / Pulse")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
-
-            
-    }
-    
-    if(metrics[i].title == "NIBP")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
-
-            
-    }
-    if(metrics[i].title == "Height")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
-  
-    }
-    if(metrics[i].title == "Weight")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
- 
-    }
-        if(metrics[i].title == "Visison Test")
-    {
-        qDebug() << "EMITTING SESSION SIGNAL";
-
-        emit startSessionRequested(
-            patientName(),
-            patientAge().toInt(),
-            patientMobile(),
-            patientGender()
-        );
-    
-    }
-
-    // 2. THEN start measurement
-    metrics[i].signal();
-
-    statusLabel->setText("Test Status: " + metrics[i].status);
-
-    qDebug() << metrics[i].title << "requested";
-});
-*/
     }//for
 
     layout->addWidget(metricsPanel);
@@ -297,22 +200,25 @@ HomeView::HomeView(QWidget *parent)
   
     QLabel *resultsTitle = new QLabel("Test Results :");
     resultsTitle->setAlignment(Qt::AlignCenter);
-
+    /*
     resultsTitle->setStyleSheet(
         "background:#bbdefb;"
         "font-weight:bold;"
         "border-radius: 8px;"
         "font-size:24px;"
     );
-
+    */
     QWidget *resultsPanel = new QWidget;
+    /*
     resultsPanel->setStyleSheet(
             "background:#bbdefb;"
             "font-weight:bold;"
             "font-size:22px;"
             "border-radius: 8px;"
         );
+    */
     QGridLayout *rLayout = new QGridLayout(resultsPanel);
+  
     rLayout->setRowStretch(0,1);
     rLayout->setRowStretch(1,1);
     rLayout->setRowStretch(2,1);
@@ -349,7 +255,7 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- PRINT BUTTON ---------------- */
 
     QPushButton *printBtn = new QPushButton("Print Results");
-
+    /*
     printBtn->setStyleSheet(
         "font-size:28px;"
         "font-weight:bold;"
@@ -357,7 +263,7 @@ HomeView::HomeView(QWidget *parent)
         "color:white;"
         "border-radius: 5px;"
     );
-
+    */
     connect(printBtn,&QPushButton::clicked,this,[this](){
 
     if(currentSessionId <= 0)

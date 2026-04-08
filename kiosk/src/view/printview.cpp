@@ -10,15 +10,17 @@
 PrintView::PrintView(QWidget *parent)
     : BaseView("", parent)
 {
-    setStyleSheet("background:white;");
+    //setStyleSheet("background:white;");
 
     QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
+    layout->setObjectName("contentLayout");
 
     /* ---------------- HEADER ---------------- */
 
     QLabel *header = new QLabel("Patient Report : ");
+    header->setObjectName("header");
     header->setAlignment(Qt::AlignCenter);
-
+    /*
     header->setStyleSheet(
         "background:#0d47a1;"
         "color:white;"
@@ -26,35 +28,40 @@ PrintView::PrintView(QWidget *parent)
         "font-weight:bold;"
         "border-radius:8px;"
     );
-
+    */
     layout->addWidget(header);
 
     /* ---------------- STATUS ---------------- */
 
     statusLabel = new QLabel("Patients Details");
+    statusLabel->setObjectName("statusLabel");
     statusLabel->setAlignment(Qt::AlignCenter);
-
+    /*
     statusLabel->setStyleSheet(
         "background:#bbdefb;"
         "font-size:22px;"
         "font-weight:bold;"
         "border-radius:8px;"
     );
-
+    */
     layout->addWidget(statusLabel);
 
     /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
+    patientPanel->setObjectName("patientPanel");
+    /*
     patientPanel->setStyleSheet(
         "background:#bbdefb;"
         "font-size:20px;"
         "border-radius:8px;"
     );
-
+    */
     QVBoxLayout *pLayout = new QVBoxLayout(patientPanel);
+    patientPanel->setObjectName("patientPanel");
 
     patientInfoLabel = new QLabel("--");
+    patientInfoLabel->setObjectName("patientInfoLabel");
     patientInfoLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     pLayout->addWidget(patientInfoLabel);
 
@@ -62,18 +69,22 @@ PrintView::PrintView(QWidget *parent)
 
     /* ---------------- VITALS GRID ---------------- */
     vitalsLabel = new QLabel("Vitals Details");
+    vitalsLabel->setObjectName("vitalsLabel");
     vitalsLabel->setAlignment(Qt::AlignCenter);
 
     QWidget *vitalsPanel = new QWidget;
+    vitalsPanel->setObjectName("vitalsPanel");
+    /*
     vitalsPanel->setStyleSheet(
         "background:#bbdefb;"
         "font-size:22px;"
         "border-radius:8px;"
     );
+    */
     //vitalsPanel->addWidget(vitalsLabel);
 
     QGridLayout *grid = new QGridLayout(vitalsPanel);
-
+    grid->setObjectName("vitalsGrid");
     tempLabel   = new QLabel("--");
     spo2Label   = new QLabel("--");
     nibpLabel   = new QLabel("--");
@@ -110,11 +121,14 @@ PrintView::PrintView(QWidget *parent)
     /* ---------------- FOOTER ---------------- */
 
     QHBoxLayout *footer = new QHBoxLayout;
-
+    grid->setObjectName("footerGrid");
     QPushButton *allRecordsBtn = new QPushButton("All Records");
+    allRecordsBtn->setObjectName("allRecordsBtn");
     QPushButton *printBtn = new QPushButton("Print");
+    printBtn->setObjectName("printBtn");
     QPushButton *exitBtn  = new QPushButton("Exit");
-
+    exitBtn->setObjectName("exitBtn");
+    /*
     printBtn->setStyleSheet(
         "font-size:24px;"
         "background:#0d47a1;"
@@ -136,7 +150,7 @@ PrintView::PrintView(QWidget *parent)
         "color:white;"
         "border-radius:5px;"
     );
-
+    */
     footer->addWidget(allRecordsBtn);
 
     footer->addWidget(printBtn);

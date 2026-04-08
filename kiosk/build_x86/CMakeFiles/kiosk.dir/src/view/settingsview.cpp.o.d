@@ -451,4 +451,16 @@ CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QIntValidator \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreevent.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qeventloop.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qnativeinterface.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qinputmethod.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qguiapplication_platform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

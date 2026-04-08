@@ -8,8 +8,11 @@
 #include "view/visiontestview.h"
 
 #include "controller/homecontroller.h"
+#include "controller/settingscontroller.h"
+#include "controller/visiontestcontroller.h"
 
 #include "service/vitalsservice.h"
+#include "service/visionservice.h"
 #include "service/sessionservice.h"
 
 #include "storage/patientrepository.h"
@@ -29,6 +32,11 @@
 #include <vector>
 #include <sqlite3.h>
 #include "storage/sessionrepository.h"
+
+#include "model/settingsmodel.h"
+#include "service/settingsservice.h"
+#include "storage/settingsrepository.h"
+
 
 /* ================= LOAD ALL SESSIONS ================= */
 
@@ -123,6 +131,34 @@ int main(int argc, char *argv[])
 
     SessionService* sessionService = new SessionService(sessionRepo, &app);
 
+    // -------- DARK MODE --------
+
+      SettingsRepository* settingsRepo = new SettingsRepository();
+        SettingsModel* settingsModel = new SettingsModel(&app);
+        SettingsService* settingsService =
+        new SettingsService(settingsModel, settingsRepo, &app);
+
+    SettingsController* settingsController =
+                                    new SettingsController(
+                                        settingsView,
+                                        settingsService,
+                                        settingsRepo,
+                                        //adminAuthService,
+                                        &app);
+  
+
+
+    QString theme = settingsRepo->get("theme");
+
+    if (theme == "dark")
+    {
+        settingsService->applyTheme(true);
+    }
+    else
+    {
+        settingsService->applyTheme(false);
+    }
+
     // ---------- CONTROLLER ----------
   new HomeController(homeView,
                    sessionService,
@@ -132,6 +168,14 @@ int main(int argc, char *argv[])
                    repo,              // SAME INSTANCE
                    nullptr,
                    &app);
+    VisionService* visionService = new VisionService(&app);
+
+    new VisionTestController(
+        visionView,
+        visionService,
+        &app
+    );
+
     // ---------- RECORDS LOAD ----------
     recordsView->setData(getAllSessions());
 
@@ -216,7 +260,8 @@ int main(int argc, char *argv[])
                      parser, &ProtocolParser::feed);
 
     QObject::connect(parser, &ProtocolParser::temperatureReceived,
-                     vitalsService, &VitalsService::onTemperature);
+                     vitalsService, &VitalsService::onTemperature,
+                    Qt::UniqueConnection); //
 
     QObject::connect(parser, &ProtocolParser::spo2Received,
                      vitalsService, &VitalsService::onSpo2);
@@ -234,7 +279,7 @@ int main(int argc, char *argv[])
                      uart, &UartDevice::send);
 
     //QObject::connect(vitalsService, &VitalsService::temperatureReady,
-    //                 vitalsModel, &VitalsModel::setTemperature);
+    //                 vitalsModel, &VitalsModel::setTemperature);//
 QObject::connect(vitalsService, &VitalsService::temperatureReady,
                  vitalsModel, &VitalsModel::setTemperature,
                  Qt::UniqueConnection);

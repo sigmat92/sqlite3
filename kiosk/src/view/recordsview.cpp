@@ -13,10 +13,11 @@ RecordsView::RecordsView(QWidget *parent)
     : BaseView("", parent)
 {
     QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
-
+    layout->setObjectName("contentLayout");
     table = new QTableView;
+    table->setObjectName("recordsTable");
     model = new QStandardItemModel(this);
-
+    model->setObjectName("recordsModel");
     table->setModel(model);
 
     table->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -26,11 +27,13 @@ RecordsView::RecordsView(QWidget *parent)
 
     layout->addWidget(table);
 
-    /* -------- BUTTONS -------- */
+    //-------- BUTTONS -------- 
 
     QHBoxLayout *btnLayout = new QHBoxLayout;
-
-    selectBtn = new QPushButton("SELECT");
+    btnLayout->setObjectName("btnLayout");
+    selectBtn = new QPushButton("Select");
+    selectBtn->setObjectName("selectBtn");
+    /*
         selectBtn->setStyleSheet(
         "font-size:28px;"
         "border-radius: 8px;"
@@ -38,15 +41,18 @@ RecordsView::RecordsView(QWidget *parent)
         "background:#0d47a1;"
         "color:white;"
     );
-    exitBtn   = new QPushButton("EXIT");
-       exitBtn->setStyleSheet(
+    */
+    exitBtn   = new QPushButton("Exit");
+    exitBtn->setObjectName("exitBtn");
+    /*
+    exitBtn->setStyleSheet(
         "font-size:28px;"
         "border-radius: 8px;"
         "font-weight:bold;"
         "background:#455a64;"
         "color:white;"
     );
-
+    */
     btnLayout->addWidget(selectBtn);
     btnLayout->addWidget(exitBtn);
 

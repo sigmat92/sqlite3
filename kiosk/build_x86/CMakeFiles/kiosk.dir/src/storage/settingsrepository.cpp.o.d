@@ -349,6 +349,10 @@ CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
+ /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /usr/include/sqlite3.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSettings \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsettings.h \

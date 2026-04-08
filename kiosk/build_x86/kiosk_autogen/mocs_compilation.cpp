@@ -17,6 +17,7 @@
 #include "RIEQWACMR2/moc_inputservice.cpp"
 #include "RIEQWACMR2/moc_sessionservice.cpp"
 #include "RIEQWACMR2/moc_settingsservice.cpp"
+#include "RIEQWACMR2/moc_visionservice.cpp"
 #include "RIEQWACMR2/moc_vitalsservice.cpp"
 #include "F2ESZRYZMC/moc_settingsrepository.cpp"
 #include "3JYSCEOBDA/moc_baseview.cpp"

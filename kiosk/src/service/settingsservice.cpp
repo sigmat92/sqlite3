@@ -1,6 +1,7 @@
 #include "settingsservice.h"
 #include <QProcess>
 #include "model/settingsmodel.h"
+#include <QApplication>
 #include <QDebug>
 
 SettingsService::SettingsService(SettingsModel* m,
@@ -53,6 +54,199 @@ void SettingsService::testConnection()
 //        QProcess::execute("udhcpc -i wlan0");
 //}
 
+void SettingsService::applyTheme(bool dark)
+{
+    if (dark)
+    {
+        qApp->setStyleSheet(R"(
+
+/* ================= ROOT ================= */
+QWidget {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Segoe UI;
+}
+
+/* ================= HEADER / FOOTER (ALWAYS BLACK) ================= */
+QWidget#appHeader,
+QWidget#appFooter {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-bottom: 1px solid #222;
+}
+
+/* ================= REMOVE PANELS ================= */
+QWidget#patientPanel,
+QWidget#metricsPanel,
+QWidget#resultsPanel {
+    background: transparent;
+    border: none;
+}
+
+/* ================= TEXT ================= */
+QLabel {
+    color: #AAAAAA;
+    font-size: 16px;
+}
+
+/* ================= STATUS ================= */
+QLabel#statusLabel {
+    color: #00FF66;;
+    font-size: 20px;
+}
+
+/* ================= INPUT ================= */
+QLineEdit {
+    background: #000000;
+    border: 1px solid #555;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+
+/* ================= BUTTON ================= */
+QPushButton {
+    background: transparent;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 12px;
+    color: #FF5252;
+}
+
+QPushButton:pressed {
+    border: 1px solid #FFFFFF;
+}
+
+/* ================= ACTION BUTTON ================= */
+QPushButton#newTestBtn {
+    border: 1px solid #777;;
+    font-weight: bold;
+}
+
+/* ================= METRIC TILE ================= */
+QWidget#metricCard {
+    border: 1px solid #333;
+    background: #000000;
+}
+
+/* ================= BIG NUMBERS ================= */
+QLabel.value {
+    font-size: 52px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* ================= FLUORESCENT COLORS ================= */
+QLabel.green { color: #00FF66; }   /* Normal */
+QLabel.cyan  { color: #00E5FF; }   /* SpO2 */
+QLabel.yellow{ color: #FFD600; }   /* Resp */
+QLabel.red   { color: #FF5252; }   /* Critical */
+
+QWidget#metricCard {
+    background-color: #000000;
+    border: 1px solid #222;
+    border-radius: 6px;
+}
+
+/* TITLE */
+QLabel#metricTitle {
+    /*color: #666;*/
+    color: #00E5FF;
+    font-size: 14px;
+}
+
+/* VALUE (base, color overridden in code) */
+QLabel#metricValue {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00FF66;
+}
+
+/* START BUTTON → TOUCH ZONE */
+QPushButton#metricStartButton {
+    border: 1px solid #555;
+    background: transparent;
+    color: #FFD600;
+    font-size: 16px;
+    padding: 6px;
+}
+
+QPushButton#metricStartButton:pressed {
+    border: 1px solid #FFFFFF;
+}
+
+)");
+    }
+    else
+    {
+        qApp->setStyleSheet(R"(
+
+/* ================= ROOT ================= */
+QWidget {
+    background-color: #E3F2FD;
+    color: black;
+    font-family: Segoe UI;
+}
+
+/* HEADER / FOOTER ALWAYS BLACK */
+QWidget#appHeader,
+QWidget#appFooter {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* ================= PANELS ================= */
+QWidget#patientPanel,
+QWidget#metricsPanel,
+QWidget#resultsPanel {
+    background: #BBDEFB;
+    border-radius: 8px;
+}
+
+/* ================= TEXT ================= */
+QLabel {
+    color: black;
+    font-size: 16px;
+}
+
+/* ================= INPUT ================= */
+QLineEdit {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+/* ================= BUTTON ================= */
+QPushButton {
+    background: #0d47a1;
+    color: white;
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #1565c0;
+}
+
+/* ================= METRIC ================= */
+QWidget#metricCard {
+    background: #E3F2FD;
+    border: 1px solid #90CAF9;
+}
+
+QLabel#metricValue {
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+}
+
+)");
+    }
+}
+
 void SettingsService::applyNetwork()
 {
     if (!model)
@@ -67,8 +261,153 @@ void SettingsService::applyNetwork()
         qDebug() << "Applying static IP configuration...";
     }
 }
-
+/*
 SettingsModel* SettingsService::getModel() const
 {
     return model;
 }
+
+void SettingsService::applyTheme(bool dark)
+{
+    if (dark)
+    {
+        qApp->setStyleSheet(R"(
+
+// ================= ROOT ================= 
+QWidget {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Segoe UI;
+}
+
+// ================= REMOVE PANELS ================= 
+QWidget#patientPanel,
+QWidget#metricsPanel,
+QWidget#resultsPanel {
+    background: transparent;
+    border: none;
+}
+
+// ================= TEXT =================
+QLabel {
+    color: #AAAAAA;
+    font-size: 16px;
+}
+
+// ================= STATUS ================= 
+QLabel#statusLabel {
+    color: #888888;
+    font-size: 20px;
+}
+
+// ================= INPUT ================= 
+QLineEdit {
+    background: #000000;
+    border: 1px solid #555;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+
+// ================= BUTTON ================= 
+QPushButton {
+    background: transparent;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 12px;
+    color: white;   /// FIXED 
+}
+
+// ================= TOUCH FEEDBACK ================= 
+QPushButton:pressed {
+    border: 1px solid #FFFFFF;
+}
+
+// ================= PRIMARY ACTION ================= 
+QPushButton#newTestBtn {
+    border: 2px solid #FFFFFF;
+    font-weight: bold;
+}
+
+QPushButton#settingsBtn {
+    border: 1px solid #666;
+}
+
+// ================= METRIC CARDS =================
+QWidget#metricCard {
+    border: 1px solid #444;
+    background: #000000;
+    border-color: #444;
+}
+
+// ================= BIG VALUE TEXT =================
+QLabel.value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+// ================= NORMAL VITAL ================= 
+QLabel.green {
+    color: #00FF66;
+}
+
+// ================= SPO2 ================= 
+QLabel.cyan {
+    color: #00E5FF;
+}
+
+)");
+    }
+    else
+    {
+        // CLEAN LIGHT THEME (NO INLINE C++!)
+        qApp->setStyleSheet(R"(
+
+QWidget {
+    background-color: #E3F2FD;
+    color: black;
+    font-family: Segoe UI;
+}
+
+QPushButton {
+    background: #0d95a1;
+    color: white;
+    border-radius: 8px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+QLineEdit {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+QTabBar::tab {
+            background: #0d95a1;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        QTabBar::tab:selected {
+            background: #4A90E2;
+            color: white;
+        }
+
+        QTabWidget::pane {
+            border: 1px solid #c0c0c0;
+            top: -1px;
+        }
+
+
+        QPushButton:hover {
+            background-color: #357ABD;
+        }
+        
+)");
+    }
+}
+*/

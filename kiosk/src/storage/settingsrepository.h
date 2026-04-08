@@ -13,4 +13,6 @@ public:
 
     void save(SettingsModel* model);
     void load(SettingsModel* model);
+    QString get(const QString& key);
+    void set(const QString& key, const QString& value);
 };

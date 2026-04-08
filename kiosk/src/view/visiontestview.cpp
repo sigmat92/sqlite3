@@ -1,156 +1,176 @@
 #include "visiontestview.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QPushButton>
+#include <QLabel>
 
-VisionTestView::VisionTestView(QWidget *parent)
-    : BaseView("Vision Test", parent)
+VisionTestView::VisionTestView(QWidget* parent)
+    : BaseView("Near Vision Test", parent)
 {
-    setupUi();
-}
-void VisionTestView::setupUi()
-{
-    QVBoxLayout *main = new QVBoxLayout(m_contentWidget);
-    main->setContentsMargins(40,40,40,40);
-    main->setSpacing(20);
+    auto *layout = new QVBoxLayout(m_contentWidget);
 
-    // ===== Mode Selector =====
-    QHBoxLayout *modeLayout = new QHBoxLayout;
+    /* ---------------- STATUS ---------------- */
 
-    m_nearBtn = new QPushButton("Near Vision");
-    m_farBtn  = new QPushButton("Far Vision");
+    statusLabel = new QLabel("Put yourself at 36 cm distance");
+    statusLabel->setAlignment(Qt::AlignCenter);
+    // statusLabel->setMinimumHeight(50);
+    /*
+    statusLabel->setStyleSheet(
+        "background:#bbdefb;"
+        "font-size:24px;"
+        "font-weight:bold;"
+        "border-radius:8px;"
+    );
+    */
+    layout->addWidget(statusLabel);
 
-    modeLayout->addWidget(m_nearBtn);
-    modeLayout->addWidget(m_farBtn);
+    /* ---------------- START BUTTON ---------------- */
 
-    main->addLayout(modeLayout);
-
-    // ===== Instruction =====
-    m_instruction = new QLabel("Stand at 36 cm distance");
-    m_instruction->setAlignment(Qt::AlignCenter);
-    m_instruction->setStyleSheet("font-size:18px; font-weight:bold;");
-    main->addWidget(m_instruction);
-
-    // ===== START BUTTON =====
-    m_startBtn = new QPushButton("START");
-    m_startBtn->setFixedHeight(60);
-    main->addWidget(m_startBtn);
-
-    // ===== TEST AREA =====
-    m_testLabel = new QLabel("CS");
-    m_testLabel->setAlignment(Qt::AlignCenter);
-    m_testLabel->setMinimumHeight(250);
-    m_testLabel->setStyleSheet(R"(
-        background:white;
-        font-size:40px;
-        border-radius:10px;
-    )");
-
-    main->addWidget(m_testLabel);
-
-    // ===== RESULT BUTTONS =====
-    QHBoxLayout *resultLayout = new QHBoxLayout;
-
-    m_failBtn = new QPushButton("CAN'T SEE");
-    m_passBtn = new QPushButton("OK");
-
-    m_failBtn->setStyleSheet("background:red;color:white;");
-    m_passBtn->setStyleSheet("background:green;color:white;");
-
-    resultLayout->addWidget(m_failBtn);
-    resultLayout->addWidget(m_passBtn);
-
-    main->addLayout(resultLayout);
-
-    // ===== BACK BUTTON =====
-    m_backBtn = new QPushButton("BACK");
-        m_backBtn->setStyleSheet(
+    QPushButton *startBtn = new QPushButton("START");
+/*
+    startBtn->setStyleSheet(
+        "font-size:32px;"
+        "font-weight:bold;"
+        "background:white;"
+        "color:black;"
+        "border-radius:10px;"
+        "min-height:70px;"
+    );
+*/
+    /*  
+    startBtn->setStyleSheet(
         "font-size:28px;"
         "border-radius: 8px;"
         "font-weight:bold;"
         "background:#0d47a1;"
         "color:white;"
     );
-    m_exitBtn   = new QPushButton("EXIT");
-        m_exitBtn->setStyleSheet(
+    */
+    connect(startBtn, &QPushButton::clicked,
+            this, &VisionTestView::startRequested);
+
+    layout->addWidget(startBtn);
+
+    /* ---------------- LETTER PANEL ---------------- */
+
+    QWidget *visionPanel = new QWidget;
+    /*
+    visionPanel->setStyleSheet(
+        "background:white;"
+        "border-radius:8px;"
+    );
+    */
+    QVBoxLayout *vLayout = new QVBoxLayout(visionPanel);
+
+    symbolLabel = new QLabel("C S");
+    symbolLabel->setAlignment(Qt::AlignCenter);
+    /*
+    symbolLabel->setStyleSheet(
+        "font-size:80px;"
+        "font-weight:bold;"
+        "color:black;"
+    );
+    */
+    visionPanel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    vLayout->addWidget(symbolLabel);
+
+    layout->addWidget(visionPanel);
+
+    /* ---------------- RESPONSE BUTTONS ---------------- */
+
+    QWidget *responsePanel = new QWidget;
+    QHBoxLayout *rLayout = new QHBoxLayout(responsePanel);
+
+    QPushButton *cantSeeBtn = new QPushButton("CAN'T SEE");
+    QPushButton *okBtn      = new QPushButton("OK");
+    /*
+    cantSeeBtn->setStyleSheet(
+        "font-size:28px;"
+        "font-weight:bold;"
+        "background:#e53935;"
+        "color:white;"
+        "border-radius:10px;"
+        "min-height:70px;"
+    );
+
+    okBtn->setStyleSheet(
+        "font-size:28px;"
+        "font-weight:bold;"
+        "background:#43a047;"
+        "color:white;"
+        "border-radius:10px;"
+        "min-height:70px;"
+    );
+    */
+    connect(cantSeeBtn, &QPushButton::clicked,
+            [=]() { emit answerSelected("FAIL"); });
+
+    connect(okBtn, &QPushButton::clicked,
+            [=]() { emit answerSelected("PASS"); });
+
+    rLayout->addWidget(cantSeeBtn);
+    rLayout->addWidget(okBtn);
+
+    layout->addWidget(responsePanel);
+
+    /* ---------------- BACK BUTTON ---------------- */
+
+    QPushButton *backBtn = new QPushButton("BACK");
+    /*
+    backBtn->setStyleSheet(
+        "font-size:26px;"
+        "background:white;"
+        "border-radius:8px;"
+        "min-height:60px;"
+    );
+    */
+    /*
+        backBtn->setStyleSheet(
         "font-size:28px;"
         "border-radius: 8px;"
         "font-weight:bold;"
         "background:#455a64;"
         "color:white;"
     );
-    main->addWidget(m_backBtn);
-
-    // ===== SIGNALS =====
-
-    connect(m_backBtn, &QPushButton::clicked,
+    */
+    connect(backBtn, &QPushButton::clicked,
             this, &VisionTestView::exitRequested);
 
-    connect(m_startBtn, &QPushButton::clicked,
-            this, &VisionTestView::startRequested);
+    layout->addWidget(backBtn);
 
-    connect(m_passBtn, &QPushButton::clicked,
-            this, &VisionTestView::passRequested);
+    /* ---------------- RESULT ---------------- */
 
-    connect(m_failBtn, &QPushButton::clicked,
-            this, &VisionTestView::failRequested);
-
-    connect(m_nearBtn, &QPushButton::clicked, this, [this]() {
-        m_mode = "NEAR";
-        m_instruction->setText("Stand at 36 cm distance");
-        emit modeChanged("NEAR");
-    });
-
-    connect(m_farBtn, &QPushButton::clicked, this, [this]() {
-        m_mode = "FAR";
-        m_instruction->setText("Stand at 6 meters distance");
-        emit modeChanged("FAR");
-    });
-}
-/*
-void VisionTestView::setupUi()
-{
-    QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
-    layout->setContentsMargins(40,40,40,40);
-    layout->setSpacing(30);
-
-    m_leftBtn = new QPushButton("Start Left Eye Test");
-    m_rightBtn = new QPushButton("Start Right Eye Test");
-    m_backBtn = new QPushButton("Back");
-
-    m_leftResult = new QLabel("--");
-    m_rightResult = new QLabel("--");
-
-    m_leftBtn->setStyleSheet("background:#1E4E9E;color:white;");
-    m_rightBtn->setStyleSheet("background:#1E4E9E;color:white;");
-    m_backBtn->setStyleSheet("background:#1E4E9E;color:white;");
-
-    layout->addWidget(m_leftBtn);
-    layout->addWidget(m_leftResult);
-    layout->addSpacing(20);
-    layout->addWidget(m_rightBtn);
-    layout->addWidget(m_rightResult);
-    layout->addSpacing(20);
-    layout->addWidget(m_backBtn);
-
-    connect(m_leftBtn, &QPushButton::clicked,
-            this, &VisionTestView::leftStartRequested);
-
-    connect(m_rightBtn, &QPushButton::clicked,
-            this, &VisionTestView::rightStartRequested);
-
-    connect(m_backBtn, &QPushButton::clicked,
-            this, &VisionTestView::backRequested);
-    
-    connect(m_exitBtn, &QPushButton::clicked,
-        this, &VisionTestView::exitRequested);
-}
-*/
-void VisionTestView::setLeftResult(const QString &value)
-{
-    m_leftResult->setText(value);
+    resultLabel = new QLabel("--");
+    resultLabel->setAlignment(Qt::AlignCenter);
+        /*
+        resultLabel->setStyleSheet(
+        "background:#bbdefb;"
+        "font-size:24px;"
+        "font-weight:bold;"
+        "border-radius:8px;"
+    );
+        */
+    layout->addWidget(resultLabel);
 }
 
-void VisionTestView::setRightResult(const QString &value)
+void VisionTestView::showResult(QString result)
 {
-    m_rightResult->setText(value);
+    statusLabel->setText("Test Status: Completed");
+
+    if (symbolLabel)
+        symbolLabel->setText("Done");
+
+    if (resultLabel)
+        resultLabel->setText("Result: " + result);
+}
+std::vector<QString> levels = {
+    "C S",   // Large
+    "D E F", // Medium
+    "P T O", // Small
+    "Z F L"  // Very small
+};
+void VisionTestView::displaySymbol(QString symbol)
+{
+    symbolLabel->setText(symbol);
 }
