@@ -356,6 +356,7 @@ CMakeFiles/kiosk.dir/src/service/settingsservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \

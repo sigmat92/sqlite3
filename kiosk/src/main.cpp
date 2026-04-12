@@ -35,6 +35,7 @@
 
 #include "model/settingsmodel.h"
 #include "service/settingsservice.h"
+#include "service/syncservice.h"
 #include "storage/settingsrepository.h"
 
 
@@ -132,19 +133,33 @@ int main(int argc, char *argv[])
     SessionService* sessionService = new SessionService(sessionRepo, &app);
 
     // -------- DARK MODE --------
+    
+    SettingsRepository* settingsRepo = new SettingsRepository();
+    SettingsModel* settingsModel = new SettingsModel(&app);
+    SyncService* syncService = new SyncService();
 
-      SettingsRepository* settingsRepo = new SettingsRepository();
-        SettingsModel* settingsModel = new SettingsModel(&app);
-        SettingsService* settingsService =
-        new SettingsService(settingsModel, settingsRepo, &app);
+    SettingsService* settingsService =
+                                 new SettingsService(settingsModel, settingsRepo, &app);
 
-    SettingsController* settingsController =
+            SettingsController* settingsController =
                                     new SettingsController(
                                         settingsView,
                                         settingsService,
                                         settingsRepo,
                                         //adminAuthService,
+                                        vitalsService,
+                                        syncService,
                                         &app);
+    /*
+    struct AppContext {
+        SettingsModel* settingsModel;
+        SettingsService* settingsService;
+        SettingsRepository* settingsRepo;
+        VitalsService* vitalsService;
+        SyncService* syncService;
+    };
+    SettingsController(SettingsView* view, AppContext* ctx)
+    */
   
 
 

@@ -16,7 +16,7 @@ public:
 
 signals:
     void backRequested();
-    
+    void startPrintingRequested();
     void exitRequested();   
 
 private:

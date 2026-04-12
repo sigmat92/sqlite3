@@ -273,6 +273,7 @@ HomeView::HomeView(QWidget *parent)
     }
 
     emit startPrintingRequested(currentSessionId);
+
     statusLabel->setText("Test Status: Printing results...");
 });
 

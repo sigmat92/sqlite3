@@ -79,6 +79,8 @@ void VitalsService::onTemperature(double v, char unit)
         qDebug()<<" Saving TEMP from VitalsService calling repo method:"<<v;
         m_repo->saveTemperature(m_sessionId,v);
     }
+    qDebug() << "copying into current_vitals";
+    //currentVitals.setTemperature(v);
     qDebug() << "SessionId in DB in VitalsService:" << m_sessionId;
     emit temperatureReady(v,unit);
     setIdle();
@@ -145,3 +147,13 @@ void VitalsService::setRepository(VitalsRepository* repo)
 {
     m_repo = repo;
 }
+//talsModel VitalsService::currentVitals() const
+//
+    
+    //  VitalsModel currentVitals;
+    //  if(m_repo && m_sessionId > 0)
+    //  {
+    //      currentVitals = m_repo->getVitals(m_sessionId);
+    //  }
+    //turn currentVitals;
+//

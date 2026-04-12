@@ -16,7 +16,7 @@ VisionTestController::VisionTestController(
 
     /* -------- ANSWERS -------- */
     connect(m_view, &VisionTestView::answerSelected,
-            this, [=](QString ans) {
+            this, [this](QString ans) {
 
         if (ans == "OK")
             m_service->submitAnswer(true);

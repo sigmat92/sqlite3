@@ -4,10 +4,12 @@
 #include "../service/adminauthservice.h"
 #include "service/settingsservice.h"
 #include "../storage/settingsrepository.h"
+#include "service/vitalsservice.h"
+#include "service/syncservice.h"
 #include <QApplication>
 #include <QDebug>
 
-
+/*
 SettingsController::SettingsController(
         SettingsView *view,
         SettingsService *settingsService,
@@ -18,7 +20,21 @@ SettingsController::SettingsController(
       m_view(view),
       m_service(settingsService),
       m_settingsRepo(settingsRepo)
-    
+*/
+SettingsController::SettingsController(
+        SettingsView *view,
+        SettingsService *settingsService,
+        SettingsRepository *settingsRepo,
+        VitalsService *vitalsService,
+        SyncService *syncService,
+        QObject *parent)
+    : QObject(parent),
+      m_view(view),
+      m_service(settingsService),
+      m_settingsRepo(settingsRepo),   
+      m_vitalsService(vitalsService),
+      m_syncService(syncService)
+
 {
     connect(m_view, &SettingsView::saveRequested,
             this, &SettingsController::handleSave);
@@ -42,6 +58,37 @@ SettingsController::SettingsController(
             m_service->applyTheme(dark);
         });
 
+    // Connect post vitals button signal to controller slot
+    connect(m_view, &SettingsView::postVitals,
+            this, &SettingsController::onPostVitals);
+
+
+    connect(m_view, &SettingsView::postVitals,
+        this, [this]() {
+            qDebug() << "postVitals signal received in controller from view";
+            // Here you would call the service method to post vitals
+            // For example: m_service->postVitals();
+            
+             qDebug() << "Calling postVitals in service (not implemented)";
+             // Simulate posting vitals
+             //m_service->postVitals();
+             qDebug() << "Vitals posted successfully...";
+        });
+
+
+}
+
+void SettingsController::onPostVitals()
+{
+    if (!m_vitalsService) return;
+
+    //QJsonObject currentVitals = m_vitalsService->currentVitals();
+
+    // Optional validation
+    // if (!vitals.isValid()) return;
+
+    //syncService->sendVitals(currentVitals);
+    qDebug() << "onPostVitals called in controller. SyncService should send vitals now.";
 }
 
 void SettingsController::handleSave()

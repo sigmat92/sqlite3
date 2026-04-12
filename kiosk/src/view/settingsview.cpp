@@ -54,7 +54,7 @@ void SettingsView::setupUi()
     m_tabs = new QTabWidget;
     m_tabs->setObjectName("settingsTabs");
     m_tabs->setTabPosition(QTabWidget::North);
-    m_tabs->setDocumentMode(true);
+    //m_tabs->setDocumentMode(true);
 
     m_dateTab = new QWidget;
     m_dateTab->setObjectName("dateTab");
@@ -116,7 +116,7 @@ void SettingsView::setupUi()
 
     // -------- Save / Exit from CALIBRATION TAB--------
     
-    m_saveBtn = new QPushButton("SaVE");
+    m_saveBtn = new QPushButton("Save");
     m_saveBtn->setObjectName("saveBtn");
     m_exitBtn = new QPushButton("Exit");
     m_exitBtn->setObjectName("exitBtn");
@@ -155,10 +155,10 @@ void SettingsView::setupUi()
         darkModeLayout->addWidget(modeBtn);
 
         connect(modeBtn, &QPushButton::clicked, this, [this]() {
-            qDebug() << "modeBtn clicked from settingsvew for toggling theme Dark:";
+            //qDebug() << "modeBtn clicked from settingsview for toggling theme Dark:";
             static bool dark = false;
             dark = !dark;
-            qDebug() << "Emitting themeChanged signal from view with dark bool : " << dark;
+            //qDebug() << "Emitting themeChanged signal from view with dark bool : " << dark;
             emit themeChanged(dark);
         });
 
@@ -178,6 +178,9 @@ void SettingsView::setupUi()
     darkModeLayout->addLayout(darkModeBtnLayout);
     connect(m_saveBtn,&QPushButton::clicked,this,&SettingsView::saveRequested);
     connect(m_exitBtn,&QPushButton::clicked,this,&SettingsView::exitRequested);
+    
+    //network tab
+        
     // -------- WIFI --------
     QLabel *wifiLabel = new QLabel("WIFI SETTINGS");
     wifiLabel->setObjectName("wifiLabel");
@@ -285,14 +288,26 @@ void SettingsView::setupUi()
     m_exitBtn = new QPushButton("Exit");
     m_exitBtn->setObjectName("exitBtn");
 
+    postBtn = new QPushButton("Post Vitals", this);
+    postBtn->setObjectName("postBtn");
+
+    btnLayout->addWidget(postBtn);
     btnLayout->addWidget(m_saveBtn);
     btnLayout->addWidget(m_exitBtn);
-
+        
     commLayout->addLayout(btnLayout);
 
     // -------- Connections --------
     connect(m_saveBtn,&QPushButton::clicked,this,&SettingsView::saveRequested);
     connect(m_exitBtn,&QPushButton::clicked,this,&SettingsView::exitRequested);
+  
+    connect(postBtn, &QPushButton::clicked, this, [this]() {
+
+        qDebug() << "postBtn clicked from settingsview for posting vitals to server:";
+        emit postVitals();
+        qDebug() << "Emitting postVitals signal from settingsview";
+            
+        });
 
     connect(m_dhcpBtn,&QPushButton::clicked,this,[this](){
         m_dhcpEnabled = !m_dhcpEnabled;

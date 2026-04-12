@@ -51,6 +51,8 @@ signals:
     
     void themeChanged(bool darkMode);//2
     
+    void postVitals();
+    
 private:
     void setupUi();
     QWidget* createIpFieldRow(QLineEdit* fields[4]);
@@ -89,4 +91,5 @@ private:
     QPushButton *m_exitBtn;
 
     bool m_dhcpEnabled = false;
+    QPushButton *postBtn;
 };

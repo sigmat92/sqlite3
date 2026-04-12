@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QTimer>
 #include "storage/vitalsrepository.h"
+#include "model/vitalsmodel.h"
 
 class VitalsService : public QObject
 {
@@ -21,6 +22,8 @@ public:
     void setRepository(VitalsRepository* repo);
     void setSessionId(int id);
     int sessionId() const { return m_sessionId; }
+    
+    VitalsModel currentVitals() const; 
 
 signals:
     void sendCommand(QByteArray);
@@ -49,6 +52,8 @@ private:
     
     void setIdle();
     void startTimeout();
+  
+    QString ntVitals;         //
     
 };
 

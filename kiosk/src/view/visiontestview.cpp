@@ -104,10 +104,10 @@ VisionTestView::VisionTestView(QWidget* parent)
     );
     */
     connect(cantSeeBtn, &QPushButton::clicked,
-            [=]() { emit answerSelected("FAIL"); });
+            [this]() { emit answerSelected("FAIL"); });
 
     connect(okBtn, &QPushButton::clicked,
-            [=]() { emit answerSelected("PASS"); });
+            [this]() { emit answerSelected("PASS"); });
 
     rLayout->addWidget(cantSeeBtn);
     rLayout->addWidget(okBtn);

@@ -71,14 +71,16 @@ set(SRC
     src/model/settingsmodel.cpp
     src/model/printserviceclient.h
     src/model/printserviceclient.cpp
+    src/model/visionresult.h
+    src/model/printjob.h
 
     # Controllers
     src/controller/cameracontroller.h
     src/controller/cameracontroller.cpp
     src/controller/barcodescanner.h
     src/controller/barcodescanner.cpp
-    src/controller/printcontroller.h
-    src/controller/printcontroller.cpp
+    #src/controller/printcontroller.h
+    #src/controller/printcontroller.cpp
     #src/controller/protocolparser.h
     #src/controller/protocolparser.cpp
     #src/controller/protocolcontroller.h
@@ -93,6 +95,8 @@ set(SRC
     #src/controller/inputcontroller.cpp
     src/controller/navigationmanager.h
     src/controller/navigationmanager.cpp
+    src/controller/printercontroller.h
+    src/controller/printercontroller.cpp
 
     #service
     src/service/sessionservice.h
@@ -110,6 +114,11 @@ set(SRC
     src/service/adminauthservice.cpp
     src/service/visionservice.h
     src/service/visionservice.cpp
+    src/service/printerservice.h
+    src/service/printerservice.cpp
+    # Sync
+    src/service/syncservice.h
+    src/service/syncservice.cpp
     
     # Platform
     src/platform/v4l2/v4l2camera.h
@@ -134,7 +143,13 @@ set(SRC
     src/storage/sessionrepository.cpp
     src/storage/vitalsrepository.h
     src/storage/vitalsrepository.cpp
+    src/storage/printerrepository.h
+    src/storage/printerrepository.cpp
     src/storage/record.h
+
+    # Network (REST API)
+    src/network/restclient.h
+    src/network/restclient.cpp
     
     # Views
     

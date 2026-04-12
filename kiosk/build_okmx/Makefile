@@ -333,29 +333,29 @@ src/controller/navigationmanager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.s
 .PHONY : src/controller/navigationmanager.cpp.s
 
-src/controller/printcontroller.o: src/controller/printcontroller.cpp.o
-.PHONY : src/controller/printcontroller.o
+src/controller/printercontroller.o: src/controller/printercontroller.cpp.o
+.PHONY : src/controller/printercontroller.o
 
 # target to build an object file
-src/controller/printcontroller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o
-.PHONY : src/controller/printcontroller.cpp.o
+src/controller/printercontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o
+.PHONY : src/controller/printercontroller.cpp.o
 
-src/controller/printcontroller.i: src/controller/printcontroller.cpp.i
-.PHONY : src/controller/printcontroller.i
+src/controller/printercontroller.i: src/controller/printercontroller.cpp.i
+.PHONY : src/controller/printercontroller.i
 
 # target to preprocess a source file
-src/controller/printcontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.i
-.PHONY : src/controller/printcontroller.cpp.i
+src/controller/printercontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.i
+.PHONY : src/controller/printercontroller.cpp.i
 
-src/controller/printcontroller.s: src/controller/printcontroller.cpp.s
-.PHONY : src/controller/printcontroller.s
+src/controller/printercontroller.s: src/controller/printercontroller.cpp.s
+.PHONY : src/controller/printercontroller.s
 
 # target to generate assembly for a file
-src/controller/printcontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s
-.PHONY : src/controller/printcontroller.cpp.s
+src/controller/printercontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.s
+.PHONY : src/controller/printercontroller.cpp.s
 
 src/controller/settingscontroller.o: src/controller/settingscontroller.cpp.o
 .PHONY : src/controller/settingscontroller.o
@@ -549,6 +549,30 @@ src/model/vitalsmodel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.s
 .PHONY : src/model/vitalsmodel.cpp.s
 
+src/network/restclient.o: src/network/restclient.cpp.o
+.PHONY : src/network/restclient.o
+
+# target to build an object file
+src/network/restclient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/network/restclient.cpp.o
+.PHONY : src/network/restclient.cpp.o
+
+src/network/restclient.i: src/network/restclient.cpp.i
+.PHONY : src/network/restclient.i
+
+# target to preprocess a source file
+src/network/restclient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/network/restclient.cpp.i
+.PHONY : src/network/restclient.cpp.i
+
+src/network/restclient.s: src/network/restclient.cpp.s
+.PHONY : src/network/restclient.s
+
+# target to generate assembly for a file
+src/network/restclient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/network/restclient.cpp.s
+.PHONY : src/network/restclient.cpp.s
+
 src/platform/input/rotaryhandler.o: src/platform/input/rotaryhandler.cpp.o
 .PHONY : src/platform/input/rotaryhandler.o
 
@@ -693,6 +717,30 @@ src/service/inputservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/inputservice.cpp.s
 .PHONY : src/service/inputservice.cpp.s
 
+src/service/printerservice.o: src/service/printerservice.cpp.o
+.PHONY : src/service/printerservice.o
+
+# target to build an object file
+src/service/printerservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o
+.PHONY : src/service/printerservice.cpp.o
+
+src/service/printerservice.i: src/service/printerservice.cpp.i
+.PHONY : src/service/printerservice.i
+
+# target to preprocess a source file
+src/service/printerservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/printerservice.cpp.i
+.PHONY : src/service/printerservice.cpp.i
+
+src/service/printerservice.s: src/service/printerservice.cpp.s
+.PHONY : src/service/printerservice.s
+
+# target to generate assembly for a file
+src/service/printerservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/printerservice.cpp.s
+.PHONY : src/service/printerservice.cpp.s
+
 src/service/sessionservice.o: src/service/sessionservice.cpp.o
 .PHONY : src/service/sessionservice.o
 
@@ -740,6 +788,30 @@ src/service/settingsservice.s: src/service/settingsservice.cpp.s
 src/service/settingsservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/settingsservice.cpp.s
 .PHONY : src/service/settingsservice.cpp.s
+
+src/service/syncservice.o: src/service/syncservice.cpp.o
+.PHONY : src/service/syncservice.o
+
+# target to build an object file
+src/service/syncservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o
+.PHONY : src/service/syncservice.cpp.o
+
+src/service/syncservice.i: src/service/syncservice.cpp.i
+.PHONY : src/service/syncservice.i
+
+# target to preprocess a source file
+src/service/syncservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/syncservice.cpp.i
+.PHONY : src/service/syncservice.cpp.i
+
+src/service/syncservice.s: src/service/syncservice.cpp.s
+.PHONY : src/service/syncservice.s
+
+# target to generate assembly for a file
+src/service/syncservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/syncservice.cpp.s
+.PHONY : src/service/syncservice.cpp.s
 
 src/service/systemsettingsservice.o: src/service/systemsettingsservice.cpp.o
 .PHONY : src/service/systemsettingsservice.o
@@ -860,6 +932,30 @@ src/storage/patientrepository.s: src/storage/patientrepository.cpp.s
 src/storage/patientrepository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.s
 .PHONY : src/storage/patientrepository.cpp.s
+
+src/storage/printerrepository.o: src/storage/printerrepository.cpp.o
+.PHONY : src/storage/printerrepository.o
+
+# target to build an object file
+src/storage/printerrepository.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o
+.PHONY : src/storage/printerrepository.cpp.o
+
+src/storage/printerrepository.i: src/storage/printerrepository.cpp.i
+.PHONY : src/storage/printerrepository.i
+
+# target to preprocess a source file
+src/storage/printerrepository.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.i
+.PHONY : src/storage/printerrepository.cpp.i
+
+src/storage/printerrepository.s: src/storage/printerrepository.cpp.s
+.PHONY : src/storage/printerrepository.s
+
+# target to generate assembly for a file
+src/storage/printerrepository.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.s
+.PHONY : src/storage/printerrepository.cpp.s
 
 src/storage/sessionrepository.o: src/storage/sessionrepository.cpp.o
 .PHONY : src/storage/sessionrepository.o
@@ -1132,9 +1228,9 @@ help:
 	@echo "... src/controller/navigationmanager.o"
 	@echo "... src/controller/navigationmanager.i"
 	@echo "... src/controller/navigationmanager.s"
-	@echo "... src/controller/printcontroller.o"
-	@echo "... src/controller/printcontroller.i"
-	@echo "... src/controller/printcontroller.s"
+	@echo "... src/controller/printercontroller.o"
+	@echo "... src/controller/printercontroller.i"
+	@echo "... src/controller/printercontroller.s"
 	@echo "... src/controller/settingscontroller.o"
 	@echo "... src/controller/settingscontroller.i"
 	@echo "... src/controller/settingscontroller.s"
@@ -1159,6 +1255,9 @@ help:
 	@echo "... src/model/vitalsmodel.o"
 	@echo "... src/model/vitalsmodel.i"
 	@echo "... src/model/vitalsmodel.s"
+	@echo "... src/network/restclient.o"
+	@echo "... src/network/restclient.i"
+	@echo "... src/network/restclient.s"
 	@echo "... src/platform/input/rotaryhandler.o"
 	@echo "... src/platform/input/rotaryhandler.i"
 	@echo "... src/platform/input/rotaryhandler.s"
@@ -1177,12 +1276,18 @@ help:
 	@echo "... src/service/inputservice.o"
 	@echo "... src/service/inputservice.i"
 	@echo "... src/service/inputservice.s"
+	@echo "... src/service/printerservice.o"
+	@echo "... src/service/printerservice.i"
+	@echo "... src/service/printerservice.s"
 	@echo "... src/service/sessionservice.o"
 	@echo "... src/service/sessionservice.i"
 	@echo "... src/service/sessionservice.s"
 	@echo "... src/service/settingsservice.o"
 	@echo "... src/service/settingsservice.i"
 	@echo "... src/service/settingsservice.s"
+	@echo "... src/service/syncservice.o"
+	@echo "... src/service/syncservice.i"
+	@echo "... src/service/syncservice.s"
 	@echo "... src/service/systemsettingsservice.o"
 	@echo "... src/service/systemsettingsservice.i"
 	@echo "... src/service/systemsettingsservice.s"
@@ -1198,6 +1303,9 @@ help:
 	@echo "... src/storage/patientrepository.o"
 	@echo "... src/storage/patientrepository.i"
 	@echo "... src/storage/patientrepository.s"
+	@echo "... src/storage/printerrepository.o"
+	@echo "... src/storage/printerrepository.i"
+	@echo "... src/storage/printerrepository.s"
 	@echo "... src/storage/sessionrepository.o"
 	@echo "... src/storage/sessionrepository.i"
 	@echo "... src/storage/sessionrepository.s"

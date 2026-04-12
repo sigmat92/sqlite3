@@ -202,24 +202,10 @@ CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.s"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/controller/barcodescanner.cpp -o CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.s
 
-CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: CMakeFiles/kiosk.dir/flags.make
-CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp
-CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o"
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp
-
-CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.i"
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp > CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.i
-
-CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s"
-	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp -o CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.s
-
 CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp
 CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp
 
 CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.i: cmake_force
@@ -233,7 +219,7 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp
 CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.cpp
 
 CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.i: cmake_force
@@ -247,7 +233,7 @@ CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp
 CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.cpp
 
 CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.i: cmake_force
@@ -261,7 +247,7 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp
 CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp
 
 CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.i: cmake_force
@@ -271,6 +257,20 @@ CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.i: cmake_force
 CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.s"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp -o CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.s
+
+CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: /home/prakash/sqlite3/kiosk/src/controller/printercontroller.cpp
+CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o -MF CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o.d -o CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o -c /home/prakash/sqlite3/kiosk/src/controller/printercontroller.cpp
+
+CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.i"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/controller/printercontroller.cpp > CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.i
+
+CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.s"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/controller/printercontroller.cpp -o CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.s
 
 CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o: /home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp
@@ -370,10 +370,38 @@ CMakeFiles/kiosk.dir/src/service/visionservice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/service/visionservice.cpp.s"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/service/visionservice.cpp -o CMakeFiles/kiosk.dir/src/service/visionservice.cpp.s
 
+CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o: /home/prakash/sqlite3/kiosk/src/service/printerservice.cpp
+CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o -MF CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o.d -o CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o -c /home/prakash/sqlite3/kiosk/src/service/printerservice.cpp
+
+CMakeFiles/kiosk.dir/src/service/printerservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/service/printerservice.cpp.i"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/service/printerservice.cpp > CMakeFiles/kiosk.dir/src/service/printerservice.cpp.i
+
+CMakeFiles/kiosk.dir/src/service/printerservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/service/printerservice.cpp.s"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/service/printerservice.cpp -o CMakeFiles/kiosk.dir/src/service/printerservice.cpp.s
+
+CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o: /home/prakash/sqlite3/kiosk/src/service/syncservice.cpp
+CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o -MF CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o.d -o CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o -c /home/prakash/sqlite3/kiosk/src/service/syncservice.cpp
+
+CMakeFiles/kiosk.dir/src/service/syncservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/service/syncservice.cpp.i"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/service/syncservice.cpp > CMakeFiles/kiosk.dir/src/service/syncservice.cpp.i
+
+CMakeFiles/kiosk.dir/src/service/syncservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/service/syncservice.cpp.s"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/service/syncservice.cpp -o CMakeFiles/kiosk.dir/src/service/syncservice.cpp.s
+
 CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o: /home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.cpp
 CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o -MF CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o.d -o CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o -c /home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.cpp
 
 CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.i: cmake_force
@@ -387,7 +415,7 @@ CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o: /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.cpp
 CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o -MF CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o.d -o CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o -c /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.cpp
 
 CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.i: cmake_force
@@ -401,7 +429,7 @@ CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o: /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp
 CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o -MF CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o.d -o CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o -c /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp
 
 CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.i: cmake_force
@@ -415,7 +443,7 @@ CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o: /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp
 CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o -MF CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o.d -o CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o -c /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp
 
 CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.i: cmake_force
@@ -429,7 +457,7 @@ CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp
 CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp
 
 CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.i: cmake_force
@@ -443,7 +471,7 @@ CMakeFiles/kiosk.dir/src/storage/patientrepository.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp
 CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.cpp
 
 CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.i: cmake_force
@@ -457,7 +485,7 @@ CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/databasemanager.cpp
 CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/databasemanager.cpp
 
 CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.i: cmake_force
@@ -471,7 +499,7 @@ CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.cpp
 CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.cpp
 
 CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.i: cmake_force
@@ -485,7 +513,7 @@ CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp
 CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp
 
 CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.i: cmake_force
@@ -496,10 +524,38 @@ CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.cpp -o CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.s
 
+CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o: /home/prakash/sqlite3/kiosk/src/storage/printerrepository.cpp
+CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o -MF CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o.d -o CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o -c /home/prakash/sqlite3/kiosk/src/storage/printerrepository.cpp
+
+CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.i"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/storage/printerrepository.cpp > CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.i
+
+CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.s"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/storage/printerrepository.cpp -o CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.s
+
+CMakeFiles/kiosk.dir/src/network/restclient.cpp.o: CMakeFiles/kiosk.dir/flags.make
+CMakeFiles/kiosk.dir/src/network/restclient.cpp.o: /home/prakash/sqlite3/kiosk/src/network/restclient.cpp
+CMakeFiles/kiosk.dir/src/network/restclient.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kiosk.dir/src/network/restclient.cpp.o"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/network/restclient.cpp.o -MF CMakeFiles/kiosk.dir/src/network/restclient.cpp.o.d -o CMakeFiles/kiosk.dir/src/network/restclient.cpp.o -c /home/prakash/sqlite3/kiosk/src/network/restclient.cpp
+
+CMakeFiles/kiosk.dir/src/network/restclient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiosk.dir/src/network/restclient.cpp.i"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prakash/sqlite3/kiosk/src/network/restclient.cpp > CMakeFiles/kiosk.dir/src/network/restclient.cpp.i
+
+CMakeFiles/kiosk.dir/src/network/restclient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiosk.dir/src/network/restclient.cpp.s"
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prakash/sqlite3/kiosk/src/network/restclient.cpp -o CMakeFiles/kiosk.dir/src/network/restclient.cpp.s
+
 CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/homeview.cpp
 CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/kiosk.dir/src/view/homeview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/kiosk.dir/src/view/homeview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/homeview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/homeview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/homeview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/homeview.cpp
 
 CMakeFiles/kiosk.dir/src/view/homeview.cpp.i: cmake_force
@@ -513,7 +569,7 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o: /home/prakash/sqlite3/kiosk/src/view/metriccard.cpp
 CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o -MF CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/metriccard.cpp
 
 CMakeFiles/kiosk.dir/src/view/metriccard.cpp.i: cmake_force
@@ -527,7 +583,7 @@ CMakeFiles/kiosk.dir/src/view/metriccard.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp
 CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/visiontestview.cpp
 
 CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.i: cmake_force
@@ -541,7 +597,7 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/settingsview.cpp
 CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/settingsview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/settingsview.cpp
 
 CMakeFiles/kiosk.dir/src/view/settingsview.cpp.i: cmake_force
@@ -555,7 +611,7 @@ CMakeFiles/kiosk.dir/src/view/settingsview.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/baseview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/baseview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/baseview.cpp
 CMakeFiles/kiosk.dir/src/view/baseview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/kiosk.dir/src/view/baseview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/kiosk.dir/src/view/baseview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/baseview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/baseview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/baseview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/baseview.cpp
 
 CMakeFiles/kiosk.dir/src/view/baseview.cpp.i: cmake_force
@@ -569,7 +625,7 @@ CMakeFiles/kiosk.dir/src/view/baseview.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/recordsview.cpp
 CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/recordsview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/recordsview.cpp
 
 CMakeFiles/kiosk.dir/src/view/recordsview.cpp.i: cmake_force
@@ -583,7 +639,7 @@ CMakeFiles/kiosk.dir/src/view/recordsview.cpp.s: cmake_force
 CMakeFiles/kiosk.dir/src/view/printview.cpp.o: CMakeFiles/kiosk.dir/flags.make
 CMakeFiles/kiosk.dir/src/view/printview.cpp.o: /home/prakash/sqlite3/kiosk/src/view/printview.cpp
 CMakeFiles/kiosk.dir/src/view/printview.cpp.o: CMakeFiles/kiosk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/kiosk.dir/src/view/printview.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/kiosk.dir/src/view/printview.cpp.o"
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++   -march=armv8-a+crc+crypto -mbranch-protection=standard -fstack-protector-strong  -O2 -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux --sysroot=/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiosk.dir/src/view/printview.cpp.o -MF CMakeFiles/kiosk.dir/src/view/printview.cpp.o.d -o CMakeFiles/kiosk.dir/src/view/printview.cpp.o -c /home/prakash/sqlite3/kiosk/src/view/printview.cpp
 
 CMakeFiles/kiosk.dir/src/view/printview.cpp.i: cmake_force
@@ -605,11 +661,11 @@ kiosk_OBJECTS = \
 "CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o" \
-"CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o" \
+"CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o" \
 "CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/service/inputservice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o" \
@@ -617,6 +673,8 @@ kiosk_OBJECTS = \
 "CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/service/visionservice.cpp.o" \
+"CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o" \
+"CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o" \
 "CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o" \
 "CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o" \
@@ -626,6 +684,8 @@ kiosk_OBJECTS = \
 "CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o" \
 "CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o" \
 "CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o" \
+"CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o" \
+"CMakeFiles/kiosk.dir/src/network/restclient.cpp.o" \
 "CMakeFiles/kiosk.dir/src/view/homeview.cpp.o" \
 "CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o" \
 "CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o" \
@@ -646,11 +706,11 @@ kiosk: CMakeFiles/kiosk.dir/src/model/settingsmodel.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/model/printserviceclient.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/cameracontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/barcodescanner.cpp.o
-kiosk: CMakeFiles/kiosk.dir/src/controller/printcontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/sessionservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/inputservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o
@@ -658,6 +718,8 @@ kiosk: CMakeFiles/kiosk.dir/src/service/settingsservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/systemsettingsservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/service/visionservice.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/service/syncservice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/platform/v4l2/v4l2camera.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o
@@ -667,6 +729,8 @@ kiosk: CMakeFiles/kiosk.dir/src/storage/settingsrepository.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/storage/databasemanager.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/storage/sessionrepository.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/storage/vitalsrepository.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/storage/printerrepository.cpp.o
+kiosk: CMakeFiles/kiosk.dir/src/network/restclient.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/homeview.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/metriccard.cpp.o
 kiosk: CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o
@@ -685,7 +749,7 @@ kiosk: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/li
 kiosk: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libEGL.so
 kiosk: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/lib/libQt6Core.so.6.7.0
 kiosk: CMakeFiles/kiosk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable kiosk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/prakash/sqlite3/kiosk/build_imx93frdm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable kiosk"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kiosk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

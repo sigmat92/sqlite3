@@ -8,6 +8,17 @@ class VitalsModel : public QObject
     Q_OBJECT
 public:
     explicit VitalsModel(QObject* parent = nullptr);
+    
+    int height() const;
+    double weight() const;
+    double temperature() const;
+    int spo2() const;
+    int pulse() const;
+    int systolic() const;
+    int diastolic() const;
+    
+    QString patientId() const;
+    QString timestamp() const;
 
 public slots:
     void setTemperature(double value, char unit);
@@ -41,5 +52,12 @@ private:
     int m_sys{0};
     int m_dia{0};
     int m_map{0};
+
+    private:
+    QString m_patientId;
+    QString m_timestamp;
+
+    //int m_systolic{0};
+    //int m_diastolic{0};
 };
 

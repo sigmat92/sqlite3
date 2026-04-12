@@ -481,6 +481,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
@@ -491,7 +492,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
  /usr/include/sqlite3.h /home/prakash/sqlite3/kiosk/src/storage/record.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
@@ -509,4 +509,42 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
- /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h
+ /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/service/syncservice.h \
+ /home/prakash/sqlite3/kiosk/src/network/restclient.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QNetworkAccessManager \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkaccessmanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetwork-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetworkexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkrequest.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QUrl \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslConfiguration \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslconfiguration.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtcpsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qabstractsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qhostaddress.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslerror.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslcertificate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcryptographichash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qssl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QFlags \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QJsonObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qjsonobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h

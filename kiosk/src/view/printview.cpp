@@ -164,6 +164,11 @@ PrintView::PrintView(QWidget *parent)
     connect(exitBtn, &QPushButton::clicked,
         this, &PrintView::exitRequested);
 
+    connect(printBtn,&QPushButton::clicked,this,[this](){
+        qDebug() << "Print button clicked from print view, emitting startPrintingRequested";
+        emit startPrintingRequested();
+    });
+
 
 }
 

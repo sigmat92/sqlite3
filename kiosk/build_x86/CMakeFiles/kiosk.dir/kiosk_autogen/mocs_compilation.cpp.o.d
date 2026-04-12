@@ -416,6 +416,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp \
@@ -444,8 +445,11 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printcontroller.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/printcontroller.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printercontroller.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/printercontroller.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/../service/printerservice.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/../service/../model/printjob.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/../storage/printerrepository.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_settingscontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/settingscontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_visiontestcontroller.cpp \
@@ -457,7 +461,51 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_settingsmodel.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/UFQQIFJZKK/moc_restclient.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/UFQQIFJZKK/../../../src/network/restclient.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QNetworkAccessManager \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkaccessmanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetworkglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetwork-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetworkexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkrequest.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QUrl \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QList \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslConfiguration \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslconfiguration.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtcpsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qabstractsocket.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qhostaddress.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslerror.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslcertificate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcryptographichash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qssl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QFlags \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QJsonObject \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qjsonobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslError \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslerror.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_protocolparser.cpp \
@@ -470,12 +518,15 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_inputservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/inputservice.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_printerservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_sessionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_settingsservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_syncservice.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/syncservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
@@ -488,9 +539,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
@@ -503,8 +552,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
@@ -529,7 +576,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \

@@ -44,3 +44,14 @@ void VitalsModel::setNIBP(int sys, int dia, int map)
 
     emit nibpChanged(sys, dia, map);
 }
+int VitalsModel::height() const { return m_height; }
+double VitalsModel::weight() const { return m_weight; }
+double VitalsModel::temperature() const { return m_temperature; }
+int VitalsModel::spo2() const { return m_spo2; }
+int VitalsModel::pulse() const { return m_pulse; }
+int VitalsModel::systolic() const { return m_sys; }
+int VitalsModel::diastolic() const { return m_dia; }
+
+// If not present, add members:
+QString VitalsModel::patientId() const { return m_patientId; }
+QString VitalsModel::timestamp() const { return m_timestamp; }

@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_homecontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
   /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/moc_predefs.h \
+  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
   /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
   /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \

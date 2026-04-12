@@ -537,9 +537,9 @@
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/controller/printcontroller.h",
+			"/home/prakash/sqlite3/kiosk/src/controller/printercontroller.h",
 			"MU",
-			"KECQXMYYOW/moc_printcontroller.cpp",
+			"KECQXMYYOW/moc_printercontroller.cpp",
 			null
 		],
 		[
@@ -567,6 +567,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/model/printjob.h",
+			"MU",
+			"VNQA4LF4BW/moc_printjob.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/model/printserviceclient.h",
 			"MU",
 			"VNQA4LF4BW/moc_printserviceclient.cpp",
@@ -585,9 +591,21 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/model/visionresult.h",
+			"MU",
+			"VNQA4LF4BW/moc_visionresult.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h",
 			"MU",
 			"VNQA4LF4BW/moc_vitalsmodel.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/network/restclient.h",
+			"MU",
+			"UFQQIFJZKK/moc_restclient.cpp",
 			null
 		],
 		[
@@ -627,6 +645,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/printerservice.h",
+			"MU",
+			"RIEQWACMR2/moc_printerservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/protocol.h",
 			"MU",
 			"RIEQWACMR2/moc_protocol.cpp",
@@ -642,6 +666,12 @@
 			"/home/prakash/sqlite3/kiosk/src/service/settingsservice.h",
 			"MU",
 			"RIEQWACMR2/moc_settingsservice.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/service/syncservice.h",
+			"MU",
+			"RIEQWACMR2/moc_syncservice.cpp",
 			null
 		],
 		[
@@ -672,6 +702,12 @@
 			"/home/prakash/sqlite3/kiosk/src/storage/patientrepository.h",
 			"MU",
 			"F2ESZRYZMC/moc_patientrepository.cpp",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/printerrepository.h",
+			"MU",
+			"F2ESZRYZMC/moc_printerrepository.cpp",
 			null
 		],
 		[
@@ -843,7 +879,7 @@
 			null
 		],
 		[
-			"/home/prakash/sqlite3/kiosk/src/controller/printcontroller.cpp",
+			"/home/prakash/sqlite3/kiosk/src/controller/printercontroller.cpp",
 			"MU",
 			null
 		],
@@ -867,6 +903,7 @@
 		[ "/home/prakash/sqlite3/kiosk/src/model/qrgenerator.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/settingsmodel.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp", "MU", null ],
+		[ "/home/prakash/sqlite3/kiosk/src/network/restclient.cpp", "MU", null ],
 		[
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp",
 			"MU",
@@ -898,6 +935,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/printerservice.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/sessionservice.cpp",
 			"MU",
 			null
@@ -907,6 +949,7 @@
 			"MU",
 			null
 		],
+		[ "/home/prakash/sqlite3/kiosk/src/service/syncservice.cpp", "MU", null ],
 		[
 			"/home/prakash/sqlite3/kiosk/src/service/systemsettingsservice.cpp",
 			"MU",
@@ -929,6 +972,11 @@
 		],
 		[
 			"/home/prakash/sqlite3/kiosk/src/storage/patientrepository.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/storage/printerrepository.cpp",
 			"MU",
 			null
 		],

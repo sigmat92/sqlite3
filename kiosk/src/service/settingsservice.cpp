@@ -1,6 +1,7 @@
 #include "settingsservice.h"
 #include <QProcess>
 #include "model/settingsmodel.h"
+#include "model/vitalsmodel.h"
 #include <QApplication>
 #include <QDebug>
 
@@ -91,7 +92,7 @@ QLabel {
 
 /* ================= STATUS ================= */
 QLabel#statusLabel {
-    color: #00FF66;;
+    color: #00FF66;
     font-size: 20px;
 }
 
@@ -153,7 +154,8 @@ QWidget#metricCard {
 QLabel#metricTitle {
     /*color: #666;*/
     color: #00E5FF;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 22px;
 }
 
 /* VALUE (base, color overridden in code) */
@@ -204,6 +206,12 @@ QWidget#resultsPanel {
     border-radius: 8px;
 }
 
+/* ================= STATUS ================= */
+QLabel#statusLabel {
+    color: black;
+    font-size: 22px;
+}
+
 /* ================= TEXT ================= */
 QLabel {
     color: black;
@@ -237,12 +245,30 @@ QWidget#metricCard {
     border: 1px solid #90CAF9;
 }
 
+    /* TITLE */
+QLabel#metricTitle {
+    /*color: #666;*/
+    color: black;
+    font-size: 22px;
+}
+
+/* VALUE (base, color overridden in code) */
 QLabel#metricValue {
     font-size: 42px;
     font-weight: bold;
     color: black;
 }
-
+    QTabBar::tab {
+            background-color: #0d47a1;;
+            padding: 10px 25px;
+            border-radius: 12px;
+            font-weight: 500;
+            color: white;
+        }
+    QTabBar::tab:selected {
+            background: #4A90E2;
+            color: white;
+        }
 )");
     }
 }
@@ -261,153 +287,3 @@ void SettingsService::applyNetwork()
         qDebug() << "Applying static IP configuration...";
     }
 }
-/*
-SettingsModel* SettingsService::getModel() const
-{
-    return model;
-}
-
-void SettingsService::applyTheme(bool dark)
-{
-    if (dark)
-    {
-        qApp->setStyleSheet(R"(
-
-// ================= ROOT ================= 
-QWidget {
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: Segoe UI;
-}
-
-// ================= REMOVE PANELS ================= 
-QWidget#patientPanel,
-QWidget#metricsPanel,
-QWidget#resultsPanel {
-    background: transparent;
-    border: none;
-}
-
-// ================= TEXT =================
-QLabel {
-    color: #AAAAAA;
-    font-size: 16px;
-}
-
-// ================= STATUS ================= 
-QLabel#statusLabel {
-    color: #888888;
-    font-size: 20px;
-}
-
-// ================= INPUT ================= 
-QLineEdit {
-    background: #000000;
-    border: 1px solid #555;
-    color: white;
-    font-size: 20px;
-    padding: 8px;
-}
-
-// ================= BUTTON ================= 
-QPushButton {
-    background: transparent;
-    border: 1px solid #777;
-    border-radius: 6px;
-    font-size: 22px;
-    padding: 12px;
-    color: white;   /// FIXED 
-}
-
-// ================= TOUCH FEEDBACK ================= 
-QPushButton:pressed {
-    border: 1px solid #FFFFFF;
-}
-
-// ================= PRIMARY ACTION ================= 
-QPushButton#newTestBtn {
-    border: 2px solid #FFFFFF;
-    font-weight: bold;
-}
-
-QPushButton#settingsBtn {
-    border: 1px solid #666;
-}
-
-// ================= METRIC CARDS =================
-QWidget#metricCard {
-    border: 1px solid #444;
-    background: #000000;
-    border-color: #444;
-}
-
-// ================= BIG VALUE TEXT =================
-QLabel.value {
-    font-size: 48px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-// ================= NORMAL VITAL ================= 
-QLabel.green {
-    color: #00FF66;
-}
-
-// ================= SPO2 ================= 
-QLabel.cyan {
-    color: #00E5FF;
-}
-
-)");
-    }
-    else
-    {
-        // CLEAN LIGHT THEME (NO INLINE C++!)
-        qApp->setStyleSheet(R"(
-
-QWidget {
-    background-color: #E3F2FD;
-    color: black;
-    font-family: Segoe UI;
-}
-
-QPushButton {
-    background: #0d95a1;
-    color: white;
-    border-radius: 8px;
-    font-size: 22px;
-    padding: 10px;
-}
-
-QLineEdit {
-    background: white;
-    color: black;
-    border: 1px solid #ccc;
-}
-
-QTabBar::tab {
-            background: #0d95a1;
-            padding: 10px 25px;
-            border-radius: 6px;
-            font-weight: 500;
-        }
-
-        QTabBar::tab:selected {
-            background: #4A90E2;
-            color: white;
-        }
-
-        QTabWidget::pane {
-            border: 1px solid #c0c0c0;
-            top: -1px;
-        }
-
-
-        QPushButton:hover {
-            background-color: #357ABD;
-        }
-        
-)");
-    }
-}
-*/

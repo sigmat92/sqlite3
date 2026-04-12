@@ -112,6 +112,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
+  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
   /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
   /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /usr/include/alloca.h \
