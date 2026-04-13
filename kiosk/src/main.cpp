@@ -37,6 +37,7 @@
 #include "service/settingsservice.h"
 #include "service/syncservice.h"
 #include "storage/settingsrepository.h"
+#include "controller/printercontroller.h"
 
 
 /* ================= LOAD ALL SESSIONS ================= */
@@ -310,6 +311,12 @@ QObject::connect(vitalsService, &VitalsService::temperatureReady,
 
     QObject::connect(vitalsService, &VitalsService::heightReady,
                      vitalsModel, &VitalsModel::setHeight);
+//PRINT CONTROLLER
+PrintView* view = new PrintView;
+PrinterController* controller = new PrinterController;
+
+QObject::connect(view, &PrintView::startPrintingRequested,
+                 controller, &PrinterController::onPrintRequested);
 
     // ---------- START ----------
     nav->goTo(Screen::Home);

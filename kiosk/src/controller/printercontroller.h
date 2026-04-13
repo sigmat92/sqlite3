@@ -9,12 +9,16 @@ class PrinterController : public QObject {
 
 public:
     explicit PrinterController(QObject* parent = nullptr);
-
     void handlePrintRequest(const QString& filePath);
+    QString generatePdfFromMap(const QMap<QString, QVariant>& data);
 
 signals:
     void printCompleted();
     void printError(QString error);
+    //void onPrintRequested();
+
+    public slots:   
+    void onPrintRequested();
 
 private:
     PrinterService m_service;

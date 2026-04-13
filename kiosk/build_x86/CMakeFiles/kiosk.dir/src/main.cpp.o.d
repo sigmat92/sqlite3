@@ -547,4 +547,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qjsonvalue.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
+ /home/prakash/sqlite3/kiosk/src/controller/printercontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/printerservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/../model/printjob.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../storage/printerrepository.h

@@ -169,7 +169,6 @@ PrintView::PrintView(QWidget *parent)
         emit startPrintingRequested();
     });
 
-
 }
 
 /* ================= SAFE DATA BINDING ================= */

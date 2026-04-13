@@ -87,13 +87,13 @@ QWidget#resultsPanel {
 /* ================= TEXT ================= */
 QLabel {
     color: #AAAAAA;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 /* ================= STATUS ================= */
 QLabel#statusLabel {
     color: #00FF66;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 /* ================= INPUT ================= */
@@ -155,7 +155,7 @@ QLabel#metricTitle {
     /*color: #666;*/
     color: #00E5FF;
     /*font-size: 14px;*/
-    font-size: 22px;
+    font-size: 32px;
 }
 
 /* VALUE (base, color overridden in code) */
@@ -170,7 +170,7 @@ QPushButton#metricStartButton {
     border: 1px solid #555;
     background: transparent;
     color: #FFD600;
-    font-size: 16px;
+    font-size: 32px;
     padding: 6px;
 }
 
@@ -215,7 +215,7 @@ QLabel#statusLabel {
 /* ================= TEXT ================= */
 QLabel {
     color: black;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 /* ================= INPUT ================= */
