@@ -68,27 +68,4 @@ QString PrinterController::generatePdfFromMap(const QMap<QString, QVariant>& dat
     qDebug() << "PDF Generated at:" << filePath;
     return filePath;
 }
-/*
-QString generatePdfFromMap(const QMap<QString, QVariant>& data) {
-    QString filePath = "/tmp/vitals_report.pdf";
 
-    QPdfWriter writer(filePath);
-    writer.setPageSize(QPageSize(QPageSize::A4));
-
-    QPainter painter(&writer);
-
-    painter.drawText(100,100,"Medical Report");
-
-    painter.drawText(100,200,"Name: " + data["name"].toString());
-    painter.drawText(100,250,"Age: " + QString::number(data["age"].toInt()));
-    painter.drawText(100,300,"Gender: " + data["gender"].toString());
-    painter.drawText(100,350,"Temp: " + QString::number(data["temperature"].toDouble()));
-    painter.drawText(100,400,"SpO2: " + QString::number(data["spo2"].toInt()));
-    painter.drawText(100,450,"Pulse: " + QString::number(data["pulse"].toInt()));
-
-    painter.end();
-
-    qDebug() << "PDF Generated at:" << filePath;
-    return filePath;
-}
-*/

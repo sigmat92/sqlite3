@@ -36,6 +36,7 @@ public:
     */
 signals:
     void exitToHomeRequested();
+    void settingsRequested();
     
 private slots:
 

@@ -35,7 +35,7 @@ void VitalsService::requestSpo2()
 {
     if(state!=State::Idle) return;
     state=State::Spo2;
-
+    qDebug() << "Sending Spo2 request for session :" << m_sessionId;
     emit sendCommand(QByteArray("\x96\xAA\xF4",3));
     startTimeout();
 }
@@ -44,7 +44,7 @@ void VitalsService::requestNibp()
 {
     if(state!=State::Idle) return;
     state=State::Nibp;
-
+    qDebug() << "Sending NIBP request for session :" << m_sessionId;
     emit sendCommand(QByteArray("\x96\xAA\xF5\x01\x01",5));
     startTimeout();
 }
@@ -53,7 +53,7 @@ void VitalsService::requestWeight()
 {
     if(state!=State::Idle) return;
     state=State::Weight;
-
+    qDebug() << "Sending Weight request for session :" << m_sessionId;
     emit sendCommand(QByteArray("\x96\xAA\xF8",3));
     startTimeout();
 }
@@ -62,7 +62,7 @@ void VitalsService::requestHeight()
 {
     if(state!=State::Idle) return;
     state=State::Height;
-
+    qDebug() << "Sending Height request for session :" << m_sessionId;
     emit sendCommand(QByteArray("\x96\xAA\xF7",3));
     startTimeout();
 }
@@ -140,7 +140,8 @@ void VitalsService::setIdle()
 
 void VitalsService::startTimeout()
 {
-    timeout.start(20000);
+    //timeout.start(20000);
+    timeout.start(50000);
 }
 
 void VitalsService::setRepository(VitalsRepository* repo)

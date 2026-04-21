@@ -28,8 +28,19 @@ public:
     void setCurrentSessionId(int id);
 
 public slots:
+
     void setTemperatureBusy(bool busy);
+    void setSpO2Busy(bool busy);
+    void setNIBPBusy(bool busy);
+    void setHeightBusy(bool busy);
+    void setWeightBusy(bool busy);
+
     void setTemperatureText(const QString &text);
+    void setNIBPText(const QString &text);
+    void setHeightText(const QString &text);
+    void setWeightText(const QString &text);
+    void setSpo2Text(const QString &text);
+    
     void onVitalsUpdated(int spo2,int pulse);
 
 signals:
@@ -38,8 +49,8 @@ signals:
     void startNIBPRequested();
     void startHeightRequested();
     void startWeightRequested();
+    //void visionTestRequested(int sessionId);
     void visionTestRequested();
-    //void startPrintingRequested();
     void settingsRequested();
 
     void resetSessionRequested();  

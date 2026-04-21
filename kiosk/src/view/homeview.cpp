@@ -24,23 +24,7 @@ HomeView::HomeView(QWidget *parent)
     newTestBtn->setObjectName("newTestBtn");
     QPushButton *settingsBtn = new QPushButton("Settings");
     settingsBtn->setObjectName("settingsBtn");
-    /*
-    newTestBtn->setStyleSheet(
-        "font-size:28px;"
-        "border-radius: 8px;"
-        "font-weight:bold;"
-        "background:#0d47a1;"
-        "color:white;"
-    );
 
-    settingsBtn->setStyleSheet(
-        "font-size:28px;"
-        "border-radius: 8px;"
-        "font-weight:bold;"
-        "background:#455a64;"
-        "color:white;"
-    );
-    */
     actionLayout->addWidget(newTestBtn);
     actionLayout->addWidget(settingsBtn);
 
@@ -67,41 +51,27 @@ HomeView::HomeView(QWidget *parent)
     statusLabel->setObjectName("statusLabel");
     statusLabel->setAlignment(Qt::AlignCenter);
     statusLabel->setMinimumHeight(45);
-    /*
-    statusLabel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-weight:bold;"
-        "border-radius: 8px;"
-        "font-size:22px;"
-    );
-    */
+
     layout->addWidget(statusLabel);
 
     /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
     patientPanel->setObjectName("patientPanel");
-    /*
-    patientPanel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-weight:bold;"
-        "font-size:20px;"
-        "border-radius: 8px;"
-    );
-    */
+
     QGridLayout *pLayout = new QGridLayout(patientPanel);
     nameEdit = new QLineEdit;
-    //nameEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
-
+    nameEdit->setObjectName("nameEdit");
     ageEdit = new QLineEdit;
-    //ageEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+    ageEdit->setObjectName("ageEdit");
     mobileEdit = new QLineEdit;
-    //mobileEdit->setStyleSheet("QLineEdit { background-color: white; color: black; }");
+    mobileEdit->setObjectName("mobileEdit");
 
     maleBtn = new QRadioButton("Male");
-    //maleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
+    maleBtn->setObjectName("maleBtn");
+
     femaleBtn = new QRadioButton("Female");
-    //femaleBtn->setStyleSheet(" QRadioButton { background-color: white; color: black; }");
+    femaleBtn->setObjectName("femaleBtn");
 
     QWidget *genderBox = new QWidget;
     QHBoxLayout *gLayout = new QHBoxLayout(genderBox);
@@ -128,10 +98,6 @@ HomeView::HomeView(QWidget *parent)
     metricsPanel->setObjectName("metricsPanel");
     QGridLayout *grid = new QGridLayout(metricsPanel);
 
-    //this->setObjectName("metricCard");
-
- 
-
     struct MetricDef
     {
         QString title;
@@ -141,7 +107,6 @@ HomeView::HomeView(QWidget *parent)
 
     std::vector<MetricDef> metrics =
     {
-        //title,status.signal
         
         {"Vision Test","Vision test started",[this]{ emit visionTestRequested(); }},
         {"SpO2 / Pulse","SpO2 measurement started",[this]{ emit startSpo2Requested(); }},
@@ -150,7 +115,7 @@ HomeView::HomeView(QWidget *parent)
         {"Weight","Weight measurement started",[this]{ emit startWeightRequested(); }},
         {"Temperature","Temperature measurement started",[this]{ emit startTemperatureRequested(); }}
         
-        };
+    };
 
     const int columns = 3;
 
@@ -189,7 +154,7 @@ HomeView::HomeView(QWidget *parent)
 
             statusLabel->setText("Test Status: " + metrics[i].status);
 
-            qDebug() << metrics[i].title << "requested";
+            qDebug() << metrics[i].title << "requested from home view";
         });
 
     }//for
@@ -200,23 +165,9 @@ HomeView::HomeView(QWidget *parent)
   
     QLabel *resultsTitle = new QLabel("Test Results :");
     resultsTitle->setAlignment(Qt::AlignCenter);
-    /*
-    resultsTitle->setStyleSheet(
-        "background:#bbdefb;"
-        "font-weight:bold;"
-        "border-radius: 8px;"
-        "font-size:24px;"
-    );
-    */
+
     QWidget *resultsPanel = new QWidget;
-    /*
-    resultsPanel->setStyleSheet(
-            "background:#bbdefb;"
-            "font-weight:bold;"
-            "font-size:22px;"
-            "border-radius: 8px;"
-        );
-    */
+
     QGridLayout *rLayout = new QGridLayout(resultsPanel);
   
     rLayout->setRowStretch(0,1);
@@ -255,15 +206,7 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- PRINT BUTTON ---------------- */
 
     QPushButton *printBtn = new QPushButton("Print Results");
-    /*
-    printBtn->setStyleSheet(
-        "font-size:28px;"
-        "font-weight:bold;"
-        "background:#0d47a1;"
-        "color:white;"
-        "border-radius: 5px;"
-    );
-    */
+
     connect(printBtn,&QPushButton::clicked,this,[this](){
 
     if(currentSessionId <= 0)
@@ -297,11 +240,58 @@ void HomeView::setTemperatureText(const QString &text)
         temperatureCard->setValue(text);
 }
 /* ================= SPO2 ================= */
+void HomeView::setSpO2Busy(bool busy)
+{
+    if(spo2Card)
+        spo2Card->setBusy(busy);
+}
+
+void HomeView::setSpo2Text(const QString &text)
+{
+    qDebug() << "VIEW UPDATE:" << text;
+    qDebug() << "spo2Card ptr:" << spo2Card;
+
+    if(spo2Card)
+        spo2Card->setValue(text);
+}
+/* ================= NIBP ================= */
+void HomeView::setNIBPText(const QString &text)
+{
+    if(nibpCard)
+        nibpCard->setValue(text);
+}
+
+void HomeView::setNIBPBusy(bool busy)
+{
+    if(nibpCard)
+        nibpCard->setBusy(busy);
+}
+/* ================= HEIGHT ================= */
+void HomeView::setHeightText(const QString &text)
+{
+    if(heightCard)
+        heightCard->setValue(text);
+}
+void HomeView::setHeightBusy(bool busy)
+{
+    if(heightCard)
+        heightCard->setBusy(busy);
+}
+/* ================= WEIGHT ================= */
+void HomeView::setWeightText(const QString &text)
+{
+    if(weightCard)        weightCard->setValue(text);
+}
+void HomeView::setWeightBusy(bool busy)
+{
+    if(weightCard)
+        weightCard->setBusy(busy);
+}
 
 void HomeView::onVitalsUpdated(int spo2,int pulse)
 {
     qDebug() << "VIEW UPDATE:" << spo2 << pulse;
-    qDebug() << "temperatureCard ptr:" << spo2Card;
+    //qDebug() << "temperatureCard ptr:" << spo2Card;
     if(spo2Card)
         spo2Card->setValue(QString("%1 / %2").arg(spo2).arg(pulse));
 
@@ -373,3 +363,4 @@ void HomeView::setCurrentSessionId(int id)
 {
     currentSessionId = id;
 }
+

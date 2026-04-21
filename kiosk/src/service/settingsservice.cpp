@@ -87,13 +87,13 @@ QWidget#resultsPanel {
 /* ================= TEXT ================= */
 QLabel {
     color: #AAAAAA;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 /* ================= STATUS ================= */
 QLabel#statusLabel {
     color: #00FF66;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 /* ================= INPUT ================= */
@@ -101,16 +101,19 @@ QLineEdit {
     background: #000000;
     border: 1px solid #555;
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     padding: 8px;
 }
-
+QRadioButton {
+    color: #AAAAAA;
+    font-size: 14px;
+}
 /* ================= BUTTON ================= */
 QPushButton {
     background: transparent;
     border: 1px solid #777;
     border-radius: 6px;
-    font-size: 22px;
+    font-size: 14px;
     padding: 12px;
     color: #FF5252;
 }
@@ -155,12 +158,12 @@ QLabel#metricTitle {
     /*color: #666;*/
     color: #00E5FF;
     /*font-size: 14px;*/
-    font-size: 32px;
+    font-size: 18px;
 }
 
 /* VALUE (base, color overridden in code) */
 QLabel#metricValue {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
     color: #00FF66;
 }
@@ -209,13 +212,13 @@ QWidget#resultsPanel {
 /* ================= STATUS ================= */
 QLabel#statusLabel {
     color: black;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 /* ================= TEXT ================= */
 QLabel {
     color: black;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 /* ================= INPUT ================= */
@@ -225,13 +228,16 @@ QLineEdit {
     border: 1px solid #ccc;
     padding: 6px;
 }
-
+QRadioButton {
+    color: black;
+    font-size: 14px;
+}
 /* ================= BUTTON ================= */
 QPushButton {
     background: #0d47a1;
     color: white;
     border-radius: 8px;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px;
 }
 
@@ -249,12 +255,12 @@ QWidget#metricCard {
 QLabel#metricTitle {
     /*color: #666;*/
     color: black;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /* VALUE (base, color overridden in code) */
 QLabel#metricValue {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
     color: black;
 }

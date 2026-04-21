@@ -59,15 +59,23 @@ static constexpr auto qt_meta_stringdata_CLASSHomeViewENDCLASS = QtMocHelpers::s
     "newSessionRequested",
     "setTemperatureBusy",
     "busy",
+    "setSpO2Busy",
+    "setNIBPBusy",
+    "setHeightBusy",
+    "setWeightBusy",
     "setTemperatureText",
     "text",
+    "setNIBPText",
+    "setHeightText",
+    "setWeightText",
+    "setSpo2Text",
     "onVitalsUpdated",
     "spo2",
     "pulse"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
-    uint offsetsAndSizes[50];
+    uint offsetsAndSizes[66];
     char stringdata0[9];
     char stringdata1[19];
     char stringdata2[1];
@@ -88,11 +96,19 @@ struct qt_meta_stringdata_CLASSHomeViewENDCLASS_t {
     char stringdata17[20];
     char stringdata18[19];
     char stringdata19[5];
-    char stringdata20[19];
-    char stringdata21[5];
-    char stringdata22[16];
-    char stringdata23[5];
-    char stringdata24[6];
+    char stringdata20[12];
+    char stringdata21[12];
+    char stringdata22[14];
+    char stringdata23[14];
+    char stringdata24[19];
+    char stringdata25[5];
+    char stringdata26[12];
+    char stringdata27[14];
+    char stringdata28[14];
+    char stringdata29[12];
+    char stringdata30[16];
+    char stringdata31[5];
+    char stringdata32[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSHomeViewENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -118,11 +134,19 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
         QT_MOC_LITERAL(254, 19),  // "newSessionRequested"
         QT_MOC_LITERAL(274, 18),  // "setTemperatureBusy"
         QT_MOC_LITERAL(293, 4),  // "busy"
-        QT_MOC_LITERAL(298, 18),  // "setTemperatureText"
-        QT_MOC_LITERAL(317, 4),  // "text"
-        QT_MOC_LITERAL(322, 15),  // "onVitalsUpdated"
-        QT_MOC_LITERAL(338, 4),  // "spo2"
-        QT_MOC_LITERAL(343, 5)   // "pulse"
+        QT_MOC_LITERAL(298, 11),  // "setSpO2Busy"
+        QT_MOC_LITERAL(310, 11),  // "setNIBPBusy"
+        QT_MOC_LITERAL(322, 13),  // "setHeightBusy"
+        QT_MOC_LITERAL(336, 13),  // "setWeightBusy"
+        QT_MOC_LITERAL(350, 18),  // "setTemperatureText"
+        QT_MOC_LITERAL(369, 4),  // "text"
+        QT_MOC_LITERAL(374, 11),  // "setNIBPText"
+        QT_MOC_LITERAL(386, 13),  // "setHeightText"
+        QT_MOC_LITERAL(400, 13),  // "setWeightText"
+        QT_MOC_LITERAL(414, 11),  // "setSpo2Text"
+        QT_MOC_LITERAL(426, 15),  // "onVitalsUpdated"
+        QT_MOC_LITERAL(442, 4),  // "spo2"
+        QT_MOC_LITERAL(447, 5)   // "pulse"
     },
     "HomeView",
     "startSpo2Requested",
@@ -144,8 +168,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSHomeViewENDCLASS_t qt_meta_stri
     "newSessionRequested",
     "setTemperatureBusy",
     "busy",
+    "setSpO2Busy",
+    "setNIBPBusy",
+    "setHeightBusy",
+    "setWeightBusy",
     "setTemperatureText",
     "text",
+    "setNIBPText",
+    "setHeightText",
+    "setWeightText",
+    "setSpo2Text",
     "onVitalsUpdated",
     "spo2",
     "pulse"
@@ -160,7 +192,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      22,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -168,22 +200,30 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
       11,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   98,    2, 0x06,    1 /* Public */,
-       3,    0,   99,    2, 0x06,    2 /* Public */,
-       4,    0,  100,    2, 0x06,    3 /* Public */,
-       5,    0,  101,    2, 0x06,    4 /* Public */,
-       6,    0,  102,    2, 0x06,    5 /* Public */,
-       7,    0,  103,    2, 0x06,    6 /* Public */,
-       8,    0,  104,    2, 0x06,    7 /* Public */,
-       9,    0,  105,    2, 0x06,    8 /* Public */,
-      10,    1,  106,    2, 0x06,    9 /* Public */,
-      12,    4,  109,    2, 0x06,   11 /* Public */,
-      17,    0,  118,    2, 0x06,   16 /* Public */,
+       1,    0,  146,    2, 0x06,    1 /* Public */,
+       3,    0,  147,    2, 0x06,    2 /* Public */,
+       4,    0,  148,    2, 0x06,    3 /* Public */,
+       5,    0,  149,    2, 0x06,    4 /* Public */,
+       6,    0,  150,    2, 0x06,    5 /* Public */,
+       7,    0,  151,    2, 0x06,    6 /* Public */,
+       8,    0,  152,    2, 0x06,    7 /* Public */,
+       9,    0,  153,    2, 0x06,    8 /* Public */,
+      10,    1,  154,    2, 0x06,    9 /* Public */,
+      12,    4,  157,    2, 0x06,   11 /* Public */,
+      17,    0,  166,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      18,    1,  119,    2, 0x0a,   17 /* Public */,
-      20,    1,  122,    2, 0x0a,   19 /* Public */,
-      22,    2,  125,    2, 0x0a,   21 /* Public */,
+      18,    1,  167,    2, 0x0a,   17 /* Public */,
+      20,    1,  170,    2, 0x0a,   19 /* Public */,
+      21,    1,  173,    2, 0x0a,   21 /* Public */,
+      22,    1,  176,    2, 0x0a,   23 /* Public */,
+      23,    1,  179,    2, 0x0a,   25 /* Public */,
+      24,    1,  182,    2, 0x0a,   27 /* Public */,
+      26,    1,  185,    2, 0x0a,   29 /* Public */,
+      27,    1,  188,    2, 0x0a,   31 /* Public */,
+      28,    1,  191,    2, 0x0a,   33 /* Public */,
+      29,    1,  194,    2, 0x0a,   35 /* Public */,
+      30,    2,  197,    2, 0x0a,   37 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -200,8 +240,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
 
  // slots: parameters
     QMetaType::Void, QMetaType::Bool,   19,
-    QMetaType::Void, QMetaType::QString,   21,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,   23,   24,
+    QMetaType::Void, QMetaType::Bool,   19,
+    QMetaType::Void, QMetaType::Bool,   19,
+    QMetaType::Void, QMetaType::Bool,   19,
+    QMetaType::Void, QMetaType::Bool,   19,
+    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   31,   32,
 
        0        // eod
 };
@@ -245,7 +293,31 @@ Q_CONSTINIT const QMetaObject HomeView::staticMetaObject = { {
         // method 'setTemperatureBusy'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setSpO2Busy'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setNIBPBusy'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setHeightBusy'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'setWeightBusy'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         // method 'setTemperatureText'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setNIBPText'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setHeightText'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setWeightText'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setSpo2Text'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'onVitalsUpdated'
@@ -274,8 +346,16 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 9: _t->startSessionRequested((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4]))); break;
         case 10: _t->newSessionRequested(); break;
         case 11: _t->setTemperatureBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
-        case 12: _t->setTemperatureText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 13: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 12: _t->setSpO2Busy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 13: _t->setNIBPBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 14: _t->setHeightBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 15: _t->setWeightBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 16: _t->setTemperatureText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 17: _t->setNIBPText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 18: _t->setHeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 19: _t->setWeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 20: _t->setSpo2Text((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 21: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -379,13 +459,13 @@ int HomeView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 22)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 22;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 22)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 22;
     }
     return _id;
 }

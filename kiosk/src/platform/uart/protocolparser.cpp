@@ -2,77 +2,176 @@
 #include <QDebug>
 
 ProtocolParser::ProtocolParser(QObject* parent)
-    : QObject(parent) {}
+    : QObject(parent),
+      state(WAIT_CTRL),
+      ctrl(0),
+      nob(0),
+      payloadIndex(0)
+{
+}
 
 void ProtocolParser::feed(const QByteArray& data)
 {
-    buffer.append(data);
-    parseFrames();
+    for (auto byte : data)
+        parseByte(static_cast<quint8>(byte));
 }
 
-void ProtocolParser::parseFrames()
+/* ================= STATE MACHINE ================= */
+
+void ProtocolParser::parseByte(quint8 byte)
 {
-    while (true)
+    qDebug() << "[RX]" << QString::number(byte, 16);
+
+    switch (state)
     {
-        int start = buffer.indexOf(char(0xFB));
-        if (start < 0) return;
-
-        int end = buffer.indexOf(char(0xFB), start + 1);
-        if (end < 0) return;
-
-        QByteArray frame = buffer.mid(start, end - start + 1);
-        buffer.remove(0, end + 1);
-
-        if (frame.size() < 5) continue;
-
-        quint8 cmd = quint8(frame[3]);
-
-        switch(cmd)
+    case WAIT_CTRL:
+        // 🔥 RESYNC FILTER (CRITICAL)
+        if (byte == 0xF2 || byte == 0xF4 || byte == 0xF5 ||
+            byte == 0xF7 || byte == 0xF8 || byte == 0xFA || byte == 0xFB)
         {
-        case 0x06: // TEMP
+            ctrl = byte;
+            state = WAIT_NOB;
+        }
+        break;
+
+    case WAIT_NOB:
+        nob = byte;
+
+        if (nob == 0 || nob > sizeof(payload))
         {
-            int t = quint8(frame[6]);
-            int f = quint8(frame[7]);
-            char unit = frame[8];
-            //qDebug() << "Frame:" << frame.toHex(' ');
-            double val = t + (f / 10.0);
-            emit temperatureReceived(val, unit);
-            break;
+            state = WAIT_CTRL;
+            return;
         }
 
-        case 0x02: // SPO2
+        payloadIndex = 0;
+        state = READ_PAYLOAD;
+        break;
+
+    case READ_PAYLOAD:
+        if (payloadIndex < sizeof(payload))
+            payload[payloadIndex++] = byte;
+        else
         {
-            emit spo2Received(quint8(frame[5]),
-                              quint8(frame[6]));
-            break;
+            state = WAIT_CTRL;
+            return;
         }
 
-        case 0x03: // NIBP
+        if (payloadIndex >= nob)
         {
-            emit nibpReceived(quint8(frame[5]),
-                              quint8(frame[6]),
-                              quint8(frame[7]));
-            break;
+            decodeFrame();
+            state = WAIT_CTRL;
+        }
+        break;
+    }
+}
+
+/* ================= DECODER ================= */
+
+void ProtocolParser::decodeFrame()
+{
+    /* -------- PULSE -------- */
+    if (ctrl == 0xF2 && nob == 1)
+    {
+        int pulse = payload[0];
+        if (pulse < 30 || pulse > 239)
+            pulse = 0;
+
+        lastPulse = pulse;
+    }
+
+    /* -------- SPO2 -------- */
+    else if (ctrl == 0xF4 && nob == 1)
+    {
+        int spo2 = payload[0];
+        if (spo2 > 100)
+            spo2 = 0;
+
+        lastSpo2 = spo2;
+    }
+
+    /* -------- EMIT SPO2 -------- */
+    if (lastSpo2 >= 0 && lastPulse >= 0)
+    {
+        emit spo2Received(lastSpo2, lastPulse);
+        lastSpo2 = -1;
+    }
+
+    /* -------- NIBP -------- */
+    else if (ctrl == 0xF5)
+    {
+        quint8 len  = nob;
+        quint8 mode = payload[0];
+
+        /* PRESSURE */
+        if (mode == 0x01 && len >= 3)
+        {
+            int pressure = (payload[1] * 128) | payload[2];
+
+            qDebug() << "[NIBP] Pressure:" << pressure;
+            emit nibpPressure(pressure);
+            return;
         }
 
-        case 0x04: // WEIGHT
+        /* FINAL */
+        if (mode == 0x00)
         {
-            double w = quint8(frame[5]) +
-                       quint8(frame[6]) / 10.0;
-            emit weightReceived(w);
-            break;
-        }
+            int sys = 0;
+            int dia = 0;
+            int mean = 0;
+            int err = 0;
 
-        case 0x05: // HEIGHT
-        {
-            double h = quint8(frame[5]) +
-                       quint8(frame[6]) / 10.0;
-            emit heightReceived(h);
-            break;
-        }
+            if (len == 6)
+            {
+                sys  = payload[1]*128 + payload[2];
+                dia  = payload[3];
+                mean = payload[4];
+                err  = payload[5];
+            }
+            else if (len == 4)
+            {
+                sys = payload[1]*128 + payload[2];
+                dia = payload[3];
+            }
+            else
+            {
+                return;
+            }
 
-        default:
-            break;
+            if (sys == 0 && dia == 0)
+                return;
+
+            qDebug() << "[FINAL RAW]"
+                     << "SYS:" << sys
+                     << "DIA:" << dia
+                     << "MEAN:" << mean
+                     << "ERR:" << err;
+
+            emit nibpReceived(sys, dia, mode);
+            return;
         }
+    }
+
+    /* -------- TEMP -------- */
+    else if (ctrl == 0xFA && nob == 3)
+    {
+        double temp = payload[0] + payload[1] / 10.0;
+        char unit = static_cast<char>(payload[2]);
+
+        emit temperatureReceived(temp, unit);
+    }
+
+    /* -------- WEIGHT -------- */
+    else if (ctrl == 0xF8 && nob >= 2)
+    {
+        double weight = payload[0] + payload[1];
+        emit weightReceived(weight);
+    }
+
+    /* -------- HEIGHT -------- */
+    else if (ctrl == 0xF7 && nob >= 2)
+    {
+        int height = payload[1];
+        if (height != 0x80)
+            emit heightReceived(height);
     }
 }

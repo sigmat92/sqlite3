@@ -198,8 +198,10 @@ int main(int argc, char *argv[])
     // ================= NAVIGATION =================
 
     // Home → Settings
+
     QObject::connect(homeView, &HomeView::settingsRequested,
                      [=]() {
+                        qDebug() << "Settings requested signal received in main.cpp, navigating to settings screen";
                          nav->goTo(Screen::Settings);
                      });
 
@@ -296,7 +298,7 @@ int main(int argc, char *argv[])
 
     //QObject::connect(vitalsService, &VitalsService::temperatureReady,
     //                 vitalsModel, &VitalsModel::setTemperature);//
-QObject::connect(vitalsService, &VitalsService::temperatureReady,
+    QObject::connect(vitalsService, &VitalsService::temperatureReady,
                  vitalsModel, &VitalsModel::setTemperature,
                  Qt::UniqueConnection);
 
@@ -311,14 +313,15 @@ QObject::connect(vitalsService, &VitalsService::temperatureReady,
 
     QObject::connect(vitalsService, &VitalsService::heightReady,
                      vitalsModel, &VitalsModel::setHeight);
-//PRINT CONTROLLER
-PrintView* view = new PrintView;
-PrinterController* controller = new PrinterController;
+    //PRINT CONTROLLER
+    PrintView* view = new PrintView;
+    PrinterController* controller = new PrinterController;
 
-QObject::connect(view, &PrintView::startPrintingRequested,
-                 controller, &PrinterController::onPrintRequested);
+    QObject::connect(view, &PrintView::startPrintingRequested,
+                    controller, &PrinterController::onPrintRequested);
 
     // ---------- START ----------
+
     nav->goTo(Screen::Home);
     stackedWidget->showFullScreen();
 

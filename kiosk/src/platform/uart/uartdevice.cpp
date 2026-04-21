@@ -1,7 +1,10 @@
 #include "uartdevice.h"
+
 #include <termios.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <errno.h>
+#include <cstring>
 #include <QDebug>
 
 UartDevice::UartDevice(QObject* parent)
@@ -11,34 +14,36 @@ UartDevice::UartDevice(QObject* parent)
 
 bool UartDevice::open(const QString& dev, int baud)
 {
-    m_fd = ::open(dev.toLocal8Bit().constData(), O_RDWR | O_NOCTTY);
-    if (m_fd < 0) {
+    m_fd = ::open(dev.toLocal8Bit().constData(),
+                  O_RDWR | O_NOCTTY | O_NONBLOCK);
+
+    if (m_fd < 0)
+    {
         qWarning() << "UART open failed";
         return false;
     }
 
-    struct termios tio;
+    struct termios tio{};
     tcgetattr(m_fd, &tio);
 
     cfmakeraw(&tio);
 
-    speed_t speed = B9600;
-    if (baud == 115200) speed = B115200;
-
+    speed_t speed = (baud == 115200) ? B115200 : B9600;
     cfsetispeed(&tio, speed);
     cfsetospeed(&tio, speed);
 
     tio.c_cflag |= (CLOCAL | CREAD);
-    tio.c_cc[VMIN] = 1;
-    tio.c_cc[VTIME] = 0;
+
+    // IMPORTANT: non-blocking read
+    tio.c_cc[VMIN]  = 0;
+    tio.c_cc[VTIME] = 1;  // 100ms
 
     tcsetattr(m_fd, TCSANOW, &tio);
 
     m_notifier = new QSocketNotifier(m_fd, QSocketNotifier::Read, this);
-    connect(m_notifier,
-            &QSocketNotifier::activated,
-            this,
-            &UartDevice::onReadyRead);
+
+    connect(m_notifier, &QSocketNotifier::activated,
+            this, &UartDevice::onReadyRead);
 
     qDebug() << "UART opened:" << dev;
 
@@ -50,28 +55,62 @@ void UartDevice::send(const QByteArray& data)
     if (m_fd < 0)
         return;
 
-    ssize_t written = ::write(m_fd, data.constData(), data.size());
+    ssize_t total = 0;
 
-    if (written < 0)
+    while (total < data.size())
     {
-        qWarning() << "UART write failed";
+        ssize_t n = ::write(m_fd,
+                            data.constData() + total,
+                            data.size() - total);
+
+        if (n < 0)
+        {
+            if (errno == EAGAIN)
+                continue;
+
+            qWarning() << "UART write error:" << strerror(errno);
+            return;
+        }
+
+        total += n;
     }
-    else if (written != data.size())
-    {
-        qWarning() << "UART partial write:" << written << "/" << data.size();
-    }
+
+    ::tcdrain(m_fd); // ensure sent
 }
 
+void UartDevice::flush()
+{
+    if (m_fd >= 0)
+        ::tcflush(m_fd, TCIOFLUSH);
+}
+
+/* CRITICAL FIX: drain all available data */
 void UartDevice::onReadyRead()
 {
-    
-    char buf[256];
-    int n = ::read(m_fd, buf, sizeof(buf));
+    if (m_fd < 0)
+        return;
 
-    if (n > 0) {
-        QByteArray data(buf, n);
-        //qDebug() << "UART RX:" << data.toHex(' ');
-        emit bytesReceived(data);
+    char buf[256];
+
+    while (true)
+    {
+        int n = ::read(m_fd, buf, sizeof(buf));
+
+        if (n > 0)
+        {
+            QByteArray chunk(buf, n);
+            qDebug() << "[UART RAW]" << chunk.toHex(' ');
+            emit bytesReceived(chunk);
+        }
+        else
+        {
+            if (n == -1 && (errno == EAGAIN || errno == EWOULDBLOCK))
+                break;
+
+            if (n == -1)
+                qWarning() << "UART read error:" << strerror(errno);
+
+            break;
+        }
     }
 }
-

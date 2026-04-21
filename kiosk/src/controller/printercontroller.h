@@ -15,9 +15,8 @@ public:
 signals:
     void printCompleted();
     void printError(QString error);
-    //void onPrintRequested();
 
-    public slots:   
+public slots:   
     void onPrintRequested();
 
 private:

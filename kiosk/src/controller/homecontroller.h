@@ -30,6 +30,9 @@ public:
 public slots:
     void onTemperatureChanged(double value, char unit);
     void onSpO2Changed(int spo2, int pulse);
+    void onNIBPChanged(int sys, int dia);
+    void onHeightChanged(int height);
+    void onWeightChanged(double weight);
     void onStartSpo2Requested();
     void visionTestRequested();
 

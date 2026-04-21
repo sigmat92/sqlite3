@@ -9,18 +9,6 @@
 #include <QApplication>
 #include <QDebug>
 
-/*
-SettingsController::SettingsController(
-        SettingsView *view,
-        SettingsService *settingsService,
-        SettingsRepository *settingsRepo,
-        //AdminAuthService *authService,
-        QObject *parent)
-    : QObject(parent),
-      m_view(view),
-      m_service(settingsService),
-      m_settingsRepo(settingsRepo)
-*/
 SettingsController::SettingsController(
         SettingsView *view,
         SettingsService *settingsService,
@@ -74,6 +62,13 @@ SettingsController::SettingsController(
              //m_service->postVitals();
              qDebug() << "Vitals posted successfully...";
         });
+
+    //connect(homeView, &HomeView::settingsRequested,
+    //             [=]() {
+    //                qDebug() << "Settings requested signal received in settings controller, emitting settingsRequested signal to main.cpp";
+    //                 //nav->goTo(Screen::Settings);
+    //                 emit settingsRequested();
+    //             });
 
 
 }

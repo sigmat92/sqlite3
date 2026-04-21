@@ -485,6 +485,7 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h
  mdp:/home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/moc_predefs.h
+ mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier
  mdp:/opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/q20type_traits.h

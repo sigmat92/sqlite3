@@ -665,4 +665,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qjsonvalue.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcborvalue.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcborcommon.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/quuid.h
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/quuid.h \
+ /home/prakash/sqlite3/kiosk/src/controller/printercontroller.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/printerservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../service/../model/printjob.h \
+ /home/prakash/sqlite3/kiosk/src/controller/../storage/printerrepository.h

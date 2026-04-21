@@ -47,26 +47,97 @@ HomeController::HomeController(HomeView* view,
 
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
         this, &HomeController::onTemperatureChanged,Qt::UniqueConnection);
+
     connect(m_view, &HomeView::resetSessionRequested,
         this, &HomeController::resetSession);
         
     // ================= START REQUESTS =================
+
+    //1.vision test
+
+    connect(m_view, &HomeView::visionTestRequested,
+        this, [this]() {
+            qDebug() << "homecontroller: \"Vision Test\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
+
+            if (!ensurePatientSaved())
+                return;
+            //m_view->setCurrentSessionId(m_currentSessionId);
+            emit visionTestRequested();
+            //emit visionTestRequested(sessionId);
+            
+    });
+
+    //2.temperature
+
     connect(m_view, &HomeView::startTemperatureRequested,
         this, [this] {
 
     qDebug() << "homecontroller: \"Temperature\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-    // CRITICAL FIX
-    if (!ensurePatientSaved())
-        return;
+            if (!ensurePatientSaved())
+                return;
 
-    m_view->setTemperatureBusy(true);
+            m_view->setTemperatureBusy(true);
 
-    m_vitalsService->requestTemperature();
-});
+            m_vitalsService->requestTemperature();
+    });
+
+    //3.spo2/pulse
 
     connect(m_view, &HomeView::startSpo2Requested,
-            this, &HomeController::onStartSpo2Requested);
+        this, [this] {
+
+    qDebug() << "homecontroller: \"startSpo2Requested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
+
+            if (!ensurePatientSaved())
+                return;
+
+            m_view->setSpO2Busy(true);
+
+            m_vitalsService->requestSpo2();
+    });
+
+    //4.NIBP
+    connect(m_view, &HomeView::startNIBPRequested,
+        this, [this] {
+
+    qDebug() << "homecontroller: \"startNIBPRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
+
+            if (!ensurePatientSaved())
+                return;
+
+            m_view->setNIBPBusy(true);
+
+            m_vitalsService->requestNibp();
+    });
+
+    //5.height
+    connect(m_view, &HomeView::startHeightRequested,
+        this, [this] {
+
+    qDebug() << "homecontroller: \"startHeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
+
+            if (!ensurePatientSaved())
+                return;
+
+            m_view->setHeightBusy(true);
+
+            m_vitalsService->requestHeight();
+    });
+        
+    //6.weight
+    connect(m_view, &HomeView::startWeightRequested,
+        this, [this] {
+
+    qDebug() << "homecontroller: \"startWeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
+
+            if (!ensurePatientSaved())
+                return;
+
+            m_view->setWeightBusy(true);
+
+            m_vitalsService->requestWeight();
+    });
 
     // ================= LIVE UI UPDATES =================
 
@@ -74,7 +145,17 @@ HomeController::HomeController(HomeView* view,
             this, &HomeController::onTemperatureChanged,Qt::UniqueConnection);
 
     connect(m_vitalsModel, &VitalsModel::spo2Changed,
-            this, &HomeController::onSpO2Changed);
+            this, &HomeController::onSpO2Changed,Qt::UniqueConnection);
+
+    connect(m_vitalsModel, &VitalsModel::nibpChanged,
+            this, &HomeController::onNIBPChanged,Qt::UniqueConnection);
+
+    connect(m_vitalsModel, &VitalsModel::heightChanged,
+            this, &HomeController::onHeightChanged,Qt::UniqueConnection);
+
+    connect(m_vitalsModel, &VitalsModel::weightChanged,
+            this, &HomeController::onWeightChanged,Qt::UniqueConnection);
+
 }
 bool HomeController::validatePatient()
 {
@@ -139,6 +220,25 @@ void HomeController::onNIBPFinal(int sys, int dia)
     m_vitalsRepo->saveNIBP(sessionId, sys, dia);
 }
 
+void HomeController::onWeightChanged(double weight)
+{
+    QString text = QString::number(weight, 'f', 1) + " kg";
+    m_view->setWeightText(text);
+    m_view->setWeightBusy(false);
+}
+void HomeController::onHeightChanged(int height)
+{
+    QString text = QString::number(height) + " cm";
+    m_view->setHeightText(text);
+    m_view->setHeightBusy(false);
+}
+void HomeController::onNIBPChanged(int sys, int dia)
+{
+    QString text = QString("%1 / %2 mmHg").arg(sys).arg(dia);
+    m_view->setNIBPText(text);
+    m_view->setNIBPBusy(false);
+}
+
 void HomeController::onTemperatureChanged(double value, char unit)
 {
     QString text = QString::number(value, 'f', 1)
@@ -151,8 +251,9 @@ void HomeController::onTemperatureChanged(double value, char unit)
 
 void HomeController::onSpO2Changed(int spo2, int pulse)
 {
-    Q_UNUSED(spo2)
-    Q_UNUSED(pulse)
+    QString text = QString("%1 / %2").arg(spo2).arg(pulse);
+    m_view->setSpo2Text(text);
+    m_view->setSpO2Busy(false);
 }
 void HomeController::onStartSpo2Requested()
 {
@@ -208,7 +309,7 @@ bool HomeController::ensurePatientSaved()
         return false;
     }
 
-    // CRITICAL FIX
+    // CRITICAL 
     m_vitalsService->setSessionId(m_currentSessionId);
 
     qDebug() << "Session setting in vitals service from home controller:" << m_currentSessionId;
@@ -233,5 +334,5 @@ void HomeController::resetSession()
 }
 void HomeController::visionTestRequested()
 {
-    qDebug() << "Vision test requested (stub)";
+    qDebug() << "Vision test requested (stub) with sessionId:" << m_vitalsService->sessionId();
 }

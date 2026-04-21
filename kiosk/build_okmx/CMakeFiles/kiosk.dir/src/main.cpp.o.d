@@ -581,9 +581,9 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QStackedWidget \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qstackedwidget.h \
