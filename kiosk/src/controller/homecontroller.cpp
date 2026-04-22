@@ -59,8 +59,8 @@ HomeController::HomeController(HomeView* view,
         this, [this]() {
             qDebug() << "homecontroller: \"Vision Test\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
             //m_view->setCurrentSessionId(m_currentSessionId);
             emit visionTestRequested();
             //emit visionTestRequested(sessionId);
@@ -74,8 +74,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"Temperature\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
 
             m_view->setTemperatureBusy(true);
 
@@ -89,8 +89,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startSpo2Requested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
 
             m_view->setSpO2Busy(true);
 
@@ -103,8 +103,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startNIBPRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
 
             m_view->setNIBPBusy(true);
 
@@ -117,8 +117,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startHeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
 
             m_view->setHeightBusy(true);
 
@@ -131,8 +131,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startWeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            if (!ensurePatientSaved())
-                return;
+            //if (!ensurePatientSaved())
+            //    return;
 
             m_view->setWeightBusy(true);
 
@@ -234,7 +234,7 @@ void HomeController::onHeightChanged(int height)
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
-    QString text = QString("%1 / %2 mmHg").arg(sys).arg(dia);
+    QString text = QString("%1 / %2").arg(sys).arg(dia);
     m_view->setNIBPText(text);
     m_view->setNIBPBusy(false);
 }

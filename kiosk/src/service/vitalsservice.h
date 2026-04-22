@@ -1,60 +1,69 @@
-#ifndef VITALSSERVICE_H
-#define VITALSSERVICE_H
+#pragma once
 
 #include <QObject>
 #include <QTimer>
-#include "storage/vitalsrepository.h"
-#include "model/vitalsmodel.h"
+
+class VitalsRepository;
 
 class VitalsService : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit VitalsService(QObject* parent=nullptr);
+    explicit VitalsService(QObject* parent = nullptr);
 
+    // -------- SESSION --------
+    void setSessionId(int id);
+    int sessionId() const;   // ✅ FIXED (getter)
+
+    void setRepository(VitalsRepository* repo);
+
+    // -------- REQUESTS --------
     void requestTemperature();
     void requestSpo2();
     void requestNibp();
     void requestWeight();
     void requestHeight();
 
-    void setRepository(VitalsRepository* repo);
-    void setSessionId(int id);
-    int sessionId() const { return m_sessionId; }
-    
-    VitalsModel currentVitals() const; 
-
 signals:
-    void sendCommand(QByteArray);
+    // UART
+    void sendCommand(const QByteArray&);
 
-    void temperatureReady(double,char);
-    void spo2Ready(int,int);
-    void nibpReady(int,int,int);
+    // UI
+    void temperatureReady(double, char);
+    void spo2Ready(int, int);
+    void nibpReady(int, int, int);
     void weightReady(double);
     void heightReady(int);
 
+    // (optional but useful)
+    void nibpPressure(int);
+
 public slots:
-    void onTemperature(double,char);
-    void onSpo2(int,int);
-    void onNibp(int,int,int);
+    void onTemperature(double, char);
+    void onSpo2(int, int);
+    void onNibp(int, int, int);
     void onWeight(double);
     void onHeight(double);
+    void onNibpPressure(int);
 
 private:
-    enum class State { Idle, Temp, Spo2, Nibp, Weight, Height };
-    State state = State::Idle;
+    enum class State {
+        Idle,
+        Temp,
+        Spo2,
+        Nibp,
+        Weight,
+        Height
+    };
 
-    QTimer timeout;
-
-    VitalsRepository* m_repo = nullptr;
-    int m_sessionId = -1;
-    
     void setIdle();
     void startTimeout();
-  
-    QString ntVitals;         //
-    
-};
 
-#endif
+private:
+    State state = State::Idle;
+    QTimer timeout;
+
+    int m_sessionId = -1;   // 🔒 private (correct)
+    VitalsRepository* m_repo = nullptr;
+};

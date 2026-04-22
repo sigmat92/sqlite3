@@ -295,6 +295,10 @@ int main(int argc, char *argv[])
 
     QObject::connect(vitalsService, &VitalsService::sendCommand,
                      uart, &UartDevice::send);
+                    
+    //nibp pressure updates for live UI update during measurement
+    QObject::connect(parser, &ProtocolParser::nibpPressure,
+                    [](int p){ qDebug()<<"Pressure:"<<p; });
 
     //QObject::connect(vitalsService, &VitalsService::temperatureReady,
     //                 vitalsModel, &VitalsModel::setTemperature);//
