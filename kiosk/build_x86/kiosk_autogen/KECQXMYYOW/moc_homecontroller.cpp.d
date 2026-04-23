@@ -1,12 +1,7 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_homecontroller.cpp: /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
@@ -32,10 +27,8 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h \
@@ -44,7 +37,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h \
@@ -52,7 +44,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h \
@@ -69,15 +60,9 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h \
@@ -94,7 +79,6 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h \
@@ -107,14 +91,9 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
-  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
-  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
   /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
-  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -271,9 +250,7 @@
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/limits.h \
   /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -295,11 +272,8 @@
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -344,12 +318,10 @@
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

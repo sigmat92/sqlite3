@@ -375,6 +375,5 @@ CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

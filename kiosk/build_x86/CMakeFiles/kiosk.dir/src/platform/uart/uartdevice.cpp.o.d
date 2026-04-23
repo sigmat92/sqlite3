@@ -352,6 +352,8 @@ CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
  /usr/include/termios.h /usr/include/x86_64-linux-gnu/bits/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \

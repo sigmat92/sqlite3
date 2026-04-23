@@ -423,6 +423,7 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h
  mdp:/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h
+ mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h
@@ -7265,13 +7266,8 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/controller/homecontroller.h
  mdp:/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h
@@ -7297,10 +7293,8 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h
@@ -7309,7 +7303,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h
@@ -7317,7 +7310,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h
@@ -7334,15 +7326,9 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h
@@ -7359,7 +7345,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h
@@ -7372,14 +7357,9 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
- mdp:/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h
  mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
- mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -7536,9 +7516,7 @@
  mdp:/usr/include/errno.h
  mdp:/usr/include/features-time64.h
  mdp:/usr/include/features.h
- mdp:/usr/include/limits.h
  mdp:/usr/include/linux/errno.h
- mdp:/usr/include/linux/limits.h
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
  mdp:/usr/include/sched.h
@@ -7560,11 +7538,8 @@
  mdp:/usr/include/x86_64-linux-gnu/bits/floatn-common.h
  mdp:/usr/include/x86_64-linux-gnu/bits/floatn.h
  mdp:/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- mdp:/usr/include/x86_64-linux-gnu/bits/local_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/locale.h
  mdp:/usr/include/x86_64-linux-gnu/bits/long-double.h
- mdp:/usr/include/x86_64-linux-gnu/bits/posix1_lim.h
- mdp:/usr/include/x86_64-linux-gnu/bits/posix2_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
@@ -7609,12 +7584,10 @@
  mdp:/usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  mdp:/usr/include/x86_64-linux-gnu/bits/typesizes.h
  mdp:/usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- mdp:/usr/include/x86_64-linux-gnu/bits/uio_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/waitflags.h
  mdp:/usr/include/x86_64-linux-gnu/bits/waitstatus.h
  mdp:/usr/include/x86_64-linux-gnu/bits/wchar.h
  mdp:/usr/include/x86_64-linux-gnu/bits/wordsize.h
- mdp:/usr/include/x86_64-linux-gnu/bits/xopen_lim.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -9579,13 +9552,8 @@
  mmc:Q_OBJECT
  mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
  mdp:/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h
@@ -9611,10 +9579,8 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerfwd.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainerinfo.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontainertools_impl.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdarwinhelpers.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatastream.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qexceptionhandling.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qflags.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfloat16.h
@@ -9623,7 +9589,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qgenericatomic.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobal.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qglobalstatic.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhashfunctions.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevicebase.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiterable.h
@@ -9631,7 +9596,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlogging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmalloc.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmath.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetacontainer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmetatype.h
@@ -9648,15 +9612,9 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrefcount.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopedpointer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qscopeguard.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringbuilder.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringfwd.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringliteral.h
@@ -9673,7 +9631,6 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h
@@ -9686,13 +9643,8 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h
- mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
- mdp:/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h
- mdp:/home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -9849,9 +9801,7 @@
  mdp:/usr/include/errno.h
  mdp:/usr/include/features-time64.h
  mdp:/usr/include/features.h
- mdp:/usr/include/limits.h
  mdp:/usr/include/linux/errno.h
- mdp:/usr/include/linux/limits.h
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
  mdp:/usr/include/sched.h
@@ -9873,11 +9823,8 @@
  mdp:/usr/include/x86_64-linux-gnu/bits/floatn-common.h
  mdp:/usr/include/x86_64-linux-gnu/bits/floatn.h
  mdp:/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
- mdp:/usr/include/x86_64-linux-gnu/bits/local_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/locale.h
  mdp:/usr/include/x86_64-linux-gnu/bits/long-double.h
- mdp:/usr/include/x86_64-linux-gnu/bits/posix1_lim.h
- mdp:/usr/include/x86_64-linux-gnu/bits/posix2_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  mdp:/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
@@ -9922,12 +9869,10 @@
  mdp:/usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  mdp:/usr/include/x86_64-linux-gnu/bits/typesizes.h
  mdp:/usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- mdp:/usr/include/x86_64-linux-gnu/bits/uio_lim.h
  mdp:/usr/include/x86_64-linux-gnu/bits/waitflags.h
  mdp:/usr/include/x86_64-linux-gnu/bits/waitstatus.h
  mdp:/usr/include/x86_64-linux-gnu/bits/wchar.h
  mdp:/usr/include/x86_64-linux-gnu/bits/wordsize.h
- mdp:/usr/include/x86_64-linux-gnu/bits/xopen_lim.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h
  mdp:/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h

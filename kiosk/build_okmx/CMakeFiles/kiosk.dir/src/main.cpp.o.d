@@ -565,11 +565,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
- /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
@@ -577,7 +574,9 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/record.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qsocketnotifier.h \

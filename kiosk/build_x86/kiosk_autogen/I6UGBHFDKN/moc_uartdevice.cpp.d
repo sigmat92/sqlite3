@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_uartdevice.cpp: /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \

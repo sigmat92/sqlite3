@@ -516,26 +516,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QTimer \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtimer.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVariantMap \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariantmap.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata_impl.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVariant \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qdebug.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtextstream.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcontiguouscache.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qsharedpointer.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qsharedpointer_impl.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp \
@@ -551,8 +531,19 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qkeysequence.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qicon.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpixmap.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qimage.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qdebug.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qtextstream.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qcontiguouscache.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qsharedpointer.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qsharedpointer_impl.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata_impl.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qset.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvarlengtharray.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qpalette.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qbrush.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qfont.h \
@@ -563,6 +554,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qcursor.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qbitmap.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_printercontroller.cpp \
@@ -581,6 +573,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/VNQA4LF4BW/moc_settingsmodel.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/VNQA4LF4BW/../../../src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/UFQQIFJZKK/moc_restclient.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/UFQQIFJZKK/../../../src/network/restclient.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtNetwork/QNetworkAccessManager \
@@ -591,8 +584,11 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtNetwork/qnetworkrequest.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSharedDataPointer \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qshareddata.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QUrl \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qurl.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVariant \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariant.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QList \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qlist.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
@@ -650,7 +646,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/../../../src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
- /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/F2ESZRYZMC/moc_settingsrepository.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_baseview.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/../../../src/view/baseview.h \
@@ -686,6 +681,9 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_printview.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/../../../src/view/printview.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVariantMap \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvariantmap.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_recordsview.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/../../../src/view/recordsview.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp \

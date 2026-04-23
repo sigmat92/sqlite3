@@ -395,28 +395,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_inputcontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/inputcontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp \
@@ -432,8 +410,21 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
@@ -443,6 +434,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printercontroller.cpp \
@@ -461,6 +453,7 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_settingsmodel.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/moc_vitalsmodel.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/VNQA4LF4BW/../../../src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/UFQQIFJZKK/moc_restclient.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/UFQQIFJZKK/../../../src/network/restclient.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QNetworkAccessManager \
@@ -471,8 +464,11 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkrequest.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QUrl \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QList \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
@@ -530,7 +526,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
- /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/F2ESZRYZMC/moc_settingsrepository.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_baseview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/baseview.h \
@@ -566,6 +561,9 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_printview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/printview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_recordsview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/recordsview.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp \

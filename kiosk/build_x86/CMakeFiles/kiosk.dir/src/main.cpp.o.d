@@ -480,24 +480,24 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
- /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
  /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
- /usr/include/sqlite3.h /home/prakash/sqlite3/kiosk/src/storage/record.h \
+ /usr/include/sqlite3.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/storage/record.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSocketNotifier \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsocketnotifier.h \
- /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QByteArray \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h \
+ /home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.h \
  /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \

@@ -17,7 +17,7 @@ VitalsService::VitalsService(QObject* parent)
             //emit sendCommand(QByteArray::fromHex("96AAF50100"));
         }
 
-        //setIdle();
+        setIdle();
     });
 }
 
@@ -106,8 +106,8 @@ void VitalsService::onTemperature(double v, char unit)
     if (state != State::Temp) return;
     if (v <= 1.0) return;
 
-    //if (m_repo && m_sessionId > 0)
-    //    m_repo->saveTemperature(m_sessionId, v);
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveTemperature(m_sessionId, v);
 
     emit temperatureReady(v, unit);
     setIdle();
@@ -117,8 +117,8 @@ void VitalsService::onSpo2(int s, int p)
 {
     if (state != State::Spo2) return;
 
-    //if (m_repo && m_sessionId > 0)
-    //    m_repo->saveSpO2(m_sessionId, s, p);
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveSpO2(m_sessionId, s, p);
 
     emit spo2Ready(s, p);
     setIdle();
@@ -180,8 +180,8 @@ void VitalsService::onWeight(double w)
 {
     if (state != State::Weight) return;
 
-    //if (m_repo && m_sessionId > 0)
-    //    m_repo->saveWeight(m_sessionId, w);
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveWeight(m_sessionId, w);
 
     emit weightReady(w);
     setIdle();
@@ -191,8 +191,8 @@ void VitalsService::onHeight(double h)
 {
     if (state != State::Height) return;
 
-    //if (m_repo && m_sessionId > 0)
-    //    m_repo->saveHeight(m_sessionId, int(h));
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveHeight(m_sessionId, int(h));
 
     emit heightReady(int(h));
     setIdle();

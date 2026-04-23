@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/I6UGBHFDKN/moc_uartdevice.cpp: /home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.h \
   /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/moc_predefs.h \
+  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QSocketNotifier \
   /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/q20functional.h \

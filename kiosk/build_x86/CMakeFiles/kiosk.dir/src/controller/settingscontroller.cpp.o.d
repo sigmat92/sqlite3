@@ -462,15 +462,6 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/sqlite3/kiosk/src/service/syncservice.h \
  /home/prakash/sqlite3/kiosk/src/network/restclient.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QNetworkAccessManager \
@@ -481,8 +472,11 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qnetworkrequest.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QUrl \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QList \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlist.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
@@ -509,6 +503,7 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborvalue.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \
