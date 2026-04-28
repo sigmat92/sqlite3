@@ -14,7 +14,7 @@ public:
 
     // -------- SESSION --------
     void setSessionId(int id);
-    int sessionId() const;   // ✅ FIXED (getter)
+    int sessionId() const;   // FIXED (getter)
 
     void setRepository(VitalsRepository* repo);
 
@@ -24,11 +24,13 @@ public:
     void requestNibp();
     void requestWeight();
     void requestHeight();
+    void printResults(int sessionId);
 
 signals:
-    // UART
-    void sendCommand(const QByteArray&);
 
+    void sendCommand(const QByteArray&); // sensors
+    void sendRaw(const QByteArray&);     // printer (thermal)
+    
     // UI
     void temperatureReady(double, char);
     void spo2Ready(int, int);
@@ -64,6 +66,6 @@ private:
     State state = State::Idle;
     QTimer timeout;
 
-    int m_sessionId = -1;   // 🔒 private (correct)
+    int m_sessionId = -1;   // private (correct)
     VitalsRepository* m_repo = nullptr;
 };

@@ -10,6 +10,7 @@ public:
     bool saveWeight(int sessionId, double weight);
     bool saveHeight(int sessionId, int height);
     bool saveNIBP(int sessionId, int systolic, int diastolic);
+    bool saveSession(int sessionId);
 
     QVariantMap getLatestVitals(int sessionId);
     bool createEmptyVitals(int sessionId);

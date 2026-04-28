@@ -4775,6 +4775,7 @@
  mdp:/home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString
+ mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h
@@ -4785,6 +4786,7 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qatomic_cxx11.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasicatomic.h
+ mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearray.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbytearrayalgorithms.h
@@ -4851,6 +4853,7 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtcoreexports.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtdeprecationmarkers.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtenvironmentvariables.h
+ mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtmetamacros.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtnoop.h
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtpreprocessorsupport.h
@@ -4866,6 +4869,7 @@
  mdp:/home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h
  mdp:/home/prakash/sqlite3/kiosk/src/model/printjob.h
  mdp:/home/prakash/sqlite3/kiosk/src/service/printerservice.h
+ mdp:/home/prakash/sqlite3/kiosk/src/service/vitalsservice.h
  mdp:/home/prakash/sqlite3/kiosk/src/storage/printerrepository.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h

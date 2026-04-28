@@ -349,6 +349,11 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
+ /home/prakash/sqlite3/kiosk/src/service/vitalsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/sqlite3/kiosk/src/controller/../service/printerservice.h \
  /home/prakash/sqlite3/kiosk/src/controller/../service/../model/printjob.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
@@ -365,7 +370,6 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \

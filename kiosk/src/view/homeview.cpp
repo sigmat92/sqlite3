@@ -209,11 +209,11 @@ HomeView::HomeView(QWidget *parent)
 
     connect(printBtn,&QPushButton::clicked,this,[this](){
 
-    if(currentSessionId <= 0)
-    {
-        showError("No session available");
-        return;
-    }
+    //if(currentSessionId <= 0)
+    //{
+    //    showError("No session available");
+    //   return;
+    //}
 
     emit startPrintingRequested(currentSessionId);
 

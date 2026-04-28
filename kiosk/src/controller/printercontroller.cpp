@@ -1,18 +1,25 @@
 #include "controller/printercontroller.h"
+
 #include "view/printview.h"
 #include <QDebug>
-
+#include "service/vitalsservice.h"
 #include <QPdfWriter>
 #include <QPainter>
 #include <QPageSize>
 #include <QMap>
 #include <QVariant>
 
-PrinterController::PrinterController(QObject* parent)
-    : QObject(parent) {
+//PrinterController::PrinterController(QObject* parent)
+//    : QObject(parent) {
+  PrinterController::PrinterController(VitalsService* vs, QObject* parent)
+    : QObject(parent),
+      m_vitalsService(vs)   // CRITICAL
+{
+    qDebug() << "[PC] VitalsService ptr:" << m_vitalsService;
+      
 
-    //PrintView* view = new PrintView;
-    
+    //VitalsService* vitalsService = new VitalsService(this);
+
     connect(&m_service, &PrinterService::printSuccess,
             this, &PrinterController::printCompleted);
 
@@ -31,6 +38,38 @@ void PrinterController::handlePrintRequest(const QString& filePath) {
     m_repo.saveJob(job);
     m_service.print(job);
 }
+
+void PrinterController::onThermalPrintRequested()
+{
+    qDebug() << "Printer Controller received thermal print request";
+
+    if (!m_vitalsService)
+    {
+        qCritical() << "VitalsService is NULL → CRASH PREVENTED";
+        return;
+    }
+
+    int sessionId = m_vitalsService->sessionId();
+
+    if (sessionId <= 0)
+    {
+        qWarning() << "Invalid sessionId:" << sessionId;
+        return;
+    }
+
+    qDebug() << "Printing session:" << sessionId;
+
+    m_vitalsService->printResults(sessionId);
+}
+/*
+void PrinterController::onThermalPrintRequested() {
+    qDebug() << "Printer Controller received thermal print request from print view";
+    // For testing, we can directly call the print logic here with dummy data, or we can emit a signal to start the process. 
+    // For now, let's directly call the print logic with dummy data.
+    VitalsService* vitalsService = new VitalsService(this);
+    vitalsService->printResults(123); // Pass a valid session ID here
+}
+*/
 void PrinterController::onPrintRequested() {
     qDebug() << "Controller received print request (SIMULATION)";
 

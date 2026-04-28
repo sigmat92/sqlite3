@@ -1,5 +1,6 @@
 #include "vitalsservice.h"
-
+#include <QThread>
+#include <QElapsedTimer>
 #include "storage/vitalsrepository.h"   
 #include <QDebug>
 
@@ -14,7 +15,7 @@ VitalsService::VitalsService(QObject* parent)
         // send STOP if NIBP running
         if (state == State::Nibp)
         {
-            //emit sendCommand(QByteArray::fromHex("96AAF50100"));
+            emit sendCommand(QByteArray::fromHex("96AAF50100"));
         }
 
         setIdle();
@@ -211,4 +212,88 @@ void VitalsService::setIdle()
 void VitalsService::startTimeout()
 {
     timeout.start(50000);   // 50 sec (safe for NIBP)
+}
+
+void VitalsService::printResults(int sessionId)
+{
+    qDebug() << "[VS] Preparing to print...";
+
+    // ---------------- SAFETY: STOP DEVICE ----------------
+    qDebug() << "[VS] Sending setIdle() command before printing";
+    setIdle();
+    QThread::msleep(300);
+
+    // ---------------- TEXT ----------------
+    QString text;
+    text += "CareNest Health Kiosk\n";
+    text += "----------------------\n";
+    text += QString("Session: %1\n").arg(sessionId);
+    text += "Temp: 98.6 F\n";
+    text += "SpO2: 98%\n";
+    text += "BP: 120/80\n";
+    text += "----------------------\n\n\n";
+
+    QByteArray payload = text.toUtf8();
+
+    // ---------------- LENGTH ----------------
+    int print_len = payload.size() + 7;   // protocol requirement
+
+    quint8 lsb = print_len & 0xFF;
+    quint8 msb = (print_len >> 8) & 0xFF;
+
+    qDebug() << "[VS] Payload size:" << payload.size();
+    qDebug() << "[VS] Print length:" << print_len;
+
+    // ---------------- WAKE PRINTER ----------------
+    qDebug() << "[VS] Sending ESC @ (wake)";
+    emit sendRaw(QByteArray::fromHex("1B40"));
+    QThread::msleep(100);
+
+    // ================= CHUNKED SEND =================
+
+    // -------- HEADER (list1) --------
+    QByteArray header;
+    header.append(char(0x96));
+    header.append(char(0xAA));
+    header.append(char(0xF6));
+    header.append(char(lsb));
+    header.append(char(msb));
+
+    qDebug() << "[VS] HEADER:" << header.toHex(' ');
+    emit sendRaw(header);
+
+    QThread::msleep(50);
+
+    // -------- PAYLOAD (list2) --------
+    qDebug() << "[VS] PAYLOAD:" << payload.toHex(' ');
+    emit sendRaw(payload);
+
+    QThread::msleep(80);
+
+    // -------- CONTROL (list3) --------
+    QByteArray ctrl;
+    ctrl.append(char(0xFF));
+    ctrl.append(char(0xAA));
+    ctrl.append(char(0x0A));
+    ctrl.append(char(0x1B));
+    ctrl.append(char(0x0D));
+    ctrl.append(char(0x1B));
+    ctrl.append(char(0x76));
+
+    qDebug() << "[VS] CTRL:" << ctrl.toHex(' ');
+    emit sendRaw(ctrl);
+
+    QThread::msleep(80);
+
+    // -------- END (list4) --------
+    QByteArray end;
+    end.append(char(0x96));
+    end.append(char(0xAA));
+    end.append(char(0xFB));
+    end.append(char(0x49));
+
+    qDebug() << "[VS] END:" << end.toHex(' ');
+    emit sendRaw(end);
+
+    qDebug() << "[VS] PRINT COMMAND COMPLETE";
 }

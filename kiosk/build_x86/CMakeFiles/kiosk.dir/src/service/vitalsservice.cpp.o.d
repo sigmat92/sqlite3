@@ -353,6 +353,22 @@ CMakeFiles/kiosk.dir/src/service/vitalsservice.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbasictimer.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QThread \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/stop_token \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/semaphore \
+ /usr/include/c++/11/bits/semaphore_base.h \
+ /usr/include/c++/11/bits/atomic_timed_wait.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QElapsedTimer \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \

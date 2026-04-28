@@ -48,14 +48,23 @@ std::vector<Record> getAllSessions()
 
     sqlite3* db = DatabaseManager::instance().connection();
     sqlite3_stmt* stmt = nullptr;
-
     const char* sql = R"(
-        SELECT 
+            SELECT 
             s.id,
             p.id,
             DATE(s.started_at),
             TIME(s.started_at),
-            p.name
+            p.name,
+            p.age,
+            p.gender,
+            p.mobile,
+            v.temperature,
+            v.spo2, 
+            v.pulse,
+            v.systolic, 
+            v.diastolic, 
+            v.height, 
+            v.weight
         FROM sessions s
         JOIN patients p ON s.patient_id = p.id
         JOIN vitals v ON v.session_id = s.id   
@@ -75,6 +84,16 @@ std::vector<Record> getAllSessions()
         r.date = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2)));
         r.time = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3)));
         r.name = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4)));
+        r.age=sqlite3_column_int(stmt, 5);
+        r.gender = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6)));
+        r.mobile = sqlite3_column_int(stmt, 7);
+        r.temperature = sqlite3_column_double(stmt, 8);
+        r.weight = sqlite3_column_double(stmt, 14);
+        r.spo2 = sqlite3_column_int(stmt, 9);
+        r.pulse = sqlite3_column_int(stmt, 10);
+        r.sys = sqlite3_column_int(stmt, 11);
+        r.dia = sqlite3_column_int(stmt, 12);
+        r.height = sqlite3_column_int(stmt, 13);
 
         records.push_back(r);
     }
@@ -176,6 +195,7 @@ int main(int argc, char *argv[])
     }
 
     // ---------- CONTROLLER ----------
+  HomeController* homecontroller =
   new HomeController(homeView,
                    sessionService,
                    patientRepo,
@@ -212,9 +232,15 @@ int main(int argc, char *argv[])
                      });
 
     // Home → Print
+    // CRITICAL: This flow depends on session being set in vitals service, 
+    // which is done in home controller when any measurement starts. 
+    // So sessionId should be available by the time user tries to print.
     QObject::connect(homeView, &HomeView::startPrintingRequested,
                      [=](int sessionId){
-
+        //qDebug()<< "Received startPrintingRequested from homeview in 
+        //main controller navigating to printview with sessionId:" << sessionId;
+        homecontroller->ensurePatientSaved();
+        sessionId = vitalsService->sessionId();
         qDebug() << "Printing session:" << sessionId;
 
         QVariantMap data = repo->getLatestVitals(sessionId);
@@ -293,8 +319,8 @@ int main(int argc, char *argv[])
     QObject::connect(parser, &ProtocolParser::heightReceived,
                      vitalsService, &VitalsService::onHeight);
 
-    QObject::connect(vitalsService, &VitalsService::sendCommand,
-                     uart, &UartDevice::send);
+    //QObject::connect(vitalsService, &VitalsService::sendCommand,
+    //                 uart, &UartDevice::send);
                     
     //nibp pressure updates for live UI update during measurement
     QObject::connect(parser, &ProtocolParser::nibpPressure,
@@ -317,12 +343,26 @@ int main(int argc, char *argv[])
 
     QObject::connect(vitalsService, &VitalsService::heightReady,
                      vitalsModel, &VitalsModel::setHeight);
-    //PRINT CONTROLLER
-    PrintView* view = new PrintView;
-    PrinterController* controller = new PrinterController;
+    // Sensors → protocol
+    QObject::connect(vitalsService, &VitalsService::sendCommand,
+                    uart, &UartDevice::send);
+    //Thermal print request from print view
 
-    QObject::connect(view, &PrintView::startPrintingRequested,
-                    controller, &PrinterController::onPrintRequested);
+    // Printer → RAW UART
+    QObject::connect(vitalsService, &VitalsService::sendRaw,
+                    uart, &UartDevice::write,
+                    Qt::UniqueConnection);
+    
+
+    //PRINT CONTROLLER
+    //PrintView* printView = new PrintView;
+    PrinterController* printerController =
+    new PrinterController(vitalsService, &app);
+    //PrinterController* printerController = new PrinterController;
+
+    //printViev to printer controller
+    QObject::connect(printView, &PrintView::startPrintingRequested,
+                    printerController, &PrinterController::onThermalPrintRequested);
 
     // ---------- START ----------
 

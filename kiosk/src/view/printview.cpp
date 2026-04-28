@@ -10,8 +10,7 @@
 PrintView::PrintView(QWidget *parent)
     : BaseView("", parent)
 {
-    //setStyleSheet("background:white;");
-
+   
     QVBoxLayout *layout = new QVBoxLayout(m_contentWidget);
     layout->setObjectName("contentLayout");
 
@@ -20,43 +19,16 @@ PrintView::PrintView(QWidget *parent)
     QLabel *header = new QLabel("Patient Report : ");
     header->setObjectName("header");
     header->setAlignment(Qt::AlignCenter);
-    /*
-    header->setStyleSheet(
-        "background:#0d47a1;"
-        "color:white;"
-        "font-size:28px;"
-        "font-weight:bold;"
-        "border-radius:8px;"
-    );
-    */
+
     layout->addWidget(header);
 
     /* ---------------- STATUS ---------------- */
-
-    statusLabel = new QLabel("Patients Details");
-    statusLabel->setObjectName("statusLabel");
-    statusLabel->setAlignment(Qt::AlignCenter);
-    /*
-    statusLabel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-size:22px;"
-        "font-weight:bold;"
-        "border-radius:8px;"
-    );
-    */
-    layout->addWidget(statusLabel);
 
     /* ---------------- PATIENT PANEL ---------------- */
 
     QWidget *patientPanel = new QWidget;
     patientPanel->setObjectName("patientPanel");
-    /*
-    patientPanel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-size:20px;"
-        "border-radius:8px;"
-    );
-    */
+
     QVBoxLayout *pLayout = new QVBoxLayout(patientPanel);
     patientPanel->setObjectName("patientPanel");
 
@@ -68,20 +40,13 @@ PrintView::PrintView(QWidget *parent)
     layout->addWidget(patientPanel);
 
     /* ---------------- VITALS GRID ---------------- */
+
     vitalsLabel = new QLabel("Vitals Details");
     vitalsLabel->setObjectName("vitalsLabel");
     vitalsLabel->setAlignment(Qt::AlignCenter);
 
     QWidget *vitalsPanel = new QWidget;
     vitalsPanel->setObjectName("vitalsPanel");
-    /*
-    vitalsPanel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-size:22px;"
-        "border-radius:8px;"
-    );
-    */
-    //vitalsPanel->addWidget(vitalsLabel);
 
     QGridLayout *grid = new QGridLayout(vitalsPanel);
     grid->setObjectName("vitalsGrid");
@@ -128,29 +93,7 @@ PrintView::PrintView(QWidget *parent)
     printBtn->setObjectName("printBtn");
     QPushButton *exitBtn  = new QPushButton("Exit");
     exitBtn->setObjectName("exitBtn");
-    /*
-    printBtn->setStyleSheet(
-        "font-size:24px;"
-        "background:#0d47a1;"
-        "color:white;"
-        "border-radius:5px;"
-    );
 
-    exitBtn->setStyleSheet(
-        "font-size:24px;"
-        "background:#455a64;"
-        "color:white;"
-        //"background:#b71c1c;"   // red for exit
-        "border-radius:5px;"
-    );
-
-    allRecordsBtn->setStyleSheet(
-        "font-size:24px;"
-        "background:#1976d2;"
-        "color:white;"
-        "border-radius:5px;"
-    );
-    */
     footer->addWidget(allRecordsBtn);
 
     footer->addWidget(printBtn);
@@ -165,8 +108,10 @@ PrintView::PrintView(QWidget *parent)
         this, &PrintView::exitRequested);
 
     connect(printBtn,&QPushButton::clicked,this,[this](){
-        qDebug() << "Print button clicked from print view, emitting startPrintingRequested";
+        qDebug() << "Print button clicked from print view, emitting startPrintRequested";
+        //qDebug() << "Emitting startPrintingRequested with sessionId:" << sessionId;
         emit startPrintingRequested();
+        //emit startPrintingRequested(currentSessionId);
     });
 
 }
@@ -197,11 +142,13 @@ void PrintView::setData(const QVariantMap& d)
 
     /* -------- Patient Info -------- */
 
+    
+    int sessionId = getInt("sessionId");
     QString name   = getStr("name");
     QString mobile = getStr("mobile");
     QString gender = getStr("gender");
     int age        = getInt("age");
-
+    qDebug() << "printing in print view, sessionId:" << sessionId;
     patientInfoLabel->setText(
         QString("Name: %1\tAge: %2\tMobile: %3\tGender: %4")
             .arg(name)
@@ -210,6 +157,7 @@ void PrintView::setData(const QVariantMap& d)
             .arg(gender)
     );
     patientInfoLabel->setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
+    
     /* -------- Vitals -------- */
 
     double temp = getDouble("temperature");
@@ -218,10 +166,11 @@ void PrintView::setData(const QVariantMap& d)
     int sys     = getInt("sys");
     int dia     = getInt("dia");
     double weight = getDouble("weight");
-    double height = getDouble("height");
-
-    tempLabel->setText(temp > 0 ? QString::number(temp) + " F" : "--");
-
+    //double height = getDouble("height");
+    int height = getInt("height");
+    
+    tempLabel->setText(temp > 0 ? QString::number(temp) + " F" : "-- F");
+    //tempLabel->setText(QString::number(temp) + " F" );
     spo2Label->setText(
         (spo2 > 0 && pulse > 0)
         ? QString("%1 / %2").arg(spo2).arg(pulse)
@@ -234,8 +183,8 @@ void PrintView::setData(const QVariantMap& d)
         : "--"
     );
 
-    weightLabel->setText(weight > 0 ? QString::number(weight) + " kg" : "--");
-    heightLabel->setText(height > 0 ? QString::number(height) + " cm" : "--");
+    weightLabel->setText(weight > 0 ? QString::number(weight) + " kg" : "-- kg");
+    heightLabel->setText(height > 0 ? QString::number(height) + " cm" : "-- cm");
 
     /* -------- BMI -------- */
 

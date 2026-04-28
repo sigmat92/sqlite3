@@ -54,7 +54,7 @@ RecordsView::RecordsView(QWidget *parent)
     );
     */
     btnLayout->addWidget(selectBtn);
-    btnLayout->addWidget(exitBtn);
+    //btnLayout->addWidget(exitBtn);
 
     layout->addLayout(btnLayout);
 
@@ -82,18 +82,34 @@ void RecordsView::setData(const std::vector<Record>& records)
     model->clear();
 
     model->setHorizontalHeaderLabels(
-        {"Session ID", "Patient ID", "Date", "Time", "Name"}
+        //{"Session ID", "Patient ID", "Date", "Time", "Name"}
+        {"Patient ID", "Name","age","gender","mobile","temp","spo2",
+          "pulse","sys/dia","weight","height", "Date","Time", }
     );
 
     for(const auto& r : records)
     {
         QList<QStandardItem*> row;
 
-        row << new QStandardItem(QString::number(r.sessionId));
+        //row << new QStandardItem(QString::number(r.sessionId));
         row << new QStandardItem(QString::number(r.patientId));
+        row << new QStandardItem(r.name);
+        row << new QStandardItem(QString::number(r.age));
+        row << new QStandardItem(r.gender);
+        row << new QStandardItem(QString::number(r.mobile));
+
+        
+        // -------- VITALS --------
+
+        row << new QStandardItem(QString::number(r.temperature, 'f', 1)); // 1 decimal place
+        row << new QStandardItem(QString::number(r.spo2));
+        row << new QStandardItem(QString::number(r.pulse));
+        row << new QStandardItem(QString::number(r.sys) + "/" + QString::number(r.dia)); // BP format
+        row << new QStandardItem(QString::number(r.weight, 'f', 2)); // 2 decimal places
+        row << new QStandardItem(QString::number(r.height));
+
         row << new QStandardItem(r.date);
         row << new QStandardItem(r.time);
-        row << new QStandardItem(r.name);
 
         model->appendRow(row);
     }

@@ -15,6 +15,7 @@ public:
 
     bool open(const QString& dev, int baud);
     void send(const QByteArray& data);
+    void write(const QByteArray& data);
     void flush();
 
 signals:

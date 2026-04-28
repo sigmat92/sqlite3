@@ -26,6 +26,8 @@ public:
                SettingsService* settings,
                QObject* parent);
 
+        bool ensurePatientSaved();
+
 
 public slots:
     void onTemperatureChanged(double value, char unit);
@@ -46,7 +48,7 @@ private slots:
 private:
     VisionTestView* m_visionView = nullptr;
     bool validatePatient();
-    bool ensurePatientSaved();
+    
     void resetSession();
 
     HomeView* m_view;
