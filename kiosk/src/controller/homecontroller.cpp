@@ -7,14 +7,6 @@
 #include "service/settingsservice.h"
 
 #include <QDebug>
-//global vitals
-    double temperature=0.0;
-    int spo2=0;
-    int pulse=0;
-    double weight=0.0;
-    int height=0;
-    int systolic=0;
-    int diastolic=0;
 
 HomeController::HomeController(HomeView* view,
                SessionService* sessionService,
@@ -37,7 +29,37 @@ HomeController::HomeController(HomeView* view,
     m_vitalsRepo = vitalsRepo;
 
     // ================= FINAL SIGNALS (SAVE TO DB) =================
+    // CONNECT TO SERVICE (NOT MODEL)
+    connect(m_vitalsService, &VitalsService::spo2Ready,
+        this, &HomeController::onSpO2Final, Qt::UniqueConnection);
 
+    connect(m_vitalsService, &VitalsService::temperatureReady,
+            this, &HomeController::onTemperatureFinal, Qt::UniqueConnection);
+
+    connect(m_vitalsService, &VitalsService::weightReady,
+            this, &HomeController::onWeightFinal, Qt::UniqueConnection);
+
+    connect(m_vitalsService, &VitalsService::heightReady,
+            this, &HomeController::onHeightFinal, Qt::UniqueConnection);
+
+    connect(m_vitalsService, &VitalsService::nibpReady,
+            this, &HomeController::onNIBPFinal, Qt::UniqueConnection);
+    /*
+    connect(m_vitalsService, &VitalsService::spo2Ready,
+            this, &HomeController::onSpO2Final);
+
+    connect(m_vitalsService, &VitalsService::temperatureReady,
+            this, &HomeController::onTemperatureFinal);
+
+    connect(m_vitalsService, &VitalsService::weightReady,
+            this, &HomeController::onWeightFinal);
+
+    connect(m_vitalsService, &VitalsService::heightReady,
+            this, &HomeController::onHeightFinal);
+
+    connect(m_vitalsService, &VitalsService::nibpReady,
+            this, &HomeController::onNIBPFinal);
+    
     connect(m_vitalsModel, &VitalsModel::spo2Final,
             this, &HomeController::onSpO2Final);
 
@@ -58,7 +80,7 @@ HomeController::HomeController(HomeView* view,
 
     connect(m_view, &HomeView::resetSessionRequested,
         this, &HomeController::resetSession);
-        
+    */    
     // ================= START REQUESTS =================
 
     //1.vision test
@@ -67,9 +89,9 @@ HomeController::HomeController(HomeView* view,
         this, [this]() {
             qDebug() << "homecontroller: \"Vision Test\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
-            //m_view->setCurrentSessionId(m_currentSessionId);
+            if (!ensurePatientSaved())
+                return;
+            m_view->setCurrentSessionId(m_currentSessionId);
             emit visionTestRequested();
             //emit visionTestRequested(sessionId);
             
@@ -82,8 +104,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"Temperature\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
+            if (!ensurePatientSaved())
+                return;
 
             m_view->setTemperatureBusy(true);
 
@@ -97,8 +119,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startSpo2Requested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
+            if (!ensurePatientSaved())
+                return;
 
             m_view->setSpO2Busy(true);
 
@@ -111,8 +133,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startNIBPRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
+            if (!ensurePatientSaved())
+                return;
 
             m_view->setNIBPBusy(true);
 
@@ -125,8 +147,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startHeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
+            if (!ensurePatientSaved())
+                return;
 
             m_view->setHeightBusy(true);
 
@@ -139,8 +161,8 @@ HomeController::HomeController(HomeView* view,
 
     qDebug() << "homecontroller: \"startWeightRequested\" requested "<< "with sessionId:" << m_vitalsService->sessionId();
 
-            //if (!ensurePatientSaved())
-            //    return;
+            if (!ensurePatientSaved())
+                return;
 
             m_view->setWeightBusy(true);
 
@@ -196,45 +218,58 @@ void HomeController::onTemperatureFinal(double temp)
     }
 
     //m_vitalsRepo->saveTemperature(sessionId, temp);
-    //temperature=temp;
-    qDebug() << "temperature not saved in controller with sessionId:" << m_vitalsService->sessionId();
+    
+    //qDebug() << "temperature:" << temp << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 
 void HomeController::onSpO2Final(int spo2, int pulse)
 {
     int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0) return;
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session. Skipping SpO2/pulse save.";
+        return;
+    }
 
     //m_vitalsRepo->saveSpO2(sessionId, spo2, pulse);
-    //spo2=spo2;
-    //pulse=pulse;
+    //qDebug() << "spo2:" << spo2 << "pulse:" << pulse << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onWeightFinal(double weight)
 {
     int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0) return;
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session. Skipping weight save.";
+        return;
+    }
 
     //m_vitalsRepo->saveWeight(sessionId, weight);
-    //weight=weight;
-
+    //qDebug() << "weight:" << weight << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onHeightFinal(int height)
 {
     int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0) return;
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session. Skipping height save.";
+        return;
+    }
 
     //m_vitalsRepo->saveHeight(sessionId, height);
-    //height=height;
-
+    //qDebug() << "height:" << height << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onNIBPFinal(int sys, int dia)
 {
     int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0) return;
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session. Skipping NIBP save.";
+        return;
+    }
 
     //m_vitalsRepo->saveNIBP(sessionId, sys, dia);
-    //sys=sys;
-    //dia=dia;
+
+    //qDebug() << "nibp:" << sys << "/" << dia << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 
 }
 
@@ -243,22 +278,21 @@ void HomeController::onWeightChanged(double weight)
     QString text = QString::number(weight, 'f', 1) + " kg";
     m_view->setWeightText(text);
     m_view->setWeightBusy(false);
-    weight=weight;
+    
 }
 void HomeController::onHeightChanged(int height)
 {
     QString text = QString::number(height) + " cm";
     m_view->setHeightText(text);
     m_view->setHeightBusy(false);
-    height=height;
+    
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
     QString text = QString("%1 / %2").arg(sys).arg(dia);
     m_view->setNIBPText(text);
     m_view->setNIBPBusy(false);
-    systolic=sys;
-    diastolic=dia;
+
 }
 
 void HomeController::onTemperatureChanged(double value, char unit)
@@ -269,7 +303,6 @@ void HomeController::onTemperatureChanged(double value, char unit)
 
     m_view->setTemperatureText(text);
     m_view->setTemperatureBusy(false);
-    temperature=value;
 }
 
 void HomeController::onSpO2Changed(int spo2, int pulse)
@@ -277,9 +310,9 @@ void HomeController::onSpO2Changed(int spo2, int pulse)
     QString text = QString("%1 / %2").arg(spo2).arg(pulse);
     m_view->setSpo2Text(text);
     m_view->setSpO2Busy(false);
-    spo2=spo2;
-    pulse=pulse;
+
 }
+
 void HomeController::onStartSpo2Requested()
 {
     qDebug() << "SpO2 start requested";
@@ -338,23 +371,6 @@ bool HomeController::ensurePatientSaved()
     m_vitalsService->setSessionId(m_currentSessionId);
 
     qDebug() << "Session setting in vitals service from home controller:" << m_currentSessionId;
-
-    //save vitals 0 for now
-    int sessionId=m_currentSessionId;
-    qDebug() << "in home controller sessionId:" << sessionId;
-    //m_vitalsRepo->saveSession(sessionId);
-    //qDebug() << "Saving initial vitals with sessionId:" << sessionId;
-    m_vitalsRepo->saveTemperature(sessionId, temperature);
-    qDebug() << "temperature : " << temperature << " saved in DB from controller with sessionId:" << sessionId;
-    m_vitalsRepo->saveSpO2(sessionId, spo2, pulse);
-    qDebug() << "spo2 : " << spo2 << " saved in DB from controller with sessionId:" << sessionId;
-    m_vitalsRepo->saveWeight(sessionId, weight);
-    qDebug() << "weight : " << weight << " saved in DB from controller with sessionId:" << sessionId;
-    m_vitalsRepo->saveHeight(sessionId, height);
-    qDebug() << "height : " << height << " saved in DB from controller with sessionId:" << sessionId;
-    m_vitalsRepo->saveNIBP(sessionId, systolic, diastolic);
-    qDebug() << "NIBP : " << systolic << "/" << diastolic << " saved in DB from controller with sessionId:" << sessionId;
-
 
     m_view->setCurrentSessionId(m_currentSessionId);
     m_view->lockPatientFields();

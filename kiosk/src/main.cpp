@@ -78,7 +78,7 @@ std::vector<Record> getAllSessions()
     while (sqlite3_step(stmt) == SQLITE_ROW)
     {
         Record r;
-
+        
         r.sessionId = sqlite3_column_int(stmt, 0);
         r.patientId = sqlite3_column_int(stmt, 1);
         r.date = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2)));
@@ -231,7 +231,7 @@ int main(int argc, char *argv[])
                          nav->goBack();
                      });
 
-    // Home → Print
+    // Home -->Print
     // CRITICAL: This flow depends on session being set in vitals service, 
     // which is done in home controller when any measurement starts. 
     // So sessionId should be available by the time user tries to print.
@@ -356,13 +356,20 @@ int main(int argc, char *argv[])
 
     //PRINT CONTROLLER
     //PrintView* printView = new PrintView;
-    PrinterController* printerController =
-    new PrinterController(vitalsService, &app);
+    //PrinterController* printerController =
+    //new PrinterController(vitalsService, &app);
+    //PrinterController* printerController =
+    //new PrinterController(vitalsService, repo, &app);
     //PrinterController* printerController = new PrinterController;
-
+    PrinterController* printerController = new PrinterController(
+    vitalsService,
+    repo,
+    &app
+    );
     //printViev to printer controller
     QObject::connect(printView, &PrintView::startPrintingRequested,
                     printerController, &PrinterController::onThermalPrintRequested);
+
 
     // ---------- START ----------
 

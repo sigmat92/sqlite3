@@ -24,7 +24,9 @@ public:
     void requestNibp();
     void requestWeight();
     void requestHeight();
-    void printResults(int sessionId);
+    QString buildPrintText(int sessionId, const QVariantMap& d);
+
+    void printResults(int sessionId, const QVariantMap& data);
 
 signals:
 
@@ -46,7 +48,7 @@ public slots:
     void onSpo2(int, int);
     void onNibp(int, int, int);
     void onWeight(double);
-    void onHeight(double);
+    void onHeight(int);
     void onNibpPressure(int);
 
 private:

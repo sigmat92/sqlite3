@@ -3,17 +3,19 @@
 #include "view/printview.h"
 #include <QDebug>
 #include "service/vitalsservice.h"
+#include "storage/vitalsrepository.h"
 #include <QPdfWriter>
 #include <QPainter>
 #include <QPageSize>
 #include <QMap>
 #include <QVariant>
 
-//PrinterController::PrinterController(QObject* parent)
-//    : QObject(parent) {
-  PrinterController::PrinterController(VitalsService* vs, QObject* parent)
+PrinterController::PrinterController(VitalsService* vs, 
+    VitalsRepository* 
+    vitalRepo,QObject* parent)
     : QObject(parent),
-      m_vitalsService(vs)   // CRITICAL
+      m_vitalsService(vs),   // CRITICAL
+      m_repo(vitalRepo)
 {
     qDebug() << "[PC] VitalsService ptr:" << m_vitalsService;
       
@@ -35,8 +37,58 @@ void PrinterController::handlePrintRequest(const QString& filePath) {
     job.filePath = filePath;
     job.printerIp = "192.168.1.100"; // configurable
 
-    m_repo.saveJob(job);
-    m_service.print(job);
+    //m_repo.saveJob(job);
+    //m_service.print(job);
+}
+
+void PrinterController::onThermalPrintRequested()
+{
+    int sessionId = m_vitalsService->sessionId();
+
+    qDebug() << "Printing session:" << sessionId;
+
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session!";
+        return;
+    }
+
+    QVariantMap data = m_repo->getLatestVitals(sessionId);
+
+    qDebug() << "PRINT DATA MAP:" << data;
+
+    if (data.isEmpty())
+    {
+        qDebug() << "No data found for session!";
+        return;
+    }
+
+    m_vitalsService->printResults(sessionId, data);
+}
+/*
+void PrinterController::onThermalPrintRequested()
+{
+    int sessionId = m_vitalsService->sessionId();
+    qDebug() << "Printing session:" << sessionId;
+
+    if (sessionId <= 0)
+    {
+        qDebug() << "Invalid session";
+        return;
+    }
+
+    //QVariantMap data = m_repo->getVitalsForSession(sessionId);
+    QVariantMap data = m_repo->getLatestVitals(sessionId);
+
+    if (data.isEmpty())
+    {
+        qDebug() << "No data found in DB";
+        return;
+    }
+
+    qDebug() << "PRINT DATA MAP:" << data;
+
+    m_vitalsService->printResults(sessionId, data);
 }
 
 void PrinterController::onThermalPrintRequested()
@@ -61,6 +113,7 @@ void PrinterController::onThermalPrintRequested()
 
     m_vitalsService->printResults(sessionId);
 }
+*/
 /*
 void PrinterController::onThermalPrintRequested() {
     qDebug() << "Printer Controller received thermal print request from print view";

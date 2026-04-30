@@ -1,7 +1,8 @@
 #include "vitalsservice.h"
 #include <QThread>
 #include <QElapsedTimer>
-#include "storage/vitalsrepository.h"   
+#include "storage/vitalsrepository.h" 
+#include <QDateTime>  
 #include <QDebug>
 
 VitalsService::VitalsService(QObject* parent)
@@ -107,22 +108,20 @@ void VitalsService::onTemperature(double v, char unit)
     if (state != State::Temp) return;
     if (v <= 1.0) return;
 
-    if (m_repo && m_sessionId > 0)
-        m_repo->saveTemperature(m_sessionId, v);
-
     emit temperatureReady(v, unit);
     setIdle();
+        if (m_repo && m_sessionId > 0)
+            m_repo->saveTemperature(m_sessionId, v);
 }
 
 void VitalsService::onSpo2(int s, int p)
 {
     if (state != State::Spo2) return;
 
-    if (m_repo && m_sessionId > 0)
-        m_repo->saveSpO2(m_sessionId, s, p);
-
     emit spo2Ready(s, p);
     setIdle();
+        if (m_repo && m_sessionId > 0)
+            m_repo->saveSpO2(m_sessionId, s, p);
 }
 
 void VitalsService::onNibpPressure(int pressure)
@@ -140,11 +139,11 @@ void VitalsService::onNibp(int sys,int dia,int map)
 {
     if(state!=State::Nibp) return;
 
-    //if(m_repo && m_sessionId > 0)
-    //    m_repo->saveNIBP(m_sessionId,sys,dia);
-
     emit nibpReady(sys,dia,0);
     setIdle();
+
+    if(m_repo && m_sessionId > 0)
+        m_repo->saveNIBP(m_sessionId,sys,dia);
 }
 /*
 void VitalsService::onNibp(int sys, int dia, int status)
@@ -180,23 +179,21 @@ void VitalsService::onNibp(int sys, int dia, int status)
 void VitalsService::onWeight(double w)
 {
     if (state != State::Weight) return;
+    emit weightReady(w);
+    setIdle();
 
     if (m_repo && m_sessionId > 0)
         m_repo->saveWeight(m_sessionId, w);
-
-    emit weightReady(w);
-    setIdle();
 }
 
-void VitalsService::onHeight(double h)
+void VitalsService::onHeight(int h)
 {
     if (state != State::Height) return;
 
-    if (m_repo && m_sessionId > 0)
-        m_repo->saveHeight(m_sessionId, int(h));
-
-    emit heightReady(int(h));
+    emit heightReady(h);
     setIdle();
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveHeight(m_sessionId, h);
 }
 
 /* ---------------- INTERNAL ---------------- */
@@ -213,87 +210,153 @@ void VitalsService::startTimeout()
 {
     timeout.start(50000);   // 50 sec (safe for NIBP)
 }
+QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
+{
+    auto getD = [&](const QString& k){ return d.value(k, 0).toDouble(); };
+    auto getI = [&](const QString& k){ return d.value(k, 0).toInt(); };
+    auto getS = [&](const QString& k){ return d.value(k, "").toString(); };
 
-void VitalsService::printResults(int sessionId)
+    QString name   = getS("name");
+    QString mobile = getS("mobile");
+    QString gender = getS("gender");
+    int age        = getI("age");
+
+    double temp   = getD("temperature");
+    double weight = getD("weight");
+    int height    = getI("height");
+    int spo2      = getI("spo2");
+    int pulse     = getI("pulse");
+
+    int sys = getI("systolic");
+    int dia = getI("diastolic");
+
+    QString farVision  = getS("farVision");
+    QString nearVision = getS("nearVision");
+
+    // ---------- DERIVED ----------
+    double bmi = 0, bmr = 0, bsa = 0;
+
+    if (height > 0 && weight > 0)
+    {
+        //double h = height / 100.0;
+        int h=height;
+        bmi = weight / (h * h);
+
+        if (gender == "Male")
+            bmr = 10*weight + 6.25*height - 5*age + 5;
+        else
+            bmr = 10*weight + 6.25*height - 5*age - 161;
+
+        bsa = sqrt((height * weight) / 3600.0);
+    }
+
+    QString bmiAnalysis = "--";
+    if (bmi > 0)
+    {
+        if (bmi < 18.5) bmiAnalysis = "Underweight";
+        else if (bmi < 25) bmiAnalysis = "Normal";
+        else if (bmi < 30) bmiAnalysis = "Overweight";
+        else bmiAnalysis = "Obese";
+    }
+
+    QString text;
+
+    text += "      CareNest Health Kiosk\n";
+    text += "--------------------------------\n";
+
+    text += QString("Session    : %1\n").arg(sessionId);
+    text += QString("Date       : %1\n")
+            .arg(QDateTime::currentDateTime().toString("dd-MM-yyyy hh:mm"));
+
+    text += "--------------------------------\n";
+
+    text += QString("Name       : %1\n").arg(name.isEmpty() ? "--" : name);
+    text += QString("Mobile     : %1\n").arg(mobile.isEmpty() ? "--" : mobile);
+    text += QString("Age        : %1 yrs\n").arg(age > 0 ? QString::number(age) : "--");
+    text += QString("Gender     : %1\n").arg(gender.isEmpty() ? "--" : gender);
+
+    text += "--------------------------------\n";
+
+    text += QString("Temperature: %1 F\n")
+            .arg(temp > 0 ? QString::number(temp,'f',1) : "--");
+
+    text += QString("Height     : %1 cm\n")
+            .arg(height > 0 ? QString::number(height) : "--");
+
+    text += QString("Weight     : %1 Kg\n")
+            .arg(weight > 0 ? QString::number(weight,'f',1) : "--");
+
+    text += QString("BP         : %1/%2 mmHg\n")
+            .arg(sys > 0 ? QString::number(sys) : "--")
+            .arg(dia > 0 ? QString::number(dia) : "--");
+
+    text += QString("SPO2       : %1 %%\n")
+            .arg(spo2 > 0 ? QString::number(spo2) : "--");
+
+    text += QString("PulseRate  : %1\n")
+            .arg(pulse > 0 ? QString::number(pulse) : "--");
+
+    text += "--------------------------------\n";
+
+    text += QString("BMI        : %1 Kg/m2\n")
+            .arg(bmi > 0 ? QString::number(bmi,'f',1) : "--");
+
+    text += QString("BMI Status : %1\n").arg(bmiAnalysis);
+
+    text += QString("BMR        : %1 Kcal\n")
+            .arg(bmr > 0 ? QString::number(bmr,'f',1) : "--");
+
+    text += QString("BSA        : %1 m2\n")
+            .arg(bsa > 0 ? QString::number(bsa,'f',2) : "--");
+
+    text += "--------------------------------\n";
+
+    text += QString("Far Vision : %1\n").arg(farVision.isEmpty() ? "--" : farVision);
+    text += QString("Near Vision: %1\n").arg(nearVision.isEmpty() ? "--" : nearVision);
+
+    text += "--------------------------------\n\n\n";
+
+    qDebug() << "[VS] Built print text:\n" << text;
+
+    return text;
+}
+
+void VitalsService::printResults(int sessionId, const QVariantMap& data)
 {
     qDebug() << "[VS] Preparing to print...";
 
-    // ---------------- SAFETY: STOP DEVICE ----------------
-    qDebug() << "[VS] Sending setIdle() command before printing";
-    setIdle();
-    QThread::msleep(300);
-
-    // ---------------- TEXT ----------------
-    QString text;
-    text += "CareNest Health Kiosk\n";
-    text += "----------------------\n";
-    text += QString("Session: %1\n").arg(sessionId);
-    text += "Temp: 98.6 F\n";
-    text += "SpO2: 98%\n";
-    text += "BP: 120/80\n";
-    text += "----------------------\n\n\n";
+    QString text = buildPrintText(sessionId, data);
 
     QByteArray payload = text.toUtf8();
 
-    // ---------------- LENGTH ----------------
-    int print_len = payload.size() + 7;   // protocol requirement
+    int print_len = payload.size() + 7;
 
     quint8 lsb = print_len & 0xFF;
     quint8 msb = (print_len >> 8) & 0xFF;
 
-    qDebug() << "[VS] Payload size:" << payload.size();
-    qDebug() << "[VS] Print length:" << print_len;
+    QByteArray cmd;
 
-    // ---------------- WAKE PRINTER ----------------
-    qDebug() << "[VS] Sending ESC @ (wake)";
-    emit sendRaw(QByteArray::fromHex("1B40"));
-    QThread::msleep(100);
+    cmd.append(char(0x96));
+    cmd.append(char(0xAA));
+    cmd.append(char(0xF6));
+    cmd.append(char(lsb));
+    cmd.append(char(msb));
 
-    // ================= CHUNKED SEND =================
+    cmd.append(payload);
 
-    // -------- HEADER (list1) --------
-    QByteArray header;
-    header.append(char(0x96));
-    header.append(char(0xAA));
-    header.append(char(0xF6));
-    header.append(char(lsb));
-    header.append(char(msb));
+    cmd.append(char(0xFF));
+    cmd.append(char(0xAA));
+    cmd.append(char(0x0A));
+    cmd.append(char(0x1B));
+    cmd.append(char(0x0D));
+    cmd.append(char(0x1B));
+    cmd.append(char(0x76));
 
-    qDebug() << "[VS] HEADER:" << header.toHex(' ');
-    emit sendRaw(header);
+    cmd.append(char(0x96));
+    cmd.append(char(0xAA));
+    cmd.append(char(0xFB));
+    cmd.append(char(0x49));
 
-    QThread::msleep(50);
-
-    // -------- PAYLOAD (list2) --------
-    qDebug() << "[VS] PAYLOAD:" << payload.toHex(' ');
-    emit sendRaw(payload);
-
-    QThread::msleep(80);
-
-    // -------- CONTROL (list3) --------
-    QByteArray ctrl;
-    ctrl.append(char(0xFF));
-    ctrl.append(char(0xAA));
-    ctrl.append(char(0x0A));
-    ctrl.append(char(0x1B));
-    ctrl.append(char(0x0D));
-    ctrl.append(char(0x1B));
-    ctrl.append(char(0x76));
-
-    qDebug() << "[VS] CTRL:" << ctrl.toHex(' ');
-    emit sendRaw(ctrl);
-
-    QThread::msleep(80);
-
-    // -------- END (list4) --------
-    QByteArray end;
-    end.append(char(0x96));
-    end.append(char(0xAA));
-    end.append(char(0xFB));
-    end.append(char(0x49));
-
-    qDebug() << "[VS] END:" << end.toHex(' ');
-    emit sendRaw(end);
-
-    qDebug() << "[VS] PRINT COMMAND COMPLETE";
+    emit sendRaw(cmd);
+    setIdle();
 }

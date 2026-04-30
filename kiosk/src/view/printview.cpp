@@ -108,10 +108,13 @@ PrintView::PrintView(QWidget *parent)
         this, &PrintView::exitRequested);
 
     connect(printBtn,&QPushButton::clicked,this,[this](){
-        qDebug() << "Print button clicked from print view, emitting startPrintRequested";
+        //qDebug() << "Print button clicked from print view, emitting startPrintRequested";
+
+        //int sessionId = m_vitalsService->sessionId();
+        //qDebug() << "Printing session in print view:" << sessionId;
         //qDebug() << "Emitting startPrintingRequested with sessionId:" << sessionId;
         emit startPrintingRequested();
-        //emit startPrintingRequested(currentSessionId);
+        //emit startPrintingRequested(sessionId);
     });
 
 }

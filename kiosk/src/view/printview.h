@@ -20,6 +20,7 @@ signals:
     void exitRequested();   
 
 private:
+
     QLabel* statusLabel;
 
     QLabel* patientInfoLabel;

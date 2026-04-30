@@ -145,7 +145,52 @@ bool VitalsRepository::saveNIBP(int sessionId, int systolic, int diastolic)
     sqlite3_finalize(stmt);
     return ok;
 }
-//
+
+QVariantMap VitalsRepository::getLatestVitals(int sessionId)
+{
+    QVariantMap data;
+
+    sqlite3* db = DatabaseManager::instance().connection();
+    sqlite3_stmt* stmt = nullptr;
+
+    const char* sql =
+        "SELECT "
+        "v.temperature, v.spo2, v.pulse, "
+        "v.systolic, v.diastolic, v.height, v.weight, "
+        "p.name, p.age, p.mobile, p.gender "
+        "FROM sessions s "
+        "JOIN patients p ON s.patient_id = p.id "
+        "LEFT JOIN vitals v ON v.session_id = s.id "
+        "WHERE s.id=? "
+        "ORDER BY v.id DESC LIMIT 1;";   // latest row
+
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
+        return data;
+
+    sqlite3_bind_int(stmt, 1, sessionId);
+
+    if (sqlite3_step(stmt) == SQLITE_ROW)
+    {
+        // -------- VITALS --------
+        data["temperature"] = sqlite3_column_type(stmt,0) != SQLITE_NULL ? sqlite3_column_double(stmt,0) : 0;
+        data["spo2"]        = sqlite3_column_type(stmt,1) != SQLITE_NULL ? sqlite3_column_int(stmt,1) : 0;
+        data["pulse"]       = sqlite3_column_type(stmt,2) != SQLITE_NULL ? sqlite3_column_int(stmt,2) : 0;
+        data["systolic"]    = sqlite3_column_type(stmt,3) != SQLITE_NULL ? sqlite3_column_int(stmt,3) : 0;
+        data["diastolic"]   = sqlite3_column_type(stmt,4) != SQLITE_NULL ? sqlite3_column_int(stmt,4) : 0;
+        data["height"]      = sqlite3_column_type(stmt,5) != SQLITE_NULL ? sqlite3_column_int(stmt,5) : 0;
+        data["weight"]      = sqlite3_column_type(stmt,6) != SQLITE_NULL ? sqlite3_column_double(stmt,6) : 0;
+
+        // -------- PATIENT --------
+        data["name"]   = sqlite3_column_text(stmt,7) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,7))) : "";
+        data["age"]    = sqlite3_column_type(stmt,8) != SQLITE_NULL ? sqlite3_column_int(stmt,8) : 0;
+        data["mobile"] = sqlite3_column_text(stmt,9) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,9))) : "";
+        data["gender"] = sqlite3_column_text(stmt,10)? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,10))) : "";
+    }
+
+    sqlite3_finalize(stmt);
+    return data;
+}
+/*
 QVariantMap VitalsRepository::getLatestVitals(int sessionId)
 {
     QVariantMap data;
@@ -188,7 +233,7 @@ QVariantMap VitalsRepository::getLatestVitals(int sessionId)
     sqlite3_finalize(stmt);
     return data;
 }
-//
+*/
 /*
 QVariantMap VitalsRepository::getLatestVitals(int sessionId)
 {

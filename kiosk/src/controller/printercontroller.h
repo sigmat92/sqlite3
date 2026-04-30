@@ -11,8 +11,10 @@ class PrinterController : public QObject {
     Q_OBJECT
 
 public:
-    explicit PrinterController(VitalsService* vs, QObject* parent = nullptr);
-    //explicit PrinterController(QObject* parent = nullptr);
+        explicit PrinterController(VitalsService* vs,
+                               VitalsRepository* repo,
+                               QObject* parent = nullptr);
+   
     void handlePrintRequest(const QString& filePath);
     QString generatePdfFromMap(const QMap<QString, QVariant>& data);
 
@@ -25,7 +27,8 @@ public slots:
     void onThermalPrintRequested();
 
 private:
+    VitalsRepository* m_repo;
     PrinterService m_service;
-    PrinterRepository m_repo;
+    PrinterRepository printerRepo;
     VitalsService* m_vitalsService; // Add this to access vitals data for printing
 };
