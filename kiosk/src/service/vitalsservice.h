@@ -27,6 +27,17 @@ public:
     QString buildPrintText(int sessionId, const QVariantMap& d);
 
     void printResults(int sessionId, const QVariantMap& data);
+    QByteArray idleCommand() const;
+
+        enum class State {
+        Idle,
+        Temp,
+        Spo2,
+        Nibp,
+        Weight,
+        Height
+    };
+
 
 signals:
 
@@ -42,16 +53,19 @@ signals:
 
     // (optional but useful)
     void nibpPressure(int);
+    
+    void measurementFinished(State s);
 
 public slots:
     void onTemperature(double, char);
     void onSpo2(int, int);
     void onNibp(int, int, int);
     void onWeight(double);
-    void onHeight(int);
+    void onHeight(double);
     void onNibpPressure(int);
 
 private:
+/*
     enum class State {
         Idle,
         Temp,
@@ -60,14 +74,16 @@ private:
         Weight,
         Height
     };
-
+*/
     void setIdle();
     void startTimeout();
 
-private:
+
     State state = State::Idle;
     QTimer timeout;
 
     int m_sessionId = -1;   // private (correct)
     VitalsRepository* m_repo = nullptr;
+    QTimer liveMeasureTimer;
+    bool liveUpdateEnabled = false;
 };

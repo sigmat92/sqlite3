@@ -29,37 +29,7 @@ HomeController::HomeController(HomeView* view,
     m_vitalsRepo = vitalsRepo;
 
     // ================= FINAL SIGNALS (SAVE TO DB) =================
-    // CONNECT TO SERVICE (NOT MODEL)
-    connect(m_vitalsService, &VitalsService::spo2Ready,
-        this, &HomeController::onSpO2Final, Qt::UniqueConnection);
 
-    connect(m_vitalsService, &VitalsService::temperatureReady,
-            this, &HomeController::onTemperatureFinal, Qt::UniqueConnection);
-
-    connect(m_vitalsService, &VitalsService::weightReady,
-            this, &HomeController::onWeightFinal, Qt::UniqueConnection);
-
-    connect(m_vitalsService, &VitalsService::heightReady,
-            this, &HomeController::onHeightFinal, Qt::UniqueConnection);
-
-    connect(m_vitalsService, &VitalsService::nibpReady,
-            this, &HomeController::onNIBPFinal, Qt::UniqueConnection);
-    /*
-    connect(m_vitalsService, &VitalsService::spo2Ready,
-            this, &HomeController::onSpO2Final);
-
-    connect(m_vitalsService, &VitalsService::temperatureReady,
-            this, &HomeController::onTemperatureFinal);
-
-    connect(m_vitalsService, &VitalsService::weightReady,
-            this, &HomeController::onWeightFinal);
-
-    connect(m_vitalsService, &VitalsService::heightReady,
-            this, &HomeController::onHeightFinal);
-
-    connect(m_vitalsService, &VitalsService::nibpReady,
-            this, &HomeController::onNIBPFinal);
-    
     connect(m_vitalsModel, &VitalsModel::spo2Final,
             this, &HomeController::onSpO2Final);
 
@@ -80,7 +50,7 @@ HomeController::HomeController(HomeView* view,
 
     connect(m_view, &HomeView::resetSessionRequested,
         this, &HomeController::resetSession);
-    */    
+        
     // ================= START REQUESTS =================
 
     //1.vision test
@@ -186,6 +156,41 @@ HomeController::HomeController(HomeView* view,
     connect(m_vitalsModel, &VitalsModel::weightChanged,
             this, &HomeController::onWeightChanged,Qt::UniqueConnection);
 
+//
+    // ================= OTHER UI ACTIONS =================
+    connect(m_vitalsService,
+        &VitalsService::measurementFinished,
+        this,
+        [this](VitalsService::State s)
+{
+    switch(s)
+    {
+        case VitalsService::State::Spo2:
+            m_view->setSpO2Busy(false);
+            break;
+
+        case VitalsService::State::Temp:
+            m_view->setTemperatureBusy(false);
+            break;
+
+        case VitalsService::State::Nibp:
+            m_view->setNIBPBusy(false);
+            break;
+
+        case VitalsService::State::Weight:
+            m_view->setWeightBusy(false);
+            break;
+
+        case VitalsService::State::Height:
+            m_view->setHeightBusy(false);
+            break;
+
+        default:
+            break;
+    }
+});
+
+//
 }
 bool HomeController::validatePatient()
 {
@@ -209,13 +214,13 @@ bool HomeController::validatePatient()
 }
 void HomeController::onTemperatureFinal(double temp)
 {
-    int sessionId = m_vitalsService->sessionId();
+    //int sessionId = m_vitalsService->sessionId();
 
-    if (sessionId <= 0)
-    {
-        qDebug() << "Invalid session. Skipping temperature save.";
-        return;
-    }
+    //if (sessionId <= 0)
+    //{
+    //    qDebug() << "Invalid session. Skipping temperature save.";
+    //    return;
+    //}
 
     //m_vitalsRepo->saveTemperature(sessionId, temp);
     
@@ -224,48 +229,48 @@ void HomeController::onTemperatureFinal(double temp)
 
 void HomeController::onSpO2Final(int spo2, int pulse)
 {
-    int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0)
-    {
-        qDebug() << "Invalid session. Skipping SpO2/pulse save.";
-        return;
-    }
+    //int sessionId = m_vitalsService->sessionId();
+    //if (sessionId <= 0)
+    //{
+    //    qDebug() << "Invalid session. Skipping SpO2/pulse save.";
+    //    return;
+    //}
 
     //m_vitalsRepo->saveSpO2(sessionId, spo2, pulse);
     //qDebug() << "spo2:" << spo2 << "pulse:" << pulse << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onWeightFinal(double weight)
 {
-    int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0)
-    {
-        qDebug() << "Invalid session. Skipping weight save.";
-        return;
-    }
+    //int sessionId = m_vitalsService->sessionId();
+    //if (sessionId <= 0)
+    //{
+    //    qDebug() << "Invalid session. Skipping weight save.";
+    //    return;
+    //}
 
     //m_vitalsRepo->saveWeight(sessionId, weight);
     //qDebug() << "weight:" << weight << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onHeightFinal(int height)
 {
-    int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0)
-    {
-        qDebug() << "Invalid session. Skipping height save.";
-        return;
-    }
+    //int sessionId = m_vitalsService->sessionId();
+    //if (sessionId <= 0)
+    //{
+    //    qDebug() << "Invalid session. Skipping height save.";
+    //    return;
+   // }
 
     //m_vitalsRepo->saveHeight(sessionId, height);
     //qDebug() << "height:" << height << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 }
 void HomeController::onNIBPFinal(int sys, int dia)
 {
-    int sessionId = m_vitalsService->sessionId();
-    if (sessionId <= 0)
-    {
-        qDebug() << "Invalid session. Skipping NIBP save.";
-        return;
-    }
+    //int sessionId = m_vitalsService->sessionId();
+    //if (sessionId <= 0)
+    //{
+    //    qDebug() << "Invalid session. Skipping NIBP save.";
+    //    return;
+    //}
 
     //m_vitalsRepo->saveNIBP(sessionId, sys, dia);
 
@@ -277,21 +282,21 @@ void HomeController::onWeightChanged(double weight)
 {
     QString text = QString::number(weight, 'f', 1) + " kg";
     m_view->setWeightText(text);
-    m_view->setWeightBusy(false);
+    //m_view->setWeightBusy(false);
     
 }
 void HomeController::onHeightChanged(int height)
 {
     QString text = QString::number(height) + " cm";
     m_view->setHeightText(text);
-    m_view->setHeightBusy(false);
+    //m_view->setHeightBusy(false);
     
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
     QString text = QString("%1 / %2").arg(sys).arg(dia);
     m_view->setNIBPText(text);
-    m_view->setNIBPBusy(false);
+    //m_view->setNIBPBusy(false);
 
 }
 
@@ -302,14 +307,14 @@ void HomeController::onTemperatureChanged(double value, char unit)
                  + QChar(unit);
 
     m_view->setTemperatureText(text);
-    m_view->setTemperatureBusy(false);
+    //m_view->setTemperatureBusy(false);
 }
 
 void HomeController::onSpO2Changed(int spo2, int pulse)
 {
     QString text = QString("%1 / %2").arg(spo2).arg(pulse);
     m_view->setSpo2Text(text);
-    m_view->setSpO2Busy(false);
+    //m_view->setSpO2Busy(false);
 
 }
 

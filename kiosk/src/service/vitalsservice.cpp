@@ -8,12 +8,25 @@
 VitalsService::VitalsService(QObject* parent)
     : QObject(parent)
 {
+    
+    qRegisterMetaType<VitalsService::State>("VitalsService::State");
+    
     timeout.setSingleShot(true);
 
+    liveMeasureTimer.setSingleShot(true);
+
+    connect(&liveMeasureTimer, &QTimer::timeout,
+            this, [this]()
+    {
+        qDebug() << "[VS] Live measurement completed";
+
+        setIdle();
+    });
+
     connect(&timeout, &QTimer::timeout, this, [this]() {
+
         qDebug() << "Timeout! Stopping safely";
 
-        // send STOP if NIBP running
         if (state == State::Nibp)
         {
             emit sendCommand(QByteArray::fromHex("96AAF50100"));
@@ -21,6 +34,19 @@ VitalsService::VitalsService(QObject* parent)
 
         setIdle();
     });
+    //timeout.setSingleShot(true);
+
+    //connect(&timeout, &QTimer::timeout, this, [this]() {
+    //    qDebug() << "Timeout! Stopping safely";
+
+        // send STOP if NIBP running
+    //    if (state == State::Nibp)
+    //    {
+    //        emit sendCommand(QByteArray::fromHex("96AAF50100"));
+    //    }
+
+    //        setIdle();
+    //});
 }
 
 /* ---------------- SESSION ---------------- */
@@ -45,14 +71,42 @@ void VitalsService::setRepository(VitalsRepository* repo)
 
 void VitalsService::requestTemperature()
 {
-    if (state != State::Idle) return;
+    if (state != State::Idle)
+        return;
 
     state = State::Temp;
+
+    liveUpdateEnabled = true;
+
     emit sendCommand(QByteArray("\x96\xAA\x54", 3));
+
+    liveMeasureTimer.start(20000);
+
+    startTimeout();
+    //if (state != State::Idle) return;
+
+    //state = State::Temp;
+    //emit sendCommand(QByteArray("\x96\xAA\x54", 3));
+
+    //startTimeout();
+}
+
+void VitalsService::requestSpo2()
+{
+    if (state != State::Idle)
+        return;
+
+    state = State::Spo2;
+
+    liveUpdateEnabled = true;
+
+    emit sendCommand(QByteArray("\x96\xAA\xF4", 3));
+
+    liveMeasureTimer.start(20000);
 
     startTimeout();
 }
-
+/*
 void VitalsService::requestSpo2()
 {
     if (state != State::Idle) return;
@@ -65,40 +119,72 @@ void VitalsService::requestSpo2()
 
     startTimeout();
 }
-
+*/
 void VitalsService::requestNibp()
 {
-    if (state != State::Idle) return;
+    if (state != State::Idle)
+        return;
 
     state = State::Nibp;
 
-    qDebug() << "Request NIBP session:" << m_sessionId;
+    liveUpdateEnabled = true;
 
     emit sendCommand(QByteArray("\x96\xAA\xF5\x01\x01", 5));
 
-    startTimeout();   // timer starts HERE
+    liveMeasureTimer.start(30000);
+
+    startTimeout();
+    //if (state != State::Idle) return;
+
+    //state = State::Nibp;
+
+    //qDebug() << "Request NIBP session:" << m_sessionId;
+
+    //emit sendCommand(QByteArray("\x96\xAA\xF5\x01\x01", 5));
+
+    //startTimeout();   // timer starts HERE
 }
 
 void VitalsService::requestWeight()
 {
-    if (state != State::Idle) return;
+    if (state != State::Idle)
+        return;
 
     state = State::Weight;
 
+    liveUpdateEnabled = true;
+
     emit sendCommand(QByteArray("\x96\xAA\xF8", 3));
 
-    startTimeout();
+    liveMeasureTimer.start(20000);   
+    //if (state != State::Idle) return;
+
+    //state = State::Weight;
+
+    //emit sendCommand(QByteArray("\x96\xAA\xF8", 3));
+
+    //startTimeout();
 }
 
 void VitalsService::requestHeight()
 {
-    if (state != State::Idle) return;
+    if (state != State::Idle)
+        return;
 
     state = State::Height;
 
+    liveUpdateEnabled = true;
+
     emit sendCommand(QByteArray("\x96\xAA\xF7", 3));
 
-    startTimeout();
+    liveMeasureTimer.start(20000);  
+    //if (state != State::Idle) return;
+
+    //state = State::Height;
+
+    //emit sendCommand(QByteArray("\x96\xAA\xF7", 3));
+
+    //startTimeout();
 }
 
 /* ---------------- RESPONSES ---------------- */
@@ -108,30 +194,34 @@ void VitalsService::onTemperature(double v, char unit)
     if (state != State::Temp) return;
     if (v <= 1.0) return;
 
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveTemperature(m_sessionId, v);
+
     emit temperatureReady(v, unit);
-    setIdle();
-        if (m_repo && m_sessionId > 0)
-            m_repo->saveTemperature(m_sessionId, v);
+    qDebug() << "[VS] LIVE TEMPERATURE:" << v << unit;
+    //setIdle();
 }
 
 void VitalsService::onSpo2(int s, int p)
 {
     if (state != State::Spo2) return;
 
+    if (m_repo && m_sessionId > 0)
+        m_repo->saveSpO2(m_sessionId, s, p);
+
     emit spo2Ready(s, p);
-    setIdle();
-        if (m_repo && m_sessionId > 0)
-            m_repo->saveSpO2(m_sessionId, s, p);
+    qDebug() << "[VS] LIVE SPO2:" << s << p;
+    //setIdle();
 }
 
 void VitalsService::onNibpPressure(int pressure)
 {
     if (state != State::Nibp) return;
 
-    qDebug() << "[VS] Pressure update:" << pressure;
+    //qDebug() << "[VS] Pressure update:" << pressure;
 
     emit nibpPressure(pressure);
-
+    qDebug() << "[VS] LIVE NIBP PRESSURE:" << pressure;
     // IMPORTANT: do NOT stop here
     // keeps measurement running
 }
@@ -139,11 +229,12 @@ void VitalsService::onNibp(int sys,int dia,int map)
 {
     if(state!=State::Nibp) return;
 
-    emit nibpReady(sys,dia,0);
-    setIdle();
-
     if(m_repo && m_sessionId > 0)
         m_repo->saveNIBP(m_sessionId,sys,dia);
+
+    emit nibpReady(sys,dia,0);
+    qDebug() << "[VS] LIVE NIBP:" << sys << dia << map;
+    //setIdle();
 }
 /*
 void VitalsService::onNibp(int sys, int dia, int status)
@@ -179,36 +270,64 @@ void VitalsService::onNibp(int sys, int dia, int status)
 void VitalsService::onWeight(double w)
 {
     if (state != State::Weight) return;
-    emit weightReady(w);
-    setIdle();
 
     if (m_repo && m_sessionId > 0)
         m_repo->saveWeight(m_sessionId, w);
+
+    emit weightReady(w);
+    qDebug() << "[VS] LIVE WEIGHT:" << w;
+    //setIdle();
 }
 
-void VitalsService::onHeight(int h)
+void VitalsService::onHeight(double h)
 {
     if (state != State::Height) return;
 
-    emit heightReady(h);
-    setIdle();
     if (m_repo && m_sessionId > 0)
-        m_repo->saveHeight(m_sessionId, h);
+        m_repo->saveHeight(m_sessionId, int(h));
+
+    emit heightReady(int(h));
+    qDebug() << "[VS] LIVE HEIGHT:" << int(h);
+    //setIdle();
 }
 
 /* ---------------- INTERNAL ---------------- */
 
+QByteArray VitalsService::idleCommand() const
+{
+    return QByteArray::fromRawData("\x96\xAA\xFB\x49\x73", 5);
+}
+
+void VitalsService::setIdle()
+{
+    State old = state;
+
+    state = State::Idle;
+
+    timeout.stop();
+
+    liveMeasureTimer.stop();
+
+    emit measurementFinished(old);
+
+    emit sendCommand(idleCommand());
+
+    qDebug() << "[VS] STATE -> IDLE";
+}
+/*
 void VitalsService::setIdle()
 {
     state = State::Idle;
     timeout.stop();
 
-    qDebug() << "[VS] Back to IDLE";
-}
+    emit sendCommand(idleCommand());
 
+    qDebug() << "[VS] STATE -> IDLE";
+}
+*/
 void VitalsService::startTimeout()
 {
-    timeout.start(50000);   // 50 sec (safe for NIBP)
+    timeout.start(30000);   // 30 sec (safe for NIBP)
 }
 QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 {
@@ -238,8 +357,7 @@ QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 
     if (height > 0 && weight > 0)
     {
-        //double h = height / 100.0;
-        int h=height;
+        double h = height / 100.0;
         bmi = weight / (h * h);
 
         if (gender == "Male")
