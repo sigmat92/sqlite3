@@ -438,43 +438,57 @@ QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 
     return text;
 }
-
-void VitalsService::printResults(int sessionId, const QVariantMap& data)
+void VitalsService::printResults(int sessionId,
+                                 const QVariantMap& data)
 {
     qDebug() << "[VS] Preparing to print...";
 
     QString text = buildPrintText(sessionId, data);
 
+    // IMPORTANT
+    text.replace("\n", "\r\n");
+
+    // SHORTER RECEIPT
+    // avoid giant packets
+    if (text.length() > 220)
+        text = text.left(220);
+
     QByteArray payload = text.toUtf8();
-
-    int print_len = payload.size() + 7;
-
-    quint8 lsb = print_len & 0xFF;
-    quint8 msb = (print_len >> 8) & 0xFF;
 
     QByteArray cmd;
 
+    // HEADER
     cmd.append(char(0x96));
     cmd.append(char(0xAA));
     cmd.append(char(0xF6));
-    cmd.append(char(lsb));
-    cmd.append(char(msb));
 
+    // LENGTH = payload only
+    quint16 len = payload.size();
+
+    cmd.append(char(len & 0xFF));
+    cmd.append(char((len >> 8) & 0xFF));
+
+    // TEXT
     cmd.append(payload);
 
-    cmd.append(char(0xFF));
-    cmd.append(char(0xAA));
-    cmd.append(char(0x0A));
+    // FEED PAPER
     cmd.append(char(0x1B));
-    cmd.append(char(0x0D));
-    cmd.append(char(0x1B));
-    cmd.append(char(0x76));
+    cmd.append(char(0x64));
+    cmd.append(char(0x03));
 
+    // END
     cmd.append(char(0x96));
     cmd.append(char(0xAA));
     cmd.append(char(0xFB));
     cmd.append(char(0x49));
 
+    qDebug() << "[VS] PAYLOAD LEN:" << payload.size();
+    qDebug() << "[VS] TOTAL TX:" << cmd.size();
+    qDebug() << "[UART TX]" << cmd.toHex(' ');
+
     emit sendRaw(cmd);
+
     setIdle();
 }
+
+
