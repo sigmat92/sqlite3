@@ -49,7 +49,16 @@ setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     connect(startButton,&QPushButton::clicked,
             this,&MetricCard::startRequested);
 }
+/*
+void MetricCard::setValue(const QString &value)
+{
+    valueLabel->setText(value);
 
+    valueLabel->update();
+    update();
+    repaint();
+}
+*/
 void MetricCard::setValue(const QString &value)
 {
     valueLabel->setText(value);
@@ -58,5 +67,5 @@ void MetricCard::setValue(const QString &value)
 void MetricCard::setBusy(bool busy)
 {
     if(busy)
-        valueLabel->setText("...");
+        valueLabel->setText("Wait...");
 }

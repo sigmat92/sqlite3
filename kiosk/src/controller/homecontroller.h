@@ -37,6 +37,7 @@ public slots:
     void onWeightChanged(double weight);
     void onStartSpo2Requested();
     void visionTestRequested();
+    //void onNIBPPressureChanged(int pressure);
 
 private slots:
     void onSpO2Final(int spo2, int pulse);
@@ -44,7 +45,10 @@ private slots:
     void onWeightFinal(double weight);
     void onHeightFinal(int height);
     void onNIBPFinal(int sys, int dia);
-
+    
+    void onNIBPPressureChanged(int pressure);
+    
+    //void onNibpPressure(int pressure);
 private:
     VisionTestView* m_visionView = nullptr;
     bool validatePatient();

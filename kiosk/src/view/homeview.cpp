@@ -255,12 +255,46 @@ void HomeView::setSpo2Text(const QString &text)
         spo2Card->setValue(text);
 }
 /* ================= NIBP ================= */
+
+
 void HomeView::setNIBPText(const QString &text)
 {
-    if(nibpCard)
-        nibpCard->setValue(text);
-}
+    qDebug() << "HOME VIEW UPDATE final val :" << text;
+    
+     //qDebug() << "HOME VIEW UPDATE: NIBP Pressure:" << pressure;
 
+    if(nibpCard)
+    {
+        nibpCard->setValue(text);
+        nibpCard->update();
+        nibpCard->repaint();
+    }
+}
+//void HomeView::setNIBPText(const QString &text)
+//{
+//    qDebug() << "VIEW UPDATE:" << text;
+//    qDebug() << "nibpCard ptr:" << nibpCard;
+//    if(nibpCard)
+//        nibpCard->setValue(text);
+//}
+void HomeView::setNIBPPressure(int pressure)
+{
+    qDebug() << "HOME VIEW UPDATE: NIBP Pressure:" << pressure;
+    qDebug() << "nibpCard ptr:" << nibpCard;
+    QString text = QString("%1")
+                       .arg(pressure);
+
+    if(nibpCard)
+    {
+        nibpCard->setValue(text);
+        nibpCard->update();
+        nibpCard->repaint();
+    }
+
+    //nibpCard->setValue(text);
+    qDebug() << "NIBP Pressure updating on home view:" << text;
+    //setNIBPText(text);
+}
 void HomeView::setNIBPBusy(bool busy)
 {
     if(nibpCard)
@@ -269,6 +303,8 @@ void HomeView::setNIBPBusy(bool busy)
 /* ================= HEIGHT ================= */
 void HomeView::setHeightText(const QString &text)
 {
+    qDebug() << "VIEW UPDATE:" << text;
+    qDebug() << "heightCard ptr:" << heightCard;
     if(heightCard)
         heightCard->setValue(text);
 }
@@ -280,7 +316,10 @@ void HomeView::setHeightBusy(bool busy)
 /* ================= WEIGHT ================= */
 void HomeView::setWeightText(const QString &text)
 {
-    if(weightCard)        weightCard->setValue(text);
+    qDebug() << "VIEW UPDATE:" << text;
+    qDebug() << "weightCard ptr:" << weightCard;
+    if(weightCard)
+        weightCard->setValue(text);
 }
 void HomeView::setWeightBusy(bool busy)
 {

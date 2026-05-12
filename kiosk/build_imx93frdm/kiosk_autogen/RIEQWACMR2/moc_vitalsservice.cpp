@@ -44,10 +44,11 @@ constexpr auto qt_meta_stringdata_CLASSVitalsServiceENDCLASS = QtMocHelpers::str
     "nibpReady",
     "weightReady",
     "heightReady",
-    "nibpPressure",
     "measurementFinished",
     "State",
     "s",
+    "nibpPressure",
+    "pressure",
     "onTemperature",
     "onSpo2",
     "onNibp",
@@ -82,15 +83,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVitalsServiceENDCLASS[] = {
        7,    1,  127,    2, 0x06,   15 /* Public */,
        8,    1,  130,    2, 0x06,   17 /* Public */,
        9,    1,  133,    2, 0x06,   19 /* Public */,
-      10,    1,  136,    2, 0x06,   21 /* Public */,
+      12,    1,  136,    2, 0x06,   21 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      13,    2,  139,    2, 0x0a,   23 /* Public */,
-      14,    2,  144,    2, 0x0a,   26 /* Public */,
-      15,    3,  149,    2, 0x0a,   29 /* Public */,
-      16,    1,  156,    2, 0x0a,   33 /* Public */,
-      17,    1,  159,    2, 0x0a,   35 /* Public */,
-      18,    1,  162,    2, 0x0a,   37 /* Public */,
+      14,    2,  139,    2, 0x0a,   23 /* Public */,
+      15,    2,  144,    2, 0x0a,   26 /* Public */,
+      16,    3,  149,    2, 0x0a,   29 /* Public */,
+      17,    1,  156,    2, 0x0a,   33 /* Public */,
+      18,    1,  159,    2, 0x0a,   35 /* Public */,
+      19,    1,  162,    2, 0x0a,   37 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QByteArray,    2,
@@ -100,8 +101,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVitalsServiceENDCLASS[] = {
     QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int,    2,    2,    2,
     QMetaType::Void, QMetaType::Double,    2,
     QMetaType::Void, QMetaType::Int,    2,
-    QMetaType::Void, QMetaType::Int,    2,
-    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 10,   11,
+    QMetaType::Void, QMetaType::Int,   13,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    2,    2,
@@ -148,12 +149,12 @@ Q_CONSTINIT const QMetaObject VitalsService::staticMetaObject = { {
         // method 'heightReady'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'nibpPressure'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'measurementFinished'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<State, std::false_type>,
+        // method 'nibpPressure'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onTemperature'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<double, std::false_type>,
@@ -193,8 +194,8 @@ void VitalsService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 4: _t->nibpReady((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         case 5: _t->weightReady((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
         case 6: _t->heightReady((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 7: _t->nibpPressure((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 8: _t->measurementFinished((*reinterpret_cast< std::add_pointer_t<State>>(_a[1]))); break;
+        case 7: _t->measurementFinished((*reinterpret_cast< std::add_pointer_t<State>>(_a[1]))); break;
+        case 8: _t->nibpPressure((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 9: _t->onTemperature((*reinterpret_cast< std::add_pointer_t<double>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<char>>(_a[2]))); break;
         case 10: _t->onSpo2((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 11: _t->onNibp((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
@@ -255,15 +256,15 @@ void VitalsService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             }
         }
         {
-            using _t = void (VitalsService::*)(int );
-            if (_t _q_method = &VitalsService::nibpPressure; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (VitalsService::*)(State );
+            if (_t _q_method = &VitalsService::measurementFinished; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 7;
                 return;
             }
         }
         {
-            using _t = void (VitalsService::*)(State );
-            if (_t _q_method = &VitalsService::measurementFinished; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (VitalsService::*)(int );
+            if (_t _q_method = &VitalsService::nibpPressure; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 8;
                 return;
             }
@@ -351,14 +352,14 @@ void VitalsService::heightReady(int _t1)
 }
 
 // SIGNAL 7
-void VitalsService::nibpPressure(int _t1)
+void VitalsService::measurementFinished(State _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 7, _a);
 }
 
 // SIGNAL 8
-void VitalsService::measurementFinished(State _t1)
+void VitalsService::nibpPressure(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 8, _a);

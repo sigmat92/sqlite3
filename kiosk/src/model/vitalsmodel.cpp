@@ -44,6 +44,17 @@ void VitalsModel::setNIBP(int sys, int dia, int map)
 
     emit nibpChanged(sys, dia, map);
 }
+void VitalsModel::setNibpPressure(int pressure)
+{
+    qDebug() << "[MODEL] NIBP PRESSURE:" << pressure;
+
+    emit nibpPressureChanged(pressure);
+}
+//void VitalsModel::setNibpPressure(int pressure)
+//{
+//    emit nibpPressureChanged(pressure);
+//}
+
 int VitalsModel::height() const { return m_height; }
 double VitalsModel::weight() const { return m_weight; }
 double VitalsModel::temperature() const { return m_temperature; }

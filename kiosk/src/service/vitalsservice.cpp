@@ -131,7 +131,7 @@ void VitalsService::requestNibp()
 
     emit sendCommand(QByteArray("\x96\xAA\xF5\x01\x01", 5));
 
-    liveMeasureTimer.start(30000);
+    liveMeasureTimer.start(40000);
 
     startTimeout();
     //if (state != State::Idle) return;
@@ -327,7 +327,7 @@ void VitalsService::setIdle()
 */
 void VitalsService::startTimeout()
 {
-    timeout.start(30000);   // 30 sec (safe for NIBP)
+    timeout.start(40000);   // 40 sec (safe for NIBP)
 }
 QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 {

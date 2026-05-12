@@ -26,13 +26,18 @@ public slots:
     void setWeight(double weight);
     void setHeight(int height);
     void setNIBP(int sys, int dia, int map);
-
+    void setNibpPressure(int pressure);
+    
 signals:
     void temperatureChanged(double value, char unit);
     void spo2Changed(int spo2, int pulse);
     void weightChanged(double weight);
     void heightChanged(int height);
     void nibpChanged(int sys, int dia, int map);
+    
+    void nibpPressureChanged(int pressure);
+    
+    //void setNibpPressure(int pressure);
 
     // FINAL STABLE SIGNALS
     void temperatureFinal(double value);

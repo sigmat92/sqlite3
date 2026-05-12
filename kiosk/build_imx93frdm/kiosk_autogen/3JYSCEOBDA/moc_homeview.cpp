@@ -63,6 +63,8 @@ constexpr auto qt_meta_stringdata_CLASSHomeViewENDCLASS = QtMocHelpers::stringDa
     "setTemperatureText",
     "text",
     "setNIBPText",
+    "setNIBPPressure",
+    "pressure",
     "setHeightText",
     "setWeightText",
     "setSpo2Text",
@@ -81,7 +83,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      22,   14, // methods
+      23,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -89,30 +91,31 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
       11,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  146,    2, 0x06,    1 /* Public */,
-       3,    0,  147,    2, 0x06,    2 /* Public */,
-       4,    0,  148,    2, 0x06,    3 /* Public */,
-       5,    0,  149,    2, 0x06,    4 /* Public */,
-       6,    0,  150,    2, 0x06,    5 /* Public */,
-       7,    0,  151,    2, 0x06,    6 /* Public */,
-       8,    0,  152,    2, 0x06,    7 /* Public */,
-       9,    0,  153,    2, 0x06,    8 /* Public */,
-      10,    1,  154,    2, 0x06,    9 /* Public */,
-      12,    4,  157,    2, 0x06,   11 /* Public */,
-      17,    0,  166,    2, 0x06,   16 /* Public */,
+       1,    0,  152,    2, 0x06,    1 /* Public */,
+       3,    0,  153,    2, 0x06,    2 /* Public */,
+       4,    0,  154,    2, 0x06,    3 /* Public */,
+       5,    0,  155,    2, 0x06,    4 /* Public */,
+       6,    0,  156,    2, 0x06,    5 /* Public */,
+       7,    0,  157,    2, 0x06,    6 /* Public */,
+       8,    0,  158,    2, 0x06,    7 /* Public */,
+       9,    0,  159,    2, 0x06,    8 /* Public */,
+      10,    1,  160,    2, 0x06,    9 /* Public */,
+      12,    4,  163,    2, 0x06,   11 /* Public */,
+      17,    0,  172,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      18,    1,  167,    2, 0x0a,   17 /* Public */,
-      20,    1,  170,    2, 0x0a,   19 /* Public */,
-      21,    1,  173,    2, 0x0a,   21 /* Public */,
-      22,    1,  176,    2, 0x0a,   23 /* Public */,
-      23,    1,  179,    2, 0x0a,   25 /* Public */,
-      24,    1,  182,    2, 0x0a,   27 /* Public */,
-      26,    1,  185,    2, 0x0a,   29 /* Public */,
-      27,    1,  188,    2, 0x0a,   31 /* Public */,
-      28,    1,  191,    2, 0x0a,   33 /* Public */,
-      29,    1,  194,    2, 0x0a,   35 /* Public */,
-      30,    2,  197,    2, 0x0a,   37 /* Public */,
+      18,    1,  173,    2, 0x0a,   17 /* Public */,
+      20,    1,  176,    2, 0x0a,   19 /* Public */,
+      21,    1,  179,    2, 0x0a,   21 /* Public */,
+      22,    1,  182,    2, 0x0a,   23 /* Public */,
+      23,    1,  185,    2, 0x0a,   25 /* Public */,
+      24,    1,  188,    2, 0x0a,   27 /* Public */,
+      26,    1,  191,    2, 0x0a,   29 /* Public */,
+      27,    1,  194,    2, 0x0a,   31 /* Public */,
+      29,    1,  197,    2, 0x0a,   33 /* Public */,
+      30,    1,  200,    2, 0x0a,   35 /* Public */,
+      31,    1,  203,    2, 0x0a,   37 /* Public */,
+      32,    2,  206,    2, 0x0a,   39 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -135,10 +138,11 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeViewENDCLASS[] = {
     QMetaType::Void, QMetaType::Bool,   19,
     QMetaType::Void, QMetaType::QString,   25,
     QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::Int,   28,
     QMetaType::Void, QMetaType::QString,   25,
     QMetaType::Void, QMetaType::QString,   25,
     QMetaType::Void, QMetaType::QString,   25,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int,   31,   32,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   33,   34,
 
        0        // eod
 };
@@ -200,6 +204,9 @@ Q_CONSTINIT const QMetaObject HomeView::staticMetaObject = { {
         // method 'setNIBPText'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'setNIBPPressure'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'setHeightText'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
@@ -241,10 +248,11 @@ void HomeView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 15: _t->setWeightBusy((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 16: _t->setTemperatureText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 17: _t->setNIBPText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 18: _t->setHeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 19: _t->setWeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 20: _t->setSpo2Text((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 21: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 18: _t->setNIBPPressure((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 19: _t->setHeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 20: _t->setWeightText((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 21: _t->setSpo2Text((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 22: _t->onVitalsUpdated((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -348,13 +356,13 @@ int HomeView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 22)
+        if (_id < 23)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 22;
+        _id -= 23;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 22)
+        if (_id < 23)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 22;
+        _id -= 23;
     }
     return _id;
 }

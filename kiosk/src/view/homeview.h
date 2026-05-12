@@ -37,6 +37,7 @@ public slots:
 
     void setTemperatureText(const QString &text);
     void setNIBPText(const QString &text);
+    void setNIBPPressure(int pressure);
     void setHeightText(const QString &text);
     void setWeightText(const QString &text);
     void setSpo2Text(const QString &text);

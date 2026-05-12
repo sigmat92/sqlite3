@@ -52,9 +52,10 @@ signals:
     void heightReady(int);
 
     // (optional but useful)
-    void nibpPressure(int);
+    //void nibpPressure(int);
     
     void measurementFinished(State s);
+    void nibpPressure(int pressure);
 
 public slots:
     void onTemperature(double, char);

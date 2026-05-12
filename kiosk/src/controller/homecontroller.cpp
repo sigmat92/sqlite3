@@ -156,7 +156,24 @@ HomeController::HomeController(HomeView* view,
     connect(m_vitalsModel, &VitalsModel::weightChanged,
             this, &HomeController::onWeightChanged,Qt::UniqueConnection);
 
-//
+    connect(m_vitalsModel, &VitalsModel::nibpPressureChanged,
+            this, &HomeController::onNIBPPressureChanged,Qt::UniqueConnection);
+
+
+        //bool ok = connect(m_vitalsService,
+        //          &VitalsService::nibpPressure,
+        //          this,
+        //          &HomeController::onNibpPressure);
+
+//qDebug() << "NIBP pressure connect:" << ok;
+
+    //connect(m_vitalsService,
+    //        &VitalsService::nibpPressure,
+    //        this,
+    //        &HomeController::onNibpPressure,
+    //        Qt::UniqueConnection);
+    
+    
     // ================= OTHER UI ACTIONS =================
     connect(m_vitalsService,
         &VitalsService::measurementFinished,
@@ -294,12 +311,54 @@ void HomeController::onHeightChanged(int height)
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
-    QString text = QString("%1 / %2").arg(sys).arg(dia);
+    QString text =
+        QString("%1 / %2").arg(sys).arg(dia);
+
     m_view->setNIBPText(text);
+
+    m_view->setNIBPBusy(false);
+}
+//void HomeController::onNIBPChanged(int sys, int dia)
+//{
+//    QString text = QString("%1 / %2").arg(sys).arg(dia);
+//    m_view->setNIBPText(text);
     //m_view->setNIBPBusy(false);
 
-}
+//}
 
+//void HomeController::onNibpPressure(int pressure)
+//{
+//    qDebug() << "[UI] Pressure update:" << pressure;
+
+//    QString text =
+//        QString("Pressure: %1 mmHg").arg(pressure);
+
+//    m_view->setNIBPText(text);
+//}
+void HomeController::onNIBPPressureChanged(int pressure)
+{
+    QString text =
+        QString(" %1 ").arg(pressure);
+
+    m_view->setNIBPText(text);
+
+    // REMOVE THIS
+    // m_view->setNIBPBusy(true);
+}
+/*
+void HomeController::onNIBPPressureChanged(int pressure)
+{
+    qDebug() << "[home controller] Live Pressure:" << pressure;
+
+    QString text =
+        QString("%1").arg(pressure);
+
+    m_view->setNIBPText(text);
+
+    // measurement still running
+    m_view->setNIBPBusy(true);
+}
+*/
 void HomeController::onTemperatureChanged(double value, char unit)
 {
     QString text = QString::number(value, 'f', 1)
