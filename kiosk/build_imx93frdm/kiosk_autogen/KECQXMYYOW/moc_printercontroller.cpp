@@ -40,8 +40,8 @@ constexpr auto qt_meta_stringdata_CLASSPrinterControllerENDCLASS = QtMocHelpers:
     "",
     "printError",
     "error",
-    "onPrintRequested",
-    "onThermalPrintRequested"
+    "onThermalPrintRequested",
+    "onNetworkPrintRequested"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -94,9 +94,9 @@ Q_CONSTINIT const QMetaObject PrinterController::staticMetaObject = { {
         // method 'printError'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'onPrintRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onThermalPrintRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onNetworkPrintRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -110,8 +110,8 @@ void PrinterController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->printCompleted(); break;
         case 1: _t->printError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->onPrintRequested(); break;
-        case 3: _t->onThermalPrintRequested(); break;
+        case 2: _t->onThermalPrintRequested(); break;
+        case 3: _t->onNetworkPrintRequested(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

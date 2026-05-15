@@ -39,7 +39,8 @@ constexpr auto qt_meta_stringdata_CLASSPrintViewENDCLASS = QtMocHelpers::stringD
     "PrintView",
     "backRequested",
     "",
-    "startPrintingRequested",
+    "startThermalPrintingRequested",
+    "startNetworkPrintingRequested",
     "exitRequested"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -53,19 +54,21 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPrintViewENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       3,       // signalCount
+       4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x06,    1 /* Public */,
-       3,    0,   33,    2, 0x06,    2 /* Public */,
-       4,    0,   34,    2, 0x06,    3 /* Public */,
+       1,    0,   38,    2, 0x06,    1 /* Public */,
+       3,    0,   39,    2, 0x06,    2 /* Public */,
+       4,    0,   40,    2, 0x06,    3 /* Public */,
+       5,    0,   41,    2, 0x06,    4 /* Public */,
 
  // signals: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -84,7 +87,9 @@ Q_CONSTINIT const QMetaObject PrintView::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<PrintView, std::true_type>,
         // method 'backRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'startPrintingRequested'
+        // method 'startThermalPrintingRequested'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'startNetworkPrintingRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'exitRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
@@ -99,8 +104,9 @@ void PrintView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         (void)_t;
         switch (_id) {
         case 0: _t->backRequested(); break;
-        case 1: _t->startPrintingRequested(); break;
-        case 2: _t->exitRequested(); break;
+        case 1: _t->startThermalPrintingRequested(); break;
+        case 2: _t->startNetworkPrintingRequested(); break;
+        case 3: _t->exitRequested(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -114,15 +120,22 @@ void PrintView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         }
         {
             using _t = void (PrintView::*)();
-            if (_t _q_method = &PrintView::startPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &PrintView::startThermalPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
             using _t = void (PrintView::*)();
-            if (_t _q_method = &PrintView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &PrintView::startNetworkPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
+                return;
+            }
+        }
+        {
+            using _t = void (PrintView::*)();
+            if (_t _q_method = &PrintView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 3;
                 return;
             }
         }
@@ -149,13 +162,13 @@ int PrintView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -167,14 +180,20 @@ void PrintView::backRequested()
 }
 
 // SIGNAL 1
-void PrintView::startPrintingRequested()
+void PrintView::startThermalPrintingRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 
 // SIGNAL 2
-void PrintView::exitRequested()
+void PrintView::startNetworkPrintingRequested()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void PrintView::exitRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
 }
 QT_WARNING_POP

@@ -66,8 +66,8 @@ include external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps.dir/comp
 # Include the progress variables for this target.
 include external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps.dir/progress.make
 
-external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/moc
+external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps: /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/x86_64-pokysdk-linux/usr/libexec/uic
 
 ZXing_autogen_timestamp_deps: external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps
 ZXing_autogen_timestamp_deps: external/zxing-cpp/core/CMakeFiles/ZXing_autogen_timestamp_deps.dir/build.make

@@ -89,14 +89,17 @@ PrintView::PrintView(QWidget *parent)
     grid->setObjectName("footerGrid");
     QPushButton *allRecordsBtn = new QPushButton("All Records");
     allRecordsBtn->setObjectName("allRecordsBtn");
-    QPushButton *printBtn = new QPushButton("Print");
-    printBtn->setObjectName("printBtn");
+    QPushButton *printBtnThermal = new QPushButton("Thermal Print");
+    QPushButton *printBtnNetwork = new QPushButton("Network Print");
+    printBtnThermal->setObjectName("printBtnThermal");
+    printBtnNetwork->setObjectName("printBtnNetwork");
     QPushButton *exitBtn  = new QPushButton("Exit");
     exitBtn->setObjectName("exitBtn");
 
     footer->addWidget(allRecordsBtn);
 
-    footer->addWidget(printBtn);
+    footer->addWidget(printBtnThermal);
+    footer->addWidget(printBtnNetwork);
     footer->addWidget(exitBtn);
 
     layout->addLayout(footer);
@@ -107,14 +110,13 @@ PrintView::PrintView(QWidget *parent)
     connect(exitBtn, &QPushButton::clicked,
         this, &PrintView::exitRequested);
 
-    connect(printBtn,&QPushButton::clicked,this,[this](){
-        //qDebug() << "Print button clicked from print view, emitting startPrintRequested";
+    connect(printBtnThermal, &QPushButton::clicked, this, [this]() {
+        emit startThermalPrintingRequested();
+    });
 
-        //int sessionId = m_vitalsService->sessionId();
-        //qDebug() << "Printing session in print view:" << sessionId;
-        //qDebug() << "Emitting startPrintingRequested with sessionId:" << sessionId;
-        emit startPrintingRequested();
-        //emit startPrintingRequested(sessionId);
+    connect(printBtnNetwork, &QPushButton::clicked, this, [this]() {
+        //qDebug () << "Network print button clicked in print view";
+        emit startNetworkPrintingRequested();
     });
 
 }

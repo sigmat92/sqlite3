@@ -16,7 +16,8 @@ public:
 
 signals:
     void backRequested();
-    void startPrintingRequested();
+    void startThermalPrintingRequested();
+    void startNetworkPrintingRequested();
     void exitRequested();   
 
 private:

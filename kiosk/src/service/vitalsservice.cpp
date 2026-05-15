@@ -329,6 +329,213 @@ void VitalsService::startTimeout()
 {
     timeout.start(40000);   // 40 sec (safe for NIBP)
 }
+QString VitalsService::buildPrintText(
+        int sessionId,
+        const QVariantMap& d)
+{
+    auto getD = [&](const QString& k){
+        return d.value(k, 0).toDouble();
+    };
+
+    auto getI = [&](const QString& k){
+        return d.value(k, 0).toInt();
+    };
+
+    auto getS = [&](const QString& k){
+        return d.value(k, "").toString();
+    };
+
+    QString name   = getS("name");
+    QString mobile = getS("mobile");
+    QString gender = getS("gender");
+
+    int age = getI("age");
+
+    double temp   = getD("temperature");
+    double weight = getD("weight");
+
+    int height = getI("height");
+
+    int spo2  = getI("spo2");
+    int pulse = getI("pulse");
+
+    int sys = getI("systolic");
+    int dia = getI("diastolic");
+
+    QString farVision  = getS("farVision");
+    QString nearVision = getS("nearVision");
+
+    // ----------------------------------------------------
+    // DERIVED
+    // ----------------------------------------------------
+
+    double bmi = 0;
+    double bmr = 0;
+    double bsa = 0;
+
+    if (height > 0 && weight > 0)
+    {
+        double h = height / 100.0;
+
+        bmi = weight / (h * h);
+
+        if (gender.compare("Male", Qt::CaseInsensitive) == 0)
+        {
+            bmr =
+                10 * weight +
+                6.25 * height -
+                5 * age + 5;
+        }
+        else
+        {
+            bmr =
+                10 * weight +
+                6.25 * height -
+                5 * age - 161;
+        }
+
+        bsa =
+            sqrt((height * weight) / 3600.0);
+    }
+
+    QString bmiAnalysis = "--";
+
+    if (bmi > 0)
+    {
+        if (bmi < 18.5)
+            bmiAnalysis = "Underweight";
+
+        else if (bmi < 25)
+            bmiAnalysis = "Normal";
+
+        else if (bmi < 30)
+            bmiAnalysis = "Overweight";
+
+        else
+            bmiAnalysis = "Obese";
+    }
+
+    // ----------------------------------------------------
+    // BUILD TEXT
+    // ----------------------------------------------------
+
+    QString text;
+
+    text += "CareNest Health Kiosk\n";
+    text += "\n";
+
+    text += QString(
+        "Date : %1\n")
+        .arg(QDateTime::currentDateTime()
+        .toString("dd-MM-yyyy hh:mm"));
+
+    text += QString(
+        "Name : %1\n")
+        .arg(name.isEmpty() ? "--" : name);
+
+    text += QString(
+        "Mobile : %1\n")
+        .arg(mobile.isEmpty() ? "--" : mobile);
+
+    text += QString(
+        "Age : %1 yrs\n")
+        .arg(age > 0
+             ? QString::number(age)
+             : "--");
+
+    text += QString(
+        "Gender : %1\n")
+        .arg(gender.isEmpty()
+             ? "--"
+             : gender);
+
+    text += "\n";
+
+    text += QString(
+        "Temperature : %1 F\n")
+        .arg(temp > 0
+             ? QString::number(temp, 'f', 1)
+             : "--");
+
+    text += QString(
+        "Height : %1 cm\n")
+        .arg(height > 0
+             ? QString::number(height)
+             : "--");
+
+    text += QString(
+        "Weight : %1 Kg\n")
+        .arg(weight > 0
+             ? QString::number(weight, 'f', 1)
+             : "--");
+
+    text += QString(
+        "BP : %1/%2 mmHg\n")
+        .arg(sys > 0
+             ? QString::number(sys)
+             : "--")
+        .arg(dia > 0
+             ? QString::number(dia)
+             : "--");
+
+    text += QString(
+        "SPO2 : %1 %\n")
+        .arg(spo2 > 0
+             ? QString::number(spo2)
+             : "--");
+
+    text += QString(
+        "PulseRate : %1\n")
+        .arg(pulse > 0
+             ? QString::number(pulse)
+             : "--");
+
+    text += "\n";
+
+    text += QString(
+        "BMI : %1 Kg/m2\n")
+        .arg(bmi > 0
+             ? QString::number(bmi, 'f', 1)
+             : "--");
+
+    text += QString(
+        "BMI Analysis : %1\n")
+        .arg(bmiAnalysis);
+
+    text += QString(
+        "BMR : %1 Kcal\n")
+        .arg(bmr > 0
+             ? QString::number(bmr, 'f', 1)
+             : "--");
+
+    text += QString(
+        "BSA : %1 m2\n")
+        .arg(bsa > 0
+             ? QString::number(bsa, 'f', 2)
+             : "--");
+
+    text += "\n";
+
+    text += QString(
+        "Far Vision : %1\n")
+        .arg(farVision.isEmpty()
+             ? "--"
+             : farVision);
+
+    text += QString(
+        "Near Vision : %1\n")
+        .arg(nearVision.isEmpty()
+             ? "--"
+             : nearVision);
+
+    text += "\n\n";
+
+    qDebug() << "[VS] Built print text:\n"
+             << text;
+
+    return text;
+}
+/*
 QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 {
     auto getD = [&](const QString& k){ return d.value(k, 0).toDouble(); };
@@ -408,7 +615,7 @@ QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
             .arg(sys > 0 ? QString::number(sys) : "--")
             .arg(dia > 0 ? QString::number(dia) : "--");
 
-    text += QString("SPO2       : %1 %%\n")
+    text += QString("SPO2       : %1 %\n")
             .arg(spo2 > 0 ? QString::number(spo2) : "--");
 
     text += QString("PulseRate  : %1\n")
@@ -438,6 +645,7 @@ QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
 
     return text;
 }
+*/
 void VitalsService::printResults(int sessionId,
                                  const QVariantMap& data)
 {

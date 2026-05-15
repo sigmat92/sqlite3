@@ -441,7 +441,6 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QPdfWriter \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpdfwriter.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpagedpaintdevice.h \
@@ -455,4 +454,28 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QPageSize \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpagesize.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QFile \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfile.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qfiledevice.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QFont \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QColor \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QIODevice \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
