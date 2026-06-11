@@ -91,7 +91,7 @@ void RecordsView::setData(const std::vector<Record>& records)
     {
         QList<QStandardItem*> row;
 
-        //row << new QStandardItem(QString::number(r.sessionId));
+        row << new QStandardItem(QString::number(r.sessionId));
         row << new QStandardItem(QString::number(r.patientId));
         row << new QStandardItem(r.name);
         row << new QStandardItem(QString::number(r.age));

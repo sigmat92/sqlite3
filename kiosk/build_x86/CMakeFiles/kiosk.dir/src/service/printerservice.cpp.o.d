@@ -391,4 +391,39 @@ CMakeFiles/kiosk.dir/src/service/printerservice.cpp.o: \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QImage \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QPainter \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpainter.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QFont \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QRect \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QProcess \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qprocess.h

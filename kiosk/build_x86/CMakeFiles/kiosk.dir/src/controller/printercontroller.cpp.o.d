@@ -441,6 +441,7 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QPdfWriter \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpdfwriter.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpagedpaintdevice.h \
@@ -477,5 +478,4 @@ CMakeFiles/kiosk.dir/src/controller/printercontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QColor \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QIODevice \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
- /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h

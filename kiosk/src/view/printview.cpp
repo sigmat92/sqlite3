@@ -149,11 +149,12 @@ void PrintView::setData(const QVariantMap& d)
 
     
     int sessionId = getInt("sessionId");
+    int patientId = getInt("patientId");
     QString name   = getStr("name");
     QString mobile = getStr("mobile");
     QString gender = getStr("gender");
     int age        = getInt("age");
-    qDebug() << "printing in print view, sessionId:" << sessionId;
+    //qDebug() << "printing in print view, sessionId:" << sessionId;
     patientInfoLabel->setText(
         QString("Name: %1\tAge: %2\tMobile: %3\tGender: %4")
             .arg(name)
@@ -168,8 +169,8 @@ void PrintView::setData(const QVariantMap& d)
     double temp = getDouble("temperature");
     int spo2    = getInt("spo2");
     int pulse   = getInt("pulse");
-    int sys     = getInt("sys");
-    int dia     = getInt("dia");
+    int systolic     = getInt("systolic");
+    int diastolic     = getInt("diastolic");
     double weight = getDouble("weight");
     //double height = getDouble("height");
     int height = getInt("height");
@@ -183,8 +184,8 @@ void PrintView::setData(const QVariantMap& d)
     );
 
     nibpLabel->setText(
-        (sys > 0 && dia > 0)
-        ? QString("%1 / %2").arg(sys).arg(dia)
+        (systolic > 0 && diastolic > 0)
+        ? QString("%1 / %2").arg(systolic).arg(diastolic)
         : "--"
     );
 

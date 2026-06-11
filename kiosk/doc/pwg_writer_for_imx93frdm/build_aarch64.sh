@@ -1,0 +1,10 @@
+aarch64-linux-gnu-g++ \
+    pwg_writer.cpp \
+    -I$HOME/carenest-mini/kiosk/external/cups \
+    -I$HOME/carenest-mini/kiosk/external/cups/cups \
+    $HOME/carenest-mini/kiosk/external/cups/cups/libcups.a \
+    $HOME/carenest-mini/kiosk/external/cups/cups/libcupsimage.a \
+    -lpthread \
+    -lm \
+    -ldl \
+    -o pwg_writer
