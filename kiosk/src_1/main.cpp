@@ -379,7 +379,7 @@ int main(int argc, char *argv[])
     repo,
     &app
     );
-    //printViev to printer controller for thermal print request signal connection
+    //printView to printer controller for thermal print request signal connection
     QObject::connect(printView, &PrintView::startThermalPrintingRequested,
                     printerController, &PrinterController::onThermalPrintRequested);
     //printView to printer controller for network print request signal connection 

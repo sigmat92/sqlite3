@@ -403,3 +403,52 @@ void HomeView::setCurrentSessionId(int id)
     currentSessionId = id;
 }
 
+void HomeView::setBMI(const QString& value)
+{
+    bmiLabel->setText(value);
+}
+
+void HomeView::setBMIAnalysis(const QString& value)
+{
+    bmiAnalysisLabel->setText(value);
+}
+
+void HomeView::setBMR(const QString& value)
+{
+    bmrLabel->setText(value + " kcal");
+}
+
+void HomeView::setBSA(const QString& value)
+{
+    bsaLabel->setText(value + " m²");
+}
+
+void HomeView::setMeasurementBusy(
+    bool busy,
+    const QString& message)
+{
+    if(busy)
+    {
+        statusLabel->setText(message);
+
+        nameEdit->setEnabled(false);
+        ageEdit->setEnabled(false);
+        mobileEdit->setEnabled(false);
+
+        if(temperatureCard) temperatureCard->setEnabled(false);
+        if(spo2Card)        spo2Card->setEnabled(false);
+        if(nibpCard)        nibpCard->setEnabled(false);
+        if(heightCard)      heightCard->setEnabled(false);
+        if(weightCard)      weightCard->setEnabled(false);
+    }
+    else
+    {
+        statusLabel->setText("Test Status: Ready");
+
+        if(temperatureCard) temperatureCard->setEnabled(true);
+        if(spo2Card)        spo2Card->setEnabled(true);
+        if(nibpCard)        nibpCard->setEnabled(true);
+        if(heightCard)      heightCard->setEnabled(true);
+        if(weightCard)      weightCard->setEnabled(true);
+    }
+}

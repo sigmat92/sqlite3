@@ -27,6 +27,12 @@ public:
 
     void setCurrentSessionId(int id);
 
+    void setBMI(const QString& value);
+    void setBMIAnalysis(const QString& value);
+    void setBMR(const QString& value);
+    void setBSA(const QString& value);
+    void setMeasurementBusy(bool busy, const QString& message);
+
 public slots:
 
     void setTemperatureBusy(bool busy);

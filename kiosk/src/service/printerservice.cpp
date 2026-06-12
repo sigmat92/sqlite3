@@ -177,7 +177,7 @@ bool PrinterService::print(const PrintJob& job)
 
     if (!file.open(QIODevice::ReadOnly))
     {
-        emit printFailed("Cannot open PWG");
+        //emit printFailed("Cannot open PWG");
 
         return false;
     }

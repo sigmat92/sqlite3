@@ -5,6 +5,7 @@
 #include "../model/vitalsmodel.h"
 #include "../storage/vitalsrepository.h"
 #include "service/settingsservice.h"
+#include <cmath>
 
 #include <QDebug>
 
@@ -77,6 +78,10 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            m_view->setMeasurementBusy(
+                true,
+                "Test Status: Measuring Temperature..."
+            );
             m_view->setTemperatureBusy(true);
 
             m_vitalsService->requestTemperature();
@@ -92,6 +97,10 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            m_view->setMeasurementBusy(
+                true,
+                "Test Status: Measuring SpO2..."
+            );
             m_view->setSpO2Busy(true);
 
             m_vitalsService->requestSpo2();
@@ -106,6 +115,10 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            m_view->setMeasurementBusy(
+                true,
+                "Test Status: Measuring NIBP..."
+            );
             m_view->setNIBPBusy(true);
 
             m_vitalsService->requestNibp();
@@ -120,6 +133,10 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            m_view->setMeasurementBusy(
+                true,
+                "Test Status: Measuring Height..."
+            );
             m_view->setHeightBusy(true);
 
             m_vitalsService->requestHeight();
@@ -134,6 +151,10 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            m_view->setMeasurementBusy(
+                true,
+                "Test Status: Measuring Weight..."
+            );
             m_view->setWeightBusy(true);
 
             m_vitalsService->requestWeight();
@@ -205,6 +226,7 @@ HomeController::HomeController(HomeView* view,
         default:
             break;
     }
+    m_view->setMeasurementBusy(false, "");
 });
 
 //
@@ -297,17 +319,20 @@ void HomeController::onNIBPFinal(int sys, int dia)
 
 void HomeController::onWeightChanged(double weight)
 {
+    m_weightKg = weight;
     QString text = QString::number(weight, 'f', 1) + " kg";
     m_view->setWeightText(text);
     //m_view->setWeightBusy(false);
+    updateDerivedMetrics();
     
 }
 void HomeController::onHeightChanged(int height)
 {
+    m_heightCm = height;
     QString text = QString::number(height) + " cm";
     m_view->setHeightText(text);
     //m_view->setHeightBusy(false);
-    
+    updateDerivedMetrics();
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
@@ -453,8 +478,119 @@ void HomeController::resetSession()
 
     m_view->unlockPatientFields();
     m_view->clearPatientFields();
+    // Reset derived metrics
+    m_weightKg = 0;
+    m_heightCm = 0;
+
+    m_view->setBMI("--");
+    m_view->setBMIAnalysis("--");
+    m_view->setBMR("--");
+    m_view->setBSA("--");
+    //reset vitasls as well
+    m_view->setTemperatureText("--");
+    m_view->setSpo2Text("--");
+    m_view->setNIBPText("--");
+    m_view->setWeightText("--");
+    m_view->setHeightText("--");
+    m_view->setTemperatureBusy(false);
+    m_view->setSpO2Busy(false);
+    m_view->setNIBPBusy(false);
+    m_view->setWeightBusy(false);
+    m_view->setHeightBusy(false);
 }
 void HomeController::visionTestRequested()
 {
     qDebug() << "Vision test requested (stub) with sessionId:" << m_vitalsService->sessionId();
+}
+
+void HomeController::updateDerivedMetrics()
+{
+    if(m_heightCm <= 0)
+        return;
+
+    if(m_weightKg <= 0)
+        return;
+
+    // ==========================
+    // BMI
+    // ==========================
+
+    double h =
+        m_heightCm / 100.0;
+
+    m_bmi =
+        m_weightKg /
+        (h * h);
+
+    QString bmiCategory;
+
+    if(m_bmi < 18.5)
+        bmiCategory = "Underweight";
+    else if(m_bmi < 25.0)
+        bmiCategory = "Normal";
+    else if(m_bmi < 30.0)
+        bmiCategory = "Overweight";
+    else
+        bmiCategory = "Obese";
+
+    // ==========================
+    // BMR
+    // ==========================
+
+    int age =
+        m_view->patientAge().toInt();
+
+    QString gender =
+        m_view->patientGender();
+
+    if(gender == "Male")
+    {
+        m_bmr =
+            10.0 * m_weightKg +
+            6.25 * m_heightCm -
+            5.0 * age +
+            5.0;
+    }
+    else
+    {
+        m_bmr =
+            10.0 * m_weightKg +
+            6.25 * m_heightCm -
+            5.0 * age -
+            161.0;
+    }
+
+    // ==========================
+    // BSA
+    // ==========================
+
+    m_bsa =
+        std::sqrt(
+            (m_heightCm * m_weightKg)
+            / 3600.0);
+
+    // ==========================
+    // Update View
+    // ==========================
+
+    m_view->setBMI(
+        QString::number(
+            m_bmi,
+            'f',
+            2));
+
+    m_view->setBMIAnalysis(
+        bmiCategory);
+
+    m_view->setBMR(
+        QString::number(
+            m_bmr,
+            'f',
+            0));
+
+    m_view->setBSA(
+        QString::number(
+            m_bsa,
+            'f',
+            2));
 }

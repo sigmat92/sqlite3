@@ -27,8 +27,7 @@ public:
                QObject* parent);
 
         bool ensurePatientSaved();
-
-
+        
 public slots:
     void onTemperatureChanged(double value, char unit);
     void onSpO2Changed(int spo2, int pulse);
@@ -67,4 +66,15 @@ private:
     int m_currentPatientId = -1;
     int m_currentSessionId = -1;
     VitalsService* m_vitalsService;
+
+    //health metrics live updates
+
+    double m_weightKg = 0.0;
+    int    m_heightCm = 0;
+
+    double m_bmi = 0.0;
+    double m_bmr = 0.0;
+    double m_bsa = 0.0;
+
+    void updateDerivedMetrics();
 };
