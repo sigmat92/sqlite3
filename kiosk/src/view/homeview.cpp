@@ -109,11 +109,11 @@ HomeView::HomeView(QWidget *parent)
     {
         
         {"Vision Test","Vision test started",[this]{ emit visionTestRequested(); }},
-        {"SpO2 / Pulse","SpO2 measurement started",[this]{ emit startSpo2Requested(); }},
-        {"NIBP","NIBP measurement started",[this]{ emit startNIBPRequested(); }},
-        {"Height","Height measurement started",[this]{ emit startHeightRequested(); }},
-        {"Weight","Weight measurement started",[this]{ emit startWeightRequested(); }},
-        {"Temperature","Temperature measurement started",[this]{ emit startTemperatureRequested(); }}
+        {"SpO2 / Pulse","Measuring SpO2...",[this]{ emit startSpo2Requested(); }},
+        {"NIBP","Measuring NIBP...",[this]{ emit startNIBPRequested(); }},
+        {"Height","Measuring Height...",[this]{ emit startHeightRequested(); }},
+        {"Weight","Measuring Weight...",[this]{ emit startWeightRequested(); }},
+        {"Temperature","Measuring Temperature...",[this]{ emit startTemperatureRequested(); }}
         
     };
 
@@ -431,9 +431,9 @@ void HomeView::setMeasurementBusy(
     {
         statusLabel->setText(message);
 
-        nameEdit->setEnabled(false);
-        ageEdit->setEnabled(false);
-        mobileEdit->setEnabled(false);
+        //nameEdit->setEnabled(false);
+        //ageEdit->setEnabled(false);
+        //mobileEdit->setEnabled(false);
 
         if(temperatureCard) temperatureCard->setEnabled(false);
         if(spo2Card)        spo2Card->setEnabled(false);
@@ -443,7 +443,7 @@ void HomeView::setMeasurementBusy(
     }
     else
     {
-        statusLabel->setText("Test Status: Ready");
+        statusLabel->setText("Test Status: Ready...");
 
         if(temperatureCard) temperatureCard->setEnabled(true);
         if(spo2Card)        spo2Card->setEnabled(true);

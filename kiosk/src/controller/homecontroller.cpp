@@ -78,12 +78,14 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            //m_view->setTemperatureBusy(true);
             m_view->setMeasurementBusy(
                 true,
                 "Test Status: Measuring Temperature..."
             );
-            m_view->setTemperatureBusy(true);
 
+            m_view->setTemperatureBusy(true);
+            
             m_vitalsService->requestTemperature();
     });
 
@@ -97,12 +99,13 @@ HomeController::HomeController(HomeView* view,
             if (!ensurePatientSaved())
                 return;
 
+            
             m_view->setMeasurementBusy(
                 true,
                 "Test Status: Measuring SpO2..."
             );
             m_view->setSpO2Busy(true);
-
+            
             m_vitalsService->requestSpo2();
     });
 
@@ -114,11 +117,11 @@ HomeController::HomeController(HomeView* view,
 
             if (!ensurePatientSaved())
                 return;
-
-            m_view->setMeasurementBusy(
+                        m_view->setMeasurementBusy(
                 true,
                 "Test Status: Measuring NIBP..."
             );
+            
             m_view->setNIBPBusy(true);
 
             m_vitalsService->requestNibp();
@@ -132,11 +135,12 @@ HomeController::HomeController(HomeView* view,
 
             if (!ensurePatientSaved())
                 return;
-
+            
             m_view->setMeasurementBusy(
                 true,
                 "Test Status: Measuring Height..."
             );
+            
             m_view->setHeightBusy(true);
 
             m_vitalsService->requestHeight();
@@ -155,6 +159,7 @@ HomeController::HomeController(HomeView* view,
                 true,
                 "Test Status: Measuring Weight..."
             );
+         
             m_view->setWeightBusy(true);
 
             m_vitalsService->requestWeight();
