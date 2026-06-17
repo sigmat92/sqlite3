@@ -235,6 +235,25 @@ int main(int argc, char *argv[])
     // CRITICAL: This flow depends on session being set in vitals service, 
     // which is done in home controller when any measurement starts. 
     // So sessionId should be available by the time user tries to print.
+    QObject::connect(homeView,
+                 &HomeView::startPrintingRequested,
+                 [=](int sessionId){
+
+    homecontroller->ensurePatientSaved();
+
+    sessionId =
+        vitalsService->sessionId();
+
+    QVariantMap data =
+        repo->getLatestVitals(sessionId);
+
+    printView->setSessionId(sessionId);
+
+    printView->setData(data);
+
+    nav->goTo(Screen::Print);
+});
+    /*
     QObject::connect(homeView, &HomeView::startPrintingRequested,
                      [=](int sessionId){
         //qDebug()<< "Received startPrintingRequested from homeview in 
@@ -248,7 +267,7 @@ int main(int argc, char *argv[])
 
         nav->goTo(Screen::Print);
     });
-
+    */
     // Print → Home
     QObject::connect(printView, &PrintView::exitRequested,
                      [=]() {
@@ -262,15 +281,28 @@ int main(int argc, char *argv[])
                          nav->goTo(Screen::Records);
                      });
 
-    // Records → Print
-    QObject::connect(recordsView, &RecordsView::recordSelected,
-                     [=](int sessionId){
+    // Records -> Print
+    QObject::connect(recordsView,
+                 &RecordsView::recordSelected,
+                 [=](int sessionId){
 
-        QVariantMap data = repo->getLatestVitals(sessionId);
-        printView->setData(data);
+    QVariantMap data =
+        repo->getLatestVitals(sessionId);
 
-        nav->goTo(Screen::Print);
+    printView->setSessionId(sessionId);
+
+    printView->setData(data);
+
+    nav->goTo(Screen::Print);
     });
+    //QObject::connect(recordsView, &RecordsView::recordSelected,
+    //                 [=](int sessionId){
+
+    //    QVariantMap data = repo->getLatestVitals(sessionId);
+    //    printView->setData(data);
+
+    //    nav->goTo(Screen::Print);
+    //});
 
     // Home → Vision
     QObject::connect(homeView, &HomeView::visionTestRequested,
@@ -379,12 +411,17 @@ int main(int argc, char *argv[])
     repo,
     &app
     );
-    //printView to printer controller for thermal print request signal connection
     QObject::connect(printView, &PrintView::startThermalPrintingRequested,
-                    printerController, &PrinterController::onThermalPrintRequested);
-    //printView to printer controller for network print request signal connection 
+                     printerController, &PrinterController::onThermalPrintRequested);
     QObject::connect(printView, &PrintView::startNetworkPrintingRequested,
-                    printerController, &PrinterController::onNetworkPrintRequested);
+                     printerController, &PrinterController::onNetworkPrintRequested);
+
+    //printView to printer controller for thermal print request signal connection
+    //QObject::connect(printView, &PrintView::startThermalPrintingRequested,
+    //                printerController, &PrinterController::onThermalPrintRequested);
+    //printView to printer controller for network print request signal connection 
+    //QObject::connect(printView, &PrintView::startNetworkPrintingRequested,
+    //                printerController, &PrinterController::onNetworkPrintRequested);
 
 
     // ---------- START ----------

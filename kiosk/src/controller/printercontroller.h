@@ -30,8 +30,10 @@ signals:
 
 public slots:   
     //void onPrintRequested();
-    void onThermalPrintRequested();
-    void onNetworkPrintRequested();
+    //void onThermalPrintRequested();
+    //void onNetworkPrintRequested();
+    void onThermalPrintRequested(int sessionId);
+    void onNetworkPrintRequested(int sessionId);
 
 private:
 

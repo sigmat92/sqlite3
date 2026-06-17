@@ -5,72 +5,50 @@
 #include <QLabel>
 
 VisionTestView::VisionTestView(QWidget* parent)
-    : BaseView("Near Vision Test", parent)
+    : BaseView("Vision Test", parent)
 {
     auto *layout = new QVBoxLayout(m_contentWidget);
 
-    /* ---------------- STATUS ---------------- */
+    /* ---------------- Far VISION TEST BUTTON ---------------- */
 
-    statusLabel = new QLabel("Put yourself at 36 cm distance");
-    statusLabel->setAlignment(Qt::AlignCenter);
-    // statusLabel->setMinimumHeight(50);
-    /*
-    statusLabel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-size:24px;"
-        "font-weight:bold;"
-        "border-radius:8px;"
-    );
-    */
-    layout->addWidget(statusLabel);
+    QPushButton *farVisionTestBtn = new QPushButton("Far Vision Test");
+    farVisionTestBtn->setObjectName("farVisionTestBtn");
+    layout->addWidget(farVisionTestBtn);
+    //connect(farVisionBtn,&QPushButton::clicked,
+    //        this, &VisionTestView::farVisonTestRequested);
+
+    /* ---------------- NEAR VISION TEST BUTTON ---------------- */
+
+    QPushButton *nearVisionTestBtn = new QPushButton("Near Vision Test");
+    nearVisionTestBtn->setObjectName("nearVisionTestBtn");
+    layout->addWidget(nearVisionTestBtn);
+    //connect(nearVisionBtn,&QPushButton::clicked,
+    //        this, &VisionTestView::nearVisonTestRequested);
+
+    /* ---------------- adviceLabel ---------------- */
+
+    QLabel *adviceLabel = new QLabel("Place yourself at 36 cm distance from the Device");
+    adviceLabel->setObjectName("adviceLabel");
+    adviceLabel->setAlignment(Qt::AlignCenter);
+    
+    layout->addWidget(adviceLabel);
 
     /* ---------------- START BUTTON ---------------- */
 
     QPushButton *startBtn = new QPushButton("START");
-/*
-    startBtn->setStyleSheet(
-        "font-size:32px;"
-        "font-weight:bold;"
-        "background:white;"
-        "color:black;"
-        "border-radius:10px;"
-        "min-height:70px;"
-    );
-*/
-    /*  
-    startBtn->setStyleSheet(
-        "font-size:28px;"
-        "border-radius: 8px;"
-        "font-weight:bold;"
-        "background:#0d47a1;"
-        "color:white;"
-    );
-    */
+    layout->addWidget(startBtn);
     connect(startBtn, &QPushButton::clicked,
             this, &VisionTestView::startRequested);
-
-    layout->addWidget(startBtn);
 
     /* ---------------- LETTER PANEL ---------------- */
 
     QWidget *visionPanel = new QWidget;
-    /*
-    visionPanel->setStyleSheet(
-        "background:white;"
-        "border-radius:8px;"
-    );
-    */
+
     QVBoxLayout *vLayout = new QVBoxLayout(visionPanel);
 
     symbolLabel = new QLabel("C S");
     symbolLabel->setAlignment(Qt::AlignCenter);
-    /*
-    symbolLabel->setStyleSheet(
-        "font-size:80px;"
-        "font-weight:bold;"
-        "color:black;"
-    );
-    */
+
     visionPanel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     vLayout->addWidget(symbolLabel);
@@ -84,25 +62,7 @@ VisionTestView::VisionTestView(QWidget* parent)
 
     QPushButton *cantSeeBtn = new QPushButton("CAN'T SEE");
     QPushButton *okBtn      = new QPushButton("OK");
-    /*
-    cantSeeBtn->setStyleSheet(
-        "font-size:28px;"
-        "font-weight:bold;"
-        "background:#e53935;"
-        "color:white;"
-        "border-radius:10px;"
-        "min-height:70px;"
-    );
 
-    okBtn->setStyleSheet(
-        "font-size:28px;"
-        "font-weight:bold;"
-        "background:#43a047;"
-        "color:white;"
-        "border-radius:10px;"
-        "min-height:70px;"
-    );
-    */
     connect(cantSeeBtn, &QPushButton::clicked,
             [this]() { emit answerSelected("FAIL"); });
 
@@ -117,23 +77,7 @@ VisionTestView::VisionTestView(QWidget* parent)
     /* ---------------- BACK BUTTON ---------------- */
 
     QPushButton *backBtn = new QPushButton("BACK");
-    /*
-    backBtn->setStyleSheet(
-        "font-size:26px;"
-        "background:white;"
-        "border-radius:8px;"
-        "min-height:60px;"
-    );
-    */
-    /*
-        backBtn->setStyleSheet(
-        "font-size:28px;"
-        "border-radius: 8px;"
-        "font-weight:bold;"
-        "background:#455a64;"
-        "color:white;"
-    );
-    */
+
     connect(backBtn, &QPushButton::clicked,
             this, &VisionTestView::exitRequested);
 
@@ -143,14 +87,7 @@ VisionTestView::VisionTestView(QWidget* parent)
 
     resultLabel = new QLabel("--");
     resultLabel->setAlignment(Qt::AlignCenter);
-        /*
-        resultLabel->setStyleSheet(
-        "background:#bbdefb;"
-        "font-size:24px;"
-        "font-weight:bold;"
-        "border-radius:8px;"
-    );
-        */
+
     layout->addWidget(resultLabel);
 }
 

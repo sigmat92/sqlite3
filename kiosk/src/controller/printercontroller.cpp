@@ -51,9 +51,46 @@ void PrinterController::handlePrintRequest(const QString& filePath) {
     //m_service.print(job);
 }
 
-void PrinterController::onThermalPrintRequested()
+void PrinterController::onNetworkPrintRequested(int sessionId)
 {
-    int sessionId = m_vitalsService->sessionId();
+    qDebug()
+        << "Printing historical session:"
+        << sessionId;
+
+    QVariantMap data =
+        m_repo->getLatestVitals(sessionId);
+
+    QString text =
+        m_vitalsService->buildPrintText(
+            sessionId,
+            data);
+
+    m_printerService->printReport(text);
+}
+/*
+void PrinterController::onThermalPrintRequested(int sessionId)
+{
+    qDebug()
+        << "Printing historical session:"
+        << sessionId;
+
+    QVariantMap data =
+        m_repo->getLatestVitals(sessionId);
+
+    QString text =
+        m_vitalsService->buildPrintText(
+            sessionId,
+            data);
+
+    m_printerService->printReport(text);
+}
+*/
+
+void PrinterController::onThermalPrintRequested(int sessionId)
+{
+        qDebug()
+        << "Printing old session:"
+        << sessionId;
 
     qDebug() << "Printer Controller Printing session:" << sessionId;
 
@@ -73,9 +110,36 @@ void PrinterController::onThermalPrintRequested()
         return;
     }
 
-    m_vitalsService->printResults(sessionId, data);
+        QString text =
+        m_vitalsService->buildPrintText(
+            sessionId,
+            data);
+
+        m_vitalsService->printResults(sessionId, data);
+        //bool ok =
+        //m_printerService->printReport(text);
+
+    //qDebug() << "Print result =" << ok;
 }
-//
+
+/*
+void PrinterController::onNetworkPrintRequested()
+{
+    int sessionId =
+        m_printView->sessionId();
+
+    QVariantMap data =
+        m_repo->getLatestVitals(sessionId);
+
+    QString text =
+        m_vitalsService->buildPrintText(
+            sessionId,
+            data);
+
+    m_printerService->printReport(text);
+}
+*/
+/*
 void PrinterController::onNetworkPrintRequested()
 {
    
@@ -101,19 +165,20 @@ void PrinterController::onNetworkPrintRequested()
             << "STEP 3 result="
             << ok;
 
-/*
-    QVariantMap data =
-        m_repo->getLatestVitals(sessionId);
 
-    QString printText =
-        m_vitalsService->buildPrintText(
-            sessionId,
-            data);
+    //QVariantMap data =
+    //    m_repo->getLatestVitals(sessionId);
 
-    m_printerService->printReport(
-        printText);
-*/
+    //QString printText =
+    //    m_vitalsService->buildPrintText(
+    //        sessionId,
+    //        data);
+
+    //m_printerService->printReport(
+    //    printText);
+
 }
+*/
 //
 /*
 void PrinterController::onNetworkPrintRequested()

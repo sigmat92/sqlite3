@@ -13,5 +13,6 @@ public:
     bool saveSession(int sessionId);
 
     QVariantMap getLatestVitals(int sessionId);
+    //QVariantMap getVitalsForSession(int sessionId);
     bool createEmptyVitals(int sessionId);
 };

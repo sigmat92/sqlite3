@@ -148,47 +148,91 @@ bool VitalsRepository::saveNIBP(int sessionId, int systolic, int diastolic)
 
 QVariantMap VitalsRepository::getLatestVitals(int sessionId)
 {
+
+    qDebug() << "Looking up session:" << sessionId;
     QVariantMap data;
 
     sqlite3* db = DatabaseManager::instance().connection();
     sqlite3_stmt* stmt = nullptr;
-
-    const char* sql =
-        "SELECT "
-        "v.temperature, v.spo2, v.pulse, "
-        "v.systolic, v.diastolic, v.height, v.weight, "
-        "p.name, p.age, p.mobile, p.gender "
-        "FROM sessions s "
-        "JOIN patients p ON s.patient_id = p.id "
-        "LEFT JOIN vitals v ON v.session_id = s.id "
-        "WHERE s.id=? "
-        "ORDER BY v.id DESC LIMIT 1;";   // latest row
+    
+const char* sql =
+    "SELECT "
+    "s.id, "
+    "p.id, "
+    "v.temperature, "
+    "v.spo2, "
+    "v.pulse, "
+    "v.systolic, "
+    "v.diastolic, "
+    "v.height, "
+    "v.weight, "
+    "p.name, "
+    "p.age, "
+    "p.mobile, "
+    "p.gender "
+    "FROM sessions s "
+    "JOIN patients p ON s.patient_id = p.id "
+    "LEFT JOIN vitals v ON v.session_id = s.id "
+    "WHERE s.id=? "
+    "ORDER BY v.id DESC LIMIT 1;";
+    
 
     if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
-        return data;
+        {
+            qDebug()
+                << "Prepare failed:"
+                << sqlite3_errmsg(db);
+
+            return data;
+        }
+    //if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
+    //    return data;
 
     sqlite3_bind_int(stmt, 1, sessionId);
 
     if (sqlite3_step(stmt) == SQLITE_ROW)
     {
+        //data["sessionId"] = sqlite3_column_int(stmt,0);
+        data["sessionId"] = sqlite3_column_type(stmt,0) != SQLITE_NULL ? sqlite3_column_int(stmt,0) : 0;
+        //data["patientId"] = sqlite3_column_int(stmt,1);
+        data["patientId"] = sqlite3_column_type(stmt,1) != SQLITE_NULL ? sqlite3_column_int(stmt,1) : 0;
         // -------- VITALS --------
-        data["temperature"] = sqlite3_column_type(stmt,0) != SQLITE_NULL ? sqlite3_column_double(stmt,0) : 0;
-        data["spo2"]        = sqlite3_column_type(stmt,1) != SQLITE_NULL ? sqlite3_column_int(stmt,1) : 0;
-        data["pulse"]       = sqlite3_column_type(stmt,2) != SQLITE_NULL ? sqlite3_column_int(stmt,2) : 0;
-        data["systolic"]    = sqlite3_column_type(stmt,3) != SQLITE_NULL ? sqlite3_column_int(stmt,3) : 0;
-        data["diastolic"]   = sqlite3_column_type(stmt,4) != SQLITE_NULL ? sqlite3_column_int(stmt,4) : 0;
-        data["height"]      = sqlite3_column_type(stmt,5) != SQLITE_NULL ? sqlite3_column_int(stmt,5) : 0;
-        data["weight"]      = sqlite3_column_type(stmt,6) != SQLITE_NULL ? sqlite3_column_double(stmt,6) : 0;
+        data["temperature"] = sqlite3_column_type(stmt,2) != SQLITE_NULL ? sqlite3_column_double(stmt,2) : 0;
+        data["spo2"]        = sqlite3_column_type(stmt,3) != SQLITE_NULL ? sqlite3_column_int(stmt,3) : 0;
+        data["pulse"]       = sqlite3_column_type(stmt,4) != SQLITE_NULL ? sqlite3_column_int(stmt,4) : 0;
+        data["systolic"]    = sqlite3_column_type(stmt,5) != SQLITE_NULL ? sqlite3_column_int(stmt,5) : 0;
+        data["diastolic"]   = sqlite3_column_type(stmt,6) != SQLITE_NULL ? sqlite3_column_int(stmt,6) : 0;
+        data["height"]      = sqlite3_column_type(stmt,7) != SQLITE_NULL ? sqlite3_column_int(stmt,7) : 0;
+        data["weight"]      = sqlite3_column_type(stmt,8) != SQLITE_NULL ? sqlite3_column_double(stmt,8) : 0;
 
         // -------- PATIENT --------
-        data["name"]   = sqlite3_column_text(stmt,7) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,7))) : "";
-        data["age"]    = sqlite3_column_type(stmt,8) != SQLITE_NULL ? sqlite3_column_int(stmt,8) : 0;
-        data["mobile"] = sqlite3_column_text(stmt,9) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,9))) : "";
-        data["gender"] = sqlite3_column_text(stmt,10)? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,10))) : "";
+        data["name"]   = sqlite3_column_text(stmt,9) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,9))) : "";
+        data["age"]    = sqlite3_column_type(stmt,10) != SQLITE_NULL ? sqlite3_column_int(stmt,10) : 0;
+        data["mobile"] = sqlite3_column_text(stmt,11) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,11))) : "";
+        data["gender"] = sqlite3_column_text(stmt,12)? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,12))) : "";
     }
 
     sqlite3_finalize(stmt);
+    
     return data;
+}
+bool VitalsRepository::createEmptyVitals(int sessionId)
+{
+    sqlite3* db = DatabaseManager::instance().connection();
+
+    const char* sql =
+        "INSERT INTO vitals (session_id) VALUES (?);";
+
+    sqlite3_stmt* stmt = nullptr;
+
+    sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    sqlite3_bind_int(stmt, 1, sessionId);
+
+    bool ok = sqlite3_step(stmt) == SQLITE_DONE;
+
+    sqlite3_finalize(stmt);
+
+    return ok;
 }
 /*
 QVariantMap VitalsRepository::getLatestVitals(int sessionId)
@@ -268,21 +312,37 @@ QVariantMap VitalsRepository::getLatestVitals(int sessionId)
     return data;
 }
 */
-bool VitalsRepository::createEmptyVitals(int sessionId)
+/*
+QVariantMap VitalsRepository::getVitalsForSession(int sessionId)
 {
+QVariantMap data;
+
     sqlite3* db = DatabaseManager::instance().connection();
-
-    const char* sql =
-        "INSERT INTO vitals (session_id) VALUES (?);";
-
     sqlite3_stmt* stmt = nullptr;
 
-    sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    const char* sql =
+        "SELECT temperature, spo2, pulse, "
+        "systolic, diastolic, height, weight "
+        "FROM vitals WHERE session_id=?;";
+
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK)
+        return data;
+
     sqlite3_bind_int(stmt, 1, sessionId);
 
-    bool ok = sqlite3_step(stmt) == SQLITE_DONE;
+    if (sqlite3_step(stmt) == SQLITE_ROW)
+    {
+        data["temperature"] = sqlite3_column_double(stmt, 0);
+        data["spo2"]        = sqlite3_column_int(stmt, 1);
+        data["pulse"]       = sqlite3_column_int(stmt, 2);
+        data["sys"]         = sqlite3_column_int(stmt, 3);
+        data["dia"]         = sqlite3_column_int(stmt, 4);
+        data["height"]      = sqlite3_column_int(stmt, 5);
+        data["weight"]      = sqlite3_column_double(stmt, 6);
+    }
 
     sqlite3_finalize(stmt);
 
-    return ok;
+    return data;
 }
+*/

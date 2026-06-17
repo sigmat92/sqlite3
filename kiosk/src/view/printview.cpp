@@ -111,13 +111,23 @@ PrintView::PrintView(QWidget *parent)
         this, &PrintView::exitRequested);
 
     connect(printBtnThermal, &QPushButton::clicked, this, [this]() {
-        emit startThermalPrintingRequested();
+        //emit startThermalPrintingRequested();
+        emit startThermalPrintingRequested(m_sessionId);
     });
 
-    connect(printBtnNetwork, &QPushButton::clicked, this, [this]() {
-        //qDebug () << "Network print button clicked in print view";
-        emit startNetworkPrintingRequested();
-    });
+
+    connect(printBtnNetwork,
+        &QPushButton::clicked,
+        this,
+        [this]()
+        {
+            emit startNetworkPrintingRequested(m_sessionId);
+            //emit startNetworkPrintingRequested();
+        });
+    //connect(printBtnNetwork, &QPushButton::clicked, this, [this]() {
+    //    //qDebug () << "Network print button clicked in print view";
+    //    emit startNetworkPrintingRequested();
+    //});
 
 }
 
@@ -148,13 +158,20 @@ void PrintView::setData(const QVariantMap& d)
     /* -------- Patient Info -------- */
 
     
-    int sessionId = getInt("sessionId");
-    int patientId = getInt("patientId");
+    //int sessionId = getInt("sessionId");
+    //int patientId = getInt("patientId");
     QString name   = getStr("name");
     QString mobile = getStr("mobile");
     QString gender = getStr("gender");
     int age        = getInt("age");
-    //qDebug() << "printing in print view, sessionId:" << sessionId;
+
+    m_sessionId = getInt("sessionId");
+    m_patientId = getInt("patientId");
+
+    qDebug()
+        << "PrintView loaded session:"
+        << m_sessionId;
+    
     patientInfoLabel->setText(
         QString("Name: %1\tAge: %2\tMobile: %3\tGender: %4")
             .arg(name)
@@ -206,3 +223,19 @@ void PrintView::setData(const QVariantMap& d)
         bmiLabel->setText("--");
     }
 }
+
+void PrintView::setSessionId(int id)
+{
+    m_sessionId = id;
+}
+
+int PrintView::sessionId() const
+{
+    return m_sessionId;
+}
+
+int PrintView::patientId() const
+{
+    return m_patientId;
+}
+

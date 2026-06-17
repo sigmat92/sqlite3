@@ -44,18 +44,20 @@ static constexpr auto qt_meta_stringdata_CLASSPrinterControllerENDCLASS = QtMocH
     "printError",
     "error",
     "onThermalPrintRequested",
+    "sessionId",
     "onNetworkPrintRequested"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSPrinterControllerENDCLASS_t {
-    uint offsetsAndSizes[14];
+    uint offsetsAndSizes[16];
     char stringdata0[18];
     char stringdata1[15];
     char stringdata2[1];
     char stringdata3[11];
     char stringdata4[6];
     char stringdata5[24];
-    char stringdata6[24];
+    char stringdata6[10];
+    char stringdata7[24];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSPrinterControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -67,7 +69,8 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPrinterControllerENDCLASS_t qt_
         QT_MOC_LITERAL(34, 10),  // "printError"
         QT_MOC_LITERAL(45, 5),  // "error"
         QT_MOC_LITERAL(51, 23),  // "onThermalPrintRequested"
-        QT_MOC_LITERAL(75, 23)   // "onNetworkPrintRequested"
+        QT_MOC_LITERAL(75, 9),  // "sessionId"
+        QT_MOC_LITERAL(85, 23)   // "onNetworkPrintRequested"
     },
     "PrinterController",
     "printCompleted",
@@ -75,6 +78,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPrinterControllerENDCLASS_t qt_
     "printError",
     "error",
     "onThermalPrintRequested",
+    "sessionId",
     "onNetworkPrintRequested"
 };
 #undef QT_MOC_LITERAL
@@ -99,16 +103,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPrinterControllerENDCLASS[] = {
        3,    1,   39,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   42,    2, 0x0a,    4 /* Public */,
-       6,    0,   43,    2, 0x0a,    5 /* Public */,
+       5,    1,   42,    2, 0x0a,    4 /* Public */,
+       7,    1,   45,    2, 0x0a,    6 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    4,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
 
        0        // eod
 };
@@ -129,8 +133,10 @@ Q_CONSTINIT const QMetaObject PrinterController::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'onThermalPrintRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onNetworkPrintRequested'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -143,8 +149,8 @@ void PrinterController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->printCompleted(); break;
         case 1: _t->printError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->onThermalPrintRequested(); break;
-        case 3: _t->onNetworkPrintRequested(); break;
+        case 2: _t->onThermalPrintRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 3: _t->onNetworkPrintRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

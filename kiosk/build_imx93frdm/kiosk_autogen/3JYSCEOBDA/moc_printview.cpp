@@ -40,6 +40,7 @@ constexpr auto qt_meta_stringdata_CLASSPrintViewENDCLASS = QtMocHelpers::stringD
     "backRequested",
     "",
     "startThermalPrintingRequested",
+    "sessionId",
     "startNetworkPrintingRequested",
     "exitRequested"
 );
@@ -63,14 +64,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPrintViewENDCLASS[] = {
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
        1,    0,   38,    2, 0x06,    1 /* Public */,
-       3,    0,   39,    2, 0x06,    2 /* Public */,
-       4,    0,   40,    2, 0x06,    3 /* Public */,
-       5,    0,   41,    2, 0x06,    4 /* Public */,
+       3,    1,   39,    2, 0x06,    2 /* Public */,
+       5,    1,   42,    2, 0x06,    4 /* Public */,
+       6,    0,   45,    2, 0x06,    6 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    4,
+    QMetaType::Void, QMetaType::Int,    4,
     QMetaType::Void,
 
        0        // eod
@@ -89,8 +90,10 @@ Q_CONSTINIT const QMetaObject PrintView::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'startThermalPrintingRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'startNetworkPrintingRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'exitRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -104,8 +107,8 @@ void PrintView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         (void)_t;
         switch (_id) {
         case 0: _t->backRequested(); break;
-        case 1: _t->startThermalPrintingRequested(); break;
-        case 2: _t->startNetworkPrintingRequested(); break;
+        case 1: _t->startThermalPrintingRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->startNetworkPrintingRequested((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 3: _t->exitRequested(); break;
         default: ;
         }
@@ -119,14 +122,14 @@ void PrintView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             }
         }
         {
-            using _t = void (PrintView::*)();
+            using _t = void (PrintView::*)(int );
             if (_t _q_method = &PrintView::startThermalPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (PrintView::*)();
+            using _t = void (PrintView::*)(int );
             if (_t _q_method = &PrintView::startNetworkPrintingRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
                 return;
@@ -140,7 +143,6 @@ void PrintView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
             }
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *PrintView::metaObject() const
@@ -180,15 +182,17 @@ void PrintView::backRequested()
 }
 
 // SIGNAL 1
-void PrintView::startThermalPrintingRequested()
+void PrintView::startThermalPrintingRequested(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void PrintView::startNetworkPrintingRequested()
+void PrintView::startNetworkPrintingRequested(int _t1)
 {
-    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3

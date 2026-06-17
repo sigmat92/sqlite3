@@ -14,13 +14,20 @@ public:
 
     void setData(const QVariantMap& data);
 
+    void setSessionId(int id);
+    int sessionId() const;
+    int patientId() const;
+
 signals:
     void backRequested();
-    void startThermalPrintingRequested();
-    void startNetworkPrintingRequested();
+    void startThermalPrintingRequested(int sessionId);
+    void startNetworkPrintingRequested(int sessionId);
     void exitRequested();   
 
 private:
+
+    int m_sessionId = -1;
+    int m_patientId = -1;
 
     QLabel* statusLabel;
 
