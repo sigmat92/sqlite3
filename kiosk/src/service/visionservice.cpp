@@ -1,99 +1,196 @@
 #include "visionservice.h"
+#include <QDebug>
+/* ==========================================================
+ * Constructor
+ * ==========================================================*/
 
-VisionService::VisionService(QObject* parent)
+VisionService::VisionService(QObject *parent)
     : QObject(parent)
 {
-    // Simulated near vision levels (big → small)
-    levels = {
-        "C S",
-        "D E F",
-        "P T O",
-        "Z F L",
-        "N H K"
-    };
+    loadNearChart();
 }
+
+/* ==========================================================
+ * Mode Selection
+ * ==========================================================*/
+
+void VisionService::setNearMode()
+{
+    m_mode = Mode::Near;
+    loadNearChart();
+}
+
+void VisionService::setFarMode()
+{
+    m_mode = Mode::Far;
+    loadFarChart();
+}
+
+/* ==========================================================
+ * Load Near Vision Chart
+ * ==========================================================*/
+
+void VisionService::loadNearChart()
+{
+    m_chart.clear();
+
+    m_chart.append({
+        "E",
+        90,
+        "N18"
+    });
+
+    m_chart.append({
+        "F P",
+        78,
+        "N12"
+    });
+
+    m_chart.append({
+        "D E F",
+        66,
+        "N10"
+    });
+
+    m_chart.append({
+        "P T O",
+        54,
+        "N8"
+    });
+
+    m_chart.append({
+        "N H K",
+        42,
+        "N6"
+    });
+}
+
+/* ==========================================================
+ * Load Far Vision Chart
+ * ==========================================================*/
+
+void VisionService::loadFarChart()
+{
+    m_chart.clear();
+
+    m_chart.append({
+        "E",
+        110,
+        "6/60"
+    });
+
+    m_chart.append({
+        "F P",
+        92,
+        "6/36"
+    });
+
+    m_chart.append({
+        "T O Z",
+        76,
+        "6/24"
+    });
+
+    m_chart.append({
+        "L P E D",
+        62,
+        "6/18"
+    });
+
+    m_chart.append({
+        "P E C F D",
+        50,
+        "6/12"
+    });
+
+    m_chart.append({
+        "E D F C Z P",
+        40,
+        "6/9"
+    });
+
+    m_chart.append({
+        "F E P O D T",
+        32,
+        "6/6"
+    });
+}
+
+/* ==========================================================
+ * Start Test
+ * ==========================================================*/
 
 void VisionService::startTest()
 {
-    currentLevel = 0;
+    m_currentLevel = 0;
 
-    if (!levels.empty())
-        emit nextSymbol(levels[currentLevel]);
+    m_lastSuccessfulResult.clear();
+
+    if (m_chart.isEmpty())
+        return;
+
+    emit nextLevel(
+        m_chart[0].letters,
+        m_chart[0].fontSize);
 }
+
+/* ==========================================================
+ * User Answer
+ * ==========================================================*/
 
 void VisionService::submitAnswer(bool correct)
 {
+    
+    if (m_chart.isEmpty())
+        return;
+
     if (correct)
     {
-        currentLevel++;
+        /*
+         * Store latest successful level
+         */
+        m_lastSuccessfulResult =
+                m_chart[m_currentLevel].result;
 
-        if (currentLevel < levels.size())
+        ++m_currentLevel;
+
+        /*
+         * Finished whole chart
+         */
+        if (m_currentLevel >= m_chart.size())
         {
-            emit nextSymbol(levels[currentLevel]);
+            qDebug() << "[VISION] Test completed:" << m_lastSuccessfulResult;
+            emit testCompleted(
+                    m_lastSuccessfulResult);
+                //qDebug() << "[VISION] Test completed:" << m_lastSuccessfulResult;
+
+            return;
         }
-        else
-        {
-            emit testCompleted("Excellent Vision");
-        }
-    }
-    else
-    {
-        QString result;
 
-        if (currentLevel <= 1)
-            result = "Poor Vision";
-        else if (currentLevel == 2)
-            result = "Average Vision";
-        else
-            result = "Good Vision";
-
-        emit testCompleted(result);
-    }
-}
-/*
-#include "visionservice.h"
-#include <QDebug>
-
-VisionService::VisionService(QObject* parent)
-    : QObject(parent)
-{
-    m_symbols = {"E_UP", "E_DOWN", "E_LEFT", "E_RIGHT"};
-}
-
-void VisionService::startTest()
-{
-    m_index = 0;
-    m_correct = 0;
-
-    emit showSymbol(m_symbols[m_index]);
-}
-
-void VisionService::submitAnswer(const QString& answer)
-{
-    QString symbol = m_symbols[m_index];
-    QString correct = expectedAnswer(symbol);
-
-    if (answer == correct)
-        m_correct++;
-
-    m_index++;
-
-    if (m_index >= m_symbols.size())
-    {
-        QString result = (m_correct >= 3) ? "6/6" : "6/9";
-        emit testFinished(result);
+        emit nextLevel(
+                m_chart[m_currentLevel].letters,
+                m_chart[m_currentLevel].fontSize);
+        //qDebug() << "[VISION] Test completed:" << m_lastSuccessfulResult;    
         return;
     }
 
-    emit showSymbol(m_symbols[m_index]);
-}
+    /*
+     * Failed current level.
+     * Report previous successful level.
+     */
 
-QString VisionService::expectedAnswer(const QString& symbol)
-{
-    if (symbol == "E_UP") return "UP";
-    if (symbol == "E_DOWN") return "DOWN";
-    if (symbol == "E_LEFT") return "LEFT";
-    if (symbol == "E_RIGHT") return "RIGHT";
-    return "";
+    if (m_lastSuccessfulResult.isEmpty())
+    {
+        /*
+         * Couldn't even read first line.
+         */
+        emit testCompleted(
+                "Below "
+                + m_chart.first().result);
+    }
+    else
+    {
+        emit testCompleted(
+                m_lastSuccessfulResult);
+    }
 }
-*/

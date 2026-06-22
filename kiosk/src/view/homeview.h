@@ -33,6 +33,9 @@ public:
     void setBSA(const QString& value);
     void setMeasurementBusy(bool busy, const QString& message);
 
+    void setFarVision(const QString& value);
+    void setNearVision(const QString& value);
+
 public slots:
 
     void setTemperatureBusy(bool busy);
@@ -47,7 +50,7 @@ public slots:
     void setHeightText(const QString &text);
     void setWeightText(const QString &text);
     void setSpo2Text(const QString &text);
-    
+    //void setVisionText(const QString &text);
     void onVitalsUpdated(int spo2,int pulse);
 
 signals:

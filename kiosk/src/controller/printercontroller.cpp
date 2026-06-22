@@ -115,6 +115,8 @@ void PrinterController::onThermalPrintRequested(int sessionId)
             sessionId,
             data);
 
+        qDebug() << "PRINT TEXT:\n" << text;
+
         m_vitalsService->printResults(sessionId, data);
         //bool ok =
         //m_printerService->printReport(text);

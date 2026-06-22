@@ -55,7 +55,12 @@ PrintView::PrintView(QWidget *parent)
     nibpLabel   = new QLabel("--");
     weightLabel = new QLabel("--");
     heightLabel = new QLabel("--");
+    farVisionLabel = new QLabel("--");
+    nearVisionLabel = new QLabel("--");
     bmiLabel    = new QLabel("--");
+    bmiAnalysisLabel = new QLabel("--");
+    bmrLabel = new QLabel("--");
+    bsaLabel = new QLabel("--");
 
     grid->addWidget(new QLabel("Temperature"),0,0);
     grid->addWidget(tempLabel,0,1);
@@ -80,6 +85,26 @@ PrintView::PrintView(QWidget *parent)
     grid->addWidget(new QLabel("BMI"),5,0);
     grid->addWidget(bmiLabel,5,1);
     grid->setRowStretch(5, 1);
+
+    grid->addWidget(new QLabel("BMI Analysis"),6,0);
+    grid->addWidget(bmiAnalysisLabel,6,1);
+    grid->setRowStretch(6, 1);
+
+    grid->addWidget(new QLabel("BMR"),7,0);
+    grid->addWidget(bmrLabel,7,1);
+    grid->setRowStretch(7, 1);
+
+    grid->addWidget(new QLabel("BSA"),8,0);
+    grid->addWidget(bsaLabel,8,1);
+    grid->setRowStretch(8, 1);
+
+    grid->addWidget(new QLabel("Far Vision"),9,0);
+    grid->addWidget(farVisionLabel,9,1);
+    grid->setRowStretch(9, 1);
+
+    grid->addWidget(new QLabel("Near Vision"),10,0);
+    grid->addWidget(nearVisionLabel,10,1);
+    grid->setRowStretch(10, 1);
 
     layout->addWidget(vitalsPanel);
 
@@ -189,9 +214,10 @@ void PrintView::setData(const QVariantMap& d)
     int systolic     = getInt("systolic");
     int diastolic     = getInt("diastolic");
     double weight = getDouble("weight");
-    //double height = getDouble("height");
     int height = getInt("height");
-    
+    QString farVision = getStr("farVision");
+    QString nearVision = getStr("nearVision");
+
     tempLabel->setText(temp > 0 ? QString::number(temp) + " F" : "-- F");
     //tempLabel->setText(QString::number(temp) + " F" );
     spo2Label->setText(
@@ -208,6 +234,9 @@ void PrintView::setData(const QVariantMap& d)
 
     weightLabel->setText(weight > 0 ? QString::number(weight) + " kg" : "-- kg");
     heightLabel->setText(height > 0 ? QString::number(height) + " cm" : "-- cm");
+
+        farVisionLabel->setText(!farVision.isEmpty() ? farVision : "--");
+        nearVisionLabel->setText(!nearVision.isEmpty() ? nearVision : "--");
 
     /* -------- BMI -------- */
 

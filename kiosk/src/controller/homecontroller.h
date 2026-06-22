@@ -47,6 +47,13 @@ private slots:
     
     void onNIBPPressureChanged(int pressure);
     
+    void onVisionChanged(
+        const QString& near,
+        const QString& far);
+
+    void onVisionFinal(
+        const QString& near,
+        const QString& far);
     //void onNibpPressure(int pressure);
 private:
     VisionTestView* m_visionView = nullptr;

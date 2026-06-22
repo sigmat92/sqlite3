@@ -39,5 +39,11 @@ private:
     QLabel* weightLabel;
     QLabel* heightLabel;
     QLabel* bmiLabel;
+    QLabel* bmiAnalysisLabel;
+    QLabel* bmrLabel;
+    QLabel* bsaLabel;
     QLabel* vitalsLabel;
+    QLabel* farVisionLabel;
+    QLabel* nearVisionLabel;
+    
 };

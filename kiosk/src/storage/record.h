@@ -17,6 +17,8 @@ struct Record
     int pulse;
     double weight;
     int height;
+    QString farVision;
+    QString nearVision;
     int sys;
     int dia;
 };

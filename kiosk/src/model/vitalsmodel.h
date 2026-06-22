@@ -20,6 +20,9 @@ public:
     QString patientId() const;
     QString timestamp() const;
 
+    QString farVision() const;
+    QString nearVision() const;
+
 public slots:
     void setTemperature(double value, char unit);
     void setSpO2(int spo2, int pulse);
@@ -27,7 +30,10 @@ public slots:
     void setHeight(int height);
     void setNIBP(int sys, int dia, int map);
     void setNibpPressure(int pressure);
-    
+
+    void setNearVision(QString result);
+    void setFarVision(QString result);
+        
 signals:
     void temperatureChanged(double value, char unit);
     void spo2Changed(int spo2, int pulse);
@@ -36,6 +42,14 @@ signals:
     void nibpChanged(int sys, int dia, int map);
     
     void nibpPressureChanged(int pressure);
+
+    void visionChanged(
+            const QString& near,
+            const QString& far);
+
+    void visionFinal(
+            const QString& near,
+            const QString& far);
     
     //void setNibpPressure(int pressure);
 
@@ -62,7 +76,8 @@ private:
     QString m_patientId;
     QString m_timestamp;
 
-    //int m_systolic{0};
-    //int m_diastolic{0};
+    QString m_farVision{"--"};
+    QString m_nearVision{"--"};
+
 };
 

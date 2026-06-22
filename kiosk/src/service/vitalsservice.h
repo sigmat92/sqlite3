@@ -37,7 +37,8 @@ public:
         Weight,
         Height
     };
-
+    QVariantMap calculateDerivedVitals(
+        const QVariantMap &data);
 
 signals:
 
@@ -56,7 +57,24 @@ signals:
     
     void measurementFinished(State s);
     void nibpPressure(int pressure);
+/*
+    QString calculateBMI(
+            double weight,
+            int height) const;
 
+    QString calculateBMIAnalysis(
+            double bmi) const;
+
+    QString calculateBMR(
+            double weight,
+            int height,
+            int age,
+            const QString &gender) const;
+
+    QString calculateBSA(
+            double weight,
+            int height) const;
+*/
 public slots:
     void onTemperature(double, char);
     void onSpo2(int, int);

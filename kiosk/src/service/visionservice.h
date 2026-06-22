@@ -1,50 +1,86 @@
-#pragma once
+#ifndef VISIONSERVICE_H
+#define VISIONSERVICE_H
+
 #include <QObject>
-#include <vector>
+#include <QString>
+#include <QVector>
+
+/*
+ * Vision Test Service
+ *
+ * Handles:
+ *  - Near vision
+ *  - Far vision
+ *  - Test progression
+ *  - Font scaling
+ *  - Final result
+ *
+ * No UI code.
+ */
 
 class VisionService : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit VisionService(QObject* parent = nullptr);
+
+    explicit VisionService(QObject *parent = nullptr);
+
+    enum class Mode
+    {
+        Near,
+        Far
+    };
+
+    struct VisionLevel
+    {
+        QString letters;
+
+        int fontSize;
+
+        QString result;
+    };
+
+public slots:
+
+    void setNearMode();
+
+    void setFarMode();
 
     void startTest();
+
     void submitAnswer(bool correct);
 
 signals:
-    void nextSymbol(QString symbol);
-    void testCompleted(QString result);
+
+    /*
+     * Update screen
+     */
+    void nextLevel(
+            QString letters,
+            int fontSize);
+
+    /*
+     * Final result
+     */
+    void testCompleted(
+            QString result);
 
 private:
-    std::vector<QString> levels;
-    int currentLevel = 0;
-};
-/*
-#pragma once
-#include <QObject>
-#include <QStringList>
 
-class VisionService : public QObject
-{
-    Q_OBJECT
+    void loadNearChart();
 
-public:
-    explicit VisionService(QObject* parent = nullptr);
-
-    void startTest();
-    void submitAnswer(const QString& answer);
-
-signals:
-    void showSymbol(QString symbol);
-    void testFinished(QString result);
+    void loadFarChart();
 
 private:
-    QStringList m_symbols;
-    int m_index = 0;
-    int m_correct = 0;
 
-    QString expectedAnswer(const QString& symbol);
+    QVector<VisionLevel> m_chart;
+
+    int m_currentLevel = 0;
+
+    Mode m_mode = Mode::Near;
+
+    QString m_lastSuccessfulResult;
 };
-*/
 
+#endif

@@ -64,7 +64,9 @@ std::vector<Record> getAllSessions()
             v.systolic, 
             v.diastolic, 
             v.height, 
-            v.weight
+            v.weight,
+            v.far_vision,
+            v.near_vision
         FROM sessions s
         JOIN patients p ON s.patient_id = p.id
         JOIN vitals v ON v.session_id = s.id   
@@ -94,6 +96,8 @@ std::vector<Record> getAllSessions()
         r.sys = sqlite3_column_int(stmt, 11);
         r.dia = sqlite3_column_int(stmt, 12);
         r.height = sqlite3_column_int(stmt, 13);
+        r.farVision = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 15)));
+        r.nearVision = QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 16)));
 
         records.push_back(r);
     }
@@ -209,6 +213,7 @@ int main(int argc, char *argv[])
     new VisionTestController(
         visionView,
         visionService,
+        vitalsModel,
         &app
     );
 
@@ -397,6 +402,7 @@ int main(int argc, char *argv[])
     QObject::connect(vitalsService, &VitalsService::sendRaw,
                     uart, &UartDevice::write,
                     Qt::UniqueConnection);
+    //vision test
     
 
     //PRINT CONTROLLER

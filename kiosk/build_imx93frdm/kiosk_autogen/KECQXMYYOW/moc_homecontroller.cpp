@@ -59,7 +59,11 @@ constexpr auto qt_meta_stringdata_CLASSHomeControllerENDCLASS = QtMocHelpers::st
     "onHeightFinal",
     "onNIBPFinal",
     "onNIBPPressureChanged",
-    "pressure"
+    "pressure",
+    "onVisionChanged",
+    "near",
+    "far",
+    "onVisionFinal"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -72,7 +76,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -80,19 +84,21 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   92,    2, 0x0a,    1 /* Public */,
-       5,    2,   97,    2, 0x0a,    4 /* Public */,
-       8,    2,  102,    2, 0x0a,    7 /* Public */,
-      11,    1,  107,    2, 0x0a,   10 /* Public */,
-      13,    1,  110,    2, 0x0a,   12 /* Public */,
-      15,    0,  113,    2, 0x0a,   14 /* Public */,
-      16,    0,  114,    2, 0x0a,   15 /* Public */,
-      17,    2,  115,    2, 0x08,   16 /* Private */,
-      18,    1,  120,    2, 0x08,   19 /* Private */,
-      20,    1,  123,    2, 0x08,   21 /* Private */,
-      21,    1,  126,    2, 0x08,   23 /* Private */,
-      22,    2,  129,    2, 0x08,   25 /* Private */,
-      23,    1,  134,    2, 0x08,   28 /* Private */,
+       1,    2,  104,    2, 0x0a,    1 /* Public */,
+       5,    2,  109,    2, 0x0a,    4 /* Public */,
+       8,    2,  114,    2, 0x0a,    7 /* Public */,
+      11,    1,  119,    2, 0x0a,   10 /* Public */,
+      13,    1,  122,    2, 0x0a,   12 /* Public */,
+      15,    0,  125,    2, 0x0a,   14 /* Public */,
+      16,    0,  126,    2, 0x0a,   15 /* Public */,
+      17,    2,  127,    2, 0x08,   16 /* Private */,
+      18,    1,  132,    2, 0x08,   19 /* Private */,
+      20,    1,  135,    2, 0x08,   21 /* Private */,
+      21,    1,  138,    2, 0x08,   23 /* Private */,
+      22,    2,  141,    2, 0x08,   25 /* Private */,
+      23,    1,  146,    2, 0x08,   28 /* Private */,
+      25,    2,  149,    2, 0x08,   30 /* Private */,
+      28,    2,  154,    2, 0x08,   33 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Double, QMetaType::Char,    3,    4,
@@ -108,6 +114,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHomeControllerENDCLASS[] = {
     QMetaType::Void, QMetaType::Int,   12,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,    9,   10,
     QMetaType::Void, QMetaType::Int,   24,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,   26,   27,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,   26,   27,
 
        0        // eod
 };
@@ -162,7 +170,15 @@ Q_CONSTINIT const QMetaObject HomeController::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'onNIBPPressureChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'onVisionChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'onVisionFinal'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
@@ -186,6 +202,8 @@ void HomeController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 10: _t->onHeightFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 11: _t->onNIBPFinal((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 12: _t->onNIBPPressureChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 13: _t->onVisionChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 14: _t->onVisionFinal((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
@@ -210,13 +228,13 @@ int HomeController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 15)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 15;
     }
     return _id;
 }

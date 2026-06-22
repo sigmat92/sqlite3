@@ -483,8 +483,10 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/settingscontroller.h \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
- /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/sqlite3/kiosk/src/storage/databasemanager.h \
@@ -502,8 +504,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \

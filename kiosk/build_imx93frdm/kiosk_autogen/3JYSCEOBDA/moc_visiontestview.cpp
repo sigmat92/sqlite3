@@ -41,11 +41,16 @@ constexpr auto qt_meta_stringdata_CLASSVisionTestViewENDCLASS = QtMocHelpers::st
     "",
     "answerSelected",
     "answer",
+    "nearModeSelected",
+    "farModeSelected",
     "exitRequested",
-    "displaySymbol",
-    "symbol",
+    "displayLevel",
+    "letters",
+    "fontSize",
     "showResult",
-    "result"
+    "result",
+    "onNearClicked",
+    "onFarClicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -58,30 +63,38 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSVisionTestViewENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       3,       // signalCount
+       5,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x06,    1 /* Public */,
-       3,    1,   45,    2, 0x06,    2 /* Public */,
-       5,    0,   48,    2, 0x06,    4 /* Public */,
+       1,    0,   68,    2, 0x06,    1 /* Public */,
+       3,    1,   69,    2, 0x06,    2 /* Public */,
+       5,    0,   72,    2, 0x06,    4 /* Public */,
+       6,    0,   73,    2, 0x06,    5 /* Public */,
+       7,    0,   74,    2, 0x06,    6 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       6,    1,   49,    2, 0x0a,    5 /* Public */,
-       8,    1,   52,    2, 0x0a,    7 /* Public */,
+       8,    2,   75,    2, 0x0a,    7 /* Public */,
+      11,    1,   80,    2, 0x0a,   10 /* Public */,
+      13,    0,   83,    2, 0x08,   12 /* Private */,
+      14,    0,   84,    2, 0x08,   13 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    4,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    7,
-    QMetaType::Void, QMetaType::QString,    9,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int,    9,   10,
+    QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -100,14 +113,23 @@ Q_CONSTINIT const QMetaObject VisionTestView::staticMetaObject = { {
         // method 'answerSelected'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'nearModeSelected'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'farModeSelected'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'exitRequested'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'displaySymbol'
+        // method 'displayLevel'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'showResult'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'onNearClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onFarClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -120,9 +142,13 @@ void VisionTestView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->startRequested(); break;
         case 1: _t->answerSelected((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 2: _t->exitRequested(); break;
-        case 3: _t->displaySymbol((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 4: _t->showResult((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->nearModeSelected(); break;
+        case 3: _t->farModeSelected(); break;
+        case 4: _t->exitRequested(); break;
+        case 5: _t->displayLevel((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 6: _t->showResult((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 7: _t->onNearClicked(); break;
+        case 8: _t->onFarClicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -143,8 +169,22 @@ void VisionTestView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         }
         {
             using _t = void (VisionTestView::*)();
-            if (_t _q_method = &VisionTestView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &VisionTestView::nearModeSelected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 2;
+                return;
+            }
+        }
+        {
+            using _t = void (VisionTestView::*)();
+            if (_t _q_method = &VisionTestView::farModeSelected; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 3;
+                return;
+            }
+        }
+        {
+            using _t = void (VisionTestView::*)();
+            if (_t _q_method = &VisionTestView::exitRequested; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 4;
                 return;
             }
         }
@@ -170,13 +210,13 @@ int VisionTestView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 9;
     }
     return _id;
 }
@@ -195,8 +235,20 @@ void VisionTestView::answerSelected(QString _t1)
 }
 
 // SIGNAL 2
-void VisionTestView::exitRequested()
+void VisionTestView::nearModeSelected()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void VisionTestView::farModeSelected()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
+void VisionTestView::exitRequested()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
 }
 QT_WARNING_POP

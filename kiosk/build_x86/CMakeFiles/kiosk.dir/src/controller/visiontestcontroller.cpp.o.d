@@ -423,4 +423,11 @@ CMakeFiles/kiosk.dir/src/controller/visiontestcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
- /home/prakash/sqlite3/kiosk/src/service/visionservice.h
+ /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

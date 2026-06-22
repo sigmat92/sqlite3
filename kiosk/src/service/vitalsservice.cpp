@@ -3,6 +3,7 @@
 #include <QElapsedTimer>
 #include "storage/vitalsrepository.h" 
 #include <QDateTime>  
+#include <cmath>
 #include <QDebug>
 
 VitalsService::VitalsService(QObject* parent)
@@ -528,124 +529,17 @@ QString VitalsService::buildPrintText(
              ? "--"
              : nearVision);
 
-    text += "\n\n";
+    text += "\n";
+    text += "*** Thank You ***\n";
+    text += "Please Visit Us Again\n";
+    text += "\n";
 
     qDebug() << "[VS] Built print text:\n"
              << text;
 
     return text;
 }
-/*
-QString VitalsService::buildPrintText(int sessionId, const QVariantMap& d)
-{
-    auto getD = [&](const QString& k){ return d.value(k, 0).toDouble(); };
-    auto getI = [&](const QString& k){ return d.value(k, 0).toInt(); };
-    auto getS = [&](const QString& k){ return d.value(k, "").toString(); };
 
-    QString name   = getS("name");
-    QString mobile = getS("mobile");
-    QString gender = getS("gender");
-    int age        = getI("age");
-
-    double temp   = getD("temperature");
-    double weight = getD("weight");
-    int height    = getI("height");
-    int spo2      = getI("spo2");
-    int pulse     = getI("pulse");
-
-    int sys = getI("systolic");
-    int dia = getI("diastolic");
-
-    QString farVision  = getS("farVision");
-    QString nearVision = getS("nearVision");
-
-    // ---------- DERIVED ----------
-    double bmi = 0, bmr = 0, bsa = 0;
-
-    if (height > 0 && weight > 0)
-    {
-        double h = height / 100.0;
-        bmi = weight / (h * h);
-
-        if (gender == "Male")
-            bmr = 10*weight + 6.25*height - 5*age + 5;
-        else
-            bmr = 10*weight + 6.25*height - 5*age - 161;
-
-        bsa = sqrt((height * weight) / 3600.0);
-    }
-
-    QString bmiAnalysis = "--";
-    if (bmi > 0)
-    {
-        if (bmi < 18.5) bmiAnalysis = "Underweight";
-        else if (bmi < 25) bmiAnalysis = "Normal";
-        else if (bmi < 30) bmiAnalysis = "Overweight";
-        else bmiAnalysis = "Obese";
-    }
-
-    QString text;
-
-    text += "      CareNest Health Kiosk\n";
-    text += "--------------------------------\n";
-
-    text += QString("Session    : %1\n").arg(sessionId);
-    text += QString("Date       : %1\n")
-            .arg(QDateTime::currentDateTime().toString("dd-MM-yyyy hh:mm"));
-
-    text += "--------------------------------\n";
-
-    text += QString("Name       : %1\n").arg(name.isEmpty() ? "--" : name);
-    text += QString("Mobile     : %1\n").arg(mobile.isEmpty() ? "--" : mobile);
-    text += QString("Age        : %1 yrs\n").arg(age > 0 ? QString::number(age) : "--");
-    text += QString("Gender     : %1\n").arg(gender.isEmpty() ? "--" : gender);
-
-    text += "--------------------------------\n";
-
-    text += QString("Temperature: %1 F\n")
-            .arg(temp > 0 ? QString::number(temp,'f',1) : "--");
-
-    text += QString("Height     : %1 cm\n")
-            .arg(height > 0 ? QString::number(height) : "--");
-
-    text += QString("Weight     : %1 Kg\n")
-            .arg(weight > 0 ? QString::number(weight,'f',1) : "--");
-
-    text += QString("BP         : %1/%2 mmHg\n")
-            .arg(sys > 0 ? QString::number(sys) : "--")
-            .arg(dia > 0 ? QString::number(dia) : "--");
-
-    text += QString("SPO2       : %1 %\n")
-            .arg(spo2 > 0 ? QString::number(spo2) : "--");
-
-    text += QString("PulseRate  : %1\n")
-            .arg(pulse > 0 ? QString::number(pulse) : "--");
-
-    text += "--------------------------------\n";
-
-    text += QString("BMI        : %1 Kg/m2\n")
-            .arg(bmi > 0 ? QString::number(bmi,'f',1) : "--");
-
-    text += QString("BMI Status : %1\n").arg(bmiAnalysis);
-
-    text += QString("BMR        : %1 Kcal\n")
-            .arg(bmr > 0 ? QString::number(bmr,'f',1) : "--");
-
-    text += QString("BSA        : %1 m2\n")
-            .arg(bsa > 0 ? QString::number(bsa,'f',2) : "--");
-
-    text += "--------------------------------\n";
-
-    text += QString("Far Vision : %1\n").arg(farVision.isEmpty() ? "--" : farVision);
-    text += QString("Near Vision: %1\n").arg(nearVision.isEmpty() ? "--" : nearVision);
-
-    text += "--------------------------------\n\n\n";
-
-    qDebug() << "[VS] Built print text:\n" << text;
-
-    return text;
-}
-*/
 void VitalsService::printResults(int sessionId,
                                  const QVariantMap& data)
 {
@@ -658,8 +552,8 @@ void VitalsService::printResults(int sessionId,
 
     // SHORTER RECEIPT
     // avoid giant packets
-    if (text.length() > 220)
-        text = text.left(220);
+    //if (text.length() > 220)
+    //    text = text.left(220);
 
     QByteArray payload = text.toUtf8();
 
@@ -699,4 +593,50 @@ void VitalsService::printResults(int sessionId,
     setIdle();
 }
 
+QVariantMap VitalsService::calculateDerivedVitals(
+        const QVariantMap &data)
+{
+    QVariantMap derivedVitals;
 
+double weight = data["weight"].toDouble();
+int height = data["height"].toInt();
+int age = data["age"].toInt();
+QString gender = data["gender"].toString();
+
+if(weight > 0 && height > 0)
+{
+    double h = height / 100.0;
+
+    double bmi = weight / (h*h);
+
+    derivedVitals["bmi"] = bmi;
+
+    if(bmi < 18.5)
+        derivedVitals["bmiAnalysis"] = "Underweight";
+    else if(bmi < 25)
+        derivedVitals["bmiAnalysis"] = "Normal";
+    else if(bmi < 30)
+        derivedVitals["bmiAnalysis"] = "Overweight";
+    else
+        derivedVitals["bmiAnalysis"] = "Obese";
+}
+
+if(weight > 0 && height > 0 && age > 0)
+{
+    double bmr;
+
+    if(gender == "Male")
+        bmr = 10*weight + 6.25*height - 5*age + 5;
+    else
+        bmr = 10*weight + 6.25*height - 5*age -161;
+
+    derivedVitals["bmr"] = bmr;
+
+    double bsa =
+        sqrt(weight * height / 3600.0);
+
+    derivedVitals["bsa"] = bsa;
+}
+
+return derivedVitals;
+}

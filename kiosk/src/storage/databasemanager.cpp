@@ -77,6 +77,9 @@ bool DatabaseManager::initializeSchema()
 
         temperature REAL,
 
+        far_vision TEXT,
+        near_vision TEXT,
+
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 
         FOREIGN KEY(session_id) REFERENCES sessions(id)
@@ -90,8 +93,8 @@ bool DatabaseManager::initializeSchema()
         basal_metabolic_rate REAL,
         bmi_analysis REAL,
         body_surface_area REAL,
-        far_vision REAL,
-        near_vision REAL
+        far_vision TEXT,
+        near_vision TEXT
         
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 

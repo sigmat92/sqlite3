@@ -11,6 +11,10 @@ public:
     bool saveHeight(int sessionId, int height);
     bool saveNIBP(int sessionId, int systolic, int diastolic);
     bool saveSession(int sessionId);
+    bool saveVision(
+        int sessionId,
+        const QString& farVision,
+        const QString& nearVision);
 
     QVariantMap getLatestVitals(int sessionId);
     //QVariantMap getVitalsForSession(int sessionId);

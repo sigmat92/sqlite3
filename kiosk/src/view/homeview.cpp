@@ -452,3 +452,18 @@ void HomeView::setMeasurementBusy(
         if(weightCard)      weightCard->setEnabled(true);
     }
 }
+
+void HomeView::setFarVision(const QString& value)
+{
+    farVisionLabel->setText(value);
+}
+
+void HomeView::setNearVision(const QString& value)
+{
+    nearVisionLabel->setText(value);
+}
+
+//void HomeView::setVisionText(const QString &text)
+//{
+//    visionCard->setValue(text);
+//}

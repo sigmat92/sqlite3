@@ -419,4 +419,8 @@ CMakeFiles/kiosk.dir/src/view/visiontestview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QFrame \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/QFont \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h

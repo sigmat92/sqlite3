@@ -77,13 +77,22 @@ QWidget#appFooter {
 }
 
 /* ================= REMOVE PANELS ================= */
+/*
 QWidget#patientPanel,
 QWidget#metricsPanel,
 QWidget#resultsPanel {
     background: transparent;
     border: none;
 }
-
+*/
+QWidget#patientPanel,
+QWidget#metricsPanel,
+QWidget#resultsPanel {
+    background-color: #101010;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    padding: 8px;
+}
 /* ================= TEXT ================= */
 QLabel {
     color: #AAAAAA;
@@ -92,10 +101,20 @@ QLabel {
 
 /* ================= STATUS ================= */
 QLabel#statusLabel {
+    background-color: #111111;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    color: #00FF66;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+}
+/*
+QLabel#statusLabel {
     color: #00FF66;
     font-size: 28px;
 }
-
+*/
 /* ================= INPUT ================= */
 QLineEdit {
     background: #000000;
@@ -109,6 +128,24 @@ QRadioButton {
     font-size: 14px;
 }
 /* ================= BUTTON ================= */
+
+QPushButton {
+    background-color: #111111;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+}
+
+QPushButton:hover {
+    background-color: #1A1A1A;
+}
+
+QPushButton:pressed {
+    background-color: #333333;
+}
+/*
 QPushButton {
     background: transparent;
     border: 1px solid #777;
@@ -121,7 +158,21 @@ QPushButton {
 QPushButton:pressed {
     border: 1px solid #FFFFFF;
 }
+QPushButton:disabled {
+    background-color: #050505;
+    color: #555555;
+    border: 1px solid #222222;
+}
 
+QLineEdit:disabled {
+    color: #666666;
+    background-color: #111111;
+}
+
+QRadioButton:disabled {
+    color: #555555;
+}
+*/
 /* ================= ACTION BUTTON ================= */
 QPushButton#newTestBtn {
     border: 1px solid #777;;
@@ -244,6 +295,12 @@ QPushButton {
 QPushButton:hover {
     background-color: #1565c0;
 }
+/*
+    adviceLabel->setStyleSheet(
+            "color:black;"
+            "font-size:24px;"
+        );
+*/
 
 /* ================= METRIC ================= */
 QWidget#metricCard {
@@ -264,6 +321,27 @@ QLabel#metricValue {
     font-weight: bold;
     color: black;
 }
+/* START BUTTON → TOUCH ZONE */
+/*
+QPushButton#farVisionTestBtn,
+QPushButton#nearVisionTestBtn,
+QPushButton#startBtn,
+QPushButton {
+    min-height: 60px;
+    font-size: 20px;
+}
+
+QLabel#adviceLabel {
+    font-size: 22px;
+    font-weight: bold;
+}
+*/
+QLabel#resultLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00FF66;
+}
+/* ================= TABS ================= */
     QTabBar::tab {
             background-color: #0d47a1;;
             padding: 10px 25px;

@@ -145,7 +145,126 @@ bool VitalsRepository::saveNIBP(int sessionId, int systolic, int diastolic)
     sqlite3_finalize(stmt);
     return ok;
 }
+//vision
+bool VitalsRepository::saveVision(
+        int sessionId,
+        const QString& far,
+        const QString& near)
+{
+    sqlite3 *db = DatabaseManager::instance().connection();
 
+    sqlite3_stmt *stmt = nullptr;
+
+    const char *updateSql =
+        "UPDATE vitals "
+        "SET far_vision=?, "
+        "near_vision=? "
+        "WHERE session_id=?;";
+
+    sqlite3_prepare_v2(db, updateSql, -1, &stmt, nullptr);
+
+    sqlite3_bind_text(stmt,1,
+                      far.toUtf8().constData(),
+                      -1,SQLITE_TRANSIENT);
+
+    sqlite3_bind_text(stmt,2,
+                      near.toUtf8().constData(),
+                      -1,SQLITE_TRANSIENT);
+
+    sqlite3_bind_int(stmt,3,sessionId);
+
+    sqlite3_step(stmt);
+    sqlite3_finalize(stmt);
+
+    if(sqlite3_changes(db) > 0)
+    {
+        qDebug() << "Vision updated";
+        return true;
+    }
+
+    qDebug() << "No vitals row found. Creating one...";
+    //Then insert a new row:
+        const char *insertSql =
+        "INSERT INTO vitals("
+        "session_id,"
+        "far_vision,"
+        "near_vision)"
+        "VALUES(?,?,?);";
+
+    sqlite3_prepare_v2(db, insertSql, -1, &stmt, nullptr);
+
+    sqlite3_bind_int(stmt,1,sessionId);
+
+    sqlite3_bind_text(stmt,2,
+                      far.toUtf8().constData(),
+                      -1,SQLITE_TRANSIENT);
+
+    sqlite3_bind_text(stmt,3,
+                      near.toUtf8().constData(),
+                      -1,SQLITE_TRANSIENT);
+
+    bool ok =
+        sqlite3_step(stmt)==SQLITE_DONE;
+
+    sqlite3_finalize(stmt);
+
+    return ok;
+}
+/*
+bool VitalsRepository::saveVision(
+        int sessionId,
+        const QString& far,
+        const QString& near)
+{
+    qDebug()
+    << "[DB SAVE]"
+    << sessionId
+    << near
+    << far;
+    sqlite3 *db = DatabaseManager::instance().connection();
+
+    sqlite3_stmt *stmt = nullptr;
+    
+    const char *sql =
+        "UPDATE vitals "
+        "SET far_vision=?,"
+        "near_vision=? "
+        "WHERE session_id=?;";
+    
+    if(sqlite3_prepare_v2(db,sql,-1,&stmt,nullptr)!=SQLITE_OK)
+        return false;
+
+    //qDebug()
+    //<< "Rows changed ="
+    //<< sqlite3_changes(db);
+    
+    sqlite3_bind_text(stmt,1,
+        far.toUtf8().constData(),-1,
+        SQLITE_TRANSIENT);
+
+    sqlite3_bind_text(stmt,2,
+        near.toUtf8().constData(),-1,
+        SQLITE_TRANSIENT);
+
+    sqlite3_bind_int(stmt,3,sessionId);
+
+    //bool ok =
+    //    sqlite3_step(stmt)==SQLITE_DONE;
+
+    //sqlite3_finalize(stmt);
+
+    
+
+    bool ok =
+    sqlite3_step(stmt) == SQLITE_DONE;
+
+        qDebug() << "step =" << ok;
+        qDebug() << "Rows changed =" << sqlite3_changes(db);
+
+        sqlite3_finalize(stmt);
+        return ok;
+}
+*/
 QVariantMap VitalsRepository::getLatestVitals(int sessionId)
 {
 
@@ -166,6 +285,8 @@ const char* sql =
     "v.diastolic, "
     "v.height, "
     "v.weight, "
+    "v.far_vision, "
+    "v.near_vision, "
     "p.name, "
     "p.age, "
     "p.mobile, "
@@ -204,12 +325,24 @@ const char* sql =
         data["diastolic"]   = sqlite3_column_type(stmt,6) != SQLITE_NULL ? sqlite3_column_int(stmt,6) : 0;
         data["height"]      = sqlite3_column_type(stmt,7) != SQLITE_NULL ? sqlite3_column_int(stmt,7) : 0;
         data["weight"]      = sqlite3_column_type(stmt,8) != SQLITE_NULL ? sqlite3_column_double(stmt,8) : 0;
+        //data["farVision"] = sqlite3_column_type(stmt,9) != SQLITE_NULL ? sqlite3_column_double(stmt,9) : 0;
+        //data["nearVision"] = sqlite3_column_type(stmt,10) != SQLITE_NULL ? sqlite3_column_double(stmt,10) : 0;
+        data["farVision"] =
+        sqlite3_column_text(stmt,9)
+            ? QString(reinterpret_cast<const char*>(
+                sqlite3_column_text(stmt,9)))
+            : "--";
 
+        data["nearVision"] =
+            sqlite3_column_text(stmt,10)
+                ? QString(reinterpret_cast<const char*>(
+                    sqlite3_column_text(stmt,10)))
+                : "--";
         // -------- PATIENT --------
-        data["name"]   = sqlite3_column_text(stmt,9) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,9))) : "";
-        data["age"]    = sqlite3_column_type(stmt,10) != SQLITE_NULL ? sqlite3_column_int(stmt,10) : 0;
-        data["mobile"] = sqlite3_column_text(stmt,11) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,11))) : "";
-        data["gender"] = sqlite3_column_text(stmt,12)? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,12))) : "";
+        data["name"]   = sqlite3_column_text(stmt,11) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,11))) : "";
+        data["age"]    = sqlite3_column_type(stmt,12) != SQLITE_NULL ? sqlite3_column_int(stmt,12) : 0;
+        data["mobile"] = sqlite3_column_text(stmt,13) ? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,13))) : "";
+        data["gender"] = sqlite3_column_text(stmt,14)? QString(reinterpret_cast<const char*>(sqlite3_column_text(stmt,14))) : "";
     }
 
     sqlite3_finalize(stmt);

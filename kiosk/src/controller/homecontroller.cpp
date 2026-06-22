@@ -49,6 +49,16 @@ HomeController::HomeController(HomeView* view,
     connect(m_vitalsModel, &VitalsModel::temperatureChanged,
         this, &HomeController::onTemperatureChanged,Qt::UniqueConnection);
 
+    connect(m_vitalsModel,
+        &VitalsModel::visionChanged,
+        this,
+        &HomeController::onVisionChanged);
+
+    connect(m_vitalsModel,
+            &VitalsModel::visionFinal,
+            this,
+            &HomeController::onVisionFinal);
+
     connect(m_view, &HomeView::resetSessionRequested,
         this, &HomeController::resetSession);
         
@@ -201,6 +211,7 @@ HomeController::HomeController(HomeView* view,
     
     
     // ================= OTHER UI ACTIONS =================
+    
     connect(m_vitalsService,
         &VitalsService::measurementFinished,
         this,
@@ -320,6 +331,44 @@ void HomeController::onNIBPFinal(int sys, int dia)
 
     //qDebug() << "nibp:" << sys << "/" << dia << "saved in controller with sessionId:" << m_vitalsService->sessionId();
 
+}
+
+void HomeController::onVisionChanged(
+    const QString& near,
+    const QString& far)
+{
+    m_view->setNearVision(near);
+    m_view->setFarVision(far);
+}
+
+//void HomeController::onVisionFinal(
+//    const QString& near,
+//    const QString& far)
+//{
+//    m_view->setNearVision(near);
+//    m_view->setFarVision(far);
+//}
+
+void HomeController::onVisionFinal(
+    const QString& near,
+    const QString& far)
+{
+    qDebug() << "[HOME]"
+             << "Near =" << near
+             << "Far =" << far;
+
+    m_view->setNearVision(near);
+    m_view->setFarVision(far);
+
+    int sessionId = m_vitalsService->sessionId();
+
+    if(sessionId <= 0)
+        return;
+
+    m_vitalsRepo->saveVision(
+        sessionId,
+        far,
+        near);
 }
 
 void HomeController::onWeightChanged(double weight)
@@ -491,6 +540,8 @@ void HomeController::resetSession()
     m_view->setBMIAnalysis("--");
     m_view->setBMR("--");
     m_view->setBSA("--");
+    m_view->setNearVision("--");
+    m_view->setFarVision("--");
     //reset vitasls as well
     m_view->setTemperatureText("--");
     m_view->setSpo2Text("--");

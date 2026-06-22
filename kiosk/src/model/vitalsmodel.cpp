@@ -54,7 +54,54 @@ void VitalsModel::setNibpPressure(int pressure)
 //{
 //    emit nibpPressureChanged(pressure);
 //}
+QString VitalsModel::farVision() const
+{
+    return m_farVision;
+}
 
+QString VitalsModel::nearVision() const
+{
+    return m_nearVision;
+}
+void VitalsModel::setNearVision(QString result)
+{
+    qDebug() << "[MODEL] Near Vision =" << result;
+    m_nearVision = result;
+
+    emit visionChanged(
+            m_nearVision,
+            m_farVision);
+
+    emit visionFinal(
+            m_nearVision,
+            m_farVision);
+}
+void VitalsModel::setFarVision(QString result)
+{
+    qDebug() << "[MODEL] Far Vision =" << result;
+    m_farVision = result;
+
+    emit visionChanged(
+            m_nearVision,
+            m_farVision);
+
+    emit visionFinal(
+            m_nearVision,
+            m_farVision);
+}
+/*
+void VitalsModel::setVision(
+        const QString& far,
+        const QString& near)
+{
+    m_farVision = far;
+    m_nearVision = near;
+
+    emit visionChanged(far, near);
+
+    emit visionFinal(far, near);
+}
+*/
 int VitalsModel::height() const { return m_height; }
 double VitalsModel::weight() const { return m_weight; }
 double VitalsModel::temperature() const { return m_temperature; }

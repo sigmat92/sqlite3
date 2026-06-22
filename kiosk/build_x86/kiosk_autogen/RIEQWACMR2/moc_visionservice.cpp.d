@@ -1,6 +1,8 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp: /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qanystringview.h \
@@ -88,6 +90,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypeinfo.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtypes.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
   /usr/include/alloca.h \
