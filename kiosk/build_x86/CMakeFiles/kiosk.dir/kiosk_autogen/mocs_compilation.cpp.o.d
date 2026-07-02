@@ -523,6 +523,10 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_syncservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/syncservice.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_visionservice.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/../../../src/service/visionservice.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/RIEQWACMR2/moc_vitalsservice.cpp \
@@ -561,9 +565,6 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_metriccard.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_printview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/printview.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_recordsview.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/../../../src/view/recordsview.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_settingsview.cpp \

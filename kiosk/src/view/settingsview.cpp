@@ -84,7 +84,7 @@ void SettingsView::setupUi()
     dateLayout->addSpacing(20);
     dateLayout->addWidget(new QPushButton("Set Date"));
     dateLayout->addWidget(new QPushButton("Set Time"));
-    dateLayout->addWidget(new QPushButton("Sync with Server"));
+    //dateLayout->addWidget(new QPushButton("Sync with Server"));
     dateLayout->addStretch();
 
     // -------- Save / Exit from DATE TAB--------
@@ -288,10 +288,10 @@ void SettingsView::setupUi()
     m_exitBtn = new QPushButton("Exit");
     m_exitBtn->setObjectName("exitBtn");
 
-    postBtn = new QPushButton("Post Vitals", this);
-    postBtn->setObjectName("postBtn");
+    //postBtn = new QPushButton("Post Vitals", this);
+    //postBtn->setObjectName("postBtn");
 
-    btnLayout->addWidget(postBtn);
+    //btnLayout->addWidget(postBtn);
     btnLayout->addWidget(m_saveBtn);
     btnLayout->addWidget(m_exitBtn);
         
@@ -301,13 +301,13 @@ void SettingsView::setupUi()
     connect(m_saveBtn,&QPushButton::clicked,this,&SettingsView::saveRequested);
     connect(m_exitBtn,&QPushButton::clicked,this,&SettingsView::exitRequested);
   
-    connect(postBtn, &QPushButton::clicked, this, [this]() {
+    //connect(postBtn, &QPushButton::clicked, this, [this]() {
 
-        qDebug() << "postBtn clicked from settingsview for posting vitals to server:";
-        emit postVitals();
-        qDebug() << "Emitting postVitals signal from settingsview";
+    //    qDebug() << "postBtn clicked from settingsview for posting vitals to server:";
+    //    emit postVitals();
+    //    qDebug() << "Emitting postVitals signal from settingsview";
             
-        });
+    //    });
 
     connect(m_dhcpBtn,&QPushButton::clicked,this,[this](){
         m_dhcpEnabled = !m_dhcpEnabled;

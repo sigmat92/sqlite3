@@ -428,6 +428,8 @@ CMakeFiles/kiosk.dir/src/view/printview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
+ /home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \

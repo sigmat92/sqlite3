@@ -625,6 +625,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.h",
+			"MU",
+			"RIEQWACMR2/moc_healthmetricsservice.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/service/inputservice.h",
 			"MU",
 			"RIEQWACMR2/moc_inputservice.cpp",
@@ -857,6 +863,11 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/controller/inputcontroller.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp",
 			"MU",
 			null
@@ -909,6 +920,11 @@
 		],
 		[
 			"/home/prakash/sqlite3/kiosk/src/service/adminauthservice.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.cpp",
 			"MU",
 			null
 		],

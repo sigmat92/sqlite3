@@ -1,21 +1,26 @@
 #include "inputservice.h"
-
-InputService::InputService(QObject* parent)
+#include <QDebug>
+InputService::InputService(QObject *parent)
     : QObject(parent)
-{}
-
-void InputService::onRotatedLeft()
 {
-    emit focusPrevious();
 }
 
-void InputService::onRotatedRight()
+void InputService::navigateNext()
 {
+    qDebug() << "InputService : NEXT";
     emit focusNext();
 }
 
-void InputService::onPressed()
+void InputService::navigatePrevious()
 {
+    qDebug() << "InputService : PREVIOUS";
+    emit focusPrevious();
+}
+
+void InputService::select()
+{
+    qDebug() << "InputService : SELECT";
     emit activate();
 }
+
 

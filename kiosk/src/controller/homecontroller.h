@@ -83,5 +83,5 @@ private:
     double m_bmr = 0.0;
     double m_bsa = 0.0;
 
-    void updateDerivedMetrics();
+    void updateHealthMetrics();
 };

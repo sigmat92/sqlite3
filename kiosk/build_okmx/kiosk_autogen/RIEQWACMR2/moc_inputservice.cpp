@@ -43,9 +43,9 @@ static constexpr auto qt_meta_stringdata_CLASSInputServiceENDCLASS = QtMocHelper
     "",
     "focusPrevious",
     "activate",
-    "onRotatedLeft",
-    "onRotatedRight",
-    "onPressed"
+    "navigateNext",
+    "navigatePrevious",
+    "select"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSInputServiceENDCLASS_t {
@@ -55,9 +55,9 @@ struct qt_meta_stringdata_CLASSInputServiceENDCLASS_t {
     char stringdata2[1];
     char stringdata3[14];
     char stringdata4[9];
-    char stringdata5[14];
-    char stringdata6[15];
-    char stringdata7[10];
+    char stringdata5[13];
+    char stringdata6[17];
+    char stringdata7[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSInputServiceENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -68,18 +68,18 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSInputServiceENDCLASS_t qt_meta_
         QT_MOC_LITERAL(23, 0),  // ""
         QT_MOC_LITERAL(24, 13),  // "focusPrevious"
         QT_MOC_LITERAL(38, 8),  // "activate"
-        QT_MOC_LITERAL(47, 13),  // "onRotatedLeft"
-        QT_MOC_LITERAL(61, 14),  // "onRotatedRight"
-        QT_MOC_LITERAL(76, 9)   // "onPressed"
+        QT_MOC_LITERAL(47, 12),  // "navigateNext"
+        QT_MOC_LITERAL(60, 16),  // "navigatePrevious"
+        QT_MOC_LITERAL(77, 6)   // "select"
     },
     "InputService",
     "focusNext",
     "",
     "focusPrevious",
     "activate",
-    "onRotatedLeft",
-    "onRotatedRight",
-    "onPressed"
+    "navigateNext",
+    "navigatePrevious",
+    "select"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -136,11 +136,11 @@ Q_CONSTINIT const QMetaObject InputService::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'activate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onRotatedLeft'
+        // method 'navigateNext'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onRotatedRight'
+        // method 'navigatePrevious'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPressed'
+        // method 'select'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -155,9 +155,9 @@ void InputService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 0: _t->focusNext(); break;
         case 1: _t->focusPrevious(); break;
         case 2: _t->activate(); break;
-        case 3: _t->onRotatedLeft(); break;
-        case 4: _t->onRotatedRight(); break;
-        case 5: _t->onPressed(); break;
+        case 3: _t->navigateNext(); break;
+        case 4: _t->navigatePrevious(); break;
+        case 5: _t->select(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

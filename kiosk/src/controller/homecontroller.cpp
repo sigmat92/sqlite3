@@ -1,11 +1,11 @@
 #include "homecontroller.h"
 #include "storage/patientrepository.h"
-#include "../view/homeview.h"
-#include "../service/sessionservice.h"
-#include "../model/vitalsmodel.h"
-#include "../storage/vitalsrepository.h"
+#include "view/homeview.h"
+#include "service/sessionservice.h"
+#include "model/vitalsmodel.h"
+#include "storage/vitalsrepository.h"
 #include "service/settingsservice.h"
-#include <cmath>
+#include "service/healthmetricsservice.h"
 
 #include <QDebug>
 
@@ -28,6 +28,7 @@ HomeController::HomeController(HomeView* view,
     
     m_vitalsService = vitalsService;
     m_vitalsRepo = vitalsRepo;
+    
 
     // ================= FINAL SIGNALS (SAVE TO DB) =================
 
@@ -377,8 +378,7 @@ void HomeController::onWeightChanged(double weight)
     QString text = QString::number(weight, 'f', 1) + " kg";
     m_view->setWeightText(text);
     //m_view->setWeightBusy(false);
-    updateDerivedMetrics();
-    
+    updateHealthMetrics();    
 }
 void HomeController::onHeightChanged(int height)
 {
@@ -386,7 +386,7 @@ void HomeController::onHeightChanged(int height)
     QString text = QString::number(height) + " cm";
     m_view->setHeightText(text);
     //m_view->setHeightBusy(false);
-    updateDerivedMetrics();
+    updateHealthMetrics();
 }
 void HomeController::onNIBPChanged(int sys, int dia)
 {
@@ -559,94 +559,48 @@ void HomeController::visionTestRequested()
     qDebug() << "Vision test requested (stub) with sessionId:" << m_vitalsService->sessionId();
 }
 
-void HomeController::updateDerivedMetrics()
+void HomeController::updateHealthMetrics()
 {
-    if(m_heightCm <= 0)
+    double weight = m_vitalsModel->weight();
+    int height = m_vitalsModel->height();
+
+    if (weight <= 0 || height <= 0)
         return;
 
-    if(m_weightKg <= 0)
-        return;
+    int age = m_view->patientAge().toInt();
 
-    // ==========================
-    // BMI
-    // ==========================
+    QString gender = m_view->patientGender();
 
-    double h =
-        m_heightCm / 100.0;
+    double bmi =
+        HealthMetricsService::calculateBMI(
+            weight,
+            height);
 
-    m_bmi =
-        m_weightKg /
-        (h * h);
+    QString bmiAnalysis =
+        HealthMetricsService::calculateBMIAnalysis(
+            bmi);
 
-    QString bmiCategory;
+    double bmr =
+        HealthMetricsService::calculateBMR(
+            weight,
+            height,
+            age,
+            gender);
 
-    if(m_bmi < 18.5)
-        bmiCategory = "Underweight";
-    else if(m_bmi < 25.0)
-        bmiCategory = "Normal";
-    else if(m_bmi < 30.0)
-        bmiCategory = "Overweight";
-    else
-        bmiCategory = "Obese";
-
-    // ==========================
-    // BMR
-    // ==========================
-
-    int age =
-        m_view->patientAge().toInt();
-
-    QString gender =
-        m_view->patientGender();
-
-    if(gender == "Male")
-    {
-        m_bmr =
-            10.0 * m_weightKg +
-            6.25 * m_heightCm -
-            5.0 * age +
-            5.0;
-    }
-    else
-    {
-        m_bmr =
-            10.0 * m_weightKg +
-            6.25 * m_heightCm -
-            5.0 * age -
-            161.0;
-    }
-
-    // ==========================
-    // BSA
-    // ==========================
-
-    m_bsa =
-        std::sqrt(
-            (m_heightCm * m_weightKg)
-            / 3600.0);
-
-    // ==========================
-    // Update View
-    // ==========================
+    double bsa =
+        HealthMetricsService::calculateBSA(
+            weight,
+            height);
 
     m_view->setBMI(
-        QString::number(
-            m_bmi,
-            'f',
-            2));
+        QString::number(bmi,'f',1));
 
     m_view->setBMIAnalysis(
-        bmiCategory);
+        bmiAnalysis);
 
     m_view->setBMR(
-        QString::number(
-            m_bmr,
-            'f',
-            0));
+        QString::number(bmr,'f',0));
 
     m_view->setBSA(
-        QString::number(
-            m_bsa,
-            'f',
-            2));
+        QString::number(bsa,'f',2));
 }

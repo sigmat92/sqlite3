@@ -40,9 +40,9 @@ constexpr auto qt_meta_stringdata_CLASSInputServiceENDCLASS = QtMocHelpers::stri
     "",
     "focusPrevious",
     "activate",
-    "onRotatedLeft",
-    "onRotatedRight",
-    "onPressed"
+    "navigateNext",
+    "navigatePrevious",
+    "select"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -100,11 +100,11 @@ Q_CONSTINIT const QMetaObject InputService::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'activate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onRotatedLeft'
+        // method 'navigateNext'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onRotatedRight'
+        // method 'navigatePrevious'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPressed'
+        // method 'select'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -119,9 +119,9 @@ void InputService::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 0: _t->focusNext(); break;
         case 1: _t->focusPrevious(); break;
         case 2: _t->activate(); break;
-        case 3: _t->onRotatedLeft(); break;
-        case 4: _t->onRotatedRight(); break;
-        case 5: _t->onPressed(); break;
+        case 3: _t->navigateNext(); break;
+        case 4: _t->navigatePrevious(); break;
+        case 5: _t->select(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

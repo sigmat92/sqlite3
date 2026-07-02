@@ -3,12 +3,14 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QFlags \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QJsonObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QList \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMetaType \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QSharedDataPointer \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QUrl \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariant \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -121,6 +123,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
@@ -143,6 +146,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qtnetworkglobal.h \
   /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
   /home/prakash/sqlite3/kiosk/src/network/restclient.h \
+  /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

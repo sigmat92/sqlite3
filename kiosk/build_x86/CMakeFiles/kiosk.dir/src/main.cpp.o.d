@@ -551,4 +551,21 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/printercontroller.h \
  /home/prakash/sqlite3/kiosk/src/controller/../service/printerservice.h \
  /home/prakash/sqlite3/kiosk/src/controller/../service/../model/printjob.h \
- /home/prakash/sqlite3/kiosk/src/controller/../storage/printerrepository.h
+ /home/prakash/sqlite3/kiosk/src/controller/../storage/printerrepository.h \
+ /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h \
+ /home/prakash/sqlite3/kiosk/src/service/inputservice.h \
+ /home/prakash/sqlite3/kiosk/src/controller/inputcontroller.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QThread \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/stop_token \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/semaphore \
+ /usr/include/c++/11/bits/semaphore_base.h \
+ /usr/include/c++/11/bits/atomic_timed_wait.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/atomic_futex.h

@@ -309,6 +309,30 @@ src/controller/homecontroller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.s
 .PHONY : src/controller/homecontroller.cpp.s
 
+src/controller/inputcontroller.o: src/controller/inputcontroller.cpp.o
+.PHONY : src/controller/inputcontroller.o
+
+# target to build an object file
+src/controller/inputcontroller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/inputcontroller.cpp.o
+.PHONY : src/controller/inputcontroller.cpp.o
+
+src/controller/inputcontroller.i: src/controller/inputcontroller.cpp.i
+.PHONY : src/controller/inputcontroller.i
+
+# target to preprocess a source file
+src/controller/inputcontroller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/inputcontroller.cpp.i
+.PHONY : src/controller/inputcontroller.cpp.i
+
+src/controller/inputcontroller.s: src/controller/inputcontroller.cpp.s
+.PHONY : src/controller/inputcontroller.s
+
+# target to generate assembly for a file
+src/controller/inputcontroller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/controller/inputcontroller.cpp.s
+.PHONY : src/controller/inputcontroller.cpp.s
+
 src/controller/navigationmanager.o: src/controller/navigationmanager.cpp.o
 .PHONY : src/controller/navigationmanager.o
 
@@ -692,6 +716,30 @@ src/service/adminauthservice.s: src/service/adminauthservice.cpp.s
 src/service/adminauthservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/adminauthservice.cpp.s
 .PHONY : src/service/adminauthservice.cpp.s
+
+src/service/healthmetricsservice.o: src/service/healthmetricsservice.cpp.o
+.PHONY : src/service/healthmetricsservice.o
+
+# target to build an object file
+src/service/healthmetricsservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/healthmetricsservice.cpp.o
+.PHONY : src/service/healthmetricsservice.cpp.o
+
+src/service/healthmetricsservice.i: src/service/healthmetricsservice.cpp.i
+.PHONY : src/service/healthmetricsservice.i
+
+# target to preprocess a source file
+src/service/healthmetricsservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/healthmetricsservice.cpp.i
+.PHONY : src/service/healthmetricsservice.cpp.i
+
+src/service/healthmetricsservice.s: src/service/healthmetricsservice.cpp.s
+.PHONY : src/service/healthmetricsservice.s
+
+# target to generate assembly for a file
+src/service/healthmetricsservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/service/healthmetricsservice.cpp.s
+.PHONY : src/service/healthmetricsservice.cpp.s
 
 src/service/inputservice.o: src/service/inputservice.cpp.o
 .PHONY : src/service/inputservice.o
@@ -1225,6 +1273,9 @@ help:
 	@echo "... src/controller/homecontroller.o"
 	@echo "... src/controller/homecontroller.i"
 	@echo "... src/controller/homecontroller.s"
+	@echo "... src/controller/inputcontroller.o"
+	@echo "... src/controller/inputcontroller.i"
+	@echo "... src/controller/inputcontroller.s"
 	@echo "... src/controller/navigationmanager.o"
 	@echo "... src/controller/navigationmanager.i"
 	@echo "... src/controller/navigationmanager.s"
@@ -1273,6 +1324,9 @@ help:
 	@echo "... src/service/adminauthservice.o"
 	@echo "... src/service/adminauthservice.i"
 	@echo "... src/service/adminauthservice.s"
+	@echo "... src/service/healthmetricsservice.o"
+	@echo "... src/service/healthmetricsservice.i"
+	@echo "... src/service/healthmetricsservice.s"
 	@echo "... src/service/inputservice.o"
 	@echo "... src/service/inputservice.i"
 	@echo "... src/service/inputservice.s"

@@ -73,6 +73,8 @@ set(SRC
     src/model/printserviceclient.cpp
     src/model/visionresult.h
     src/model/printjob.h
+    #src/model/pwggenerator.h
+    #src/model/pwggenerator.cpp
 
     # Controllers
     src/controller/cameracontroller.h
@@ -92,7 +94,7 @@ set(SRC
     src/controller/visiontestcontroller.cpp
     src/controller/settingscontroller.h
     src/controller/settingscontroller.cpp
-    #src/controller/inputcontroller.cpp
+    src/controller/inputcontroller.cpp
     src/controller/navigationmanager.h
     src/controller/navigationmanager.cpp
     src/controller/printercontroller.h
@@ -116,10 +118,11 @@ set(SRC
     src/service/visionservice.cpp
     src/service/printerservice.h
     src/service/printerservice.cpp
-    # Sync
     src/service/syncservice.h
     src/service/syncservice.cpp
-    
+    src/service/healthmetricsservice.h
+    src/service/healthmetricsservice.cpp
+ 
     # Platform
     src/platform/v4l2/v4l2camera.h
     src/platform/v4l2/v4l2camera.cpp

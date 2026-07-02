@@ -504,6 +504,11 @@ CMakeFiles/kiosk.dir/src/controller/settingscontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcborcommon.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QApplication \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qapplication.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcoreapplication.h \

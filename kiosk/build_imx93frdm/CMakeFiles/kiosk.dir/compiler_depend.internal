@@ -13,6 +13,7 @@
  /home/prakash/sqlite3/kiosk/src/controller/cameracontroller.h
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.cpp
  /home/prakash/sqlite3/kiosk/src/controller/homecontroller.h
+ /home/prakash/sqlite3/kiosk/src/controller/inputcontroller.cpp
  /home/prakash/sqlite3/kiosk/src/controller/inputcontroller.h
  /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.cpp
  /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h
@@ -48,6 +49,8 @@
  /home/prakash/sqlite3/kiosk/src/platform/v4l2/v4l2camera.h
  /home/prakash/sqlite3/kiosk/src/service/adminauthservice.cpp
  /home/prakash/sqlite3/kiosk/src/service/adminauthservice.h
+ /home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.cpp
+ /home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.h
  /home/prakash/sqlite3/kiosk/src/service/inputservice.cpp
  /home/prakash/sqlite3/kiosk/src/service/inputservice.h
  /home/prakash/sqlite3/kiosk/src/service/printerservice.cpp

@@ -14,6 +14,66 @@ public:
 
 signals:
     void spo2Received(int spo2, int pulse);
+
+    void nibpPressure(int pressure);
+    void nibpReceived(int sys, int dia, int status);
+
+    void temperatureReceived(double temp, char unit);
+
+    void weightReceived(double weight);
+
+    void heightReceived(int height);
+
+private:
+    void parseByte(quint8 byte);
+    void decodeFrame();
+
+    // Individual packet decoders
+    void decodeSpo2();
+     void decodePulse();
+    void decodeTemperature();
+    void decodeWeight();
+    void decodeHeight();
+    void decodeNibp();
+    //void decodeNibpPressure();
+    //void decodeNibpResult();
+    void emitSpo2IfComplete();
+
+    enum State
+    {
+        WAIT_CTRL,
+        WAIT_NOB,
+        READ_PAYLOAD
+    };
+
+    State state = WAIT_CTRL;
+
+    quint8 ctrl = 0;
+    quint8 nob = 0;
+
+    quint8 payload[16];
+    int payloadIndex = 0;
+
+    int lastSpo2 = -1;
+    int lastPulse = -1;
+};
+/*old working design
+#pragma once
+
+#include <QObject>
+#include <QByteArray>
+
+class ProtocolParser : public QObject
+{
+    Q_OBJECT
+
+public:
+    explicit ProtocolParser(QObject* parent = nullptr);
+
+    void feed(const QByteArray& data);
+
+signals:
+    void spo2Received(int spo2, int pulse);
     void nibpPressure(int pressure);
     void nibpReceived(int sys, int dia, int status);
         
@@ -42,3 +102,4 @@ private:
     int lastSpo2 = -1;
     int lastPulse = -1;
 };
+*/

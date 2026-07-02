@@ -38,6 +38,12 @@
 #include "service/syncservice.h"
 #include "storage/settingsrepository.h"
 #include "controller/printercontroller.h"
+#include "platform/input/rotaryhandler.h"
+#include "service/inputservice.h"
+#include "controller/inputcontroller.h"
+
+#include <QThread>
+
 
 
 /* ================= LOAD ALL SESSIONS ================= */
@@ -135,6 +141,71 @@ int main(int argc, char *argv[])
     // ---------- NAVIGATION ----------
     NavigationManager* nav = new NavigationManager(stackedWidget);
 
+    // ---------- ROTARY INPUT ----------
+
+    QThread* rotaryThread = new QThread(&app);
+
+    RotaryHandler* rotary = new RotaryHandler(
+        "/dev/input/by-path/platform-rotary@0-event",
+        "/dev/input/by-path/platform-rotary-sw-event");
+
+    InputService* inputService = new InputService(&app);
+
+    InputController* inputController =
+            new InputController(inputService, &app);
+
+    rotary->moveToThread(rotaryThread);
+
+    QObject::connect(rotaryThread,
+                 &QThread::started,
+                 []()
+    {
+        qDebug() << "******** Rotary Thread Started ********";
+    });
+
+    QObject::connect(rotaryThread,
+                 &QThread::started,
+                 rotary,
+                 &RotaryHandler::processEvents);
+    
+    
+    QObject::connect(rotary,
+                    &RotaryHandler::rotatedLeft,
+                    inputService,
+                    &InputService::navigatePrevious);
+
+    QObject::connect(rotary,
+                    &RotaryHandler::rotatedRight,
+                    inputService,
+                    &InputService::navigateNext);
+
+    QObject::connect(rotary,
+                    &RotaryHandler::pressed,
+                    inputService,
+                    &InputService::select);
+
+    QObject::connect(inputService,
+                 &InputService::focusNext,
+                 []()
+{
+    qDebug() << "Signal: focusNext";
+});
+
+QObject::connect(inputService,
+                 &InputService::focusPrevious,
+                 []()
+{
+    qDebug() << "Signal: focusPrevious";
+});
+
+QObject::connect(inputService,
+                 &InputService::activate,
+                 []()
+{
+    qDebug() << "Signal: activate";
+});
+
+    //end ROTARY INPUT ----------
     nav->registerScreen(Screen::Home, homeView);
     nav->registerScreen(Screen::Settings, settingsView);
     nav->registerScreen(Screen::Print, printView);
@@ -160,8 +231,8 @@ int main(int argc, char *argv[])
     
     SettingsRepository* settingsRepo = new SettingsRepository();
     SettingsModel* settingsModel = new SettingsModel(&app);
-    SyncService* syncService = new SyncService();
-
+    SyncService* syncService = new SyncService(repo);
+    //SyncService* syncService = new SyncService();
     SettingsService* settingsService =
                                  new SettingsService(settingsModel, settingsRepo, &app);
 
@@ -258,21 +329,7 @@ int main(int argc, char *argv[])
 
     nav->goTo(Screen::Print);
 });
-    /*
-    QObject::connect(homeView, &HomeView::startPrintingRequested,
-                     [=](int sessionId){
-        //qDebug()<< "Received startPrintingRequested from homeview in 
-        //main controller navigating to printview with sessionId:" << sessionId;
-        homecontroller->ensurePatientSaved();
-        sessionId = vitalsService->sessionId();
-        qDebug() << "Printing session:" << sessionId;
 
-        QVariantMap data = repo->getLatestVitals(sessionId);
-        printView->setData(data);
-
-        nav->goTo(Screen::Print);
-    });
-    */
     // Print → Home
     QObject::connect(printView, &PrintView::exitRequested,
                      [=]() {
@@ -300,6 +357,7 @@ int main(int argc, char *argv[])
 
     nav->goTo(Screen::Print);
     });
+
     //QObject::connect(recordsView, &RecordsView::recordSelected,
     //                 [=](int sessionId){
 
@@ -335,6 +393,7 @@ int main(int argc, char *argv[])
     }
 
     // ---------- PROTOCOL ----------
+
     ProtocolParser* parser = new ProtocolParser(&app);
 
     QObject::connect(uart, &UartDevice::bytesReceived,
@@ -355,9 +414,6 @@ int main(int argc, char *argv[])
 
     QObject::connect(parser, &ProtocolParser::heightReceived,
                      vitalsService, &VitalsService::onHeight);
-
-    //QObject::connect(vitalsService, &VitalsService::sendCommand,
-    //                 uart, &UartDevice::send);
                     
     //nibp pressure updates for live UI update during measurement from protocol parser
 
@@ -375,8 +431,6 @@ int main(int argc, char *argv[])
         vitalsModel,
         &VitalsModel::setNibpPressure);
 
-    //QObject::connect(vitalsService, &VitalsService::temperatureReady,
-    //                 vitalsModel, &VitalsModel::setTemperature);//
     QObject::connect(vitalsService, &VitalsService::temperatureReady,
                  vitalsModel, &VitalsModel::setTemperature,
                  Qt::UniqueConnection);
@@ -402,16 +456,9 @@ int main(int argc, char *argv[])
     QObject::connect(vitalsService, &VitalsService::sendRaw,
                     uart, &UartDevice::write,
                     Qt::UniqueConnection);
-    //vision test
     
-
     //PRINT CONTROLLER
-    //PrintView* printView = new PrintView;
-    //PrinterController* printerController =
-    //new PrinterController(vitalsService, &app);
-    //PrinterController* printerController =
-    //new PrinterController(vitalsService, repo, &app);
-    //PrinterController* printerController = new PrinterController;
+
     PrinterController* printerController = new PrinterController(
     vitalsService,
     repo,
@@ -422,18 +469,24 @@ int main(int argc, char *argv[])
     QObject::connect(printView, &PrintView::startNetworkPrintingRequested,
                      printerController, &PrinterController::onNetworkPrintRequested);
 
-    //printView to printer controller for thermal print request signal connection
-    //QObject::connect(printView, &PrintView::startThermalPrintingRequested,
-    //                printerController, &PrinterController::onThermalPrintRequested);
-    //printView to printer controller for network print request signal connection 
-    //QObject::connect(printView, &PrintView::startNetworkPrintingRequested,
-    //                printerController, &PrinterController::onNetworkPrintRequested);
+    //REST in printView 
+    QObject::connect(
+        printView,
+        &PrintView::postVitalsRequested,
+        syncService,
+        &SyncService::postVitals
+    );
 
 
     // ---------- START ----------
+
+    // Start the rotary thread
+
+    rotaryThread->start();
 
     nav->goTo(Screen::Home);
     stackedWidget->showFullScreen();
 
     return app.exec();
+
 }

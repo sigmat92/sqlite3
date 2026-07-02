@@ -22,7 +22,8 @@ signals:
     void backRequested();
     void startThermalPrintingRequested(int sessionId);
     void startNetworkPrintingRequested(int sessionId);
-    void exitRequested();   
+    void exitRequested();  
+    void postVitalsRequested(int sessionId);
 
 private:
 

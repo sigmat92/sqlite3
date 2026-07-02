@@ -72,9 +72,17 @@ void RestClient::handlePost()
 {
     auto reply = qobject_cast<QNetworkReply *>(sender());
 
-    if (reply->error() != QNetworkReply::NoError) {
+    QByteArray response = reply->readAll();
+
+    qDebug() << "[POST RESPONSE]";
+    qDebug().noquote() << response;
+
+    if (reply->error() != QNetworkReply::NoError)
+    {
         emit postFailed(reply->errorString());
-    } else {
+    }
+    else
+    {
         emit postSuccess();
     }
 

@@ -357,8 +357,8 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstring.h \
- /home/prakash/sqlite3/kiosk/src/controller/../view/homeview.h \
- /home/prakash/sqlite3/kiosk/src/controller/../view/baseview.h \
+ /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -430,7 +430,7 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
- /home/prakash/sqlite3/kiosk/src/controller/../view/metriccard.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
@@ -439,10 +439,10 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
- /home/prakash/sqlite3/kiosk/src/controller/../service/sessionservice.h \
+ /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
- /home/prakash/sqlite3/kiosk/src/controller/../model/vitalsmodel.h \
- /home/prakash/sqlite3/kiosk/src/controller/../storage/vitalsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
+ /home/prakash/sqlite3/kiosk/src/storage/vitalsrepository.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVariantMap \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariantmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
@@ -453,5 +453,6 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/service/settingsservice.h \
  /home/prakash/sqlite3/kiosk/src/model/settingsmodel.h \
  /home/prakash/sqlite3/kiosk/src/storage/settingsrepository.h \
+ /home/prakash/sqlite3/kiosk/src/service/healthmetricsservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h
