@@ -7,6 +7,10 @@
 #include <QRadioButton>
 #include <QLabel>
 
+#include <QVector>
+
+class QWidget;
+
 class HomeView : public BaseView
 {
     Q_OBJECT
@@ -36,6 +40,10 @@ public:
     void setFarVision(const QString& value);
     void setNearVision(const QString& value);
 
+    QVector<QWidget*> navigationWidgets() const;
+    
+    void setStatus(const QString& text);
+    
 public slots:
 
     void setTemperatureBusy(bool busy);

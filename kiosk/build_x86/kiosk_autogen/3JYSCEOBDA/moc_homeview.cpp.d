@@ -1,6 +1,7 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/3JYSCEOBDA/moc_homeview.cpp: /home/prakash/sqlite3/kiosk/src/view/homeview.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20type_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qalgorithms.h \
@@ -112,6 +113,7 @@
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qutf8stringview.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qversiontagging.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qxptype_traits.h \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \

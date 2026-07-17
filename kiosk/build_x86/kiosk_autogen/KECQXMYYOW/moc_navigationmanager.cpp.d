@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp: /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
   /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/moc_predefs.h \
+  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QObject \
   /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \

@@ -12,6 +12,7 @@
 #include "VNQA4LF4BW/moc_settingsmodel.cpp"
 #include "VNQA4LF4BW/moc_vitalsmodel.cpp"
 #include "UFQQIFJZKK/moc_restclient.cpp"
+#include "YTXNRGJSQJ/moc_gpiokeyhandler.cpp"
 #include "YTXNRGJSQJ/moc_rotaryhandler.cpp"
 #include "I6UGBHFDKN/moc_protocolparser.cpp"
 #include "I6UGBHFDKN/moc_uartdevice.cpp"

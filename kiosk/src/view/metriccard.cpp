@@ -15,6 +15,7 @@ MetricCard::MetricCard(const QString &title, QWidget *parent)
         "color:#555;"
     );
     */
+setFocusPolicy(Qt::StrongFocus);
 setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 //setMinimumWidth(200);
 //setMaximumWidth(250);
@@ -68,4 +69,9 @@ void MetricCard::setBusy(bool busy)
 {
     if(busy)
         valueLabel->setText("Wait...");
+}
+//Rotary navigation: Activate the card (simulate a button click)
+void MetricCard::activate()
+{
+    startButton->click();
 }

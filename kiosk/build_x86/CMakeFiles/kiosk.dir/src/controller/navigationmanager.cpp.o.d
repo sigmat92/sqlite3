@@ -405,5 +405,38 @@ CMakeFiles/kiosk.dir/src/controller/navigationmanager.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QCheckBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcheckbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyleoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qvalidator.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qregularexpression.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractslider.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstyle.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabbar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtabwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qrubberband.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h

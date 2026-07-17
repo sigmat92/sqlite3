@@ -558,6 +558,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextoption.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QRadioButton \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qradiobutton.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QComboBox \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qcombobox.h \
@@ -601,8 +603,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QString \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
- /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
@@ -621,6 +621,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QStackedWidget \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qstackedwidget.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QStringList \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qstringlist.h \
  /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \
@@ -672,6 +674,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/src/service/inputservice.h \
  /home/prakash/sqlite3/kiosk/src/controller/inputcontroller.h \
+ /home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QThread \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qthread.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/c++/13.3.0/future \

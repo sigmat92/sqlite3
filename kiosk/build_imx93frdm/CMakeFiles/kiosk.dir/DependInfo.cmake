@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prakash/sqlite3/kiosk/src/model/settingsmodel.cpp" "CMakeFiles/kiosk.dir/src/model/settingsmodel.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/settingsmodel.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp" "CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/network/restclient.cpp" "CMakeFiles/kiosk.dir/src/network/restclient.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/network/restclient.cpp.o.d"
+  "/home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.cpp" "CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp" "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp" "CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o.d"
   "/home/prakash/sqlite3/kiosk/src/platform/uart/uartdevice.cpp" "CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o" "gcc" "CMakeFiles/kiosk.dir/src/platform/uart/uartdevice.cpp.o.d"

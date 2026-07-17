@@ -595,6 +595,12 @@
 			null
 		],
 		[
+			"/home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.h",
+			"MU",
+			"YTXNRGJSQJ/moc_gpiokeyhandler.cpp",
+			null
+		],
+		[
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h",
 			"MU",
 			"YTXNRGJSQJ/moc_rotaryhandler.cpp",
@@ -898,6 +904,11 @@
 		[ "/home/prakash/sqlite3/kiosk/src/model/settingsmodel.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.cpp", "MU", null ],
 		[ "/home/prakash/sqlite3/kiosk/src/network/restclient.cpp", "MU", null ],
+		[
+			"/home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp",
 			"MU",

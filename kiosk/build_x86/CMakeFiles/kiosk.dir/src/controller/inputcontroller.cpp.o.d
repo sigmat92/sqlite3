@@ -349,18 +349,98 @@ CMakeFiles/kiosk.dir/src/controller/inputcontroller.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qbindingstorage.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime \
- /home/prakash/sqlite3/kiosk/src/service/inputservice.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiglobal.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtgui-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtguiexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgets-config.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qframe.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qwindowdefs.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qobject.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmargins.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qaction.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qkeysequence.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qicon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsize.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpaintdevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qrect.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qpoint.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcolor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgb.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qrgba64.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qimage.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpixelformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtransform.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpolygon.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qregion.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qline.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvariant.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qtextstream.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringconverter_base.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcontiguouscache.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qsharedpointer_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qshareddata_impl.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qset.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvarlengtharray.h \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/q20memory.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpalette.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbrush.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfont.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontmetrics.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qfontinfo.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qsizepolicy.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qcursor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qbitmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
+ /home/prakash/sqlite3/kiosk/src/view/homeview.h \
+ /home/prakash/sqlite3/kiosk/src/view/baseview.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QWidget \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qwidget.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLabel \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlabel.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpicture.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qiodevice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextdocument.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qurl.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QPushButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QVBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlayoutitem.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qboxlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QHBoxLayout \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDateTime \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdatetime.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qcalendar.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qlocale.h \
+ /home/prakash/sqlite3/kiosk/src/view/metriccard.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QLineEdit \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qlineedit.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextcursor.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextformat.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qpen.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+ /home/prakash/sqlite3/kiosk/src/service/inputservice.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QDebug \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdebug.h

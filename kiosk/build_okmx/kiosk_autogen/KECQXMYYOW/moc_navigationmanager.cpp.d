@@ -1,5 +1,6 @@
 /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/KECQXMYYOW/moc_navigationmanager.cpp: /home/prakash/sqlite3/kiosk/src/controller/navigationmanager.h \
   /home/prakash/sqlite3/kiosk/build_okmx/kiosk_autogen/moc_predefs.h \
+  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QObject \
   /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \

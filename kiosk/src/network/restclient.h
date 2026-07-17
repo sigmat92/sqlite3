@@ -31,5 +31,5 @@ private:
     QNetworkAccessManager m_manager;
     QString m_token;
 
-    QString m_baseUrl = "https://coddleonline.com";
+    QString m_baseUrl = "https://coddleonline.com/api";
 };

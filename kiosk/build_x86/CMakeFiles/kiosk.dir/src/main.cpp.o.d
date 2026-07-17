@@ -441,6 +441,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/src/view/settingsview.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QComboBox \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qcombobox.h \
@@ -484,8 +486,6 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/controller/visiontestcontroller.h \
  /home/prakash/sqlite3/kiosk/src/service/visionservice.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QString \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
- /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/storage/patientrepository.h \
@@ -504,6 +504,8 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QStackedWidget \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qstackedwidget.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QMap \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QStringList \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qstringlist.h \
  /home/prakash/sqlite3/kiosk/src/storage/sessionrepository.h \
@@ -555,6 +557,7 @@ CMakeFiles/kiosk.dir/src/main.cpp.o: \
  /home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/src/service/inputservice.h \
  /home/prakash/sqlite3/kiosk/src/controller/inputcontroller.h \
+ /home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QThread \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qthread.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qdeadlinetimer.h \

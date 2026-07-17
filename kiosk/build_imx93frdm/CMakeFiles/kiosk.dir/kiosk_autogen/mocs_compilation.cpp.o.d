@@ -557,6 +557,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qmap.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
+ /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/qhash.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/moc_printercontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/../../../src/controller/printercontroller.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/KECQXMYYOW/../../../src/controller/../service/printerservice.h \
@@ -622,6 +624,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/quuid.h \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtNetwork/QSslError \
  /opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtNetwork/qsslerror.h \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/YTXNRGJSQJ/moc_gpiokeyhandler.cpp \
+ /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/gpiokeyhandler.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/build_imx93frdm/kiosk_autogen/I6UGBHFDKN/moc_protocolparser.cpp \

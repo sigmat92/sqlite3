@@ -132,6 +132,8 @@ set(SRC
     src/platform/uart/protocolparser.cpp
     src/platform/input/rotaryhandler.h
     src/platform/input/rotaryhandler.cpp
+    src/platform/input/gpiokeyhandler.h
+    src/platform/input/gpiokeyhandler.cpp
 
     # Storage
     #src/storage/sqliterecorder.h

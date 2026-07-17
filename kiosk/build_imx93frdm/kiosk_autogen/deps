@@ -36,6 +36,8 @@ kiosk_autogen/timestamp: \
 	/home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \
 	/home/prakash/sqlite3/kiosk/src/network/restclient.cpp \
 	/home/prakash/sqlite3/kiosk/src/network/restclient.h \
+	/home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.cpp \
+	/home/prakash/sqlite3/kiosk/src/platform/input/gpiokeyhandler.h \
 	/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.cpp \
 	/home/prakash/sqlite3/kiosk/src/platform/input/rotaryhandler.h \
 	/home/prakash/sqlite3/kiosk/src/platform/uart/protocolparser.cpp \
@@ -95,6 +97,7 @@ kiosk_autogen/timestamp: \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QByteArray \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QDateTime \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QFlags \
+	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QHash \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QJsonObject \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QList \
 	/opt/fsl-imx-xwayland/6.6-scarthgap/sysroots/armv8a-poky-linux/usr/include/QtCore/QMap \

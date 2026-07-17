@@ -597,6 +597,30 @@ src/network/restclient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/network/restclient.cpp.s
 .PHONY : src/network/restclient.cpp.s
 
+src/platform/input/gpiokeyhandler.o: src/platform/input/gpiokeyhandler.cpp.o
+.PHONY : src/platform/input/gpiokeyhandler.o
+
+# target to build an object file
+src/platform/input/gpiokeyhandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.o
+.PHONY : src/platform/input/gpiokeyhandler.cpp.o
+
+src/platform/input/gpiokeyhandler.i: src/platform/input/gpiokeyhandler.cpp.i
+.PHONY : src/platform/input/gpiokeyhandler.i
+
+# target to preprocess a source file
+src/platform/input/gpiokeyhandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.i
+.PHONY : src/platform/input/gpiokeyhandler.cpp.i
+
+src/platform/input/gpiokeyhandler.s: src/platform/input/gpiokeyhandler.cpp.s
+.PHONY : src/platform/input/gpiokeyhandler.s
+
+# target to generate assembly for a file
+src/platform/input/gpiokeyhandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiosk.dir/build.make CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.s
+.PHONY : src/platform/input/gpiokeyhandler.cpp.s
+
 src/platform/input/rotaryhandler.o: src/platform/input/rotaryhandler.cpp.o
 .PHONY : src/platform/input/rotaryhandler.o
 
@@ -1309,6 +1333,9 @@ help:
 	@echo "... src/network/restclient.o"
 	@echo "... src/network/restclient.i"
 	@echo "... src/network/restclient.s"
+	@echo "... src/platform/input/gpiokeyhandler.o"
+	@echo "... src/platform/input/gpiokeyhandler.i"
+	@echo "... src/platform/input/gpiokeyhandler.s"
 	@echo "... src/platform/input/rotaryhandler.o"
 	@echo "... src/platform/input/rotaryhandler.i"
 	@echo "... src/platform/input/rotaryhandler.s"

@@ -524,6 +524,8 @@ CMakeFiles/kiosk.dir/src/controller/homecontroller.cpp.o: \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtGui/qtextoption.h \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/QRadioButton \
  /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtWidgets/qradiobutton.h \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/QVector \
+ /opt/fsl-imx-xwayland/6.1-mickledore/sysroots/armv8a-poky-linux/usr/include/QtCore/qvector.h \
  /home/prakash/sqlite3/kiosk/src/service/sessionservice.h \
  /home/prakash/sqlite3/kiosk/src/model/patient.h \
  /home/prakash/sqlite3/kiosk/src/model/vitalsmodel.h \

@@ -429,6 +429,8 @@ CMakeFiles/kiosk.dir/src/view/homeview.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtGui/qtextoption.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QRadioButton \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qradiobutton.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QGridLayout \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/qgridlayout.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtWidgets/QMessageBox \

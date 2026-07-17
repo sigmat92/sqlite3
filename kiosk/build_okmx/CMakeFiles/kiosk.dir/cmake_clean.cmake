@@ -34,6 +34,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/kiosk.dir/src/model/vitalsmodel.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/network/restclient.cpp.o"
   "CMakeFiles/kiosk.dir/src/network/restclient.cpp.o.d"
+  "CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.o"
+  "CMakeFiles/kiosk.dir/src/platform/input/gpiokeyhandler.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o"
   "CMakeFiles/kiosk.dir/src/platform/input/rotaryhandler.cpp.o.d"
   "CMakeFiles/kiosk.dir/src/platform/uart/protocolparser.cpp.o"

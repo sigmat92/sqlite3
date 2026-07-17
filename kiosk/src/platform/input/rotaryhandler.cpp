@@ -18,6 +18,8 @@ void RotaryHandler::stop()
 }
 void RotaryHandler::processEvents()
 {
+
+    //Rotary encoder device
     int fdRot = open(rotaryDevicePath.toStdString().c_str(),
                      O_RDONLY | O_NONBLOCK);
 

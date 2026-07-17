@@ -13,6 +13,8 @@ public:
 
     void setValue(const QString &value);
     void setBusy(bool busy);
+    //Rotary navigation: Activate the card (simulate a button click)
+    void activate();
 
 signals:
     void startRequested();

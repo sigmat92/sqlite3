@@ -437,6 +437,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qmap.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QVector \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qvector.h \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/QHash \
+ /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/qhash.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/moc_printercontroller.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/printercontroller.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/KECQXMYYOW/../../../src/controller/../service/printerservice.h \
@@ -502,6 +504,8 @@ CMakeFiles/kiosk.dir/kiosk_autogen/mocs_compilation.cpp.o: \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtCore/quuid.h \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/QSslError \
  /home/prakash/Qt/6.5.3/gcc_64/include/QtNetwork/qsslerror.h \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/moc_gpiokeyhandler.cpp \
+ /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/gpiokeyhandler.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/moc_rotaryhandler.cpp \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/YTXNRGJSQJ/../../../src/platform/input/rotaryhandler.h \
  /home/prakash/sqlite3/kiosk/build_x86/kiosk_autogen/I6UGBHFDKN/moc_protocolparser.cpp \

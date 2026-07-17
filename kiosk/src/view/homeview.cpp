@@ -124,6 +124,10 @@ HomeView::HomeView(QWidget *parent)
         MetricCard *card = new MetricCard(metrics[i].title);
 
         // STORE POINTERS
+
+        if(metrics[i].title == "Vision Test")
+            visionTestCard = card;
+
         if(metrics[i].title == "Temperature")
             temperatureCard = card;
 
@@ -164,7 +168,7 @@ HomeView::HomeView(QWidget *parent)
     /* ---------------- RESULTS PANEL ---------------- */
   
     QLabel *resultsTitle = new QLabel("Test Results :");
-    resultsTitle->setAlignment(Qt::AlignCenter);
+    //resultsTitle->setAlignment(Qt::AlignCenter);
 
     QWidget *resultsPanel = new QWidget;
 
@@ -456,14 +460,42 @@ void HomeView::setMeasurementBusy(
 void HomeView::setFarVision(const QString& value)
 {
     farVisionLabel->setText(value);
+    qDebug() << "Card ptr:" << visionTestCard;
+    if(visionTestCard)
+        visionTestCard->setValue(value);
 }
 
 void HomeView::setNearVision(const QString& value)
 {
     nearVisionLabel->setText(value);
+    qDebug() << "Card ptr:" << visionTestCard;
+    if(visionTestCard)
+        visionTestCard->setValue(value);
+}
+//Rotary navigation: Return the list of focusable widgets for the home screen
+QVector<QWidget*> HomeView::navigationWidgets() const
+{
+    return
+    {
+        // Patient Details
+        nameEdit,
+        ageEdit,
+        mobileEdit,
+        maleBtn,
+        femaleBtn,
+
+        // Measurements
+        //temperatureCard,
+        //spo2Card,
+        //nibpCard,
+        //heightCard,
+        //weightCard,
+        //visionTestCard
+    };
 }
 
-//void HomeView::setVisionText(const QString &text)
-//{
-//    visionCard->setValue(text);
-//}
+void HomeView::setStatus(const QString &text)
+{
+    if (statusLabel)
+        statusLabel->setText(text);
+}

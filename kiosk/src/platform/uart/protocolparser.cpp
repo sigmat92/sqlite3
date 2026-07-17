@@ -95,7 +95,27 @@ void ProtocolParser::decodeFrame()
             break;
     }
 }
+
+
 // -------- SPO2-------- 
+void ProtocolParser::decodeSpo2()
+{
+    qDebug() << "[SPO2]"
+             << "payload =" << payload[0]
+             << "nob =" << nob;
+
+    if (nob != 1)
+        return;
+
+    lastSpo2 = (payload[0] > 100)
+                   ? 0
+                   : payload[0];
+
+    qDebug() << "lastSpo2 =" << lastSpo2;
+
+    emitSpo2IfComplete();
+}
+/*
 void ProtocolParser::decodeSpo2()
 {
     if (nob != 1)
@@ -107,7 +127,28 @@ void ProtocolParser::decodeSpo2()
 
     emitSpo2IfComplete();
 }
+*/
 // -------- PULSE -------- 
+void ProtocolParser::decodePulse()
+{
+    qDebug() << "[PULSE]"
+             << "payload =" << payload[0]
+             << "nob =" << nob;
+
+    if (nob != 1)
+        return;
+
+    int pulse = payload[0];
+
+    lastPulse = (pulse < 30 || pulse > 239)
+                    ? 0
+                    : pulse;
+
+    qDebug() << "lastPulse =" << lastPulse;
+
+    emitSpo2IfComplete();
+}
+/*
 void ProtocolParser::decodePulse()
 {
     if (nob != 1)
@@ -122,7 +163,27 @@ void ProtocolParser::decodePulse()
 
     emitSpo2IfComplete();
 }
+*/
 //emitSpo2IfComplete() is called after both 
+void ProtocolParser::emitSpo2IfComplete()
+{
+    qDebug() << "emit check"
+             << lastSpo2
+             << lastPulse;
+
+    if (lastSpo2 < 0 || lastPulse < 0)
+        return;
+
+    qDebug() << "EMIT"
+             << lastSpo2
+             << lastPulse;
+
+    emit spo2Received(lastSpo2, lastPulse);
+
+    lastSpo2 = -1;
+    lastPulse = -1;
+}
+/*
 void ProtocolParser::emitSpo2IfComplete()
 {
     if (lastSpo2 < 0 ||
@@ -133,10 +194,14 @@ void ProtocolParser::emitSpo2IfComplete()
 
     emit spo2Received(lastSpo2,
                       lastPulse);
+    
+    qDebug() << "CTRL =" << Qt::hex << ctrl
+         << "NOB =" << nob;
 
     lastSpo2  = -1;
-    lastPulse = -1;
+    //lastPulse = -1;
 }
+*/
 // -------- NIBP / Pressure-------- 
 void ProtocolParser::decodeNibp()
 {
@@ -152,9 +217,10 @@ void ProtocolParser::decodeNibp()
             if (nob < 3)
                 return;
 
-            int pressure =
-                    (payload[1] << 7) |
-                     payload[2];
+            int pressure = (payload[1] * 128) | payload[2];
+            //int pressure =
+            //        (payload[1] << 7) |
+            //         payload[2];
 
             emit nibpPressure(pressure);
             break;

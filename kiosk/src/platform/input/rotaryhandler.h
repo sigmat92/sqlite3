@@ -21,6 +21,9 @@ signals:
     void rotatedRight();
     void pressed();
 
+    //void mutePressed();
+    //void freezePressed();
+
 private:
     QString rotaryDevicePath;
     QString switchDevicePath;

@@ -41,7 +41,7 @@
 #include "platform/input/rotaryhandler.h"
 #include "service/inputservice.h"
 #include "controller/inputcontroller.h"
-
+#include "platform/input/gpiokeyhandler.h"
 #include <QThread>
 
 
@@ -152,7 +152,14 @@ int main(int argc, char *argv[])
     InputService* inputService = new InputService(&app);
 
     InputController* inputController =
-            new InputController(inputService, &app);
+    new InputController(
+        inputService,
+        nav,
+        homeView,
+        &app);
+
+    //InputController* inputController =
+    //        new InputController(inputService, &app);
 
     rotary->moveToThread(rotaryThread);
 
@@ -183,30 +190,121 @@ int main(int argc, char *argv[])
                     &RotaryHandler::pressed,
                     inputService,
                     &InputService::select);
-
+                
     QObject::connect(inputService,
                  &InputService::focusNext,
-                 []()
+                 homeView,
+                 [homeView]()
 {
-    qDebug() << "Signal: focusNext";
+    homeView->setStatus("Rotary : NEXT");
 });
 
 QObject::connect(inputService,
                  &InputService::focusPrevious,
-                 []()
+                 homeView,
+                 [homeView]()
 {
-    qDebug() << "Signal: focusPrevious";
+    homeView->setStatus("Rotary : PREVIOUS");
 });
 
 QObject::connect(inputService,
                  &InputService::activate,
+                 homeView,
+                 [homeView]()
+{
+    homeView->setStatus("Rotary : SELECT");
+});
+    //end ROTARY INPUT ----------
+
+//gpio keys
+QThread* gpioThread = new QThread(&app);
+
+GPIOKeyHandler* gpioKeys = new GPIOKeyHandler();
+
+gpioKeys->moveToThread(gpioThread);
+
+QObject::connect(gpioThread,
+        &QThread::started,
+        gpioKeys,
+        &GPIOKeyHandler::processEvents);
+
+QObject::connect(&app,
+        &QApplication::aboutToQuit,
+        gpioKeys,
+        &GPIOKeyHandler::stop);
+
+QObject::connect(&app,
+        &QApplication::aboutToQuit,
+        gpioThread,
+        &QThread::quit);
+
+//gpioThread->start();
+QObject::connect(gpioThread,
+                 &QThread::started,
                  []()
 {
-    qDebug() << "Signal: activate";
+    qDebug() << "******** GPIO Thread Started ********";
 });
 
-    //end ROTARY INPUT ----------
+QObject::connect(gpioThread,
+                 &QThread::started,
+                 gpioKeys,
+                 &GPIOKeyHandler::processEvents);
+
+QObject::connect(inputService,
+        &InputService::mute,
+        homeView,
+        [homeView]()
+{
+    homeView->setStatus("Mute");
+});
+
+QObject::connect(inputService,
+        &InputService::nibp,
+        homeView,
+        [homeView]()
+{
+    homeView->setStatus("NIBP");
+});
+
+QObject::connect(inputService,
+        &InputService::freeze,
+        homeView,
+        [homeView]()
+{
+    homeView->setStatus("Freeze");
+});
+
+QObject::connect(inputService,
+        &InputService::print,
+        homeView,
+        [homeView]()
+{
+    homeView->setStatus("Print");
+});
+
+QObject::connect(inputService,
+        &InputService::menu,
+        homeView,
+        [homeView]()
+{
+    homeView->setStatus("Menu");
+});
+
+QObject::connect(gpioKeys,
+        &GPIOKeyHandler::mutePressed,
+        [homeView]()
+{
+    homeView->setStatus("Mute");
+});
+//gpio keys
+
     nav->registerScreen(Screen::Home, homeView);
+    //Rotary navigation
+    nav->registerWidgets(
+    Screen::Home,
+    homeView->navigationWidgets());
+
     nav->registerScreen(Screen::Settings, settingsView);
     nav->registerScreen(Screen::Print, printView);
     nav->registerScreen(Screen::Records, recordsView);
@@ -480,10 +578,10 @@ QObject::connect(inputService,
 
     // ---------- START ----------
 
-    // Start the rotary thread
+    // Start the rotary gpio thread
 
     rotaryThread->start();
-
+    gpioThread->start();
     nav->goTo(Screen::Home);
     stackedWidget->showFullScreen();
 
